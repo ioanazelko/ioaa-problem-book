@@ -20,12 +20,15 @@ print-oriented editions can be produced from the repository sources.
 ## Status
 
 - 402 of 402 problem statements transcribed
-- 386 of 402 available solutions transcribed
+- All available official solution material transcribed
+- 385 problems with substantive official solutions
 - 565 figure assets
 - 14 topic-based chapters plus an errata appendix
 
-The remaining solution slots correspond to solutions that were not published,
-do not survive in the available archives, or contain no answer material.
+The other 17 solution slots contain explanatory notes, not omitted
+transcriptions. For 16 problems, no usable official solution was published or
+survives in the available archives. The official key for one further problem,
+a 2012 timed laser-pointing task, exists but contains no answer material.
 
 ## Building the book
 

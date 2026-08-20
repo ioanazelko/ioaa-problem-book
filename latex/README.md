@@ -11,18 +11,21 @@ transcription can be silently wrong.
 
 ## Status
 
-**COMPLETE: 402/402 statements and 386/402 solutions transcribed.**
+**COMPLETE: 402/402 statements and all available official solution material
+transcribed.**
 
 Every problem statement and every published official solution is now typed as
 LaTeX, verified digit-by-digit against rendered images of the official papers.
 Solutions carry the official reasoning with inline point values; standalone
 marking-scheme rubrics are omitted (the crop edition keeps full rubrics).
 
-The 16 solution slots without transcription carry explanatory notes in place:
-the 2016 and 2017 observation-round solutions were never published (12), the
-2007 pointer-task and 2014 outdoor-telescope keys don't survive (2), one 2012
-task has no answer content (1), and the 2014 solutions file simply skips
-short problem 4 (1).
+Of the 402 solution slots, 385 contain substantive official solutions. The
+other 17 carry explanatory notes, not omitted transcriptions: the 2016 and 2017
+observation-round solutions were never published (12); the 2007 pointer-task
+and 2014 outdoor-telescope keys don't survive (2); the official 2016 solution
+set replaces the AstroSat problem with a different problem (1); the 2014
+solutions file skips short problem 4 (1); and the official key for one 2012
+timed practical task contains no answer material (1).
 
 All 369 figure references flagged during transcription are now resolved:
 ~330 diagrams (solution sketches, fitted plots, marked observation charts,
