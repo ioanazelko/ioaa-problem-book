@@ -1,0 +1,36 @@
+Rayleigh--Jeans law to calculate the thermal emission from the sun at 3\,GHz
+states,
+\[ B_\nu = \frac{2k_B T}{c^2}\,\nu^2 \]
+which is the power emitted per unit emitting area, per steradian, per unit
+frequency. Therefore, the solar luminosity at 3\,GHz should be:
+\[ L_\nu = B_\nu \cdot 4\pi R_\odot^2 \]
+\hfill(3 points)
+
+At the distance of the earth (1\,AU), the monochromatic flux from the sun at
+3\,GHz should be:
+\[ f_\nu = \frac{L_\nu}{4\pi D^2} \]
+Hence the energy flux that FAST will receive is:
+\[ F_\nu = f_\nu \cdot \Delta\nu \cdot \pi^2\,\frac{d_c^2}{4} \]
+\hfill(8 points)
+% sic: the source prints a factor pi^2 here and in the next line; the
+% collecting area of a dish of effective diameter d_c is pi d_c^2/4
+
+And the total energy that the receiver will collect during 1 hour of
+observation is:
+\[ E_\odot = F_\nu\Delta t
+   = \frac{2k_B T}{c^2}\,\nu^2\,\frac{R_\odot^2}{D^2}
+     \cdot \pi^2\,\frac{d_c^2}{4}\,\Delta\nu\,\Delta t
+   = 8.5\times10^{-5}\,J \]
+\hfill(8 points)
+
+Then we can calculate the work we need to turn over one piece of the answer
+sheet (A4 paper). The mass of an A4 paper
+($297\,\mathrm{mm}\times210\,\mathrm{mm}$) is:
+\[ m = \rho \cdot L_1 L_2 \]
+\hfill(2 point)
+
+Therefore, the energy of turning it over should be around:
+\[ E' = mg \cdot \frac{L_2}{2} \approx 5\times10^{-3}\,J \]
+\hfill(3 points)
+
+As a consequence, $E' > E_\odot$. \hfill(1 point)

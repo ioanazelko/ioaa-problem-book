@@ -1,0 +1,40 @@
+\begin{description}
+\item[(1)] The student should be able to import the ascii data of the
+  \emph{txt} file in the \emph{MS Excel} spreadsheet application.
+  \hfill(12 Points)
+\item[(2)] In order to calculate the angular distance $\varphi$ (next step),
+  all coordinates should be converted into decimal degrees. The students
+  should be able to convert the [hours, min, sec] and the
+  [$^\circ$,\ $'$,\ $''$] into decimal degrees, using. % sic
+  For the right ascension:
+  $\alpha_{\deg} = h\times15 + \dfrac{m}{60} + \dfrac{s}{3600}$
+  and for the declination:
+  $\delta_{\deg} = {}^\circ + \dfrac{'}{60} + \dfrac{''}{3600}$.
+  All coordinates are positive, so the student does not have to worry about
+  checking the sign, which is not trivial. \hfill(12 Points)
+\item[(3)] Using the cosine law,
+  $\varphi = \arccos(\sin\delta_1\times\sin\delta_2
+    + \cos\delta_1\times\cos\delta_2\times\cos\,(a_1 - a_2))$,
+  the angular distance, $\varphi$, between each of the stars and the point of
+  convergence should be calculated \hfill(15 Points)
+\item[(4)] The student should easily calculate the proper motion of each
+  star, by inserting the given equation,
+  $\mu = \sqrt{(\mu_a\cos\delta)^2 + \mu_d^2}$, in the spreadsheet.
+  \hfill(9 Points)
+\item[(5)] Again, inserting the given equation,
+  $r_\mu = \dfrac{v_r\tan\varphi}{4.74047\,\mu}$ in the spreadsheet
+  (remembering to divide the given values of $\mu$ by 1000 to get arcseconds),
+  the student should be able to calculate the distance, $r_\mu$, of each star.
+  Any star whose distance from the centre of the cluster is larger than
+  10\,pc should be omitted from the following calculations. \hfill(12 Points)
+\item[(6)] The trigonometric parallax distance is given by
+  $r_\pi = \dfrac{1}{\pi\times10^{-3}}$. This equation should be inserted in
+  the spreadsheet. The result is in parsecs [pc]. \hfill(6 Points)
+\item[(7)] Using the statistical functions \emph{AVERAGE} and \emph{STDEV} of
+  MS Excel, the student should easily calculate the \emph{average} and the
+  \emph{standard deviation} of $r_\mu$ and $r_\pi$. \hfill(6 Points)
+\item[(8)] The method with the smaller standard deviation is, obviously more
+  accurate. \hfill(3 Point)
+\end{description}
+
+(\emph{macros} are allowed)

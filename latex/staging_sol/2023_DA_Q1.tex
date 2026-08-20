@@ -1,0 +1,102 @@
+\textbf{Distance calculation}
+
+The information from the table can be used to derive individual magnitudes of
+both components according to equations:
+\begin{align*}
+  m_1 &= m_{1+2} + 2.5\log_{10}(1 + L_2/L_1) \\
+  m_2 &= m_{1+2} + 2.5\log_{10}(1 + L_1/L_2).
+\end{align*}
+We will use the third system (OGLE LMC-ECL-18365) as an example to
+demonstrate the calculations in detail. The values for this system are as
+follows:
+
+Magnitudes: $m_{V,1} = 16.47$\,mag, $m_{K,1} = 14.20$\,mag,
+$m_{V,2} = 18.19$\,mag, $m_{K,2} = 16.01$\,mag.
+
+Colours: $(m_V - m_K)_1 = 2.27$\,mag, $(m_V - m_K)_2 = 2.18$\,mag.
+
+The second step is to determine the surface brightness $S_V$ for both
+components using the figure. A least square fit to the data in the figure
+results in a linear function:
+\begin{align*}
+  S_V &= 1.346\,\big((m_V - m_K) - 2.407\big) + 5.869\ [\mathrm{mag}],
+    \text{ or} \\
+  S_V &= 1.346\,(m_V - m_K) + 2.629\ [\mathrm{mag}].
+\end{align*}
+Uncertainties of the coefficients are $1.346 \pm 0.017$\,mag and
+$2.63 \pm 0.04$\,mag.
+
+For this system, this gives $S_{V,1} = 5.69$\,mag and $S_{V,2} = 5.57$\,mag.
+
+However, participants will have two other ways of determining $S_V$.
+
+1) The first way is a graphical way by using a ruler and a pencil in order to
+draw the `best-fit' line on the figure. Then $S_V$ follows from an
+intersection of the $x = (m_V - m_K)$ vertical line and the `best-fit' line.
+
+2) The second way is to determine the coefficients of the best-fit line
+$y = ax + b$ by using coordinates of two points on the figure. The points
+should be far from each other.
+
+For example, the coordinates of the second and the penultimate points are:
+$(x_1, y_1) = (2.07, 5.41)$ and $(x_2, y_2) = (2.71, 6.28)$. This results in:
+\begin{align*}
+  a &= \frac{y_2 - y_1}{x_2 - x_1} = 1.36 \\
+  b &= \frac{y_1 x_2 - y_2 x_1}{x_2 - x_1} = 2.60
+\end{align*}
+Using these coefficients we have:
+$S_{V,1} = y = 2.27\cdot a + b = 5.69$\,mag and
+$S_{V,2} = y = 2.18\cdot a + b = 5.56$\,mag, so within 0.01\,mag of the
+`precise' results.
+
+The third step is to calculate angular diameters of components by using the
+equation presented in the problem. By modifying the equation defining $S_V$
+we obtain:
+\[ \theta = 10^{0.2(S_V - m_V)} \]
+Subsequently we get: $\theta_1 = 10^{0.2(5.69-16.47)} = 0.00698$\,mas and
+$\theta_2 = 10^{0.2(5.56-18.19)} = 0.00298$\,mas.
+
+The fourth step is to calculate the distance to each target. As components
+form a physical binary, their distances should be very similar. This is an
+independent check of the method and calculations. As the angles under which
+we see stellar discs are very small ($\sin\theta \approx \theta$) we can
+safely use a linear relation between the angular and physical diameters of an
+object. We therefore calculate the distance $D$ as $D = kR/\theta$, where
+$\theta$ is expressed in mas, $R$ in solar radii and $k$ is a conversion
+factor. The conversion factor results from a fraction
+$(2R_\odot/1\,\mathrm{kpc})/(1\,\mathrm{mas}/1\,\mathrm{rad})
+= (2R_\odot/1\,\mathrm{AU}) = 9.30\cdot 10^{-3}$.
+
+The distances for the third system are
+$D_1 = 9.30\cdot 10^{-3}\cdot 37.30/0.00698 = 49.70$\,kpc and
+$D_2 = 9.30\cdot 10^{-3}\cdot 15.94/0.00298 = 49.75$\,kpc.
+
+We then repeat the calculation following the same scheme for the first and
+second systems, obtaining for the first system $D_1 = 49.33$\,kpc and
+$D_2 = 49.07$\,kpc, and for the second system $D_1 = 49.56$\,kpc and
+$D_2 = 49.30$\,kpc. The unweighted mean of all distances is 49.45\,kpc.
+
+\medskip
+\textbf{Uncertainties}
+
+\emph{`Statistical' part.}
+
+The standard deviation of the sample is $s = 0.24$\,kpc. The standard error
+of the mean is $s/\sqrt{6} = 0.09$\,kpc.
+
+OR:
+
+The mean distances to the three eclipsing binaries are: 49.73\,kpc,
+49.20\,kpc and 49.443\,kpc. The standard deviation is $s = 0.22$\,kpc, and
+the standard error of the mean is $s/\sqrt{3} = 0.13$\,kpc.
+
+\emph{`Systematic' part.}
+
+All distances are inversely proportional to angular diameters derived from
+the $S_V$\,--\,$(m_V - m_K)$ relation. Thus their accuracy is limited by the
+precision of the relation. That gives the `irreducible' part of the error:
+$0.008\cdot 49.45 = 0.40$\,kpc.
+
+Finally: the distance is $49.45 \pm 0.09 \pm 0.40$\,kpc; the uncertainty is
+completely dominated by the precision of the $S_V$\,--\,$(m_V - m_K)$
+relation.

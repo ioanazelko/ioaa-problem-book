@@ -1,0 +1,156 @@
+\begin{description}
+\item[a.] The light curve. \hfill(10 points)
+  % FIGURE NEEDED: plotted light curve of HV 2257, V (mag) vs phase, from
+  % Gieren 1993 (MNRAS vol 265); 2015 DA solutions, p. 1/9.
+
+\item[b.] The color curve. \hfill(10 points)
+  % FIGURE NEEDED: plotted colour curve of HV 2257, (V-R)_J vs phase, from
+  % Gieren 1993 (MNRAS vol 265); 2015 DA solutions, p. 1/9.
+
+\item[c.] The radial velocity curve. \hfill(10 points)
+  % FIGURE NEEDED: plotted radial-velocity curve of HV 2257, radial velocity
+  % (km/s) vs phase, from Gieren 1993 (MNRAS vol 265); 2015 DA solutions,
+  % p. 2/9.
+\end{description}
+
+\noindent\textbf{Solar absolute bolometric magnitude calculation}
+\hfill(5 points)
+
+$F_\odot$ is the solar flux at the distance 10 pc which corresponds to the
+solar bolomatric absolute magnitude.
+\[ F_\odot = \frac{L_\odot}{4\pi \cdot (10\,pc)^2}
+   = \frac{3.96 \cdot 10^{26}}
+          {4 \cdot 3.14 \cdot 100 \cdot 3.086^2 \cdot 10^{32}}
+   = 3.31 \cdot 10^{-10}\,\mathrm{W/m^2} \]
+
+\medskip
+\noindent\textbf{Formula derivation} \hfill(15 points)
+
+From Stefan--Boltzmann equation we have luminosity of star:
+\[ L = 4\pi R^2 \sigma T^4, \]
+here $R$ is radius of the star, $\sigma$ is the Stefan--Boltzmann constant,
+and $T$ is effective temperature of star. Star flux at distance $d$ will be
+equal:
+\[ F = \frac{\sigma R^2 T^4}{d^2} \]
+From Pogson definition we have:
+\[ m_1 - m_2 = -2.5\log\frac{F_1}{F_2} \]
+Or using the Sun as reference, a star's observed bolometric flux will be:
+\[ F = F_\odot\,10^{-\frac{m_{bol} - M_{\odot bol}}{2.5}} \]
+
+Consider two moments, say $t_1$ and $t_2$. It is better to choose the phase
+$t_1$ and $t_2$ during which the star's expansion acceleration close to
+constant, and the difference in magnitude and color as large as possible. At
+the moment $t_1$, with measured temperature $T_1$ and radius $R_1$, absolute
+bolometric flux will be:
+\[ F_1 = \frac{\sigma R_1^2 T_1^4}{d^2}
+   \tag*{(1a)} \]
+Later, at moment $t_2$:
+\[ F_2 = \frac{\sigma R_2^2 T_2^4}{d^2}
+   \tag*{(1b)} \]
+During this time, the star's atmosphere has expanded from $R_1$ to $R_2$:
+\[ R_2 = R_1 + \Delta R \]
+or:
+\[ \frac{R_2}{R_1} = 1 + \frac{\Delta R}{R_1} \]
+Reminding:
+\[ \frac{F_2}{F_1}
+   = \left( \frac{T_2}{T_1} \right)^4 \left( \frac{R_2}{R_1} \right)^2 \]
+We have
+\[ \frac{F_2}{F_1}
+   = \left( \frac{T_2}{T_1} \right)^4
+     \left( \frac{\Delta R}{R_1} + 1 \right)^2
+   \tag*{(2)} \]
+From Pogson definition, and (2) we can find:
+\[ R_1 = \frac{\Delta R}
+   {\left( \frac{T_1}{T_2} \right)^2 \cdot 10^{-\frac{m_2 - m_1}{5}} - 1} \]
+
+\medskip
+\noindent\textbf{Calculation of $\Delta R$ from the radial velocity graph}
+\hfill(20 points)
+
+For finding $\Delta R$, we can use radial velocity curve, taking two moments,
+$t_1$ and $t_2$, between which the expansion acceleration can be assumed
+constant,
+\[ \Delta R = \frac{(v_2 - v_1)\,\Delta\varphi\,P}{2} \]
+here $P$ is pulsation period of star and $\Delta\varphi$ is phase difference
+in moment between $t_1$ and $t_2$.
+
+\begin{quote}
+Alternative method using integral / sum:
+\[ \Delta R = \int_{t_1}^{t_2} v(t)\,dt \]
+We can calculate the integral by drawing lines connecting two adjacent points,
+calculating the area of the trapesium under the line segment and sum up for
+all line segment between moment $t_1$ and $t_2$.
+\end{quote}
+
+So, from radial velocity curve we choose the part of the graph which is close
+to linear:
+% FIGURE NEEDED: radial-velocity curve with the chosen near-linear segment
+% between phases 0.75 and 0.85 marked; 2015 DA solutions, p. 4/9.
+\begin{align*}
+  t_1 &= 0.75 \\
+  t_2 &= 0.85
+\end{align*}
+Which corresponds to
+\begin{align*}
+  v(t_1) &= 272\ \mathrm{km/s} \\
+  v(t_2) &= 230\ \mathrm{km/s}
+\end{align*}
+Now we can calculate $\Delta R$:
+\[ \Delta R = \frac{(230000 - 272000)(0.85 - 0.75) \cdot 39.294 \cdot 86400}
+   {2} = -7.13 \cdot 10^9\,\mathrm{m} \]
+
+\medskip
+\noindent\textbf{Temperatures and magnitudes from photometric data}
+\hfill(10 points)
+
+For moments $t_1$ and $t_2$: from light curve we have the magnitude $V$:
+\begin{align*}
+  V_1 &= 13.58 \\
+  V_2 &= 12.55
+\end{align*}
+From color curve we have the color $V-R$:
+\begin{align*}
+  (V-R)_1 &= 0.81 \\
+  (V-R)_2 &= 0.53
+\end{align*}
+From Fig.~1 we can find the temperatures:
+\begin{align*}
+  T_1 &= 4000\,\mathrm{K} \\
+  T_2 &= 4750\,\mathrm{K}
+\end{align*}
+From table 4 we have bolometric corrections for these moments (by using
+Table 4 with linear interpolation):
+\begin{align*}
+  BC_1 &= -1.23 \\
+  BC_2 &= -0.52
+\end{align*}
+Now we can calculate bolometric magnitudes:
+\begin{align*}
+  m_{bol}(t_1) &= 13.58 - 1.23 = 12.35 \\
+  m_{bol}(t_2) &= 12.55 - 0.52 = 12.03
+\end{align*}
+
+\medskip
+\noindent\textbf{Calculate $R_1$} \hfill(10 points)
+
+First we calculate star's observed flux:
+\[ F_1 = 2.913 \cdot 10^{-10} \cdot 10^{-\frac{12.35 - 4.72}{2.5}}
+   = 2.584 \cdot 10^{-13}\,\mathrm{W/m^2} \]
+% sic — the source uses F_sun = 2.913e-10 here although the value computed
+% above was 3.31e-10 W/m^2.
+Then the radius of the star at the moment $t_1$ will be:
+\[ R_1 = \frac{\Delta R}
+   {\left( \frac{T_1}{T_2} \right)^2 \cdot 10^{-\frac{m_2 - m_1}{5}} - 1}
+   = \frac{-7.13 \cdot 10^9}
+   {\left( \frac{4000}{4750} \right)^2
+    \cdot 10^{-\frac{12.03 - 12.35}{5}} - 1}
+   = 4.0 \cdot 10^{10}\,\mathrm{m} \]
+
+\medskip
+\noindent\textbf{Calculate distance} \hfill(10 points)
+
+\[ d = \sqrt{ \frac{\sigma \cdot R_1^2 \cdot T_1^4}{F_1} }
+   = 3.0 \cdot 10^{20}\,\mathrm{m}
+   = \frac{3.0 \cdot 10^{20}}{3.086 \cdot 10^{16}} = 9.72\ \mathrm{kpc} \]
+
+Answer: 9.72 kpc

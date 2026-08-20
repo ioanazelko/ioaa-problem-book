@@ -1,0 +1,360 @@
+\textbf{Solutions -- Part 1}
+
+\begin{description}
+\item[(a)] If we plot given coordinates in XY, XZ and YZ planes we'll see
+  the following pictures. See Figures 2, 3 and 4 (0.5p for each graph).
+  % FIGURE NEEDED: XY, XZ and YZ scatter plots of the 16 satellite
+  % coordinates ("viewpoint of a cluster from observational site"),
+  % 2022_da_2_sol.pdf pages 5-6
+  By observing Figure 2 we can deduce that the group is edge-on and its
+  normal lies in XY plane. $X'$ axis is along line of sight so it can be
+  calculated by normalizing
+  $8.3\hat{i} + 6.2\hat{j} + 1.1\hat{k}$. So
+  \[ \hat{x}' = 0.79667866\,\hat{i} + 0.59510936\,\hat{j}
+     + 0.10558392\,\hat{k} \]
+  (0.5p) $Z'$ axis lays in XY plane and is perpendicular to $X'$ so it
+  can be calculated by normalizing $\hat{x}'\times\hat{k}$
+  \[ \hat{z}' = 0.59845448\,\hat{i} - 0.80115681\,\hat{j} \]
+  \hfill(2p)
+
+\item[(b)] One can choose $x'$ as line of sight (found in part (a)) (1p):
+  \[ \hat{x}' = 0.79667866\,\hat{i} + 0.59510936\,\hat{j}
+     + 0.10558392\,\hat{k} \]
+  $z'$ can be chosen as halo disk normal (found in part (a)) (1p):
+  \[ \hat{z}' = 0.59845448\,\hat{i} - 0.80115681\,\hat{j} \]
+  And finally for $y'$ (1p):
+  \[ \hat{y}' = \hat{x}'\times\hat{z}'
+     = 0.08458928\,\hat{i} + 0.06318717\,\hat{j} - 0.9944104\,\hat{k} \]
+
+\item[(c)] Each coordinate in $X'Y'Z'$ system can be found by following
+  equations
+  \begin{align*}
+  x' &= \hat{x}'\cdot(\vec{r} - \vec{r}_c)\\
+  y' &= \hat{y}'\cdot(\vec{r} - \vec{r}_c)\\
+  z' &= \hat{z}'\cdot(\vec{r} - \vec{r}_c)
+  \end{align*}
+  Where $\hat{x}'$, $\hat{y}'$ and $\hat{z}'$ are unit vectors of local
+  $X'Y'Z'$ system, $\vec{r}$ is coordinate of a galaxy and $\vec{r}_c$
+  is coordinate of the center.
+
+  This values are calculated in the following table (0.5p for each
+  correct $x'$, $y'$, $z'$ tuple):
+
+  \begin{center}
+  \begin{tabular}{rrrrrrr}
+  & $x - x_c$ & $y - y_c$ & $z - z_c$ & $x'$ & $y'$ & $z'$\\
+  1 & 0.101124 & 0.109271 & 0.294476 & 0.176684 & $-0.277372$ & $-0.027025$\\
+  2 & 1.582909 & 0.989392 & 0.405895 & 1.892722 & $-0.207212$ & 0.154641\\
+  3 & 0.582735 & 0.213285 & 1.126426 & 0.710112 & $-1.057359$ & 0.177866\\
+  4 & 0.144328 & 0.369381 & 1.338567 & 0.476137 & $-1.295537$ & $-0.209558$\\
+  5 & $-0.517770$ & $-0.151687$ & $-1.458202$ & $-0.656729$ & 1.396668 & $-0.188336$\\
+  6 & 0.480059 & 0.105110 & 1.362674 & 0.588881 & $-1.307808$ & 0.203084\\
+  7 & $-0.309855$ & $-0.319116$ & $-0.568033$ & $-0.496739$ & 0.518483 & 0.070227\\
+  8 & 0.239541 & 0.188218 & $-0.730736$ & 0.225694 & 0.758807 & $-0.007438$\\
+  9 & $-0.324800$ & $-0.169551$ & 0.116378 & $-0.347375$ & $-0.153915$ & $-0.058541$\\
+  10 & $-1.227659$ & $-0.768684$ & $-0.612379$ & $-1.500158$ & 0.456538 & $-0.118862$\\
+  11 & $-0.263209$ & $-0.234869$ & $-0.485227$ & $-0.400698$ & 0.445410 & 0.030649\\
+  12 & 0.381200 & 0.282515 & $-0.365581$ & 0.433222 & 0.413634 & 0.001792\\
+  13 & $-1.185021$ & $-0.941303$ & 0.302593 & $-1.472310$ & $-0.460620$ & 0.044950\\
+  14 & 1.286640 & 0.930147 & $-0.777889$ & 1.496445 & 0.941150 & 0.024802\\
+  15 & $-0.106760$ & $-0.095804$ & $-0.184997$ & $-0.161600$ & 0.168879 & 0.012863\\
+  16 & $-0.686865$ & $-0.352750$ & 0.566244 & $-0.697350$ & $-0.643470$ & $-0.128449$
+  \end{tabular}
+  \end{center}
+
+\item[(d)] Spherical coordinates can by calculated by following
+  relations:
+  \[ r = \sqrt{x'^2 + y'^2 + z'^2} \]
+  \[ \phi = \arctan\frac{y'}{x'}\ \text{and signs of $x'$ and $y'$} \]
+  \[ \theta = \arccos\frac{z}{r} \]
+  Calculated values are given in the following table (0.5p for each
+  correct $r$, $\phi$, $\theta$ tuple):
+
+  \begin{center}
+  \begin{tabular}{rrrrrrr}
+  & $x'$ & $y'$ & $z'$ & $r$ & $\phi$ & $\theta$\\
+  1 & 0.176684 & $-0.277372$ & $-0.027025$ & 0.329974 & 5.279566 & 1.652789\\
+  2 & 1.892722 & $-0.207212$ & 0.154641 & 1.910301 & 6.174141 & 1.489757\\
+  3 & 0.710112 & $-1.057359$ & 0.177866 & 1.286042 & 5.303793 & 1.432047\\
+  4 & 0.476137 & $-1.295537$ & $-0.209558$ & 1.396079 & 5.064586 & 1.721471\\
+  5 & $-0.656729$ & 1.396668 & $-0.188336$ & 1.554814 & 2.010330 & 1.692226\\
+  6 & 0.588881 & $-1.307808$ & 0.203084 & 1.448581 & 5.135477 & 1.430138\\
+  7 & $-0.496739$ & 0.518483 & 0.070227 & 0.721461 & 2.334780 & 1.473302\\
+  8 & 0.225694 & 0.758807 & $-0.007438$ & 0.791695 & 1.281697 & 1.580191\\
+  9 & $-0.347375$ & $-0.153915$ & $-0.058541$ & 0.384430 & 3.558678 & 1.723672\\
+  10 & $-1.500158$ & 0.456538 & $-0.118862$ & 1.572587 & 2.846171 & 1.646452\\
+  11 & $-0.400698$ & 0.445410 & 0.030649 & 0.599906 & 2.303400 & 1.519685\\
+  12 & 0.433222 & 0.413634 & 0.001792 & 0.598981 & 0.762273 & 1.567805\\
+  13 & $-1.472310$ & $-0.460620$ & 0.044950 & 1.543336 & 3.444801 & 1.541667\\
+  14 & 1.496445 & 0.941150 & 0.024802 & 1.767973 & 0.561416 & 1.556768\\
+  15 & $-0.161600$ & 0.168879 & 0.012863 & 0.234094 & 2.334171 & 1.515821\\
+  16 & $-0.697350$ & $-0.643470$ & $-0.128449$ & 0.957522 & 3.886829 & 1.705349
+  \end{tabular}
+  \end{center}
+
+\item[(e)] Using radii calculated above and number of galaxies for each
+  data one can calculate number of galaxies in each bin. Range of bin 1
+  is (0.2, 0.425), bin 2 -- (0.425, 0.65) and so on bin 8 --
+  (1.775, 2.0).
+
+  Correct values for each bin are: (0.5p for each correct $n$)
+
+  \begin{center}
+  \begin{tabular}{rrr}
+  & Center of the bin & Number of the galaxies\\
+  1 & 0.312500 & 624\\
+  2 & 0.537500 & 451\\
+  3 & 0.762500 & 354\\
+  4 & 0.987500 & 293\\
+  5 & 1.212500 & 253\\
+  6 & 1.437500 & 210\\
+  7 & 1.662500 & 174\\
+  8 & 1.887500 & 170
+  \end{tabular}
+  \end{center}
+  % FIGURE NEEDED: histogram of number of galaxies vs distance (MPC),
+  % bin size 0.225 MPC (Figure 5, 2022_da_2_sol.pdf page 8)
+
+  In order to get probability density function each value of histogram
+  must be divided by it integral on the whole region. The integral can
+  be approximated by finding total area of the rectangles:
+  \[ I = \sum_{n=1}^{8}H(r_i)\,d = 569.025 \]
+  Where $d = 0.225$ is size of a bin. After dividing each data by $I$ we
+  get (0.25p for each correct probability density):
+
+  \begin{center}
+  \begin{tabular}{rrrr}
+  & Center of the bin & Number of the galaxies & Probability density\\
+  1 & 0.312500 & 624 & 1.096613\\
+  2 & 0.537500 & 451 & 0.792584\\
+  3 & 0.762500 & 354 & 0.622117\\
+  4 & 0.987500 & 293 & 0.514916\\
+  5 & 1.212500 & 253 & 0.444620\\
+  6 & 1.437500 & 210 & 0.369052\\
+  7 & 1.662500 & 174 & 0.305786\\
+  8 & 1.887500 & 170 & 0.298757
+  \end{tabular}
+  \end{center}
+  % FIGURE NEEDED: probability density of center-satellite distances in
+  % the same halo (Figure 6, 2022_da_2_sol.pdf page 9)
+
+\item[(f)] Since histogram equation has following form:
+  \[ H(r) = \frac{1}{A + B\cdot r} \]
+  We should calculate $1/H(r)$ which gives the following values (0.125
+  for each correct $1/H$):
+
+  \begin{center}
+  \begin{tabular}{rrrr}
+  & $r$ & $H(r)$ & $1/H(r)$\\
+  1 & 0.312500 & 624 & 0.001603\\
+  2 & 0.537500 & 451 & 0.002217\\
+  3 & 0.762500 & 354 & 0.002825\\
+  4 & 0.987500 & 293 & 0.003413\\
+  5 & 1.212500 & 253 & 0.003953\\
+  6 & 1.437500 & 210 & 0.004762\\
+  7 & 1.662500 & 174 & 0.005747\\
+  8 & 1.887500 & 170 & 0.005882
+  \end{tabular}
+  \end{center}
+  % FIGURE NEEDED: linearization plot 1/H(r) vs r for regression
+  % (Figure 7, 2022_da_2_sol.pdf page 9)
+
+  Finding the slope and the intercept of this line (by graph or any
+  other method) gives following values:
+  \[ A = 0.00065977;\qquad B = 0.00285494 \]
+\end{description}
+
+\textbf{Solutions -- Part 2}
+
+\begin{description}
+\item[(a)] We can $\phi$ values from Part 1.c to distribute them in 60
+  degree bins.
+  % sic: "We can phi values" as in source (missing "use")
+  In bin 1 we have number of galaxies which fall in (0, 60) degree
+  range, in bin 2 -- (60, 120) and so on bin 6 -- (300, 360).
+
+  Part 1.c data in degrees:
+
+  \begin{center}
+  \begin{tabular}{rrr}
+  & Angle & Number of galaxies\\
+  1 & 302.496846 & 291\\
+  2 & 353.752245 & 170\\
+  3 & 303.884926 & 253\\
+  4 & 290.179429 & 8\\
+  5 & 115.183442 & 72\\
+  6 & 294.241133 & 120\\
+  7 & 133.773013 & 302\\
+  8 & 73.435830 & 52\\
+  9 & 203.897219 & 28\\
+  10 & 163.073590 & 40\\
+  11 & 131.975076 & 72\\
+  12 & 43.675004 & 379\\
+  13 & 197.372555 & 82\\
+  14 & 32.166754 & 62\\
+  15 & 133.738158 & 305\\
+  16 & 222.698869 & 293
+  \end{tabular}
+  \end{center}
+
+  We get the following data for the histogram (0.5p for each correct
+  $n$):
+
+  \begin{center}
+  \begin{tabular}{rrr}
+  & Center of the bin & Number of galaxies\\
+  1 & 30 & 441\\
+  2 & 90 & 124\\
+  3 & 150 & 719\\
+  4 & 210 & 403\\
+  5 & 270 & 128\\
+  6 & 330 & 714
+  \end{tabular}
+  \end{center}
+
+  Uniform value is total number of galaxies divides by 6 which is
+  421.5. Square deviation is $241^\circ$ (1p)
+  % FIGURE NEEDED: histogram of number of galaxies vs phi angle,
+  % bin size 60 deg (Figure 8, 2022_da_2_sol.pdf page 11)
+
+\item[(b)] A galaxy with the orbital radius $r$ around central mass $M$
+  has velocity (2p):
+  \[ v = \sqrt{\frac{GM}{r}} \]
+  This will cause to give the following error in distance along line of
+  sight (2p):
+  \[ d = \frac{v}{H} = \frac{1}{H}\sqrt{\frac{GM}{r}} \]
+  Angle difference for galaxies at 90 and 270 degrees will be (2p):
+  \[ \alpha = \arctan\frac{d}{r}
+     = \arctan\frac{1}{H}\sqrt{\frac{GM}{r^3}} \]
+  % FIGURE NEEDED: geometric drawing of the line-of-sight correction
+  % (Figure 9, 2022_da_2_sol.pdf page 12)
+
+\item[(c)] Galaxies originally in bins of range (60, 120) and (240, 300)
+  might move to (120, 180) and (300, 360) respectively. So we should
+  subtract correction value found in previous task to the galaxies in
+  bins 2 and 5 to see if they move to bins 1 and 4 respectively. (0.25p
+  for each correct corrected angle)
+
+  \begin{center}
+  \begin{tabular}{rrrr}
+  & Original angle & Corrected angle & Number of galaxies\\
+  1 & 302.494665 & 276.136451 & 291\\
+  2 & 353.752069 & 351.714594 & 170\\
+  3 & 303.884728 & 300.199512 & 253\\
+  4 & 290.178642 & 290.178642 & 8\\
+  5 & 115.184577 & 115.184577 & 72\\
+  6 & 294.241835 & 294.241835 & 120\\
+  7 & 133.776280 & 125.061576 & 302\\
+  8 & 73.437747 & 73.437747 & 52\\
+  9 & 203.899065 & 203.899065 & 28\\
+  10 & 163.073490 & 160.346665 & 40\\
+  11 & 131.977481 & 120.548626 & 72\\
+  12 & 43.676971 & 43.676971 & 379\\
+  13 & 197.372956 & 197.372956 & 82\\
+  14 & 32.167948 & 32.167948 & 62\\
+  15 & 133.743596 & 94.077612 & 305\\
+  16 & 222.694636 & 222.694636 & 293
+  \end{tabular}
+  \end{center}
+
+  New corrected distribution looks like this (0.3p for each correct
+  $n$):
+
+  \begin{center}
+  \begin{tabular}{rrr}
+  & Center of the bin & Number of galaxies\\
+  1 & 30 & 441\\
+  2 & 90 & 429\\
+  3 & 150 & 414\\
+  4 & 210 & 403\\
+  5 & 270 & 419\\
+  6 & 330 & 423
+  \end{tabular}
+  \end{center}
+
+  In this case square deviation equals to $12^\circ$ (1p)
+  % FIGURE NEEDED: corrected histogram of number of galaxies vs phi
+  % angle, bin size 60 deg (Figure 10, 2022_da_2_sol.pdf page 13)
+\end{description}
+
+\textbf{Solutions -- Part 3}
+
+\begin{description}
+\item[(a)] With simple combinatorics one can get (0.6p for each correct
+  $N$):
+  \begin{align*}
+  N_{CC} &= N_C(N_C - 1) = 249500\\
+  N^{*}_{CS} &= N_C N_S = 500000\\
+  N_{CS} &= N_C(N_C - 1)N_S = 249500000\\
+  N^{*}_{SS} &= N_C N_S(N_S - 1) = 499500000\\
+  N_{SS} &= N_C N_S(N_C - 1)N_S = 249500000000
+  \end{align*}
+
+\item[(b)] We can calculate all probability densities using
+  center-center and center-satellite densities. Non-normalized values
+  (with $c_1 = c_2 = c_3 = 1$) are calculated in the following table
+  (0.5p for each correct tuple):
+
+  \begin{center}
+  \begin{tabular}{rrrrrrr}
+  & $r$ & $\rho^{*}_{CS}$ & $\rho_{CC}$ & $\rho^{*}_{SS}$
+    & $\rho_{SS}$ & $\rho_{CS}$\\
+  1 & 0.312500 & 1.096613 & 0.406141 & 0.375800 & 17.365137 & 0.975747\\
+  2 & 0.537500 & 0.792584 & 0.807863 & 0.337652 & 12.992898 & 0.994072\\
+  3 & 0.762500 & 0.622117 & 1.340510 & 0.295110 & 8.653487 & 0.988565\\
+  4 & 0.987500 & 0.514916 & 1.134011 & 0.261824 & 8.568351 & 0.837480\\
+  5 & 1.212500 & 0.444620 & 0.478630 & 0.239696 & 10.729180 & 0.638199\\
+  6 & 1.437500 & 0.369052 & 0.143154 & 0.195787 & 10.112507 & 0.458355\\
+  7 & 1.662500 & 0.305786 & 0.073165 & 0.155452 & 8.262279 & 0.352612\\
+  8 & 1.887500 & 0.298757 & 0.060971 & 0.168470 & 8.998531 & 0.379962
+  \end{tabular}
+  \end{center}
+
+  For normalization (same way as in Part 1.d) we get $c_1 = 2.18592$;
+  $c_2 = 0.79304$; $c_3 = 0.0516$. Multiplying relevant densities by
+  this values gives (0.5p for each correct normalized tuple):
+
+  \begin{center}
+  \begin{tabular}{rrrrr}
+  & $r$ & $\rho^{*}_{SS}$ & $\rho_{SS}$ & $\rho_{CS}$\\
+  1 & 0.312500 & 0.822854 & 0.900750 & 0.770962\\
+  2 & 0.537500 & 0.739325 & 0.673957 & 0.785441\\
+  3 & 0.762500 & 0.646175 & 0.448866 & 0.781089\\
+  4 & 0.987500 & 0.573292 & 0.444450 & 0.661713\\
+  5 & 1.212500 & 0.524839 & 0.556535 & 0.504257\\
+  6 & 1.437500 & 0.428697 & 0.524548 & 0.362158\\
+  7 & 1.662500 & 0.340380 & 0.428574 & 0.278607\\
+  8 & 1.887500 & 0.368883 & 0.466764 & 0.300217
+  \end{tabular}
+  \end{center}
+  % FIGURE NEEDED: plots of the normalized densities rho_CC, rho_CS,
+  % rho_SS (different halos) and rho*_SS (same halo)
+  % (Figures 11-14, 2022_da_2_sol.pdf pages 15-16)
+
+\item[(c)] Total probability density is weighted sum of all densities
+  (4p):
+  \[ \rho \sim \frac{N_{CC}\rho_{CC} + N^{*}_{CS}\rho^{*}_{CS}
+     + N_{CS}\rho_{CS} + N^{*}_{SS}\rho^{*}_{SS} + N_{SS}\rho_{SS}}
+     {N_{CC} + N^{*}_{CS} + N_{CS} + N^{*}_{SS} + N_{SS}} \]
+
+  Calculated values and normalized densities are given in the following
+  table:
+
+  \begin{center}
+  \begin{tabular}{rrrr}
+  & $r$ & Calculated $\rho$ & Normalized $\rho$\\
+  1 & 0.312500 & 0.004212 & 0.843662\\
+  2 & 0.537500 & 0.003606 & 0.722433\\
+  3 & 0.762500 & 0.002967 & 0.594357\\
+  4 & 0.987500 & 0.002693 & 0.539524\\
+  5 & 1.212500 & 0.002663 & 0.533361\\
+  6 & 1.437500 & 0.002265 & 0.453652\\
+  7 & 1.662500 & 0.001813 & 0.363239\\
+  8 & 1.887500 & 0.001968 & 0.394216
+  \end{tabular}
+  \end{center}
+  % FIGURE NEEDED: final probability density plot (Figure 15,
+  % 2022_da_2_sol.pdf page 16)
+
+  Most similar to this density is plot E on Figure 1 (1p).
+\end{description}

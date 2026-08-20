@@ -1,0 +1,142 @@
+\paragraph{Part (a)}
+
+Didymos' mass is much larger than Dimorphos' mass. Therefore, the radius of
+the orbit of Dimorphos before impact, $a$, can be calculated from Kepler's 3rd
+law:
+\[
+  \frac{GM}{4\pi^2} = \frac{a^3}{P^2},
+\]
+and therefore:
+\[
+  a = \left(\frac{GMP^2}{4\pi^2}\right)^{1/3} = 1.2\,\mathrm{km}.
+\]
+The orbital velocity of Dimorphos before impact was:
+\[
+  v_0 = \frac{2\pi a}{P} = 0.176\,\mathrm{m/s}.
+\]
+\hfill(2 points)
+
+Let $v'$ be the Dimorphos velocity right after the collision. Using the law of
+conservation of momentum, we have:
+\[
+  mv_0 - m_s v_s = (m + m_s)v',
+\]
+and:
+\[
+  v' = \frac{mv_0 - m_s v_s}{m + m_s} \approx v_0 - \frac{m_s}{m}v_s,
+\]
+where we used the fact that the mass of the spacecraft mass is much smaller % sic: "the mass of the spacecraft mass"
+than the mass of Dimorphos.
+
+We then use the vis-viva equation to calculate the semi-major axis of the
+orbit after collision $a'$:
+\[
+  (v')^2 = GM\left(\frac{2}{a} - \frac{1}{a'}\right)
+    = \frac{GM}{a}\left(2 - \frac{a}{a'}\right)
+    = v_0^2\left(2 - \frac{a}{a'}\right),
+\]
+so
+\[
+  2 - \frac{a}{a'} = \left(\frac{v'}{v_0}\right)^2
+    = \left(1 - \frac{m_s}{m}\frac{v_s}{v_0}\right)^2
+    \approx 1 - \frac{2m_s}{m}\frac{v_s}{v_0}.
+\]
+Thus, the semi-major axis changed by:
+\[
+  \frac{\Delta a}{a} = \frac{a' - a}{a} = -\frac{2m_s}{m}\frac{v_s}{v_0}.
+\]
+\hfill(8 points)
+
+If the semi-major axis changes from $a$ to $a + \Delta a$, then the orbital
+period changes from $P$ to $P + \Delta P$, and the mass of the spacecraft can
+be neglected. Then:
+\[
+  \frac{a^3}{P^2} = \frac{(a + \Delta a)^3}{(P + \Delta P)^2}
+    = \frac{a^3(1 + \Delta a/a)^3}{P^2(1 + \Delta P/P)^2}
+    = \frac{a^3}{P^2}
+      \left(1 + \frac{3\Delta a}{a} - \frac{2\Delta P}{P}\right),
+\]
+hence:
+\[
+  \frac{\Delta P}{P} = \frac{3}{2}\frac{\Delta a}{a}.
+\]
+Thus, the orbital period changes by:
+\[
+  \frac{\Delta P}{P} = \frac{3}{2}\frac{\Delta a}{a}
+    = -\frac{3m_s}{m}\frac{v_s}{v_0}
+\]
+\hfill(8 points)
+
+We therefore expect that the orbital period of Dimorphos should decrease by
+1.4\%, that is, 10 minutes. \hfill(2 points)
+
+\medskip
+\textit{Alternative solution (requires better numerical precision)}
+\begin{align*}
+  v_0 &= 0.17622\ \mathrm{m/s} \\
+  v' &= 0.17662 - 0.00082 = 0.17540\ \mathrm{m/s} \\ % sic: 0.17662 for 0.17622
+  a' &= 0.99080a = 1192.5\ \mathrm{m} \\
+  P' &= 705.4\ \mathrm{min}
+\end{align*}
+Hence $\Delta P = 705.4 - 715.2 = -9.8 \approx -10$\,min. I propose to grant
+full points ONLY if the first four significant figures match the solution. If
+the first three significant figures match the solution, grant 80\% of the
+points. Otherwise (if the method is correct), grant HALF of the points.
+
+\paragraph{Part (b)}
+
+Let $\Delta p$ be the momentum of the ejected debris. Then, the momentum
+conservation equation becomes:
+\[
+  mv_0 - m_s v_s = (m + m_s)v' + \Delta p,
+\]
+\hfill(4 points)
+
+so:
+\[
+  v' = \frac{mv_0 - m_s v_s - \Delta p}{m + m_s}
+    \approx v_0 - \frac{m_s}{m}v_s - \frac{\Delta p}{m}.
+\]
+Using similar calculations as in point a), we get:
+\[
+  \frac{\Delta a}{a}
+    = -2\left(\frac{m_s}{m}\frac{v_s}{v_0} + \frac{\Delta p}{mv_0}\right),
+\]
+\hfill(8 points)
+
+hence:
+\[
+  \frac{\Delta P_0}{P} = \frac{3}{2}\frac{\Delta a}{a}
+    = -3\left(\frac{m_s}{m}\frac{v_s}{v_0} + \frac{\Delta p}{mv_0}\right).
+\]
+Thus:
+\[
+  \frac{\Delta p}{mv_0} = -\frac{\Delta P_0}{3P}
+    - \frac{m_s}{m}\frac{v_s}{v_0} = 0.011.
+\]
+\hfill(3 points)
+
+\medskip
+\textit{Alternative solution (requires better numerical precision)}
+
+The orbital period after the collision is
+$P' = 11.92 - 33/60 = 11.37$\,h. Thus, the semi-major axis of the orbit (after
+the collision) is
+\[
+  a' = \left(\frac{GMP'^2}{4\pi^2}\right)^{1/3} = 1166\,\mathrm{m}.
+\]
+The velocity of Dimorphos right after the collision is
+$v' = v_0\sqrt{2 - a/a'} = 0.1734\,\mathrm{m\,s^{-1}}$, so
+$\Delta p/mv_0 = 0.011$. I propose to grant full points ONLY if the first four
+significant figures match the solution. If the first three significant figures
+match the solution, grant 80\% of the points. Otherwise (if the method is
+correct), grant HALF of the points.
+
+\paragraph{Part (c)}
+\[
+  \Delta v = v' - v_0
+    = -\frac{m_s}{m}v_s - \frac{\Delta p}{m}
+    = -\frac{m_s}{m}v_s + \frac{\Delta P_0}{3P}v_0 + \frac{m_s}{m}v_s
+    = \frac{\Delta P_0}{3P}v_0 = -2.7\,\mathrm{mm/s}.
+\]
+\hfill(5 points)

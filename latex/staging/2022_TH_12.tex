@@ -1,0 +1,65 @@
+This question applies a method of determining the masses of two approximately
+co-orbital satellites developed by Dermott and Murray in 1981.
+
+Suppose that two small satellites of masses $m_1$ and $m_2$ are approximately
+co-orbital (moving on very similar orbits) around a large central body of mass
+$M$, with $m_1,\,m_2 \ll M$. At any instant, the orbits of the satellites may
+be approximated as circular Keplerian orbits with radii $r_1$ and $r_2$
+respectively, although $r_1$ and $r_2$ will vary slightly over time due to the
+mutual gravitational interaction between the satellites.
+
+Figure 4 depicts the shapes of the orbits in the rotating reference frame with
+zero angular momentum, centred on the central body. We denote by $\theta$ the
+angle $\measuredangle m_1 M m_2$, while $R$, $x_1$, and $x_2$ denote the mean
+orbital radius and radial deviations of the satellites.
+
+Throughout this problem, write all answers in an inertial reference frame.\\
+\emph{Hint:} $(1+x)^\alpha \approx 1 + \alpha x$ for $\alpha x \ll 1$
+
+\ioaafig{2022_TH_12-f1.pdf}
+
+First we will determine the value of $\frac{m_1}{m_2}$.
+
+\begin{description}
+\item[(a)] Write down the angular momentum $L_i$ of the satellite with mass
+  $m_i$ when its circular orbit has radius $r_i$. \hfill(3\,pt)
+\item[(b)] The satiletes total angular momentum $L_1 + L_2$ is conserved. Let
+  $x_1,\,x_2 \ll R$ be the distances as shown in Figure 4. Find a simple
+  relation between the ratios $\frac{m_1}{m_2}$ and $\frac{x_1}{x_2}$.
+  \hfill(8\,pt)
+
+  Now, we will try and determine the value of $m_1 + m_2$. For next parts, we
+  will use the actual barycenter of the system, which may not be exactly at
+  the center of the planet.
+\item[(c)] The individual angular momenta of the satellites $m_1$ and $m_2$
+  will vary over time due to their gravitational interactions. Show that the
+  rate of change of the angular momentum of the second satellite is given by
+  \[ \frac{\Delta L_2}{\Delta t} \approx -\frac{G m_1 m_2}{R} h(\theta)
+     \quad\text{where}\quad
+     h(\theta) = \left[
+       \frac{\cos\left(\frac{\theta}{2}\right)}
+            {4\sin^2\left(\frac{\theta}{2}\right)} - \sin\theta \right] \]
+  \hfill(18\,pt)
+\item[(d)] Show that $s = r_2 - r_1$ satisfies
+  \[ \frac{\Delta s}{\Delta t} \approx
+     -2\sqrt{\frac{G}{MR}}\,(m_1 + m_2)\,h(\theta) \]
+  \hfill(8\,pt)
+\item[(e)] For the angle $\theta = \measuredangle m_1 M m_2$ as indicated on
+  Figure 4, find an expression for
+  $\dfrac{\Delta\theta}{\Delta t}$ \hfill(5\,pt)
+\item[(f)] Using the results above, find the relation between $\Delta s$ and
+  $\Delta\theta$. \hfill(2\,pt)
+\item[(g)] After integrating the expression above, we will obtain the result,
+  \[ \overline{x}^2 \approx \frac{4R^2}{3}\,\frac{m_1 + m_2}{M}
+     \left( \frac{1}{\sin\left(\frac{\theta_{\min}}{2}\right)}
+       - 2\cos\theta_{\min} - 3 \right) \]
+  where $\overline{x} = \dfrac{x_1 + x_2}{2}$.
+
+  Epimetheus ($m_1$) and Janus ($m_2$) are two approximately co-orbital moons
+  of Saturn. Detailed observations of their orbits have been performed by the
+  Voyager 1 and Cassini spacecraft, which found that $R = 150\,000$\,km,
+  $x_1 = 76$\,km and $x_2 = 21$\,km. The minimum distance between Janus and
+  Epimetheus is $13\,000$\,km. The mass of Saturn is known to be
+  $5.7 \times 10^{26}$\,kg. Estimate the masses of Epimetheus and Janus.
+  \hfill(6\,pt)
+\end{description}

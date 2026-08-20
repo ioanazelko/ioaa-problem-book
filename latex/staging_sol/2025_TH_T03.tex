@@ -1,0 +1,87 @@
+\begin{description}
+\item[(T03.1)] Assuming Newtonian gravity, for black hole masses $M$ and $m$
+  at distances $R$ and $r$, respectively, from their centre of mass,
+  \begin{align*}
+    \omega^2 r &= \frac{GM}{(R+r)^2} \\
+    \omega &= \left[\frac{GM}{r(R+r)^2}\right]^{1/2}
+  \end{align*}
+  \hfill(1 point)
+
+  Since $MR = mr$, we can rewrite this as
+  \[ \omega = \left[\frac{G(M+m)}{(R+r)^3}\right]^{1/2} \]
+  \hfill(1 point)
+
+  Let $R_{\mathrm{s}}$ and $r_{\mathrm{s}}$ be the respective Schwarzschild
+  radii of the black holes of mass $M$ and $m$. Expressing the separation
+  $(r+R) = 4.0 \times (r_{\mathrm{s}} + R_{\mathrm{s}})$ at
+  $t_{\mathrm{ini}}$, we obtain,
+  \begin{align*}
+    \omega_{\mathrm{ini}}
+      &= \left[\frac{G(M+m)}{4^3 (R_{\mathrm{s}}+r_{\mathrm{s}})^3}\right]^{1/2}
+       = \left[\frac{c^6 G(M+m)}{8 \times 4^3 G^3 (M+m)^3}\right]^{1/2} \\
+      &= \frac{c^3}{16\sqrt{2}\,G(M+m)} \\
+    \omega_{\mathrm{ini}} &= \frac{c^3}{16\sqrt{2}\,G(M+m)}
+  \end{align*}
+  \hfill(2 points)
+
+  Substituting the values of the masses,
+  \[ \omega_{\mathrm{ini}} = 1.4 \times 10^2\,\mathrm{rad\,s^{-1}}. \]
+  \hfill(1 point)
+
+\item[(T03.2)] We use dimensional analysis to calculate the exponents in the
+  above equation. The dimension of $\mathcal{M}_{\mathrm{chirp}}$ is [M].
+
+  The dimensions of the left and right hand sides of the equation are
+  \[ [\mathrm{T}]^{-2} = [\mathrm{T}]^{-\delta/3}
+     \left([\mathrm{L}]^3[\mathrm{T}]^{-2}[\mathrm{M}]^{-1}\right)^{5/3}
+     \left([\mathrm{L}][\mathrm{T}]^{-1}\right)^{\beta}
+     [\mathrm{M}]^{\alpha/3} \]
+  \hfill(1 point)
+
+  Equating the dimensions for T, L, and M, we get
+  \begin{align*}
+    -2 &= -\frac{\delta}{3} - \frac{10}{3} - \beta \\
+    0 &= 5 + \beta \\
+    0 &= \frac{\alpha}{3} - \frac{5}{3},
+  \end{align*}
+  respectively. Solving, we get $\alpha = 5$, $\beta = -5$ and $\delta = 11$.
+  \hfill(3 points)
+
+\item[(T03.3)] From (T03.2), we get
+  \[ \frac{\mathrm{d}f_{\mathrm{GW}}}{\mathrm{d}t}
+     = \frac{96\pi^{8/3}}{5}\,\frac{G^{5/3}}{c^5}\,
+       \mathcal{M}_{\mathrm{chirp}}^{5/3} f_{\mathrm{GW}}^{11/3}. \]
+  \hfill(1 point)
+
+  Integrating the equation for $f_{\mathrm{GW}}$, we obtain
+  \[ \int_{\omega_{\mathrm{ini}}/\pi}^{\infty}
+     f_{\mathrm{GW}}^{-11/3}\,\mathrm{d}f_{\mathrm{GW}}
+     = \int_{0}^{t_{\mathrm{merge}}} \frac{96\pi^{8/3}}{5}\,
+       \frac{G^{5/3}}{c^5}\,\mathcal{M}_{\mathrm{chirp}}^{5/3}\,\mathrm{d}t \]
+  \hfill(1 point)
+  \[ \left.-\frac{3}{8} f_{\mathrm{GW}}^{-8/3}
+     \right|_{\omega_{\mathrm{ini}}/\pi}^{\infty}
+     = \frac{96\pi^{8/3}}{5}\,\frac{G^{5/3}}{c^5}\,
+       \mathcal{M}_{\mathrm{chirp}}^{5/3}\,t_{\mathrm{merge}} \]
+  \hfill(1 point)
+  \begin{align*}
+    t_{\mathrm{merge}}
+      &= \frac{3}{8}\left[\frac{\omega_{\mathrm{ini}}}{\pi}\right]^{-8/3}
+         \frac{5}{96\pi^{8/3}}\,\frac{c^5}{G^{5/3}}\,
+         \frac{1}{\mathcal{M}_{\mathrm{chirp}}^{5/3}} \\
+      &= \frac{5}{256}\,\omega_{\mathrm{ini}}^{-8/3}\,
+         \frac{c^5}{(G\mathcal{M}_{\mathrm{chirp}})^{5/3}}. \\
+    t_{\mathrm{merge}}
+      &= \frac{5}{256}\,\omega_{\mathrm{ini}}^{-8/3}\,
+         \frac{c^5}{(G\mathcal{M}_{\mathrm{chirp}})^{5/3}}
+  \end{align*}
+  \hfill(1 point)
+
+  We calculate
+  $\mathcal{M}_{\mathrm{chirp}} = \dfrac{(mM)^{3/5}}{(m+M)^{1/5}}
+   = 28\,\mathrm{M}_\odot$. \hfill(1 point)
+
+  Substituting the values of $\mathcal{M}_{\mathrm{chirp}}$, and
+  $\omega_{\mathrm{ini}}$ we get the value of
+  $t_{\mathrm{merge}} = 0.10$\,s. \hfill(1 point)
+\end{description}

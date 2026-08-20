@@ -1,0 +1,77 @@
+The relay satellite revolves on a circular orbit, due to the gravitational
+forces of the Earth and the Moon. Its net acceleration is: \hfill(4 p)
+\begin{equation*}
+\left(r + \frac{M}{m + M}R\right)\omega^2
+  = \frac{GM}{(R + r)^2} + \frac{Gm}{r^2}, \tag{9.1}
+\end{equation*}
+where $R$ and $r$ denote the (constant) distances between Earth and Moon, and
+between Moon and the satellite, respectively, while $M$ and $m$ stand for the
+masses of Earth and Moon, respectively. Using Kepler's third law, the angular
+velocity of the satellite, which is equal to the angular velocity of the Moon
+can be written as \hfill(2 p)
+\begin{equation*}
+\omega^2 = \frac{4\pi^2}{P^2} = \frac{G(M + m)}{R^3}. \tag{9.2}
+\end{equation*}
+Substituting Eq.\ (9.2) into Eq.\ (9.1), eliminating the gravitational
+constant ($G$), and introducing the dimensionless quantity $x = r/R$, we
+obtain \hfill(2 p + 2 p)
+\begin{gather*}
+\frac{(M + m)x + M}{R^2} = \frac{M}{R^2(1 + x)^2} + \frac{m}{R^2 x^2}
+  \tag{9.3} \\
+(M + m)x + M = \frac{M}{(1 + x)^2} + \frac{m}{x^2}. \tag{9.4}
+\end{gather*}
+Assuming that $x = r/R \ll 1$ we can apply the approximation
+$(1 + x)^{-2} \approx 1 - 2x$, which leads to the following expression:
+\hfill(2 p)
+\begin{equation*}
+(M + m)x + M = M(1 - 2x) + \frac{m}{x^2}, \tag{9.5}
+\end{equation*}
+from which we get \hfill(2 p)
+\begin{equation*}
+x^3 = \frac{m}{3M + m}. \tag{9.6}
+\end{equation*}
+Substituting the mass ratio $m/M = 0.0123$ of the Earth--Moon system one can
+obtain \hfill(2 p)
+\begin{equation*}
+x = 0.159\,83, \tag{9.7}
+\end{equation*}
+and therefore \hfill(2 p)
+\begin{equation*}
+r = xR_{\mathrm{Moon}} = 0.159\,83 \times 384\,400\,\mathrm{km}
+  = 61\,440\,\mathrm{km} \tag{9.8}
+\end{equation*}
+% sic: the source writes "xR_Moon" although 384 400 km is the Earth--Moon
+% distance R, not the radius of the Moon.
+From this result we should subtract the radius of the Moon, and such a way we
+obtain that \hfill(2 p)
+\begin{equation*}
+h = r - R_{\mathrm{Moon}} = 61\,440\,\mathrm{km} - 1737\,\mathrm{km}
+  = \boxed{59\,703\,\mathrm{km}} \tag{9.9}
+\end{equation*}
+
+Here is another solution, which is erroneous in principle (or say,
+``approximative'') but numerically gives an almost equivalent result.
+
+One might say, that $m \ll M$ and therefore $m$ can be neglected either in
+the left hand side of Eq.\ (9.1) and in the r.h.s.\ of Eq.\ (9.2), i.e.\ one
+can use the following approximation:
+\begin{equation*}
+M + m \approx M \tag{9.10}
+\end{equation*}
+In this case instead of Eq.\ (9.6) one can arrive at
+\begin{equation*}
+x^3 = \frac{m}{3M}, \tag{9.11}
+\end{equation*}
+which leads to
+\begin{equation*}
+x = 0.160\,05, \tag{9.12}
+\end{equation*}
+and therefore,
+\[ r = xR_{\mathrm{Moon}} = 0.160\,05 \times 384\,400\,\mathrm{km}
+   = 61\,524\,\mathrm{km} \]
+and, finally
+\[ h = r - R_{\mathrm{Moon}} = 61\,524\,\mathrm{km} - 1737\,\mathrm{km}
+   = 59\,787\,\mathrm{km} \]
+This latter should be accepted as a full point solution, too. If, however,
+$m$ is dropped out only from one of the two equations, then at least 2 points
+should be subtracted.

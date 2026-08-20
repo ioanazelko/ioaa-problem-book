@@ -1,0 +1,197 @@
+% FIGURE NEEDED: setup sketch at the head of the official solution (2021 TQ14,
+% solutions page 1): dashed circle "Orbit of venus" around the Sun, Venus of
+% mass m on the circle at distance R_0 from the Sun, and the comet of mass
+% "alpha m" approaching radially from the left.
+
+\begin{description}
+\item[14.1] Let $M$ be the mass of the Sun, then
+  \begin{align*}
+    \frac{GMm}{R_0^2} &= \frac{mv_0^2}{R_0} \\
+    v_0^2 &= \frac{GM}{R_0}
+  \end{align*}
+  \hfill[1 point]
+
+\item[14.2] The mechanical energy of Venus (before collision) is:
+  \[
+    E_i = -\frac{GMm}{R_0} + \frac{1}{2}mv_0^2 = -\frac{GMm}{2R_0}
+  \]
+  \hfill[1 point]
+
+\item[14.3] Since the comet moves radially towards the Sun, it has no angular
+  momentum (with respect to the origin in the Sun). Then, the angular momentum
+  of Venus is the same as that of ``Venus-2''
+  \[
+    L = R_0 m v_0
+  \]
+  \hfill[2 point] % sic: "[2 point]"
+
+  This allows us to find the angular component of the velocity of Venus,
+  $v_\theta$, just after the collision. The angular momentum just after the
+  collision is
+  \[
+    L = R_0 m v_0 = R_0(m + \alpha m)v_\theta
+  \]
+  \hfill[1 points] % sic: "[1 points]"
+
+  Since the angular momentum is conserved it follows that
+  \[
+    v_\theta = \frac{v_0}{1 + \alpha}
+  \]
+  The comet has zero energy, so
+  \[
+    K = -U = +\frac{GM\alpha m}{R_0} = \frac{1}{2}\alpha m v_c^2
+  \]
+  \hfill[2 points]
+
+  where $v_c$ is the velocity of the comet just before the collision. It
+  follows that
+  \[
+    v_c^2 = \frac{2GM}{R_0} = 2v_0^2
+  \]
+  \hfill[1 point]
+
+  The collision between the comet and Venus is inelastic, thus the total
+  energy is not conserved. Also notice that the mass of ``Venus-2'' is
+  $(1 + \alpha)m$. \hfill[2 point] % sic: "[2 point]"
+
+  We now apply the conservation of linear momentum. Along the radial direction
+  we get
+  \[
+    \alpha m v_c = (m + \alpha m)v_r
+  \]
+  \hfill[1 point]
+
+  where $v_r$ is the velocity of ``Venus-2'' just after the collision. It
+  follows that
+  \[
+    v_r = \frac{\alpha}{1 + \alpha}v_c = \frac{\sqrt{2}\,\alpha}{1 + \alpha}v_0
+  \]
+  \hfill[1 point]
+
+\item[14.4] Venus-2 mechanical energy (we evaluate it just after the
+  collision) is:
+  \[
+    E_f = U + K = -\frac{GMm(1 + \alpha)}{R_0}
+      + \frac{1}{2}m(1 + \alpha)\left(v_\theta^2 + v_r^2\right)
+  \]
+  \hfill[4 points]
+  \begin{align*}
+    &= -(1 + \alpha)\frac{GMm}{R_0} + \frac{1}{2}(1 + \alpha)
+      \left[2\left(\frac{\alpha}{1 + \alpha}\right)^2
+      + \frac{1}{(1 + \alpha)^2}\right]\frac{GMm}{R_0} \\
+    &= -\frac{GMm}{2R_0}\left(\frac{1 + 4\alpha}{1 + \alpha}\right)
+      = E_i\left(\frac{1 + 4\alpha}{1 + \alpha}\right)
+  \end{align*}
+  \hfill[1 point]
+
+\item[14.5] ``Venus-2'' orbit is no longer a circle. Since the energy is
+  negative it must, therefore, be elliptical. It follows that
+  \hfill[1 points] % sic: "[1 points]"
+  \[
+    E_f = -G\frac{M(1 + \alpha)m}{2a_f}
+  \]
+  \hfill[2 points]
+
+  where $a_f$ is the semi-major axis of the orbit of Venus-2. Now, solving for
+  $a_f$:
+  \begin{align*}
+    -G\frac{M(1 + \alpha)m}{2a_f}
+      &= E_i\left(\frac{1 + 4\alpha}{1 + \alpha}\right)
+       = -G\frac{Mm}{2R_0}\left(\frac{1 + 4\alpha}{1 + \alpha}\right) \\
+    \frac{(1 + \alpha)}{a_f}
+      &= \frac{1}{R_0}\left(\frac{1 + 4\alpha}{1 + \alpha}\right) \\
+    a_f &= R_0\,\frac{(1 + \alpha)^2}{1 + 4\alpha}
+  \end{align*}
+  \hfill[2 points]
+
+\item[14.6] Using Kepler's third law, we have that
+  \[
+    \frac{T_f}{T_0} = \left(\frac{a_f}{R_0}\right)^{3/2}
+  \]
+  \hfill[2 points]
+  \[
+    \frac{T_f}{T_0}
+      = \left(\frac{(1 + \alpha)^2}{1 + 4\alpha}\right)^{3/2}
+      = \frac{(1 + \alpha)^3}{(1 + 4\alpha)^{3/2}}
+  \]
+  \hfill[1 points] % sic: "[1 points]"
+
+  For $\alpha < 2$, the year is shorter, for $\alpha > 2$, the year is longer,
+  while for $\alpha = 2$ the duration of the year does not change.
+
+\item[14.7] For the `Venus-2' to collide with the Sun, the perihelion radius
+  of the post-collision orbit should be $R_\odot$. \hfill[1 point]
+  \[
+    r_p = R_\odot = 6.955\times10^{8}\,m
+      = \frac{6.955\times10^{8}}{0.723\times1.496\times10^{11}}R_0
+      = 0.00643R_0
+  \]
+  Let $x = \dfrac{R_\odot}{R_0} = 0.00643$.
+
+  Now, we apply conservation of angular momentum right after the collision and
+  at the moment ``Venus-2'' is at the perihelion:
+  \[
+    L = mv_0R_0 = (1 + \alpha)mv_pR_\odot
+  \]
+  where $v_p$ is the speed of Venus-2 at the perihelion. Solving for $v_p$
+  \[
+    v_p = \frac{v_0}{x(1 + \alpha_c)}
+  \]
+  Applying conservation of energy between the two same instants we obtain:
+  \begin{align*}
+    E_f &= -\frac{GM(1 + \alpha_c)m}{R_\odot}
+      + \frac{1}{2}m(1 + \alpha_c)v_p^2 \\
+    -\left(\frac{1 + 4\alpha_c}{1 + \alpha_c}\right)\frac{GMm}{2R_0}
+      &= -\frac{GM(1 + \alpha_c)m}{xR_0}
+      + \frac{1}{2}m(1 + \alpha_c)
+        \left(\frac{v_0}{x(1 + \alpha_c)}\right)^2 \\
+    -\left(\frac{1 + 4\alpha_c}{1 + \alpha_c}\right)\frac{GMm}{2R_0}
+      &= -\frac{(1 + \alpha_c)}{x}\frac{GMm}{R_0}
+      + \frac{1}{2}(1 + \alpha_c)
+        \left(\frac{1}{x(1 + \alpha_c)}\right)^2\frac{GMm}{R_0} \\
+    -\frac{1}{2}\left(\frac{1 + 4\alpha_c}{1 + \alpha_c}\right)
+      &= -\frac{(1 + \alpha_c)}{x}
+      + \frac{1}{2}(1 + \alpha_c)
+        \left(\frac{1}{x(1 + \alpha_c)}\right)^2 \\
+    (1 + 4\alpha_c) &= \frac{2(1 + \alpha_c)^2}{x} - \frac{1}{x^2}
+  \end{align*}
+  \hfill[3 points]
+  \begin{align*}
+    2x\alpha_c^2 + 4x(1 - x)\alpha_c - (1 - x)^2 &= 0 \\
+    \alpha_c = (1 - x)\left(\sqrt{1 + \frac{1}{2x}} - 1\right) & \\
+    \alpha_c = 7.824 &
+  \end{align*}
+  \hfill[1 point]
+
+\item[14.8] For post-collision orbit,
+  \begin{align*}
+    v_\theta &= \frac{1}{1 + \alpha_c}v_0 \\
+    v_r &= \frac{\sqrt{2}\,\alpha_c}{1 + \alpha_c}v_0 \\
+    v_f &= \sqrt{v_r^2 + v_\theta^2}
+  \end{align*}
+  \hfill[1 point]
+  \[
+    v_f = \frac{\sqrt{2\alpha_c^2 + 1}}{1 + \alpha_c}v_0
+  \]
+  \hfill[3 point] % sic: "[3 point]"
+
+  Thus,
+  \begin{align*}
+    \delta v &= v_0 - v_f \\
+      &= \left(1 - \frac{\sqrt{2\alpha_c^2 + 1}}{1 + \alpha_c}\right)v_0 \\
+      &= -0.259\,v_0
+  \end{align*}
+  \[
+    \frac{\delta v}{v_0} = 25.9\%
+  \]
+  \hfill[0.5 points]
+  \begin{align*}
+    \tan\delta\theta &= \left(\frac{v_r}{v_\theta}\right) \\
+    \tan\delta\theta &= \left(\sqrt{2}\,\alpha_c\right) \\
+    \delta\theta &= 1.480\ \mathrm{rad}
+  \end{align*}
+  \hfill[0.5 points]
+  \[
+    \delta\theta = 84.84^\circ
+  \]
+\end{description}

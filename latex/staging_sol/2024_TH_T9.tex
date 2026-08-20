@@ -1,0 +1,113 @@
+\begin{description}
+\item[(a)] For a Keplerian orbit:
+  \[ \Delta m\frac{v_k^2}{r} = \frac{GM\Delta m}{r^2}
+     \ \Rightarrow\ v_k^2 = \frac{GM}{r} \]
+  \hfill(2.0 pt)
+
+  Total energy:
+  \[ E = E_{kin} + E_{pot}
+     \ \Rightarrow\ E(r) = \frac{1}{2}\Delta m v_k^2 - \frac{GM\Delta m}{r}
+     \ \Rightarrow\ E(r) = -\frac{1}{2}\frac{GM\Delta m}{r} \]
+  \hfill(2.0 pt)
+  \[ E(R_{max}) - E(r)
+     = \frac{1}{2}GM\Delta m\left(\frac{1}{r} - \frac{1}{R_{max}}\right)
+     = \frac{GM\Delta m}{2r}\left(1 - \frac{r}{R_{max}}\right)
+     \approx \frac{GM\Delta m}{2r} \]
+  \hfill(1.0 pt)
+
+  Therefore:
+  \[ \boxed{\frac{\Delta E}{\Delta m} \approx \frac{GM}{2r}} \]
+  \hfill(1.0 pt)
+\item[(b)] Variation in energy:
+  \[ \Delta E_{Tot} = E(R_{max}) - E(R_{min}) \]
+  Luminosity:
+  \[ L_{Tot} = \frac{\Delta E_{Tot}}{\Delta t}
+     = \frac{\Delta E_{Tot}}{\Delta m}\times\dot{M} \]
+  \hfill(3.0 pt)
+  \[ \boxed{L_{Tot} = \frac{GM\dot{M}}{2R_{min}}} \]
+  \hfill(2.0 pt)
+
+  Where the result from (a) was used, allied with $R_{min} \ll R_{max}$.
+\item[(c)] Variation in the energy of the tiny mass:
+  \[ \Delta E = E(r + \Delta r) - E(r)
+     = \frac{1}{2}GM\Delta m\left(\frac{1}{r} - \frac{1}{r + \Delta r}\right)
+     \approx \frac{1}{2}GM\Delta m
+       \left(\frac{\Delta r}{r^2(1 + \Delta r/r)}\right) \]
+  \[ \Rightarrow\ \frac{\Delta E}{\Delta m}
+     \approx \frac{1}{2}GM\Delta r\,\frac{1}{r^2} \]
+  \hfill(5.0 pt)
+
+  Multiplying this expression by the rate of mass variation per time, it is
+  possible to obtain an expression for $\frac{\Delta E}{\Delta t\Delta r}$:
+  \[ \frac{\Delta E}{\Delta t} = \frac{\Delta E}{\Delta m}\times\dot{M}
+     = \frac{GM\dot{M}\Delta r}{2r^2} \]
+  \[ \Rightarrow\ \boxed{\frac{\Delta E}{\Delta t\Delta r}
+     = \frac{GM\dot{M}}{2r^2}} \]
+  \hfill(3.0 pt)
+\item[(d)] Surface area of the ring:
+  \[ A = 2\left[\pi(r + \Delta r)^2 - \pi r^2\right]
+     = 2(\pi r^2 + 2\pi r\Delta r + \pi\Delta r^2 - \pi r^2) \]
+  \hfill(4.0 pt)
+  \[ \Rightarrow\ A \approx 4\pi r\Delta r \]
+  Using Stefan-Boltzmann's law:
+  \[ A\sigma T^4 = L \]
+  \hfill(2.0 pt)
+  \[ 4\pi r\Delta r\sigma T^4 = \frac{\Delta E}{\Delta t}
+     \ \Rightarrow\ 4\pi r\sigma T^4 = \frac{\Delta E}{\Delta r\Delta t} \]
+  \hfill(2.0 pt)
+  \begin{align*}
+    4\pi r\sigma T^4 &= \frac{GM\dot{M}}{2r^2}\\
+    \Rightarrow\ &\boxed{T = \left(\frac{GM\dot{M}}
+      {8\pi\sigma r^3}\right)^{1/4}}
+  \end{align*}
+  \hfill(2.0 pt)
+\item[(e)] Internal radius of the ring:
+  \[ R_{sch} = \frac{2GM}{c^2}
+     \ \Rightarrow\ R_{min} = 3R_{sch} = \frac{6GM}{c^2} \]
+  \[ R_{min} = \frac{6GM}{c^2}
+     = \frac{6\times 6.674\times10^{-11}\times 3\times 1.988\times10^{30}}
+            {(2.998\times10^8)^2}
+     = 2.7\times10^4\ \mathrm{m} \]
+  Total luminosity:
+  \[ L_{Tot} = \frac{GM\dot{M}}{2R_{min}} = \frac{\dot{M}c^2}{12} \]
+  \[ \Rightarrow\ L_{Tot}
+     = \frac{10^{-9}\times 1.988\times10^{30}\times(2.998\times10^8)^2}
+            {12\times 365.2422\times 24\times 60\times 60} \]
+  \[ \Rightarrow\ \boxed{L_{Tot} = 5\times10^{29}\ \mathrm{W}} \]
+  \hfill(1.5 pt)
+
+  Surface temperature:
+  \[ T = \left(\frac{GM\dot{M}}{8\pi\sigma R_{min}^3}\right)^{1/4}
+     = \left(\frac{6.674\times10^{-11}\times 3\times10^{-9}\times
+       (1.988\times10^{30})^2}
+       {8\pi\times 5.670\times10^{-8}\times(2.7\times10^4)^3\times
+       365.2422\times 24\times 60\times 60}\right)^{1/4} \]
+  \[ T = 5.5\times10^6\ \mathrm{K} \]
+  Using Wien's law:
+  \[ \lambda = \frac{b}{T} = \frac{2.898\times10^{-3}}{5.5\times10^6} \]
+  \[ \Rightarrow\ \boxed{\lambda = 5\times10^{-10}\ \mathrm{m}} \]
+  \hfill(1.5 pt)
+\item[(f)] Using Wien's law:
+  \[ \lambda = \frac{b}{T}
+     \ \Rightarrow\ T = \frac{b}{\lambda}
+     = \frac{2.898\times10^{-3}}{6\times10^{-8}} \]
+  \[ \Rightarrow\ T = 4.8\times10^4\ \mathrm{K} \]
+  \hfill(1.0 pt)
+
+  Considering this temperature to be that of the innermost of the accretion
+  disk, and using $R_{\min} = 3R_{\mathrm{sch}}$:
+  \[ T = \left(\frac{GM\dot{M}}{8\pi\sigma R_{min}^3}\right)^{1/4}
+     \ \Rightarrow\ T^4
+     = \left(\frac{GM\dot{M}}{8\pi\sigma(3R_{\mathrm{sch}})^3}\right)
+     = \left(\frac{GM\dot{M}}{8\pi\sigma(6GM/c^2)^3}\right) \]
+  \[ \Rightarrow\ M = \left(\frac{\dot{M}}{8\pi\sigma 6^3}\right)^{1/2}
+     \frac{c^3}{GT^2} \]
+  \[ \Rightarrow\ M = \frac{1}{(8\pi)^{1/2}}\,\frac{1}{6^{3/2}}
+     \left\{\frac{1.988\times10^{30}/(3.15\times10^7)}
+       {5.670\times10^{-8}}\right\}^{1/2}
+     \frac{(2.998\times10^8)^3}
+       {6.674\times10^{-11}\times(4.8\times10^4)^2} \]
+  \[ \boxed{M \approx 2.5\times10^{39}\ \mathrm{kg}
+     \approx 1.3\times10^9\ M_\odot} \]
+  \hfill(2.0 pt)
+\end{description}

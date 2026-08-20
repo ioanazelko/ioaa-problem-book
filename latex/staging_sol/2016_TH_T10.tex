@@ -1,0 +1,77 @@
+\begin{description}
+\item[(T10.1)] The rays travelling closer to the gravitational body will bend
+more. Thus, we get shortest convergence point where the rays just grazing the
+solar surface will meet each other.
+% FIGURE NEEDED: ray grazing the Sun (radius $R_\odot$) bent by $\theta_b$,
+% crossing the axis at distance $f_{\min}$ (2016_theory_sol.pdf p. 14).
+\begin{align*}
+\theta_{\mathrm{b}} &= \frac{2R_{\mathrm{sch}}}{R_\odot}
+  \simeq \frac{R_\odot}{f_{\min}} \tag*{(2.0)}\\
+\therefore f_{\min} &= \frac{R_\odot^2}{2R_{\mathrm{sch}}}
+  = \frac{R_\odot^2 c^2}{4GM_\odot} \tag*{(2.0)}\\
+  &= \frac{(6.955 \times 10^{8} \times 2.998 \times 10^{8})^2}
+          {4 \times 6.674 \times 10^{-11} \times 1.989 \times 10^{30}}~\mathrm{m}\\
+  &= 8.188 \times 10^{13}~\mathrm{m}
+   = \frac{8.188 \times 10^{13}}{1.496 \times 10^{11}}~\mathrm{AU}
+\end{align*}
+\[
+\boxed{f_{\min} = 547.3~\mathrm{AU}} \tag*{(2.0)}
+\]
+
+\item[(T10.2)] The following figure needs to be drawn. \hfill(1.0)
+% FIGURE NEEDED: two rays with impact parameters $R_\odot$ and $R_\odot + h$
+% (annulus of width $h$), detector of radius $a$ at $f_{\min}$, outer ray
+% crossing the axis at $f_2$; bending angle $\theta_2$ marked
+% (2016_theory_sol.pdf p. 14).
+
+The light bending from the surface of the Sun ($r = R_\odot$) will intersect
+the detector at its centre, as it is kept at $f_{\min}$.
+
+The boundary of the detector will be intersected by a light ray with
+$r = R_\odot + h$. This ray will intersect the $x$-axis at a distance $f_2$.
+\[
+f_2 = \frac{(R_\odot + h)^2}{2R_{\mathrm{sch}}} \tag*{(2.0)}
+\]
+\textbf{Same argument as in Part 1.} For small angles,
+\begin{align*}
+a &= (f_2 - f_{\min})\theta_2\\
+  &= \left[\frac{(R_\odot + h)^2}{2R_{\mathrm{sch}}}
+     - \frac{R_\odot^2}{2R_{\mathrm{sch}}}\right]
+     \frac{2R_{\mathrm{sch}}}{(R_\odot + h)}
+   = \frac{2R_\odot h + h^2}{R_\odot + h}\\
+  &\simeq 2h \tag*{(2.0)}
+\end{align*}
+Let original intensity of the incoming radiation be $I_0$.
+
+The flux at the detector in the presence of Sun is
+$\Phi_\odot = I_0\, 2\pi\, R_\odot\, h$ \hfill(1.0)
+
+The flux at the detector in the absence of Sun is
+$\Phi_0 = I_0\, \pi\, a^2$ \hfill(1.0)
+
+The amplification is therefore
+\[
+A_{\mathrm{m}} = \frac{\Phi_\odot}{\Phi_0}
+  = \frac{I_0 2\pi R_\odot h}{I_0 \pi a^2}
+  = \boxed{\frac{R_\odot}{a}} \tag*{(1.0)}
+\]
+
+\item[(T10.3)]
+% FIGURE NEEDED: spherical mass distribution with two parallel rays at impact
+% parameters $r_1$, $r_2$ bent by $\theta_1$, $\theta_2$, both converging at
+% the same focus, $f_1 = f_2$ (2016_theory_sol.pdf p. 15).
+All rays should focus at the same spot. This should be evident from figure
+drawn on answersheet or otherwise. \hfill(2.0)
+
+Let there be two rays with impact parameters $r_1$ and $r_2$. The
+corresponding distances of focus will be
+\[
+f_i = \frac{r_i^2}{2r_{\mathrm{sch}_i}} = \frac{r_i^2 c^2}{4GM(r_i)} \tag*{(2.0)}
+\]
+\textbf{Same argument as in Part 1.} The rquirement % sic: "rquirement" in source
+$f_1 = f_2$ implies
+\[
+\frac{r_1^2}{r_2^2} = \frac{M(r_1)}{M(r_2)} \tag*{(1.0)}
+\]
+The required mass distribution is: $\boxed{M(r) \propto r^2}$ \hfill(1.0)
+\end{description}

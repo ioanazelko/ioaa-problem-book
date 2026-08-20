@@ -1,0 +1,88 @@
+\begin{description}
+\item[1)] The luminosity distance is defined to satisfy a canonical inverse
+  square law of the bolometric luminosity $L$ (total emitted radiation power)
+  and observed flux $F$ (flux--luminosity relationship)
+  \[ F = \frac{L}{4\pi d_L^2} \tag*{(1)} \]
+  Units of the flux and luminosity are expressed in SI
+  ($\mathrm{W\,m^{-2}}$ and W respectively), or CGS
+  ($\mathrm{erg\,s^{-1}\,cm^{-2}}$, $\mathrm{erg\,s^{-1}}$ respectively).
+  \hfill(3 points)
+
+\item[2)] Only the part of the spectrum (namely B-band) is observed, but the
+  inverse square law is applicable also to the monochromatic luminosity
+  $L_\lambda(\lambda)$ and monochromatic flux
+  $S(\lambda)$,\footnote{Monochromatic flux is sometimes called as spectral
+  density of flux (energy per unit time per unit area per unit wavelength)
+  while monochromatic luminosity as spectral density of the luminosity (energy
+  per unit time per unit wavelength). Their form is described by SED and thus
+  spectral index.} taking into account that observed wavelengths are not equal
+  to emitted ones. (Observers frame is not the same as a frame of galaxy.) For
+  a small wavelength interval
+  \[ S(\lambda_o)\cdot\Delta\lambda_o
+     = \frac{L_\lambda(\lambda_e)}{4\pi d_L^2}\cdot\Delta\lambda_e , \]
+  Observed fraction of the total spectrum is redshifted into the frame of the
+  observer, and a relationship between the observed and emitted wavelengths,
+  $\lambda_o$ and $\lambda_e$, can be expressed as
+  \[ \lambda_e = \lambda_o/(1+z) . \]
+  So,
+  \[ S(\lambda)\Delta\lambda = \frac{1}{4\pi d_L^2}\cdot
+     L_\lambda\!\left(\frac{\lambda}{1+z}\right)\cdot\frac{1}{1+z}\,
+     \Delta\lambda . \tag*{(2)} \]
+  \hfill(9 points)
+
+\item[3)] The absolute luminosity is defined as the flux would be observed at
+  a distance of 10\,pc from the compact source at rest (not redshifted). It
+  means that the frame would be the same as for the object.
+  \[ S_{10}(\lambda) = \frac{L_\lambda(\lambda)}{4\pi d_{10}^2}, \tag*{(3)} \]
+  where $d_{10}$ is the distance equal to 10\,pc, $S_{10}(\lambda)$ denotes a
+  monochromatic flux in the wavelength of $\lambda$ measured at 10\,pc from
+  the object.
+  \hfill(3 points)
+
+\item[4)] Dividing eq.~(2) by (3) we get
+  \[ \frac{S(\lambda)}{S_{10}(\lambda)}
+     = \left(\frac{d_{10}}{d_L}\right)^2 \cdot
+       \frac{L_\lambda\!\left(\dfrac{\lambda}{1+z}\right)}{L_\lambda(\lambda)}
+       \cdot \frac{1}{1+z} \tag*{(4)} \]
+  for all the wavelengths.
+
+  The lower edge of validity of SED approximation is equal to 250\,nm. This
+  corresponds to $1.5\cdot 250\ \mathrm{nm} = 375$\,nm what is below the blue
+  cut-off of the B filter,\footnote{Blue band: Effective Wavelength Midpoint
+  $\lambda\mathrm{eff}=445$\,nm, FWHM${}=94$\,nm
+  [398\,nm $\div$ 492\,nm]} so SED approximation is applicable. Using the SED
+  of the galaxy, we get
+  \begin{align*}
+    \frac{L_\lambda\!\left(\dfrac{\lambda}{1+z}\right)}{L_\lambda(\lambda)}
+      \cdot \frac{1}{1+z}
+      &= \left(\frac{1}{1+z}\right)^{4}\frac{1}{1+z}
+       = (1+z)^{-5} \tag*{(5)} \\
+    \frac{S(\lambda)}{S_{10}(\lambda)}
+      &= \left(\frac{d_{10}}{d_L}\right)^{2}\cdot(1+z)^{-5} \tag*{(6)}
+  \end{align*}
+  The fraction of the monochromatic fluxes $S(\lambda)/S_{10}(\lambda)$ does
+  not depend on the wavelength! So the relation (6) is valid also for blue
+  band fluxes.
+  \hfill(9 points)
+
+\item[5)] The blue fluxes $F$ and $F_{10}$ have to be replaced by the
+  corresponding magnitudes. Using Pogson's Ratio it can be obtained:
+  \begin{align*}
+    m_B - M_B &= -2.5\log\left(\frac{F}{F_{10}}\right)
+      = 5\log\left(\frac{d_L}{d_{10}}\right) + 12.5\log(1+z) \\
+    M_B &= m_B - 5\log\left(\frac{d_L}{d_{10}}\right)
+      + 12.5\log(1+z) \tag*{(7)} % sic: source has "+"; the numerical
+      % substitution below (and the first line) require "-"
+  \end{align*}
+  Substituting numerical data one can obtain:
+  \[ M_B = 20.40^{\mathrm{mag}} - 5\log\!\left(2754\cdot 10^{5}\right)
+     - 12.5\log(1.5) = -24.00^{\mathrm{mag}} \]
+  \[ M_B = -24.00^{\mathrm{mag}} \tag*{(8)} \]
+  Please note, that precision is determined by $m_B$!
+  \hfill(3 points)
+
+\item[6)] Only the cD galaxies are so luminous, while the normal elliptical
+  galaxies are substantially weaker. Accordingly, the galaxy is not a member
+  of the cluster, but is a foreground object.
+  \hfill(3 points)
+\end{description}

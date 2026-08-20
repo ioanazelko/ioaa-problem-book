@@ -1,0 +1,46 @@
+% FIGURE NEEDED: Earth (centre C, radius R to surface point A, angle phi at C between CA and CB), Moon centre D on the line through C and B; acceleration vectors g_A (from A toward D), g_C (from C toward D) and the differential g'_A at A (2008 TH solutions, p. 7)
+\hfill(10\%)
+
+D in the figure is the center of the Moon. The Moon's gravitational
+acceleration at A and at center of the Earth C are
+\begin{align*}
+  \vec{g}_A &= -\frac{G\mathcal{M}}{r_A^2}\,\hat{r}_A \\
+  \vec{g}_C &= -\frac{G\mathcal{M}}{r_C^2}\,\hat{r}_C
+             = -\frac{G\mathcal{M}}{r^2}\,\hat{r}_C
+\end{align*}
+Their directions are toward the Moon. $\mathcal{M}$ is the mass of the Moon.
+$r_{\mathrm{A}} = \mathrm{AD}$ and $r_{\mathrm{C}} = \mathrm{CD} = r$.
+$\hat{r}_A$, $\hat{r}_C$ are unit vectors from the center of the Moon toward
+A and C, respectively. \hfill(20\%)
+
+The Moon's gravitational acceleration at A according to observers is
+\[
+  \vec{g}\,'_A = \vec{g}_A - \vec{g}_C
+  = -\left( \frac{G\mathcal{M}}{r_A^2}\,\hat{r}_A
+          - \frac{G\mathcal{M}}{r^2}\,\hat{r}_C \right)
+  = -\left( \frac{G\mathcal{M}}{r_A^3}\,\vec{r}_A
+          - \frac{G\mathcal{M}}{r^3}\,\vec{r}_C \right)
+\]
+Since $\vec{r}_A = \vec{r}_C + \vec{R}$, $\vec{R}$ is the position of A with
+respect to the Earth's center of mass
+\[
+  \vec{g}\,'_A = \vec{g}_A - \vec{g}_C
+  = -\frac{G\mathcal{M}}{r_A^3}\,\vec{R}
+    - \left( \frac{G\mathcal{M}}{r_A^3}
+           - \frac{G\mathcal{M}}{r^3} \right)\vec{r}_C
+\]
+\hfill(20\%)
+
+The first term is in radial direction. The tangential or horizontal component
+of the second term is equal to the horizontal component of the acceleration of
+sea water at A:
+\begin{align*}
+  g'_A(\text{horizontal})
+  &= \left( \frac{G\mathcal{M}}{r^3} - \frac{G\mathcal{M}}{r_A^3} \right)
+     r\,\sin\varphi \\
+  &= G\mathcal{M}\left( \frac{1}{r^3}
+     - \frac{1}{(r^2 + R^2 - 2Rr\,\cos\varphi)^{3/2}} \right) r\,\sin\varphi \\
+  &= \frac{G\mathcal{M}}{r^2}\left( 1
+     - \frac{1}{[\,1 + (R/r)^2 - 2(R/r)\cos\varphi\,]^{3/2}} \right)\sin\varphi
+\end{align*}
+\hfill(50\%)

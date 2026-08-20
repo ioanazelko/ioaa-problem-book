@@ -1,0 +1,75 @@
+\begin{description}
+\item[(a)] $\phi_B = \alpha = 6^\circ 41'$
+  \hfill(\textit{conceptually difficult:} 5 points)
+
+% FIGURE NEEDED: diagram of Earth and Moon showing the libration-in-latitude
+% geometry (tilted Moon connected to Earth by a line through the centres);
+% 2023_th_solutions.pdf page 15 (printed page 15).
+
+\item[(b)] The maximum angle of libration $\phi_L$ occurs when the Moon is at
+  point $M$ and for $e = 0.064$:
+
+% FIGURE NEEDED: diagram of the Moon's elliptical orbit showing the Moon at the
+% end of the minor axis, the second focus F2, the Earth at the first focus, and
+% the distances a, b, c; 2023_th_solutions.pdf page 15 (printed page 15).
+
+  $\phi_L$ is the Earth--Moon--F2 angle; $|EF2| = 2c$.\\
+  Therefore
+  $\sin(\phi_L/2) = c/a = e \implies
+   \phi_L = 2\arcsin(0.064) = 7.34^\circ = 7^\circ 20'$
+  \hfill(5 points)
+
+\item[(c)] In the less accurate approximation,
+  \[
+    (2\phi_B + 2\phi_L)/180^\circ = x/50\% \implies x = 8\%
+  \]
+  and the total area visible is $S \approx 50\% + x = 58\%$.\\
+  This is less accurate as it counts the overlapping areas made visible by both
+  librations twice.
+
+  A slightly more accurate approximation is given by taking the average of
+  $\phi_B$ and $\phi_L$, $7^\circ 01'$. The belt made visible by libration will
+  thus be $2\pi R_{\mathrm{Moon}} \cdot 7^\circ/360^\circ \approx 213$ km wide.
+  The surface area of the belt is then approximately
+  $213\ \mathrm{km} \times 2\pi R_{\mathrm{Moon}}
+   = 2.32 \times 10^{6}\ \mathrm{km}^2$, which accounts for about 6\% of the
+  lunar surface. If the students does this algebraically before substituting,
+  they also get: % sic: "the students does"
+  \[
+    \frac{2\pi R_{\mathrm{Moon}} \cdot 2\pi R_{\mathrm{Moon}}}
+         {4\pi \, 2 R_{\mathrm{Moon}}^2}
+    \cdot \frac{7^\circ}{360^\circ}
+    = \pi \, \frac{7^\circ}{360^\circ} \approx 6\%.
+  \]
+  In either case the total area visible is $S \approx 50\% + 6\% = 56\%$.
+  \hfill(less accurate solution 4 points, better solution 5 points)
+
+\item[(d)] It is necessary to find a common multiple of the period of libration
+  in latitude $P_B = 27.2122$\,d (the draconic month) and the period of
+  libration in longitude $P_L = 27.5545$\,d (the anomalistic month).
+
+  The simplest way is analogous to synodic periods:
+  \[
+    \frac{1}{T_{\mathrm{syn}}} = \frac{1}{T_1} - \frac{1}{T_2}
+  \]
+  thus
+  \[
+    \frac{1}{T} = \frac{1}{P_B} - \frac{1}{P_L}
+    \implies T \approx 2190.5\,\mathrm{d} = 74\,\mathrm{lunations}.
+  \]
+  Or using continued fractions:
+  \[
+    \frac{P_L}{P_B} = \frac{275545}{272122}
+    \approx 1 + \cfrac{1}{79 + \cfrac{1}{2 + \cfrac{1}{131 + \cfrac{1}{6 + \cdots}}}}\,.
+  \]
+  With the first term we approximate $P_L/P_B \approx 80/79$; since
+  $80 \times 27.2122 \approx 2176.9$ d and $79 \times 27.5545 \approx 2176.8$ d
+  this is already close enough, and $T$ is again equal to about 74 lunations.
+  \hfill(3 points)
+
+  Since we only need half the cycle to see everything once (as the Moon swings
+  away and back again during the whole cycle) therefore
+  $T/2 = 37\ \mathrm{months} \approx 3$ years is enough to see all of the
+  potentially visible parts of the Moon's surface.
+  \hfill(2 points)
+\end{description}

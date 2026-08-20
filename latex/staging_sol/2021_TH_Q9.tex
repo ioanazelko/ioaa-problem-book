@@ -1,0 +1,65 @@
+% FIGURE NEEDED: sketch of Pluto (P) and Charon (C) on the line joining
+% their centers, with the center of mass CM marked between them, unit vector
+% r-hat pointing from Charon toward Pluto, points A and B on Charon's
+% near/far side, and the rotation arrows; 2021 T9 solution PDF, page 1.
+Let P and C be the centers of Pluto and Charon respectively, and CM their
+center of mass. Clearly $\overline{CM - P} = \frac{1}{9}R$ and
+$\overline{CM - C} = \frac{8}{9}R$. The effective gravitational field at
+points A and B are given by:
+\begin{center}
+[By recognizing the vectorial nature of gravities/forces/fields]
+\hfill [4 points]
+\end{center}
+\begin{gather*}
+g_A = \frac{GM_P}{(R-r)^2}\hat{r} - \frac{GM_C}{r^2}\hat{r}
+  - \omega^2\left(\tfrac{8}{9}R - r\right)\hat{r} \tag*{[1 point]} \\
+g_B = \frac{GM_P}{(R+r)^2}\hat{r} + \frac{GM_C}{r^2}\hat{r}
+  - \omega^2\left(\tfrac{8}{9}R + r\right)\hat{r} \tag*{[1 point]}
+\end{gather*}
+where $\omega^2 = 9\dfrac{GM_C}{R^3}$ is the angular speed common to both
+Pluto and Charon. Thus, the gravitational accelerations at these points are:
+\begin{center}
+[by finding angular speed] [2 points]
+\end{center}
+\begin{gather*}
+g_A = \frac{GM_P}{(R-r)^2} - \frac{GM_C}{r^2}
+  - \frac{GM_C}{R^2}\left(8 - 9\frac{r}{R}\right) \\
+g_B = \frac{GM_P}{(R+r)^2} + \frac{GM_C}{r^2}
+  - \frac{GM_C}{R^2}\left(8 + 9\frac{r}{R}\right)
+\end{gather*}
+Factorizing the expression to obtain formulas proportional to Charon's mass
+[1 point]:
+\begin{gather*}
+g_A = -\frac{GM_C}{r^2}\left[1
+  - \frac{M_P}{M_C}\left(\frac{r}{R}\right)^2
+    \frac{1}{\left(1 - \frac{r}{R}\right)^2}
+  + \left(\frac{r}{R}\right)^2\left(8 - 9\frac{r}{R}\right)\right] \\
+g_B = \frac{GM_C}{r^2}\left[1
+  + \frac{M_P}{M_C}\left(\frac{r}{R}\right)^2
+    \frac{1}{\left(1 + \frac{r}{R}\right)^2}
+  - \left(\frac{r}{R}\right)^2\left(8 + 9\frac{r}{R}\right)\right]
+\end{gather*}
+Replacing the numerical value of the ratio of the two masses:
+\begin{gather*}
+g_A = -\frac{GM_C}{r^2}\left[1
+  - \left(\frac{r}{R}\right)^2\frac{8}{\left(1 - \frac{r}{R}\right)^2}
+  + \left(\frac{r}{R}\right)^2\left(8 - 9\frac{r}{R}\right)\right] \\
+g_B = \frac{GM_C}{r^2}\left[1
+  + \left(\frac{r}{R}\right)^2\frac{8}{\left(1 + \frac{r}{R}\right)^2}
+  - \left(\frac{r}{R}\right)^2\left(8 + 9\frac{r}{R}\right)\right]
+\end{gather*}
+Noting that the expressions in square brackets are dimensionless, it is
+helpful to replace the given values of $r$ and $R$, resulting [2 points by
+expressions of $g_A$ and $g_B$]:
+\begin{gather*}
+g_A = -\frac{GM_C}{r^2}\,(0{,}99929) \\
+g_B = \frac{GM_C}{r^2}\,(0{,}99933)
+\end{gather*}
+The percentage difference with respect to Charon's normal gravity
+$g_0 = \dfrac{GM_C}{r^2}$ is
+\begin{equation*}
+\frac{\big||g_A| - |g_B|\big|}{g_0}\cdot 100\% = 0{,}004\%
+  = 4 \times 10^{-3}\,\% \tag*{[1 point]}
+\end{equation*}
+% note: the source (Bogota) uses decimal commas ("0,99929", "0,004%");
+% kept as printed.

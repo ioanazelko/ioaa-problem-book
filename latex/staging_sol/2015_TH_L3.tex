@@ -1,0 +1,81 @@
+\begin{description}
+\item[a.] Defining $\Delta T = T_R - T_0$ and $\Delta T \approx 0$, we have
+  \[
+    PV = Nk\,\frac{\Delta T}{\ln(1 + \Delta T/T_0)} \tag{3}
+  \]
+  using $\ln(1 + \Delta T/T_0) \approx \Delta T/T_0$, we then obtain
+  \[
+    PV = NkT_0 \tag{4}
+  \]
+  \hfill(15 points)
+\item[b.] The internal energy of the star is $U = Mc^2$ ($U(T) = M(T)c^2$ for
+  ideal star). Thus, the constant volume heat capacity of the star has the form
+  \[
+    C_v = \left(\frac{\Delta Q}{\Delta T}\right)_{\!V}
+        = \left(\frac{\Delta M}{\Delta T}\right)_{\!V} c^2
+  \]
+  for small $\Delta T$. Then, using first law of themodynamics, the constant
+  pressure heat capacity of the star is
+  \[
+    C_p = \left(\frac{\Delta Q}{\Delta T}\right)_{\!P}
+        = \left(\frac{\Delta M}{\Delta T}\right)_{\!V} c^2 + P\,\frac{\Delta V}{\Delta T}
+        = C_v + P\,\frac{\Delta V}{\Delta T}
+  \]
+  for small $\Delta T$. Defining $\Delta T = T_2 - T_1$, then
+  \[
+    P\,\Delta V = Nk\left(
+      \frac{T_1 - T_0 + \Delta T}{\ln\!\big((T_1 + \Delta T)/T_0\big)}
+      - \frac{T_1 - T_0}{\ln(T_1/T_0)}\right)
+  \]
+  Using the approximation
+  \begin{align*}
+    \ln\!\big((T_1 + \Delta T)/T_0\big)
+      &\approx \ln\!\left(\frac{T_1}{T_0}\right) + \frac{\Delta T}{T_1} \\
+    \left(1 + \frac{\Delta T}{T_1\ln(T_1/T_0)}\right)^{\!-1}
+      &\approx 1 - \frac{\Delta T}{T_1\ln(T_1/T_0)}
+  \end{align*}
+  then we have
+  \[
+    P\,\frac{\Delta V}{\Delta T}
+      = \frac{Nk}{\ln(T/T_0)}\left(1 - \frac{(T - T_0)/T}{\ln(T/T_0)}\right)
+  \]
+  where $T_1 \equiv T$. Finally, we obtain
+  \[
+    C_p = \left(\frac{\Delta Q}{\Delta T}\right)_{\!P}
+        = \left(\frac{\Delta M}{\Delta T}\right)_{\!V} c^2 + P\,\frac{\Delta V}{\Delta T}
+        = C_v + \frac{Nk}{\ln(T/T_0)}\left(1 - \frac{(T - T_0)/T}{\ln(T/T_0)}\right)
+  \]
+  \hfill(30 points)
+\item[c.] Since $C_V$ is constant, the heat produced by the star is given by
+  \begin{align*}
+    Q_H &= C_v\left(T_f - T_i\right) + P\,\Delta V \\
+        &= C_v\left(T_i - T_f\right) % sic: source flips to (T_i - T_f) in the second line
+         + Nk\left(\frac{T_f - T_0}{\ln\!\big(T_f/T_0\big)}
+         - \frac{T_i - T_0}{\ln(T_i/T_0)}\right)
+  \end{align*}
+  \hfill(20 points)
+% Part d. is blank in the official solutions (the problem's part d is empty as well; 15 points allotted).
+\item[e.] Energy per second radiated by the Sun
+  \[
+    L_\odot = Nh\nu
+  \]
+  where $N$ is the number of photon. Thus
+  \[
+    N = \frac{L_\odot}{h\nu}
+      = \frac{3.96\times10^{26}}{6.6261\times10^{-34}\times 5\times10^{14}}
+      = 1.195\times10^{45}\ \text{photons}
+  \]
+  \hfill(10 points)
+\item[f.] Energy per second radiated by the Sun is proportional to mass defect
+  of the Sun
+  \[
+    L_\odot = \Delta M\,c^2
+  \]
+  Thus,
+  \[
+    C_v = \frac{\Delta M\,c^2}{\Delta T} = \frac{L_\odot}{\Delta T}
+        = \frac{3.96\times10^{26}}{6000 - 5500}\ \mathrm{J/K}
+        = 7.92\times10^{23}\ \mathrm{J/K}
+  \]
+  \hfill(10 points)
+\end{description}

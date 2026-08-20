@@ -1,0 +1,147 @@
+The greatest eclipse is defined as the instant when the axis of the Moon's
+shadow cone gets closest to the centre of the Earth in a solar eclipse. This
+problem explores the geometry of this phenomenon, using the solar eclipse of
+29\textsuperscript{th} May 1919 as an example, as it has great historical
+significance for being the first time astronomers were able to
+observationally verify general relativity. One of the scientific expeditions
+to observe this eclipse took place in the Brazilian city of Sobral.
+
+The two following tables show the Cartesian and spherical coordinates of the
+Sun and the Moon at the time of the greatest eclipse. The system used for
+these coordinates is right-handed and has the origin at the centre of the
+Earth, the positive $x$-axis pointing towards the Greenwich meridian, and the
+positive $z$-axis pointing towards the North Pole. For the rest of this
+problem, this will be referred to as \textbf{System I}.
+
+Spherical Coordinates:
+\begin{center}
+\begin{tabular}{c|c|c}
+ & Centre of the Sun & Centre of the Moon \\
+\hline
+Radial Distance ($r$) & $1.516 \times 10^{11}$\,m
+  & $3.589 \times 10^{8}$\,m \\
+Polar Angle ($\theta$) & $68^\circ 29' 44.1''$ & $68^\circ 47' 41.6''$ \\
+Azimuthal Angle ($\varphi$) & $-1^{\mathrm{h}}11^{\mathrm{m}}28.2^{\mathrm{s}}$
+  & $-1^{\mathrm{h}}11^{\mathrm{m}}22.9^{\mathrm{s}}$ \\
+\end{tabular}
+\end{center}
+
+Cartesian Coordinates:
+\begin{center}
+\begin{tabular}{c|c|c}
+ & Centre of the Sun & Centre of the Moon \\
+\hline
+$x$ & $1.342 \times 10^{11}$\,m & $3.185 \times 10^{8}$\,m \\
+$y$ & $-4.327 \times 10^{10}$\,m & $-1.025 \times 10^{8}$\,m \\
+$z$ & $5.557 \times 10^{10}$\,m & $1.298 \times 10^{8}$\,m \\
+\end{tabular}
+\end{center}
+
+For this problem, assume that the Earth is a perfect sphere.
+
+\textbf{Note:} The spherical coordinates of a point $P$ are defined as
+follows:
+\begin{itemize}
+\item Radial distance ($r$): distance between the origin ($O$) and $P$
+  (range: $r \geq 0$).
+\item Polar angle ($\theta$): angle between the positive $z$-axis and the
+  line segment $OP$ (range: $0^\circ \leq \theta \leq 180^\circ$)
+\item Azimuthal angle ($\varphi$): angle between the positive $x$-axis and
+  the projection of the line segment $OP$ onto the $xy$-plane (range:
+  $-12^{\mathrm{h}} \leq \varphi < 12^{\mathrm{h}}$)
+\end{itemize}
+
+\ioaafig{2024_TH_T10-f1.pdf}
+% point P, radius r, polar angle theta and azimuthal angle phi (page 10 of
+% the 2024 theory paper, top of page)
+
+\textbf{Part I: Geographic Coordinates (25 points)}
+
+\begin{description}
+\item[(a)] (3 points) Determine the declination of the Sun and the Moon
+  during the greatest eclipse for a geocentric observer.
+\item[(b)] (3 points) Determine the right ascension of the Sun and the Moon
+  at the time of the greatest eclipse for a geocentric observer. The local
+  sidereal time at Greenwich at that same moment was
+  $5^{\mathrm{h}}32^{\mathrm{m}}35.5^{\mathrm{s}}$.
+\item[(c)] (4 points) Find a unit vector that indicates the direction of the
+  axis of the Moon's shadow cone. This vector should point from the Moon to
+  the vicinity of the centre of the Earth.
+\item[(d)] (15 points) Determine the latitude and the longitude of the point
+  where the axis of the Moon's shadow cone crosses the surface of the Earth
+  during the greatest eclipse.
+\end{description}
+
+\textbf{Part II: Duration of the Totality (50 points)}
+
+Precisely determining the duration of totality of a solar eclipse involves
+complex calculations that would be beyond the scope of this problem. However,
+it is possible to obtain a reasonable approximation for this value using the
+two following assumptions:
+\begin{itemize}
+\item The size of the umbra on the surface of the Earth remains roughly
+  constant throughout totality at a given location.
+\item The velocity of the umbra on the surface of the Earth remains roughly
+  constant throughout totality at a given location.
+\end{itemize}
+
+\begin{description}
+\item[(e)] (10 points) Estimate the radius of the umbra during the greatest
+  eclipse. In order to simplify the calculations, assume that the umbra is
+  small enough that it can be considered approximately flat and that the axis
+  of the Moon's shadow cone is extremely close to the centre of the Earth
+  during the greatest eclipse.
+\item[(f)] (3 points) Calculate the velocity of the Earth's rotation at the
+  latitude of the centre of the umbra.
+\item[(g)] (4 points) Determine the orbital velocity of the Moon at the
+  instant of the greatest eclipse. Neglect the changes in the semi-major axis
+  of the Moon's orbit.
+\end{description}
+
+For the remaining items of this problem, assume that the tangential velocity
+of the Moon is roughly the same as the orbital velocity and neglect its
+radial component.
+
+In order to calculate the velocity of the umbra, it is convenient to define
+two new additional right-handed coordinate systems. \textbf{System II} is
+defined as follows:
+\begin{itemize}
+\item Origin ($O_{\mathrm{II}}$): position of the Moon at the instant of the
+  greatest eclipse.
+\item Positive $x$-axis: Tangent to the declination circle. Points
+  eastwards.
+\item Positive $y$-axis: Tangent to the meridian of right ascension. Points
+  northwards.
+\end{itemize}
+
+\textbf{System III} is defined as follows:
+\begin{itemize}
+\item Origin ($O_{\mathrm{III}}$): centre of the umbra at the instant of the
+  greatest eclipse.
+\item Positive $x$-axis: Tangent to the latitude circle. Points eastwards.
+\item Positive $y$-axis: Tangent to the meridian of longitude. Points
+  northwards.
+\end{itemize}
+
+Note that in both systems, the $xy$-plane is tangent to the celestial sphere
+at the position of the origin.
+
+System III is similar to System II, with the only difference being that the
+origin ($O_{\mathrm{III}}$) is at the centre of the umbra at the moment of
+the greatest eclipse.
+
+\begin{description}
+\item[(h)] (14 points) Using System II, determine the velocity vector of the
+  Moon during the greatest eclipse. Note that the intersection between the
+  Celestial Equator and the lunar orbit that is closer to the position of the
+  eclipse has a right ascension of
+  $23^{\mathrm{h}}07^{\mathrm{m}}59.2^{\mathrm{s}}$.
+\item[(i)] (10 points) Write the velocity vector of the Moon in System III.
+  Note that in System I, the azimuthal angle difference between the positions
+  of the origins $O_{\mathrm{II}}$ and $O_{\mathrm{III}}$ is negligible, so
+  you should only take into account the difference in the polar angles.
+\item[(j)] (6 points) Calculate the speed of the centre of the umbra along
+  the surface of the Earth at the instant of the greatest eclipse.
+\item[(k)] (3 points) Estimate the duration of the totality of the eclipse at
+  the location with the coordinates found in part (d).
+\end{description}

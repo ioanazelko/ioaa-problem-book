@@ -1,0 +1,49 @@
+% note: the official 2021 T3 solution PDF is a single page which ends after
+% "Solution A" of part 3.2; the announced alternative method ("next") and
+% part 3.3 are not present in the source file.
+% note: the source (Bogota) uses decimal commas in some numbers; kept as
+% printed.
+\begin{description}
+\item[(3.1)] Since the path between $A$ and $B$ is parabolic, the total
+energy of the spacecraft is zero,
+\[ E_{AB} = 0, \qquad \leftrightarrow \qquad \varepsilon = 1. \]
+So, when you get to point B, then
+\begin{equation*}
+E = \tfrac{1}{2}mv_B^2 - \frac{GMm}{r_B} = 0; \tag*{[1 point]}
+\end{equation*}
+From where
+\begin{equation*}
+v_B = \sqrt{\frac{2GM}{r_B}} \tag*{[1 point]}
+\end{equation*}
+Replacing with available values
+\begin{equation*}
+v_B = \sqrt{\frac{2 \times (6{,}67 \times 10^{-11}) \times
+  (6{,}4 \times 10^{23})}{6{,}8 \times 10^{6}}}
+  \approx 3{,}55\ \mathrm{km\,s^{-1}} \tag*{[1 point]}
+\end{equation*}
+
+\item[(3.2)] There are two possible solutions
+
+\textbf{Solution A}
+
+Immediately after breaking % sic: "braking"
+the total energy and the angular momentum change since the braking force is
+tangential, but along the elliptical path BC the values with which it passes
+through are conserved and take on during the entire journey. C; then applying
+conservation of energy between points B$'$ (immediately after braking) and C
+as well as conservation of the angular momentum between B$'$ and C, we have
+\begin{gather*}
+\tfrac{1}{2}mv_{B'}^2 - \frac{GMm}{r_B}
+  = \tfrac{1}{2}mv_C^2 - \frac{GMm}{R_M} \quad Eq.~1
+  \tag*{[1 point]} \\
+L = mv_{B'}r_B = mv_C R_M \quad Eq.~2 \tag*{[1 point]}
+\end{gather*}
+From these two equations we solve for $v_C$ and it's result is used to
+calculate the total energy in C which gives us:
+\begin{equation*}
+E_{elipse} = -\frac{GMm}{R_M + r_B} \approx -2.10 \times 10^{11}\,J
+  \quad Eq.~3a \tag*{[2 points]}
+\end{equation*}
+In both methods, this and next, two points for getting the equation and two
+points for calculation + negative sign + unit.
+\end{description}

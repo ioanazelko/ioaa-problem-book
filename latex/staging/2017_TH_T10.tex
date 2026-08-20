@@ -1,0 +1,51 @@
+The Gravitational-Wave Optical Transient Observer (GOTO) aims to carry out
+searches of optical counterparts of any Gravitational Wave (GW) sources within
+an hour of their detection by the LIGO and VIRGO experiments. The survey needs
+to cover a big area on the sky in a short time to search all possible regions
+constrained by the GW experiments before the optical burst signal, if any,
+fades away. The GOTO telescope array is composed of 4 identical reflective
+telescopes, each with 40-cm diameter aperture and f-ratio of 2.5, working
+together to image large regions of the sky. For simplicity, we assume that the
+telescopes' fields-of-view (FoV) do not overlap with one another.
+
+\begin{description}
+\item[a)] Calculate the projected angular size per mm at the focal plane, i.e.\
+  plate scale, of each telescope. \hfill[6]
+\item[b)] If the zero-point magnitude (i.e.\ the magnitude at which the count
+  rate detected by the detector is 1 count per second) of the telescope system
+  is 18.5\,mag, calculate the minimum time needed to reach 21\,mag at
+  Signal-to-Noise Ratio (SNR) $= 5$ for a point source. We first assume that
+  the noise is dominated by both the Read-Out Noise (RON) at 10 counts/pixel
+  and the CCD dark (thermal) noise (DN) rate of 1 count/pix/minute. The CCDs
+  used with the GOTO have a 6-micron pixel size and gain (conversion factor
+  between photo-electron and data count) of 1. The typical seeing at the
+  observatory site is around 1.0\,arcsec. \hfill[8]\\
+  The Signal-to-Noise Ratio is defined as
+  \[ \mathrm{SNR} \equiv
+     \frac{\text{Total Source Count}}{\sqrt{\sum_i \mathrm{Noise}_i^2}}
+     = \frac{\text{Total Source Count}}
+            {\sqrt{\sigma_{\mathrm{RON}}^2 + \sigma_{\mathrm{DN}}^2 + \dots}},
+  \]
+  \[ \sigma_{\mathrm{RON}} = \sqrt{N_{\mathrm{pix}} \cdot \mathrm{RON}^2},
+     \qquad
+     \sigma_{\mathrm{DN}} = \sqrt{N_{\mathrm{pix}} \cdot \mathrm{DN} \cdot t},
+  \]
+  where $t$ is the exposure time.
+\item[c)] Normally when the exposure time is long and the source count is high
+  then Poisson noise from the source is also significant. Determine the
+  relation between SNR and exposure time in the case that the noise is
+  dominated by Poisson noise of the source. Recalculate the minimum exposure
+  time required to reach 21\,mag with SNR $= 5$ from part b) if Poisson noise
+  is also taken into consideration. The Poisson noise (standard deviation) of
+  the source is given by
+  $\sigma_{\mathrm{source}} = \sqrt{\text{Source Count}}$. In reality, there is
+  also the sky background which can be important source of Poisson noise. For
+  our purpose here, please ignore any sky background in the calculation.
+  \hfill[6]
+\item[d)] The typical localisation uncertainty of the GW detector is about 100
+  square-degrees and we would like to cover the entire possible location of any
+  candidate within an hour after the GW is detected. Estimate the minimum side
+  length of the square CCD needed for each telescope in terms of the number of
+  pixels. You may assume that the time taken for the CCD read-out and the
+  pointing change are negligible. \hfill[5]
+\end{description}

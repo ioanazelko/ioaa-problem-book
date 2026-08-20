@@ -1,0 +1,142 @@
+\begin{description}
+\item[(T06.1)]
+  % FIGURE NEEDED: schematic top view of the Galaxy (2025_theory_solution.pdf
+  % p.17): Sun on its orbit with longitude directions l = 0, 45, 90, 135, 180,
+  % 270 deg marked as arrows, GC at centre, dotted circular orbits, and the
+  % circle Omega = Omega_0 through the Sun.
+  The concept of differential rotation of the Galaxy is used here.
+  \begin{itemize}
+  \item For $l = 45^\circ$:
+    \begin{itemize}
+    \item From Sun to the GC, the quantity $(\Omega - \Omega_0)$ increases,
+      which implies $V_{\mathrm{r}}$ increases.
+    \item As shown in the figure, the line of sight intersects circular orbits
+      that are at varying distances from the GC.
+    \item The line of sight is closest to the GC when
+      $D = R_0\cos l = 6.01$\,kpc. $V_{\mathrm{r}}$ reaches the maximum value
+      here.
+    \item Beyond this, $(\Omega - \Omega_0)$ decreases implying
+      $V_{\mathrm{r}}$ decreases.
+    \item $V_{\mathrm{r}} = 0$ when the line of sight intersects the Sun's
+      orbit. Here, $D = 2R_0\cos l = 12.02$\,kpc
+    \item Beyond the Sun's orbit, $\Omega < \Omega_0$. $V_{\mathrm{r}}$ is
+      negative and its magnitude increases with increasing $D$.
+    \end{itemize}
+  \item $l = 135^\circ$
+    \begin{itemize}
+    \item The line of sight lies outside the Sun's orbit. Here,
+      $V_{\mathrm{r}}$ is negative, there is no peak, and its magnitude
+      increases with increasing $D$.
+    \end{itemize}
+  \end{itemize}
+  The plot of the line-of-sight velocity as a function of the distance from
+  the Sun for two values of $l$ is as follows:
+  % FIGURE NEEDED: sketch of V_r vs D from 0 to 2R_0 (2025_theory_solution.pdf
+  % p.18): l = 45 deg curve starts at (0,0), rises to a single positive
+  % maximum at D = 6 kpc, crosses zero at D = 12 kpc and is negative beyond;
+  % l = 135 deg curve starts at (0,0) and is negative throughout, decreasing
+  % monotonically.
+\item[(T06.2)] Consider $l = 90$,
+  \begin{align*}
+    V_{\mathrm{r}} &= 0 \text{ implying } \Omega = \Omega_0
+       \tag*{(0.5)}\\
+    V_{\mathrm{t}} &= -\Omega_0 D = -2.75\,\mathrm{km\,s^{-1}}
+       \tag*{(0.5)}\\
+    \Omega_0 &= 8.91\times10^{-16}\,\mathrm{rad\,s^{-1}}
+       \tag*{(1.0)}\\
+    P &= \frac{2\pi}{\Omega_0} = 224\,\mathrm{Myr}
+       \tag*{(1.0)}
+  \end{align*}
+\item[(T06.3a)] \mbox{}
+  \begin{description}
+  \item[(I)] The observed rotation curve is flat near the Sun.
+
+    $V$ is constant $\rightarrow$
+    $\left.\dfrac{dV}{dR}\right|_{R=R_0} = 0$. \hfill(1.0)
+  \item[(II)] If the whole mass of the Galaxy is assumed to be concentrated
+    at the centre, then we consider Keplerian motion.
+    \[
+      V = \sqrt{\frac{GM}{R}}
+      \;\rightarrow\;
+      \left.\frac{dV}{dR}\right|_{R=R_0} = -\frac{1}{2}\frac{V_0}{R_0}.
+    \]
+    \hfill(1.0)
+  \end{description}
+\item[(T06.3b)] In the solar neighbourhood, $(\Omega - \Omega_0)$ will be
+  very small. Using the approximation
+  \[
+    f(x) \simeq f(x_0)
+      + \left.\frac{df}{dx}\right|_{x=x_0}(x - x_0),
+    \text{ for } x \approx x_0, \text{ given in the Data Sheet,}
+  \]
+  \begin{align*}
+    (\Omega - \Omega_0)
+      &= \left.\frac{d\Omega}{dR}\right|_{R=R_0}(R - R_0)
+       \tag*{(2.0)}\\
+      &= \left[\left(\frac{1}{R}\frac{dV}{dR}\right)\bigg|_{R=R_0}
+         - \left(\frac{1}{R^2}V\right)\bigg|_{R=R_0}\right](R - R_0)\\
+      &= \frac{1}{R_0^2}\left[R_0\left.\frac{dV}{dR}\right|_{R=R_0}
+         - V_0\right](R - R_0)
+  \end{align*}
+  Thus the line-of-sight velocity expression becomes
+  \[
+    V_{\mathrm{r}} = \frac{1}{R_0^2}
+      \left[R_0\left.\frac{dV}{dR}\right|_{R=R_0} - V_0\right]
+      (R - R_0)R_0\sin l
+  \]
+  Further, in the solar neighbourhood, $D \ll R_0$. So we can approximate
+  \[
+    (R - R_0) \approx -D\cos l
+  \]
+  \hfill(1.0)
+
+  Thus, the line-of-sight velocity can be expressed as,
+  \begin{align*}
+    V_{\mathrm{r}}
+      &= \frac{1}{R_0^2}
+         \left[R_0\left.\frac{dV}{dR}\right|_{R=R_0} - V_0\right]
+         (-D\cos l)R_0\sin l\\
+      &= \frac{1}{2}
+         \left[\frac{V_0}{R_0} - \left.\frac{dV}{dR}\right|_{R=R_0}\right]
+         D\sin 2l
+  \end{align*}
+  Comparing with $V_{\mathrm{r}} = AD\sin 2l$, we get
+  \[
+    A = \frac{1}{2}
+        \left[\frac{V_0}{R_0} - \left.\frac{dV}{dR}\right|_{R=R_0}\right]
+  \]
+  \hfill(2.0)
+
+  Also, in the solar neighbourhood, $\Omega D \approx \Omega_0 D$. Using this
+  approximation and $(R - R_0) \approx -D\cos l$, the tangential velocity is
+  \hfill(1.0)
+  \begin{align*}
+    V_{\mathrm{t}} &= (\Omega - \Omega_0)R_0\cos l - \Omega D\\
+      &= \frac{1}{R_0^2}
+         \left[R_0\left.\frac{dV}{dR}\right|_{R=R_0} - V_0\right]
+         (-D\cos l)R_0\cos l - \Omega_0 D\\
+      &= \left[\frac{V_0}{R_0}
+         - \left.\frac{dV}{dR}\right|_{R=R_0}\right]D\cos^2 l - \Omega_0 D\\
+      &= \frac{1}{2}\left[\frac{V_0}{R_0}
+         - \left.\frac{dV}{dR}\right|_{R=R_0}\right]D(1 + \cos 2l)
+         - \frac{V_0}{R_0}D\\
+      &= AD\cos 2l
+         + \frac{1}{2}\left[\frac{V_0}{R_0}
+         - \left.\frac{dV}{dR}\right|_{R=R_0}\right]D - \frac{V_0}{R_0}D\\
+      &= AD\cos 2l
+         - \frac{1}{2}\left[\frac{V_0}{R_0}
+         + \left.\frac{dV}{dR}\right|_{R=R_0}\right]D
+  \end{align*}
+  Comparing with $V_{\mathrm{t}} = AD\cos 2l + BD$, we get
+  \[
+    B = -\frac{1}{2}
+        \left[\frac{V_0}{R_0} + \left.\frac{dV}{dR}\right|_{R=R_0}\right]
+  \]
+  \hfill(2.0)
+\item[(T06.3c)] For a flat rotation curve
+  $\left(\dfrac{dV}{dR} = 0\right)$, $F_{\mathrm{I}} = -1$. \hfill(1.0)
+
+  For Keplerian rotation
+  $\left(\dfrac{dV}{dR} = -\dfrac{1}{2}\dfrac{V}{R}\right)$,
+  $F_{\mathrm{II}} = -3$. \hfill(1.0)
+\end{description}

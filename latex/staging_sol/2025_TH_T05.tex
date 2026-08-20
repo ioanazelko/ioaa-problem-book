@@ -1,0 +1,137 @@
+\begin{description}
+\item[(T05.1)] Angular diameter distance $= D_L/(1+z)^2$
+  \begin{align*}
+  \text{Scale} &= \text{Angular diameter distance} \times
+    \frac{\pi}{60 \times 60 \times 180}~\mathrm{ly/arcsecond} \\
+  &= 20.7~\mathrm{ly~milliarcsecond^{-1}}.
+  \tag*{(1.0)}
+  \end{align*}
+  \begin{center}
+  \begin{tabular}{cccc}
+  Date of observation & $\phi_{\mathrm{blob}}$ (milliarcsecond)
+    & $l_{\mathrm{blob}}$ (ly) & $\beta_{\mathrm{app}}$ \\
+  \hline
+  $T_0$            & 1.6 & 33 & $\times$ \\
+  $T_0 + 605$~d    & 2.1 & 44 & 6.6 \\
+  $T_0 + 1186$~d   & 2.3 & 48 & 2.5 \\
+  $T_0 + 1786$~d   & 2.8 & 58 & 6.1 \\
+  $T_0 + 2338$~d   & 3.1 & 64 & 4.0 \\
+  \end{tabular}
+  \hfill(3.0)
+  \end{center}
+  The average apparent velocity can be calculated by using the distance and
+  time between the first and the last point which yields
+  $\beta^{\mathrm{ave}}_{\mathrm{app}} = 4.8$.
+
+\item[(T05.2a)] Radiation from the core always takes the same time to reach
+  us, but the time taken by radiation from the moving blob in the jet
+  decreases since its distance from us reduces.
+  % FIGURE NEEDED: solution sketch — jet geometry triangle showing positions A
+  % and B, viewing angle theta, and components of beta*c*Delta t along and
+  % across the line of sight (2025 theory solutions, pages 13-14 of 59).
+
+  As shown in the sketch above, a signal emitted from the moving blob at B
+  covers a distance $(\beta c)\Delta t \cos\theta$ less than a signal emitted
+  at A.
+
+  Thus the apparent time difference between the light received by the
+  observer is
+  \begin{align*}
+  \Delta t_{\mathrm{app}} = t_B - t_A
+  &= \left(t_0 + \Delta t - \frac{(\beta c)\Delta t \cos\theta}{c}\right)
+     - t_0 \\
+  &= \Delta t\,(1 - \beta\cos\theta) \\
+  \Longrightarrow\;
+  \frac{\Delta t_{\mathrm{app}}}{\Delta t}
+  &= (1 - \beta\cos\theta).
+  \tag*{(2.0)}
+  \end{align*}
+
+\item[(T05.2b)] The apparent velocity on the sky is
+  \begin{align*}
+  \beta_{\mathrm{app}} = \frac{v_{\mathrm{app}}}{c}
+  &= \frac{\beta\,\Delta t \sin\theta}{\Delta t_{\mathrm{app}}} \\
+  \beta_{\mathrm{app}}
+  &= \frac{\beta\sin\theta}{1 - \beta\cos\theta}
+  \tag*{(2.0)}
+  \end{align*}
+  The resulting formula indicates that the measured apparent velocity of the
+  jet's component is increased for relativistic features and can be higher
+  than speed of light for small values of angle $\theta$.
+
+\item[(T05.3a)] For $\beta_{\mathrm{app}} = 1$, we obtain
+  \[
+  \beta(\sin\theta + \cos\theta) = 1
+  \;\Longrightarrow\;
+  \beta = \frac{1}{\sin\theta + \cos\theta}
+  \]
+  Superluminal motion occurs if $\beta_{\mathrm{app}} > 1$; then
+  \[
+  \beta(\sin\theta + \cos\theta) > 1.
+  \]
+  This defines the superluminal region which is to be shaded.
+  % FIGURE NEEDED: solution plot of beta = 1/(sin theta + cos theta) versus
+  % theta (0-90 deg), symmetric about 45 deg with minimum 1/sqrt(2), with the
+  % superluminal region above the curve shaded with slanted lines
+  % (2025 theory solutions, page 15 of 59).
+
+\item[(T05.3b)] It may be seen from graph drawn in (T05.3a) that the minimum
+  value of $\beta$ for which superluminal motion is apparent occurs at
+  $\theta = 45^\circ$, i.e., $\beta = 1/\sqrt{2}$.
+  \begin{equation*}
+  \beta_{\mathrm{low}} = 1/\sqrt{2} \approx 0.707,
+  \tag*{(1.0)}
+  \end{equation*}
+  and the corresponding orientation angle,
+  $\theta_{\mathrm{low}} = 45^\circ$. \hfill(1.0)
+
+\item[(T05.4)] We know
+  \[
+  \beta_{\mathrm{app}} = \frac{\beta\sin\theta}{1 - \beta\cos\theta}
+  \]
+  Thus
+  \[
+  \beta\left(\frac{\sin\theta + \beta_{\mathrm{app}}\cos\theta}
+                  {\beta_{\mathrm{app}}}\right) = 1
+  \]
+  Since $\beta \le 1$, we have
+  \begin{equation*}
+  \frac{\sin\theta + \beta_{\mathrm{app}}\cos\theta}{\beta_{\mathrm{app}}} > 1
+  \tag*{(1.0)}
+  \end{equation*}
+  or
+  \[
+  \beta_{\mathrm{app}} \tan(\theta/2) < 1.
+  \]
+  Therefore, the maximum viewing angle for a jet with a given
+  $\beta_{\mathrm{app}}$ is
+  \begin{equation*}
+  \theta_{\mathrm{max}}
+  = 2\tan^{-1}\!\left(\frac{1}{\beta_{\mathrm{app}}}\right)
+  \tag*{(1.0)}
+  \end{equation*}
+
+\item[(T05.5)] Time-scale $\delta t$ of any substantial variability from a
+  source cannot be shorter than the light crossing time of the source.
+
+  This then gives an upper limit to the size $\lesssim c\,\delta t$, where $c$
+  is the speed of light. Therefore,
+  \begin{equation*}
+  c\,\delta t \gtrsim 5 R_{SC} = 5 \times \frac{2GM}{c^2}.
+  \tag*{(1.0)}
+  \end{equation*}
+  where, $M$ is the mass of the central compact object. Rearranging,
+  \[
+  M \lesssim \frac{c^3\,\delta t}{10G}
+  \]
+  Thus, upper limit on the mass of central compact core of quasar
+  \begin{align*}
+  M_{c,\mathrm{max}} &= \frac{c^3\,\delta t}{10G}
+  \tag*{(1.0)} \\
+  &= \frac{(2.998 \times 10^{8})^3 \times 3600}
+          {10 \times 6.674 \times 10^{-11}}~\mathrm{kg}
+   = 7.311 \times 10^{7}\,M_\odot \\
+  M_{c,\mathrm{max}} &= 7 \times 10^{7}\,M_\odot
+  \tag*{(1.0)}
+  \end{align*}
+\end{description}

@@ -1,0 +1,50 @@
+\begin{description}
+\item[(a)] By simple right angle triangle,
+\begin{align*}
+\mathrm{FOV} &= 2 \times \tan^{-1}
+  \left(\frac{\text{sensor width}}{2 \times \text{Focal Length}}\right)
+  = 2 \times \tan^{-1}\left(\frac{22.5}{2 \times 150}\right) \\
+\alpha &\approx 8.58^\circ
+\end{align*}
+\hfill(2.0 points)
+
+\item[(b)] Number of pixels on the sensor will be given by,
+\begin{align*}
+N &= \frac{\text{Sensor width}}{\text{pixel width}}
+   = \frac{22.5}{3.23 \times 10^{-3}} \\
+  &= 6965.94
+\end{align*}
+\hfill(1.0 points)
+
+As the number of pixels have to be integer, we take $N = 6966$.
+\hfill(1.0 points)\\
+Angular coverage of each pixel will be,
+\begin{align*}
+\text{Pixel view} &= \frac{8.578^\circ}{6966} = 0.00123^\circ/\text{pixel} \\
+  &\approx 4.43''/\text{pixel}
+\end{align*}
+\hfill(1.0 points)
+
+As the stars complete one full circle in 23.9344 hours, \hfill(1.0 points)
+\begin{align*}
+t_1 &= 1.23 \times 10^{-3}\,\frac{23.9344^{h}}{360} = 0.294\,\mathrm{s} \\
+  &\approx 0.3\,\mathrm{s}
+\end{align*}
+\hfill(1.0 points)
+
+(in reality this is probably a factor of 10 smaller than the eye would
+detect)
+
+\item[(c)] In 30 seconds, the sky will move by,
+\[ \Delta\alpha = \frac{360^\circ}{23.9344 \times 120} = 0.125\,342^\circ \]
+\hfill(1.0 points)
+\begin{align*}
+\therefore \frac{\alpha - \Delta\alpha}{\alpha}
+  &= \frac{8.578 - 0.125342}{8.578} \\
+  &= 98.5\%
+\end{align*}
+\hfill(2.0 points)
+
+(or $8.453^\circ$ is total field of view in high resolution images from the
+stack)
+\end{description}

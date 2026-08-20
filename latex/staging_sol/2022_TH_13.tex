@@ -1,0 +1,234 @@
+\begin{description}
+\item[(a)] Energy of a photon:
+  \[ E = hf \]
+  while the momentum:
+  \[ \vec{p} = \frac{hf}{c}\vec{n} \]
+  \hfill(2.0 pt)
+
+  where $\vec{n}$ is an unit vector in the direction of the motion of the
+  photon. Substituting this into energy-momentum transformation law we have:
+  \begin{align*}
+    \frac{hf_L}{c} &= \gamma\left(\frac{hf_R}{c} + p_{x_R}\frac{v}{c}\right)\\
+    p_{x_L} &= \gamma\left(p_{x_R} + \frac{hf_R v}{c^2}\right)\\
+    p_{y_L} &= p_{y_R}\\
+    p_{z_L} &= p_{z_R}
+  \end{align*}
+  \hfill(2.0 pt)
+
+  in our case:
+  \begin{align*}
+    p_{x_L} &= |p_L|\cos\theta_L, & p_{y_L} &= |p_L|\sin\theta_L,
+      & p_{z_L} &= 0\\
+    p_{x_R} &= |p_R|\cos\theta_R, & p_{y_R} &= |p_R|\sin\theta_R,
+      & p_{z_R} &= 0
+  \end{align*}
+  \hfill(3.0 pt)
+
+  where
+  \[ |p| = \frac{hf}{c} \]
+  Thus,
+  \begin{align*}
+    f_L &= \gamma\left(f_R + \frac{v}{h}|p_R|\cos\theta_R\right)\\
+        &= \gamma\left(f_R + \frac{v}{h}\,\frac{hf_R}{c}\cos\theta_R\right)\\
+    \therefore\ f_L &= \gamma f_R\left(1 + \frac{v}{c}\cos\theta_R\right)
+  \end{align*}
+  \hfill(2.0 pt)
+  \begin{align*}
+    \cos(\theta_L) &= \frac{p_{x_L}}{|p_L|} = \frac{c\,p_{x_L}}{hf_L}
+      = \frac{c\gamma\left(p_{x_R} + \dfrac{hf_R v}{c^2}\right)}
+             {h\gamma f_R\left(1 + \dfrac{v}{c}\cos\theta_R\right)}\\
+    &= \frac{c\left(\dfrac{hf_R}{c}\cos\theta_R + \dfrac{hf_R v}{c^2}\right)}
+            {hf_R\left(1 + \dfrac{v}{c}\cos\theta_R\right)}\\
+    \therefore\ \cos\theta_L
+      &= \frac{\cos\theta_R + \dfrac{v}{c}}
+              {1 + \dfrac{v}{c}\cos\theta_R}
+  \end{align*}
+  \hfill(2.0 pt)
+\item[(b)] Now just by plugging in the values of cosine we see that in case
+  (i) (orange arrow) $\cos\theta_L = 1$, So the photon keeps moving in the
+  same direction, in case (ii) (Green arrow) $\cos\theta_L = 0$, in case
+  (iii) (Yellow arrow) $\cos\theta_L = v/c$, (iv) (Grey arrow)
+  $\cos\theta_L = -1$.
+  % FIGURE NEEDED: two XY-axis diagrams side by side ("Lab Frame" and "Rest
+  % Frame") showing the four colour-coded direction arrows (orange, green,
+  % yellow, grey) of the beam in each frame; 2022 theory solutions, page 19.
+\item[(c)] From the figure we see that:
+  \[ KP = OP - OK\sin\theta = R - r\sin\theta \]
+  \hfill(1.0 pt)
+
+  where $\theta = \omega t$.
+  % FIGURE NEEDED: geometry sketch of the circular orbit: centre O, particle
+  % K on the circle, angle theta between OK and the OX axis marked at O and
+  % at K, and two parallel rays from O and K towards the distant observer P;
+  % 2022 theory solutions, page 19.
+
+  Let $t_L = T$ be the time at which photon reaches $P$ after leaving $K$ at
+  a time $t$ (in lab frame) then:
+  \begin{align*}
+    c(T - t) &= KP = R - r\sin\theta \approx R\\
+    \therefore\ t &= t_L - \frac{R}{c}
+  \end{align*}
+  \hfill(1.0 pt)
+
+  This photon makes angle $\theta = \omega t$ to the direction of its motion
+  in lab frame. Now,
+  \begin{align*}
+    \cos\theta_L &= \frac{\cos\theta_R + \dfrac{v}{c}}
+                        {1 + \dfrac{v}{c}\cos\theta_R}\\
+    \cos\theta_L + \frac{v}{c}\cos\theta_R\cos\theta_L
+      &= \cos\theta_R + \frac{v}{c}\\
+    \cos\theta_R\left(1 - \frac{v}{c}\cos\theta_L\right)
+      &= \cos\theta_L - \frac{v}{c}\\
+    \therefore\ \cos\theta_R
+      &= \frac{\cos\theta_L - \dfrac{v}{c}}
+              {1 - \dfrac{v}{c}\cos\theta_L}
+  \end{align*}
+  \hfill(2.0 pt)
+  \begin{align*}
+    f_L &= \gamma f_R\left(1 + \frac{v}{c}\cos\theta_R\right)\\
+    &= \gamma f_R\left(1 + \frac{\dfrac{v}{c}
+        \left(\cos\theta_L - \dfrac{v}{c}\right)}
+        {1 - \dfrac{v}{c}\cos\theta_L}\right)\\
+    &= \gamma f_R\left(\frac{1 - \dfrac{v}{c}\cos\theta_L
+        + \dfrac{v}{c}\cos\theta_L - \left(\dfrac{v}{c}\right)^2}
+        {1 - \dfrac{v}{c}\cos\theta_L}\right)\\
+    &= \frac{f_R}{\gamma\left(1 - \dfrac{v}{c}\cos\theta_L\right)}
+     = \frac{f_R}{\gamma\left(1 - \dfrac{v}{c}\cos(\omega t)\right)}\\
+    \therefore\ f_L
+      &= \frac{f_R}{\gamma\left(1 - \dfrac{v}{c}
+         \cos\left[\omega\left(t_L - \dfrac{R}{c}\right)\right]\right)}
+  \end{align*}
+  \hfill(3.0 pt)
+\item[(d)] \hspace{0pt}
+  \begin{align*}
+    \Delta\Omega_R &= -\Delta(\cos\theta_R)\cdot\Delta\phi\\
+    &= \left[\cos\theta_R - \cos(\theta_R + \Delta\theta_R)\right]
+       \cdot\Delta\phi\\
+    &= \left[\cos\theta_R - \cos\theta_R\cos(\Delta\theta_R)
+       + \sin\theta_R\sin(\Delta\theta_R)\right]\cdot\Delta\phi\\
+    &= \left[\cos\theta_R - \cos\theta_R\cdot(1)
+       + \sin\theta_R(\Delta\theta_R)\right]\cdot\Delta\phi\\
+    \Delta\Omega_R &= \sin\theta_R(\Delta\theta_R)(\Delta\phi)\\
+    \therefore\ \Delta\Omega_L &= \sin\theta_L(\Delta\theta_L)(\Delta\phi)
+  \end{align*}
+  \hfill(3.0 pt)
+  \begin{align*}
+    \sin^2\theta_L &= 1 - \cos^2\theta_L\\
+    &= 1 - \left(\frac{\cos\theta_R + \dfrac{v}{c}}
+        {1 + \dfrac{v}{c}\cos\theta_R}\right)^2\\
+    &= \frac{1 + 2\dfrac{v}{c}\cos\theta_R
+        + \left(\dfrac{v}{c}\right)^2\cos^2\theta_R - \cos^2\theta_R
+        - 2\dfrac{v}{c}\cos\theta_R - \left(\dfrac{v}{c}\right)^2}
+        {\left(1 + \dfrac{v}{c}\cos\theta_R\right)^2}\\
+    &= \frac{\left(1 - \left(\dfrac{v}{c}\right)^2\right)
+        \left(1 - \cos^2\theta_R\right)}
+        {\left(1 + \dfrac{v}{c}\cos\theta_R\right)^2}
+     = \frac{\sin^2\theta_R}
+        {\gamma^2\left(1 + \dfrac{v}{c}\cos\theta_R\right)^2}\\
+    \sin\theta_L &= \frac{\sin\theta_R}
+        {\gamma\left(1 + \dfrac{v}{c}\cos\theta_R\right)}
+  \end{align*}
+  \hfill(3.0 pt)
+  \begin{align*}
+    \text{Also, } \Delta\theta_L \approx \sin(\Delta\theta_L)
+      &= \frac{\sin(\Delta\theta_R)}
+         {\gamma\left(1 + \dfrac{v}{c}\cos\theta_R\right)}\\
+    \Delta\theta_L &\approx \frac{\Delta\theta_R}
+      {\gamma\left(1 + \dfrac{v}{c}\cos\theta_R\right)}
+  \end{align*}
+  \hfill(2.0 pt)
+  \begin{align*}
+    \frac{\Delta\Omega_L}{\Delta\Omega_R}
+      &= \frac{\sin\theta_L(\Delta\theta_L)(\Delta\phi)}
+              {\sin\theta_R(\Delta\theta_R)(\Delta\phi)}\\
+      &= \frac{\sin\theta_R(\Delta\theta_R)}
+              {\gamma^2\left(1 + \dfrac{v}{c}\cos\theta_R\right)^2}
+         \cdot\frac{1}{\sin\theta_R(\Delta\theta_R)}\\
+    \therefore\ \Delta\Omega_L
+      &= \frac{\Delta\Omega_R}
+              {\gamma^2\left(1 + \dfrac{v}{c}\cos\theta_R\right)^2}
+  \end{align*}
+  \hfill(2.0 pt)
+\item[(e)] Let $N(\theta_L)\Delta\Omega_L\Delta T$ be the number of photons
+  arriving in the vicinity of $P$ within the element of solid angle
+  $\Delta\Omega_L$ and time interval $T, T + \Delta T$ (it is important that
+  $\Delta T \neq \Delta t$ where $\Delta t$ is the emission time of the same
+  photons (in lab frame)). These being photons emitted by K into the solid
+  angle $\Delta\Omega$ in the time interval $t_{0R}, t_{0R} + \Delta t_{0R}$,
+  so that:
+  \[ N(\theta_L)\Delta\Omega_L\Delta T = N\Delta\Omega_R\Delta t_{0R} \]
+  \hfill(2.0 pt)
+
+  From an earlier part:
+  \begin{align*}
+    cT &= ct + R - r\sin\theta_L = ct + R - r\sin(\omega t)\\
+    % sic: the official solution writes sin(theta_L) here; from part (c) the
+    % angle is theta = omega*t, not theta_L.
+    \therefore\ c\Delta T &= c\Delta t
+      - r\left[\sin(\omega t)\cos(\omega\Delta t)
+      + \sin(\omega\Delta t)\cos(\omega t) - \sin(\omega t)\right]\\
+    c\Delta T &= c\Delta t - r\omega\cos(\omega t)\Delta t
+  \end{align*}
+  \hfill(2.0 pt)
+  \begin{align*}
+    \frac{\Delta T}{\Delta t_{0R}}
+      &= \frac{\Delta t}{\Delta t_{0R}}\frac{\Delta T}{\Delta t}
+       = \gamma\left(1 - \frac{v}{c}\cos(\omega t)\right)\\
+    \frac{\Delta t_{0R}}{\Delta T}
+      &= \frac{1}{\gamma\left(1 - \dfrac{v}{c}\cos(\omega t)\right)}
+  \end{align*}
+  \hfill(3.0 pt)
+  \begin{align*}
+    \frac{N(t_L)}{N_R}
+      &= \frac{\Delta\Omega_R\Delta t_{0R}}{\Delta\Omega_L\Delta T}\\
+      &= \frac{\gamma^2\left(1 + \dfrac{v}{c}\cos\theta_R\right)^2}
+              {\gamma\left(1 - \dfrac{v}{c}\cos(\omega t)\right)}\\
+      &= \frac{\gamma\left(1 + \left(\dfrac{v}{c}\right)
+          \dfrac{\cos\theta_L - \dfrac{v}{c}}
+                {1 - \dfrac{v}{c}\cos\theta_L}\right)^2}
+              {\left(1 - \dfrac{v}{c}\cos\theta_L\right)}\\
+      &= \frac{\gamma}
+              {\gamma^4\left(1 - \dfrac{v}{c}\cos\theta_L\right)^3}\\
+    N(t_L) &= \frac{N_R}
+      {\gamma^3\left(1 - \dfrac{v}{c}\cos\left(t_L - R/c\right)\right)^3}
+    % sic: the official solution omits the factor omega inside the cosine;
+    % it should read cos[omega(t_L - R/c)].
+  \end{align*}
+  \hfill(3.0 pt)
+
+  In terms of energy fluxes
+  \begin{align*}
+    F_0 &= \frac{hf_R N_R}{R^2} = \frac{L}{4\pi R^2}\\
+    F(t_L) &= \frac{hf_L N(t_L)}{R^2}
+  \end{align*}
+  \hfill(2.0 pt)
+  \begin{align*}
+    \frac{F(t_L)}{F_0} &= \frac{hf_L N(t_L)}{hf_R N_R}\\
+      &= \frac{1}{\gamma^4\left(1 - \dfrac{v}{c}
+         \cos\left[\omega\left(t - \dfrac{R}{c}\right)\right]\right)^4}\\
+    F(t_L) &= \frac{L}{4\pi R^2\gamma^4\left(1 - \dfrac{v}{c}
+      \cos\left[\omega\left(t - \dfrac{R}{c}\right)\right]\right)^4}
+  \end{align*}
+  \hfill(3.0 pt)
+
+  The radiation is strongly beamed in the direction of motion of the source
+  so that a remote observer in or near the orbital plane of the source sees
+  strongly pulsed radiation.
+\item[(f)] The amplification (for a given $v$) is highest when
+  $\cos\theta_L = 1$. \hfill(1.0 pt)
+  \begin{align*}
+    F(t_L) &= \frac{F_0}{\left[\gamma\left(1 - \dfrac{v}{c}\right)\right]^4}\\
+    A_{\max} &= \frac{1}{\left[0.0975 \times 0.05\right]^4}\\
+    A_{\max} &\approx 1.8 \times 10^9
+    % sic: the official solution substitutes 0.0975 = 1/gamma^2 where the
+    % formula above calls for gamma = 3.2; evaluating [gamma(1-v/c)]^{-4}
+    % directly gives ~1.5e3, not 1.8e9 (and similarly for A_min below).
+  \end{align*}
+  \hfill(1.0 pt)
+  \begin{align*}
+    \text{Similarly, } A_{\min}
+      &= \frac{1}{\left[0.0975 \times 1.95\right]^4}\\
+    A_{\min} &\approx 770
+  \end{align*}
+  \hfill(1.0 pt)
+\end{description}

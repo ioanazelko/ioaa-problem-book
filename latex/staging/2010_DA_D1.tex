@@ -1,0 +1,80 @@
+Information:
+
+Picture 1 presents a negative image of sky taken by a CCD camera attached to
+a telescope whose parameters are presented in the accompanying table (which
+is part of the FITS datafile header). Picture 2 consists of two images: one
+is an enlarged view of part of Picture 1 and the second is an enlarged image
+of the same part of the sky taken some time earlier. Picture 3 presents a
+sky map which includes the region shown in the CCD images.
+
+The stars in the images are far away and should ideally be seen as point
+sources. However, diffraction on the telescope aperture and the effects of
+atmospheric turbulence (known as `seeing') blur the light from the stars.
+The brighter the star, the more of the spread-out light is visible above the
+level of the background sky.
+
+Questions:
+
+\begin{enumerate}
+\item Identify any 5 bright stars (mark them by Roman numerals) from the
+  image and mark them on both the image and map.
+\item Mark the field of view of the camera on the map.
+\item Use this information to obtain the physical dimensions of the CCD chip
+  in mm.
+\item Estimate the size of the blurring effect in arcseconds by examining
+  the image of the star in Picture 2. (Note that due to changes in contrast
+  necessary for printing, the diameter of the image appears to be about 3.5
+  times the full width at half maximum (FWHM) of the profile of the star.)
+\item Compare the result with theoretical size of the diffraction disc of
+  the telescope.
+\item Seeing of 1 arcsecond is often considered to indicate good conditions.
+  Calculate the size of the star image in pixels if the atmospheric seeing
+  was 1 arcsecond and compare it with the result from question 4.
+\item Two objects observed moving relative to the background stars have been
+  marked on Picture 1. The motion of one (``Object 1'') was fast enough that
+  it left a clear trail on the image. The motion of the other (``Object 2'')
+  is more easily seen on the enlarged image (Picture 2A) and another image
+  taken some time later (Picture 2B).
+
+  Using the results of the first section, determine the angular velocity on
+  the sky of both objects. Choose which of the statements in the list below
+  are correct, assuming that the objects are moving on circular orbits.
+  (Points will be given for each correct answer marked and deducted for each
+  incorrect answer marked.) The probable causes of the different angular
+  velocities are:
+  \begin{description}
+  \item[a)] different masses of the objects,
+  \item[b)] different distances of the objects from Earth,
+  \item[c)] different orbital velocities of the objects,
+  \item[d)] different projections of the objects' velocities,
+  \item[e)] Object 1 orbits the Earth while Object 2 orbits the Sun.
+  \end{description}
+\end{enumerate}
+
+Data: for Picture 1, the data are,
+
+\begin{center}
+\begin{tabular}{lll}
+BITPIX & 16 & Number of bits per pixel \\
+NAXIS & 2 & Number of axes \\
+NAXIS1 & 1024 & Width of image (in pixels) \\
+NAXIS2 & 1024 & Height of image (in pixels) \\
+DATE-OBS & 2010-09-07 05:00:40.4 & Middle of exposure \\
+TIMESYS & UT & Time Scale \\
+EXPTIME & 300.00 & Exposure time (seconds) \\
+OBJCTRA & 22 29 20.031 & RA of center of the image \\
+OBJCTDEC & +07 20 00.793 & DEC of center of the image \\
+FOCALLEN & 3.180m & Focal length of the telescope \\
+TELESCOP & 0.61m & Telescope aperture \\
+\end{tabular}
+\end{center}
+
+\ioaafig{2010_DA_D1-f1.pdf}
+
+For Picture 2A (the same area observed some time earlier) the data are:
+DATE-OBS = 2010-09-07 04:42:33.3 (middle of exposure). Picture 2B is an
+enlargement of Picture 1 around Object 2.
+
+\ioaafig{2010_DA_D1-f2.pdf}
+
+\ioaafig{2010_DA_D1-f3.pdf}

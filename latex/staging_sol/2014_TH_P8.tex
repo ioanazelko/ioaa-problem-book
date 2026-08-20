@@ -1,0 +1,58 @@
+\textbf{Detailed solution}
+
+By using the Plank expression the spectral intensities for the two wavelengths
+in the doublet emitted by the star number 1 are:
+\[ r_1(\lambda_1) = \frac{2\pi h c^2}
+     {\lambda_1^5\left(e^{hc/\lambda_1 k T_1}-1\right)};\quad
+   r_1(\lambda_2) = \frac{2\pi h c^2}
+     {\lambda_2^5\left(e^{hc/\lambda_2 k T_1}-1\right)}; \]
+And by considering $hc \gg k\lambda T$;
+\[ r_1(\lambda_1) = \frac{2\pi h c^2}{\lambda_1^5}\,
+     e^{-hc/\lambda_1 k T_1};\quad
+   r_1(\lambda_2) = \frac{2\pi h c^2}{\lambda_2^5}\,
+     e^{-hc/\lambda_2 k T_1}. \tag*{(1)} \]
+Respectively, the spectral intensities for the two wavelengths in the doublet
+emitted by the star number 2 are:
+\[ r_2(\lambda_1) = \frac{2\pi h c^2}
+     {\lambda_1^5\left(e^{hc/\lambda_1 k T_2}-1\right)};\quad
+   r_2(\lambda_2) = \frac{2\pi h c^2}
+     {\lambda_2^5\left(e^{hc/\lambda_2 k T_2}-1\right)}; \]
+And by considering $hc \gg k\lambda T$;
+\[ r_2(\lambda_1) = \frac{2\pi h c^2}{\lambda_1^5}\,
+     e^{-hc/\lambda_1 k T_2};\quad
+   r_2(\lambda_2) = \frac{2\pi h c^2}{\lambda_2^5}\,
+     e^{-hc/\lambda_2 k T_2}. \tag*{(2)} \]
+Using the Pogson formula for star 1 and 2 and for $\lambda_1$, result:
+\[ \log\frac{r_1(\lambda_1)}{r_2(\lambda_1)}
+   = -0{,}4\left(m_{1,\lambda_1}-m_{2,\lambda_1}\right)
+   = -0{,}4\cdot\Delta m_{\lambda_1}; \]
+\[ \log e^{hc/\lambda_1 k\left(1/T_2-1/T_1\right)}
+   = -0{,}4\cdot\Delta m_{\lambda_1} \tag*{(3)} \]
+Similar the Pogson formula for $\lambda_2$:
+\[ \log\frac{r_1(\lambda_2)}{r_2(\lambda_2)}
+   = -0{,}4\left(m_{1,\lambda_2}-m_{2,\lambda_2}\right)
+   = -0{,}4\cdot\Delta m_{\lambda_2}; \]
+\[ \log e^{hc/\lambda_2 k\left(1/T_2-1/T_1\right)}
+   = -0{,}4\cdot\Delta m_{\lambda_2} \tag*{(4)} \]
+Using the relations (3) and (4)
+\[ \log e^{hc/\lambda_2 k\left(1/T_2-1/T_1\right)}
+   - \log e^{hc/\lambda_1 k\left(1/T_2-1/T_1\right)}
+   = -0{,}4\cdot\Delta m_{\lambda_2} + 0{,}4\cdot\Delta m_{\lambda_1}; \]
+\[ \log e^{hc/\lambda_2 k\left(1/T_2-1/T_1\right)}
+   + \log e^{-hc/\lambda_1 k\left(1/T_2-1/T_1\right)}
+   = -0{,}4\cdot\Delta m_{\lambda_2} + 0{,}4\cdot\Delta m_{\lambda_1}; \]
+\[ \left[\frac{hc}{k}\left(\frac{1}{T_2}-\frac{1}{T_1}\right)\cdot
+   \left(\frac{1}{\lambda_2}-\frac{1}{\lambda_1}\right)\right]\cdot\log e
+   = 0{,}4\left(\Delta m_{\lambda_1}-\Delta m_{\lambda_2}\right); \]
+Because $\log e \approx 0{,}43$;
+$\dfrac{0{,}4}{\log e}\approx 0{,}93$;
+\[ \frac{1}{T_2}-\frac{1}{T_1}
+   = -0{,}93\cdot\frac{\left(\Delta m_{\lambda_1}-\Delta m_{\lambda_2}\right)}
+     {\dfrac{hc}{k}\left(\dfrac{1}{\lambda_2}-\dfrac{1}{\lambda_1}\right)}
+   = -0{,}93\cdot\frac{k\lambda_1\lambda_2
+       \left(\Delta m_{\lambda_1}-\Delta m_{\lambda_2}\right)}
+     {hc\left(\lambda_1-\lambda_2\right)}; \]
+\[ T_1 = T_2\cdot\frac{hc\left(\lambda_1-\lambda_2\right)}
+     {hc\left(\lambda_1-\lambda_2\right)
+      + 0{,}93\cdot k\lambda_1\lambda_2 T_2
+        \left(\Delta m_{\lambda_1}-\Delta m_{\lambda_2}\right)}. \tag*{(5)} \]

@@ -1,0 +1,125 @@
+\begin{description}
+\item[a)] The geometric situation is the following: \hfill(5\,p)
+
+  % FIGURE NEEDED: Fig. 12.1 -- cross-section of the Earth with N (Nagykanizsa),
+  % W (Windhoek), O (centre of Earth), A (asteroid), the zenith directions,
+  % angles z_1, z_2, phi_1, phi_2, alpha, p_1, p_2 and distances d, D, R;
+  % 2019 theory solutions, page 19 (problem 12).
+
+\item[b)] One can recognize that the triangle $NOW$ is an isosceles triangle,
+  two sides ($ON$ and $OW$) are equal to each other in length:
+  \[
+    ON = OW = R \tag{12.1}
+  \]
+  \hfill(1\,p)
+
+  Therefore the angles $\alpha = ONW\sphericalangle = OWN\sphericalangle$. For
+  the $NOW$ triangle we can write, that:
+  \[
+    2\alpha + \varphi_1 + \varphi_2 = 180^\circ
+    \;\rightarrow\;
+    \alpha = 90^\circ - \frac{\varphi_1 + \varphi_2}{2} \tag{12.2}
+  \]
+  \hfill(1\,p)
+
+  Let us denote the direct -- i.e.\ measured through the body of the Earth, not
+  on the surface -- distance between Nagykanizsa and Windhoek by $d$:
+  $d = NW$. This distance can be obtained straightforward by the cosine theorem
+  (one has to take care that the absolute values of the latitudes should be
+  added inside the cosine function):
+  \[
+    d = \sqrt{R^2 + R^2 - 2R^2\cos(\varphi_1 + \varphi_2)}
+      = R\sqrt{2\bigl(1 - \cos(\varphi_1 + \varphi_2)\bigr)} \tag{12.3}
+  \]
+  \hfill(2\,p)
+
+  With numerical values:
+  \[
+    d = 1.133\,05\,R
+  \]
+  \hfill(1\,p)
+
+  Let us use the following notations:
+  \[
+    x_1 = \overline{NA}, \quad x_2 = \overline{WA}, \quad p = p_1 + p_2
+    \tag{12.4}
+  \]
+  For the $NOWA$ quadrilateral we can write that:
+  \[
+    \varphi_1 + \varphi_2 + (180^\circ - z_1) + p + (180^\circ - z_2)
+      = 360^\circ \tag{12.5}
+  \]
+  \hfill(1\,p)
+
+  and therefore:
+  \[
+    p = z_1 + z_2 - (\varphi_1 + \varphi_2) \tag{12.6}
+  \]
+  \hfill(1\,p)
+
+  For the $NWA$ triangle we can write that:
+  \[
+    \frac{x_1}{d} = \frac{\sin(180^\circ - z_2 - \alpha)}{\sin p}
+    \quad\text{and}\quad
+    \frac{x_2}{d} = \frac{\sin(180^\circ - z_1 - \alpha)}{\sin p} \tag{12.7}
+  \]
+  \hfill(2\,p)
+
+  Thus:
+  \[
+    x_1 = d\,\frac{\sin(z_2 + \alpha)}
+                  {\sin(z_1 + z_2 - (\varphi_1 + \varphi_2))}
+    \quad\text{and}\quad
+    x_2 = d\,\frac{\sin(z_1 + \alpha)}
+                  {\sin(z_1 + z_2 - (\varphi_1 + \varphi_2))} \tag{12.8}
+  \]
+  \hfill(2\,p)
+
+  $D$ can be obtained either from the triangle $NOA$ or $WOA$ by the cosine
+  theorem:
+  \[
+    D^2 = R^2 + x_1^2 - 2Rx_1\cos(180^\circ - z_1) \tag{12.9}
+  \]
+  or
+  \[
+    D^2 = R^2 + x_2^2 - 2Rx_2\cos(180^\circ - z_2) \tag{12.10}
+  \]
+  \hfill(2\,p)
+
+  Let us take the sum of them:
+  \[
+    2D^2 = 2R^2 + (x_1^2 + x_2^2) + 2R(x_1\cos z_1 + x_2\cos z_2),
+    \tag{12.11}
+  \]
+  \hfill(1\,p)
+
+  where we have used that $\cos(180^\circ - x) = -\cos x$.
+
+  (If someone determines $D$ only from one of the two ($NOA$, $WOA$)
+  triangles, 1 point can be deducted, because that means, we ignore the error
+  bars of one of the measurements in a significant way.)
+
+  After substitution and dividing by two one gets:
+  \[
+    D^2 = R^2
+      + d^2\,\frac{\sin^2(z_1 + \alpha) + \sin^2(z_2 + \alpha)}
+                  {2\sin^2(z_1 + z_2 - (\varphi_1 + \varphi_2))}
+      + Rd\,\frac{\sin(z_2 + \alpha)\cos z_1 + \sin(z_1 + \alpha)\cos z_2}
+                 {\sin(z_1 + z_2 - (\varphi_1 + \varphi_2))} \tag{12.12}
+  \]
+  \hfill(3\,p)
+
+  This contains only known quantities. After substitution we get (notice that
+  for alpha and $D$ we need the absolute values of the geographical latitudes):
+  \[
+    \alpha = 55.5^\circ
+  \]
+  \hfill(1\,p)
+  \[
+    D = 65.8\,R = 1.1\,d_{\mathrm{Moon}}
+  \]
+  \hfill(2\,p)
+
+  So, the asteroid is at 65.8 Earth-radii from the centre of the Earth. This is
+  slightly more than the distance to the Moon.
+\end{description}

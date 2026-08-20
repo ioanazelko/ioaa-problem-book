@@ -1,0 +1,104 @@
+% Decimal commas of the source ("0,2734") are rendered as decimal points.
+\begin{description}
+\item[1)] The star is a W UMa type, so both primary and secondary minima were
+  observed. If the depth of the minimum isn't given, there is no way of
+  deciding which (primary or secondary it is).
+
+\item[2)] From the data, the can be seen that on four nights more than one
+  minimum was observed. This allows us to estimate half the period based on
+  the difference between pairs of observations:
+
+  \begin{center}
+  \begin{tabular}{ccc}
+    \hline
+    minima & $\Delta T$ & average \\
+    \hline
+    2--1   & .1367 & $\Sigma/5 = .1367$ \\
+    4--3   & .1372 & Period $P =$ \\
+    10--9  & .1364 & obtained average \\
+    11--10 & .1373 & $\times\,2 = \underline{0.2734}$ \\
+    12--11 & .1359 & \\
+    \hline
+  \end{tabular}
+  \end{center}
+
+\item[3)] For a first approximation of the elements, we chose an initial epoch
+  ($M_0$), for example the first observed minimum 2454092.4111. The
+  approximate elements are then:
+  \[ M_{\mathrm{calc}} = 2454092.4111 + 0.2734 \cdot E \]
+
+\item[4)] For an exact determination of the the elements we draw an O--C
+  diagram. The data for making the O--C diagram are calculates as follows:
+
+  \begin{center}
+  \begin{tabular}{cccccc}
+    \hline
+    No & $(M_{\mathrm{obs}})$ & $E = (M_{\mathrm{obs}} - M_0)/P$
+       & $E$ (rounded & $M_{\mathrm{calc}}$
+       & O--C $=$ \\
+       & $2454000+$ & & to the nearest & $2454000.0+$
+       & $M_{\mathrm{obs}} - M_{\mathrm{calc}}$ \\
+       & & & whole or half & & \\
+       & & & integer) & & \\
+    \hline
+    1  & 092.4111 & 0         & 0.0    & 092.4111 & 0.0000 \\
+    2  & 092.5478 & 0.5       & 0.5    & 092.5478 & 0.0000 \\
+    3  & 367.3284 & 1005.5497 & 1005.5 & 367.3148 & 0.0136 \\
+    4  & 367.4656 & 1006.0516 & 1006.0 & 367.4515 & 0.0141 \\
+    5  & 388.5175 & 1083.0519 & 1083.0 & 388.5033 & 0.0142 \\
+    6  & 388.6539 & 1083.5508 & 1083.5 & 388.6400 & 0.0139 \\
+    7  & 704.8561 & 2240.1061 & 2240.0 & 704.8271 & 0.0290 \\
+    8  & 776.4901 & 2502.1178 & 2502.0 & 776.4579 & 0.0322 \\
+    9  & 835.2734 & 2717.1262 & 2717.0 & 835.2389 & 0.0345 \\
+    10 & 847.3039 & 2761.1295 & 2761.0 & 847.2685 & 0.0354 \\
+    11 & 847.4412 & 2761.6316 & 2761.5 & 847.4052 & 0.0360 \\
+    12 & 847.5771 & 2762.1287 & 2762.0 & 847.5419 & 0.0352 \\
+    \hline
+  \end{tabular}
+  \end{center}
+
+\item[5)] The O--C diagram should be plotted on graph paper.
+  % FIGURE NEEDED: O-C diagram, (O-C) in days vs epoch E, rising roughly
+  % linearly from 0 at E = 0 to ~0.0355 d at E = 2762 (to be drawn from the
+  % table above; 2011 DA solutions, p. 82, scan).
+
+\item[6)] From the diagram, it can be seen that over 2762 epochs the value of
+  (O--C) increased by 0.0355 days, therefore over one cycle (one epoch) the
+  period was too short by:
+  \[ 0.0355/2762 = 0.0000129 \]
+  and the estimated period $P$ should be increased by this value. Taking into
+  account that the graph can be read to 3 significant figures, the correction
+  should also be to 3 significant figures.
+  \[ P' = 0.2734 + 0.0000129 = 0.2734129 \]
+  thus the corrected light elements of V1107 Cas are:
+  \[ M_{\mathrm{calc}} = 2454092.4111 + 0.2734129 \cdot E \]
+
+\item[7)] The correction of the period could also be determined directly from
+  the table, using the mean value of O--C for the initial epoch ($E = 0$; 0.5)
+  and the final epochs ($E = 2761$; 2761.5; 2762).
+
+\item[8)] To calculate the ephemeris, we need to know the JD of a given day.
+  Since dates and JD numbers are given in the observations, we can calculate
+  that, for example on 1 January 2008 at 12:00 the JD was 2454467.0, while on
+  1 January 2011 at 12:00 it was 2455563.0. Since 1 September 2011 is the
+  243-rd day of the year, thus at 12:00 on that day JD 2455806.0 begins.
+
+\item[9)] On 1 September 2011 at 18:00 (JD 2455806.25) there have been
+  1713.8389 days or 6268.3176 epochs since the inital epoch $M_0$
+  (2454092.4111). Thus the nearest (secondary) minimum which agrees with
+  these elements will be:
+  \[ \mathrm{JD}\ 2454092.4111 + 0.2734129 \cdot 6268.5 = 2455806.2999
+     = \underline{19^{\mathrm{h}}\,12^{\mathrm{m}}\ \mathrm{UT}} \]
+  The next (primary) minimum will be:
+  \[ \mathrm{JD}\ 2454092.4111 + 0.2734129 \cdot 6269 = 2455806.4366
+     = \underline{22^{\mathrm{h}}\,29^{\mathrm{m}}\ \mathrm{UT}} \]
+  The next (secondary) minimum will be on the same night, at:
+  \[ \mathrm{JD}\ 2455806.4111 + 0.2734129 \cdot 6269.5 = 2457520.5733 \]
+  % sic — so printed in the source; the first term should read
+  % 2454092.4111, giving JD 2455806.5733.
+  that is on 2 September at
+  $\underline{1^{\mathrm{h}}\,46^{\mathrm{m}}\ \mathrm{UT}}$.
+
+  Earlier and later minima can be determined by adding or subtracting half a
+  period, or $3^{\mathrm{h}}17^{\mathrm{m}}$.
+\end{description}

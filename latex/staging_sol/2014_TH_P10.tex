@@ -1,0 +1,84 @@
+The hydrostatic equilibrium inside the star means that in each point of the
+inside of the star the gravitational forces are compensated by the hydrostatic
+pressure forces. That means that the mater of the star remains localized in a
+region of space.
+
+The total pressure of the stellar gas has two components: the pressure due to
+the movement of the stellar-gas particles $\left(p_{\mathrm{gaz}}\right)$ and
+the pressure due to the emitted radiation by the stellar-gas particles
+$\left(p_{\mathrm{rad}}\right)$, thus:
+\begin{align*}
+  p_{\mathrm{total}} &= p_{\mathrm{gaz}} + p_{\mathrm{rad}}; \\
+  p_{\mathrm{gaz}} &= p_{\mathrm{H}} + p_{\mathrm{He}}; \\
+  p_{\mathrm{rad}} &= \frac{1}{3}aT; % sic: source writes aT here and below (should be aT^4)
+\end{align*}
+\[
+  p_{\mathrm{total}}
+  = \rho\,\frac{n\mu_{\mathrm{He}} + (1-n)\mu_{\mathrm{H}}}{\mu_{\mathrm{H}}\mu_{\mathrm{He}}}\,RT
+    + \frac{1}{3}aT. \tag{1}
+\]
+In order to calculate the gravitational pressure of the stellar gas let's
+consider a narrow cylinder with section area $\Delta S$, along the radius of
+the star. See the figure below. If the total gravitational force acting on this
+cylinder is $\vec{F}_g$ than the gravitational pressure exert by the
+gas-column is $p_{\mathrm{grav}} = F_g/\Delta S$.
+% FIGURE NEEDED: cross-section of the star with the narrow radial gas cylinder of section Delta S and the forces F_1, F_2, F_g and radiation pressures marked (2014 TH solutions, pp. 19-20, Fig. 15a)
+
+In order to calculate $\vec{F}_g$ let divide the cylinder in $n$ identically
+small cylinders each of it with height $\Delta r$ and mass $\Delta m$.
+Considering an homogenous star:
+\begin{align*}
+  F_1 &= K\frac{\Delta m \cdot M_1}{\left(r - \dfrac{\Delta r}{2}\right)^{2}}
+       = K\frac{\Delta m \cdot M_1}{r^2\left(1 - \dfrac{\Delta r}{2r}\right)^{2}}
+       = K\frac{\Delta m \cdot M_1}{r^2}\left(1 - \frac{\Delta r}{2r}\right)^{\!-2}; \\
+  \frac{M}{r^3} &= \frac{M_1}{(r-\Delta r)^3}; \quad
+  M_1 = M\cdot\frac{(r-\Delta r)^3}{r^3} = M\cdot\left(1 - \frac{\Delta r}{r}\right)^{\!3}; \\
+  F_1 &\approx K\frac{\Delta m \cdot M}{r^2}\left(1 - 2\frac{\Delta r}{r}\right); \\
+  F_2 &\approx K\frac{\Delta m \cdot M}{r^2}\left(1 - 3\frac{\Delta r}{r}\right); \\
+  &\dotso \\
+  F_n &\approx K\frac{\Delta m \cdot M}{r^2}\left(1 - (n+1)\frac{\Delta r}{r}\right); \\
+  F_g &= F_1 + F_2 + \dotsb + F_n; \\
+  F_g &= K\frac{m\cdot M}{n r^2}\left[n - \frac{1}{n}\,\frac{(1+n)n}{2}\right]; \quad
+  F_g = K\frac{m\cdot M}{r^2}\left[1 - \frac{(1+n)}{2n}\right]; \\
+  F_g &= K\frac{m\cdot M}{r^2}\,\frac{n-1}{2n}; \quad
+  \frac{n-1}{2n} \approx \frac{1}{2}; \\
+  F_g &= K\frac{m\cdot M}{2r^2}. \tag{2}
+\end{align*}
+Thus the gravitational pressure is
+\begin{align*}
+  p_g &= \frac{F_g}{\Delta S}
+       = \frac{1}{\Delta S}\,
+         \frac{\rho\cdot r\cdot\Delta S\cdot\rho\cdot\dfrac{4\pi r^3}{3}}{2r^2} \\
+  p_g &= \frac{2}{3}\pi K r^2 \rho^2
+\end{align*}
+Using the relations (1) and (2) in the pressures equilibrium relationship
+\[
+  p_{\mathrm{total}} = p_{\mathrm{gravitational}}
+\]
+Results:
+\begin{align*}
+  \frac{2}{3}\pi K r^2\rho^2
+    &= \rho\,\frac{n\mu_{\mathrm{He}} + (1-n)\mu_{\mathrm{H}}}{\mu_{\mathrm{H}}\mu_{\mathrm{He}}}\,RT
+       + \frac{1}{3}aT; \\
+  \frac{2}{3}\pi K r^2\cdot\rho^2
+    - \frac{n\mu_{\mathrm{He}} + (1-n)\mu_{\mathrm{H}}}{\mu_{\mathrm{H}}\mu_{\mathrm{He}}}\,RT\cdot\rho
+    - \frac{1}{3}aT &= 0;
+\end{align*}
+This is an second degree equation in $\rho$
+\[
+  A\rho^2 - B\rho - C = 0
+\]
+Where the coefficients are
+\begin{align*}
+  A &= \frac{2}{3}\pi K r^2 \\
+  B &= \frac{n\mu_{\mathrm{He}} + (1-n)\mu_{\mathrm{H}}}{\mu_{\mathrm{H}}\mu_{\mathrm{He}}}\,RT \\
+  C &= \frac{1}{3}aT
+\end{align*}
+The positive solution is the valid one i.e.
+\[
+  \rho = \frac{B + \sqrt{B^2 + 4AC}}{2A}, \qquad
+  \rho = \frac{\dfrac{n\mu_{\mathrm{He}} + (1-n)\mu_{\mathrm{H}}}{\mu_{\mathrm{H}}\mu_{\mathrm{He}}}\,RT
+    + \sqrt{\left(\dfrac{n\mu_{\mathrm{He}} + (1-n)\mu_{\mathrm{H}}}{\mu_{\mathrm{H}}\mu_{\mathrm{He}}}\,RT\right)^{\!2}
+    + \dfrac{8}{9}\pi K r^2 aT}}
+    {\dfrac{4}{3}\pi K r^2}
+\]

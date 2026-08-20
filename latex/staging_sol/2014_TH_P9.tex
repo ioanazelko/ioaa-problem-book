@@ -1,0 +1,40 @@
+The pressure of the emitted radiation is
+\[ p_{\mathrm{rad}} = w = \frac{\phi_{planet,D}}{c} \]
+\[ p_{\mathrm{rad}}
+   = \frac{\sigma T_{planet}^4 R_{planet}^2}{cD^2} \tag*{(1)} \]
+% sic: the source writes "planet" subscripts although the problem concerns
+% the Sun and a dust particle
+As seen in the below image, the pressure due to the solar radiation is
+effectively acting on an equivalent plane disc with the diameter $d$ of the
+spherical star dust particle
+% FIGURE NEEDED: Fig.12 b (2014_th_sol.pdf p.18): the Sun emitting radiation
+% (arrows) toward a grey sphere of diameter d at distance D, with forces F_g
+% (toward the Sun) and F_rad,S (away) marked; below, the equivalent plane
+% disc of diameter d receiving the radiation pressure p_rad,S.
+
+Thus the force acting by the Sun radiation on the star-dust particle is:
+\[ F_{\mathrm{rad,S}} = p_{\mathrm{rad,S}}\cdot\pi r^2
+   = p_{\mathrm{rad,S}}\cdot\frac{\pi d^2}{4}
+   = \frac{\sigma T_{\mathrm{S}}^4 R_{\mathrm{S}}^2}{cL_{\mathrm{S}}^2}
+     \cdot\frac{\pi d^2}{4}, \]
+% sic: "cL_S^2" in the source; from relation (1) and the following lines the
+% denominator should be c D_S^2
+The equilibrium condition is
+\[ F_{\mathrm{rad,S}} = F_{\mathrm{g}}, \]
+Where $F_{\mathrm{g}}$ is the gravitational attraction force between Sun and
+the star-dust particle.
+\begin{align*}
+\frac{\sigma T_{\mathrm{S}}^4 R_{\mathrm{S}}^2}{cD_{\mathrm{S}}^2}
+  \cdot\frac{\pi d^2}{4}
+  &= K\,\frac{m M_{\mathrm{S}}}{D_{\mathrm{S}}^2};\\
+m = \rho V = \rho\,\frac{4\pi r^3}{3}
+  &= \rho\,\frac{4\pi}{3}\,\frac{d^3}{8}
+   = \rho\,\frac{\pi d^3}{6};\\
+\frac{\sigma T_{\mathrm{S}}^4 R_{\mathrm{S}}^2}{cD_{\mathrm{S}}^2}
+  \cdot\frac{\pi d^2}{4}
+  &= K\rho\,\frac{\pi d^3}{6}\,\frac{M_{\mathrm{S}}}{D_{\mathrm{S}}^2};\\
+d &= \frac{3}{2}\cdot\frac{\sigma}{\rho K}\cdot
+     \frac{T_{\mathrm{S}}^4 R_{\mathrm{S}}^2}{M_{\mathrm{S}}}.
+\end{align*}
+% sic: the final formula omits the factor 1/c which follows from the
+% preceding line; dimensionally d = (3/2) sigma T_S^4 R_S^2 / (c rho K M_S)

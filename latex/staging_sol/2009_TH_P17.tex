@@ -1,0 +1,97 @@
+\begin{description}
+\item[a)] Relation between the apparent and absolute magnitude is given by
+  \[
+    m = M + 5\log\left(\frac{d}{10}\right)
+  \]
+  \hfill(3 points)
+
+  where $d$ is in terms of parsec. Substituting $m = 18$ and $M = -0.2$,
+  results in
+  \[
+    d = 4.37\times10^{4}\ \mathrm{pc}
+  \]
+  \hfill(5 points)
+\item[b)] Adding the term for the extinction, changes the magnitude distance
+  relation as follows
+  \[
+    m = M + 0.7x + 5\log\,(100x)
+  \]
+  where $x$ is given in terms of kilo parsec. To have a rough value for $x$,
+  after substituting $m$ and $M$, this equation reduces to
+  \[
+    8.2 = 0.7x + 5\log\,(x)
+  \]
+  \hfill(6 points)
+
+  To solve this equation, we examine
+  \[
+    x = 5\,,\,5.5\,,\,6\,,\,6.5
+  \]
+  where the best value is obtained roughly $x \cong 6.1\ \mathrm{kpc}$.
+  \hfill(8 points)
+\item[c)] For a solid angle $\Omega$, the number of observed red clump stars
+  at the distance in the range of $x$ and $x + \Delta x$ is given by
+  \[
+    \Delta N = \Omega\,x^2\,n(x)f\,\Delta x
+  \]
+  So the number of stars observed in $\Delta x$ is given by
+  \[
+    \frac{\Delta N}{\Delta x} = \Omega\,x^2\,n(x)f
+  \]
+  \hfill(6 points)
+
+  From the relation between the distance and apparent magnitude we have
+  \begin{align*}
+    m_1 &= M + 5\log\left(\frac{x}{10}\right)\\
+    m_2 &= M + 5\log\left(\frac{x+\Delta x}{10}\right)\\
+    \Delta m &= 5\log\left(\frac{x+\Delta x}{x}\right)\\
+    \Delta m &= 5\log\left(1 + \frac{\Delta x}{x}\right)\\
+    \Delta m &= \frac{5}{\ln 10}\,\ln\left(1 + \frac{\Delta x}{x}\right)\\
+    \Delta m &= \frac{5}{\ln 10}\left(\frac{\Delta x}{x}\right)
+  \end{align*}
+  Replacing $\Delta x$ with $\Delta m$, results in
+  \[
+    \frac{\Delta N}{\Delta m}
+      = \frac{\Delta N}{\Delta x}\times\frac{\Delta x}{\Delta m}
+  \]
+  So the number of stars for a given magnitude is obtained by \hfill(5 points)
+  \[
+    \frac{\Delta N}{\Delta m} = \frac{\Omega \ln 10}{5}\,n(x)x^3 f
+  \]
+  Finally we substituting % sic
+  $x$ in terms of apparent magnitude using $x = 10^{\frac{m+5.2}{5}}$.
+  % sic: the exponent is printed with m+5.2 here but m-5.2 in the final
+  % expressions below; with x in kpc the correct form is 10^{(m-5.2)/5}.
+  In the case of no extinction, we are able to observe the Galaxy beyond the
+  center. So $\frac{dN}{dm}$ has two terms in $x < R_0$ and $x > R_0$. The
+  relation between $x$ and $r$ for these two cases are
+  \[
+    x = R_0 - r \qquad x < R_0
+  \]
+  and
+  \[
+    x = R_0 + r \qquad x > R_0
+  \]
+  \hfill(6 points)
+
+  So in general we can write $\frac{\Delta N}{\Delta m}$ as
+  \[
+    \frac{\Delta N}{\Delta m}
+      = \frac{\Omega \ln 10}{5}\,n_0
+        \exp\Big(\frac{10^{\frac{m-5.2}{5}}}{R_d}\Big)
+        \times 10^{\frac{3(m-5.2)}{5}} f
+    \qquad x < R_0
+  \]
+  \[
+    \frac{\Delta N}{\Delta m}
+      = \frac{\Omega \ln 10}{5}\,n_0
+        \exp\Big(\frac{2R_0}{R_d}\Big)
+        \exp\Big(-\frac{10^{\frac{m-5.2}{5}}}{R_d}\Big)
+        \times 10^{\frac{3(m-5.2)}{5}} f\,\Theta(x_0 - x)
+    \qquad x > R_0
+  \]
+  \hfill(6 points)
+
+  where $\Theta(x)$ is the step function and $x_0$ is the maximum observable
+  distance.
+\end{description}

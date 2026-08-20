@@ -1,0 +1,85 @@
+\begin{description}
+\item[a.] We start from the definition of $r$:
+\[
+r = \frac{\Delta E}{\Delta t \cdot S_{\text{stea}} \cdot \Delta\lambda}
+  = \frac{\Delta E}{\Delta t \cdot 4\pi R^2 \cdot \Delta\lambda}
+\quad\text{where $R$ is the radius of the star}
+\]
+% "S_stea" (Romanian: star surface) as in the source
+\[
+r = \frac{2\pi h c^2}{\lambda^5 \left( e^{hc/k\lambda T} - 1 \right)}
+\]
+Considering $d$ as the distance from the star to the Earth, the
+definition-relation of the spectral intensity can be written as follows:
+\begin{align*}
+I(\lambda) &= \frac{\;\dfrac{\Delta E}{\Delta t \cdot \Delta\lambda}\;}{4\pi d^2}\\
+I(\lambda) &= \frac{2\pi h c^2 R^2}
+                  {d^2 \lambda^5 \left( e^{hc/\lambda k T} - 1 \right)};
+\end{align*}
+Particularly for each wavelength:
+\[
+I_1(\lambda_1) = \frac{2\pi h c^2 R^2}
+  {d^2 \lambda_1^5 \left( e^{hc/\lambda_1 k T} - 1 \right)};\qquad
+I_2(\lambda_2) = \frac{2\pi h c^2 R^2}
+  {d^2 \lambda_2^5 \left( e^{hc/\lambda_2 k T} - 1 \right)};
+\]
+The ratio of the 2 above relations
+\begin{equation*}
+\frac{I_1(\lambda_1)}{I_2(\lambda_2)}
+  = \left( \frac{\lambda_2}{\lambda_1} \right)^{\!5}
+    \cdot \frac{e^{hc/\lambda_2 k T} - 1}{e^{hc/\lambda_1 k T} - 1}
+\tag{1}
+\end{equation*}
+Represents an equation which allow to find out the temperature of star's
+surface $T$ by using spectral measurements.
+
+\item[b.] If we consider that $hc \gg \lambda k T$, then:
+\[
+e^{hc/\lambda_1 k T} - 1 \approx e^{hc/\lambda_1 k T}
+\quad\text{and}\quad
+e^{hc/\lambda_2 k T} - 1 \approx e^{hc/\lambda_2 k T}
+\]
+The relation (1) becomes
+\[
+\frac{I_1(\lambda_1)}{I_2(\lambda_2)}
+  = \left( \frac{\lambda_2}{\lambda_1} \right)^{\!5}
+    \cdot \frac{e^{hc/\lambda_2 k T}}{e^{hc/\lambda_1 k T}}
+  = \left( \frac{\lambda_2}{\lambda_1} \right)^{\!5}
+    \cdot e^{hc/\lambda_2 k T - hc/\lambda_1 k T}
+\]
+\[
+\frac{I_1(\lambda_1)}{I_2(\lambda_2)}
+  \cdot \left( \frac{\lambda_1}{\lambda_2} \right)^{\!5}
+  = e^{hc/\lambda_2 k T - hc/\lambda_1 k T}
+\]
+\[
+T = \frac{hc\,(\lambda_1 - \lambda_2)}
+         {k \lambda_1 \lambda_2 \cdot
+          \ln\!\left[ \dfrac{I_1(\lambda_1)}{I_2(\lambda_2)}
+          \cdot \left( \dfrac{\lambda_1}{\lambda_2} \right)^{\!5} \right]}
+\]
+
+\item[c.] If $hc \ll \lambda k T$, then:
+\begin{align*}
+\frac{hc}{k\lambda_1 T} \ll 1;\quad
+e^{hc/\lambda_1 k T} - 1 &\approx 1 + \frac{hc}{k\lambda_1 T} - 1
+  = \frac{hc}{k\lambda_1 T}\\
+\frac{hc}{k\lambda_2 T} \ll 1;\quad
+e^{hc/\lambda_2 k T} - 1 &\approx 1 + \frac{hc}{k\lambda_2 T} - 1
+  = \frac{hc}{k\lambda_2 T}
+\end{align*}
+The relation (1) becomes:
+\[
+\frac{I_1(\lambda_1)}{I_2(\lambda_2)}
+  = \left( \frac{\lambda_2}{\lambda_1} \right)^{\!5}
+    \cdot \frac{\;\dfrac{hc}{k\lambda_2 T}\;}{\dfrac{hc}{k\lambda_2 T}}
+% sic: the source prints k lambda_2 T in both numerator and denominator;
+% the denominator should be k lambda_1 T
+  = \left( \frac{\lambda_2}{\lambda_1} \right)^{\!4}
+\]
+\[
+I_1 = 2 I_2;\quad
+\left( \frac{\lambda_2}{\lambda_1} \right)^{\!4} = 2;\quad
+\lambda_2 = \lambda_1 \cdot \sqrt[4]{2} \approx 1{,}2 \cdot \lambda_1.
+\]
+\end{description}

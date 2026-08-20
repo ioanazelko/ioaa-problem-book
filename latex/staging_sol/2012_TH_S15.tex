@@ -1,0 +1,58 @@
+A known geometrical result is that the projection of a circle in an arbitrary
+plane is a conic curve (afterwards, projecting a circle is drawing a cone that
+intersects the given plane). In this particular case, the Sun crosses the
+horizon at one point, when the tip of the shadow goes to infinity. So the
+projection must be a parabola.
+\hfill(3 pt it's a parabola)
+
+The equation of the curve will have the form $y = ax^2 + bx + c$. We just
+need to find the coefficients of this curve.
+\hfill(1 pt equation of parabola)
+
+To find $c$, we can take the Sun in its maximum culmination, lying in the
+North-South plane. In this case, the altitude angle will be
+$23^\circ 27' + 23^\circ 27' = 46^\circ 54'$ and, as $x = 0$,
+\[
+  y = c = -39.6 \cdot \operatorname{cotan} 46.9 = -37.06
+\]
+\hfill(2 pt finding $c$)
+
+To find $b$, we just need to notice that the parabola must be symmetrical
+around the $y$ axis, so $b = 0$.
+\hfill(1 pt finding $b$)
+
+% FIGURE NEEDED: celestial sphere with zenith Z, SCP at 23.5 deg from the zenith direction, horizon plane (South, East, North) and the Sun's diurnal circle at 43 deg touching the horizon (2012 theory general solutions, p. S7)
+
+To find $a$, we can look at the Sun when it is crossing the First Vertical or
+the East-West plane. Let's call $P$ this point. Looking at the E-W plane, we
+have the triangle on the side, where $O$ is the origin of the system of
+coordinates, $h$ is the altitude angle, $R$ is the radius of the celestial
+sphere and $x$ is the height of the Sun. We know that the altitude angle is
+such as $\sin h = x/R$.
+
+% FIGURE NEEDED: two right triangles: in the E-W plane (vertices S, O; legs x and base, hypotenuse R, altitude angle h at O) and in the N-S plane (vertices A, O; base R, height x, obliquity angle epsilon at A) (2012 theory general solutions, p. S8)
+
+On the other hand, looking at the North-South plane, we have another
+triangle. $O$ is the origin, $R$ is the radius of the celestial sphere (lying
+in the plane of horizon), $A$ is the point of inferior culmination of the Sun
+(when it touches the horizon), $\varepsilon$ is the obliquity of ecliptic,
+the hypotenuse lies on the plane containing the Sun trajectory during that
+day, and $x$ lies in the E-W plane, being the height of the Sun as defined
+above.
+\hfill(3 pt finding $a$)
+
+Then,
+\[
+  x = R\tan\epsilon \quad\therefore\quad \sin h = \tan\epsilon
+  \quad\therefore\quad h = 25^\circ 42'
+\]
+
+So, when $y = 0$, $x = 39.6 \cdot \operatorname{cotan} 25.7 = 82.28$ and
+\[
+  a = -\frac{c}{x^2} = 0.0055
+\]
+
+And the equation is:
+\[
+  y = 0.0055x^2 - 37.1
+\]

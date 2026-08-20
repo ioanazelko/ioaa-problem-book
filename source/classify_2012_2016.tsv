@@ -1,0 +1,97 @@
+2012	TH	S1	-	-	1	sundial operation vs solar declination	-
+2012	TH	S2	-	-	1	sidereal day; retrograde-rotation day lengths	-
+2012	TH	S3	-	-	3	synodic period between Mars oppositions	2
+2012	TH	S4	-	-	3	full-Moon magnitude if albedo unity	6
+2012	TH	S5	-	-	2	Earth/Sun density ratio from g, year	-
+2012	TH	S6	-	-	4	p-p chain He-3 fusion energy release	7
+2012	TH	S7	-	-	7	LBV radius ratio at constant luminosity	6
+2012	TH	S8	-	-	10	pulsar beam detection probability	6
+2012	TH	S9	-	-	6	interstellar+nebular extinction of WDs	11
+2012	TH	S10	-	-	13	matter-dominated universe cooling timescale	-
+2012	TH	S11	-	-	9	Sun's astrometric wobble from Jupiter	2
+2012	TH	S12	-	-	5	telescope to resolve Earth's lunar wobble	2
+2012	TH	S13	-	-	1	path making sky spin about ecliptic pole	-
+2012	TH	S14	-	-	1	star leaves celestial sphere; alt-az	6
+2012	TH	S15	-	-	1	solstice shadow-tip curve Antarctic Circle	-
+2012	TH	L1	-	-	6	globular cluster combined magnitudes	5
+2012	TH	L2	-	-	12	spiral rotation curve, Tully-Fisher	13
+2012	DA	D1	Asteroid photometry	-	3	asteroid light curves, phase curve, regolith	6
+2012	DA	D2	Cepheids	-	8	Cepheid P-L fit, two distances	12
+2013	TH	S1	-	10	3	Earth equilibrium temperature with albedo	-
+2013	TH	S2	-	10	5	telescope diameter to resolve hot Jupiter	9
+2013	TH	S3	-	10	7	main-sequence lifetime of 5 Msun star	-
+2013	TH	S4	-	10	8	Cepheid P-L distance with extinction	12
+2013	TH	S5	-	10	13	Hubble constant and Hubble time from Halpha	-
+2013	TH	S6	-	10	7	star distance, luminosity, radius	6
+2013	TH	S7	-	10	7	red-giant classification via bolometric correction	6
+2013	TH	S8	-	10	6	decompose combined magnitude of pair	8
+2013	TH	S9	-	10	1	alt-az to hour angle/declination	-
+2013	TH	S10	-	10	11	Sgr A* black-hole mass from stellar orbit	2
+2013	TH	S11	-	10	1	maximum altitude of full Moon, parallax	3
+2013	TH	S12	-	10	7	Sirius B radius from flux ratio	10
+2013	TH	S13	-	10	6	fog optical depth from Sun dimming	-
+2013	TH	S14	-	10	1	Vega hour angle/zenith distance two cities	-
+2013	TH	S15	-	10	13	recession velocities classical vs relativistic	10
+2013	TH	L1	-	50	13	critical density, galaxy escape, Hubble flow	-
+2013	TH	L2	-	50	2	Seneca asteroid orbit, Jupiter mass	3
+2013	TH	L3	-	50	13	Coma cluster virial mass, dark matter M/L	12
+2013	DA	D1	-	-	5	camera focal length from plate scale	1
+2013	DA	D2	-	-	4	sunspot tracking, solar synodic rotation	-
+2013	DA	D3	-	-	6	visual magnitude estimation, Hyades chart	11
+2013	DA	D4	-	-	11	Hyades distance moving-cluster method	1
+2014	TH	P1	Lagrange Points	-	2	locate L3 Lagrange point Sun-Earth	-
+2014	TH	P2	Sun gravitational catastrophe!	-	2	new orbit after Sun's mass halves	-
+2014	TH	P3	Cosmic radiation	-	10	pion decay relativistic kinematics	-
+2014	TH	P4	Mass function of a visual binary	-	8	mass function from RV amplitude	-
+2014	TH	P5	The Astronaut saved by ice	-	2	reaction propulsion via vapor thrust	-
+2014	TH	P6	Life-time of a star on main sequence	-	7	MS lifetime from mass-luminosity	-
+2014	TH	P7	Effective temperature of a star	-	6	Teff from two spectral intensities	7
+2014	TH	P8	Gradient temperatures	-	6	temperature from two-line magnitude differences	7
+2014	TH	P9	Pressure of light	-	6	dust grain radiation pressure vs gravity	-
+2014	TH	P10	The density of the star	-	7	hydrostatic star, gas+radiation pressure	-
+2014	TH	P11	Space-ship orbiting the Sun	-	6	Sun magnitude from ship equilibrium temperature	4
+2014	TH	P12	The Vega star in the mirror	-	5	double image photometry with mirror	6
+2014	TH	P13	Stars with Romanian names	-	1	angular distance from galactic coordinates	-
+2014	TH	P14	Apparent magnitude of the Moon	-	3	Moon magnitude at phases	6
+2014	TH	P15	Absolute magnitude of a cepheide	-	8	derive Cepheid period-luminosity relation	7
+2014	TH	L1	Eagles on the Caraiman Cross!	-	1	sunset durations vs altitude, shadows	-
+2014	TH	L2	Cosmic Pendulum	-	2	gravity-gradient pendulum on shuttle	-
+2014	TH	L3	From Romania to Antipod! A ballistic messenger	-	2	ballistic trajectory to antipode	1
+2014	DA	D1	Black Hole in Milky Way	-	11	S-star orbit plot, Sgr A* mass	2
+2014	DA	D2	Thermodynamic test	-	3	CO2 atmosphere profiles from probe	9
+2014	DA	D3	Observer on an extrasolar planet	-	6	magnitudes/distances recomputed elsewhere	1
+2015	TH	S1	-	-	2	orbital resonances Gliese 876 planets	9
+2015	TH	S2	-	-	2	planet density from satellite orbit	3
+2015	TH	S3	-	-	3	asteroid diameter from occultation	2
+2015	TH	S4	-	-	5	resolving supermassive black hole	10
+2015	TH	S5	-	-	2	eccentricity from apparent angular rates	-
+2015	TH	S6	-	-	6	zenith optical depth from attenuation	5
+2015	TH	S7	-	-	12	galaxy cluster density from escape velocity	2
+2015	TH	S8	-	-	6	brightness temperature of radio burst	5
+2015	TH	S9	-	-	3	Venus equilibrium temperature, radio flux	6
+2015	TH	S10	-	-	11	H2 cloud rotational emission frequency	6
+2015	TH	S11	-	-	2	mass from density profile, escape velocity	-
+2015	TH	S12	-	-	10	relativistic proton Sun-Earth travel time	4
+2015	TH	S13	-	-	2	Io tidal heating from surface distortion	3
+2015	TH	S14	-	-	13	Olbers-type mean free path of sight line	-
+2015	TH	S15	-	-	1	great-circle southernmost latitude	-
+2015	TH	L1	-	-	2	moon orbit geometry from surface observer	1
+2015	TH	L2	-	-	8	binary RV curve, mass function, BH condition	10
+2015	TH	L3	-	-	7	star equation of state, heat capacities	-
+2015	DA	D1	Cepheid HV2257	-	8	Cepheid curves, Baade-Wesselink distance	6
+2015	DA	D2	Interstellar extinction / IC 342	-	6	extinction curve, Cepheid distance IC 342	12
+2016	TH	T1	True or False	10	2	true/false grab bag: orbits, analemma, expansion	1
+2016	TH	T2	Gases on Titan	10	3	minimum atomic weight retained by Titan	-
+2016	TH	T3	Early Universe	10	13	matter-radiation equality redshift	-
+2016	TH	T4	Shadows	10	1	latitude and declination from stick shadows	-
+2016	TH	T5	GMRT beam transit	10	5	source transit through radio dish FWHM	1
+2016	TH	T6	Cepheid Pulsations	20	8	beta Dor radii from Wien peaks, Doppler	6
+2016	TH	T7	Telescope optics	20	5	magnification, Barlow lens, CCD pixel scale	-
+2016	TH	T8	U-Band photometry	20	5	photon counting, sky background	6
+2016	TH	T9	Mars Orbiter Mission	20	2	perigee burn, new apogee, eccentricity	-
+2016	TH	T10	Gravitational Lensing Telescope	20	10	solar gravitational lens focus	5
+2016	TH	T11	Gravitational Waves	50	14	GW frequency at merger MS/WD/NS/BH	-
+2016	TH	T12	AstroSat	50	5	X-ray instrument count rates, SNR	6
+2016	DA	D1	Binary Pulsar	50	8	binary pulsar orbit determination	10
+2016	DA	D2	Distance to the Moon	50	3	lunar ephemerides, eclipse umbra	1
+2016	DA	D3	Type IA Supernovae	50	12	SN Ia standardization, H0, universe age	13

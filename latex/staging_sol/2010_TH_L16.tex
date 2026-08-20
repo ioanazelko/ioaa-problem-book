@@ -1,0 +1,101 @@
+Solution: (1) 10 points; (2) 20 points
+
+(1) The orbit of the spacecraft is a parabola, this suggests that the
+(specific) energy with respect to the Sun is initially
+\[
+  \varepsilon = 1/2\,v_{\max}^2 + U(r_E) = 0
+\]
+\hfill(2 points)
+
+and
+\[
+  v_{\max} = \sqrt{2U} = \sqrt{2k_{sun}/r_E}
+\]
+The angular momentum is
+\[
+  l = r_E v_{\max} = \sqrt{2k_{sun}r_E}
+\]
+\hfill(2 points)
+
+When the spacecraft cross the orbit of the Mars at 1.5\,AU, its total velocity
+is
+\[
+  v = \sqrt{2U} = \sqrt{2k_{sun}r_M} = \sqrt{\frac{2}{3}}\,v_{\max}
+  % sic: source prints \sqrt{2k_{sun}r_M}; dimensionally it should be \sqrt{2k_{sun}/r_M}
+\]
+This velocity can be decomposed into $v_r$ and $v_\theta$, using angular
+momentum decomposition,
+\[
+  r_M v_\theta = l = r_E v_{\max}
+\]
+\hfill(2 points)
+
+So,
+\[
+  v_\theta = \frac{r_E}{r_M}\,v_{\max} = \frac{2}{3}\,v_{\max}
+\]
+\hfill(2 points)
+
+Thus the angle is given by
+\[
+  \cos\psi = \frac{v_\theta}{v} = \sqrt{\frac{r_E}{r_M}} = \sqrt{\frac{2}{3}}
+\]
+or
+\[
+  \psi = 35.26^\circ
+\]
+\hfill(2 points)
+
+Note: students can arrived at the final answer with conservation of angular
+momentum and energy, full mark.
+
+(2) The Mars would be moving on the circular orbit with a velocity
+\[
+  v_M \equiv \sqrt{\frac{k_{sun}}{r_M}} = \sqrt{\frac{2}{3}}\,v_E
+  = 24.32\,km/s
+\]
+\hfill(3 points)
+
+from the point of view of an observer on Mars, the approaching spacecraft has
+a velocity of
+\[
+  \overrightarrow{v_{rel}} = \vec{v} - \vec{v}_M
+\]
+\hfill(2 points)
+
+Now
+\[
+  \vec{v} = v\sin\psi\,\hat{r} + v_\theta\,\hat{\theta}
+\]
+\hfill(2 points)
+
+with
+\[
+  \sin\psi = \sqrt{1 - \cos^2\psi} = \frac{1}{\sqrt{3}}
+\]
+So
+\begin{align*}
+  \overrightarrow{v_{rel}}
+  &= v\sin\psi\,\hat{r} + (v_\theta - v_M)\,\hat{\theta} \\
+  &= \frac{1}{\sqrt{3}}\sqrt{\frac{2k_{sun}}{r_M}}\,\hat{r}
+   + \Bigl(\frac{2}{3}\sqrt{\frac{2k_{sun}}{r_E}}
+   - \sqrt{\frac{k_{sun}}{r_M}}\Bigr)\hat{\theta} \\
+  &= \sqrt{\frac{2k_{sun}}{3r_M}}\,\hat{r}
+   + \Bigl(\frac{2}{\sqrt{3}} - 1\Bigr)\sqrt{\frac{k_{sun}}{r_M}}\,\hat{\theta} \\
+  &= \sqrt{\frac{k_{sun}}{r_M}}\,(0.8165\,\hat{r} + 0.1547\,\hat{\theta})
+\end{align*}
+\hfill(8 points)
+
+The angle between the approaching spacecraft and Sun seen from Mars is:
+\begin{align*}
+  \tan\theta &= \frac{0.1547}{0.8165} = 0.1894 \\
+  \theta &= 10.72^\circ
+\end{align*}
+\hfill(3 points)
+
+The approaching velocity is thus
+\[
+  v_{rel} = \sqrt{\frac{2}{3} + \Bigl(\frac{2}{\sqrt{3}} - 1\Bigr)^2}
+            \sqrt{\frac{k_{sun}}{r_M}} = 20.21\,km/s
+\]
+\hfill(2 points)

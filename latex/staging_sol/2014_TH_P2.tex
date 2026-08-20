@@ -1,0 +1,92 @@
+\begin{description}
+\item[(A)] The orbit of Earth is elliptical, so the shape of the orbit after
+  the solar catastrophe will depend on the moment when the decrees % sic: "decrees" (decrease) in source
+  of the mass of the Sun will occur.
+
+  Initial analysis of the problem:
+  \begin{description}
+  \item[a)] In 3rd July the Earth is at the aphelion. The speed of the Earth
+    is smaller than the speed of Earth on a circular orbit with radius
+    $r_{0,\mathrm{max}} = a_0(1 + e_0)$.
+  \item[b)] In 3rd January the Earth is at perihelion. The speed of the Earth
+    is bigger than the speed of Earth on a circular orbit with radius
+    $r_{0,\mathrm{max}} = a_0(1 - e_0)$. % sic: source writes r_{0,max} here; should be r_{0,min}
+  \end{description}
+
+  Conclusion (A): the period should be calculated only for situation a). The
+  expected trajectory in this case is an elliptic one. The possibility that
+  Earth hit the Sun is available too.
+
+\item[(B)] Calculations:
+
+  In 3rd July the distance from Sun is maximum: fig.~2.1,
+  \[ r_{0,\mathrm{max}} = a_0(1 + e_0). \]
+% FIGURE NEEDED: Figure 2.1 -- initial (small, dashed) Earth orbit around S_0; M_0 with v_0,per and v_0,aph marked, and the large final elliptical Earth orbit around S; M with r_min and v_per, showing r_0,max = r_0,aph = r_per of the new orbit (2014 TH solutions, p. 5)
+
+  \textbf{Before the catastrophe:}
+  \begin{itemize}
+  \item $v_{0,\mathrm{aph}}$ -- the speed of Earth on aphelion,
+  \item $a_0$ -- big Earth's elliptical orbit semi axis,
+  \item $v_0$ -- the speed of Earth if its orbit is circular with radius
+    $r_0 = a_0$.
+  \end{itemize}
+
+  According to Keppler's % sic: "Keppler's" in source
+  second law and the law of energy conservation (see figure 2.1) the
+  following relations can be written:
+  \begin{align*}
+    & v_{0,\mathrm{per}}\, r_{0,\mathrm{per}}
+      = v_{0,\mathrm{aph}}\, r_{0,\mathrm{aph}}; \\
+    & \frac{v_{0,\mathrm{per}}^2}{2} - K\frac{M_0}{r_{0,\mathrm{per}}}
+      = \frac{v_{0,\mathrm{aph}}^2}{2} - K\frac{M_0}{r_{0,\mathrm{aph}}} \\
+    & r_{0,\mathrm{min}} = r_{0,\mathrm{per}} = a_0(1 - e_0) \\
+    & r_{0,\mathrm{max}} = r_{0,\mathrm{aph}} = a_0(1 + e_0) \\
+    & KM_0 = v_0^2\, r_0 = v_0^2\, a_0 \\
+    & v_0 = \sqrt{K\frac{M_0}{r_0}} = \sqrt{K\frac{M_0}{a_0}} \\
+    & v_{0,\mathrm{per}} = v_0 \sqrt{\frac{1 + e_0}{1 - e_0}} > v_0 \\
+    & v_{0,\mathrm{per}} > v_0 \tag*{(1)} \\
+    & v_{0,\mathrm{aph}} = v_0 \sqrt{\frac{1 - e_0}{1 + e_0}} \\
+    & v_{0,\mathrm{aph}} < v_0 \tag*{(2)}
+  \end{align*}
+
+  Conclusion -- According to the relations (1) and (2) the new orbit of the
+  Earth could be an elliptic one.
+
+  For the new elliptical Earth orbit:
+  \begin{align*}
+    & r_{\mathrm{per}} = r_{0,\mathrm{aph}}; \\
+    & r_{\mathrm{min}} = r_{\mathrm{per}} = a(1 - e); \\
+    & a_0(1 + e_0) = a(1 - e); \quad a = a_0\,\frac{1 + e_0}{1 - e}; \\
+    & v_{\mathrm{per}} = v_{0,\mathrm{aph}}; \\
+    & v_{\mathrm{per}} = v\sqrt{\frac{1 + e}{1 - e}},
+  \end{align*}
+  where $v$ este % sic: Romanian "este" (is) left in source
+  the Earth's speed on a circular orbit with the radius $r = a$, when the
+  mass of the Sun becomes $M = M_0/2$;
+  \begin{align*}
+    & v\sqrt{\frac{1 + e}{1 - e}} = v_0\sqrt{\frac{1 - e_0}{1 + e_0}}; \\
+    & v = \sqrt{K\frac{M}{r}} = \sqrt{K\frac{M_0}{2a}}
+      = \sqrt{K\frac{M_0}{a_0}}\sqrt{\frac{a_0}{2a}}
+      = v_0\sqrt{\frac{a_0}{2a}}; \\
+    & e = 1 - 2e_0; \quad a = a_0\,\frac{1 + e_0}{2e_0}.
+  \end{align*}
+
+  Conclusion:
+  \begin{align*}
+    T_0 &= \frac{2\pi r_0}{v_0} = \frac{2\pi a_0}{v_0} \\
+    T &= \frac{2\pi r}{v} = \frac{2\pi a}{v}; \\
+    \frac{T}{T_0} &= \frac{a}{a_0}\,\frac{v_0}{v}
+      = \frac{1 + e_0}{2e_0}\sqrt{\frac{2a}{a_0}}
+      = \frac{1 + e_0}{2e_0}\,\sqrt{2}\,\sqrt{\frac{1 + e_0}{2e_0}}; \\
+    T &= T_0\sqrt{2}\left(\frac{1 + e_0}{2e_0}\right)^{3/2}
+      \approx 230\ \text{years}
+  \end{align*}
+
+  b) In 3rd of January the Earth is at perihelion. In that moment the Erath % sic: "Erath" in source
+  speed is larger than the speed necessary for an Earth's circular orbit.
+  Thus the trajectory of the Earth after the catastrophe will be an open
+  trajectory, i.e.\ an hyperbolic or parabolic orbit.
+
+  Conclusion: it is not necessary to calculate the period of revolution or it
+  could be issued as infinite.
+\end{description}

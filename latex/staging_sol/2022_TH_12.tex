@@ -1,0 +1,236 @@
+\begin{description}
+\item[(a)] By Kepler's third law we have
+  \begin{align*}
+    T_i^2 &= \frac{4\pi^2}{GM}r_i^3 \\
+    \omega_i &= \frac{2\pi}{T_i} = \sqrt{\frac{GM}{r_i^3}}
+  \end{align*}
+  \hfill(1.5 points)
+  \begin{align*}
+    L_i &= m_i\omega_i r_i^2 \\
+    \therefore L_i &= m_i\sqrt{GMr_i}
+  \end{align*}
+  \hfill(1.5 points)
+
+\item[(b)] When the satellites are opposing positions (i.e.\ $\theta = \pi$),
+  we have % sic: "are opposing positions"
+  \[
+    r_1 = R \pm \frac{x_1}{2}, \quad r_2 = R \mp \frac{x_2}{2}
+  \]
+  \hfill(2.0 points)
+
+  Thus, using the conservation of angular momentum
+  \begin{align*}
+    L_{tot} &= m_1\sqrt{GM\left(R + \frac{x_1}{2}\right)}
+             + m_2\sqrt{GM\left(R - \frac{x_2}{2}\right)} \\
+            &= m_1\sqrt{GM\left(R - \frac{x_1}{2}\right)}
+             + m_2\sqrt{GM\left(R + \frac{x_2}{2}\right)}
+  \end{align*}
+  \hfill(4.0 points)
+  \begin{align*}
+    \therefore\ m_1\left(1 + \frac{x_1}{4R}\right)
+      + m_2\left(1 - \frac{x_2}{4R}\right)
+      &= m_1\left(1 - \frac{x_1}{4R}\right)
+      + m_2\left(1 + \frac{x_2}{4R}\right) \\
+    m_1\frac{x_1}{2R} &= m_2\frac{x_2}{2R} \\
+    \therefore\ \frac{m_1}{m_2} &= \frac{x_2}{x_1}
+  \end{align*}
+  \hfill(2.0 points)
+
+\item[(c)] Let the centre of mass of the ternary system be denoted by C. The
+  total gravitational force on satellite $m_2$ due to the primary mass $M$,
+  and the satellite $m_1$ may be resolved into a radial component, parallel to
+  the line between $m_2$ and C and a tangential component, perpendicular to
+  the line between $m_2$ and C. Only the tangential component of the force
+  will act to change the angular momentum of the satellite $m_2$.
+
+  The tangential component of the force is given by
+  \[
+    F_{2_\perp} = \frac{GMm_2}{r_2^2}\sin(\delta\beta)
+      - \frac{Gm_1m_2}{d^2}\sin\beta
+  \]
+  \hfill(2.0 points)
+
+  where $d = \mathit{dist}(m_1, m_2)$, $\beta = \measuredangle m_1 m_2 C$, and
+  $\delta\beta = \measuredangle M m_2 C$. There are two ways to simplify this
+  expression.
+
+  The first way straightforward. By immediately exploiting the fact that % sic: "way straightforward"
+  $m_1, m_2 \ll M$ and hence $\delta\beta \to 0$, we can say,
+  \begin{align*}
+    \frac{d}{\sin\theta} &= \frac{r_1}{\sin(\beta + \delta\beta)} \\
+    \sin\beta &= \left(\frac{r_1}{d}\right)\sin\theta
+  \end{align*}
+  \hfill(3.0 points)
+  \begin{align*}
+    \text{Also,}\quad
+    \frac{\left(\dfrac{r_1 m_1}{M + m_1}\right)}{\sin(\delta\beta)}
+      &= \frac{r_2}{\sin(180 - \theta - \delta\beta)} \\
+    \therefore\ \sin(\delta\beta)
+      &= \left(\frac{m_1 r_1}{r_2(m_1 + M)}\right)\sin\theta
+  \end{align*}
+  \hfill(4.0 points)
+
+  Another way is using the sine and cosine rules for triangles, we have the
+  expressions
+  \begin{align*}
+    \frac{r_2}{\sin(180 - \gamma)}
+      &= \frac{\left[\left(\frac{r_1 m_1}{M + m_1}\right)^2 + r_2^2
+         - \frac{2m_1 r_1 r_2}{M + m_1}\cos\theta\right]^{\frac{1}{2}}}
+         {\sin\theta} \\
+    \frac{r_2\sin\theta}{\sin\gamma}
+      &= \left[r_2^2 + \left(\frac{r_1 m_1}{M + m_1}\right)^2
+         - \frac{2m_1 r_1 r_2}{M + m_1}\cos\theta\right]^{\frac{1}{2}} \\
+    \frac{d}{\sin\gamma} &= \frac{\frac{Mr_1}{m_1 + M}}{\sin\beta} \\
+    \sin\beta &= \frac{Mr_1}{m_1 + M}\,\frac{r_2}{d}\sin\theta
+       \left[r_2^2 + \left(\frac{m_1 r_1}{m_1 + M}\right)^2
+       - \frac{2m_1 r_1 r_2}{m_1 + M}\cos\theta\right]^{-\frac{1}{2}}
+       \approx \frac{r_1}{d}\sin\theta \\
+    \sin(\delta\beta) &= \frac{m_1 r_1}{m_1 + M}\sin\theta
+       \left[r_2^2 + \left(\frac{m_1 r_1}{m_1 + M}\right)^2
+       - \frac{2m_1 r_1 r_2}{m_1 + M}\cos\theta\right]^{-\frac{1}{2}}
+       \approx \frac{m_1 r_1}{r_2(m_1 + M)}\sin\theta
+  \end{align*}
+
+  In both cases, finally we obtain
+  \begin{align*}
+    F_{2_\perp} &= \frac{GMm_2}{r_2^2}\,\frac{m_1 r_1}{r_2(m_1 + M)}\sin\theta
+      - \frac{Gm_1 m_2}{d^2}\,\frac{r_1}{d}\sin\theta \\
+    \intertext{As, $M + m_1 \approx M$}
+    \therefore\ F_{2_\perp} &= Gm_1 m_2 r_1\sin\theta\,(r_2^{-3} - d^{-3})
+  \end{align*}
+  \hfill(3.0 points)
+
+% FIGURE NEEDED: Figure 3 of the 2022 theory solutions (page 16 of 21):
+% configuration of the satellites and planet -- outer circle through m1 and m2
+% centred at C, primary M near the centre, radii r1, r2, chord d between the
+% satellites, angles theta (at M), gamma (at C), beta and delta-beta (at m2).
+% Caption: "Configuration of the satellites and planet. Circle is centered at
+% C(all bodies are rotating around this point)."
+
+  The distance between satellites
+  \[
+    d \approx 2R\sin\left(\frac{\theta}{2}\right)
+  \]
+  \hfill(1.0 points)
+
+  The tangential component of the gravitational force then becomes
+  \begin{align*}
+    F_{2_\perp} &\approx \frac{Gm_1 m_2}{R^2}\sin\theta
+      \left(1 - \frac{1}{8\sin^3\left(\frac{\theta}{2}\right)}\right) \\
+    F_{2_\perp} &= \frac{Gm_1 m_2}{R^2}
+      \left(\sin\theta - \frac{\cos\left(\frac{\theta}{2}\right)}
+        {4\sin^2\left(\frac{\theta}{2}\right)}\right)
+  \end{align*}
+  \hfill(2.0 points)
+
+  Finally, the torque generated by the gravitational force is then
+  \[
+    \frac{\Delta L_2}{\Delta t} = F_{2_\perp} r
+      \approx -\frac{Gm_1 m_2}{R}
+      \left(\frac{\cos\left(\frac{\theta}{2}\right)}
+        {4\sin^2\left(\frac{\theta}{2}\right)} - \sin\theta\right)
+  \]
+  \hfill(3.0 points)
+
+\item[(d)] We can see that
+  \begin{align*}
+    \Delta L_i &= m_i\sqrt{GM(r_i + \Delta r_i)} - m_i\sqrt{GMr_i} \\
+      &= m_i\sqrt{GMr_i}
+         \left[\left(1 + \frac{\Delta r_i}{r_i}\right)^{\frac{1}{2}} - 1\right] \\
+      &= m_i\sqrt{GMr_i}\left(\frac{\Delta r_i}{2r_i}\right) \\
+    \therefore\ \frac{\Delta L_i}{\Delta t}
+      &= \frac{1}{2}m_i\sqrt{\frac{GM}{r_i}}\,\frac{\Delta r_i}{\Delta t}
+  \end{align*}
+  \hfill(2.0 points)
+  \begin{align*}
+    \frac{\Delta r_i}{\Delta t}
+      &= \frac{2}{m_i}\sqrt{\frac{r_i}{GM}}\,\frac{\Delta L_i}{\Delta t} \\
+    \therefore\ \frac{\Delta r_2}{\Delta t}
+      &\approx -\frac{2}{m_2}\sqrt{\frac{r_2}{GM}}\,
+        \frac{Gm_1 m_2}{R}\,h(\theta) \\
+    \frac{\Delta r_2}{\Delta t}
+      &\approx -2m_1\sqrt{\frac{G}{MR}}\,h(\theta)
+  \end{align*}
+  \hfill(1.0 points)
+
+  Again, since $r1 \approx r2 \approx R$, we can say by symmetry/the % sic: upright r1, r2 in source
+  conservation of angular momentum
+  \[
+    \frac{\Delta r_1}{\Delta t} \approx 2m_2\sqrt{\frac{G}{MR}}\,h(\theta)
+  \]
+  \hfill(3.0 points)
+  \begin{align*}
+    \therefore\ \frac{\Delta s}{\Delta t}
+      &= \frac{\Delta r_2}{\Delta t} - \frac{\Delta r_1}{\Delta t} \\
+    \frac{\Delta s}{\Delta t}
+      &= -2\sqrt{\frac{G}{MR}}\,(m_1 + m_2)\,h(\theta)
+  \end{align*}
+  \hfill(2.0 points)
+
+\item[(e)] Since $\theta$ is the angle between the two satellites, we have
+  \[
+    \frac{\Delta\theta}{\Delta t} = \omega_2 - \omega_1
+      = \sqrt{\frac{GM}{r_2^3}} - \sqrt{\frac{GM}{r_1^3}}
+  \]
+  \hfill(2.0 points)
+  \begin{align*}
+    &= \sqrt{\frac{GM}{R^3}}
+       \left[\left(\frac{r_2}{R}\right)^{-\frac{3}{2}}
+       - \left(\frac{r_1}{R}\right)^{-\frac{3}{2}}\right] \\
+    &= \sqrt{\frac{GM}{R^3}}
+       \left[\left(1 + \frac{r_2 - R}{R}\right)^{-\frac{3}{2}}
+       - \left(1 + \frac{r_1 - R}{R}\right)^{-\frac{3}{2}}\right] \\
+    &= \sqrt{\frac{GM}{R^3}}
+       \left[1 - \frac{3}{2}\frac{(r_2 - R)}{R} - 1
+       + \frac{3}{2}\frac{(r_1 - R)}{R}\right] \\
+    &\approx \sqrt{\frac{GM}{R^3}}
+       \left[\frac{3}{2}\frac{r_1 - r_2}{R}\right] \\
+    \frac{\Delta\theta}{\Delta t}
+    &\approx -\frac{3}{2}\sqrt{\frac{GM}{R^3}}\,\frac{s}{R}
+  \end{align*}
+  \hfill(3.0 points)
+
+\item[(f)] Using the expressions in the previous two parts,
+  \[
+    \frac{\Delta s}{\Delta\theta}
+      = \frac{\Delta s}{\Delta t}\cdot\frac{\Delta t}{\Delta\theta}
+  \]
+  \hfill(1.0 points)
+  \begin{align*}
+    &= 2\sqrt{\frac{G}{MR}}\,(m_1 + m_2)\,h(\theta)\cdot
+       \frac{2}{3}\sqrt{\frac{R^3}{GM}}\,\frac{R}{s} \\
+    &= \frac{4}{3}\frac{R^2}{M}(m_1 + m_2)\,h(\theta)
+       \left(\frac{1}{s}\right) \\
+    \therefore\ s\,\Delta s
+    &= \frac{4R^2}{3}\,\frac{(m_1 + m_2)}{M}\,h(\theta)\,\Delta\theta
+  \end{align*}
+  \hfill(1.0 points)
+
+\item[(g)] The minimum distance of 13\,000\,km corresponds to a minimum angle
+  of
+  \[
+    \theta_{min} \approx \frac{13000}{150000}
+      \approx 0.0868\,\mathrm{rad} = 4^\circ 58'
+  \]
+  \hfill(2.0 points)
+
+  Then we substitute the given values the into given expression and the result % sic: "the into given"
+  of (b) which gives
+  \[
+    \frac{m_2}{m_1} \approx 3.6
+  \]
+  \hfill(1.0 points)
+
+  and
+  \[
+    m_1 + m_2 \approx 2.5\times10^{18}\,\mathrm{kg}
+  \]
+  \hfill(2.0 points)
+
+  Finally
+  \[
+    m_1 \approx 5.3\times10^{17}\,\mathrm{kg} \quad
+    m_2 \approx 1.9\times10^{18}\,\mathrm{kg}
+  \]
+  \hfill(1.0 points)
+\end{description}

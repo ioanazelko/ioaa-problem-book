@@ -1,0 +1,85 @@
+\begin{description}
+\item[a)] (B) the one on December 16 \hfill(1\,p)
+
+  At a given moment of the day, the Sun elevation is lower in winter on the
+  northern hemisphere.
+
+\item[b)] (B) late in the morning \hfill(1\,p)
+
+  The shadows point slightly west of north. In fact these satellite images are
+  taken at around 9:45 UTC (10:45 Central European Time).
+
+\item[c)] The measured shadow lengths are $x_1 = 125$\,m (epoch 1, summer
+  solstice) and $x_2 = 780$\,m (epoch 2, winter solstice).
+
+  Let the unknown height of the chimney be $h$. The chimney and its shadow form
+  the legs of a right-angled triangle and thus
+  \begin{align*}
+    \tan\alpha_1 &= h/x_1 \tag{6.1}\\
+    \tan\alpha_2 &= h/x_2, \tag{6.2}
+  \end{align*}
+  \hfill(1\,p)
+
+  where $\alpha_1$ and $\alpha_2$ are the Sun elevation angles at epoch 1 and
+  epoch 2, respectively. \hfill(1\,p)
+
+  At the time of the summer and winter solstices, the Earth is located at
+  opposite sides of the Sun during its orbital revolution. Since the Equator is
+  tilted by $\varepsilon \approx 23.5^\circ$ to the orbital plane, at a given
+  point of the surface, and at a given time of the day, the Sun elevation
+  angles will differ by $\alpha_1 - \alpha_2 = 2\varepsilon$ (here we ignore
+  refraction and that the satellite images were not taken on the exact solstice
+  days). \hfill(4\,p)
+
+  Notice that, to a good approximation, $\alpha_1 - \alpha_2 \approx 45^\circ$.
+  Assuming $\alpha_1 = \alpha_2 + 45^\circ$ makes the solution a lot easier.
+  Using the trigonometric identity
+  \[
+    \tan\alpha_1 = \tan(\alpha_2 + 45^\circ)
+      = \frac{\tan\alpha_2 + \tan 45^\circ}{1 - \tan\alpha_2 \tan 45^\circ},
+    \tag{6.3}
+  \]
+  and substituting $\tan 45^\circ = 1$, Eq.~(6.3) becomes
+  \[
+    \tan\alpha_1 = \frac{1 + \tan\alpha_2}{1 - \tan\alpha_2}. \tag{6.4}
+  \]
+  \hfill(4\,p)
+
+  Substituting $\tan\alpha_1$ and $\tan\alpha_2$ from Eqs.~(6.1) and (6.2) into
+  Eq.~(6.4), one gets a quadratic equation for the unknown $h$:
+  \[
+    \frac{h}{x_1} = \frac{1 + \dfrac{h}{x_2}}{1 - \dfrac{h}{x_2}}. \tag{6.5}
+  \]
+  \hfill(2\,p)
+
+  Reducing this equation to the standard format
+  \[
+    h^2 + h(x_1 - x_2) + x_1 x_2 = 0, \tag{6.6}
+  \]
+  and according to the quadratic formula, the two roots are obtained as
+  \[
+    h_{1,2} = \frac{x_2 - x_1 \pm \sqrt{(x_1 - x_2)^2 - 4x_1x_2}}{2}. \tag{6.7}
+  \]
+  \hfill(1\,p)
+
+  Now with the measured values of $x_1 = 125$\,m and $x_2 = 780$\,m, the two
+  roots for $h$ are $h_1 = 426$\,m and $h_2 = 229$\,m. \hfill(1\,p)
+
+  Obviously, only one of the solutions is valid for our case.
+
+  One may simply notice that $h_1 \approx 426$\,m seems just too high for a
+  chimney (would in fact be comparable to the Empire State Building in New
+  York, with 443\,m; the Eiffel tower in Paris is only 324\,m high).
+
+  Alternatively, substituting $h_1 = 426$\,m into Eq.~(6.2), we obtain the Sun
+  elevation angle at around the winter solstice,
+  $\alpha_2 = \arctan(h_1/x_2) \approx 28.7^\circ$. However, at the geographic
+  latitudes of Hungary, the Sun does not rise above ${\approx}19^\circ$ at this
+  time of the year, so the larger value obtained for $h$ is clearly invalid.
+  \hfill(2\,p)
+
+  Note that according to the official data, the Tiszaújváros power plant has a
+  chimney as high as $h = 250$\,m.
+
+\item[d)] (B) and (E) \hfill(2\,p)
+\end{description}

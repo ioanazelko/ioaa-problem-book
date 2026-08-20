@@ -1,0 +1,34 @@
+The intrinsic color indexes are $U - V = 0.300$
+% sic: the source says "U - V = 0.300"; the problem gives B - V = 0.300
+and $U - V = 0.330$, therefore
+\[
+U - B = (U - V) - (B - V) = 0.030
+\]
+The difference between the real and the measured color indexes are due to the
+absorption in the interstellar medium, as well as due the stronger absorption
+of the planetary nebula (in fact, during the calculations, one can easily see
+that the interstellar absorption is not enough to account for the measured
+values). So, for the first (nearest) star:
+\begin{align*}
+(B-V)_1 &= (B-V) + (E_B - E_V)\cdot D + (E'_B - E'_V)\cdot R = 0.327\\
+(U-V)_1 &= (U-V) + (E_U - E_V)\cdot D + (E'_U - E'_V)\cdot R = 0.038\\
+% sic: the values 0.038 and 0.365 on these two lines are swapped in the
+% source; with the given data (U-V)_1 = 0.365 and (U-B)_1 = 0.038
+(U-B)_1 &= (U-B) + (E_U - E_B)\cdot D + (E'_U - E'_B)\cdot R = 0.365
+\tag*{(3 pt)}
+\end{align*}
+(the terms being, in order: apparent, intrinsic, interstellar absorption, and
+nebula absorption). Calculating the interstellar absorption, we can find for,
+the nebula values:
+\begin{align*}
+(E'_B - E'_V)\cdot R &= 0.0155\\
+(E'_U - E'_V)\cdot R &= 0.0100\\
+(E'_U - E'_B)\cdot R &= -0.0055 \tag*{(1 pt)}
+\end{align*}
+So, for the second (farthest) star,
+\begin{align*}
+(B-V)_2 &= (B-V) + (E_B - E_V)\cdot 3D + (E'_B - E'_V)\cdot 2R = \mathbf{0.3655}\\
+(U-V)_2 &= (U-V) + (E_U - E_V)\cdot 3D + (E'_U - E'_V)\cdot 2R = \mathbf{0.425}\\
+(U-B)_2 &= (U-B) + (E_U - E_B)\cdot 3D + (E'_U - E'_B)\cdot 2R = \mathbf{0.0595}
+\tag*{(4 pt)}
+\end{align*}

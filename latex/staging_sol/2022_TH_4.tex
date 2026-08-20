@@ -1,0 +1,50 @@
+\begin{description}
+\item[(a)] By the Hubble's Law, the rate of recession is
+  \[ v(t) = \frac{\Delta d}{\Delta t} = H d(t) \]
+  \hfill(1.0)
+
+  Thus, by referring to the given relation,
+  \[ d(t) = C e^{Ht} \]
+  at time $t = 0$, $d(0) = d_0 = C$. Thus, the distance at a time $t$:
+  \[ d(t) = d_0 e^{Ht} \]
+  \hfill(1.0)
+
+\item[(b)] It is easier to solve this problem, if we consider coordinate
+  system that changes its scale in such a way that distance between earth
+  and our destination does not change (called co-moving frame). Let $v(t)$
+  be the velocity in this frame at time $t$ and let $l(t)$ be the total
+  distance traveled until the moment $t$.
+  \begin{align*}
+  v(t)d(t) &= v_0 d_0\\
+  v(t) &= v_0\frac{d_0}{d(t)} = v_0\frac{d_0}{d_0 e^{Ht}}\\
+  v(t) &= \frac{\Delta l}{\Delta t} = -v_0 e^{-Ht}
+  \end{align*}
+  \hfill(3.0)
+  \[ l(t) = -\frac{v_0}{-H}e^{-Ht} + C \]
+  for specific cases:
+  \[ l(t_0) = \frac{v_0}{H}e^{-Ht_0} + C \]
+  \[ l(0) = \frac{v_0}{H} + C \]
+  subtracting yields:
+  \[ l(0) = \frac{v_0}{H} - \frac{v_0}{H}e^{-Ht_0} \]
+  % sic: source writes l(0) for the difference l(0) - l(t_0)
+  thus:
+  \[ \therefore\ l_{\mathrm{Total}} = d_0 = -\frac{v_0}{H}(e^{-Ht_0} - 1) \]
+  \hfill(2.0)
+
+  Rearranging,
+  \[ t_0 = -\frac{1}{H}\ln\left(1 - \frac{H d_0}{v_0}\right) \]
+  \hfill(1.0)
+
+  Thus, condition for reaching the planet at all:
+  \begin{align*}
+  1 - \frac{H d_0}{v_0} &> 0\\
+  v_0 &> H d_0 = 70\ \mathrm{km/s}
+  \end{align*}
+  \hfill(1.0)
+
+  (However at this speed it will take eternity to reach it)
+
+  For $v_0 = 1000$\,km/s we can reach the planet, in:
+  \[ t_0 \approx 5.3\times 10^{16}\,\mathrm{s} = 17\,\mathrm{Gyr} \]
+  \hfill(1.0)
+\end{description}

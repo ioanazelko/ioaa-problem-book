@@ -1,0 +1,45 @@
+\begin{enumerate}
+\item Solar luminosity is
+  \begin{align*}
+  L_\odot &= 4\pi R_\odot^2\sigma T_\odot^4\\
+    &= 4\times3.14\times(6.96\times10^{10})^2\,(5.67\times10^{-5})(5780)^4~\mathrm{ergs/sec}\\
+    &= 3.9\times10^{33}~\mathrm{ergs/sec} \tag*{(10)}
+  \end{align*}
+\item Flux of the Sun intercepted by Venus is
+  \[
+  L_V = \left(A_{V\mathrm{(projected)}}/A_{\mathrm{(sphere,0.72au)}}\right)\times L_\odot
+  \]
+  Also,
+  \[
+  L_V = 4\pi R_V^2\sigma T_V^4
+  \]
+  So,
+  \[
+  4\pi R_V^2\sigma T_V^4 = (\pi R_V^2/4\pi d^2)\times L_\odot
+    = (\pi R_V^2/4\pi d^2)\times 4\pi R_\odot^2\sigma T_\odot^4 \tag*{(30)}
+  \]
+\item Therefore,
+  \begin{align*}
+  T_V^4 &= (R_\odot^2/4d^2)\times T_\odot^4
+    = \left[(6.957\times10^5~\mathrm{km})^2/4\times(0.72\times149.6\times10^6)^2\right]\times(5780)^4\\
+  &= (483998490000/46407499776000000)\times(5780)^4
+    = (4.84\times10^{11}/4.64\times10^{16})\times(5780)^4\\
+  &= 1.0429316216908190111241385226915\text{e-}5\times1114577187760656\\
+  % sic: "e-5" calculator notation and unrounded digit strings as in the original
+  &= 1.04\times10^{-5}\times1.11\times10^{15}\\
+  &= 11624277939.308134327737156481455 = 1.1624\times10^{10}\\
+  T_V &= 328.5~\mathrm{K} \tag*{(20)}
+  \end{align*}
+\item The flux density of Venus at closest approach to Earth at an observing
+  frequency of 5\,GHz: ($1'' = 4.84\times10^{-6}$\,rad)
+  \begin{align*}
+  S_{\mathrm{5GHz}} &= B_{\mathrm{5GHz}}\,\Omega = (2kT_b\nu^2/c^2)\,\Omega
+    \qquad(\rightarrow T_b = T_V)\\
+  &= \left(2\times1.38\times10^{-16}\times328.5\times(5\times10^9)^2
+    \times\pi\,(66\times4.84\times10^{-6})^2\right)/\,(3\times10^{10})^2\\
+  % sic: the solid angle uses the full 66 arcsec angular diameter in place of
+  % the 33 arcsec radius, as in the original
+  &= 8.07\times10^{-22}~\mathrm{ergs~s^{-1}~cm^{-2}~Hz^{-1}}\\
+  &= 80.7~\mathrm{Jy} \tag*{(40)}
+  \end{align*}
+\end{enumerate}

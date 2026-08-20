@@ -1,0 +1,14 @@
+# Obsolete manually copied LaTeX build; use latex/book.pdf only.
+/IOAA_Problems_by_Topic_LaTeX_edition.pdf
+# The legacy crop edition is a generated distribution artifact, not source.
+/IOAA_Problems_by_Topic_2007-2025.pdf
+/source/IOAA_Problems_by_Topic_2007-2025.pdf
+# Official source papers live in the adjacent private IOAA Source Papers archive.
+/source/papers/
+
+# Python cache files.
+__pycache__/
+*.py[cod]
+
+# Local editing prompt scratchpad; not part of the book source.
+/commands_list.md

@@ -1,0 +1,61 @@
+The dynamics of M31 (Andromeda) and the Milky Way (MW) can be used to estimate
+the total mass of the Local Group (LG). The basic idea is that galaxies
+currently in a binary system were at approximately the same point in space
+shortly after the Big Bang. To a reasonable approximation, the mass of the
+local group is dominated by the masses of the MW and M31. Via Doppler shifts
+of the spectral lines, it was found that M31 is moving towards the MW with a
+speed of 118\,km\,s$^{-1}$. This may be surprising, given that most galaxies
+are moving away from each other with the general Hubble flow. The fact that
+M31 is moving towards the MW is presumably because their mutual gravitational
+attraction has eventually reversed their initial velocities. In principle, if
+the pair of galaxies is well-represented by isolated point masses, their total
+mass may be determined by measuring their separation, relative velocity and
+the time since the universe began. Kahn and Woltjer (1959) used this argument
+to estimate the mass in the LG.
+
+In this problem we will follow this argument through our calculation as
+follows.
+
+\begin{description}
+\item[(a)] Consider an isolated system with negligible angular momentum of two
+  gravitating point masses $m_1$ and $m_2$ (as observed by an inertial
+  observer at the centre of mass).
+
+  \ioaafig{2017_TH_T11-f1.pdf}
+
+  Write down the expression of the total mechanical energy ($E$) of this
+  system in mathematical form connecting $m_1$, $m_2$, $r_1$, $r_2$, $v_1$,
+  $v_2$, and the universal gravitational constant $G$, where $v_1$ and $v_2$
+  are the radial velocities of $m_1$ and $m_2$, respectively. \hfill[5]
+\item[(b)] Re-write the equation in a) in terms of $r$, $v$, $\mu$, $M$, and
+  $G$, where $r \equiv r_1 + r_2$ is the separation distance between $m_1$ and
+  $m_2$, $v$ is the changing rate of the separation distance,
+  $\mu \equiv \dfrac{m_1 m_2}{m_1 + m_2}$ is the reduced mass of the system,
+  and $M \equiv m_1 + m_2$ is the total mass of the system. \hfill[10]
+\item[(c)] Show that the equation in b) yields
+  \[ v^2 = (2GM)\left(\frac{1}{r} - \frac{1}{r_0}\right),
+     \quad\text{where } r_0 \text{ is a new constant.} \]
+  Find $r_0$ in terms of $\mu$, $M$, $G$ and $E$. \hfill[5]
+\end{description}
+
+The solution of the equation in b) is given below in parametric form, under
+the initial condition $r = 0$ at $t = 0$:
+\[ r(\theta) = \frac{r_0}{2}\left(1 - \cos\theta\right), \]
+\[ t(\theta) = \left(\frac{r_0^3}{8GM}\right)^{\frac{1}{2}}
+   \left(\theta - \sin\theta\right), \]
+where $\theta$ is in radians.
+
+\begin{description}
+\item[(d)] From the above parametric equations, show that an expression for
+  $\dfrac{vt}{r}$ is
+  \[ \frac{vt}{r} = \frac{(\sin\theta)(\theta - \sin\theta)}
+     {(1 - \cos\theta)^2} \]
+  \hfill[10]
+\item[(e)] Now we consider $m_1$ and $m_2$ as the MW and M31, respectively,
+  such that the current values of $v$ and $r$ are $v = -118$\,km\,s$^{-1}$ and
+  $r = 710$\,kpc, and $t$ may be taken to be the age of the Universe (13700
+  million years). Find $\theta$ using numerical iteration. \hfill[10]
+\item[(f)] Use the value of $\theta$ from e) to calculate the maximum distance
+  between M31 and the MW, $r_{\max}$, and hence also obtain the value of $M$
+  in solar masses. \hfill[10]
+\end{description}

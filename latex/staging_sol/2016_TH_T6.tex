@@ -1,0 +1,81 @@
+\begin{description}
+\item[(T6.1)]
+We first find the flux ratio and then use Stefan's law to compare the fluxes.
+\[ m_1 - m_2 = -2.5\log\left(\frac{F_1}{F_2}\right) \]
+\hfill(1.0 points)
+\[ \Rightarrow\ \frac{F_1}{F_2} = 10^{-0.4(m_1 - m_2)}
+   = 10^{-0.4(3.46 - 4.08)} = 1.77 \]
+\hfill(1.0 points)
+\[ L_i = 4\pi R_i^2\sigma T_i^4 \]
+\hfill(1.0 points)
+\[ \Rightarrow\quad
+   F_1 = \frac{4\pi R_1^2\sigma T_1^4}{4\pi D^2}\,,\qquad
+   F_2 = \frac{4\pi R_2^2\sigma T_2^4}{4\pi D^2} \]
+\hfill(1.0 points)
+\begin{align*}
+\frac{F_1}{F_2} &= \frac{R_1^2}{R_2^2}\times\frac{T_1^4}{T_2^4} \\
+\frac{R_1}{R_2} &= \sqrt{\frac{F_1}{F_2}}\times
+  \left(\frac{T_2}{T_1}\right)^2
+\end{align*}
+From Wien's displacement law, $\dfrac{T_2}{T_1} = \dfrac{\lambda_1}{\lambda_2}$.
+\hfill(1.0 points)
+\begin{align*}
+\Rightarrow\ \frac{R_1}{R_2}
+  &= \sqrt{\frac{F_1}{F_2}}\times\left(\frac{\lambda_1}{\lambda_2}\right)^2
+  && \text{(1.0 points)} \\
+  &= \sqrt{1.77}\times\left(\frac{531.0}{649.1}\right)^2 \\
+\frac{R_1}{R_2} &= 0.890
+  && \text{(1.0 points)}
+\end{align*}
+Acceptable range: $\pm 0.010$.
+
+\item[(T6.2)]
+\[ R_2 - R_1 = v \times P/2 \]
+\hfill(2.0 points)
+\begin{gather*}
+R_2 - R_1 = \frac{12.8\times 10^3\times 86\,400\times 9.84}{2}\ \mathrm{m} \\
+(1 - 0.890)R_2 = 5.441\times 10^9\ \mathrm{m}
+\end{gather*}
+\[ \Rightarrow R_2 = 4.95\times 10^{10}\ \mathrm{m} \]
+\hfill(0.5 points)
+\[ R_1 = 4.41\times 10^{10}\ \mathrm{m} \]
+\hfill(0.5 points)
+
+Acceptable range: $\pm 0.02\times 10^{10}$\,m for both.
+
+\item[(T6.3)]
+To get the absolute value of flux ($F_2$) we must compare it with the observed
+flux of the Sun.
+\begin{gather*}
+m_2 - m_\odot = -2.5\log\left(\frac{F_2}{F_\odot}\right) \\
+\Rightarrow\ F_2 = F_\odot 10^{-0.4(m_2 - m_\odot)}
+\end{gather*}
+\hfill(3.0 points)
+\begin{align*}
+&= \frac{L_\odot}{4\pi a_\oplus^2}\times 10^{-0.4(4.08 + 26.72)} \\
+&= \frac{3.826\times 10^{26}\times 4.7863\times 10^{-13}}
+        {4\pi(1.496\times 10^{11})^2}\ \mathrm{W\,m^{-2}} \\
+F_2 &= 6.51\times 10^{-10}\ \mathrm{W\,m^{-2}}
+\end{align*}
+\hfill(2.0 points)
+
+Acceptable range: $\pm 0.04\times 10^{-10}\ \mathrm{W\,m^{-2}}$.
+
+\item[(T6.4)]
+\[ D_{\mathrm{star}} = \sqrt{\frac{L_2}{4\pi F_2}}
+   = \sqrt{\frac{R_2^2\sigma T_2^4}{F_2}}
+   = R_2 T_2^2\sqrt{\frac{\sigma}{F_2}} \]
+\hfill(2.0 points)
+
+Wien's law:
+\[ T_2 = \frac{2.898\times 10^{-3}\ \mathrm{m\,K}}{\lambda_2} \]
+\hfill(1.0 points)
+\[ D_{\mathrm{star}} = 4.95\times 10^{10}\times
+   \left(\frac{2.898\times 10^{-3}}{649.1\times 10^{-9}}\right)^2
+   \sqrt{\frac{5.670\times 10^{-8}}{6.51\times 10^{-10}}} \]
+\hfill(2.0 points)
+\[ \Rightarrow\ D_{\mathrm{star}} = 9.208\times 10^{18}\ \mathrm{m}
+   = 298\ \mathrm{pc} \]
+
+Acceptable range: $298 \pm 2$\,pc (depends on truncation).
+\end{description}

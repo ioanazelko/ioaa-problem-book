@@ -1,0 +1,74 @@
+\textbf{Theoretical considerations:}
+
+The incident particle flux on a wall (i.e.\ a certain direction on a surface)
+is:
+\[ \Phi = m_0 \cdot \Omega
+   = \frac{1}{6}\cdot m_0 \cdot n \cdot S \cdot \bar{v} \tag*{(3)} \]
+\[ m_0 \cdot n = m_0 \cdot \frac{N}{a^3} = \frac{m_0 N}{a^3}
+   = \frac{m}{V} = \rho, \]
+where: $m_0$ is the mass of one molecule; $m$ -- mass of the gas in the cube;
+$V$ -- volume of the cube; $\rho$ -- the density of the gas;
+\[ \rho = \frac{\mu p}{RT}, \]
+where $p$ -- the pressure of the gas in the cube. The relation (3) -- the mass
+flux relation becomes:
+\[ \Phi = \frac{1}{6}\cdot\rho\cdot S\cdot\bar{v}
+   = \frac{1}{6}\cdot\frac{\mu p}{RT}\cdot S\cdot\sqrt{\frac{3RT}{\mu}}
+   = \frac{1}{6}\cdot p\cdot S\cdot\sqrt{\frac{3\mu}{RT}}. \tag*{(4)} \]
+\[ \Phi = \frac{1}{6}\cdot\rho\cdot S\cdot\bar{v}
+   = \frac{1}{6}\cdot\frac{\mu p}{RT}\cdot S\cdot\sqrt{\frac{3RT}{\mu}}
+   = \frac{1}{6}\cdot p\cdot S\cdot\sqrt{\frac{3\mu}{RT}}. \tag*{(5)} \]
+% sic: relation (5) is a verbatim repeat of relation (4) in the source
+\hfill(3 points)
+
+\textbf{B. Reasoning}
+
+Because the cylindrical can is not full of ice, in the empty part of it there
+are saturated vapors, i.e.\ the mass flux of the molecule which sublimate is
+equal with mass flux of gass % sic: "gass" in source
+which transform into ice. Thus the pressure in the can is the saturated vapor
+pressure $p_{\mathrm{s}}$ and it has the corresponding maximum density
+$\rho_{\mathrm{s}}$. See figure 6.2.
+% FIGURE NEEDED: Fig. 6.2 -- two cylindrical cans: (a) closed can with ice ("gheata") at the bottom and saturated vapors ("vapori saturati") at pressure p_s above, opposite fluxes Phi_1 (up) and Phi_2 (down); (b) opened can with pressure p_s/2 and only the flux Phi_1 (2014 TH solutions, p. 10)
+
+\begin{align*}
+  \Phi_1 &= \Phi_{\mathrm{sublimation}}
+    = \frac{1}{6}\cdot\rho_{\mathrm{s}}\cdot S\cdot\bar{v}
+    = \frac{1}{6}\cdot p_{\mathrm{s}}\cdot S\cdot\sqrt{\frac{3\mu}{RT}}; \\
+  \Phi_2 &= \Phi_{\mathrm{solidification}}
+    = \frac{1}{6}\cdot\rho_{\mathrm{s}}\cdot S\cdot\bar{v}
+    = \frac{1}{6}\cdot p_{\mathrm{s}}\cdot S\cdot\sqrt{\frac{3\mu}{RT}}; \\
+  \Phi_1 &= \Phi_2.
+\end{align*}
+
+After the can was opened, there be no molecules which sublimate thus the mass
+flux of the molecules which gather the ice become null. So the pressure
+becomes $\left(p_{\mathrm{s}}/2\right)$.
+
+Thus the force acting on the astronaut will be
+
+\textbf{C. Calculations according to the reasoning}, and/or as support for
+reasoning \hfill(2 points)
+\[ F = \frac{p_{\mathrm{s}}}{2}\cdot S, \]
+Opening the can the astronaut will be accelearated % sic: "accelearated" in source
+with:
+\[ a = \frac{F}{M} = \frac{p_{\mathrm{s}}\cdot S}{2M}
+   = \frac{550\,\mathrm{N\,m^{-2}} \cdot 30\cdot10^{-4}\,\mathrm{m^2}}
+          {2\cdot10^{2}\,\mathrm{kg}}
+   = 0{,}00825\,\mathrm{m\,s^{-2}}. \]
+
+The total time of the acceleration movement will be the total time of ice
+sublimation:
+\[ \tau = \frac{m}{\Phi_1}
+   = \frac{m}{\dfrac{1}{6}\cdot p_{\mathrm{s}}\cdot S
+     \cdot\sqrt{\dfrac{3\mu}{RT}}}
+   = \frac{6m}{p_{\mathrm{s}}\cdot S}\cdot\sqrt{\frac{RT}{3\mu}}
+   \approx 150\,\mathrm{s}. \]
+
+\textbf{D. Correct result}
+
+The travel distance in this time will be:
+\[ L = \frac{a\tau^2}{2}
+   = \frac{0{,}00825\,\mathrm{m\,s^{-2}} \cdot 225\cdot10^{2}\,\mathrm{s^2}}{2}
+   \approx 93\,\mathrm{m}, \]
+The astronaut could arrive safely in at the shuttle if he didn't lose to much
+time by solving the problem. % sic: "in at the shuttle", "to much" in source

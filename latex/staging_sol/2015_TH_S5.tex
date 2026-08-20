@@ -1,0 +1,49 @@
+\textbf{Identify expression for $r(\theta)$.} \hfill(30 points)
+
+We know that
+$r(\theta) = \dfrac{a\left(1 - e^2\right)}{1 - e\cos\theta}$. Hence % sic: sign convention with perihelion at theta = pi
+\begin{align*}
+  r(0) &= \frac{a\left(1 - e^2\right)}{1 - e} = a(1 + e) \\
+  r\left(\frac{\pi}{2}\right)
+    &= \frac{a\left(1 - e^2\right)}{1 - e\times0} = a\left(1 - e^2\right)
+\end{align*}
+
+% FIGURE NEEDED: two ellipse sketches (2015 theory solutions, page 7/22,
+% problem 5): left, an ellipse with radius vector r(theta) at angle theta from
+% the centre; right, an ellipse showing the small swept angles Delta-theta_2
+% at the semi-latus rectum (with a right-angle mark) and Delta-theta_1 at
+% apogee.
+
+\medskip
+\textbf{Estimate area of sectors using area of triangles.} \hfill(20 points)
+
+Estimate the area of swept out sectors as the area of sectors of circles
+\begin{align*}
+  A(S_1) &\approx 0.5\times\Delta\theta_1\times\left(r(0)\right)^2
+    = \Delta\theta_1\left(a(1 + e)\right)^2 \\ % sic: the 0.5 factor is dropped on the right-hand sides
+  A(S_2) &\approx 0.5\times\Delta\theta_2
+    \times\left(r\left(\tfrac{\pi}{2}\right)\right)^2
+    = \Delta\theta_2\left(a(1 - e^2)\right)^2
+\end{align*}
+
+\medskip
+\textbf{Use Kepler's second law to find a relation between the ratio
+$\frac{\Delta\theta_1}{\Delta\theta_2}$ and the eccentricity $e$.}
+\hfill(30 points)
+
+Use Kepler's second law to obtain that
+\begin{align*}
+  A(S_1) &= A(S_2) \\
+  \Delta\theta_1\times(a(1 + e))^2 &= \Delta\theta_2\times(a(1 - e^2))^2
+\end{align*}
+Thus,
+\[
+  \frac{\Delta\theta_1}{\Delta\theta_2}
+    = \left(\frac{1 - e^2}{1 + e}\right)^2 = (1 - e)^2
+    = \frac{2'44''}{21'17''} \approx 0.12843
+\]
+
+\medskip
+\textbf{Obtain an estimate value of the eccentricity.} \hfill(20 points)
+
+Thus, the eccentricity is $e \approx 1 - \sqrt{0.12843} = 0.64$.

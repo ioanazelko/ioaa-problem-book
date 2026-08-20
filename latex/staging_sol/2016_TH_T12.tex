@@ -1,0 +1,241 @@
+\begin{description}
+\item[(T12.1)] Kepler's law:
+\[
+a = \left(\frac{GM_{\mathrm{s}}}{4\pi^2}P^2\right)^{1/3} \tag*{(1.0)}
+\]
+Gravitational force provides centripetal acceleration:
+\begin{align*}
+v_{\mathrm{p}} &= \sqrt{\frac{GM_{\mathrm{s}}}{a}} \tag*{(0.5)}\\
+v_{\mathrm{p}} &= \left(\frac{2\pi GM_{\mathrm{s}}}{P}\right)^{1/3}
+  \tag*{(1.5)}
+\end{align*}
+
+\item[(T12.2)] Momentum conservation:
+\[
+M_{\mathrm{p}}v_{\mathrm{p}} = M_{\mathrm{s}}v_{\mathrm{s}} \tag*{(1.5)}
+\]
+Observed quantity is $v_0 = v_{\mathrm{s}}\sin i$. Thus,
+\[
+M_{\mathrm{p,\,min}} = M_{\mathrm{p}}\sin i
+ = \frac{M_{\mathrm{s}}v_{\mathrm{s}}\sin i}{v_{\mathrm{p}}}
+ = \frac{M_{\mathrm{s}}v_0}{v_{\mathrm{p}}}
+\]
+This is a lower limit on $M_{\mathrm{p}}$. \hfill(2.5)
+
+\item[(T12.3)]
+\[
+bR_{\mathrm{s}} = a\cos i \tag*{(1.0)}
+\]
+Therefore, for visibility,
+$0 \leq b \leq 1 \Rightarrow i \geq \cos^{-1}(R_{\mathrm{s}}/a)$ \hfill(1.0)
+
+\item[(T12.4)] Blackbody $\Rightarrow$ brightness is proportional to area.
+Since the observer is far away from the star-planet system, size of
+silhouette of planet on stellar disc is independent of $a$.
+\[
+\Delta = \left(\frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right)^2 \tag*{(1.0)}
+\]
+
+\item[(T12.5)] Circular orbit $\Rightarrow$ uniform orbital speed
+\[
+\Rightarrow\ \frac{t}{P} = \frac{a\phi}{2\pi a} = \frac{\phi}{2\pi}
+  \tag*{(1.0)}
+\]
+where $\phi$ is the angle subtended by the planet at the centre of the star
+during transit (over time $t$).
+% FIGURE NEEDED: (i) stellar disc of radius R_s with transit chord at height
+% bR_s, planet positions 1-4, half-chords l_14/2 and l_23/2 subtending
+% hypotenuses R_s + R_p and R_s - R_p; (ii) side-on view of the orbit of
+% radius a with contact points 1-4 and angles phi_14, phi_23 at the centre
+% (2016_theory_sol.pdf p. 23).
+\begin{align*}
+(l_{23}/2)^2 &= (R_{\mathrm{s}} - R_{\mathrm{p}})^2 - (bR_{\mathrm{s}})^2\\
+l_{23} &= 2R_{\mathrm{s}}\sqrt{(1 - R_{\mathrm{p}}/R_{\mathrm{s}})^2 - b^2}
+  \tag*{(2.0)}\\
+\sin(\phi_{23}/2) &= \frac{l_{23}/2}{a} \tag*{(2.0)}\\
+\Rightarrow\ \phi_{23} &= 2\sin^{-1}\left(\frac{l_{23}}{2a}\right)
+ = 2\sin^{-1}\left[\frac{R_{\mathrm{s}}}{a}
+   \sqrt{\left(1 - \frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right)^2 - b^2}
+   \right] \tag*{(1.0)}\\
+t_{\mathrm{F}} &= \frac{P}{2\pi}\phi_{23}
+ = \frac{P}{\pi}\sin^{-1}\left[\frac{R_{\mathrm{s}}}{a}
+   \sqrt{\left(1 - \frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right)^2 - b^2}
+   \right] \tag*{(1.0)}
+\end{align*}
+Similarly,
+\[
+t_{\mathrm{T}} = \frac{P}{\pi}\sin^{-1}\left[\frac{R_{\mathrm{s}}}{a}
+  \sqrt{\left(1 + \frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right)^2 - b^2}
+  \right] \tag*{(1.0)}
+\]
+
+\item[(T12.6)] Since $R_{\mathrm{s}} \ll a$, use $\sin^{-1}x \approx x$.
+\hfill(2.0)
+\begin{align*}
+t_{\mathrm{T}} &\approx \frac{P}{\pi}\left[\frac{R_{\mathrm{s}}}{a}
+  \sqrt{\left(1 + \frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right)^2 - b^2}
+  \right]\\
+t_{\mathrm{F}} &\approx \frac{P}{\pi}\left[\frac{R_{\mathrm{s}}}{a}
+  \sqrt{\left(1 - \frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right)^2 - b^2}
+  \right]
+\end{align*}
+Dividing, and putting $R_{\mathrm{p}}/R_{\mathrm{s}} = \sqrt{\Delta}$,
+\[
+\frac{t_{\mathrm{F}}}{t_{\mathrm{T}}}
+ = \left[\frac{(1 - \sqrt{\Delta})^2 - b^2}
+              {(1 + \sqrt{\Delta})^2 - b^2}\right]^{1/2} \tag*{(1.0)}
+\]
+\[
+\Rightarrow\ b = \left[\frac{(1 - \sqrt{\Delta})^2
+  - \left(\dfrac{t_{\mathrm{F}}}{t_{\mathrm{T}}}\right)^2
+    (1 + \sqrt{\Delta})^2}
+  {1 - \left(\dfrac{t_{\mathrm{F}}}{t_{\mathrm{T}}}\right)^2}\right]^{1/2}
+ = \left[1 + \Delta - 2\sqrt{\Delta}\,
+   \frac{1 + \left(\dfrac{t_{\mathrm{F}}}{t_{\mathrm{T}}}\right)^2}
+        {1 - \left(\dfrac{t_{\mathrm{F}}}{t_{\mathrm{T}}}\right)^2}
+   \right]^{1/2} \tag*{(2.0)}
+\]
+
+\item[(T12.7)]
+\[
+t_{\mathrm{T}} = \frac{P}{\pi}\left[\frac{R_{\mathrm{s}}}{a}
+  \sqrt{\left(1 + \frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right)^2 - b^2}
+  \right] \tag*{(1.0)}
+\]
+Substituting $b$ and $R_{\mathrm{p}}/R_{\mathrm{s}}$,
+\begin{align*}
+t_{\mathrm{T}} &= \frac{P}{\pi}\left[\frac{R_{\mathrm{s}}}{a}
+  \sqrt{(1 + \sqrt{\Delta})^2 - 1 - \Delta + 2\sqrt{\Delta}\,
+   \frac{1 + \left(\dfrac{t_{\mathrm{F}}}{t_{\mathrm{T}}}\right)^2}
+        {1 - \left(\dfrac{t_{\mathrm{F}}}{t_{\mathrm{T}}}\right)^2}}
+  \right]\\
+\Rightarrow\ t_{\mathrm{T}} &= \frac{P}{\pi}\frac{R_{\mathrm{s}}}{a}
+  \left[\frac{4\sqrt{\Delta}}
+        {1 - \left(\dfrac{t_{\mathrm{F}}}{t_{\mathrm{T}}}\right)^2}
+  \right]^{1/2}\\
+\Rightarrow\ \frac{a}{R_{\mathrm{s}}}
+ &= \frac{2P\Delta^{1/4}}
+         {\pi(t_{\mathrm{T}}^2 - t_{\mathrm{F}}^2)^{1/2}} \tag*{(2.0)}
+\end{align*}
+
+\item[(T12.8)] From part (T12.7)
+\[
+a = R_{\mathrm{s}}\frac{2P\Delta^{1/4}}
+    {\pi(t_{\mathrm{T}}^2 - t_{\mathrm{F}}^2)^{1/2}}
+\]
+From part (T12.1)
+\[
+a = \left(\frac{GM_{\mathrm{s}}}{4\pi^2}P^2\right)^{1/3}
+\]
+Combining,
+\[
+\frac{GM_{\mathrm{s}}}{4\pi^2}P^2
+ = \left[R_{\mathrm{s}}\frac{2P\Delta^{1/4}}
+   {\pi(t_{\mathrm{T}}^2 - t_{\mathrm{F}}^2)^{1/2}}\right]^3 \tag*{(3.0)}
+\]
+\begin{align*}
+\Rightarrow\ \rho_{\mathrm{s}}
+ &\equiv \frac{M_{\mathrm{s}}}{4\pi R_{\mathrm{s}}^3/3}
+ = \frac{3}{4\pi}\,\frac{4\pi^2}{P^2G}\,
+   \frac{8P^3\Delta^{3/4}}
+        {\pi^3(t_{\mathrm{T}}^2 - t_{\mathrm{F}}^2)^{3/2}} \tag*{(2.0)}
+\end{align*}
+\[
+\Rightarrow\ \boxed{\rho_{\mathrm{s}}
+ = \frac{24}{\pi^2 G}\,
+   \frac{P(\Delta)^{3/4}}
+        {(t_{\mathrm{T}}^2 - t_{\mathrm{F}}^2)^{3/2}}} \tag*{(1.0)}
+\]
+
+\item[(T12.9)] From Kepler's third law (with same mass of host star):
+\begin{align*}
+\frac{a}{a_\oplus} &= \left(\frac{P}{P_\oplus}\right)^{2/3} \tag*{(1.0)}\\
+a &= \left(\frac{50.0}{365.242}\right)^{2/3} \times 1\ \mathrm{AU}
+ = \boxed{0.266\ \mathrm{AU}} \tag*{(0.5)}\\
+&= 0.266 \times 1.496 \times 10^{11}\ \mathrm{m}
+ = \boxed{3.97 \times 10^{10}\ \mathrm{m}} \tag*{(0.5)}
+\end{align*}
+
+\item[(T12.10)] Edge-on $\Rightarrow b = 0$ \hfill(1.0)
+\[
+\frac{t_{\mathrm{F}}}{t_{\mathrm{T}}}
+ = \left[\frac{(1 - \sqrt{\Delta})^2 - b^2}
+              {(1 + \sqrt{\Delta})^2 - b^2}\right]^{1/2}
+ = \frac{1 - \sqrt{\Delta}}{1 + \sqrt{\Delta}}
+ = \boxed{0.8519} \tag*{(1.0)}
+\]
+
+\item[(T12.11)] From parts (T12.1) and (T12.9)
+\[
+v_{\mathrm{p}} = \sqrt{\frac{GM_\odot}{a}}
+ = \sqrt{\frac{6.674 \times 10^{-11} \times 1.989 \times 10^{30}}
+              {3.97 \times 10^{10}}}
+ = 57.798\ \mathrm{km\,s^{-1}} \tag*{(1.0)}
+\]
+Assumption of small planet ($M_{\mathrm{p}} \ll M_{\mathrm{s}}$) is valid
+because $\Delta$ is very small; less dense planet would make the assumption
+stronger!
+\[
+M_{\mathrm{p}} = \frac{M_{\mathrm{s}}v_0}{v_{\mathrm{p}}}
+ = \frac{1.989 \times 10^{30} \times 0.400}
+        {5.7798 \times 10^{4} \times 5.972 \times 10^{24}}\,M_\oplus
+ = \boxed{2.30\,M_\oplus} \tag*{(2.0)}
+\]
+From part (T12.4),
+\[
+R_{\mathrm{p}} = R_{\mathrm{s}}\sqrt{\Delta}
+\]
+From part (T12.7),
+\begin{align*}
+\frac{a}{R_{\mathrm{s}}}
+ &= \frac{2P\Delta^{1/4}}{\pi(t_{\mathrm{T}}^2 - t_{\mathrm{F}}^2)^{1/2}}
+  = \frac{2P\Delta^{1/4}}
+         {\pi t_{\mathrm{T}}(1 - (t_{\mathrm{F}}/t_{\mathrm{T}})^2)^{1/2}}\\
+\therefore\ R_{\mathrm{s}}
+ &= \frac{a\pi t_{\mathrm{T}}
+          (1 - (t_{\mathrm{F}}/t_{\mathrm{T}})^2)^{1/2}}{2P\Delta^{1/4}}
+\end{align*}
+Combining,
+\begin{align*}
+R_{\mathrm{p}} &= \frac{a\pi t_{\mathrm{T}}
+   (1 - (t_{\mathrm{F}}/t_{\mathrm{T}})^2)^{1/2}\Delta^{1/2}}
+   {2P\Delta^{1/4}}
+ = \frac{a\pi t_{\mathrm{T}}
+   (1 - (t_{\mathrm{F}}/t_{\mathrm{T}})^2)^{1/2}\Delta^{1/4}}{2P}
+ \tag*{(2.0)}\\
+&= \frac{3.97 \times 10^{10} \times \pi \times \frac{1}{24}
+   \times (1 - 0.8519^2)^{1/2} \times (0.0064)^{1/4}}
+   {2 \times 50.0 \times 6.371 \times 10^{6}}\,R_\oplus\\
+&= \boxed{1.21\,R_\oplus} \tag*{(1.0)}
+\end{align*}
+Mean density
+\[
+\rho_{\mathrm{p}} = \frac{M_{\mathrm{p}}}{4\pi R_{\mathrm{p}}^3/3}
+ = \frac{2.30}{(1.21)^3}\rho_\oplus = 1.3\rho_\oplus \tag*{(1.0)}
+\]
+Since mean density is higher than that of Earth, the planet is
+\fbox{Rocky}. \hfill(1.0)
+
+\item[(T12.12)]
+% FIGURE NEEDED: five schematic transit light curves (flux f vs time t),
+% each a flat-bottomed dip; transits 1, 3 and 5 are plain dips, while
+% transits 2 and 4 show a short upward spike inside the dip (at the same
+% phase in both) whose height is almost equal to the maximum dip
+% (2016_theory_sol.pdf p. 27).
+\begin{itemize}
+\item No change in the first: 0.5
+\item Spike in second (width and phase of spike is arbitrary): 1.0
+\item Height of spike (almost) equal to maximum dip: 0.5
+\item No change in third: 0.5
+\item Spike again in fourth: 0.5
+\item Same phase of spike in second and fourth: 0.5
+\item No change in 5th: 0.5
+\end{itemize}
+
+\item[(T12.13)]
+% FIGURE NEEDED: schematic transit light curve with limb darkening -- dip
+% with curved (non-flat) bottom reaching a central minimum
+% (2016_theory_sol.pdf p. 27).
+Non-flat bottom with central minimum gets 2.0. Curvature of ingress and
+egress are tolerated.
+\end{description}

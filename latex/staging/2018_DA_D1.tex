@@ -1,0 +1,142 @@
+As a by-product of the star-forming process in a galaxy, interstellar dust can
+significantly absorb stellar light in ultraviolet (UV) and optical bands, and
+then re-emit in far-infrared (FIR), which corresponds to a wavelength range of
+10--300\,$\mu$m.
+
+1.1. In the UV spectrum of a galaxy, the major contribution is from the light
+of the young stellar population generated in recent star-formation processes,
+thus the UV luminosity can act as a reliable tracer of the star-formation rate
+(SFR) of a galaxy. Since the observed UV luminosity is strongly affected by
+dust attenuation, extragalactic astronomers define an index called the
+\emph{UV continuum slope} ($\beta$) to quantify the shape of the UV continuum:
+\[ f_\lambda = Q \cdot \lambda^\beta \]
+where $f_\lambda$ is the monochromatic flux of the galaxy at a given
+wavelength $\lambda$ (in the unit of W\,m$^{-3}$) and $Q$ is a scaling
+constant.
+
+\begin{description}
+\item[(D1.1.1)] (6 points) AB magnitude is a specific magnitude system. The AB
+  magnitude is defined as:
+  \[ m_{\mathrm{AB}} = -2.5 \log \frac{f_\nu}{3631\,\mathrm{Jy}} \]
+  The AB magnitude of a typical galaxy is roughly constant in the UV band.
+  What is the UV continuum slope of this kind of galaxy? (Hint:
+  $f_\nu \Delta\nu = f_\lambda \Delta\lambda$)
+\item[(D1.1.2)] (12 points) Table 1 presents the observed IR photometry
+  results for a $z = 6.60$ galaxy called CR7. Plot the AB magnitude of CR7
+  versus the logarithm of the rest-frame wavelength on graph paper and
+  labelled as Figure 1.
+\item[(D1.1.3)] (5 points) Calculate CR7's UV slope, plot the best-fit UV
+  continuum on Figure 1 and make a comparison with the results you obtained in
+  (D1.1.1). Is it dustier than the typical galaxy in (D1.1.1)? Please answer
+  with [YES] or [NO]. (Hint: Express $m_{\mathrm{AB}}$ as a function of
+  $\lambda$ and $m_{1600}$, where $m_{1600}$ is the AB magnitude at
+  $\lambda_0 = 160$\,nm (1600\,\AA))
+\end{description}
+
+Table 1. (Observed Frame) IR Photometry of CR7 at $z = 6.60$.
+
+\begin{center}
+\begin{tabular}{l|c|c|c|c}
+Band & $Y$ & $J$ & $H$ & $K$ \\
+\hline
+Central Wavelength ($\mu$m) & 1.05 & 1.25 & 1.65 & 2.15 \\
+AB Magnitude & $24.71 \pm 0.11$ & $24.63 \pm 0.13$ & $25.08 \pm 0.14$
+  & $25.15 \pm 0.15$ \\
+\end{tabular}
+\end{center}
+
+1.2. Under the assumption that dust grains in the galaxy absorb the energy of
+UV photons and re-emit it by blackbody radiation, the relation between the UV
+continuum slope ($\beta$), UV brightness (at 1600\,\AA) and FIR brightness
+could be established:
+\[ \mathrm{IRX} \equiv \log\!\left(\frac{F_{FIR}}{F_{1600}}\right)
+   = S(\beta) \]
+where $F_{FIR}$ is the observed far-infrared flux and $F_{1600}$ is the
+observed flux at rest-frame wavelength 160\,nm (1600\,\AA) (The ``flux''
+$F_\lambda$ is defined as $F_\lambda = \lambda \cdot f_\lambda$). Table 2
+presents 20 measurements of $\beta$, $F_{FIR}$ and $F_{1600}$ in nearby
+galaxies (Meurer et al.\ 1999).
+
+Table 2. UV slope, flux and FIR flux of 20 nearby galaxies.
+
+\begin{center}
+\begin{tabular}{l|c|c|c}
+Galaxy Name & UV Slope $\beta$
+  & $\log(F_{1600}/10^{-3}\,\mathrm{W\,m}^{-2})$
+  & $\log(F_{FIR}/10^{-3}\,\mathrm{W\,m}^{-2})$ \\
+\hline
+NGC4861      & $-2.46$ & $-9.89$  & $-9.97$  \\
+Mrk 153      & $-2.41$ & $-10.37$ & $-10.92$ \\
+Tol 1924-416 & $-2.12$ & $-10.05$ & $-10.17$ \\
+UGC 9560     & $-2.02$ & $-10.38$ & $-10.41$ \\
+NGC 3991     & $-1.91$ & $-10.14$ & $-9.80$  \\
+Mrk 357      & $-1.80$ & $-10.58$ & $-10.37$ \\
+Mrk 36       & $-1.72$ & $-10.68$ & $-10.94$ \\
+NGC 4670     & $-1.65$ & $-10.02$ & $-9.85$  \\
+NGC 3125     & $-1.49$ & $-10.19$ & $-9.64$  \\
+UGC 3838     & $-1.41$ & $-10.81$ & $-10.55$ \\
+NGC 7250     & $-1.33$ & $-10.23$ & $-9.77$  \\
+NGC 7714     & $-1.23$ & $-10.16$ & $-9.32$  \\
+NGC 3049     & $-1.14$ & $-10.69$ & $-9.84$  \\
+NGC 3310     & $-1.05$ & $-9.84$  & $-8.83$  \\
+NGC 2782     & $-0.90$ & $-10.50$ & $-9.33$  \\
+NGC 1614     & $-0.76$ & $-10.91$ & $-8.84$  \\
+NGC 6052     & $-0.72$ & $-10.62$ & $-9.48$  \\
+NGC 3504     & $-0.56$ & $-10.41$ & $-8.96$  \\
+NGC 4194     & $-0.26$ & $-10.62$ & $-8.99$  \\
+NGC 3256     & 0.16    & $-10.32$ & $-8.44$  \\
+\end{tabular}
+\end{center}
+
+\begin{description}
+\item[(D1.2.1)] (14 points) Based on the data given in Table 2, plot the
+  $\mathrm{IRX}-\beta$ diagram on graph paper and labelled as Figure 2 and
+  find a linear fit to the data. Write down your best-fit equation (i.e.\
+  $\mathrm{IRX} = a \cdot \beta + b$) by the side of your diagram.
+\item[(D1.2.2)] (6 points) Quantify the dispersion (in `units' of dex, where
+  for example, $\log(10^9) - \log(10^4) = 5$\,dex) between the observed
+  $\mathrm{IRX}_{\mathrm{obs}}$ and predicted $\mathrm{IRX}_{\mathrm{pred}}$
+  using the following equation:
+  \[ \sigma = \sqrt{\frac{\sum (\Delta\mathrm{IRX}_i)^2}{N-1}}
+     \quad (\text{unit: dex}) \quad \text{where }
+     \Delta\mathrm{IRX}_i = \mathrm{IRX}_{i,\mathrm{obs}}
+       - \mathrm{IRX}_{i,\mathrm{pred}} \]
+\end{description}
+
+1.3. Under the previous assumption of the energy transfer process, the ratio
+of $F_{FIR}$ to $F_{1600}$ can be expressed as:
+\[ \frac{F_{FIR}}{F_{1600}} \approx 10^{0.4 A_{1600}} - 1 \]
+where $F_{1600}$ is the unattenuated flux and $A_\lambda$ is the dust
+absorption (in magnitudes) as a function of wavelength $\lambda$.
+
+\begin{description}
+\item[(D1.3.1)] (6 points) Express $A_{1600}$ as a function of IRX.
+\item[(D1.3.2)] (12 points) Based on Table 2 data and the function of
+  $A_{1600}(\mathrm{IRX})$ you derived above, plot the $A_{1600}-\beta$
+  diagram on graph paper and label it as Figure 3 and find a linear fit to the
+  data. Write down your best-fit equation (i.e.\
+  $A_{1600} = a' \cdot \beta + b'$) by the side of your diagram.
+\item[(D1.3.3)] (2 points) If your linear model in (D1.3.2) is correct, what
+  is the expected UV continuum slope $\beta_0$ of a dust-free galaxy?
+\end{description}
+
+1.4. After establishing the local relation between UV continuum slope and IRX,
+we could probably test this empirical law in the high-redshift universe. In
+2016, researchers obtained an Atacama Large Millimeter\,/\,submillimeter Array
+(ALMA) observation of CR7, and the FIR continuum corresponded to a $3\sigma$
+upper limit of an FIR flux of $1.5 \times 10^{-19}$\,W\,m$^{-2}$.
+
+\begin{description}
+\item[(D1.4.1)] (6 points) Calculate the IRX of CR7. Is it an upper limit or
+  lower limit?
+
+  Hint: here $F_{1600}$ should be written in the form of:
+  \[ F_{1600} = \lambda_0 \cdot f_{1600} \]
+  where $\lambda_0 = 160$\,nm (1600\,\AA) and $f_{1600}$ is the observed flux
+  in the rest-frame.
+\item[(D1.4.2)] (6 points) Is the current observation long enough to show any
+  deviation of CR7 from the $\mathrm{IRX}-\beta$ relationship you just derived
+  in the local universe? Please answer with [YES] or [NO] on the summary
+  answer sheet, give the IRX difference and show the working used to calculate
+  it on the answer sheet.
+\end{description}

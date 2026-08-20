@@ -1,0 +1,160 @@
+Spiral galaxies are disk-like rotating structures, whose dynamical state is
+fairly grasped by the so-called rotation curves, quantifying the mean
+rotational velocity of the disk at different distances from the center (see
+Figure 1, curve B). An interesting feature is the flat region of the curve,
+which is attributed to the presence of dark matter. Without it, rotation
+velocities would drop steadily at large radii from the center, as depicted in
+curve A.
+
+\ioaafig{2021_DA_DA1-f5.pdf}
+% vs radius: curve A falling at large radii, curve B flattening (source paper
+% Q1-1, "Figure 1: Rotation curves")
+
+In disk galaxies a strong correlation has been observed between the intrinsic
+luminosity of the whole galaxy and the asymptotic rotational velocity (as
+given by the rotation curve for the outer edge of the galaxy, i.e.\
+$R_{\max}$), a result that is known as the Tully--Fisher relation. This
+relation also holds if you use the luminosity in a specific band. This is
+shown on Figure 2 for a number of galaxies in a galaxy cluster. Every dot is a
+galaxy, and the solid line is the best-fit linear relation between absolute
+magnitude in $K$ band and $\log_{10}(V_{\max})$ for the whole sample.
+
+\ioaafig{2021_DA_DA1-f1.pdf}
+
+{\centering\small Figure 2: Absolute magnitude in $K$ band vs
+$\log_{10}(V_{\max}\,[\mathrm{km\,s^{-1}}])$. Tully--Fisher relation for
+several galaxies. Every dot represents a galaxy. The dark points are five
+selected galaxies, for which we will provide some numbers in part 1.2.\par}
+
+Another interesting trend is shown in Figure 3: disks with larger stellar
+masses ($M_*$) tend to have smaller gas fractions ($M_{gas}/M_*$).
+
+\ioaafig{2021_DA_DA1-f2.pdf}
+
+In the following questions you will be asked to extract physical information
+about the galaxies using the scaling relations just introduced. Consider the
+following guidelines:
+\begin{itemize}
+\item Assume that $V_{\max}$ was measured at the same radius for all galaxies
+  ($R_{\max}$), in the flat part of the rotation curves and well beyond the
+  end of the stellar disk.
+\item Use $M_{dm}$ for the dark matter mass up to $R_{\max}$ and $M_{tot}$
+  for the sum of all components (gas, stars and dark matter).
+\item Assume that all galaxies have identical stellar populations (the term
+  stellar population refers to the type of stars that are present in a
+  galaxy, and the relative amount of each type with respect to the total
+  number of stars), and assume that the gaseous component does not interact
+  with the stellar light.
+\item The galaxy cluster is far away. Its distance is much larger than the
+  cluster size.
+\item In spherically-symmetric mass distributions, to infer the gravitational
+  effect on a particle at distance $r$ from the center, it suffices to
+  consider the total mass enclosed up to that radius $M(\leq r)$ as if it
+  were placed at the very center of the distribution.
+\end{itemize}
+
+\medskip
+\textbf{Part 1 (20 points).}
+
+\begin{description}
+\item[1.1] From an analysis of Figure 3, find the appropriate constants in the
+  following relation: $M_{gas} = a \times M_*^b$
+  \[ a = ?\qquad b = ? \]
+  \hfill[5.0\,pt]
+\item[1.2] In the plot of the Tully--Fisher relation there are 5 highlighted
+  points. Data for these 5 galaxies is given in the following table. Use this
+  dataset to find the appropriate constants for the TF relation presented
+  below the table, by means of a linear fit using the method of least
+  squares.
+
+  \emph{Note:} Treat $\log_{10}(V_{\max})$ as the $x$ variable and $K$ as the
+  $y$ variable in the linear fit.
+
+  \begin{center}
+  \begin{tabular}{cc}
+  $V_{\max}$ [km/s] & $K$ [mag] \\
+  \hline
+   79.4 & $-16.8$ \\
+  100.1 & $-19.2$ \\
+  158.5 & $-21.3$ \\
+  251.2 & $-21.4$ \\
+  316.2 & $-24.0$ \\
+  \end{tabular}
+  \end{center}
+
+  \[ K = c \times \log_{10}(V_{\max}) + d \]
+  \[ c = ?\qquad d = ? \]
+  \hfill[15.0\,pt]
+\end{description}
+
+\medskip
+\textbf{Part 2 (16 points).}
+
+For two galaxies, G1 and G2, in the cluster, the recorded \emph{apparent}
+magnitudes are:
+\[ k_1 = 19.2\,;\qquad k_2 = 25.2 \]
+Using this information and the relations calibrated in Part 1, find the
+correct exponents in the following equations:
+
+\begin{description}
+\item[2.1] $\dfrac{M_{*1}}{M_{*2}} = 10^e$;\quad $e = ?$ \hfill[6.0\,pt]
+\item[2.2] $\dfrac{M_{gas1}}{M_{gas2}} = 10^f$;\quad $f = ?$ \hfill[4.0\,pt]
+\item[2.3] $\dfrac{M_{tot1}}{M_{tot2}} = 10^g$;\quad $g = ?$ \hfill[6.0\,pt]
+\end{description}
+
+\medskip
+\textbf{Part 3 (15 points).}
+
+\begin{description}
+\item[3.1] Fill in the missing values in the table using the fact that for
+  galaxy $G_1$, the dark-to-baryonic mass ratio up to $R_{\max}$ is 6.82.
+  \hfill[15.0\,pt]
+
+  \begin{center}
+  \begin{tabular}{cccccc}
+  Galaxy & Apparent magnitude $k$ & $M_{gas}\,[M_\odot]$ & $M_*\,[M_\odot]$ &
+  $M_{dm}\,[M_\odot]$ & $M_{tot}\,[M_\odot]$ \\
+  \hline
+  $G_1$ & 19.2 & & & & $4.39 \times 10^{11}$ \\
+  \end{tabular}
+  \end{center}
+\end{description}
+
+\medskip
+\textbf{Part 4 (24 points).}
+
+\begin{description}
+\item[4.1] Consider a systematic uncertainty of $\sigma_{sys} = \pm 0.2$ in
+  each apparent magnitude due to CCD calibration errors. Then $k_1$ must be
+  read as $k_1 = 19.2 \pm 0.2$, i.e., the only thing we know is that $k_1$
+  most likely lies in the interval $[19.0, 19.4]$. The same goes for $k_2$.
+
+  Recalculate the exponent in the scaling relation
+  $\frac{M_{*1}}{M_{*2}} = 10^e$ (found in 2.1), expressing $e$ as an
+  interval estimated by considering the extreme possible variations in $k_1$
+  and $k_2$.
+  \[ e \in [?, ?] \]
+  \hfill[4.0\,pt]
+\item[4.2] Now we consider that there is always a natural spread of the data
+  around any relation. For instance, for a given value of the $K$ magnitude
+  the TF relation gives a single value of $\log_{10}(V_{\max})$, but it would
+  be more realistic to report an interval of plausible values, derived from
+  the natural spread of the data around the mean TF relation. We call this
+  the statistical uncertainty, $\sigma_{stat}$.
+
+  Estimate the statistical uncertainty if $\log_{10}(V_{\max})$ is inferred
+  from $K$ using the TF relation from question 1.2. For this, consider for
+  each point the difference between the value of $\log_{10}(V_{\max})$
+  estimated from $K$ using your linear fit and the actual measurement of
+  $\log_{10}(V_{\max})$, and take $\sigma_{stat}$ as two times the root mean
+  square (RMS) of these differences (the RMS of a set of values is the square
+  root of the arithmetic mean of the squares of those values).
+  \[ \sigma_{stat} = ? \]
+  \hfill[10.0\,pt]
+\item[4.3] Recalculate the exponent in the scaling relation
+  $\frac{M_{tot1}}{M_{tot2}} = 10^g$, expressing $g$ as an interval estimated
+  by considering the extreme possible variations arising from both the
+  systematic and statistical uncertainties:
+  \[ g \in [?, ?] \]
+  \hfill[10.0\,pt]
+\end{description}

@@ -1,0 +1,81 @@
+The basic equation of radioactive decay can be expressed as:
+\[ N(t) = N_0 \exp(-\lambda t) \]
+where $N(t)$ and $N_0$ are the number of remaining atoms of the radioactive
+isotope (or parent isotope) at time $t$ and its initial number at $t = 0$,
+respectively, while $\lambda$ is the decay constant. The decay of the parent
+produces daughter nuclides $D(t)$, or radiogenics, which is defined as
+\[ D(t) = N_0 - N(t)\,. \]
+
+Based on those ideas, a group of astronomers investigates a number of
+meteorite samples to determine their ages. They have two kinds of samples:
+allende chondrite (A) and basaltic achondrite (B). From the samples, they
+measure the abundance of $^{87}$Rb and $^{87}$Sr, where it is assumed that
+$^{87}$Sr is entirely produced by the decay of $^{87}$Rb. The value of
+$\lambda$ is $1.42 \times 10^{-11}$ per year for this isotopic decay. In
+addition, non-radiogenic element $^{86}$Sr is also measured. Results of
+measurement are given in the table below, expressed in ppm (part per
+million).
+
+\begin{center}
+\begin{tabular}{c|c|c|c|c}
+Sample No & Meteorite type & $^{86}$Sr (ppm) & $^{87}$Rb (ppm)
+  & $^{87}$Sr (ppm) \\
+\hline
+1  & A & 29.6 & 0.3   & 20.7 \\
+2  & B & 58.7 & 68.5  & 44.7 \\
+3  & B & 74.2 & 14.4  & 52.9 \\
+4  & A & 40.2 & 7.0   & 28.6 \\
+5  & A & 19.7 & 0.4   & 13.8 \\
+6  & B & 37.9 & 31.6  & 28.4 \\
+7  & A & 33.4 & 4.0   & 23.6 \\
+8  & B & 29.8 & 105.0 & 26.4 \\
+9  & A & 9.8  & 0.8   & 6.9  \\
+10 & B & 18.5 & 44.0  & 15.4 \\
+\end{tabular}
+\end{center}
+
+Questions:
+\begin{enumerate}
+\item Express the time $t$ in term of $\dfrac{D(t)}{N(t)}$.
+\item Determine the half-life $t_{1/2}$, i.e., the time needed to obtain a
+  half number of parents after decay.
+\item Knowledge on the ratio between two isotopes is more valuable than just
+  the absolute abundance of each isotope. It is quite likely that there was
+  some initial strontium present. By taking
+  $\left(\frac{^{87}\mathrm{Rb}}{^{86}\mathrm{Sr}}\right)$ as independent
+  variable and $\left(\frac{^{87}\mathrm{Sr}}{^{86}\mathrm{Sr}}\right)$ as
+  dependent variable, estimate the simple linear regression model to
+  represent the data.
+\item Plot $\left(\frac{^{87}\mathrm{Rb}}{^{86}\mathrm{Sr}}\right)$ versus
+  $\left(\frac{^{87}\mathrm{Sr}}{^{86}\mathrm{Sr}}\right)$ and also the
+  regression line (isochrone) for each type of the meteorites. (Please use
+  minimum 7 decimal digits for intermediate calculations)
+\item Subsequently, help this astronomer to determine the age of each type of
+  the meteorites and its error. Which type is older?
+\item Determine the initial value of
+  $\left(\frac{^{87}\mathrm{Sr}}{^{86}\mathrm{Sr}}\right)_0$ for each type of
+  the meteorites and its error.
+\end{enumerate}
+
+\textit{Glossary}:
+
+A simple linear regression line $y = a + bx$ can be fitted to a set of data
+$(X_i, Y_i)$, $i = 1, \ldots, n$, in which
+\[ b = \frac{SS_{xy}}{SS_{xx}} \]
+\[ a = \bar{y} - b\bar{x} \]
+where
+\[ SS_{xx} \text{ : sum of square for } X
+   = \sum_{i=1}^{n} X_i^2
+   - \frac{1}{n}\left( \sum_{i=1}^{n} X_i \right)^2 \]
+\[ SS_{yy} \text{ : sum of square for } Y
+   = \sum_{i=1}^{n} Y_i^2
+   - \frac{1}{n}\left( \sum_{i=1}^{n} Y_i \right)^2 \]
+\[ SS_{xy} \text{ : sum of square for both } X \text{ and } Y
+   = \sum_{i=1}^{n} X_i Y_i
+   - \frac{1}{n} \sum_{i=1}^{n} X_i \sum_{i=1}^{n} Y_i \]
+
+Standard deviation of each parameter, $a$ and $b$ can be calculated by
+\[ S_a = \sqrt{ \frac{SS_{YY} - \dfrac{(SS_{XY})^2}{SS_{XX}}}
+   {(n-2)\,SS_{XX}} \times \sum_{i=1}^{n} X_i^2 } \]
+\[ S_b = \sqrt{ \frac{SS_{YY} - \dfrac{(SS_{XY})^2}{SS_{XX}}}
+   {(n-2)\,SS_{XX}} } \]

@@ -1,0 +1,36 @@
+\begin{enumerate}
+\item \textbf{Calculate the Earth revolution speed.} \hfill(20)
+
+  Earth revolution speed is
+  \[
+  v_E = \frac{2\pi \bar r_E}{T_E} = \frac{2\pi a_E}{T_E} = 29805~\mathrm{m/s}
+  \]
+\item \textbf{Calculate Julietta revolution speed.} \hfill(25)
+
+  Julietta revolution is (since the given data is semimajor axis, the orbit of
+  Julietta is ellipse)
+  \[
+  v_J = \sqrt{GM\left(\frac{2}{r_J} - \frac{1}{a}\right)} = 16742.9~\mathrm{m/s}
+  \]
+\item \textbf{Calculate the approximate dimension of Julietta.}
+
+  From the geometry
+  % FIGURE NEEDED: Sun S with the orbits of Earth E and Julietta J; radii r_E,
+  % r_J, separation r_{J-E}, angle alpha between v_E and the E--J direction,
+  % velocity vectors v_E and v_J (2015_th_sol.pdf, page 5)
+  \[
+  \cos\alpha = \frac{r_E^2 + r_J^2 - r_{J-E}^2}{2 r_E r_J} = 0.995
+  \]
+  % sic: (1 + 3.076^2 - 2.156^2)/(2 x 3.076) = 0.945; source prints 0.995,
+  % while the numbers below are consistent with 0.945
+  Thus, Julietta's relative projected speed to Earth is
+  \[
+  v_{J,\mathrm{rel}} = v_E - v_J\cos\alpha = 13984.16~\mathrm{m/s} \tag*{(40)}
+  \]
+  Hence, the approximate dimension of Julietta is
+  \[
+  l_J = v_{J,\mathrm{rel}}\,t_{\mathrm{occil}} = 86701.8~\mathrm{m} \tag*{(15)}
+  \]
+  % sic: "t_occil" as in the original; 13984.16 x 6.201 = 86715.6, source
+  % prints 86701.8
+\end{enumerate}

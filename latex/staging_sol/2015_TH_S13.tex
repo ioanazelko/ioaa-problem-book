@@ -1,0 +1,116 @@
+\textbf{Calculate the tidal force}
+
+The tidal force (assuming the point mass of hemisphere is located at
+$R_{Io}/2$):
+\begin{align*}
+  F_{\mathrm{tidal}} &= F(r - R_{Io}) - F(r + R_{Io}) \\ % sic: arguments written with R_Io, the fractions below use R_Io/2
+  &= -\frac{GM_J\frac{m_{Io}}{2}}{\left(r - \frac{R_{Io}}{2}\right)^2}
+     + \frac{GM_J\frac{m_{Io}}{2}}{\left(r + \frac{R_{Io}}{2}\right)^2}
+   = -GM_J\frac{m_{Io}}{2}
+     \left[\frac{1}{\left(r - \frac{R_{Io}}{2}\right)^2}
+     - \frac{1}{\left(r + \frac{R_{Io}}{2}\right)^2}\right] \\
+  &= -\frac{GM_J\frac{m_{Io}}{2}}{r^2}
+     \left[\frac{\left(\frac{2R_{Io}}{r}\right)}
+     {\left[1 - \left(\frac{R_{Io}}{r}\right)^2\right]^2}\right] % sic: exact denominator would be (1-(R_Io/2r)^2)^2
+\end{align*}
+\hfill(40 points)
+
+The term $\left(\dfrac{R_{Io}}{r}\right)^2$ is too small and it can be
+ignored, so that
+\[
+  F_{\mathrm{tidal}} = -\frac{GM_J m_{Io} R_{Io}}{r^3}
+\]
+\hfill(10 points)
+
+\medskip
+\textbf{Calculate the difference of the tidal force}
+
+The difference in the tidal force experienced at perijove (closest to Jupiter)
+and apojove (furthest from Jupiter)
+\[
+  \Delta F = \left|F_{\mathrm{tidal}}(r_{\mathrm{peri}})
+    - F_{\mathrm{tidal}}(r_{\mathrm{apo}})\right|
+\]
+\hfill(15 points)
+\[
+  = GM_J m_{Io} R_{Io}
+    \left[\frac{1}{r_{\mathrm{peri}}^3} - \frac{1}{r_{\mathrm{apo}}^3}\right]
+  = 6.65\times10^{18}\ \mathrm{N}
+\]
+\hfill(15 points)
+
+\medskip
+\textbf{Calculate the average power of work done}
+
+Hence, the average power of the work done on the rock during one-half orbit
+is
+\[
+  \bar P = \frac{\Delta F\,d}{t_{Io}/2}
+\]
+\hfill(10 points)
+\[
+  \bar P = 4.35\times10^{15}\,W
+\]
+\hfill(10 points)
+
+\bigskip
+\textbf{Alternate solution}
+
+If assume the mass of the hemisphere is located at the center of mass of a % sic: "If assume"
+solid hemisphere, $3R_{Io}/8$, then
+
+\medskip
+\textbf{Calculate the tidal force}
+
+The tidal force (assuming the point mass of hemisphere is located at
+$3R_{Io}/8$):
+\begin{align*}
+  F_{\mathrm{tidal}} &= F(r - R_{Io}) - F(r + R_{Io}) \\
+  &= -\frac{GM_J\frac{m_{Io}}{2}}{\left(r - \frac{3R_{Io}}{8}\right)^2}
+     + \frac{GM_J\frac{m_{Io}}{2}}{\left(r + \frac{3R_{Io}}{8}\right)^2}
+   = -GM_J\frac{m_{Io}}{2}
+     \left[\frac{1}{\left(r - \frac{3R_{Io}}{8}\right)^2}
+     - \frac{1}{\left(r + \frac{3R_{Io}}{8}\right)^2}\right] \\
+  &= -\frac{GM_J\frac{m_{Io}}{2}}{r^2}
+     \left[\frac{\left(\frac{3R_{Io}}{2r}\right)}
+     {\left[1 - \left(\frac{6R_{Io}}{8r}\right)^2\right]^2}\right] % sic: 6R_Io/8r in source; exact would be 3R_Io/8r
+\end{align*}
+\hfill(40 points)
+
+The term $\left(\dfrac{R_{Io}}{r}\right)^2$ is too small and it can be
+ignored, so that
+\[
+  F_{\mathrm{tidal}} = -\frac{3GM_J m_{Io} R_{Io}}{4r^3}
+\]
+\hfill(10 points)
+
+\medskip
+\textbf{Calculate the difference of the tidal force}
+
+The difference in the tidal force experienced at perijove (closest to Jupiter)
+and apojove (furthest from Jupiter)
+\[
+  \Delta F = \left|F_{\mathrm{tidal}}(r_{\mathrm{peri}})
+    - F_{\mathrm{tidal}}(r_{\mathrm{apo}})\right|
+\]
+\hfill(15 points)
+\[
+  = \frac{3}{4}GM_J m_{Io} R_{Io}
+    \left[\frac{1}{r_{\mathrm{peri}}^3} - \frac{1}{r_{\mathrm{apo}}^3}\right]
+  = 4.97\times10^{18}\ \mathrm{N}
+\]
+\hfill(15 points)
+
+\medskip
+\textbf{Calculate the average power of work done}
+
+Hence, the average power of the work done on the rock during one-half orbit
+is
+\[
+  \bar P = \frac{\Delta F\,d}{t_{Io}/2}
+\]
+\hfill(10 points)
+\[
+  \bar P = 3.25\times10^{15}\,W
+\]
+\hfill(10 points)

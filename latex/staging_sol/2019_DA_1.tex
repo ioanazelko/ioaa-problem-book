@@ -1,0 +1,241 @@
+% Official solution, 2019 DA solutions pp. 1-8; the source's equation
+% numbers (1.1)-(1.15) are kept.
+
+\begin{description}
+\item[a)] From the light curve plot the Modified Julian Dates can be read
+  with an error of about 0.5. The peak of the maximum brightness is very
+  narrow and obviously placed at $\mathrm{MJD}_0 = 56\,520.5$ with a value of
+  $m_0 = 4.5^m$, therefore:
+  \[ \mathrm{MJD}_0 = 56\,520.5 \pm 0.5 \]
+  \hfill(2 p)
+  \[ m_0 = 4.5^m \pm 0.05^m \]
+  \hfill(1 p)
+
+\item[b)] The brightness values of $2^m$ and $3^m$ decline are
+  $6.5^m \pm 0.05^m$ and $7.5^m \pm 0.05^m$, respectively. \hfill(2 p)
+
+  The corresponding Modified Julian Dates are $\mathrm{MJD}_2$ and
+  $\mathrm{MJD}_3$. Because of the poorly defined slopes on the light curve
+  around these dates, their acceptable error is larger than in other parts of
+  the light curve, let say it is about $1^d$, so:
+  \[ \mathrm{MJD}_2 = 56\,531.5 \pm 1, \qquad
+     \mathrm{MJD}_3 = 56\,543.5 \pm 1 \]
+  \hfill(2 p)
+  \[ t_2 = 11^d \pm 1^d, \qquad t_3 = 23^d \pm 1^d \]
+  \hfill(2 p)
+
+\item[c)] The text of this part does not ask for calculating the individual
+  errors of the formulae, but it is worth estimating them here, just for the
+  sake of completeness. (Students won't do it.)
+  \begin{description}
+  \item[(a)] The form of the function is
+    \[ M = a + b \arctan\frac{c - \log t_2}{d}, \qquad
+       a = -7.92,\ b = -0.81,\ c = 1.32,\ d = 0.23,
+       \tag*{(1.1)} \]
+    so its derivative:
+    \[ M' = -\frac{b}{d \log(10)
+       \left[ 1 + \left( \frac{c - \log t_2}{d} \right)^2 \right]}
+       \frac{1}{t_2}
+       \;\rightarrow\;
+       \Delta M = -\frac{b}{d \log(10)
+       \left[ 1 + \left( \frac{c - \log t_2}{d} \right)^2 \right]}
+       \frac{\Delta t_2}{t_2}
+       \tag*{(1.2)} \]
+    The value and its error calculated from the formulae above (error is not
+    necessary):
+    \[ M_0^{(a)} = -8.63^m \pm 0.06^m \]
+    \hfill(1 p)
+  \item[(b)] The form of the function is
+    \[ M = a + b \log t_2, \qquad a = -11.32,\ b = 2.55
+       \tag*{(1.3)} \]
+    so its derivative:
+    \[ M' = \frac{b}{t_2 \log(10)}
+       \;\rightarrow\;
+       \Delta M = \frac{b}{\log(10)} \frac{\Delta t_2}{t_2}
+       \tag*{(1.4)} \]
+    The value and its error calculated from the formulae above (error is not
+    necessary):
+    \[ M_0^{(b)} = -8.66^m \pm 0.10^m \]
+    \hfill(1 p)
+  \item[(c)] The form of the function is
+    \[ M = a + b \log t_3, \qquad a = -11.99,\ b = 2.54
+       \tag*{(1.5)} \]
+    so its derivative:
+    \[ M' = \frac{b}{t_3 \log(10)}
+       \;\rightarrow\;
+       \Delta M = \frac{b}{\log(10)} \frac{\Delta t_3}{t_3}
+       \tag*{(1.6)} \]
+    The value and its error calculated from the formulae above (error is not
+    necessary):
+    \[ M_0^{(c)} = -8.53^m \pm 0.05^m \]
+    \hfill(1 p)
+  \end{description}
+
+  The standard deviation of a dataset can be calculated as
+  \[ \sigma = \sqrt{ \frac{\sum\limits_{i=1}^{n} (x_i - \bar{x})^2}{n-1} },
+     \tag*{(1.7)} \]
+  where $n$ is the number of data points, $x_i$ is the $i$th individual data
+  value and $\bar{x}$ is their mean,
+  $\bar{x} = (x_1 + x_2 + \ldots + x_n)/n$.
+
+  The mean and the standard deviation of the three absolute maximum
+  brightness values:
+  \[ M_0 = -8.61^m \pm 0.07^m \]
+  \hfill(2 p)
+
+\item[d)] The color excess $E(B-V)$ is the difference between the observed
+  color index of the star and the intrinsic color index predicted from its
+  spectral type:
+  \[ E(B-V) = (B-V) - (B-V)_0 = A_B - A_V
+     \tag*{(1.8)} \]
+  The total extinction is quantified by $A_V$ (at 5550 \AA). The ratio of
+  total-to-selective extinction:
+  \[ R = \frac{A_V}{E(B-V)}
+     \;\rightarrow\; A_V = R\,E(B-V), \text{ where } R = 3.1
+     \tag*{(1.9)} \]
+  \hfill(2 p)
+
+  With the given value and error of $E(B-V)$:
+  \[ A_V = 3.1 \times E(B-V) = 3.1 \times (0.184^m \pm 0.035^m)
+     = 0.57^m \pm 0.11^m \]
+  \hfill(2 p)
+
+\item[e)] According to the formula for the distance modulus:
+  \[ m_V - M_V = -5 + 5\log d + A_V \;\rightarrow\;
+     \tag*{(1.10)} \]
+  \hfill(1 p)
+  \[ \log d = \frac{m_V - M_V + 5 - A_V}{5} \;\rightarrow\;
+     \tag*{(1.11)} \]
+  \[ d = 10^{(m_V - M_V + 5 - A_V)/5},
+     \tag*{(1.12)} \]
+  \hfill(2 p)\\
+  where the distance $d$ is in parsecs.
+
+  Since $\Delta a^x / \Delta x = a^x \ln a$, therefore the error of the
+  distance $d$:
+  \[ \Delta d = 10^{(m_V - M_V + 5 - A_V)/5} \times \ln 10 \times
+     \Delta\left( (m_V - M_V + 5 - A_V)/5 \right) \]
+  \hfill(2 p)
+
+  The error of $(m_V - M_V + 5 - A_V)/5$ can be estimated with the sum of
+  the errors of $m_V$, $M_V$ and $A_V$, so:
+  \[ \Delta\left( (m_V - M_V + 5 - A_V)/5 \right) \approx 0.05 \]
+  \hfill(2 p)
+
+  With the data:
+  \[ d = 3220\ \mathrm{pc} \quad\text{and}\quad \Delta d = 338\ \mathrm{pc}, \]
+  \hfill(2 p)\\
+  so the distance to the nova:
+  \[ d \approx 3.2 \pm 0.3\ \mathrm{kpc} \]
+  \hfill(2 p)
+
+\item[f)] The well known Doppler formula between the wavelength displacement
+  and radial velocity:
+  \[ \frac{\lambda - \lambda_0}{\lambda_0} = \frac{\Delta\lambda}{\lambda_0}
+     = \frac{v_r}{c}
+     \;\rightarrow\; v_r = \frac{\Delta\lambda}{\lambda_0}\,c,
+     \tag*{(1.13)} \]
+  \hfill(1 p)\\
+  where $\lambda$ is the measured wavelength of the line feature, $\lambda_0$
+  is the rest wavelength of the line, $c$ is the speed of light, and $v_r$ is
+  the radial velocity to be calculated.
+
+  The wavelength of the P Cygni absorption peak should be extracted from the
+  figure with an error of about 1 \AA. The main part of this error is coming
+  from the ``definition'' of the peak position of the Gaussian-like profile.
+  This will result in inaccuracy of about
+  $\Delta v_r = \pm 50\ \mathrm{km\,s^{-1}}$ in radial velocities. \hfill(1 p)
+
+  The wavelengths and radial velocities should be something like these:
+  \begin{center}
+  \begin{tabular}{ccc}
+    \hline
+    MJD & WL & RV \\
+    \hline
+    56518.986 & 6527 & $-1636$ \\
+    56519.813 & 6531 & $-1454$ \\
+    56520.843 & 6534 & $-1317$ \\
+    56521.835 & 6537 & $-1179$ \\
+    56522.829 & 6542 & $-951$ \\
+    56523.827 & 6544 & $-860$ \\
+    \hline
+  \end{tabular}
+  \end{center}
+  \hfill(12 p)
+
+  Radial velocities within the range of $\pm 50\ \mathrm{km\,s^{-1}}$ of the
+  RV values listed in the table should be given full marks, but velocities in
+  the range of $\pm 100\ \mathrm{km\,s^{-1}}$ are still acceptable with half
+  marks.
+
+\item[g)] See the attached figure as an example for the acceptable solution.
+  The plotted data are taken from the table above. For the sake of simplicity
+  the absolute values of the radial velocities have been used for making the
+  graph. \hfill(6 p)
+  % FIGURE NEEDED: |v_r| (km/s) of the H-alpha absorption components vs MJD
+  % (56519-56524), six points falling along a straight line with fitted
+  % dashed line and hatched trapezoid under the curve; annotations "4.841
+  % days = 418 262 s" and "1248 km/s"; 2019 DA solutions, page 7.
+
+\item[h)] It is obvious from the plot, that the radial velocities lie along a
+  straight line. To estimate the size of the expanding envelope we need to
+  calculate the area below the $t - v_r$ graph between the first and last
+  date. Hence the graph is a straight line, this is very simple: we have to
+  determine the area of the hatched region which is a trapezoid.
+
+  If the two bases and the height of the trapezoid are $a$, $b$, and $m$,
+  respectively, then the area of the trapezoid is:
+  \[ T = \frac{a + b}{2}\,m
+     \tag*{(1.14)} \]
+  \hfill(3 p)
+
+  In our case $a = v_{r1}$, $b = v_{r6}$, and $m = t_6 - t_1$. \hfill(1 p)
+
+  We could use the fitted line (dashed) as the upper side of the trapezoid,
+  but this would be a bit complicated --- because of the difficulties of the
+  fitting process ---, and not necessary at all. Instead of this we use the
+  line connecting the first and last radial velocity points as this runs very
+  close to the fitted line.
+  \[ R = \int_{t_1}^{t_6} |v_r|\,dt
+     \approx \frac{(v_{r1} + v_{r6})}{2}\,(t_6 - t_1)
+     \approx 3.5\ \mathrm{AU} \]
+  The result: $R \approx 3.5$ AU \hfill(3 p)
+
+\item[i)] The apparent angular diameter of the spherical envelope seen from
+  the Earth:
+  \[ \vartheta = 2 \times \arctan\left( \frac{R}{d} \right)
+     \approx 2\,\frac{R}{d}
+     \tag*{(1.15)} \]
+  \hfill(2 p)
+
+  Using the values of $d \approx 3.2$ kpc and $R \approx 3.5$ AU, 5 days
+  after the discovery the angular diameter of the envelope is:
+  \[ \vartheta = 0.0022'' = 2.2\ \mathrm{mas} \]
+  \hfill(2 p)
+
+  A less formal solution:
+  \begin{itemize}
+  \item By definition a parsec (1 pc) is the distance from the Sun to an
+    astronomical object that has a parallax angle of one arcsecond, i.e.\ it
+    represents the distance at which the radius of Earth's orbit (1 AU)
+    subtends an angle of one arcsecond.
+  \item Because of the very small angles the distance is a linear function of
+    the parallax. This means that the radius $R \approx 3.5$ AU of the
+    envelope subtends one arcsecond viewing from a distance of
+    $d \approx 3.5$ pc, and one milliarcsecond from a distance of
+    $1000d \approx 3500\ \mathrm{pc} = 3.5\ \mathrm{kpc}$.
+  \item Since this value is close to the distance of Nova Del 2013 determined
+    earlier, we can conclude that the apparent angular diameter of the
+    spherical shape envelope 5 days after the discovery was about 2
+    milliarcseconds.
+  \end{itemize}
+
+% FIGURE NEEDED: annotated Johnson V light curve of Nova Del 2013, m_V vs
+% MJD (56510-56610), marking MJD_0 = 56520.5 (m_0 = 4.5), MJD_2 = 56531.5
+% (m_2 = 6.5), MJD_3 = 56543.5 (m_3 = 7.5), t_2 = 11 d, t_3 = 23 d;
+% 2019 DA solutions, page 5.
+% FIGURE NEEDED: stacked spectra of Nova Del 2013 around the H-alpha line,
+% relative flux + constant vs wavelength 6450-6730 A, six epochs t_0 - 2 d
+% ... t_0 + 3 d with P Cygni absorption components; 2019 DA solutions,
+% page 6.
+\end{description}

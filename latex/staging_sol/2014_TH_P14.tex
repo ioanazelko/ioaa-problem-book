@@ -1,0 +1,63 @@
+The apparent magnitude of a planet from the Solar System depends on the phase
+angle $M = M(\Psi)$. The apparent magnitude of the body is given by the
+relation:
+\[
+m = M + 2.5\cdot\log\frac{d_{C,S}^{2}\cdot d_{C,O}^{2}}{d_{0}^{4}\cdot p(\Psi)},
+\]
+% sic: subscripts C,S / C,O here vs B,S / B,O in the text below, as in the original
+unde: $d_{B,S}$ -- the distance between the body and the Sun; $d_{B,O}$ --
+distance between the body and observer; $d_{0} = 1$\,AU; $\Psi$ -- the phase
+angle; $p(\Psi)$ -- the phase function:
+% sic: "unde" (Romanian for "where") as in the original
+\[
+p(\Psi) = \frac{2}{3}\cdot\left[\left(1 - \frac{\Psi}{\pi}\right)\cos\Psi
+  + \frac{1}{\pi}\sin\Psi\right],
+\]
+$\Psi$ as seen in the figure bellow is given by the cosine law.
+% sic: "bellow" as in the original
+% FIGURE NEEDED: Sun--observer--body triangle defining the phase angle Psi,
+% with distances d_BS, d_BO, d_OS (2014_th_sol.pdf, page 27)
+\[
+\cos\Psi = \frac{d_{BO}^{2} + d_{BS}^{2} - d_{OS}^{2}}{2 d_{BO}\cdot d_{BS}}.
+\]
+In particularaly for the Moon
+% sic: "particularaly" as in the original
+% FIGURE NEEDED: Sun--Earth--Moon geometry with the Moon's illuminated disc,
+% phase angle psi at the Moon (2014_th_sol.pdf, page 28)
+\begin{gather*}
+\cos\Psi = \frac{d_{ME}^{2} + d_{MS}^{2} - d_{ES}^{2}}{2 d_{ME}\cdot d_{MS}};\\
+p(\Psi) = \frac{2}{3}\cdot\left[\left(1 - \frac{\Psi}{\pi}\right)\cos\Psi
+  + \frac{1}{\pi}\sin\Psi\right];\\
+m_{M} = M_{M} + 2.5\cdot\log\frac{d_{M,S}^{2}\cdot d_{ME}^{2}}
+  {d_{0}^{4}\cdot p(\Psi)}.
+\end{gather*}
+
+Particular cases:
+
+1) Full moon
+\begin{gather*}
+\Psi = 0;\\
+\cos\Psi = 1;\quad \sin\Psi = 0;\\
+p(\Psi) = \frac{2}{3};\\
+d_{MS} = 1~\mathrm{AU};\ d_{ME} = 385000~\mathrm{km} \approx 0.00256~\mathrm{AU}
+  = 256\cdot10^{-5}~\mathrm{SU};\ d_{0} = 1~\mathrm{SU};
+% sic: "SU" as in the original
+\end{gather*}
+\[
+m_{M} = M_{M} - 12.5^{\mathrm{m}} = 0.25^{\mathrm{m}} - 12.5^{\mathrm{m}}
+      = -12.25^{\mathrm{m}}.
+\]
+
+2) First Quarter
+\begin{gather*}
+\Psi = 90^\circ;\\
+\cos\Psi = 0;\quad \sin\Psi = 1;\\
+p(\Psi) = \frac{2}{3\pi} \approx 0.2;\\
+\frac{d_{M,S}^{2}\cdot d_{ME}^{2}}{d_{0}^{4}\cdot p(\Psi)}
+  = \frac{65536\cdot10^{-10}}{0.2} = 491520\cdot10^{-10};
+% sic: 65536/0.2 = 327680, source prints 491520
+\end{gather*}
+\[
+m_{M} = M_{M} - 10.75^{\mathrm{m}} = 0.25^{\mathrm{m}} - 10.75^{\mathrm{m}}
+      = -10.5^{\mathrm{m}}.
+\]

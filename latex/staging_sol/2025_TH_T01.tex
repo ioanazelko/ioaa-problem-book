@@ -1,0 +1,101 @@
+\begin{description}
+\item[(T01.1)]
+Since the two detectors make an angle with each other, photons from the
+source will not be incident on the detectors at the same angle. Using this
+the source can localized.
+% sic: "can localized" as printed in the source.
+
+Let $\widehat{n_1}$ be the unit vector perpendicular to the plane of
+D$_1$ and $\widehat{n_2}$ be the unit vector perpendicular to the plane of
+D$_2$. We have,
+\begin{align*}
+\widehat{n_1} &= \frac{1}{2}\widehat{x} + \frac{\sqrt{3}}{2}\widehat{y}
+  && \text{(0.5 marks)} \\
+\widehat{n_2} &= -\frac{1}{2}\widehat{x} + \frac{\sqrt{3}}{2}\widehat{y}
+  && \text{(0.5 marks)}
+\end{align*}
+Let $\widehat{s} = s_x\widehat{x} + s_y\widehat{y}$ be the unit vector in
+the direction of the source and $F$ be the flux of the source. The
+effective area of capture for a detector will be
+\[ A_{\mathrm{eff}} = A(|\widehat{s} \cdot \widehat{n}|) \]
+\hfill(0.5 marks)
+% FIGURE NEEDED: sketch of parallel rays hitting a tilted flat detector,
+% showing unit vectors n-hat and s-hat and the projected effective area
+% A_eff; 2025_theory_solution.pdf page 2.
+
+Hence, the power received is,
+\[ P = AF(|\widehat{s} \cdot \widehat{n}|) \]
+\hfill(1.0 marks)\\
+and therefore,
+\begin{align*}
+P_1 &= AF(|\widehat{s} \cdot \widehat{n_1}|) \\
+P_2 &= AF(|\widehat{s} \cdot \widehat{n_2}|)
+\end{align*}
+Hence,
+\begin{align*}
+\widehat{s} \cdot \widehat{n_1}
+  &= \frac{1}{2}s_x + \frac{\sqrt{3}}{2}s_y
+   = \frac{2.70 \times 10^{-10}}{AF} \\
+\widehat{s} \cdot \widehat{n_2}
+  &= -\frac{1}{2}s_x + \frac{\sqrt{3}}{2}s_y
+   = \frac{4.70 \times 10^{-10}}{AF}
+\end{align*}
+Solving,
+\begin{align*}
+s_x &= -\frac{2.00 \times 10^{-10}}{AF}
+  && \text{(0.5 marks)} \\
+s_y &= \frac{7.40 \times 10^{-10}}{\sqrt{3}AF}
+  && \text{(0.5 marks)}
+\end{align*}
+Hence, the angle the direction vector makes with respect to the positive
+$y$-axis is
+\[ \eta = \tan^{-1}\left(-\frac{s_x}{s_y}\right) \]
+\hfill(1.0 marks)
+
+Then, $\eta = 25.1^\circ = 0.438$\,rad. \hfill(0.5 marks)
+
+\item[(T01.2)]
+The time delay occurs because the satellites S$_1$ and S$_2$ are located at
+different distances from the source. Light takes longer time to reach the
+satellite that is farther (here, say S$_1$). Let $\Delta t = t_1 - t_2$.
+
+% FIGURE NEEDED: geometry of satellites S1 and S2 separated by 2r with the
+% source direction making angle theta with the line joining them, path
+% difference c*Delta-t marked; 2025_theory_solution.pdf page 3.
+
+If the direction of the source makes an angle $\theta$ (see the figure
+above) with the line joining telescopes S$_1$ and S$_2$ we have the path
+difference ($\Delta d$) given as,
+\[ \Delta d = c\Delta t \]
+\hfill(0.5 marks)\\
+From the figure above the path difference can be written as,
+\[ \Delta d = 2r\cos\theta \]
+\hfill(1.0 marks)\\
+Therefore,
+\[ \cos\theta = \frac{c\Delta t}{2r} \]
+Since the measurement of $\Delta t$ has some uncertainty, that is
+$\Delta t \in [9.9, 10.1]$\,ms, we get a range $[\theta_1, \theta_2]$ for the
+possible values of $\theta$.
+\begin{align*}
+\theta_1 &= \cos^{-1}\left(\frac{c(10.1\,\mathrm{ms})}{2r}\right)
+  = 77.51^\circ
+  && \text{(0.5 marks)} \\
+\theta_2 &= \cos^{-1}\left(\frac{c(9.9\,\mathrm{ms})}{2r}\right)
+  = 77.76^\circ
+  && \text{(0.5 marks)}
+\end{align*}
+
+% FIGURE NEEDED: unit sphere with two cones of half-angles theta_1 (blue)
+% and theta_2 (red) about the baseline axis, bounding an annulus on the
+% sphere where the source may lie; 2025_theory_solution.pdf page 3.
+
+The source may lie anywhere in the annulus bounded by the red and blue
+circles on the unit sphere above, whose area is given by
+\[ 2\pi(\cos\theta_1 - \cos\theta_2) \]
+\hfill(1.5 marks)\\
+Hence the fraction of sky where the source might lie is
+\[ f = \frac{1}{2}(\cos\theta_1 - \cos\theta_2) \]
+\hfill(0.5 marks)
+\[ f = 2.13 \times 10^{-3} \]
+\hfill(0.5 marks)
+\end{description}

@@ -1,0 +1,162 @@
+\textbf{Part 1.}
+
+\begin{description}
+\item[1.1)] From the plot on the right we can get the equation of the
+  straight line as
+  \[ y = -0.76\cdot x + 7.32 \]
+  \hfill[3 points]
+
+  which taking to the power of 10 is equivalent to:
+  $f_g = 10^{7.32}M_*^{-0.76}$, being $f_g$ the gas fraction. Multiplying
+  by the stellar mass we finally get:
+  \[ M_{gas} = 10^{7.32}\times M_*^{0.24} \]
+  \[ a = 10^{7.32} = 2.09\times 10^{7}\ \text{[1 point]};\qquad
+     b = 0.24\ \text{[1 point]} \]
+
+\item[1.2)] \hfill[15 points]
+
+  \begin{center}
+  \begin{tabular}{cccccc}
+  V & LogV & K & Zx & Zy & ZxZy\\
+  79.4 & 1.8998 & $-16.8$ & $-1.1778$ & 1.3873 & $-1.6339$\\
+  100.1 & 2.0004 & $-19.2$ & $-0.7831$ & 0.4970 & $-0.3892$\\
+  158.5 & 2.2000 & $-21.3$ & $-0.0001$ & $-0.2819$ & 0.0000\\
+  251.2 & 2.4000 & $-21.4$ & 0.7845 & $-0.3190$ & $-0.2502$\\
+  316.2 & 2.5000 & $-24$ & 1.1765 & $-1.2834$ & $-1.5100$\\
+  \hline
+  Ave & 2.2001 & $-20.54$ & & sum ZxZy & $-3.7833$\\
+  St. Dev & 0.2549 & 2.696 & & r & $-0.9458$
+  \end{tabular}
+  \end{center}
+
+  The best-fit straight line is
+  $K = -10\cdot\log_{10}(V_{max}) + 1.47$.
+\end{description}
+
+\textbf{Part 2.}
+
+\begin{description}
+\item[2.1)] \hfill[10 points]
+
+  Galaxies are at the same distance, therefore the difference in apparent
+  magnitudes is the same as in absolute magnitudes, and this relates to a
+  luminosity ratio:
+  \[ (k_1 - k_2) = (K_1 - K_2)
+     = -2.5\times\log_{10}\!\left(\frac{L_1}{L_2}\right) \]
+  \hfill[2 points]
+
+  For having the same stellar populations, and ignoring interstellar
+  extinction, the luminosity of each galaxy is proportional to its
+  stellar mass with the same mass-to-light ratio for both galaxies, such
+  that:
+  \[ (k_1 - k_2) = -2.5\times\log_{10}
+     \!\left(\frac{M_{*1}}{M_{*2}}\right) \]
+  \hfill[2 points]
+
+  The difference in magnitudes being 6, we obtain:
+  \[ \left(\frac{M_{*1}}{M_{*2}}\right) = 10^{2.4} \]
+  \hfill[2 points]
+
+\item[2.2)] \hfill[4 points]
+
+  Using the last result in combination to that of 1A:
+  \[ \frac{M_{gas1}}{M_{gas2}}
+     = \left(\frac{M_{*1}}{M_{*2}}\right)^{0.24} \]
+  \hfill[2 points]
+  \[ \frac{M_{gas1}}{M_{gas2}} = 10^{0.576} \]
+  \hfill[2 points]
+
+\item[2.3)] \hfill[6 points]
+
+  We found the slope of the TF relation in 1B:
+  $\frac{\Delta K}{\Delta\log(V_{max})} = 10$, with $\Delta K = 6$ for
+  our galaxies: $\frac{V_{max1}}{V_{max2}} = 10^{0.6}$ [2 points]. Now
+  consider the mass distribution as approximately
+  spherically-symmetric, giving:
+  \[ V_{max} = \sqrt{\frac{G\cdot M_{tot}(<R_{max})}{R_{max}}}, \]
+  \hfill[2 points]
+
+  which combined with the ratio just found two lines above leads to:
+  \[ \frac{M_{tot1}}{M_{tot2}} = 10^{1.2} \]
+  \hfill[2 points]
+\end{description}
+
+\textbf{Part 3.} \hfill[15 points]
+
+Baryonic mass is
+$M_{Baryonic} = \frac{4.39\times 10^{11}}{7.82}\,[M_\odot]$ and Dark
+matter mass is given by
+$M_{dm} = 6.82\times\frac{4.39\times 10^{11}}{7.82}\,[M_\odot]$. The
+baryonic contribution needs to be decomposed into stellar and gaseous
+masses, which is not doable analytically but must be faced numerically,
+by tuning the numbers, knowing their sum and knowing the relation between
+them from 1.1. The final table looks like this:
+
+\begin{center}
+\begin{tabular}{cccccc}
+Galaxy & Apparent magnitude $k$ & $M_{gas}$ [$M_\odot$]
+  & $M_{*}$ [$M_\odot$] & $M_{dm}$ [$M_\odot$] & $M_{tot}$ [$M_\odot$]\\
+$G_1$ & 19.2 & $7.67\times 10^{9}$ & $4.85\times 10^{10}$
+  & $3.83\times 10^{11}$ & $4.39\times 10^{11}$
+\end{tabular}
+\end{center}
+
+Equation to be solved: $1 - k = 0.1415\,k^{0.24}$. This gives
+$k = 0.8634$
+
+\textbf{Part 4}
+
+\begin{description}
+\item[4.1)] \hfill[4 points]
+
+  We basically found in 2.1 that
+  $\left(\frac{M_{*1}}{M_{*2}}\right) = 10^{\frac{\Delta K}{-2.5}}$,
+  being $\Delta K = -6$. In this new case, we have the extreme values of
+  $\Delta K$ to be $-6.4$ and $-5.6$, therefore the extreme values for
+  the exponent are these values divided by $-2.5$, then
+  $e\in[2.24,\ 2.56]$
+
+\item[4.2)] \hfill[10 points]
+
+  We have to invert the equation from 1.2 to get:
+  $\log_{10}(V_{max}) = -\frac{K}{10} + 0.1467$. Now we can get the
+  difference between the measured values and linear-fit predictions,
+  approximating numbers to the second digit:
+
+  \begin{center}
+  \begin{tabular}{ccccc}
+  $K$ [mag] & $V_{max}$ [km/s] & $\log_{10}(V_{max})$ measured
+    & $\log_{10}(V_{max})$ from linear fit
+    & $|\Delta\log_{10}(V_{max})|$\\
+  $-16.8$ & 79.4 & 1.9 & 1.83 & 0.07\\
+  $-19.2$ & 100.1 & 2.0 & 2.07 & 0.07\\
+  $-21.3$ & 158.5 & 2.2 & 2.28 & 0.08\\
+  $-21.4$ & 251.2 & 2.4 & 2.29 & 0.11\\
+  $-24.0$ & 316.2 & 2.5 & 2.55 & 0.05
+  \end{tabular}
+  \end{center}
+
+  Taking two times the RMS of the residuals:
+  $\sigma_{stat} = 0.157$
+
+\item[4.3)] With the uncertainties, the expression
+  $\log_{10}(V_{max}) = -\frac{K}{10} + 0.1467$ becomes:
+  \[ \log_{10}(V_{max}) = -\frac{K}{10} + 0.1467\pm\frac{0.2}{10}
+     \pm 0.157 \]
+  \hfill[2 points]
+
+  Writing the same expression down for galaxy 1 and 2, subtracting, and
+  using $\Delta K = -6$ we get:
+  \[ \log_{10}\!\left(\frac{V_{max1}}{V_{max2}}\right)
+     = 0.6\pm 0.02\pm 0.157\pm 0.02\pm 0.157 \]
+  \hfill[4 points]
+
+  Which leads to the extreme values: $0.954$ and $0.246$.
+  \hfill[2 points]
+
+  Finally remembering that circular velocities scale as the square root
+  of the total mass, we have to multiply this exponent by 2, getting the
+  final answer:
+  \[ g\in[0.49,\ 1.91] \]
+  \hfill[2 points]
+\end{description}

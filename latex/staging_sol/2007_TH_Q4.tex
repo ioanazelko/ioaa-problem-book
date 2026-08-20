@@ -1,0 +1,83 @@
+% FIGURE NEEDED: Figure 1 -- lensing geometry: observer O at bottom, lens L at
+% distance $D_L$, source plane at $D_S$ with points S2, P, S, S1; angles
+% $\theta$, $\beta$, $\phi$, impact parameter $\xi$ (2007_th_sol.pdf p.~13).
+\begin{description}
+\item[a).] From figure 1, for small angles, $\tan\theta \approx \theta$, hence
+\begin{align*}
+\mathrm{PS}_1 &= \mathrm{PS} + \mathrm{SS}_1\\
+\theta D_S &= \beta D_S + \left(D_S - D_L\right)\phi\\
+\theta - \beta &= \frac{4GM}{\xi c^2}\,\frac{\left(D_S - D_L\right)}{D_S}
+  \tag*{(1)\quad(1 point)}
+\end{align*}
+Note that $\theta = \dfrac{\xi}{D_L}$ also, hence,
+\[
+\theta^2 - \beta\theta
+  = \left(\frac{4GM}{c^2}\right)\left(\frac{D_S - D_L}{D_L D_S}\right)
+  \tag*{(2)}
+\]
+For a perfect alignment in which $\beta = 0$, we have $\theta = \pm\theta_E$,
+where
+\[
+\theta_E = \sqrt{\left(\frac{4GM}{c^2}\right)\left(\frac{D_S - D_L}{D_L D_S}\right)}
+  \tag*{(3)\quad(1 point)}
+\]
+
+\item[b).] From equation (3), for a solar-mass lens with $D_S = 50$~kpc,
+$D_L = 50 - 10 = 40$~kpc,
+\begin{align*}
+\theta_E &= \sqrt{\left(\frac{4GM}{c^2}\right)
+                  \left(\frac{D_S - D_L}{D_L D_S}\right)}
+          = 0.956 \times 10^{-9}~\text{radian}\\
+         &= 1.97 \times 10^{-4}~\text{arc second} \tag*{(1 point)}
+\end{align*}
+
+\item[c.)] The resolution of the Hubble space telescope having diameter of
+2.4~m is
+\[
+\theta_{Hubble} = 1.22\,\frac{\lambda}{D}
+  = 1.22 \times \frac{5 \times 10^{-7}~\mathrm{m}}{2.4~\mathrm{m}}
+  = 2.54 \times 10^{-7}~\text{radian}
+\]
+for light of wavelength 500~nm. \hfill(1 point)
+
+Hence the Hubble telescope could not resolve \underline{this} Einstein ring.
+\hfill(1 point)
+
+\item[d).] The quadratic equation (2) has two distinct roots, namely,
+\begin{align*}
+\theta_1 &= \frac{\beta}{2}
+  + \sqrt{\left(\frac{\beta}{2}\right)^2 + \theta_E^2} \tag*{(1 point)}\\
+\theta_2 &= \frac{\beta}{2}
+  - \sqrt{\left(\frac{\beta}{2}\right)^2 + \theta_E^2} \tag*{(1 point)}
+\end{align*}
+where $\theta_E = \sqrt{\left(\dfrac{4GM}{c^2}\right)
+\left(\dfrac{D_S - D_L}{D_L D_S}\right)}$.
+
+This implies that there are two images for a single isolated source.
+
+\item[e).]
+\begin{align*}
+\frac{\theta_{1,2}}{\beta}
+  &= \frac{\dfrac{\beta}{2}
+       \pm \sqrt{\left(\dfrac{\beta}{2}\right)^2 + \theta_E^2}}{\beta}\\
+  &= \frac{1}{2}
+     \pm \sqrt{\left(\frac{1}{2}\right)^2 + \left(\frac{1}{\eta}\right)^2}
+   = \frac{1}{2}\left[1 \pm \frac{\sqrt{\eta^2 + 4}}{\eta}\right]
+  \tag*{(1 point)}
+\end{align*}
+
+\item[f).] From equation (2) $\theta^2 - \beta\theta - \theta_E^2 = 0$
+\begin{align*}
+\left(\theta + \Delta\theta\right)^2
+  - \left(\beta + \Delta\beta\right)\left(\theta + \Delta\theta\right)
+  - \theta_E^2 &= 0\\
+\frac{\Delta\theta}{\Delta\beta}
+  &= \frac{\theta}{2\theta - \beta} \tag*{(1 point)}\\
+\left(\frac{\Delta\theta}{\Delta\beta}\right)_{\theta=\theta_{1,2}}
+  = \frac{\theta_{1,2}}{2\theta_{1,2} - \beta}
+  &= \frac{\dfrac{1}{2}\eta \pm \sqrt{1 + \dfrac{\eta^2}{4}}}
+          {\pm 2\sqrt{1 + \dfrac{\eta^2}{4}}}
+   = \frac{1}{2}\left[1 \pm \frac{\eta}{\sqrt{\eta^2 + 4}}\right]
+  \tag*{(1 point)}
+\end{align*}
+\end{description}

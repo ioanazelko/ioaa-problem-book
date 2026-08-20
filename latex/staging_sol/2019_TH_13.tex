@@ -1,0 +1,139 @@
+\begin{description}
+\item[a)] The mean radial velocity of the cluster, from the data given in
+  the table, is
+  \[ \langle v_{\mathrm{r}}\rangle \approx 6731\ \mathrm{km\,s^{-1}} \]
+  \hfill(5\,p)
+
+  Using the Hubble law in the following form
+  \[ v_{\mathrm{r}} = H_0 D, \]
+  \hfill(2\,p)
+
+  where $v_{\mathrm{r}}$ is the mean radial velocity in km/s, $D$ is the
+  distance in Mpc, and $H_0 = 70\ \mathrm{km\,s^{-1}\,Mpc^{-1}}$ is the
+  Hubble constant, we can get
+  \[ D = \frac{v_{\mathrm{r}}}{H_0} \]
+  With numerical values:
+  \[ D = 96\ \mathrm{Mpc} \]
+  \hfill(1\,p)
+
+\item[b)] The angular diameter of the cluster is
+  $\theta = 100' = 6000''$. Applying the definition of the parsec, $1''$
+  angular distance from 1\,pc distance corresponds to 1\,au (Astronomical
+  Unit, $1\,\mathrm{au} \approx 1.5\times 10^{8}$\,km), i.e.
+  \[ d\,[\mathrm{AU}] = \theta\,['']\times D\,[\mathrm{pc}] \]
+  \hfill(3\,p)
+
+  Therefore, $\theta = 6000''$ from
+  $D = 96\ \mathrm{Mpc} = 96\times 10^{6}$\,pc gives (with
+  $1\,\mathrm{Mpc} = 3.086\times 10^{22}$\,m):
+  \[ d = 5.77\times 10^{11}\,\mathrm{au} = 8.63\times 10^{22}\,\mathrm{m}
+     = 2.80\ \mathrm{Mpc} \]
+  \hfill(1\,p)
+
+  Alternative solution: $100' = 1.67^\circ = 0.0291$\,rad. For such small
+  angles $d \approx \theta D$. If $\theta$ is expressed in radians, then
+  $d$ and $D$ have the same units. Thus, if $D = 96$\,Mpc, then
+  \[ d = 0.0291\times 96\ \mathrm{Mpc} = 2.80\ \mathrm{Mpc} \]
+
+\item[c)] In the virial theorem
+  \[ \text{(13.1)}\quad \langle K\rangle
+     = \frac{1}{N}\sum_{i=1}^{N}\frac{1}{2}\,m_i(v_i - v_{\mathrm{m}})^2 \]
+  is the mean kinetic energy of $N$ galaxies. The $i^{\mathrm{th}}$ galaxy
+  has mass $m_i$ and velocity $v_i$, and $v_{\mathrm{m}}$ is the mean
+  velocity of the cluster.
+  \[ \text{(13.2)}\quad \langle U\rangle
+     = -\frac{3}{5}\,\frac{1}{N}\sum_{i=1}^{N}\frac{GM}{R}\,m_i \]
+  is the mean gravitational potential energy of $N$ galaxies (having
+  individual masses $m_i$ as above) filling in a sphere of $R$ radius,
+  while $G$ is the gravitational constant and
+  $M = \sum_{i=1}^{N} m_i$ is the total mass of the cluster.
+
+  If the orbital velocity vectors are distributed randomly, then
+  \[ \text{(13.3)}\quad
+     \frac{1}{N}\sum_{i=1}^{N}(v_i - v_{\mathrm{m}})^2
+     = \frac{1}{N}\sum_{i=1}^{N} 3(v_{i,\mathrm{r}} - v_{\mathrm{m,r}})^2
+     = \frac{N-1}{N}\sum_{i=1}^{N}
+       \frac{3(v_{i,\mathrm{r}} - v_{\mathrm{m,r}})^2}{N-1}
+     \to 3\sigma_{\mathrm{r}}^2,\ \text{if}\ N\to\infty, \]
+  where $v_{i,\mathrm{r}}$ is the radial velocity for the
+  $i^{\mathrm{th}}$ galaxy, and $\sigma_{\mathrm{r}}$ is called the
+  \emph{velocity dispersion} of the cluster.
+
+  Combining Eq.~(13.1) and Eq.~(13.3) one can get:
+  \[ \langle K\rangle = \frac{3}{2}\,m\sigma_{\mathrm{r}}^2 \]
+  \hfill(2\,p)
+
+  Inserting $\langle K\rangle$ into the equation of virial theorem gives:
+  \[ -2\times\frac{3}{2}\,m\sigma_{\mathrm{r}}^2
+     = -3m\sigma_{\mathrm{r}}^2 = \langle U\rangle \]
+  \hfill(2\,p)
+
+  Using Eq.~(13.2) to express $\langle U\rangle$ one can get
+  \[ \langle U\rangle
+     = -\frac{3}{5}\,m\,\frac{GM}{R}\,\frac{1}{N}\sum_{i=1}^{N} 1
+     = -\frac{3}{5}\,m\,\frac{GM}{R}, \]
+  \hfill(2\,p)
+
+  because $\sum_{i=1}^{N} 1 = N$.
+
+  Inserting this expression into the one above, we get:
+  \[ -3m\sigma_{\mathrm{r}}^2 = -\frac{3}{5}\,m\,\frac{GM}{R} \]
+  \hfill(2\,p)
+
+  Dividing by $-3m$ both sides, and expressing $M$ we finally arrive at
+  \[ M = \frac{5R\sigma_{\mathrm{r}}^2}{G}, \]
+  \hfill(2\,p)
+
+  which is the expression of the virial mass.
+
+\item[d)] The radial velocity dispersion of the data given in the table is
+  the same as the standard deviation of the data around the mean. The mean
+  velocity, $\langle v_{\mathrm{r}}\rangle = 6731\ \mathrm{km\,s^{-1}}$,
+  was already derived in part a). Thus (depending on how we define the
+  standard deviation):
+  \[ \sigma_{\mathrm{r},N}
+     = \sqrt{\frac{1}{N}\sum_{i=1}^{N}
+       \left(v_{\mathrm{r}} - \langle v_{\mathrm{r}}\rangle\right)^2}
+     = 1184\ \mathrm{km\,s^{-1}} \]
+  or
+  \[ \sigma_{\mathrm{r},N-1}
+     = \sqrt{\frac{1}{N-1}\sum_{i=1}^{N}
+       \left(v_{\mathrm{r}} - \langle v_{\mathrm{r}}\rangle\right)^2}
+     = 1214\ \mathrm{km\,s^{-1}} \]
+  \hfill(10\,p)
+
+  Inserting this value into the expression of the virial mass and using
+  $R \approx 1.40$\,Mpc as the cluster radius (from b)), the result is:
+  \begin{align*}
+  M_N &= \frac{5\times(1.40\times 3.086\times 10^{22}\,\mathrm{m})
+    \times(1.184\times 10^{6}\,\mathrm{m\,s^{-1}})^2}
+    {6.67\times 10^{-11}\,\mathrm{m^3\,kg^{-1}\,s^{-2}}}\\
+  M_N &= 4.53\times 10^{45}\,\mathrm{kg}
+    \approx 2.28\times 10^{15}\,M_\odot
+  \end{align*}
+  or
+  \begin{align*}
+  M_{N-1} &= \frac{5\times(1.40\times 3.086\times 10^{22}\,\mathrm{m})
+    \times(1.214\times 10^{6}\,\mathrm{m\,s^{-1}})^2}
+    {6.67\times 10^{-11}\,\mathrm{m^3\,kg^{-1}\,s^{-2}}}\\
+  M_{N-1} &= 4.77\times 10^{45}\,\mathrm{kg}
+    \approx 2.40\times 10^{15}\,M_\odot
+  \end{align*}
+  \hfill(2\,p)
+
+\item[e)] Using the virial mass from d) and the given total luminosity of
+  the cluster one can get:
+  \[ \frac{M_N}{L} = \frac{2.28\times 10^{15}\,M_\odot}
+     {5\times 10^{12}\,L_\odot}
+     = 455\ M_\odot/L_\odot \approx 460\ M_\odot/L_\odot \]
+  or
+  \[ \frac{M_{N-1}}{L} = \frac{2.40\times 10^{15}\,M_\odot}
+     {5\times 10^{12}\,L_\odot}
+     = 479\ M_\odot/L_\odot \approx 480\ M_\odot/L_\odot \]
+  \hfill(1\,p)
+
+  This mass-luminosity ratio is much higher than that of the individual
+  galaxies which is typically in between 1 and 100. \hfill(1\,p)
+
+\item[f)] (A) and (D) \hfill(4\,p)
+\end{description}

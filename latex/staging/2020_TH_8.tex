@@ -1,0 +1,60 @@
+In the following problem the fluid mechanics of Jupiter's Great Red Spot
+(GRS) is studied based on the velocity field data. The diagram below shows a
+map of relative velocity for GRS and the surrounding region. The arrows are
+oriented and scaled as per the directions and magnitudes of winds at
+different points.
+
+\ioaafig{2020_TH_8-f1.pdf}
+
+Due to the combined effects of gravity and rotation, Jupiter is slightly
+flattened at its poles. The equation of a spheroid approximating for the
+shape of Jupiter can be stated as:
+\[ \frac{x^2 + y^2}{R_e^2} + \frac{z^2}{R_p^2} = 1, \]
+where $R_e = 7.15 \times 10^7$\,m is the equatorial radius of Jupiter, and
+$R_p = 6.69 \times 10^7$\,m the polar radius. The radii of curvature of this
+spheroid in any direction can be calculated by the following equations
+($\epsilon = \frac{R_e}{R_p}$):
+\[ r(\phi) = R_e \left( 1 + \epsilon^{-2} \tan^2 \phi \right)^{-1/2} \]
+\[ R(\phi) = R_e \epsilon^{-2}
+   \left( \frac{r(\phi)}{R_e \cos\phi} \right)^{3} \]
+where $r$ and $R$ are the zonal (aka in the zone of a particular latitude)
+and meridional (aka longitudinal) radii of curvature, respectively, as a
+function of planetographic latitude $\phi$. The sidereal rotation period of
+Jupiter is $P = 3.57 \times 10^4$\,s.
+
+\begin{description}
+\item[(a)] (4 points) Calculate the zonal and meridional radii values ($r$
+  and $R$ respectively) at the location of the centre of the GRS.
+\item[(b)] (5 points) Estimate the eccentricity of the GRS.
+\item[(c)] (6 points) 'Vorticity' at any point is a measure of local spinning
+  of the fluid as measured by an observer situated in the reference frame of
+  the fluid. Mathematically, it is calculated as 'curl' (vector derivative
+  product) of the velocity field. In this case, the average relative
+  vorticity may be estimated by the equation:
+  \[ \xi = \frac{V_w L_{GRS}}{A_{GRS}} \]
+  where $V_w$ is the maximum value of winds as per the velocity field,
+  $L_{GRS}$ is the length of the circumference of the GRS and $A_{GRS}$ is
+  the area of the GRS.
+
+  Estimate average relative vorticity of the GRS.
+
+  \textbf{Hint:} The circumference of an ellipse is well approximated by an
+  average of circumferences of the corresponding auxiliary and minor circles.
+\item[(d)] (2 points) Find the absolute vorticity $\xi_a = (\xi + f)$ by
+  adding the Coriolis parameter
+  \[ f = 2\Omega \sin\phi \]
+  where $\Omega$ is the angular velocity of the Jupiter (due to axial
+  rotation) and is the appropriate latitude.
+\item[(e)] (1 point) If the absolute vorticity has the same sign as the
+  latitude, we call the storm a `cyclonic storm'. If they have opposite
+  signs, the system is `anticyclonic'. Is the GRS cyclonic or anticyclonic?
+\item[(f)] (12 points) Imagine that the GRS moves to another latitude
+  $\phi_1$, where the absolute vorticity changes the sign (changes from
+  anti-cyclonic to cyclonic or vice versa). Assuming minimum possible
+  displacement of the GRS, at what value of $\phi_1$ do we expect this
+  change?
+
+  In your analysis, assume that the GRS at the new location would occupy the
+  same angular span in latitude, as well as have the same wind velocities and
+  eccentricity as the original.
+\end{description}

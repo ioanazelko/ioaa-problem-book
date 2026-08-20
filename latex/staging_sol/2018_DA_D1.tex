@@ -1,0 +1,203 @@
+1.1. UV continuum slope ($\beta$) \hfill(23 marks)
+
+\begin{description}
+\item[(D1.1.1)] \hfill(6 marks)\\
+  The AB magnitude of a typical galaxy is roughly constant, therefore:
+  \[ f_\nu = \mathit{const.} \quad\ldots\ldots(1) \]
+  Conversion between $f_\nu$ and $f_\lambda$ could be expressed as:
+  \[ f_\nu\,\Delta\nu = f_\nu\left(\frac{c}{\lambda-\Delta\lambda}
+     - \frac{c}{\lambda}\right)
+     = f_\nu\,\frac{c}{\lambda^2}\,\Delta\lambda = f_\lambda\,\Delta\lambda
+     \;\Rightarrow\; f_\lambda \propto \lambda^{-2} \quad\ldots\ldots(2) \]
+  Therefore, the UV continuum slope should be $\beta = -2$.
+
+\item[(D1.1.2)] \hfill(12 marks)\\
+  First of all, we need to convert all the wavelength into rest-frame value,
+  using the definition of redshift:
+  \[ z = \frac{\lambda_{\mathrm{obs}}}{\lambda_{\mathrm{rest}}} - 1
+     \;\Rightarrow\;
+     \lambda_0 = \frac{\lambda_{\mathrm{obs}}}{1+z} \quad\ldots\ldots(3) \]
+  Thus, the rest-frame wavelengths of the four bands are:
+
+  \begin{center}
+  \begin{tabular}{lcccc}
+    Band & Y & J & H & K \\
+    \hline
+    Rest-frame Wavelength (\AA) & 1382 & 1645 & 2171 & 2829 \\
+  \end{tabular}
+  \end{center}
+
+  The plot is shown as Figure 1.
+  % FIGURE NEEDED: Figure 1 -- AB magnitude of CR7 vs rest-frame wavelength
+  % (log scale) with error bars and best-fit UV continuum line, annotated
+  % beta = -2.7, m_1600 = 24.75 (2018_18_da_sol.pdf, page 4)
+
+\item[(D1.1.3)] \hfill(5 marks)\\
+  Here we can express the AB magnitude of CR7 (UV continuum only) using
+  $\beta$ and $\lambda_{\mathrm{rest}}$:
+  \[ m_{AB} = -2.5\log f_\nu + C = -2.5\log(\lambda^2 f_\lambda) + C
+     = -2.5(\beta+2)\log\!\left(\frac{\lambda}{1600\,\text{\AA}}\right)
+       + m_{1600} \quad\ldots\ldots(4) \]
+  Here $m_{1600}$ is the AB magnitude at rest-frame 1600\,\AA\
+  (observed-frame $(1+z)\cdot 1600$\,\AA). After writing this out, we can fit
+  the data with a linear function $f(\log\lambda) = a\log\lambda + b$, where
+  the slope $a = -2.5(\beta+2)$. Least squares fitting result is $a = 1.7$,
+  therefore $\beta = -2.7$.
+
+  The best-fit UV continuum should be plot as a straight line on Figure 1.
+
+  Compared to the galaxy in (D1.1), CR7 shows smaller $\beta$ value,
+  indicating its UV continuum is bluer than typical galaxy. Therefore, there
+  should be less dust content in CR7, and the correct answer should be [NO].
+  \hfill(2 marks)
+\end{description}
+
+1.2. UV slope and IRX \hfill(20 marks)
+
+\begin{description}
+\item[(D1.2.1)] \hfill(14 marks)\\
+  For the galaxy sample in Table 2, the IRX could be calculated as:
+  \[ \mathrm{IRX} = \log F_{FIR} - \log F_{1600} \quad\ldots\ldots(5) \]
+  Therefore, the final dataset we need for plotting is:
+
+  \begin{center}
+  \begin{tabular}{lrr|lrr}
+    Galaxy Name & $\beta$ & IRX & Galaxy Name & $\beta$ & IRX \\
+    \hline
+    NGC 4861     & $-2.46$ & $-0.08$ & NGC 7250 & $-1.33$ & 0.46 \\
+    Mrk 153      & $-2.41$ & $-0.55$ & NGC 7714 & $-1.23$ & 0.84 \\
+    Tol 1924-416 & $-2.12$ & $-0.12$ & NGC 3049 & $-1.14$ & 0.85 \\
+    UGC 9560     & $-2.02$ & $-0.03$ & NGC 3310 & $-1.05$ & 1.01 \\
+    NGC 3991     & $-1.91$ & 0.34    & NGC 2782 & $-0.9$  & 1.17 \\
+    Mrk 357      & $-1.8$  & 0.21    & NGC 1614 & $-0.76$ & 2.07 \\
+    Mrk 36       & $-1.72$ & $-0.26$ & NGC 6052 & $-0.72$ & 1.14 \\
+    NGC 4670     & $-1.65$ & 0.17    & NGC 3504 & $-0.56$ & 1.45 \\
+    NGC 3125     & $-1.49$ & 0.55    & NGC 4194 & $-0.26$ & 1.63 \\
+    UGC 3838     & $-1.41$ & 0.26    & NGC 3256 & 0.16    & 1.88 \\
+  \end{tabular}
+  \end{center}
+
+  The plot is shown as Figure 2. Best-fit function is:
+  \[ \mathrm{IRX} = 0.98\cdot\beta + 1.96 \quad\ldots\ldots(6) \]
+  which should be plotted as a straight line on Figure 2.
+  % FIGURE NEEDED: Figure 2 -- IRX vs beta diagram of the 20 local galaxies
+  % with best-fit line IRX = 0.98 beta + 1.96 (2018_18_da_sol.pdf, page 5)
+
+\item[(D1.2.2)] \hfill(6 marks)\\
+  With the IRX--$\beta$ relation we derived above, we can calculate the
+  difference between observed IRX and expected value (inferred by $\beta$) of
+  each galaxy:
+
+  \begin{center}
+  \begin{tabular}{lrrr|lrrr}
+    Name & $\mathrm{IRX}_{\mathrm{obs}}$ & $\mathrm{IRX}_{\mathrm{exp}}$ &
+    $\Delta$IRX & Name & $\mathrm{IRX}_{\mathrm{obs}}$ &
+    $\mathrm{IRX}_{\mathrm{exp}}$ & $\Delta$IRX \\
+    \hline
+    NGC 4861     & $-0.08$ & $-0.45$ & 0.37    & NGC 7250 & 0.46 & 0.66 & $-0.20$ \\
+    Mrk 153      & $-0.55$ & $-0.40$ & $-0.15$ & NGC 7714 & 0.84 & 0.75 & 0.09 \\
+    Tol 1924-416 & $-0.12$ & $-0.12$ & 0.00    & NGC 3049 & 0.85 & 0.84 & 0.01 \\
+    UGC 9560     & $-0.03$ & $-0.02$ & $-0.01$ & NGC 3310 & 1.01 & 0.93 & 0.08 \\
+    NGC 3991     & 0.34    & 0.09    & 0.25    & NGC 2782 & 1.17 & 1.08 & 0.09 \\
+    Mrk 357      & 0.21    & 0.20    & 0.01    & NGC 1614 & 2.07 & 1.22 & 0.85 \\
+    Mrk 36       & $-0.26$ & 0.27    & $-0.53$ & NGC 6052 & 1.14 & 1.25 & $-0.11$ \\
+    NGC 4670     & 0.17    & 0.34    & $-0.17$ & NGC 3504 & 1.45 & 1.41 & 0.04 \\
+    NGC 3125     & 0.55    & 0.50    & 0.05    & NGC 4194 & 1.63 & 1.71 & $-0.08$ \\
+    UGC 3838     & 0.26    & 0.58    & $-0.32$ & NGC 3256 & 1.88 & 2.12 & $-0.24$ \\
+  \end{tabular}
+  \end{center}
+
+  Therefore, the dispersion of IRX is:
+  \[ \sigma = \sqrt{\frac{\sum_{i=1}^{N}(\Delta\mathrm{IRX}_i)^2}{N-1}}
+     = 0.28\ \mathrm{dex} \quad\ldots\ldots(7) \]
+\end{description}
+
+1.3. IRX and $A_{1600}$ \hfill(20 marks)
+
+\begin{description}
+\item[(D1.3.1)] \hfill(6 marks)\\
+  Based on the two assumptions we made in Question (3), we can simplify
+  $F_{FIR}/F_{1600}$ as:
+  \[ \frac{F_{FIR}}{F_{1600}} \approx 10^{0.4 A_{1600}} - 1
+     \quad\ldots\ldots(8) \]
+  \[ \therefore A_{1600} = 2.5\log\left(1 + 10^{\mathrm{IRX}}\right)
+     \quad\ldots\ldots(9) \]
+
+\item[(D1.3.2)] \hfill(12 marks)\\
+  Now we can calculate $A_{1600}$ of all the galaxies in Table 2 with
+  Equation 9:
+
+  \begin{center}
+  \begin{tabular}{lrr|lrr}
+    Name & $\beta$ & $A_{1600}$ & Name & $\beta$ & $A_{1600}$ \\
+    \hline
+    NGC 4861     & $-2.46$ & 0.66 & NGC 7250 & $-1.33$ & 1.47 \\
+    Mrk 153      & $-2.41$ & 0.27 & NGC 7714 & $-1.23$ & 2.25 \\
+    Tol 1924-416 & $-2.12$ & 0.61 & NGC 3049 & $-1.14$ & 2.27 \\
+    UGC 9560     & $-2.02$ & 0.72 & NGC 3310 & $-1.05$ & 2.63 \\
+    NGC 3991     & $-1.91$ & 1.26 & NGC 2782 & $-0.9$  & 3.00 \\
+    Mrk 357      & $-1.8$  & 1.05 & NGC 1614 & $-0.76$ & 5.18 \\
+    Mrk 36       & $-1.72$ & 0.48 & NGC 6052 & $-0.72$ & 2.93 \\
+    NGC 4670     & $-1.65$ & 0.99 & NGC 3504 & $-0.56$ & 3.66 \\
+    NGC 3125     & $-1.49$ & 1.64 & NGC 4194 & $-0.26$ & 4.10 \\
+    UGC 3838     & $-1.41$ & 1.13 & NGC 3256 & 0.16    & 4.71 \\
+  \end{tabular}
+  \end{center}
+
+  Then we can plot the $A_{1600}$--$\beta$ relation as Figure 3. The best-fit
+  equation is:
+  \[ A_{1600} = 1.92\cdot\beta + 4.62 \quad\ldots\ldots(10) \]
+  % FIGURE NEEDED: Figure 3 -- A_1600 vs beta diagram with best-fit line
+  % A_1600 = 1.92 beta + 4.62 (2018_18_da_sol.pdf, page 7)
+
+\item[(D1.3.3)] \hfill(2 marks)\\
+  If Equation 10 is correct, then for a dust-free galaxy, the dust
+  attenuation $A_{1600}$ should equal to 0. Therefore, we can derive
+  $\beta_0 \approx -2.4$, which is the expect UV continuum slope of a
+  ``dust-free'' galaxy.
+
+  (Note: The $\beta_0$ result here is conflict with some observations, for
+  example, the UV slope of CR7 which we just derived. In fact, the linear
+  model here is not necessarily correct and it is just a simplification of
+  complex model: we have made two very rough assumption to derive the
+  $A_{1600}-\mathrm{IRX}$ relation, and other physical parameters of galaxy,
+  e.g.\ metallicity, will also influence the overall $A_{1600}-\beta$
+  relation.)
+\end{description}
+
+1.4. Extend to high-redshift universe \hfill(12 marks) (discarded)
+
+\begin{description}
+\item[(D1.4.1)] \hfill(6 marks)\\
+  Since we have already known the upper limit of $F_{FIR}$ of CR7, we only
+  need to derive $F_{1600}$ in order to calculate IRX. First of all, we need
+  to translate the $m_{1600}$ we got in (D 1.3) to
+  $f_{(1+z)1600\text{\AA}}$:
+  \[ f_{\lambda_0(1+z)} = f_{\nu_0(1+z)}\cdot
+     \frac{c}{[\lambda_0(1+z)]^2}
+     = \frac{c}{[\lambda_0(1+z)]^2}\cdot 10^{-0.4 m_{1600}}\cdot
+     3631\ \mathrm{Jy} \quad\ldots\ldots(11) \]
+  and we will derive
+  $f_{\lambda_0(1+z)} = 9.3\times 10^{-13}\,
+  \mathrm{J\,s^{-1}\,m^{-3}}$. Therefore:
+  \[ F_{1600} = (1+z)\cdot\lambda_0\cdot f_{\lambda_0\cdot(1+z)}
+     = 1.1\times 10^{-18}\,\mathrm{J\,s^{-1}\,m^{-2}}
+     \quad\ldots\ldots(12) \]
+  Thus, the upper limit of CR7's IRX should be:
+  \[ \mathrm{IRX}_{CR7} = \log\frac{F_{FIR}}{F_{1600}} = -0.87
+     \quad\ldots\ldots(13) \]
+  It is an upper limit.
+
+\item[(D1.4.2)] \hfill(6 marks)\\
+  Given the UV continuum slop of CR7 ($-2.7$), we can infer its expected IRX
+  from the IRX$\,-\,\beta$ relation in local universe:
+  \[ \widehat{\mathrm{IRX}}_{CR7} = 0.98\cdot\beta_{CR7} + 1.96 = -0.69
+     \quad\ldots\ldots(14) \]
+  The upper limit of observed IRX is 0.18\,dex lower than the value predicted
+  by local relation. However, we have already known the local relation has a
+  dispersion of 0.28\,dex, which is larger than the 0.18\,dex difference.
+  This indicates that the current IRX upper limit is not tight enough (in
+  other words, current observation is not deep enough) to show any difference
+  of CR7 from local galaxies on the diagram of IRX$-\beta$. Therefore, the
+  correct answer should be [NO].
+\end{description}

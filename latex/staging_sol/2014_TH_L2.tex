@@ -1,0 +1,285 @@
+\begin{description}
+\item[a)] In figure 1 are represented the forces in the system.
+
+  $\vec F_1$ -- the gravitational attraction force acting on the shuttle due
+  to the Earth;
+
+  $\vec F_2$ -- the gravitational attraction force acting on the satelite due % sic: "satelite"
+  to the Earth;
+
+  $\vec F$ -- the tension force in the suspention rod. % sic: "suspention"
+
+% FIGURE NEEDED: Fig.1 of the official solution (2014 long problems, page 16
+% of 31): left, the shuttle N(m1) on its circular orbit with velocity v_0,
+% forces F_1 (down), F along the rod at angle alpha, satellite S(m2) with F_2
+% and inner dashed circle of radius r - l cos(alpha); right, the same
+% force decomposition with F_t, F_n, F', F'' and a_t components, and the
+% direction "Spre centrul Pamantului" (towards the Earth's centre).
+
+  For a value of $\alpha \neq 0$ the movement equations are:
+
+  For the shuttle on circular orbit around the Earth:
+  \[
+    m_1\omega^2r = K\frac{m_1M}{r^2} + F\cos\alpha;
+  \]
+  For the satelite on circular orbit around the Earth:
+  \[
+    m_2\omega^2\left(r - l\cos\alpha\right)
+      = K\frac{m_2M}{\left(r - l\cos\alpha\right)^2} - \frac{F}{\cos\alpha}.
+  \]
+  If the gravitational interaction between the shuttle and the satellite is
+  negligible results: % sic: "is negligible results"
+  \begin{align*}
+    F\cos\alpha &\ll K\frac{m_1M}{r^2}; \\
+    m_1\omega^2r \approx K\frac{m_1M}{r^2};\quad
+      \omega^2 &= \frac{KM}{r^3} = \frac{4\pi^2}{T^2}; \\
+    T &= 2\pi\sqrt{\frac{r^3}{KM}},
+  \end{align*}
+  The revolution time of the shuttle around the Earth:
+  \begin{align*}
+    m_2\frac{KM}{r^3}\left(r - l\cos\alpha\right)
+      &= K\frac{m_2M}{\left(r - l\cos\alpha\right)^2}
+       - \frac{F}{\cos\alpha}; \\
+    m_2\frac{KM}{r^3}\left(r - l\cos\alpha\right)^3
+      &= Km_2M - \frac{F}{\cos\alpha}\left(r - l\cos\alpha\right)^2; \\
+    m_2\frac{KM}{r^3}r^3\left(1 - \frac{l}{r}\cos\alpha\right)^3
+      &= Km_2M - \frac{F}{\cos\alpha}r^2
+        \left(1 - \frac{l}{r}\cos\alpha\right)^2; \\
+    m_2KM\left(1 - \frac{l}{r}\cos\alpha\right)^3
+      &= Km_2M - \frac{F}{\cos\alpha}r^2
+        \left(1 - \frac{l}{r}\cos\alpha\right)^2; \\
+    m_2KM\left(1 - 3\frac{l}{r}\cos\alpha\right)
+      &= Km_2M - \frac{F}{\cos\alpha}r^2
+        \left(1 - 2\frac{l}{r}\cos\alpha\right); \\
+    3Km_2M\frac{l}{r}\cos\alpha &\approx \frac{F}{\cos\alpha}r^2; \\
+    F &\approx 3Km_2M\frac{l}{r^3}\cos^2\alpha,
+  \end{align*}
+  The tension force in the rod.
+
+  The satellite movement regardless to the shuttle is non uniform circular
+  one, described by the equation:
+  \[
+    m_2\vec a_{\mathrm{t}} = \vec F'';
+  \]
+  \[
+    m_2a_{\mathrm{t}} = m_2\varepsilon l
+      = m_2\frac{\mathrm{d}^2\alpha}{\mathrm{d}t^2}l
+      = -F'' = -F\tan\alpha
+      = -3Km_2M\frac{l}{r^3}\sin\alpha\cos\alpha;
+  \]
+  \[
+    \frac{\mathrm{d}^2\alpha}{\mathrm{d}t^2}
+      + 3\frac{KM}{r^3}\sin\alpha\cos\alpha = 0,
+  \]
+  The solutions of this equation is $\alpha(t)$. % sic: "solutions ... is"
+
+  If during the system evolution the configuration of the system remains the
+  same results:
+  \begin{gather*}
+    \alpha = \text{constant};\quad
+      \frac{\mathrm{d}^2\alpha}{\mathrm{d}t^2} = 0; \\
+    \sin\alpha\cdot\cos\alpha = 0; \\
+    \sin\alpha = 0;\ \alpha_1 = 0;\ \alpha_2 = \pi;\
+      \text{(echilibru stabil);} \\ % sic: Romanian "stable equilibrium"
+    \cos\alpha = 0;\ \alpha_3 = \pi/2;\ \alpha_4 = 3\pi/2;\
+      \text{(echilibru instabil),} % sic: Romanian "unstable equilibrium"
+  \end{gather*}
+  As seen in the pictures.
+
+% FIGURE NEEDED: four orbit sketches (2014 long problems, page 18 of 31):
+% rod along the radius outward ("Stabile eq alpha = 0"), rod along the radius
+% inward-out beyond the orbit ("Stabile eq alpha = 180"), rod tangent to the
+% orbit ("unstabile eq alpha = 90" and "unstabile eq alpha = 270").
+
+\item[b)] Coresponding to the position with $\alpha = 0$, the movement % sic: "Coresponding"
+  equation of the satellite displaced from equilibrium position with a very
+  small angle $\beta$:
+  \begin{gather*}
+    \frac{\mathrm{d}^2\beta}{\mathrm{d}t^2}
+      + 3\frac{KM}{r^3}\sin\beta\cdot\cos\beta = 0; \\
+    \sin\beta \approx \beta;\ \cos\beta \approx 1; \\
+    \frac{\mathrm{d}^2\beta}{\mathrm{d}t^2} + 3\frac{KM}{r^3}\beta = 0,
+  \end{gather*}
+  Which represents the linear harmonic oscillator;
+  \[
+    \frac{\mathrm{d}^2\beta}{\mathrm{d}t^2} + \omega_0^2\beta = 0;
+  \]
+  Thus the period of the small oscillations will be
+  \[
+    \omega_0^2 = 3\frac{KM}{r^3} = \frac{4\pi^2}{T_0^2};\quad
+    T_0 = 2\pi\sqrt{\frac{1}{3}\frac{r^3}{KM}} = \frac{T}{\sqrt{3}},
+  \]
+
+\item[c)]
+  \begin{align*}
+    m_1\omega^2r &= K\frac{m_1M}{r^2} + F\cos\alpha; \\
+    m_2\omega^2\left(r - l\cos\alpha\right)
+      &= K\frac{m_2M}{\left(r - l\cos\alpha\right)^2}
+       - \frac{F}{\cos\alpha}; \\
+    \omega^2 &= \frac{KM}{r^3} + \frac{F\cos\alpha}{m_1r}; \\
+    m_2\omega^2\left(r - l\cos\alpha\right)^3
+      &= Km_2M - \frac{F}{\cos\alpha}\left(r - l\cos\alpha\right)^2; \\
+    m_2\omega^2r^3\left(1 - \frac{l}{r}\cos\alpha\right)^3
+      &= Km_2M - \frac{F}{\cos\alpha}r^2
+        \left(1 - \frac{l}{r}\cos\alpha\right)^2; \\
+    m_2\omega^2r^3\left(1 - 3\frac{l}{r}\cos\alpha\right)
+      &= Km_2M - \frac{F}{\cos\alpha}r^2
+        \left(1 - 2\frac{l}{r}\cos\alpha\right); \\
+    m_2\left(\frac{KM}{r^3} + \frac{F\cos\alpha}{m_1r}\right)
+      r^3\left(1 - 3\frac{l}{r}\cos\alpha\right)
+      &= Km_2M - \frac{F}{\cos\alpha}r^2
+        \left(1 - 2\frac{l}{r}\cos\alpha\right); \\
+    m_2\left(KM + \frac{F\cos\alpha}{m_1}r^2\right)\cdot
+      \left(1 - 3\frac{l}{r}\cos\alpha\right)
+      &= Km_2M - \frac{F}{\cos\alpha}r^2
+        \left(1 - 2\frac{l}{r}\cos\alpha\right);
+  \end{align*}
+  \[
+    F = \frac{3Km_2M\dfrac{l}{r}\cos\alpha}
+      {\left(\dfrac{m_2}{m_1}\cos\alpha
+        + \dfrac{1}{\cos\alpha}\right)r^2
+        - rl\left(\dfrac{m_2}{m_1}\cos^2\alpha + 1\right)};
+  \]
+  \[
+    \omega^2 = \frac{KM}{r^3} + \frac{F\cos\alpha}{m_1r};
+  \]
+  \[
+    \omega^2 = \frac{KM}{r^3}
+      + \frac{3K\dfrac{m_2}{m_1}M\dfrac{l}{r^2}\cos^2\alpha}
+      {\left(\dfrac{m_2}{m_1}\cos\alpha
+        + \dfrac{1}{\cos\alpha}\right)r^2
+        - rl\left(\dfrac{m_2}{m_1}\cos^2\alpha + 1\right)}.
+  \]
+  \textit{Observation}: If $m_2 \ll m_1$ and $l \ll r$, the results are
+  already found:
+  \[
+    \omega^2 = \frac{KM}{r^3} = \omega_0^2;
+  \]
+  \[
+    F = \frac{3Km_2M\dfrac{l}{r}\cos\alpha}
+      {\left(\dfrac{1}{\cos\alpha}\right)r^2}
+      = 3Km_2M\frac{l}{r^3}\cos^2\alpha.
+  \]
+  Corresponding to the initial circulae orbit with radius $r$, the total % sic: "circulae"
+  mechanical energy of the system shuttle -- Earth is:
+  \[
+    E_0 = \frac{m_1\mathrm{v}_0^2}{2} - K\frac{m_1M}{r} = -K\frac{m_1M}{2r}.
+  \]
+  After one complete rotation, the tangential component of the tension in the
+  rod $\vec F_{\mathrm{t}}$, acting on the shuttle will determine the change
+  of the radius of the orbit i.e.\ $(r - \Delta r)$. The total energy of the
+  system will be:
+  \begin{gather*}
+    E = \frac{m_1\mathrm{v}^2}{2} - K\frac{m_1M}{r - \Delta r}
+      = -K\frac{m_1M}{2(r - \Delta r)}. \\
+    \Delta E = E - E_0
+      = -K\frac{m_1M}{2(r - \Delta r)} + K\frac{m_1M}{2r}
+      = -K\frac{m_1M}{2}
+        \left(\frac{1}{r - \Delta r} - \frac{1}{r}\right); \\
+    \Delta E = -K\frac{m_1M}{2}\cdot\frac{r - r + \Delta r}{r(r - \Delta r)}
+      = -K\frac{m_1M}{2}\cdot\frac{\Delta r}{r(r - \Delta r)}; \\
+    r - \Delta r \approx r;
+  \end{gather*}
+  The variation of the mechanical energy after a complete rotation
+  \[
+    \Delta E \approx -K\frac{m_1M\cdot\Delta r}{2r^2} < 0,
+  \]
+  Thus
+  \[
+    \Delta E = L_{\mathrm{t}} = -2\pi r\cdot F_{\mathrm{t}};\quad
+    F_{\mathrm{t}} = F\sin\alpha;
+  \]
+  \[
+    -K\frac{m_1M\cdot\Delta r}{2r^2} = -2\pi r\cdot F_{\mathrm{t}}
+  \]
+  The variation of the altitude due to the action of the satellite will be:
+  \[
+    \Delta r = \frac{4\pi r^3F_{\mathrm{t}}}{Km_1M}
+      = \frac{4\pi r^3F\sin\alpha}{Km_1M},
+  \]
+  The potentialenergy v % sic: "The potentialenergy v" as printed
+  \begin{gather*}
+    \Delta E_{\mathrm{p}} = -K\frac{m_1M}{r - \Delta r}
+      - \left(-K\frac{m_1M}{r}\right)
+      = -Km_1M\left(\frac{1}{r - \Delta r} - \frac{1}{r}\right); \\
+    \Delta E_{\mathrm{p}} = -Km_1M\cdot\frac{r - r + \Delta r}{r(r - \Delta r)}
+      = -Km_1M\frac{\Delta r}{r(r - \Delta r)}; \\
+    r - \Delta r \approx r; \\
+    \Delta E_{\mathrm{p}} \approx -K\frac{m_1M\cdot\Delta r}{r^2} < 0,
+  \end{gather*}
+  Thus
+  \begin{gather*}
+    \Delta E_{\mathrm{p}} \approx -K\frac{m_1M\cdot\Delta r}{2r^2}\cdot2
+      = \Delta E\cdot2 = -2\pi rF_{\mathrm{t}}\cdot2
+      = -4\pi rF_{\mathrm{t}}; \\
+    \Delta E_{\mathrm{c}} = \frac{m_1\mathrm{v}^2}{2}
+      - \frac{m_1\mathrm{v}_0^2}{2}; \\
+    \frac{m_1\mathrm{v}_0^2}{r} = K\frac{m_1M}{r^2};\quad
+      m_1\mathrm{v}_0^2 = K\frac{m_1M}{r}; \\
+    \frac{m_1\mathrm{v}^2}{r - \Delta r}
+      = K\frac{m_1M}{(r - \Delta r)^2};\quad
+      m_1\mathrm{v}^2 = K\frac{m_1M}{r - \Delta r}; \\
+    \Delta E_{\mathrm{c}} = K\frac{m_1M}{2(r - \Delta r)}
+      - K\frac{m_1M}{2r}
+      = K\frac{m_1M}{2}\left(\frac{1}{r - \Delta r} - \frac{1}{r}\right); \\
+    \Delta E_{\mathrm{c}} = K\frac{m_1M}{2}
+      \left(\frac{1}{r - \Delta r} - \frac{1}{r}\right)
+      = K\frac{m_1M}{2}
+      \left(\frac{1}{r - \Delta r} - \frac{1}{r}\right); \\ % sic: identical expression repeated on both sides
+    \Delta E_{\mathrm{c}} = K\frac{m_1M}{2}
+      \left(\frac{1}{r - \Delta r} - \frac{1}{r}\right)
+      = K\frac{m_1M}{2}\cdot\frac{r - r + \Delta r}{r(r - \Delta r)}; \\
+    \Delta E_{\mathrm{c}} = K\frac{m_1M}{2}\cdot
+      \frac{\Delta r}{r(r - \Delta r)}; \\
+    r - \Delta r \approx r; \\
+    \Delta E_{\mathrm{c}} \approx K\frac{m_1M\cdot\Delta r}{2r^2} > 0,
+  \end{gather*}
+  reprezent\^and varia\c{t}ia energiei cinetice a navei, dup\u{a} o rota\c{t}ie
+  complet\u{a} \^in jurul P\u{a}m\^antului; % sic: the official solution switches to Romanian here
+  \[
+    \Delta E_{\mathrm{c}} > 0;\ \mathrm{v} > \mathrm{v}_0,
+  \]
+  rezultat care constituie ``paradoxul sateli\c{t}ilor'', adic\u{a}, atunci
+  c\^and altitudinea orbitei navei scade, viteza navei cre\c{s}te;
+  \begin{gather*}
+    \Delta E = \Delta E_{\mathrm{c}} + \Delta E_{\mathrm{p}}; \\
+    \Delta E_{\mathrm{c}} = \Delta E - \Delta E_{\mathrm{p}}
+      = -2\pi rF_{\mathrm{t}} - \left(-4\pi rF\ \right)
+      = 2\pi rF_{\mathrm{t}} > 0; \\ % sic: F for F_t inside the bracket
+    \Delta E_{\mathrm{c}} = \frac{m_1\mathrm{v}^2}{2}
+      - \frac{m_1\mathrm{v}_0^2}{2}
+      = \frac{m_1}{2}\left(\mathrm{v}^2 - \mathrm{v}_0^2\right)
+      = \frac{m_1}{2}\left(\mathrm{v} - \mathrm{v}_0\right)
+        \left(\mathrm{v} + \mathrm{v}_0\right); \\
+    \mathrm{v} = \mathrm{v}_0 + \Delta\mathrm{v};\quad
+      \mathrm{v} - \mathrm{v}_0 = \Delta\mathrm{v};\quad
+      \mathrm{v} + \mathrm{v}_0 = 2\mathrm{v}_0 + \Delta\mathrm{v}
+      \approx 2\mathrm{v}_0; \\
+    \Delta E_{\mathrm{c}} \approx \frac{m_1}{2}2\mathrm{v}_0\cdot
+      \Delta\mathrm{v} = m_1\mathrm{v}_0\Delta\mathrm{v}
+      = 2\pi rF_{\mathrm{t}}; \\
+    \Delta\mathrm{v} = \frac{2\pi rF_{\mathrm{t}}}{m_1\mathrm{v}_0};\quad
+      \mathrm{v}_0 = \sqrt{K\frac{M}{r}}; \\
+    \Delta\mathrm{v} = \frac{2\pi rF_{\mathrm{t}}}{m_1}\cdot
+      \sqrt{\frac{r}{KM}}.
+  \end{gather*}
+
+\item[d)] Manevra tehnic\u{a} propus\u{a} este reprezentat\u{a} \^in figura
+  al\u{a}turat\u{a}: o for\c{t}\u{a} reactiv\u{a}, egal\u{a} \^in modul
+  \c{s}i de sens contrar cu tensiunea din tij\u{a}: % sic: part d) of the official solution is in Romanian
+  \[
+    \vec F_{\mathrm{r}} = -\vec F,
+  \]
+  astfel \^inc\^at for\c{t}a rezultant\u{a} care ac\c{t}ioneaz\u{a} asupra
+  navei s\u{a} r\u{a}m\^an\u{a} for\c{t}a de atrac\c{t}ie
+  gravita\c{t}ional\u{a} din partea P\u{a}m\^antului:
+  \[
+    \vec F_{\mathrm{Nava}} = \vec F_1 + \vec F + \vec F_{\mathrm{r}}
+      = \vec F_1.
+  \]
+
+% FIGURE NEEDED: final figure (2014 long problems, page 22 of 31): shuttle
+% A(m1) on the outer dashed orbit with reactive force F_r opposite to the rod
+% tension, satellite S(m2) on the rod towards the Earth with forces F, F_2,
+% both orbits dashed around the grey Earth.
+\end{description}

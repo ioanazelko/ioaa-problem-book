@@ -1,0 +1,269 @@
+\begin{description}
+\item[1.] From $N(t) = N_0 \exp(-\lambda t)$ and $D(t) = N_0 - N(t)$, then we
+  have
+  \begin{align*}
+    D(t) &= N(t)e^{\lambda t} - N(t) = N(t)(e^{\lambda t} - 1)\\
+    \frac{D(t)}{N(t)} &= (e^{\lambda t} - 1)
+      \ \text{ or }\ e^{\lambda t} = \frac{D(t)}{N(t)} + 1,\ \text{so}\\
+    \lambda t &= \ln\left(\frac{D(t)}{N(t)} + 1\right) \ \text{ and}\\
+    t &= \frac{1}{\lambda}\ln\left(\frac{D(t)}{N(t)} + 1\right)
+  \end{align*}
+  \hfill(10\%)
+
+\item[2.] Setting $N(t) = \frac{1}{2}N_0$, we get:
+  \[
+    t_{1/2} = \ln 2/\lambda = 48.8 \times 10^{9}\ \mathrm{year}
+            = 48.8\ \mathrm{Gyr}
+  \]
+  \hfill(5\%)
+
+\item[3.] We know that $^{87}\mathrm{Rb} \rightarrow {}^{87}\mathrm{Sr}$, and
+  taking the ratios $\frac{^{87}\mathrm{Sr}}{^{86}\mathrm{Sr}}$ as $y$
+  (dependent variable) and $\frac{^{87}\mathrm{Rb}}{^{86}\mathrm{Sr}}$ as $x$
+  (independent variable), we can use a simple linear regression equation:
+  \[
+    y = a + bx
+  \]
+  Taking into account the initial strontium, the corresponding equation is
+  \[
+    \left(\frac{^{87}\mathrm{Sr}}{^{86}\mathrm{Sr}}\right)
+    = \left(\frac{^{87}\mathrm{Sr}}{^{86}\mathrm{Sr}}\right)_0
+    + \left(e^{\lambda t} - 1\right)
+      \left(\frac{^{87}\mathrm{Rb}}{^{86}\mathrm{Sr}}\right)
+  \]
+  where \textbf{the intercept}
+  $a = \left(\frac{^{87}\mathrm{Sr}}{^{86}\mathrm{Sr}}\right)_0$;
+  and \textbf{the slope} $b = \left(e^{\lambda t} - 1\right)$
+  \hfill(20\%)
+
+\item[4.] First, take the ratios:
+  \begin{center}
+    \begin{tabular}{ccccccc}
+      Sample No & Meteorite type & $^{86}$Sr (ppm) & $^{87}$Rb (ppm)
+        & $^{87}$Sr (ppm) & $^{87}$Rb/$^{86}$Sr & $^{87}$Sr/$^{86}$Sr\\
+      \hline
+      1  & A & 29.6 & 0.3   & 20.7 & 0.0101351 & 0.6993243\\
+      2  & B & 58.7 & 68.5  & 44.7 & 1.1669506 & 0.7614991\\
+      3  & B & 74.2 & 14.4  & 52.9 & 0.1940701 & 0.712938\\
+      4  & A & 40.2 & 7.0   & 28.6 & 0.1741294 & 0.7114428\\
+      5  & A & 19.7 & 0.4   & 13.8 & 0.0203046 & 0.7005076\\
+      6  & B & 37.9 & 31.6  & 28.4 & 0.8337731 & 0.7493404\\
+      7  & A & 33.4 & 4.0   & 23.6 & 0.1197605 & 0.7065868\\
+      8  & B & 29.8 & 105.0 & 26.4 & 3.5234899 & 0.885906\\
+      9  & A & 9.8  & 0.8   & 6.9  & 0.0816327 & 0.7040816\\
+      10 & B & 18.5 & 44.0  & 15.4 & 2.3783784 & 0.8324324\\
+    \end{tabular}
+  \end{center}
+
+  And we compile the data into Type A and B:
+
+  \begin{center}
+    \textbf{Type A}
+
+    \medskip
+    \begin{tabular}{cccccc}
+      Sample No & $^{87}$Rb/$^{86}$Sr ($X$) & $^{87}$Sr/$^{86}$Sr ($Y$)
+        & $XY$ & $X^2$ & $Y^2$\\
+      \hline
+      1 & 0.0101351 & 0.6993243 & 0.0070877 & 0.0001027 & 0.4890545\\
+      4 & 0.1741294 & 0.7114428 & 0.1238831 & 0.030321  & 0.5061509\\
+      5 & 0.0203046 & 0.7005076 & 0.0142235 & 0.0004123 & 0.4907109\\
+      7 & 0.1197605 & 0.7065868 & 0.0846212 & 0.0143426 & 0.4992649\\
+      9 & 0.0816327 & 0.7040816 & 0.0574761 & 0.0066639 & 0.4957309\\
+      \hline
+      Sum: & \textbf{0.4059623} & \textbf{3.5219431} & \textbf{0.2872916}
+        & \textbf{0.0518425} & \textbf{2.4809121}\\
+    \end{tabular}
+  \end{center}
+
+  \begin{align*}
+    \lambda &= 1.42 \times 10^{-11}\\
+    \bar{X} &= 0.0811925\\
+    \bar{Y} &= 0.7043886\\
+    SS_{xx} &= 0.0188814\\
+    SS_{yy} &= 9.54601 \times 10^{-5}\\
+    SS_{xy} &= 0.0013364\\
+    b_A &= 0.0707786\\
+    a_A &= 0.6986419
+  \end{align*}
+  where,
+  \begin{align*}
+    SS_{xx}&: \text{sum of square for } X
+      = \sum_{i=1}^{n} X_i^2
+        - \frac{1}{n}\left(\sum_{i=1}^{n} X_i\right)^{2}\\
+    SS_{yy}&: \text{sum of square for } Y
+      = \sum_{i=1}^{n} Y_i^2
+        - \frac{1}{n}\left(\sum_{i=1}^{n} Y_i\right)^{2}\\
+    SS_{xy}&: \text{sum of square for both } X \text{ and } Y
+      = \sum_{i=1}^{n} X_i Y_i
+        - \frac{1}{n}\sum_{i=1}^{n} X_i \sum_{i=1}^{n} Y_i
+  \end{align*}
+  and \textbf{the slope}
+  \[
+    b_A = \left(e^{\lambda t} - 1\right) = \frac{SS_{XY}}{SS_{XX}}
+    = \frac{\displaystyle\sum_{i=1}^{5} X_i Y_i
+        - \frac{1}{5}\sum_{i=1}^{5} X_i \sum_{i=1}^{5} Y_i}
+      {\displaystyle\sum_{i=1}^{5} X_i^2
+        - \frac{1}{5}\left(\sum_{i=1}^{5} X_i\right)^{2}}
+    = \frac{0.2872916 - 0.2859552}{0.0518425 - 0.0329611}
+    = 0.0707786 \qquad (*)
+  \]
+  and \textbf{the intercept}
+  \begin{align*}
+    a_A &= \left(\frac{^{87}\mathrm{Sr}}{^{86}\mathrm{Sr}}\right)_0
+      = \bar{Y} - b\bar{X}
+      = \overline{\left(\frac{^{87}\mathrm{Sr}}{^{86}\mathrm{Sr}}\right)}
+        - b\,\overline{\left(\frac{^{87}\mathrm{Rb}}{^{86}\mathrm{Sr}}\right)}\\
+      &= 0.7043886 - 0.0707786 \times 0.0811925 = 0.6986419
+  \end{align*}
+
+  The scatter plot and linear regression line for Type A is:
+
+% FIGURE NEEDED: scatter plot of the five Type A points with regression line
+% y = 0.0707786x + 0.6986419, X from 0 to 0.2, Y from 0.698 to 0.714;
+% 2008 DA solutions ("The Age of Meteorite"), page 3.
+  \hfill(20\%)
+
+  \begin{center}
+    \textbf{Type B}
+
+    \medskip
+    \begin{tabular}{cccccc}
+      Sample No & $^{87}$Rb/$^{86}$Sr ($X$) & $^{87}$Sr/$^{86}$Sr ($Y$)
+        & $XY$ & $X^2$ & $Y^2$\\
+      \hline
+      2  & 1.1669506 & 0.7614991 & 0.8886318 & 1.3617737  & 0.5798809\\
+      3  & 0.1940701 & 0.7129380 & 0.1383599 & 0.0376632  & 0.5082806\\
+      6  & 0.8337731 & 0.7493404 & 0.6247799 & 0.6951776  & 0.561511\\
+      8  & 3.5234899 & 0.8859060 & 3.1214808 & 12.4149811 & 0.7848294\\
+      10 & 2.3783784 & 0.8324324 & 1.9798392 & 5.6566838  & 0.6929437\\
+      \hline
+      Sum: & \textbf{8.0966621} & \textbf{3.9421159} & \textbf{6.7530916}
+        & \textbf{20.1662794} & \textbf{3.1274456}\\
+    \end{tabular}
+  \end{center}
+
+  \begin{align*}
+    \lambda &= 1.42 \times 10^{-11}\\
+    \bar{X} &= 1.6193324\\
+    \bar{Y} &= 0.7884232\\
+    SS_{xx} &= 7.0550920\\
+    SS_{yy} &= 0.019390046\\
+    SS_{xy} &= 0.3694955\\
+    b_B &= 0.0523729\\
+    a_B &= 0.7036141
+  \end{align*}
+  and \textbf{the slope} $b_B = \left(e^{\lambda t} - 1\right)$
+  \[
+    = \frac{SS_{XY}}{SS_{XX}}
+    = \frac{\displaystyle\sum_{i=1}^{5} X_i Y_i
+        - \frac{1}{5}\sum_{i=1}^{5} X_i \sum_{i=1}^{5} Y_i}
+      {\displaystyle\sum_{i=1}^{5} X_i^2
+        - \frac{1}{5}\left(\sum_{i=1}^{5} X_i\right)^{2}}
+    = \frac{6.7530916 - 6.3835961}{20.1662794 - 13.1111874}
+    = 0.0523729
+  \]
+  and \textbf{the intercept}
+  \begin{align*}
+    a_B &= \left(\frac{^{87}\mathrm{Sr}}{^{86}\mathrm{Sr}}\right)_0
+      = \bar{Y} - b_B\bar{X}
+      = \overline{\left(\frac{^{87}\mathrm{Sr}}{^{86}\mathrm{Sr}}\right)}
+        - b_B\,\overline{\left(\frac{^{87}\mathrm{Rb}}{^{86}\mathrm{Sr}}\right)}
+      = 0.7884232 - 0.0523729 \times 1.6193324\\
+      &= 0.7036141
+  \end{align*}
+
+  The scatter plot and linear regression line for Type B is:
+
+% FIGURE NEEDED: scatter plot of the five Type B points with regression line
+% y = 0.0523729x + 0.7036141, X from 0.00 to 4.00, Y from 0.00 to 1.00;
+% 2008 DA solutions ("The Age of Meteorite"), page 4.
+  \hfill(20\%)
+
+\item[5.] Since we have 2 types of meteorites, then we have to calculate their
+  ages separately, and $\lambda = 1.42 \times 10^{-11}$. As
+  $b = \left(e^{\lambda t} - 1\right)$, then $e^{\lambda t} = b + 1$.\\
+  After we get $a$ and $b$ then
+  \[
+    t = \frac{1}{\lambda}\ln(b + 1)
+  \]
+  which is $4.81592 \times 10^{9}$ year.
+
+  From $(*)$, we obtain
+  \begin{align*}
+    s_b &= 0.0040112\\
+    s_a &= 0.0009133\\
+    e_t &= 2.819138 \times 10^{8}
+  \end{align*}
+  sigma-$b$:
+  \[
+    s_b = \sqrt{\frac{SS_{YY} - \dfrac{(SS_{XY})^2}{SS_{XX}}}
+                     {(n-2)\,SS_{XX}}}
+        = \sqrt{\frac{0.0000955 - \dfrac{(0.0013364)^2}{0.0188814}}
+                     {3 \times 0.0188814}}
+        = 0.0040112
+  \]
+  error on $t$:
+  \[
+    e_t = \frac{1}{\lambda}\ln(s_b + 1)
+        = \frac{\ln(0.0040112 + 1)}{1.42 \times 10^{-11}}
+        = 2.819138 \times 10^{8}
+  \]
+  sigma-$a$ (error on initial):
+  \[
+    s_a = \sqrt{\frac{SS_{YY} - \dfrac{(SS_{XY})^2}{SS_{XX}}}
+                     {(n-2)\,SS_{XX}} \times \sum_{i=1}^{n} X_i^2}
+        = \sqrt{\frac{0.0000955 - \dfrac{(0.0013364)^2}{0.0188814}}
+                     {3 \times 0.0188814} \times 0.0518425}
+        = 0.0009133
+  \]
+
+  \textbf{Type B}
+
+  Similar as in Type A, we obtain for Type B, in which
+  $t = 3.595 \times 10^{9}$ year.
+  \begin{align*}
+    s_b &= 0.0013487\\ % sic: 0.0013487 listed, though the formula below gives 0.0013479
+    s_a &= 0.0060566\\ % sic: 0.0060566 listed, though the formula below gives 0.0060532
+    e_t &= 94915372.7530205
+  \end{align*}
+  sigma-$b$:
+  \[
+    s_b = \sqrt{\frac{SS_{YY} - \dfrac{(SS_{XY})^2}{SS_{XX}}}
+                     {(n-2)\,SS_{XX}}}
+        = \sqrt{\frac{0.0193900 - \dfrac{0.3694955^2}{7.0550920}}
+                     {3 \times 7.0550920}}
+        = 0.0013479
+  \]
+  error on $t$:
+  \[
+    e_t = \frac{1}{\lambda}\ln(s_b + 1)
+        = \frac{\ln(0.0013479 + 1)}{1.42 \times 10^{-11}}
+        = 9.48586 \times 10^{7}
+  \]
+  sigma-$a$ (error on initial):
+  \[
+    s_a = \sqrt{\frac{SS_{YY} - \dfrac{(SS_{XY})^2}{SS_{XX}}}
+                     {(n-2)\,SS_{XX}} \times \sum_{i=1}^{n} X_i^2}
+        = \sqrt{\frac{0.0193900 - \dfrac{0.3694955^2}{7.0550920}}
+                     {3 \times 7.0550920} \times 20.1662794}
+        = 0.0060532
+  \]
+
+  The Age of type A ${}= (4.816 \pm 0.282) \times 10^{9}$ year
+  ${}= 4.816 \pm 0.282$ Gyr
+
+  The Age of type B ${}= (3.595 \pm 0.095) \times 10^{9}$ year
+  ${}= 3.595 \pm 0.435$ Gyr % sic: 0.095 and 0.435 both appear in the source
+
+  Hence, the type A is much older than the type B.
+  \hfill(20\%)
+
+\item[6.] The initial value of type A
+  $\left(^{87}\mathrm{Sr}/^{86}\mathrm{Sr}\right)_0
+    = 0.6986419 \pm 0.0009133$\\
+  The initial value of type B
+  $\left(^{87}\mathrm{Sr}/^{86}\mathrm{Sr}\right)_0
+    = 0.7036141 \pm 0.0060532$
+  \hfill(5\%)
+\end{description}

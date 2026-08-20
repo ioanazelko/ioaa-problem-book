@@ -1,0 +1,90 @@
+\begin{description}
+\item[(a)] DES is Table 1 and SDSS Table 2, since faint stars will have
+higher uncertainties. SDSS uses a smaller telescope (2.5\,m) than DES
+(4\,m) hence, it is typically shallower and has larger errors. Just looking
+at the error distribution should be enough to tell who has larger errors.
+
+\item[(b)] The linear regression of each curve:
+
+% FIGURE NEEDED: Graph 1 solution -- semi-log plot of err m_g vs m_g with
+% DES (red crosses, dotted fit) and SDSS (blue plusses, solid fit) data and
+% fitted lines (2024_da_sol.pdf page 2)
+
+The reported parameters are:
+
+\textbf{SDSS:}
+\[ \log_{10}(err\ m_g) = A \cdot m_g + B \]
+$A = 0.2780$ (acceptable from 0.2502 to 0.3058 which is within 10\% range
+of the fit)\\
+$B = -7.3108$ (acceptable from $-8.0419$ to $-6.5797$ which is within 10\%
+range of the fit)
+
+\textbf{DES:}
+\[ \log_{10}(err\ m_g) = A \cdot m_g + B \]
+$A = 0.4063$ (acceptable from 0.3657 to 0.4470 which is within 10\% range
+of the fit)\\
+$B = -10.7597$ (acceptable from $-10.2217$ to $-11.2977$ which is within
+10\% range of the fit)
+
+\item[(c)] Using that $S/N \sim 1/err\ m_g$ and above fits we can arrive at
+the following:\\
+\textbf{SDSS:} $\log_{10}(err\ m_g) = 0.2780 \cdot 21.5 - 7.3108
+\rightarrow err\ m_g = 0.0464$\\
+\textbf{DES:} $\log_{10}(err\ m_g) = 0.4063 \cdot 21.5 - 10.7597
+\rightarrow err\ m_g = 0.0095$\\
+Accepted answers follow below.
+
+\begin{center}
+\begin{tabular}{|l|c|l|}
+\hline
+ & err & $S/N$ \\
+\hline
+SDSS err at 21.5 mag & 0.05 & \textbf{22} (acceptable from 19.8 to 24.2
+$\rightarrow$ within 10\% range of the result) \\
+\hline
+DES err at 21.5 mag & 0.01 & \textbf{106} (acceptable from 95.4 to 116.6
+$\rightarrow$ within 10\% range of the result) \\
+\hline
+\end{tabular}
+\end{center}
+
+\item[(d)] One tip for this question is that the student should realize
+that the SDSS RA coordinate is sorted, so it can be used as a reference for
+the scanning of DES coordinates to perform the match. These are the stars
+that can be matched between catalogs:
+
+\begin{center}
+\begin{tabular}{ccccc|ccccc|c}
+$ID_1$ & RA & Dec & $m_g$ & err $m_g$ &
+$ID_2$ & RA & Dec & $m_g$ & err $m_g$ & Sep \\
+ & (deg) & (deg) & (mag) & (mag) &
+ & (deg) & (deg) & (mag) & (mag) & (arcsec) \\
+\hline
+3 & 0.064911 & 0.026395 & 21.3931 & 0.0084 & 8 & 0.064910 & 0.026419 & 21.6428 & 0.0488 & 0.08475 \\
+9 & 0.057422 & 0.076006 & 21.8897 & 0.0127 & 6 & 0.057414 & 0.075999 & 21.8884 & 0.0578 & 0.03724 \\
+4 & 0.098343 & 0.054871 & 21.3934 & 0.0088 & 13 & 0.098343 & 0.054854 & 21.6542 & 0.0499 & 0.06186 \\
+6 & 0.006188 & 0.066928 & 21.5490 & 0.0088 & 1 & 0.006167 & 0.066874 & 21.9020 & 0.0576 & 0.2076 \\
+12 & 0.071089 & 0.091053 & 21.4390 & 0.0098 & 9 & 0.071102 & 0.091058 & 21.9259 & 0.0751 & 0.05009 \\
+2 & 0.064741 & 0.021568 & 21.1111 & 0.0067 & 7 & 0.064745 & 0.021583 & 21.3634 & 0.0422 & 0.05655 \\
+8 & 0.076715 & 0.079496 & 21.4808 & 0.0089 & 11 & 0.076709 & 0.079747 & 21.5303 & 0.0476 & 0.08276 \\
+% sic: the solution table gives Dec 0.079747 for ID2 = 11, whereas Table 2
+% of the problem lists 0.079474
+\end{tabular}
+\end{center}
+
+\item[(e)] The figure of g magnitude of DES vs SDSS should look like this
+with the best linear fit:
+
+% FIGURE NEEDED: Graph 2 solution -- SDSS magnitude vs DES magnitude with
+% 2-sigma error bars and the one-to-one line "suitable for photometric
+% calibration (x = y)" (2024_da_sol.pdf page 3), plus a second version with
+% a non-zero-offset line (2024_da_sol.pdf page 4)
+
+The student should identify the stars that are closest to the one-to-one
+line ($x = y$) between surveys. This could be with a zero offset, or a
+non-zero offset. The \textbf{two} stars that would be suitable for
+photometric calibration with zero offset are the ones with ID's \textbf{8}
+and \textbf{9} of Table 1 (DES). The \textbf{four} stars that would be
+suitable for photometric calibration with non-zero offset are the ones with
+ID's \textbf{2, 3, 4 and 6} of Table 1 (DES).
+\end{description}

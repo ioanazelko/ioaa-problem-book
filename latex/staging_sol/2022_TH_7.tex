@@ -1,0 +1,111 @@
+% FIGURE NEEDED: spherical-triangle sketch with pole P, points A, B and the
+% northernmost point N of the path AB, sides 90-phi_1, 90-phi_2 and angle
+% L_2-L_1 at P; 2022 theory solutions, page 6 (problem 7).
+
+In the diagram, $N$ is the northernmost point of the path
+$\overset{\frown}{AB}$. Triangle $APB$, triangle $APN$ and triangle $BPN$ are
+all spherical triangles. We shall use the convention that North and West are
+positive, and South and East are negative. We notice,
+\begin{align*}
+  \overset{\frown}{PN} &= -\delta_F = 30^\circ 4'\\
+  \overset{\frown}{PA} &= 90^\circ - \phi_A = 48^\circ 17'\\
+  \overset{\frown}{PB} &= 90^\circ - \phi_B\\
+  \sphericalangle PNA &= \sphericalangle PNB = 90^\circ\\
+  \sphericalangle BPA &= \lambda_B - \lambda_A
+\end{align*}
+\hfill(5.0)
+\begin{align*}
+  x = \overset{\frown}{AB} &= vt = 4375 \times 2\tfrac{17}{60}
+    = 9990\ \mathrm{km}\\
+  \therefore x &= \frac{9900}{R_\oplus} = 1.5663\ \mathrm{rad}
+  % sic: the official solution writes 9900 here; from the previous line it
+  % should be 9990 km.
+  \\
+  &= 89.74^\circ = 89^\circ 44'
+\end{align*}
+\hfill(2.0)
+
+In $\triangle APN$, using sine rule,
+\begin{align*}
+  \frac{\sin\sphericalangle A}{\sin\overset{\frown}{PN}}
+    &= \frac{\sin\sphericalangle N}{\sin\overset{\frown}{PA}}\\
+  \therefore \sin\sphericalangle A
+    &= \frac{\sin 90^\circ \sin(30^\circ 4')}{\cos\phi_A}
+     = \frac{\sin(30^\circ 4')}{\cos(41^\circ 43')} = 0.67119\\
+  \therefore \sphericalangle A
+    &= 0.7358\ \mathrm{rad} = 42.16^\circ = 42^\circ 10'
+\end{align*}
+\hfill(3.0)
+
+(Recognise that to have a northern point on the path, it must be the acute
+solution)
+
+In $\triangle PBA$, using cosine rule,
+\begin{align*}
+  \cos\overset{\frown}{PB}
+    &= \cos\overset{\frown}{PA}\cos\overset{\frown}{AB}
+     + \sin\overset{\frown}{PA}\sin\overset{\frown}{AB}
+       \cos\sphericalangle A\\
+  \sin\phi_B &= \sin\phi_A \cos x + \cos\phi_A \sin x \cos A\\
+    &= \sin(41^\circ 43')\cos(89^\circ 44')
+     + \cos(41^\circ 43')\sin(89^\circ 44')\cos(42^\circ 10')\\
+  \sin\phi_B &= 0.5563\\
+  \therefore \phi_B &= 0.5900\ \mathrm{rad} = 33.80^\circ = 33^\circ 48'
+\end{align*}
+\hfill(4.0)
+
+(Only one solution in the valid values of latitude)
+
+Again using cosine rule,
+\begin{align*}
+  \cos\overset{\frown}{AB}
+    &= \cos\overset{\frown}{PA}\cos\overset{\frown}{PB}
+     + \sin\overset{\frown}{PA}\sin\overset{\frown}{PB}
+       \cos\sphericalangle P\\
+  \therefore \cos\sphericalangle P
+    &= \frac{\cos x - \sin\phi_A \sin\phi_B}{\cos\phi_A \cos\phi_B}\\
+    &= \frac{\cos(89^\circ 44') - \sin(41^\circ 43')\sin(33^\circ 48')}
+            {\cos(41^\circ 43')\cos(33^\circ 48')}\\
+  \cos\sphericalangle P &= -0.5891\\
+  \therefore \sphericalangle P
+    &= 2.201\ \mathrm{rad} = 126.13^\circ = 126^\circ 8'\\
+  \lambda_B &= \sphericalangle P + \lambda_A = 126^\circ 8' - 41^\circ 48'\\
+  \lambda_B &= 1.472\ \mathrm{rad} = 84.33^\circ = 84^\circ 20'
+\end{align*}
+\hfill(5.0)
+
+(The other solution of $\lambda_B - \lambda_A = -126.13^\circ$ gives
+$\lambda_B = -167.93^\circ$ which is clearly not valid)
+
+Therefore, the coordinates of Atlanta are
+\[
+  (33^\circ 48'\mathrm{N}, 84^\circ 20'\mathrm{W})
+\]
+\hfill(1.0)
+
+\medskip
+\noindent\textbf{Alternative method to find $L_2$}
+
+Using the spherical sine rule in triangle $PBA$,
+\begin{align*}
+  \frac{\sin A}{\sin(90^\circ - \phi_2)}
+    &= \frac{\sin(L_2 - L_1)}{\sin x}\\
+  \therefore \sin(L_2 - L_1) &= \frac{\sin x \sin A}{\cos\phi_2}\\
+  \therefore \sin(L_2 - L_1)
+    &= \frac{\sin(89^\circ 51')\sin(42^\circ 10')}{\cos(33^\circ 43')}
+     = 0.80689\\
+  \therefore L_2 - L_1
+    &= 126.21^\circ \quad (= 126^\circ 12' = 2.20\ \mathrm{rad})\\
+  \therefore L_2 &= 126^\circ 12' + L_1
+    = 126^\circ 12' + (-41^\circ 48') = 84.41^\circ
+    \quad (= 84^\circ 24' = 1.47\ \mathrm{rad})
+\end{align*}
+
+(The other solution of $L_2 - L_1 = 53.79^\circ$ gives $L_2 = 11.99^\circ$
+which is clearly not valid)
+
+Accept all other valid solutions (such as the four parts rule or using
+Napier's rules) that give $\phi_2 = 33.71^\circ$ and $L_2 = 84.41^\circ$.
+Students may do both methods for calculating $L_2$ to confirm which solution
+is common to both as a quicker check than trying to do the reverse calculation
+with a given pair of co-ordinates.

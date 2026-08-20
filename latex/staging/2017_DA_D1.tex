@@ -1,0 +1,111 @@
+An accurate trigonometric parallax calibration for Galactic Cepheids has long
+been sought, but is very difficult to achieve in practice. All known classical
+(Galactic) Cepheids are more than 250\,pc away, therefore for direct distance
+estimates to achieve an uncertainty of up to 10\%, parallax uncertainties of
+up to $\pm 0.2$\,milliarcsec are needed, requiring space-based observations.
+The Hipparcos satellite reported parallaxes for 200 of the nearest Cepheids,
+but even the best of these had high uncertainties. Recent progress has come
+with the use of the Fine Guidance Sensor on HST where parallaxes (in many
+cases) accurate to better than $\pm 10$\% were obtained for 10 Cepheids,
+spanning a range of periods from 3.7 to 35.6 days. These nearby Cepheids cover
+distances from about 300 to 560\,pc.
+
+The measured periods, $P$, and average magnitudes in $V$, $K$ and $I$ bands
+are given in Table~1 as well as the $A_V$ and $A_K$ for extinction in $V$ and
+$K$ bands, respectively. The measured parallaxes with their uncertainties are
+also given in milliarcsec (mas). All measured apparent magnitudes have
+negligible uncertainty.
+
+Table 1: Periods and average apparent magnitudes of 5 Galactic Cepheids with
+accurate parallax measurements.
+
+\begin{center}
+\begin{tabular}{l|c|c|c|c|c|c|c|c}
+ & $P$ & $\langle V\rangle$ & $\langle K\rangle$ & $A_V$ & $A_K$
+ & $\langle I\rangle$ & parallax & error \\
+ & (day) & (mag) & (mag) & (mag) & (mag) & (mag) & (mas) & (mas) \\
+\hline
+RT Aur      & 3.728  & 5.464 & 3.925 & 0.20 & 0.02 & 4.778 & 2.40 & 0.19 \\
+FF Aql      & 4.471  & 5.372 & 3.465 & 0.64 & 0.08 & 4.510 & 2.81 & 0.18 \\
+X Sgr       & 7.013  & 4.556 & 2.557 & 0.58 & 0.07 & 3.661 & 3.00 & 0.18 \\
+$\zeta$ Gem & 10.151 & 3.911 & 2.097 & 0.06 & 0.01 & 3.085 & 2.78 & 0.18 \\
+l Car       & 35.551 & 3.732 & 1.071 & 0.52 & 0.06 & 2.557 & 2.01 & 0.20 \\
+\end{tabular}
+\end{center}
+
+\begin{description}
+\item[(D1.1)] The observed correlation between the period of a Cepheid and its
+  brightness is usually described by the so-called ``Period-Luminosity (PL)
+  relation'', where $L \propto P^\beta$. In fact, such a relation is normally
+  expressed in terms of the period and absolute magnitude, instead of
+  luminosity. Hereafter, we shall refer to the Period-Absolute magnitude
+  relation as the conventionally named ``PL relation''.
+
+  Use the data given in Table~1 to plot a suitable linear graph in order to
+  derive the Cepheid PL relation for the $V$-band and $K$-band. You should
+  plot each graph separately on different pieces of graph paper. Determine the
+  slope of the line that best describes the linear relation of the data. (You
+  may find the relation
+  $\Delta(\log_{10} x) \approx \dfrac{\Delta x}{x \log_e 10}$ useful)
+  \hfill[36.5 Marks]
+\end{description}
+
+Any apparent differences in PL relations of stars in the different bands can
+be explained if one also considers differences in colour. Therefore, the PL
+relation is in fact a PLC (Period-Luminosity-Colour) relation. This is from
+the reddening effect, due to extinction being a function of wavelength, which
+can also vary among different Cepheids due to their different metallicities,
+foreground Interstellar Medium and dust.
+
+A new reddening-free magnitude (or bandpass) called ``Wesenheit'' has been
+proposed that does not require the explicit information of the extinction of
+individual stars but uses colour information from the star itself to get rid
+of the effect. For example, $W_{VI}$ use $V$ and $I$ band photometry and is
+defined as
+\[ W_{VI} = V - \left[\frac{A_V}{E(V-I)}\right](V-I), \]
+\[ \phantom{W_{VI}} = V - R_v (V-I) \]
+where $R_v$ depends on the reddening law. In this case, we shall take the
+value of $R_v$ to be 2.45.
+
+\begin{description}
+\item[(D1.2)] From the data given in Table~1, plot and derive the
+  reddening-free PL relation using Wesenheit $W_{VI}$ magnitudes. Estimate the
+  linear slope of the relation as well as its uncertainty.
+  \hfill[14.5 Marks]
+\item[(D1.3)] Next, we would like to use the newly-derived PL relations from
+  question (D1.1) \& (D1.2) to estimate the distance to the Large Magellenic
+  Cloud (LMC) using periods and magnitudes of classical Cepheids in the LMC.
+  In Table~2, the periods, average extinction-corrected apparent magnitudes,
+  $\langle V_{\mathrm{corr}}\rangle$, and Wesenheit $W_{VI}$ magnitudes are
+  given.
+
+  Estimate the distance modulus, $\mu$, to each star and then use all the
+  information to derive the distance to the LMC (in parsecs) and its standard
+  deviation for each band.
+
+  Compare if the derived distances are statistically different for the 2 bands
+  (YES/NO).
+
+  Are the standard deviations of the estimated distances for 2 bands different
+  (YES/NO)?
+
+  Based on this dataset, which band ($V$ or Wesenheit) is more accurate in
+  estimating the distance to the LMC? \hfill[24 Marks]
+\end{description}
+
+Table 2: Period, average extinction-corrected apparent magnitude,
+$\langle V_{\mathrm{corr}}\rangle$, and average Wesenheit magnitude
+measurements of Cepheids in the LMC.
+
+\begin{center}
+\begin{tabular}{l|c|c|c}
+ & $P$ & $\langle V_{\mathrm{corr}}\rangle$ & $\langle W_{VI}\rangle$ \\
+ & (day) & mag & mag \\
+\hline
+HV12199 & 2.63  & 16.08 & 14.56 \\
+HV12203 & 2.95  & 15.93 & 14.40 \\
+HV12816 & 9.10  & 14.30 & 12.80 \\
+HV899   & 30.90 & 13.07 & 10.97 \\
+HV2257  & 39.36 & 12.86 & 10.54 \\
+\end{tabular}
+\end{center}

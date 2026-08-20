@@ -1,0 +1,46 @@
+As the longest shadow of the Sun on the given day is of finite length, the
+Sun is circumpolar for this observer on this day. \hfill[2.0]
+
+% FIGURE NEEDED: two-panel diagram -- left: stick OA with shadow OS and Sun
+% altitude theta; right: celestial hemisphere with the Sun's circumpolar
+% diurnal circle, angles phi, 90-delta_sun, and the two extreme altitudes
+% theta_1, theta_2 (2016_theory_sol.pdf, page 4).
+In the figure, the left panel shows the shadow $OS$ formed by stick $OA$ (of
+length 1.000\,m), and the right panel shows the Sun's location in two cases.
+
+For an altitude $\theta$ of the Sun,
+\[ \tan\theta = \frac{OA}{OS} = \frac{1.000\ \mathrm{m}}{OS} \]
+\[ \therefore\ \cot\theta = OS\ \text{(in metres)} \]
+\hfill[1.0]
+
+Let $\theta_1$ and $\theta_2$ be the altitude in the two extreme cases.
+\[ \theta_1 = 180^\circ - \phi - (90^\circ - \delta_\odot)
+   = 90^\circ - \phi + \delta_\odot \]
+\hfill[1.0]
+\begin{align*}
+\cot(90^\circ - \phi + \delta_\odot) &= 1.732\\
+\therefore\ \tan(\phi - \delta_\odot) &= 1.732\\
+\phi - \delta_\odot &= \tan^{-1}(1.732) = 60^\circ = 1.047\ \mathrm{rad}
+\end{align*}
+\hfill[1.5]
+\[ \theta_2 = \phi - (90^\circ - \delta_\odot)
+   = \phi - 90^\circ + \delta_\odot \]
+\hfill[1.0]
+\begin{align*}
+\cot(\phi - 90^\circ + \delta_\odot) &= 5.671\\
+\therefore\ \tan(\phi - 90^\circ + \delta_\odot) &= \frac{1}{5.671}\\
+\phi + \delta_\odot &= \tan^{-1}\left(\frac{1}{5.671}\right) + 90^\circ
+  = 100^\circ = 1.745\ \mathrm{rad}
+\end{align*}
+\hfill[1.5]
+
+Solving,
+\[ \boxed{\phi = 80^\circ} = 1.396\ \mathrm{rad} \]
+\hfill[1.0]
+\[ \boxed{\delta_\odot = 20^\circ} = 0.349\ \mathrm{rad} \]
+\hfill[1.0]
+
+Given high accuracy of shadow length, only $\pm 0.5^\circ$ is allowed.
+
+One can also solve the question by manipulating $\tan(\phi - \delta_\odot)$
+and $\tan(\phi + \delta_\odot)$, to get $\tan(\phi)$ and $\tan(\delta_\odot)$.

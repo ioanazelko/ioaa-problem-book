@@ -1,0 +1,133 @@
+% Note: the official solution is divided into Part (a) and Part (b) only;
+% its Part (b) covers both parts (b) and (c) of the problem statement.
+\begin{description}
+\item[Part (a)] To determine whether the system can be detected by LISA, we
+  need to determine two quantities: the gravitational-wave frequency and the
+  characteristic strain amplitude.
+
+  It is straightforward to calculate the gravitational-wave frequency:
+  \[ f = \frac{2}{P} = \frac{2}{414.79} = 4.8 \times 10^{-3}\,\mathrm{Hz}. \]
+  This frequency is within the LISA band and close to the maximum LISA
+  sensitivity. \hfill(2 points)
+
+  To estimate the characteristic strain amplitude, we need to know the chirp
+  mass $\mathcal{M}$. The other required quantities (such as the gravitational
+  wave frequency, distance, and duration of the LISA observations) are already
+  known.
+
+  The orbital period change rate $\Delta P/\Delta t$ is given in the problem.
+  We need to link it to $\Delta a/\Delta t$ which we know from Note 3 is
+  linked to the mass function. From Kepler's third law, we know that:
+  \[ \frac{a^3}{P^2} = \frac{G(M_1 + M_2)}{4\pi^2}, \]
+  where $M_1$ and $M_2$ are masses of both components of the system. If, due
+  to the emission of gravitational waves, the semi-major axis changes from $a$
+  to $a + \Delta a$, then the orbital period changes from $P$ to
+  $P + \Delta P$, as the masses of both components are constant. Then:
+  \[ \frac{a^3}{P^2} = \frac{(a+\Delta a)^3}{(P+\Delta P)^2}
+     = \frac{a^3(1+\Delta a/a)^3}{P^2(1+\Delta P/P)^2}
+     = \frac{a^3}{P^2}\left(1 + \frac{3\Delta a}{a}
+       - \frac{2\Delta P}{P}\right), \]
+  hence:
+  \[ \frac{\Delta P}{P} = \frac{3}{2}\,\frac{\Delta a}{a}. \]
+  Here, we used the fact that $(1+x)^n \approx 1 + nx$ for $x \ll 1$.
+
+  Therefore:
+  \begin{align*}
+    \frac{\Delta P}{\Delta t}
+      &= \frac{3P}{2a}\frac{\Delta a}{\Delta t}
+       = -\frac{3}{2}\cdot\frac{64}{5}\,\frac{P}{a}\,\frac{G^3}{c^5}\,
+         \frac{M_1 M_2 (M_1+M_2)}{a^3} \\
+      &= -\frac{96}{5}\,\frac{G^3}{c^5}\,\frac{P}{a}\,
+         \frac{M_1 M_2 (M_1+M_2)}{G(M_1+M_2)P^2}\cdot 4\pi^2 \\
+      &= -\frac{96}{5}(2\pi)^2\,\frac{G^2}{c^5}\,\frac{M_1 M_2}{aP}
+       = -\frac{96}{5}(2\pi)^2\,\frac{G^2}{c^5}\,\frac{M_1 M_2}{P}\,
+         \frac{(2\pi)^{2/3}}{G^{1/3}(M_1+M_2)^{1/3}P^{2/3}} \\
+      &= -\frac{96}{5}(2\pi)^{8/3}\,\frac{G^{5/3}}{c^5}\,
+         \frac{M_1 M_2}{(M_1+M_2)^{1/3}}\,\frac{1}{P^{5/3}} \\
+      % note: the source prints the expression on the line above twice.
+      &= -\frac{96}{5c^5}(2\pi)^{8/3}
+         \left(\frac{G\mathcal{M}}{P}\right)^{5/3}
+       = -\frac{192\pi}{5c^5}(G\mathcal{M})^{5/3}
+         \left(\frac{P}{2\pi}\right)^{-5/3},
+  \end{align*}
+  Thus, by knowing the orbital period and its rate of change from
+  observations, we can determine the chirp mass:
+  \[ \mathcal{M} = \left(\frac{5}{192\pi}\right)^{3/5}\frac{c^3}{G}\,
+     \frac{P}{2\pi}\left(-\frac{\Delta P}{\Delta t}\right)^{3/5}
+     = 0.319\,M_\odot, \]
+  and find the characteristic strain amplitude $h$.
+
+  Alternatively, if we notice that the characteristic strain amplitude $h$
+  depends on $(G\mathcal{M})^{5/3}$ which we can get directly from the rate of
+  change of the period:
+  \[ (G\mathcal{M})^{5/3} = -\frac{\Delta P}{\Delta t}
+     \left(\frac{P}{2\pi}\right)^{5/3}\frac{5c^5}{192\pi}, \]
+  we can skip calculating the chirp mass and get the characteristic strain
+  amplitude directly, which is all we need to check if the binary can be
+  detected.
+
+  Either way, the gravitational wave strain is:
+  \[ h = -\frac{5c}{192\pi^2}\,P\,\frac{\Delta P}{\Delta t}\,\frac{1}{D}. \]
+  If we plug in the numerical values, we get $h = 1.1 \times 10^{-22}$ and
+  $S = 8.4 \times 10^{-20}$. Checking the plot, this is above the expected
+  sensitivity of LISA at 5\,mHz. Thus, this object should be detected by LISA.
+
+\item[Part (b)] To determine the masses of both components $M_1$ and $M_2$ we
+  need two simultaneous $M_1 - M_2$ relations. The expression for the chirp
+  mass:
+  \[ \mathcal{M} = \frac{(M_1 M_2)^{3/5}}{(M_1 + M_2)^{1/5}}, \]
+  gives us one relation, and we can calculate the chirp mass of the observed
+  system from the rate of change of the period, if that was not already done
+  in part (a):
+  \[ \mathcal{M} = \left(\frac{5}{192\pi}\right)^{3/5}\frac{c^3}{G}\,
+     \frac{P}{2\pi}\left(-\frac{\Delta P}{\Delta t}\right)^{3/5}
+     = 0.319\,M_\odot. \]
+  The second relation can be obtained from the mass--radius relation for white
+  dwarfs given in the table and Kepler's third law.
+
+  We are told that for one of the components (call it `1'),
+  \[ a = \frac{R_1}{0.139}. \]
+  From Kepler's third law we know that:
+  \[ M_1 + M_2 = \left(\frac{a}{1\,\mathrm{au}}\right)^3
+     \left(\frac{P}{1\,\mathrm{yr}}\right)^2, \]
+  which will give us the mass of the second component $M_2$ from the mass of
+  the first, $M_1$.
+
+  From here, it is not possible to derive an analytical formula for the masses
+  of the components. Instead, we need to use numerical methods to estimate the
+  result.
+
+  Taking the masses and radii listed in the given table as $M_1$ and $R_1$, we
+  can obtain $a$ and thus $M_1 + M_2$, $M_2$ and finally $\mathcal{M}$ for
+  each mass:
+
+  \begin{center}
+  \begin{tabular}{cccccc}
+    \hline
+    $M_1$ ($M_\odot$) & $R$ ($R_\odot$) & $a$ ($R_\odot$) & $M_1+M_2$ &
+    $M_2$ & $\mathcal{M}$ \\
+    \hline
+    0.48 & 0.0144 & 0.104 & 0.647 & 0.167 & 0.240 \\
+    0.50 & 0.0147 & 0.106 & 0.689 & 0.189 & 0.261 \\
+    0.52 & 0.0150 & 0.108 & 0.732 & 0.212 & 0.283 \\
+    0.54 & 0.0153 & 0.110 & 0.776 & 0.236 & 0.306 \\
+    0.56 & 0.0156 & 0.112 & 0.823 & 0.263 & 0.329 \\
+    0.58 & 0.0159 & 0.114 & 0.871 & 0.291 & 0.354 \\
+    0.60 & 0.0162 & 0.117 & 0.922 & 0.322 & 0.379 \\
+    0.62 & 0.0165 & 0.119 & 0.974 & 0.354 & 0.405 \\
+    0.64 & 0.0168 & 0.121 & 1.028 & 0.388 & 0.431 \\
+    \hline
+  \end{tabular}
+  \end{center}
+
+  The actual chirp mass is $\mathcal{M} = 0.319\,M_\odot$. Therefore, by
+  linear interpolation or graphically, we estimate $M_1 = 0.55\,M_\odot$ and
+  $M_2 = 0.25\,M_\odot$.
+
+  (The student does not need to calculate $\mathcal{M}$ for all values of
+  $M_1$.)
+
+  % FIGURE NEEDED: graphical solution -- plot of chirp mass \mathcal{M}
+  % (0.24-0.43 M_sun) versus M_1 (0.48-0.64 M_sun), nine points on a nearly
+  % straight rising curve; official 2023 solutions, p. 39.
+\end{description}

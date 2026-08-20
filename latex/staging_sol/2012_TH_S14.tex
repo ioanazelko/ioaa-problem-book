@@ -1,0 +1,38 @@
+Let be $R$ the radius of the Celestial Sphere and $(x, y, z)$ a coordinate
+system with origin at the observer, $z$ is the down-up axis, $y$ is the
+east-west axis and $x$ is the south-north axis.
+
+In the superior culmination, the altitude angle is
+$h = 7.41 + 49.35 = 56.76^\circ$ and we have
+\begin{align*}
+  \vec{v} &= v_0\,\hat{y} = 2\pi R\,\hat{y}\ /day \\
+  \vec{r}_0 &= R(-\cos h\,\hat{x} + \sin h\,\hat{z}) \\
+  \mathbf{r}(t) &= \mathbf{r}_0 + \mathbf{v}t
+\end{align*}
+
+The altitude in function of our coordinate system is
+$h = \tan^{-1}\left(\frac{z}{\sqrt{x^2 + y^2}}\right)$. When $t \to \infty$,
+the coordinates $x$ and $z$ of the star remain constant, while
+$y \to \infty$, and we have
+\[
+  h = \tan^{-1}\left(\frac{z}{\sqrt{x^2 + y^2}}\right)
+    \xrightarrow[t \to \infty]{} \tan^{-1} 0 = 0^\circ
+\]
+\hfill(3 pt $h \to 0$)
+
+Similarly, because $y \to \infty$ but $x$ and $z$ remain constant, the final
+azimuth is the West direction ($A = 90^\circ$ or $A = 270^\circ$, depending on
+the system used).
+\hfill(2 pt $A \to$ W)
+
+For the magnitude,
+$m_0 - m_6 = -2.5\log\frac{F_0}{F_6}$ and $F = \frac{L}{4\pi R^2}$ so
+$R_6 = 12.88\,R_0$
+\hfill(2 pt ratio of distances)
+\[
+  |\mathbf{r}(t)| = \sqrt{x^2 + y^2 + z^2} = R\sqrt{1 + 4\pi^2 t^2} = 12.88\,R
+\]
+\[
+  t = 2.044\ \text{days}
+\]
+\hfill(3 pt time)

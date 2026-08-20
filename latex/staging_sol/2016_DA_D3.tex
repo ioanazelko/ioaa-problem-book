@@ -1,0 +1,163 @@
+\begin{description}
+\item[(D3.1)] Redshifts for the three supernovae are $z_1 = 0.0151$,
+  $z_2 = 0.0314$ and $z_3 = 0.0402$. \hfill(1.5 points)
+
+  Filling in the three tables ($\Delta t_{\mathrm{gal}}$, third column; the
+  $\Delta t_{\mathrm{s}}$ column is filled in part D3.3): \hfill(3.5 points)
+
+  \begin{center}
+  SN2006TD
+
+  \begin{tabular}{rrrr}
+    $\Delta t_{\mathrm{obs}}$ (d) & $m_{\mathrm{obs}}$ (mag) &
+    $\Delta t_{\mathrm{gal}}$ (d) & $\Delta t_{\mathrm{s}}$ (d) \\
+    \hline
+    $-15.00$ & 19.41 & $-14.78$ & $-20.00$ \\
+    $-10.00$ & 17.48 & $-9.85$  & $-13.34$ \\
+    $-5.00$  & 16.12 & $-4.93$  & $-6.67$  \\
+    0.00     & 15.74 & 0.00     & 0.00     \\
+    5.00     & 16.06 & 4.93     & 6.67     \\
+    10.00    & 16.72 & 9.85     & 13.34    \\
+    15.00    & 17.53 & 14.78    & 20.00    \\
+    20.00    & 18.08 & 19.70    & 26.67    \\
+    25.00    & 18.43 & 24.63    & 33.34    \\
+    30.00    & 18.64 & 29.56    & 40.01    \\
+  \end{tabular}
+
+  \medskip
+  SN2006IS
+
+  \begin{tabular}{rrrr}
+    $\Delta t_{\mathrm{obs}}$ (d) & $m_{\mathrm{obs}}$ (mag) &
+    $\Delta t_{\mathrm{gal}}$ (d) & $\Delta t_{\mathrm{s}}$ (d) \\
+    \hline
+    $-15.00$ & 18.35 & $-14.54$ & $-14.54$ \\
+    $-10.00$ & 17.26 & $-9.70$  & $-9.70$  \\
+    $-5.00$  & 16.42 & $-4.85$  & $-4.85$  \\
+    0.00     & 16.17 & 0.00     & 0.00     \\
+    5.00     & 16.41 & 4.85     & 4.85     \\
+    10.00    & 16.82 & 9.70     & 9.70     \\
+    15.00    & 17.37 & 14.54    & 14.54    \\
+    20.00    & 17.91 & 19.39    & 19.39    \\
+    25.00    & 18.39 & 24.24    & 24.24    \\
+    30.00    & 18.73 & 29.09    & 29.09    \\
+  \end{tabular}
+
+  \medskip
+  SN2005LZ
+
+  \begin{tabular}{rrrr}
+    $\Delta t_{\mathrm{obs}}$ (d) & $m_{\mathrm{obs}}$ (mag) &
+    $\Delta t_{\mathrm{gal}}$ (d) & $\Delta t_{\mathrm{s}}$ (d) \\
+    \hline
+    $-15.00$ & 20.18 & $-14.42$ & $-17.03$ \\
+    $-10.00$ & 18.79 & $-9.61$  & $-11.35$ \\
+    $-5.00$  & 17.85 & $-4.81$  & $-5.68$  \\
+    0.00     & 17.58 & 0.00     & 0.00     \\
+    5.00     & 17.72 & 4.81     & 5.68     \\
+    10.00    & 18.24 & 9.61     & 11.35    \\
+    15.00    & 18.98 & 14.42    & 17.03    \\
+    20.00    & 19.62 & 19.23    & 22.70    \\
+    25.00    & 20.16 & 24.03    & 28.38    \\
+    30.00    & 20.48 & 28.84    & 34.06    \\
+  \end{tabular}
+  \end{center}
+
+  The light curves in galaxy frame would appear as follows.
+  \hfill(10.0 points)
+  % FIGURE NEEDED: example hand-drawn graph D3.1 -- the three rest-frame
+  % light curves m_obs vs Delta t_gal on graph paper
+  % (2016_data_analysis_sol.pdf, page 17)
+
+\item[(D3.2)] From the graph D3.1, SN2006IS took 22.0\,d to fade by 2
+  magnitudes. That is, $\Delta t_0(\mathrm{SN2006IS}) = 22.0$\,d.
+
+  Similarly, $\Delta t_0(\mathrm{SN2006TD}) = 16.4$\,d.
+
+  And $\Delta t_0(\mathrm{SN2005LZ}) = 18.8$\,d.
+
+  \textbf{Acceptable range:} $\pm 1.0$ days \hfill(3.0 points)
+
+  Thus, stretching factors for these two supernovae are
+  \begin{align*}
+    s_1 &= \frac{22.2}{16.4} = 1.354 \\ % sic: 22.2 as printed, although
+                                        % Delta t_0 is quoted as 22.0 d above
+    s_3 &= \frac{22.2}{18.8} = 1.181
+  \end{align*}
+  \hfill(2.0 points)
+
+\item[(D3.3)] Filling the scaled values in the fourth column of the table
+  ($\Delta t_{\mathrm{s}}$ in the tables above). \hfill(3.5 points)
+
+  The scaled light curves would appear as follows; the curves should show
+  identical profiles. \hfill(10.5 points)
+  % FIGURE NEEDED: example hand-drawn graph D3.3 -- the three scaled light
+  % curves m_obs vs Delta t_s collapsing onto a common profile
+  % (2016_data_analysis_sol.pdf, page 19)
+
+\item[(D3.4)] To get $a$ and $b$,
+  \begin{align*}
+    M_{\mathrm{peak},1} &= m_{\mathrm{peak},1} - \mu_1
+      = 15.74 - 34.27\ \mathrm{mag} \\
+      &= -18.53\ \mathrm{mag} \\
+    M_{\mathrm{peak},2} &= m_{\mathrm{peak},2} - \mu_2
+      = 16.17 - 35.64\ \mathrm{mag} \\
+      &= -19.47\ \mathrm{mag}
+  \end{align*}
+  \hfill(2.0 points)
+  \begin{align*}
+    \therefore b &= \frac{s_1 - s_2}{M_{\mathrm{peak},1} - M_{\mathrm{peak},2}}
+      = \frac{1.354 - 1}{-18.53 - (-19.47)}\ \mathrm{mag}^{-1}
+      = \frac{0.354}{0.94}\ \mathrm{mag}^{-1} \\
+    b &= 0.3762\ \mathrm{mag}^{-1}
+  \end{align*}
+  \hfill(2.0 points)
+  \begin{align*}
+    a &= s_2 - b\,M_{\mathrm{peak},2} = 1 - 0.3762\times(-19.47)
+       = 1 + 7.325 \\
+    a &= 8.325
+  \end{align*}
+  \hfill(2.0 points)
+
+\item[(D3.5)] \mbox{}
+  \begin{align*}
+    s_3 &= a + b\,M_{\mathrm{peak},3} \\
+    \therefore M_{\mathrm{peak},3} &= \frac{s_3 - a}{b}
+      = \frac{1.181 - 8.325}{0.3762}\ \mathrm{mag}
+      = \frac{-7.144}{0.3762}\ \mathrm{mag} \\
+    M_{\mathrm{peak},3} &= -18.99\ \mathrm{mag}
+  \end{align*}
+  \hfill(2.0 points)
+
+  Distance modulus to SN2005LZ is
+  \begin{align*}
+    \mu_3 &= m_{\mathrm{peak},3} - M_{\mathrm{peak},3}
+      = 17.58 - (-18.99)\ \mathrm{mag} \\
+    \mu_3 &= 36.57\ \mathrm{mag}
+  \end{align*}
+  \hfill(2.0 points)
+
+\item[(D3.6)] Distance to SN2005LZ is
+  \begin{align*}
+    d_3 &= 10^{\left(\frac{\mu_3}{5}+1\right)}\,\mathrm{pc}
+        = 10^{\left(\frac{\mu_3}{5}+1-6\right)}\,\mathrm{Mpc} \\
+        &= 10^{\left(\frac{36.57}{5}-5\right)}\,\mathrm{Mpc}
+        = 10^{2.314}\,\mathrm{Mpc} \\
+        &\simeq 206\ \mathrm{Mpc}
+  \end{align*}
+  \begin{align*}
+    H_0 &= \frac{c z_3}{d_3}
+      = \frac{12060}{206}\ \mathrm{km\,s^{-1}\,Mpc^{-1}} \\
+    H_0 &= 58.5\ \mathrm{km\,s^{-1}\,Mpc^{-1}}
+  \end{align*}
+  \hfill(4.0 points)
+  \begin{align*}
+    T_H &= \frac{1}{H_0}
+      = \frac{3.086\times 10^{22}}{58.5\times 10^{3}\times 3.156\times 10^{7}}
+      \ \mathrm{yr} \\
+    T_H &= 16.7\ \mathrm{Gyr}
+  \end{align*}
+  \hfill(2.0 points)
+
+  Extra factor of $2/3$ allowed in the value of $T_H$.
+\end{description}

@@ -1,0 +1,57 @@
+2022	TH	1	Planck's units	10	10	Planck-scale dimensional analysis	-
+2022	TH	2	Circumbinary planet	10	9	circumbinary planet synodic period, illumination	2
+2022	TH	3	Expanding ring nebula	10	7	planetary-nebula expansion, shell resolution	5
+2022	TH	4	Journey Between Galaxies	10	13	travel through expanding space, scale factor	-
+2022	TH	5	Flaring protoplanetary disk	10	7	flaring disk thermal structure	3
+2022	TH	6	Photometry of Binary stars	20	8	binary photometry, masses, extinction	6
+2022	TH	7	Georgia to Georgia	20	1	latitude/longitude from star during flight	-
+2022	TH	8	Ring of a planet	20	2	gravity of annular disk, oscillations	-
+2022	TH	9	Solar Retrograde Motion on Mercury	20	3	Sun's retrograde motion in Mercury's sky	2
+2022	TH	10	Accretion	20	10	Eddington limit, accretion luminosity	8
+2022	TH	11	Dyson Sphere	50	6	blackbody equilibrium, radiation pressure	2
+2022	TH	12	Co-orbital satellites	50	2	co-orbital horseshoe dynamics	-
+2022	TH	13	Relativistic Beaming	50	10	relativistic Doppler, aberration, M87 jet	-
+2022	DA	1	Gravitational wave astronomy	45	14	GW170817 chirp mass from f(t)	-
+2022	DA	2	Galactic Surveys	105	13	halo pair statistics, redshift-space distortions	12
+2023	TH	Q1	Neptune	5	1	opposition dates via synodic period	3
+2023	TH	Q2	Magnetic Field	5	6	cyclotron line gives magnetic field	10
+2023	TH	Q3	Microlensing	5	5	telescope diameter for equal S/N	6
+2023	TH	Q4	Europa	10	3	heat conduction through ice, tidal heating	-
+2023	TH	Q5	Dark Energy	12	13	critical density, matter-DE equality redshift	-
+2023	TH	Q6	Bolometer	13	5	conical cavity absorption, effective temperature	6
+2023	TH	Q7	Libration	20	3	lunar libration, visible surface fraction	1
+2023	TH	Q8	Neutrinos	20	7	supernova vs solar neutrino flux	4
+2023	TH	Q9	Second eclipse	20	8	predict secondary eclipse light curves	-
+2023	TH	Q10	Aldebaran	25	1	lunar occultation geometry	3
+2023	TH	Q11	X-ray emission from galaxy clusters	30	12	bremsstrahlung plasma mass, Sunyaev-Zeldovich	13
+2023	TH	Q12	DART	40	2	impact changes Dimorphos orbital period	3
+2023	TH	Q13	LISA	45	14	white-dwarf binary GW strain, chirp mass	8
+2023	DA	Q1	Distance to the Large Magellanic Cloud	50	12	eclipsing-binary distance to LMC	8
+2023	DA	Q2	Isolated black hole	75	10	astrometric microlensing BH mass	11
+2024	TH	T1	Sundial	10	1	sundial gnomon shadow, analemma	-
+2024	TH	T2	Galaxy Cluster	10	12	virial cluster mass from redshift dispersion	13
+2024	TH	T3	Asteroid	10	2	radial-fall time, degenerate Kepler orbit	-
+2024	TH	T4	White Dwarf	10	10	degenerate electron gas mass-radius	7
+2024	TH	T5	CMB	10	13	CMB redshift, matter-dominated age	-
+2024	TH	T6	Cluster Photography	20	5	plate scale, CCD signal-to-noise	6
+2024	TH	T7	Castaway	20	1	latitude from sunrise-sunset horizon angle	-
+2024	TH	T8	Binary Hardening	25	8	BH binary hardening by stellar slingshots	2
+2024	TH	T9	Physics of Accretion	35	10	thin accretion disc luminosity	-
+2024	TH	T10	Greatest Eclipse	75	3	1919 eclipse shadow geometry, totality	1
+2024	TH	T11	Ground Tracks	75	2	Sun-synchronous and Tundra orbits	-
+2024	DA	D1	Photometric comparison of surveys	75	5	SDSS/DES magnitude errors, calibration	6
+2024	DA	D2	Shapley Hypothesis	75	11	globular clusters, distance to Galactic Centre	-
+2025	TH	T01	Daksha Mission	10	5	detector geometry, timing localization	1
+2025	TH	T02	Makar-Sankranti	10	1	precession shifts festival date	-
+2025	TH	T03	Gravitational Waves	15	14	binary BH chirp, merger time	-
+2025	TH	T04	Balmer Decrement	15	6	Halpha/Hbeta ratio gives extinction	-
+2025	TH	T05	Quasars	20	12	superluminal jet motion, core size	10
+2025	TH	T06	Galactic Rotation	20	11	HI rotation curve, Oort constants	-
+2025	TH	T07	Neutron Star Binary	20	10	wind-fed accretion, magnetospheric radius	8
+2025	TH	T08	Shadow of a black hole	20	10	photon sphere, BH shadow	-
+2025	TH	T09	Atmospheric Seeing	35	5	refraction layers, speckles	-
+2025	TH	T10	Big Bang Nucleosynthesis	35	13	freeze-out, deuterium Saha, helium abundance	-
+2025	TH	T11	Stars through graphs	50	7	stellar interior profiles, evolution	-
+2025	TH	T12	Hawking Radiation from Black Holes	50	10	BH temperature, evaporation, primordial BHs	13
+2025	DA	D01	30 Years of Exoplanets	90	9	radial velocity plus transit, limb darkening	-
+2025	DA	D02	Predicting arrival times of coronal mass ejections on Earth	60	4	CME drag model arrival prediction	-

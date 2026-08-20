@@ -1,0 +1,176 @@
+\begin{description}
+\item[(a)]
+  \[
+    \theta_{\mathrm{E}}
+    = \sqrt{\frac{4GM}{c^2}\,\frac{D_s - D_\ell}{D_s D_\ell}}
+    = \sqrt{\frac{4GM}{\mathrm{au}\,c^2}
+      \left(\frac{\mathrm{au}}{D_\ell} - \frac{\mathrm{au}}{D_s}\right)}
+    = 2.7\,\mathrm{mas}
+  \]
+  The angular resolution of modern large ($D \approx 10$\,m) optical
+  ($\lambda = 550$\,nm) telescopes is
+  $\theta_0 = 1.22\lambda/D \approx 14$\,mas. Thus,
+  $\theta_0 \gg \theta_{\mathrm{E}}$, so the images created during
+  microlensing events cannot be resolved by these telescopes.
+  \hfill(2 points)
+
+\item[(b)]
+  \begin{align*}
+    \theta_c &= \frac{\theta_+ A_+ + \theta_- A_-}{A_+ + A_-}
+    = \frac{\frac{1}{4}\left(u + \sqrt{u^2+4}\right)
+        \left(\frac{u^2+2}{u\sqrt{u^2+4}} + 1\right)
+      + \frac{1}{4}\left(u - \sqrt{u^2+4}\right)
+        \left(\frac{u^2+2}{u\sqrt{u^2+4}} - 1\right)}
+      {\frac{u^2+2}{u\sqrt{u^2+4}}}\,\theta_{\mathrm{E}}\\
+    &= \frac{\left(u + \sqrt{u^2+4}\right)
+        \left(u^2 + 2 + u\sqrt{u^2+4}\right)
+      + \left(u - \sqrt{u^2+4}\right)
+        \left(u^2 + 2 - u\sqrt{u^2+4}\right)}
+      {4(u^2+2)}\,\theta_{\mathrm{E}}\\
+    &= \frac{2u(u^2+2) + 2u(u^2+4)}{4(u^2+2)}\,\theta_{\mathrm{E}}
+    = \frac{2u(2u^2+6)}{4(u^2+2)}\,\theta_{\mathrm{E}}
+    = \frac{u(u^2+3)}{u^2+2}\,\theta_{\mathrm{E}}
+  \end{align*}
+  \hfill(8 points)
+
+\item[(c)]
+  \[
+    \Delta\theta = \theta_c - \theta
+    = \frac{u(u^2+3)}{u^2+2}\,\theta_{\mathrm{E}} - u\theta_{\mathrm{E}}
+    = \frac{u(u^2+3) - u(u^2+2)}{u^2+2}\,\theta_{\mathrm{E}}
+    = \frac{u}{u^2+2}\,\theta_{\mathrm{E}}
+  \]
+  \hfill(3 points)
+  \[
+    \Delta\theta(u = 0) = 0
+  \]
+  so there is no deflection when the lens and the source are nearly
+  perfectly aligned. \hfill(1 points)
+
+\item[(d)] Plots of the measured E and N positions against time.
+  \hfill(10 points, 5 points for each graph)
+  % FIGURE NEEDED: two scatter plots with error bars, Position E (mas) and
+  % Position N (mas) vs Time (HJD-2450000), from 2023 DA solutions page 48
+
+\item[(e)] I will use the fact that the first epoch of astrometric
+  observations was taken close to the peak of the light curve (that is,
+  $u_1 \approx 0$, that is, almost no astrometric deflection). Similarly,
+  astrometric deflection is close to zero for the last epoch. Thus,
+  \begin{align*}
+    \mu_E &\approx \frac{x_{E,8} - x_{E,1}}{t_8 - t_1}
+      = -2.247 \pm 0.029\,\mathrm{mas/yr}\\
+    \mu_N &\approx \frac{x_{N,8} - x_{N,1}}{t_8 - t_1}
+      = -3.674 \pm 0.038\,\mathrm{mas/yr}
+  \end{align*}
+  \hfill(8 points)
+
+  \emph{No points should be given if a student does not recognize that the
+  deflection is zero during the first epoch, e.g., they try fitting a
+  straight line to all data points.}
+
+\item[(f)] I fitted a straight line joining the first and last epoch data
+  and then subtracted it from astrometric measurements. This is because the
+  observed path of the source on the sky is the sum of two effects: the
+  rectilinear proper motion of the source and the astrometric deflection:
+  \begin{align*}
+    x(E) &= x_1^E + (t - t_1)\mu_{\mathrm{E}} + \Delta\theta(E)\\
+    x(N) &= x_1^N + (t - t_1)\mu_{\mathrm{N}} + \Delta\theta(N),
+  \end{align*}
+  where $x_1^E$ is the East position of the source during the first epoch,
+  $x_1^N$ is the North position of the source during the first epoch, $t_1$
+  is the time of the first observation, and $\Delta\theta(E)$ and
+  $\Delta\theta(N)$ is the astrometric deflection due to microlensing in
+  East and North direction, respectively.
+  % FIGURE NEEDED: Figure 7 -- E and N position vs time with blue lines
+  % joining first and last epoch data points (2023 DA solutions page 49)
+
+  Thus, the astrometric deflection during $i$th epoch is:
+  \begin{align*}
+    \Delta\theta(E)_i &= x_i^E - x_1^E - (t_i - t_1)\mu_{\mathrm{E}}\\
+    \Delta\theta(N)_i &= x_i^N - x_1^N - (t_i - t_1)\mu_{\mathrm{N}}
+  \end{align*}
+  and the total deflection is:
+  \[
+    \Delta\theta_i = \sqrt{\Delta\theta(E)_i^2 + \Delta\theta(N)_i^2}.
+  \]
+  I will also use the fact that $u_0 \approx 0$, so
+  $u = (t - t_0)/t_E$, where $t_0 = 2455763$ is the peak time. Results of
+  my calculations are shown in the table below.
+  % FIGURE NEEDED: Figure 8 -- deflection E and N vs time (not required of
+  % students); Figure 9 -- total astrometric deflection vs u, the plot
+  % students are asked to make (2023 DA solutions page 50)
+
+  \begin{center}
+  \begin{tabular}{rrrrr}
+  \hline\hline
+  Epoch & $u$ & $\Delta\theta$ (E,mas) & $\Delta\theta$ (N,mas)
+    & $\Delta\theta$ (mas)\\
+  \hline
+  1 & 0.01 & $0.00 \pm 0.13$ & $-0.00 \pm 0.16$ & $0.00 \pm 0.21$\\
+  2 & 0.42 & $0.36 \pm 0.12$ & $-0.84 \pm 0.24$ & $0.91 \pm 0.27$\\
+  3 & 1.69 & $0.43 \pm 0.14$ & $-1.50 \pm 0.08$ & $1.56 \pm 0.16$\\
+  4 & 1.75 & $0.95 \pm 0.36$ & $-1.40 \pm 0.77$ & $1.69 \pm 0.85$\\
+  5 & 2.69 & $0.47 \pm 0.21$ & $-1.58 \pm 0.12$ & $1.65 \pm 0.24$\\
+  6 & 3.34 & $0.44 \pm 0.07$ & $-0.90 \pm 0.40$ & $1.00 \pm 0.41$\\
+  7 & 4.83 & $0.21 \pm 0.25$ & $-0.47 \pm 0.29$ & $0.51 \pm 0.38$\\
+  8 & 9.04 & $0.00 \pm 0.12$ & $-0.00 \pm 0.17$ & $0.00 \pm 0.21$\\
+  \hline
+  \end{tabular}
+  \end{center}
+  \hfill(20 points)
+
+\item[(g)] We would like to fit the function
+  $\Delta\theta = \frac{u}{u^2+2}\theta_{\mathrm{E}}$ to the data. Thus, my
+  ``new'' independent variable would be $x' = u/(u^2+2)$. Now, I would like
+  to fit the function $y' = \theta_{\mathrm{E}} x'$, where
+  $y' = \Delta\theta$. Thus
+  \[
+    \theta_{\mathrm{E}}
+    = \frac{\sum y'_i x'_i/\sigma_i^2}{\sum x_i^{\prime 2}/\sigma_i^2}
+      \pm \frac{1}{\sqrt{\sum x_i^{\prime 2}/\sigma_i^2}}
+    = 4.5 \pm 0.4\,\mathrm{mas}
+  \]
+  % FIGURE NEEDED: deflection (mas) vs u/(u^2+2) with fitted straight line
+  % (2023 DA solutions page 51)
+
+  Alternative solution: The gravitational deflection is described by the
+  formula $\Delta\theta = \frac{u}{u^2+2}\theta_{\mathrm{E}}$. It can be
+  demonstrated that this function reaches a local maximum for
+  $u = \sqrt{2}$ with
+  $\Delta\theta_{\mathrm{max}} = \frac{\sqrt{2}}{4}\theta_{\mathrm{E}}
+  = 0.354\,\theta_{\mathrm{E}}$. From the data, we can estimate the maximum
+  deflection of $\Delta\theta_{\mathrm{max}} = 1.59 \pm 0.14$\,mas. Thus,
+  $\theta_{\mathrm{E}} = 4.5 \pm 0.4$\,mas. \hfill(16 points)
+
+\item[(h)] Let $\pi_{\mathrm{rel}} = \pi_l - \pi_s$ be the relative
+  lens--source parallax. From the definition of the angular Einstein radius
+  we have
+  \[
+    \theta_{\mathrm{E}}
+    = \sqrt{\frac{4GM}{c^2}\,\frac{D_s - D_l}{D_s D_l}}
+    = \sqrt{\frac{4GM}{c^2}\left(\frac{1}{D_l} - \frac{1}{D_s}\right)}
+    = \sqrt{\frac{4GM}{c^2\,\mathrm{au}}
+      \left(\frac{\mathrm{au}}{D_l} - \frac{\mathrm{au}}{D_s}\right)}
+    = \sqrt{\frac{4GM\pi_{\mathrm{rel}}}{c^2\,\mathrm{au}}}.
+  \]
+  From the definition of the microlensing parallax
+  $\pi_{\mathrm{rel}} = \pi_{\mathrm{E}}\theta_E$, so this equation
+  becomes:
+  \[
+    \theta_{\mathrm{E}}
+    = \sqrt{\frac{4GM\pi_{\mathrm{E}}\theta_{\mathrm{E}}}{c^2\,\mathrm{au}}},
+  \]
+  and hence
+  \[
+    M = \frac{\theta_{\mathrm{E}} c^2\,AU}{4G\pi_{\mathrm{E}}}
+    = 5.8 \pm 0.8\,M_\odot.
+  \]
+  The uncerainty% sic
+  {} on $M$ can be determined from the relation:
+  \[
+    \frac{\Delta M}{M}
+    = \sqrt{\left(\frac{\Delta\theta_E}{\theta_{\mathrm{E}}}\right)^2
+      + \left(\frac{\Delta\pi_{\mathrm{E}}}{\pi_{\mathrm{E}}}\right)^2}
+  \]
+  \hfill(7 points)
+\end{description}

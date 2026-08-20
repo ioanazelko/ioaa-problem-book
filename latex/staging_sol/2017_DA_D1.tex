@@ -1,0 +1,125 @@
+\begin{description}
+\item[(D1.1)] For Cepheid variable the PL relation is
+  \[ \log L = \beta\log P + C \]
+  and recall that $F = \dfrac{L}{4\pi d^2}$, so $\log L$ can be written in
+  term of absolute magnitude, $M_x$:
+  \[ \log L = \log F + 2\log d + \log 4\pi \]
+  and
+  \[ -\frac{m}{2.5} = \log F - \log F_0 \]
+  subtract the 2 equations, we get
+  \[ 2.5\log L = -m + 5\log d + C^{*} \]
+  And from definition of absolute magnitude,
+  \[ M = m + 5 - 5\log_{10} d_{\mathrm{pc}} \]
+  We therefore get the relation between $L$ vs.\ $M$,
+  \[ 2.5\log L = -M + C'' \]
+  Substitute in the PL relation, we get
+  \[ M = \beta'\log P + C' \quad\text{or via realising that }
+     (\log L \propto M) \]
+  where
+  \[ \beta' = -2.5\beta \]
+
+  Calculate distances and uncertainties from
+  \[ d_{\mathrm{pc}}(\mathrm{parsec}) \approx
+     \frac{1\,\mathrm{AU}}{\theta_{\mathrm{parallax}}(\mathrm{arcsec})},
+     \qquad
+     \Delta d_{\mathrm{pc}} = \frac{\Delta\theta}{\theta}\times
+     d_{\mathrm{pc}} \]
+  And then calculate absolute magnitude and its uncertainty using
+  \[ M_x = m_x - A_x + 5 - 5\log_{10} d_{\mathrm{pc}} \]
+  \[ \Delta M_x = \frac{5}{d_{\mathrm{pc}}\ln 10}\times
+     \Delta d_{\mathrm{pc}} \]
+  $\Delta M_K$ follows from realizing that $\Delta M_K = \Delta M_V$.
+
+  \begin{center}
+  \begin{tabular}{lrrrrrrr}
+    & $d_{\mathrm{pc}}$ & $\Delta d_{\mathrm{pc}}$ & $\log P$ &
+    $M_V$ & $\Delta M_V$ & $M_K$ & $\Delta M_K$ \\
+    \hline
+    RT Aur      & 416.6 & 32. & 0.572 & $-2.83$ & 0.17 & $-4.19$ & 0.17 \\
+    FF Aql      & 355.8 & 22. & 0.650 & $-3.02$ & 0.13 & $-4.37$ & 0.13 \\
+    X Sgr       & 333.3 & 20. & 0.846 & $-3.63$ & 0.13 & $-5.12$ & 0.13 \\
+    $\zeta$ Gem & 359.7 & 23. & 1.007 & $-3.92$ & 0.14 & $-5.69$ & 0.14 \\
+    l Car       & 497.5 & 49. & 1.551 & $-5.27$ & 0.21 & $-7.47$ & 0.21 \\
+  \end{tabular}
+  \end{center}
+
+  Plot graph $\log P$ vs absolute magnitudes for each band, with error bars,
+  and draw a straight line through the data points.
+  % FIGURE NEEDED: example hand-drawn V-band PL plot (M_V vs log P with
+  % error bars and best/extreme fit lines), 2017_DataAnalysis_Solution.pdf
+  % page 4
+  % FIGURE NEEDED: example hand-drawn K-band PL plot (M_K vs log P), showing
+  % slope = (-8-(-3.57))/(1.7-0.4) = -3.4 +/- 0.2,
+  % 2017_DataAnalysis_Solution.pdf page 5
+
+  V-band: slope $= -2.5 \pm 0.2$, with uncertainty between 0.1--0.3.
+
+  K-band: slope $= -3.4 \pm 0.2$, with estimated uncertainty between
+  0.1--0.3.
+
+\item[(D1.2)] Calculate the Wesenheit magnitude from the given $V$, $I$ and
+  $R_V$ values and then estimate the absolute magnitude for the Wesenheit
+  system $M_{W_{VI}}$:
+
+  \begin{center}
+  \begin{tabular}{lrr}
+    & $W_{VI}$ & $M_{W_{VI}}$ \\
+    \hline
+    RT Aur      & 3.78 & $-4.31$ \\
+    FF Aql      & 3.26 & $-4.49$ \\
+    X Sgr       & 2.36 & $-5.25$ \\
+    $\zeta$ Gem & 1.88 & $-5.89$ \\
+    l Car       & 0.85 & $-7.63$ \\
+  \end{tabular}
+  \end{center}
+
+  Realising that $\Delta M_{W_{VI}} = \Delta M_V = \Delta M_K$ (or by full
+  calculation). Plot $\log P$ vs $M_{W_{VI}}$ with error bars and draw an
+  appropriate straight line through the data.
+  % FIGURE NEEDED: example hand-drawn Wesenheit W_VI PL plot (M_WVI vs
+  % log P), 2017_DataAnalysis_Solution.pdf page 7
+
+  Estimated slope $= -3.4 \pm 0.2$, with estimated uncertainty of slope
+  between 0.1--0.3.
+
+\item[(D1.3)] Distance modulus in each band is given by
+  \[ \mu_x = m_x - M_x \]
+  And from previous section
+  \[ M_x = \beta'_x \log P + C'_x , \]
+  where we have estimated slope $\beta$ but not the intercept $C'_x$.
+
+  Therefore, to get the distance in parsec we will need to evaluate
+  \[ \mu = m_x - (\beta_x\log P + C'_x) = 5\log_{10} d_{\mathrm{pc}} - 5 \]
+  Using the best-estimate slope for each band and any point along the
+  best-fit line (or intercept) one can estimate $C'_x$:
+
+  V-band: $C'_V = -1.4$
+
+  $W_{VI}$ band: $C'_{W_{VI}} = -2.4$
+
+  \begin{center}
+  \begin{tabular}{lrrrrr}
+    Star & $\log P$ & $\mu_V$ & $\mu_{W_{VI}}$ &
+    \begin{tabular}{@{}c@{}}V distance\\(pc)\end{tabular} &
+    \begin{tabular}{@{}c@{}}$W_{VI}$ distance\\(pc)\end{tabular} \\
+    \hline
+    HV12199 & 0.42 & 18.53 & 18.39 & 50813 & 47596 \\
+    HV12203 & 0.47 & 18.50 & 18.40 & 50223 & 47805 \\
+    HV12816 & 0.96 & 18.10 & 18.46 & 41640 & 49221 \\
+    HV899   & 1.49 & 18.19 & 18.43 & 43549 & 48660 \\
+    HV2257  & 1.60 & 18.25 & 18.36 & 44620 & 47058 \\
+    \hline
+    & & & Mean & 46170 & 48068 \\
+    & & & STD. & 4116  & 865   \\
+  \end{tabular}
+  \end{center}
+
+  \begin{description}
+  \item[a)] Answer NO, the distances estimated from V and Wesenheit are not
+    statistically different (they are within one standard deviation of one
+    another).
+  \item[b)] Answer YES, standard deviation in the estimated distances from
+    the 2 bands are significantly different.
+  \item[c)] Wesenheit magnitude is better at estimating the distance to LMC.
+  \end{description}
+\end{description}

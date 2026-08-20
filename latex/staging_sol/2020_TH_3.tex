@@ -1,0 +1,109 @@
+\begin{description}
+\item[(a)] Let $t_1$ be the time taken by the light beam from the Solar
+  System to the mirror, let $t_2$ be the time taken by the beam from the
+  mirror to the Solar System and $T$ the total time to go back and forth.
+  As a first order approximation, we will take distance travelled by the
+  photon in each part as an average of the initial and final distance.
+  Therefore, equating the kinematics of the situation, we have:
+  \begin{align*}
+  S_1 &= \frac{D + De^{H_0 t_1}}{2}
+       = \frac{D\left(1 + e^{H_0 t_1}\right)}{2} = ct_1\\
+  S_2 &= \frac{S_1 + S_1 e^{H_0 t_2}}{2}
+       = \frac{S_1\left(1 + e^{H_0 t_2}\right)}{2} = ct_2
+  \end{align*}
+  \hfill(1.0)
+  \begin{align*}
+  &= \frac{D}{4}\left(1 + e^{H_0 t_1}\right)\left(1 + e^{H_0 t_2}\right)\\
+  &\approx \frac{D}{4}\left(2 + H_0 t_1\right)\left(2 + H_0 t_2\right)\\
+  &\approx \frac{D}{4}\left[4 + 2H_0\left(t_1 + t_2\right)\right]\\
+  S_2 &= D\left(1 + \frac{1}{2}H_0 T\right)
+  \end{align*}
+  \hfill(1.5)
+
+  From the first equation, we also find:
+  \begin{align*}
+  S_1 = ct_1 &= \frac{D\left(1 + e^{H_0 t_1}\right)}{2}\\
+  ct_1 &= D\left(1 + \frac{1}{2}H_0 t_1\right)\\
+  \therefore\ t_1 &= \frac{D}{c - \frac{1}{2}DH_0}\\
+  S_1 = ct_1 &= \frac{2Dc}{2c - DH_0}
+  \end{align*}
+  \hfill(1.5)
+  \[ \text{similarly, } S_2 = \frac{2S_1 c}{2c - S_1 H_0}. \]
+  \hfill(0.5)
+
+  Joining the expressions found, we obtain:
+  \begin{align*}
+  S_2 = D\left(1 + \frac{1}{2}H_0 T\right)
+    &= \frac{2S_1 c}{2c - S_1 H_0}\\
+  D\left(1 + \frac{1}{2}H_0 T\right)
+    &= \frac{\frac{4Dc^2}{2c - DH_0}}
+            {2c - \frac{2Dc}{2c - DH_0}\cdot H_0}\\
+  \left(1 + \frac{1}{2}H_0 T\right)
+    &= \frac{2c}{2c - DH_0 - DH_0} = \frac{c}{c - DH_0}\\
+  c &= \left(1 + \frac{1}{2}H_0 T\right)(c - DH_0)\\
+    &= c - DH_0 + \frac{1}{2}cH_0 T - \frac{1}{2}DH_0^2 T\\
+  0 &= \frac{H_0}{2}\left(cT - 2D - DH_0 T\right)\\
+  H_0 &= \frac{cT - 2D}{DT}.
+  \end{align*}
+  \hfill(2.5)
+
+  \textbf{Alternative solution}\\
+  First note that the time taken for the laser beam to travel to the mirror
+  and back again is equal to the time taken for the laser beam to travel a
+  distance of $2D$ (measured at $t = 0$) in a straight line. \hfill(2.0)\\
+  The co-moving distance the beam has to cover is the same in both
+  scenarios. We then equate the distance travelled by the light with the
+  amount by which the space has expanded in that time.
+
+  In time $t$, the space has expanded by a factor of $\exp(H_0 t)$, to
+  first order we can linearise this to $1 + H_0 t$. This means that the
+  beam, on average, travels through space that's stretched out by a factor
+  of $1 + H_0 T/2$. \hfill(2.5)\\
+  Thus,
+  \[ cT = 2D\left(1 + \frac{H_0 T}{2}\right) \]
+  and so
+  \[ H_0 = \frac{cT - 2D}{DT}. \]
+  \hfill(2.5)
+
+  \textbf{Better approximation (not required in the exam)}\\
+  In reality, the light does not travel a distance of $ct$ in this
+  expanding universe. To find the exact expression, consider a time
+  differential $\mathrm{d}t$ time $t$ after the beam was emitted. In this
+  small time interval, the beam travels a distance of $c\,\mathrm{d}t$.
+  Because the space is stretched out, the travelled distance corresponds to
+  a smaller segment of space at $t = 0$, smaller by a factor of
+  $\exp(H_0 t)$. The distance spanned at $t = 0$ is then
+  \[ \mathrm{d}r = \exp(-H_0 t)\,c\,\mathrm{d}t. \]
+  We integrate this from $t = 0$ to $t = T$:
+  \begin{align*}
+  \int_0^{2D}\mathrm{d}r &= c\int_0^{T}\exp(-H_0 t)\,\mathrm{d}t,\\
+  2D &= \frac{c}{H_0}\left(1 - \exp(-H_0 T)\right).
+  \end{align*}
+  The result so far is accurate within the constraints of the model, but
+  it's not analytically solvable for $H_0$. To get an estimate, we can
+  approximate the right hand side to
+  \[ 2D = \frac{c}{H_0}\left(1 - 1 + H_0 T - \frac{(H_0 T)^2}{2}\right)
+     = cT - \frac{cH_0 T^2}{2}. \]
+  Expressing $H_0$, we get
+  \[ H_0 = \frac{2}{cT^2}\left(cT - 2D\right). \]
+  The difference between this answer and the initial estimate is $2D/cT$
+  which is almost unitary.
+
+\item[(b)] From the $H_0$ expression found in the previous item, we find
+  the travel time
+  \begin{align*}
+  T &= \frac{2D}{c - DH_0}
+  \end{align*}
+  \hfill(1.0)
+  \begin{align*}
+  &= \left(\frac{c}{2D} - \frac{H_0}{2}\right)^{-1}
+   \approx \left(\frac{c}{2D}\right)^{-1} = \frac{2D}{c}
+  \end{align*}
+  \hfill(1.0)
+  \begin{align*}
+  T &= \frac{2\times 8\times 3.086\times 10^{16}}{3\times 10^{8}}\\
+    &= 1.65\times 10^{9}\,\mathrm{s}\\
+  T &\approx 52.2\,\mathrm{yr}.
+  \end{align*}
+  \hfill(1.0)
+\end{description}

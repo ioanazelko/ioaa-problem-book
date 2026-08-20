@@ -1,0 +1,71 @@
+\begin{description}
+\item[(T04.1)] For H$\alpha$ substituting in equation for $\kappa(\lambda)$,
+  we get
+  \[ \kappa(\mathrm{H}\alpha)
+     = 2.659\times\left(-1.857+\frac{1.040}{0.6563}\right) + 3.1 \]
+  \[ \boxed{\kappa(\mathrm{H}\alpha) = 2.4} \]
+  \hfill 1.5
+
+  Similarly, for H$\beta$ we have
+  \[ \kappa(\mathrm{H}\beta)
+     = 2.659\times\left(-2.156+\frac{1.509}{0.4861}
+       -\frac{0.198}{0.4861^2}+\frac{0.011}{0.4861^3}\right) + 3.1 \]
+  \[ \boxed{\kappa(\mathrm{H}\beta) = 3.6} \]
+  \hfill 1.5
+\item[(T04.2)]
+  \begin{align*}
+  E(\mathrm{H}\beta-\mathrm{H}\alpha)
+    &= A_{\mathrm{H}\beta} - A_{\mathrm{H}\alpha}
+    \tag*{2.0}\\
+    &= \left[\kappa(\mathrm{H}\beta)-\kappa(\mathrm{H}\alpha)\right]
+       E(B-V) = 1.270\,E(B-V)
+  \end{align*}
+  \[ \boxed{\frac{E(\mathrm{H}\beta-\mathrm{H}\alpha)}{E(B-V)} = 1.2} \]
+  \hfill 2.0
+\item[(T04.3)] If $f_{\lambda,\mathrm{obs}}$ and $f_{\lambda,\mathrm{em}}$
+  represent the observed and emitted fluxes at wavelength $\lambda$,
+  respectively, then the extinction is given by the equation
+  \[ A_\lambda = -2.5\log
+     \left(\frac{f_{\lambda,\mathrm{obs}}}{f_{\lambda,\mathrm{em}}}\right) \]
+  \hfill 1.0
+
+  Given, $\dfrac{f_{\mathrm{H}\alpha,\mathrm{em}}}
+    {f_{\mathrm{H}\beta,\mathrm{em}}} = 2.86$
+  \begin{align*}
+  E(\mathrm{H}\beta-\mathrm{H}\alpha)
+    &= A_{\mathrm{H}\beta} - A_{\mathrm{H}\alpha}\\
+    &= -2.5\log\left(
+       \frac{f_{\mathrm{H}\beta,\mathrm{obs}}}
+            {f_{\mathrm{H}\alpha,\mathrm{obs}}}\times
+       \frac{f_{\mathrm{H}\alpha,\mathrm{em}}}
+            {f_{\mathrm{H}\beta,\mathrm{em}}}\right)\\
+    &= -2.5\log\left(\frac{1.06\times10^{-15}}{6.80\times10^{-15}}
+       \times2.86\right)\\
+    &= 0.88
+    \tag*{1.5}
+  \end{align*}
+  From extinction curve, we have
+  $E(\mathrm{H}\beta-\mathrm{H}\alpha) = 1.2\,E(B-V)$.\\
+  Equating these two, we obtain
+  \[ E(B-V) = \frac{0.88}{1.2} = 0.73 \]
+  \hfill 0.5
+
+  This gives,
+  \[ A_{\mathrm{H}\alpha} = \kappa(\mathrm{H}\alpha)\,E(B-V)
+     = 2.4\times0.73 \]
+  \[ \boxed{A_{\mathrm{H}\alpha} = 1.8\,\mathrm{mag}} \]
+  \hfill 1.5
+  \[ A_{\mathrm{H}\beta} = \kappa(\mathrm{H}\beta)\,E(B-V)
+     = 3.6\times0.73 \]
+  \[ \boxed{A_{\mathrm{H}\beta} = 2.6\,\mathrm{mag}} \]
+  \hfill 1.5
+\item[(T04.4)]
+  \[ A_V = 3.1\times E(B-V) = 3.1\times0.69 \]
+  % sic: the source substitutes 0.69 here although E(B-V) = 0.73 was
+  % obtained above (full credit was given for E(B-V) between 0.69 and 0.73)
+  \[ \boxed{A_V = 2.3\,\mathrm{mag}} \]
+  \hfill 1.0
+  \[ m_{\mathrm{V0}} = m_V - A_V = 11.315 - 2.3 \]
+  \[ \boxed{m_{\mathrm{V0}} = 9.0\,\mathrm{mag}} \]
+  \hfill 1.0
+\end{description}

@@ -1,0 +1,67 @@
+\begin{description}
+\item[(6.1)] From Wien's law:
+\[ \lambda_{max} = \frac{2.898\times10^{-3}\ \mathrm{m\cdot K}}{T_{eff}\,(\mathrm{K})}
+   = \frac{2.898\times10^{-3}\ \mathrm{m\cdot K}}{4995\ \mathrm{K}} \]
+\[ \lambda_{max} = 5.8\times10^{-7}\ \mathrm{m} = 580.2\ \mathrm{nm} \]
+\hfill(2 points)
+
+\item[(6.2)] With the parallax doable % sic: source wording
+to find the distance from Earth:
+\[ d = \frac{1}{pllx\,(\mathrm{arcsec})} = \frac{1}{0.035\ \mathrm{arcsec}}
+     = 28.55\ \mathrm{pc} \]
+\hfill(1 point)
+\begin{align*}
+M_V &= m_v - 5\log(d\,[\mathrm{pc}]) + 5\\
+M_V &= 8.3 - 5\log(28.57) + 5 = 6.02
+  % sic: source uses 28.55 pc above but 28.57 here
+\end{align*}
+\hfill(1 point)
+
+\item[(6.3)] \hfill(2 points)\\
+% FIGURE NEEDED: the radial-velocity curve of HD 93083 (HARPS) with two
+% horizontal green lines marking the maximum (43.662 km/s) and minimum
+% (43.626 km/s) radial velocities (2021_T6_Solution.pdf, page 1).
+Each division on Y has 0.002~km\,s$^{-1}$, so the maximum radial velocity is
+$43.662$~km\,s$^{-1}$ and the minimus % sic: source misprint for "minimum"
+is $43.626$~km\,s$^{-1}$. Then, the mean radial velocity of Macondo is
+$v_r = 43.644$~km\,s$^{-1}$.
+
+\item[(6.4)] The tangential velocity of Macondo, from the plot, is its
+variation from the mean system velocity
+\[ v_s = 43.662\ \mathrm{km\,s^{-1}} - 43.644\ \mathrm{km\,s^{-1}}
+       = 0.018\ \mathrm{km\,s^{-1}} \]
+The masses of the star and the planet are known so it is only needed to find
+orbital velocity of Melquiades. But first it is important to convert the mass
+of the star to kg.
+\[ 0.7M_\odot \times \frac{1.989\times10^{30}\ \mathrm{kg}}{1M_\odot}
+   = 1.4\times10^{30}\ \mathrm{kg} \]
+\hfill(1 point)
+\[ v_p = \frac{m_s}{m_p}\times v_s
+       = \frac{1.4\times10^{30}\ \mathrm{kg}}{7\times10^{26}\ \mathrm{kg}}
+         \times 0.02\ \mathrm{km\cdot s^{-1}}
+       = 40\ \mathrm{km\cdot s^{-1}} \]
+\hfill(1 point)
+
+\item[(6.5)] As the motion of the planet is circular, the orbital period is:
+\[ T = \frac{2\pi}{v_p}\times a \]
+being $a$ the distance to the central star.
+
+With the 3$^{\mathrm{rd}}$ Kepler's law, the orbital period is
+$T^2 = \frac{4\pi^2}{Gm_s}\times a^3$.
+
+Then, combining both expressions of $T$ is possible to find $a$
+\begin{align*}
+\left(\frac{2\pi}{v_p}\times a\right)^{2} &= \frac{4\pi^2}{Gm_s}\times a^3\\
+\left(\frac{2\pi}{v_p}\right)^{2}\frac{Gm_s}{4\pi^2} &= a
+\end{align*}
+\[ a = 7.25\times10^{10}\ \mathrm{m} = 0.48\ \mathrm{au} \]
+\hfill(2 points)
+
+With the previous solution is able to find the orbital period:
+\[ T = \frac{2\pi}{v_p}\times a
+     = \frac{2\pi\times(7.21\times10^{10}\ \mathrm{m})}{36000\ \mathrm{m\cdot s^{-1}}}
+     % sic: source gives a = 7.25e10 m above but uses 7.21e10 m here,
+     % and v_p = 40 km/s above but 36000 m/s here
+     = 1.27\times10^{7}\ \mathrm{s} = 147\ days \]
+\hfill(2 points)
+\end{description}

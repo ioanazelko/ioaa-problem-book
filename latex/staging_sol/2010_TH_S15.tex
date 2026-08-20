@@ -1,0 +1,63 @@
+The semi-major axis of Moon's orbit is $a$; its eccentricity is $e$; $T$ is
+the revolution period; apparent radius of the Moon is $r$; the distance
+between Earth and Moon is $d$; the angular radius of the Sun is $R_\odot$.
+
+When the Moon is at perigee, the total eclipse will be longest.
+\[
+\omega_1 = v_1/d_1, \qquad t_1 = 2(r_1 - R)/\omega_1
+\]
+Here, $\omega$ is the angular velocity of the moon, and $v$ is its linear
+velocity; $t_2$ is the during time of total solar eclipse; $r_1$ is the
+angular radius of the Moon when it's at perigee.
+% sic: the source defines "t2" as the duration of the total eclipse although
+% the formula above uses t1.
+
+When the Moon is at apogee, the annular eclipse will be longest.
+\[
+\omega_2 = v_2/d_2, \qquad t_2 = 2(R - r_2)/\omega_2
+\]
+Since $v_2/v_1 = d_1/d_2 = (1-e)/(1+e)$, we get:
+\begin{equation}
+\frac{t_2}{t_1} = \frac{R-r_2}{r_1-R}\times\left(\frac{1+e}{1-e}\right)^2
+\tag{1}
+\end{equation}
+\hfill(3 points)
+
+Moon orbits the Earth in a ellipse. Its apparent size $r$ varies with time.
+When $r > R$, if there occurred an center eclipse, it must be total solar
+eclipse. Otherwise when $r \le R$, the center eclipse must be annular.
+
+We need to know that, in a whole moon period, what's the time fraction of
+$r > R$ and $r \le R$. $r \propto 1/d$. But it's not possible to get $d$ by
+solving the Kepler's equation. Since $e$ is a small value, it would be
+reasonable to assume that $d$ changes linearly with $t$. So, $r$ also changes
+linearly with $t$. Let the moment when the Moon is at perigee be the starting
+time ($t=0$), in half a period, we get:
+\[
+r = r_2 + kt = r_2 + \frac{2(r_1-r_2)}{T}\cdot t, \qquad 0 \le t < T/2
+\]
+Here, $k = 2(r_1-r_2)/T = \mathrm{constant}$.
+
+When $r = R$, we get a critical $t$:
+\begin{equation}
+t_R = \frac{R-r_2}{k} = \frac{(R-r_2)}{2(r_1-r_2)}\cdot T
+\tag{2}
+\end{equation}
+\hfill(2 points)
+
+During a Moon period, if $t \in (t_R, T-t_R)$, then $r > R$, and the central
+eclipses occurred are total solar eclipses. The time interval from $t_R$ to
+$T-t_R$ is $\Delta t_T = T - 2t_R$. If $t \in [0, t_R]$ \&\ $t \in [T-t_R, T]$,
+then $r \le R$, and the central eclipses occurred are annular eclipses. The
+time interval is $\Delta t_A = 2t_R$.
+\hfill(4 points)
+
+The probability of occurring central eclipse at any $t$ is the same. Thus the
+counts ratio of annular eclipse and total eclipse is:
+\[
+\frac{f_A}{f_T} = \frac{\Delta t_A}{\Delta t_T} = \frac{2t_R}{T-2t_R}
+ = \frac{R-r_2}{r_1-R}
+ = \left.\frac{t_2}{t_1}\right/\left(\frac{1+e}{1-e}\right)^2
+ \approx \frac{4}{3}
+\]
+\hfill(1 point)

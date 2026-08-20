@@ -1,0 +1,52 @@
+Assume the surface area of \emph{one side} of the flat Earth is $A$. Let the angle between
+the Sun and the flat Earth's center axis be $\theta$, where $\theta$ is initially $0^\circ$. As
+the Sun's rays are parallel, the power delivered to the Earth by the Sun will be
+$S_\odot A\cos\theta$ at any given point in time.
+
+At equilibrium, this is the energy radiated away via blackbody radiation, so the equilibrium
+temperature $T$ satisfies
+\[
+S_\odot A\cos\theta = \sigma(2A)T^4
+\]
+\hfill(2.0)
+
+\noindent, where the factor of 2 comes from the fact that the flat Earth would radiate energy
+from both sides.
+
+This yields
+\[
+T(\theta) = \sqrt[4]{\frac{S_\odot\cos\theta}{2\sigma}}
+\]
+and we wish to find the value of $\theta_1$ such that $T(\theta_1) = T(0) - \Delta T$.
+Thus,
+\begin{align*}
+\sqrt[4]{\frac{S_\odot\cos\theta_1}{2\sigma}} &= \sqrt[4]{\frac{S_\odot}{2\sigma}} - \Delta T
+  & &\hspace{-2em}(2.0)\\
+\cos\theta_1 &= \left(1 - \Delta T\sqrt[4]{\frac{2\sigma}{S_\odot}}\right)^4
+  & &\hspace{-2em}(1.0)\\
+ &= \left(1 - \sqrt[4]{\frac{2\times5.67\times10^{-8}}{1366}}\right)^4\\
+\cos\theta_1 &= 0.9880
+  & &\hspace{-2em}(1.0)
+\end{align*}
+
+Now, we find the time it takes for the axis to make such an angle with the Sun. On the
+celestial sphere, let O be the center of precession, Z be the current direction of the axis,
+and X be direction of the axis when it makes an angle of $\theta_1$ with the sun, so
+$\angle ZCX = \theta_1$. If $\epsilon$ is the radius of precession, then
+$\angle OCZ = \angle OCX = \epsilon$. \hfill(1.0)
+
+By the spherical Law of Cosines on angle O of spherical triangle OXZ, we have
+\begin{align*}
+\cos\theta_1 &= \cos\epsilon\cos\epsilon + \sin\epsilon\sin\epsilon\cos(\sphericalangle O)\\
+ &= \cos^2\epsilon + \sin^2\epsilon\cos(\sphericalangle O)\\
+\sphericalangle O &= \cos^{-1}\left(\frac{\cos\theta_1 - \cos^2\epsilon}{\sin^2\epsilon}\right)
+  & &\hspace{-2em}(1.0)\\
+\therefore \Delta t = \frac{\sphericalangle O}{2\pi}\times P
+ &= \frac{P}{2\pi}\times\cos^{-1}\left(\frac{\cos\theta_1 - \cos^2\epsilon}{\sin^2\epsilon}\right)
+  & &\hspace{-2em}(1.0)\\
+ &= \frac{25800}{2\pi}\times\cos^{-1}\left(\frac{0.9880 - \cos^2 23.5^\circ}{\sin^2 23.5^\circ}\right)\\
+ &\approx 1606\,\mathrm{yr}
+\end{align*}
+
+Thus, the average temperature of the earth will go down by $1\,^\circ\mathrm{C}$ in just over
+\textbf{1600 years}. \hfill(1.0)

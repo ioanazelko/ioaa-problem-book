@@ -1,0 +1,309 @@
+\begin{description}
+\item[(a)] The declination is simply the complement of the polar angle:
+  \begin{align*}
+    \delta &= 90^\circ - \theta\\
+    \therefore \delta_\odot &= 21^\circ 30' 15.9''\\
+    \delta_{\mathrm{Moon}} &= 21^\circ 12' 18.4''
+  \end{align*}
+  \hfill(1.0 + 1.0 + 1.0)
+
+\item[(b)] The local sidereal time at Greenwich corresponds by definition to
+  the meridian of right ascension that is right above Greenwich. Since
+  Greenwich corresponds to an azimuthal angle of $0^h$, the right ascension at
+  any given point corresponds simply to the sum of the local sidereal time at
+  Greenwich and the azimuthal angle:
+  \begin{align*}
+    \alpha &= \varphi + LST_{\mathrm{Greenwich}}\\
+    \therefore \alpha_\odot &= 4^h 21^m 7.3^s\\
+    \alpha_{\mathrm{Moon}} &= 4^h 21^m 12.6^s
+  \end{align*}
+  \hfill(1.0 + 1.0 + 1.0)
+
+\item[(c)] By subtracting the Cartesian coordinates of the Sun from the
+  Cartesian coordinates of the Moon, it is possible to obtain a vector for the
+  direction of the axis of the Moon's shadow cone:
+  \hfill(1.0)
+  \begin{align*}
+    \vec{u} &= \langle -1.339 \times 10^{11},\ 4.317 \times 10^{10},\
+                       -5.544 \times 10^{10} \rangle\ \mathrm{m}\\
+    |\vec{u}| &= 1.512 \times 10^{11}\ \mathrm{m}\\
+    \therefore \hat{u} &= \langle -0.8855,\ 0.2855,\ -0.3666 \rangle
+  \end{align*}
+  \hfill(1.0 + 1.0 + 1.0)
+
+\item[(d)] If one draws a vector in the same direction as $\hat{u}$ up to the
+  earth's surface, then its magnitude can be found by the formula, where
+  $\vec{M}$ is the position vector of the Moon, $k$ is a constant, and
+  $R_\oplus$ is the radius of the Earth:
+  \[
+    |\vec{M} + k\hat{u}|^2 = R_\oplus^2
+  \]
+  \hfill(5.0)
+
+  Solving for $k$:
+  \begin{align*}
+    0 &= k^2 (\hat{u} \cdot \hat{u}) + 2k(\hat{u} \cdot \vec{M})
+         + \vec{M} \cdot \vec{M} - R_\oplus^2\\
+      &= k^2 + 2k(\hat{u} \cdot \vec{M}) + |\vec{M}|^2 - R_\oplus^2
+  \end{align*}
+  Now, $|\vec{M}|^2 - R_\oplus^2 = 1.288 \times 10^{17}\ \mathrm{m}$ % sic: units given as m in the source
+  \begin{align*}
+    2(\hat{u} \cdot \vec{M}) &= -7.178 \times 10^{8}\ \mathrm{m}\\
+    \therefore 0 &= k^2 - k(7.178 \times 10^{8}) + (1.288 \times 10^{17})\\
+    k &= \frac{7.178 \pm \sqrt{(-7.178)^2 - 4 \times 12.88}}{2} \times 10^{8}
+  \end{align*}
+  The vector will intersect the earth's surface at two points. Hence two
+  solutions. However, only the first intersection with the sphere is relevant
+  in this case, so only the smallest solution to the equation should be
+  considered:
+  \begin{align*}
+    k &= \frac{7.178 - \sqrt{(-7.178)^2 - 4 \times 12.88}}{2} \times 10^{8}\\
+      &= 3.528 \times 10^{8}
+  \end{align*}
+  \hfill(4.0)
+
+  The vector of location of the greatest eclipse corresponds to the position
+  vector of the Moon plus $k$ times the direction vector $\hat{u}$:
+  \begin{align*}
+    \vec{p} &= \vec{M} + k\hat{u}\\
+      &= \langle 6.091 \times 10^{6},\ -1.828 \times 10^{6},\
+                 4.854 \times 10^{5} \rangle
+  \end{align*}
+  \hfill(2.0)
+
+  It is possible to use the following expressions to convert this vector to
+  the spherical system:
+  \begin{align*}
+    r &= \sqrt{x^2 + y^2 + z^2}\\
+      &= 6.378 \times 10^{6}\ \mathrm{m}\\
+    \theta &= \arctan\left(\frac{\sqrt{x^2 + y^2}}{z}\right)
+      \quad \text{(valid for } z > 0\text{)}\\
+      &= 1.495\ \mathrm{rad} = 85^\circ 38'\\
+    \varphi &= \arctan\left(\frac{y}{x}\right)
+      \quad \text{(valid for } x > 0\text{)}\\
+      &= -0.2915\ \mathrm{rad} = -16^\circ 42'
+  \end{align*}
+  \hfill(2.0)
+
+  The latitude corresponds to the complement of the angle $\theta$, and the
+  longitude corresponds to the angle $\varphi$:
+  \[
+    \boxed{4^\circ 22'\,\mathrm{N},\ 16^\circ 42'\,\mathrm{W}}
+  \]
+  \hfill(2.0)
+
+\item[(e)] The approximate geometry described in the problem statement is
+  shown below:
+
+% FIGURE NEEDED: cross-section of the shadow cone: Sun of radius R_Sun and
+% Moon of radius R_Moon with half-angle beta marked as 2*beta at both, the
+% umbra of radius 2 r_umbra at distance d_Moon - R_Earth beyond the Moon,
+% and the distance d_Sun - d_Moon between Sun and Moon;
+% 2024 theory solutions PDF, page 27 (part e).
+  \hfill(3.0)
+
+  The angle $\beta$ can be calculated as follows:
+  \begin{align*}
+    \beta &= \arccos\left(
+        \frac{R_\odot - R_{\mathrm{Moon}}}{d_\odot - d_{\mathrm{Moon}}}\right)\\
+      &= \arccos\left(
+        \frac{6.955 \times 10^{8} - 1.737 \times 10^{6}}
+             {1.516 \times 10^{11} - 3.589 \times 10^{8}}\right)\\
+      &= 89.74^\circ
+  \end{align*}
+  \hfill(3.0)
+
+  Using this angle, it is possible to determine the radius of the umbra:
+  \[
+    r_{\mathrm{umbra}} = \frac{R_{\mathrm{Moon}}
+      - (d_{\mathrm{Moon}} - R_\oplus)\cdot\cos(\beta)}{\sin(\beta)}
+  \]
+  \hfill(3.0)
+  \[
+    \boxed{r_{\mathrm{umbra}} = 1.196 \times 10^{5}\ \mathrm{m}}
+  \]
+  \hfill(1.0)
+
+\item[(f)] The rotational velocity of the Earth at the latitude of the center
+  of the umbra is the following:
+  \begin{align*}
+    v_{\mathrm{rot}} &= \frac{2\pi R_\oplus}{23^h 56^m 04^s}
+        \cos(\phi_{\mathrm{umbra}})\\
+      &= \frac{2\pi \times 6.378 \times 10^{6}}{23^h 56^m 04^s}
+        \cos(4^\circ 22')
+  \end{align*}
+  \hfill(2.0)
+  \[
+    \boxed{v_{\mathrm{rot}} = 463.7\ \mathrm{m/s}}
+  \]
+  \hfill(1.0)
+
+\item[(g)] Using the vis-viva equation:
+  \begin{align*}
+    v_{\mathrm{Moon}} &= \sqrt{GM_\oplus\left(\frac{2}{d_{\mathrm{Moon}}}
+        - \frac{1}{a_{\mathrm{Moon}}}\right)}\\
+      &= \sqrt{6.674 \times 10^{-11} \times 5.972 \times 10^{24}
+        \left(\frac{2}{3.589 \times 10^{8}}
+            - \frac{1}{3.844 \times 10^{8}}\right)}
+  \end{align*}
+  \hfill(2.0)
+  \[
+    \boxed{v_{\mathrm{Moon}} = 1088\ \mathrm{m/s}}
+  \]
+  \hfill(2.0)
+
+\item[(h)] It is possible to use the following diagram to determine the value
+  of the angle $\kappa$ between the $x$-axis and the velocity vector of the
+  Moon:
+
+% FIGURE NEEDED: spherical triangle on the celestial sphere with the Moon at
+% the top vertex, the celestial equator along the bottom through the vernal
+% point (gamma), the lunar orbit crossing the equator, sides delta_Moon and
+% alpha_Moon marked, the arc 24h - alpha_intersection, right angles at the
+% Moon's meridian, and the angle kappa at the Moon;
+% 2024 theory solutions PDF, page 29 (part h).
+  \hfill(6.0)
+
+  Note that the great circle that intersects the Moon's meridian of right
+  ascension at a right angle has a tangent line that coincides with the
+  $x$-axis, so the angle $\kappa$ on the figure is also the angle between the
+  velocity vector of the Moon and the $x$-axis. Also note that the Moon is
+  moving from west to east in the celestial sphere (to the left in the
+  figure), so its velocity vector is on the first quadrant of the $xy$-plane
+  on this system.
+
+  Using the four parts formula:
+  \begin{align*}
+    \cos(\delta_{\mathrm{Moon}})\cos(90^\circ)
+      &= \sin(\delta_{\mathrm{Moon}})
+         \cot(\alpha_{\mathrm{Moon}} + 24^h - \alpha_{\mathrm{intersection}})\\
+      &\quad - \sin(90^\circ)\cot(90^\circ - \kappa)
+  \end{align*}
+  \hfill(3.0)
+  \begin{align*}
+    \therefore 0 &= \sin(\delta_{\mathrm{Moon}})
+        \cot(\alpha_{\mathrm{Moon}} - \alpha_{\mathrm{intersection}})
+        - \tan(\kappa)\\
+    \tan(\kappa) &= \frac{\sin(\delta_{\mathrm{Moon}})}
+        {\tan(\alpha_{\mathrm{Moon}} - \alpha_{\mathrm{intersection}})}\\
+    \kappa &= \arctan\left[\frac{\sin(\delta_{\mathrm{Moon}})}
+        {\tan(\alpha_{\mathrm{Moon}} - \alpha_{\mathrm{intersection}})}\right]\\
+      &= \arctan\left[\frac{\sin(21^\circ 12' 18.4'')}
+        {\tan(4^h 21^m 12.6^s - 23^h 07^m 59.2^s)}\right]\\
+    \kappa &= 4^\circ 17'
+  \end{align*}
+  \hfill(2.0)
+
+  Now it is possible to break down the velocity of the Moon into the $x$ and
+  $y$ components:
+  \[
+    \mathbf{v}_{\mathrm{II}} =
+    \begin{bmatrix}
+      v_{\mathrm{Moon}}\cos(\kappa)\\
+      v_{\mathrm{Moon}}\sin(\kappa)\\
+      0
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+      1085\ \mathrm{m/s}\\
+      81.25\ \mathrm{m/s}\\
+      0
+    \end{bmatrix}
+  \]
+  \hfill(3.0)
+
+  The radial component of the velocity was neglected, so the velocity on the
+  $z$-axis is equal to zero.
+
+\item[(i)] It is possible to obtain system III by rotating system II from
+  north to south by an angle of
+  $\theta_{\mathrm{umbra}} - \theta_{\mathrm{Moon}}$ around the $x$-axis. The
+  angles $\theta_{\mathrm{umbra}}$ and $\theta_{\mathrm{Moon}}$ correspond to
+  the polar angles of the umbra and the Moon on system I.
+
+  The following two figures illustrate this rotation.
+
+% FIGURE NEEDED: two diagrams: (left) a circle (the Earth) with the System II
+% axes drawn at the Moon's polar angle theta_Moon and the System III axes at
+% theta_umbra; (right) the axes of Systems II and III sharing the x-axis, with
+% the y and z axes rotated by theta_umbra - theta_Moon;
+% 2024 theory solutions PDF, page 30 (part i).
+  \hfill(3.0)
+
+  Since the rotation is around the $x$-axis, the $x$ component remains
+  unchanged. The component that was originally in the $y$-axis is broken down
+  into two components on the $y$-axis and the $z$-axis of the new system,
+  which results in the following vector:
+  \[
+    \mathbf{v}_{\mathrm{III}} =
+    \begin{bmatrix}
+      v_{\mathrm{Moon}} \cdot \cos(\kappa)\\
+      v_{\mathrm{Moon}} \cdot \sin(\kappa) \cdot
+        \cos(\theta_{\mathrm{umbra}} - \theta_{\mathrm{Moon}})\\
+      -\,v_{\mathrm{Moon}} \cdot \sin(\kappa) \cdot
+        \sin(\theta_{\mathrm{umbra}} - \theta_{\mathrm{Moon}})
+    \end{bmatrix}
+  \]
+  \hfill(6.0)
+  \[
+    \mathbf{v}_{\mathrm{III}} =
+    \begin{bmatrix}
+      1085\ \mathrm{m/s}\\
+      77.76\ \mathrm{m/s}\\
+      -23.54\ \mathrm{m/s}
+    \end{bmatrix}
+  \]
+  \hfill(1.0)
+
+\item[(j)] The velocity of the umbra corresponds to the vector sum of the
+  component caused by the rotation of the Earth and the component caused by
+  the velocity of the Moon.
+
+  Note that all points on the axis of the Moon's shadow cone have the same
+  velocity, $\mathbf{v}_{\mathrm{III}}$ is also the velocity of the axis of
+  the Moon's shadow cone at the center of the umbra. Since the umbra moves
+  along the surface of the Earth, so the $z_{\mathrm{III}}$-component should
+  be set to zero.
+  \[
+    \mathbf{v}_{\mathrm{umbra}} =
+    \begin{bmatrix}
+      v_{\mathrm{III},x} - v_{\mathrm{rot}}\\
+      v_{\mathrm{III},y}\\
+      0
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+      1085 - 463.7\\
+      77.76\\
+      0
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+      621.4\ \mathrm{m/s}\\
+      77.59\ \mathrm{m/s}\\ % sic: 77.59 here, though the middle step and the modulus below use 77.76
+      0
+    \end{bmatrix}
+  \]
+  \hfill(4.0)
+
+  The modulus of this vector is the following:
+  \[
+    v_{\mathrm{umbra}} = |\mathbf{v}_{\mathrm{umbra}}|
+      = \sqrt{621.4^2 + 77.76^2} = 626.3\ \mathrm{m/s}
+  \]
+  \hfill(2.0)
+
+\item[(k)] Considering the assumptions listed at the beginning of part II, it
+  is possible to estimate the length of the totality by dividing the diameter
+  of the umbra by its speed:
+  \[
+    \Delta t_{\mathrm{totality}}
+      = \frac{2 \cdot r_{\mathrm{umbra}}}{v_{\mathrm{umbra}}}
+      = \frac{2 \times 1.196 \times 10^{5}}{626.3}
+  \]
+  \hfill(2.0)
+  \[
+    \boxed{\Delta t_{\mathrm{totality}} = 6\,\mathrm{min}\,21.4\,\mathrm{s}}
+  \]
+  \hfill(1.0)
+\end{description}

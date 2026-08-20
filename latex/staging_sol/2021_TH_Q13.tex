@@ -1,0 +1,37 @@
+\begin{description}
+\item[(13.1)] A single electron deposits energy in the CCD, as follows:
+\[ E_{\mathrm{deposited}}
+   = \text{stopping power} \times \rho_{\mathrm{si}} \times \text{thickness} \]
+\[ E_{deposited}
+   = 3.012\,\frac{MeV\,cm^2}{g} \times \frac{2.34\,g}{cm^3}
+     \times 0.06\,cm = 422.9~keV \]
+\hfill(4 points)
+
+Since an electron with 15\,MeV energy deposits 422.9\,keV, we must calculate
+the number of pairs electron/hole
+\[ 422.9\,keV \times \frac{1}{2.36\,eV}
+   = 1.79 \times 10^{5}\,\frac{e}{h} \]
+\hfill(4 points)
+
+How many pixels will be able to excite $1.79 \times 10^{5}$ pairs of e/h?
+\[ 1.79 \times 10^{5} \times \frac{1}{250} = 716~pixels \]
+\hfill(2 points)
+
+\item[(13.2)] The number of electrons entering the detector area is:
+\[ flux \,\times\, area \,\times\, t \]
+\hfill(1 point)
+\[ \frac{600\,e}{cm^2\,s} \times [1.3 \times 1.3]\,cm^2 \times 0.03\,s
+   = 30\,e^{-} \]
+\hfill(1 point)
+
+$\sim$30 electrons enter the detector area, and we know that one electron
+excites 716 pixels, the total number of excited pixels is:
+\[ 716\,\frac{pixels}{electron} \times 30.42~electrons
+   = 2.18 \times 10^{4}\,pixels \]
+\hfill(1 point)
+
+If the CCD has a total of $1024 \times 1024$ pixels
+$= 1.048 \times 10^{6}\,pixels$ then the total percentage of pixels that
+will be driven in a single image is $\sim 2.08\%$. \hfill(2 points)
+% sic: "driven" (presumably "excited") as printed in the source.
+\end{description}

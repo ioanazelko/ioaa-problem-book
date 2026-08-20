@@ -1,0 +1,74 @@
+As an exercise of image processing, this problem involves use of a simple
+calculator and tabular data (table 1.1) which contains the pixel values of an
+image during the given exposure time. This image, which is a part of a larger
+CCD image, was taken by a small CCD camera, installed on an amateur telescope
+and using a $V$ band filter. Figure 1.1 shows this $50 \times 50$ pixels
+image that contains 5 stars.
+
+\ioaafig{2009_DA_D1-f1.pdf}
+
+% TABLE ABRIDGED — table 1.1 (50x50 grid of pixel values) in crop edition
+
+In table 1.1 the first row and column indicates the pixels' x and y
+coordinates. Table 1.2 gives the telescope and the image specifications.
+
+\begin{center}
+Table 1.2\\[2pt]
+\begin{tabular}{|l|c|}
+\hline
+Telescope focal length & $1.20$\,m \\
+\hline
+CCD pixel size & $25 \times 25\,\mu$m \\
+\hline
+Exposure time & $450$\,s \\
+\hline
+Telescope zenith angle & $25^\circ$ \\
+\hline
+Average extinction coefficient in $V$ band & 0.3\,mag/airmass \\
+\hline
+\end{tabular}
+\end{center}
+
+The observer identified stars 1, 3 and 4 by comparing this image with
+standard star catalogues. Table 1.3 shows stars true magnitudes ($m_t$) as
+given in the catalogue.
+
+\begin{center}
+Table 1.3\\[2pt]
+\begin{tabular}{|c|c|}
+\hline
+Star & $m_t$ \\
+\hline
+1 & 9.03 \\
+\hline
+3 & 6.22 \\
+\hline
+4 & 8.02 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{description}
+\item[(a)] Using the available data, determine the instrumental magnitudes
+  of the stars in the image. Assume the dark current is negligible and the
+  image is flat fielded. For simplicity you can use a square aperture.
+
+  Hint: The instrumental magnitude is calculated using the difference
+  between the measured flux from the star in the aperture and the flux from
+  an equivalent area of dark sky.
+\item[(b)] The instrumental magnitude of a star in a CCD image is related to
+  true magnitude as
+  \[ m_I = m_t + KX - Zmag \]
+  where $K$ is extinction, $X$ is airmass, $m_I$ and $m_t$ are respectively
+  instrumental and true magnitude of star and $Zmag$ is zero point constant.
+  Calculate the zero point constant ($Zmag$) for identified stars. Calculate
+  average zero point constant ($\overline{Zmag}$).
+
+  Hint: Zero point constant is the constant reducing extinction-free
+  magnitudes to the true magnitude.
+\item[(c)] Calculate true magnitudes of stars 2 and 5.
+\item[(d)] Calculate CCD pixel scale for the CCD camera in units of arcsec.
+\item[(e)] Calculate average brightness of dark sky in magnitude per square
+  arcsec ($m_{sky}$).
+\item[(f)] Use a suitable plot to estimate astronomical seeing in arcsec.
+\end{description}

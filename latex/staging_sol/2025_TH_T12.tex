@@ -1,0 +1,333 @@
+\begin{description}
+\item[(T12.1a)] Total energy of any particle is
+  $E = E_{\mathrm{grav}} + mc^2$, so we have
+  \[
+    E_1 = -\frac{G M_{\mathrm{bh}} m}{R_{\mathrm{SC}}} + mc^2, \qquad
+    E_2 = -\frac{G M_{\mathrm{bh}} m}{\kappa R_{\mathrm{SC}}} + mc^2.
+  \]
+  \hfill(1.0)
+
+  We require $E_1 + E_2 = 0$. Hence,
+  \[
+    2mc^2 - \frac{G M_{\mathrm{bh}} m}{R_{\mathrm{SC}}}
+    \left(1 + \frac{1}{\kappa}\right) = 0
+  \]
+  \hfill(1.0)
+
+  Then
+  \[
+    \frac{1}{\kappa} = \frac{2 c^2 R_{\mathrm{SC}}}{G M_{\mathrm{bh}}} - 1 = 3
+  \]
+  where we have used
+  $R_{\mathrm{SC}} = \dfrac{2 G M_{\mathrm{bh}}}{c^2}$. \hfill(1.0)
+
+  This gives
+  \[
+    \kappa = \frac{1}{3}.
+  \]
+  \hfill(1.0)
+
+\item[(T12.1b)] Using Wien's law,
+  $\lambda_{\mathrm{bb}} = b/T_{\mathrm{bh}}$ where
+  $b = 2.898 \times 10^{-3}$\,m\,K. \hfill(1.0)
+
+  Hence,
+  \[
+    T_{\mathrm{bh}} = \frac{b}{16 R_{\mathrm{SC}}}
+    \implies T_{\mathrm{bh}} = \frac{b c^2}{32 G M_{\mathrm{bh}}}
+  \]
+  \hfill(1.0)
+
+  Since $R_{\mathrm{SC}}$ for a solar mass black hole is 2.952\,km, for a
+  black hole with mass $= 10\,M_\odot$, we get
+  $R_{\mathrm{SC,\,10\odot}} \simeq 29.52$\,km. \hfill(1.0)
+
+  The temperature of this BH will be
+  \[
+    T_{\mathrm{bh,\,10\odot}}
+    = \frac{2.898 \times 10^{-3}\,\mathrm{m\,K}}{16 \times
+      R_{\mathrm{SC,\,10\odot}}}
+  \]
+  \[
+    T_{\mathrm{bh,\,10\odot}} = 6.1 \times 10^{-9}\,\mathrm{K}.
+  \]
+  \hfill(1.0)
+
+\item[(T12.1c)] Power emitted by an evaporating black hole
+  $= \sigma T_{\mathrm{bh}}^4 4\pi R_{\mathrm{SC}}^2$. \hfill(1.0)
+
+  This gives
+  \[
+    \frac{dM_{\mathrm{bh}}}{dt}
+    = -\frac{1}{c^2}\sigma T_{\mathrm{bh}}^4 4\pi R_{\mathrm{SC}}^2.
+  \]
+  \hfill(1.0)
+
+  With $T_{\mathrm{bh}} = b/(16 R_{\mathrm{SC}})$,
+  \[
+    \frac{dM_{\mathrm{bh}}}{dt}
+    = -\frac{\pi b^4 \sigma c^2}{16^4 G^2}\,\frac{1}{M_{\mathrm{bh}}^2}
+  \]
+  \hfill(1.0)
+
+  This gives
+  $\dfrac{dM_{\mathrm{bh}}}{M_{\mathrm{bh}}^{2}}
+  = -\dfrac{\pi b^4 \sigma c^2}{16^4 G^2}\,dt$,
+  % sic: source writes dM_bh/M_bh^2, though the integral that follows is of
+  % M_bh^2 dM_bh
+  and hence
+  $\dfrac{M_{\mathrm{bh}}^3}{3}
+  = -\dfrac{\pi b^4 \sigma c^2}{16^4 G^2}\,t + C$. \hfill(1.0)
+  Since $M_{\mathrm{bh}} = M_0$ at $t = 0$, we get
+  \[
+    M_{\mathrm{bh}}^3 = M_0^3 - 3\frac{\pi b^4 \sigma c^2}{16^4 G^2} t
+  \]
+  \hfill(0.5)
+  \[
+    M_{\mathrm{bh}}(t)
+    = \left(M_0^3 - 3\frac{\pi b^4 \sigma c^2}{16^4 G^2} t\right)^{1/3}
+  \]
+  \hfill(1.0)
+
+  The sketch of $M_{\mathrm{bh}}(t)$ is a convex curve starting at $M_0$ on
+  the $M_{\mathrm{bh}}(t)$-axis, with negative initial slope and large
+  negative final slope, reaching zero at
+  $t = \dfrac{16^4 G^2 M_0^3}{3\pi b^4 \sigma c^2}$. \hfill(2.5)
+  % FIGURE NEEDED: answer sketch of M_bh(t) vs t, convex decreasing from
+  % (0, M_0) to (16^4 G^2 M_0^3 / (3 pi b^4 sigma c^2), 0)
+  % (2025 theory solutions, page 54 of 59)
+
+\item[(T12.1d)] We know that
+  $M(t) = \left(M_0^3 - 3\dfrac{\pi b^4 \sigma c^2}{16^4 G^2}
+  t\right)^{1/3}$.
+
+  Clearly, $M(t) = 0$ when
+  $t = \dfrac{M_0^3}{3}\,\dfrac{16^4 G^2}{\pi b^4 \sigma c^2}$. Thus,
+  \[
+    \tau_{\mathrm{bh}} = \frac{M_0^3}{3}\,
+      \frac{16^4 G^2}{\pi b^4 \sigma c^2}
+  \]
+  \hfill(1.0)
+
+  With $A \equiv \dfrac{\pi b^4 \sigma c^2}{16^4 G^2}
+  \simeq 3.868 \times 10^{15}\,\mathrm{kg^3\,s^{-1}}$, this gives \hfill(0.5)
+  \[
+    \tau_{\mathrm{bh}} \approx \frac{M_0^3}{3A}
+    = 8.617 \times 10^{-17} \left(\frac{M_0}{\mathrm{kg}}\right)^3
+    \mathrm{s}.
+  \]
+  \hfill(0.5)
+
+  For $M_0 = 10\,\mathrm{M_\odot}$,
+  \[
+    \tau_{\mathrm{bh,\,10\odot}} \approx 6.8 \times 10^{77}\,\mathrm{s}
+  \]
+  \hfill(1.0)
+
+\item[(T12.1e)] As the CMB will redshift away eventually, there will be no
+  CMB radiation for the BH to absorb at large $t$. It will only decrease in
+  mass and increase in temperature. So only the figures which show the
+  temperature of the black hole increasing eventually ($t \to \infty$) are
+  relevant. The derivatives at the origin (now) should distinguish the three
+  cases.
+  \begin{description}
+  \item[(X)] If $T_{\mathrm{bh}}^{\mathrm{now}} >
+    T_{\mathrm{cmb}}^{\mathrm{now}}$, then the BH is losing more energy now
+    than it is gaining by CMB absorption, and its temperature should increase
+    due to decreasing mass. $(dT/dt)_{\mathrm{now}} > 0$.
+  \item[(Y)] If $T_{\mathrm{bh}}^{\mathrm{now}} =
+    T_{\mathrm{cmb}}^{\mathrm{now}}$, the temperature will be in equilibrium
+    for some time, i.e.\ $(dT/dt)_{\mathrm{now}} = 0$, before the CMB
+    temperature redshifts to smaller values and $(dT/dt)_{\infty} > 0$.
+  \item[(Z)] For $T_{\mathrm{bh}}^{\mathrm{now}} <
+    T_{\mathrm{cmb}}^{\mathrm{now}}$, initially the BH will gain mass (and
+    hence cool down) by absorbing from CMBR compared to what it loses by
+    evaporation. So $(dT/dt)_{\mathrm{now}} < 0$. But eventually,
+    $(dT/dt)_{\infty} > 0$.
+  \end{description}
+  Therefore: X $\to$ III, \quad Y $\to$ II, \quad Z $\to$ VI. \hfill(6.0)
+
+\item[(T12.2a)] We want
+  $\tau_{\mathrm{PBH}} = 14 \times 10^{9} \times 3.156 \times 10^{7}\,\mathrm{s}
+  = 4.418 \times 10^{17}$\,s. \hfill(1.0)
+
+  But we have found in (T12.1d) that
+  $\tau_{\mathrm{bh}} = 8.617 \times 10^{-17}
+  \left(\dfrac{M_0}{\mathrm{kg}}\right)^3$\,s. This gives
+  \[
+    M_{0,\mathrm{PBH}}^3
+    = \left(\frac{\tau_{\mathrm{PBH}}}{8.617 \times 10^{-17}}\right)
+      \mathrm{kg}^3
+    \Rightarrow M_{0,\mathrm{PBH}} \simeq 1.7 \times 10^{11}\,\mathrm{kg}
+  \]
+  \hfill(1.0)
+
+  Since $R_{\mathrm{SC}} \propto M_{\mathrm{bh}}$, and we know
+  $R_{\mathrm{SC,\odot}} = 2952$\,m,
+  \[
+    R_{\mathrm{SC,\,PBH}} \simeq R_{\mathrm{SC,\odot}}
+    \left(\frac{M_{0,\mathrm{PBH}}}{M_\odot}\right)
+    \Rightarrow R_{\mathrm{SC,\,PBH}} = 2.6 \times 10^{-16}\,\mathrm{m}
+  \]
+  \hfill(1.0)
+
+  Since $T_{\mathrm{bh}} \propto 1/M_{\mathrm{bh}}$ and we know
+  $T_{\mathrm{bh,\,10\odot}}$ from (T12.1b),
+  \[
+    T_{\mathrm{PBH}} \simeq T_{\mathrm{bh,\,10\odot}}
+    \left(\frac{10 M_\odot}{M_{0,\mathrm{PBH}}}\right)
+    \Rightarrow T_{\mathrm{PBH}} = 7.1 \times 10^{11}\,\mathrm{K}
+  \]
+  \hfill(1.0)
+
+\item[(T12.2b)] The size of horizon $r_{\mathrm{H}} = ct$. So the total mass
+  contained within the horizon volume is
+  \[
+    M = \frac{1}{c^2}\rho \left(\frac{4\pi}{3}\right)
+      \left(\frac{ct}{2}\right)^3.
+  \]
+  \hfill(2.0)
+
+  With $a(t) \sim t^{1/2}$ and $a(t) \sim 1/T$, one gets
+  $t \sim T^{-2}$. \hfill(2.0)
+
+  With $\rho \sim T^4 \sim t^{-2}$, the mass of PBH formed at time $t$ would
+  be
+  \[
+    M_{0,\mathrm{PBH}} \propto t.
+  \]
+  \hfill(1.0)
+
+  The age of the Universe at which PBH of $10^{12}$\,kg forms is
+  $t_{12} = 10^{-23}$\,s. Hence,
+  \[
+    t_{20} = t_{12} \times
+    \left(\frac{10^{20}\,\mathrm{kg}}{10^{12}\,\mathrm{kg}}\right)
+    \Rightarrow t_{20} = t_{12} \times 10^{8} = 10^{-15}\,\mathrm{s}
+  \]
+  \hfill(1.0)
+
+\item[(T12.2c)] Lifetime of the PBH with
+  $M_{0,\mathrm{PBH}} = 10^{10}$\,kg will be
+  \[
+    \tau_{\mathrm{PBH}} = 8.617 \times 10^{-17} \cdot (10^{10})^3\,\mathrm{s}
+    = 8.617 \times 10^{13}\,\mathrm{s}.
+  \]
+  \hfill(0.5)
+
+  As given in (T12.1b), $R_{\mathrm{SC,\odot}} = 2952$\,m. Using
+  $R_{\mathrm{SC}} \propto M$, we get the peak wavelength of radiation
+  emitted by this $10^{10}$\,kg PBH, at the time of emission, as
+  \[
+    \lambda_0 \simeq 16 R_{\mathrm{SC}}
+    = 16 \cdot \frac{10^{10}\,\mathrm{kg}}{M_\odot} \cdot
+      R_{\mathrm{SC,\odot}}
+    = 2.4 \times 10^{-16}\,\mathrm{m}.
+  \]
+  \hfill(1.5)
+
+  Redshifted wavelength received at earth at present time $t_0$ is obtained
+  from
+  \[
+    \lambda_{\mathrm{earth}}
+    = \lambda_0 \frac{a(t_0)}{a(\tau_{\mathrm{PBH}})}.
+  \]
+  \hfill(1.0)
+
+  With $a(t) \sim t^{2/3}$, we get
+  \[
+    \lambda_{\mathrm{earth}}
+    = \lambda_0 \left(\frac{t_{\mathrm{now}}}{\tau_{\mathrm{PBH}}}\right)^{2/3}
+    = 2.4 \times 10^{-16}\,\mathrm{m}
+      \left(\frac{4.418 \times 10^{17}\,\mathrm{s}}
+        {8.617 \times 10^{13}\,\mathrm{s}}\right)^{2/3}
+  \]
+  \hfill(1.0)
+  \[
+    \lambda_{\mathrm{earth}} = 7.1 \times 10^{-14}\,\mathrm{m}
+  \]
+  \hfill(1.0)
+
+\item[(T12.2d)] Using the expression for $T_{\mathrm{bh}}$ found in
+  (T12.1b), the energy of a typical photon emitted at time $t$ for a PBH is
+  \[
+    E_{\mathrm{emitted}}(t) = k_{\mathrm{B}} T_{\mathrm{bh}}(t)
+    = \frac{b c^2 k_{\mathrm{B}}}{32 G M_{\mathrm{bh}}(t)}.
+  \]
+  \hfill(1.0)
+
+  From (T12.1c), we know
+  \[
+    M_0^3 = 3\frac{\pi b^4 \sigma c^2}{16^4 G^2} t + M_{\mathrm{bh}}(t)^3
+    = 3At + \left(\frac{b c^2 k_{\mathrm{B}}}
+      {32 G E_{\mathrm{emitted}}(t)}\right)^3.
+  \]
+  \hfill(1.0)
+
+  The value of $E_{\mathrm{det}}$ can be different from
+  $E_{\mathrm{emitted}}$ due to redshift. Hence, the smallest possible value
+  of $E_{\mathrm{emitted}}(t)$ is
+  $E_{\mathrm{det}} = 3.0 \times 10^{20}$\,eV. This gives the maximum value
+  of the second term as
+  \[
+    \left(\frac{b c^2 k_{\mathrm{B}}}
+      {32 G E_{\mathrm{emitted}}(t)}\right)^3_{\mathrm{max}}
+    = 4.3 \times 10^{-5}\,\mathrm{kg}^3.
+  \]
+  \hfill(1.0)
+
+  Given the value of $A = 3.868 \times 10^{15}\,\mathrm{kg^3\,s^{-1}}$, the
+  second term can always be neglected for $t \gtrsim 10^{-19}$\,s. This is
+  true in this problem. So $M_0 \approx (3At)^{1/3}$. \hfill(1.0)
+
+  \textbf{The largest possible} $M_0$ would be obtained when $t$ is as large
+  as possible, i.e., $t = t_{\mathrm{now}}$. This will correspond to a BH
+  radiating in its last stages at present in the nearby region. \hfill(1.0)
+
+  Then
+  \[
+    M_0^{\mathrm{max}} = (3At_{\mathrm{now}})^{1/3}
+    = (5.13 \times 10^{33}\,\mathrm{kg^3})^{1/3}.
+  \]
+  \hfill(0.5)
+
+  Thus,
+  \[
+    M_0^{\mathrm{max}} = 1.7 \times 10^{11}\,\mathrm{kg}.
+  \]
+  \hfill(0.5)
+
+  Note that this was already found in (T12.2a), so the calculation above is
+  not needed.
+
+  \textbf{The smallest} $M_0$ will correspond to a BH that has evaporated as
+  early as possible. Such a BH would have evaporated far away from Earth,
+  and its radiation would be redshifted.
+
+  The smallest time of evaporation would correspond to the largest redshift
+  factor, and hence the largest $E_{\mathrm{emitted}}(t)$, which is
+  $E_{\mathrm{emitted}}(t) = k_{\mathrm{B}} T_{\mathrm{Planck}}$.
+  \hfill(1.0)
+
+  The ratio of the scale factors at the time of the above PBH evaporation
+  and now is
+  \[
+    \frac{a(t)}{a(t_{\mathrm{now}})}
+    = \frac{E_{\mathrm{det}}}{k_{\mathrm{B}} T_{\mathrm{Planck}}}
+    = \frac{3.0 \times 10^{20}\,\mathrm{eV}}{10^{19}\,\mathrm{GeV}}
+    = 3.0 \times 10^{-8}
+  \]
+  With $a(t_{\mathrm{now}}) = 1.0$, we have
+  $a(t) = 3.0 \times 10^{-8}$. \hfill(1.0)
+
+  Using the plot of $a(t)$ vs $t$ from the figure, $t \simeq 10^{4}$\,s.
+  Note that for this $t$, the second term in the original $M_0^3$ expression
+  is still negligible. \hfill(1.0)
+
+  Therefore,
+  \[
+    M_0^{\mathrm{min}} \approx (3At)^{1/3}
+    \approx 4.9 \times 10^{6}\,\mathrm{kg}.
+  \]
+  \hfill(1.0)
+\end{description}

@@ -1,0 +1,80 @@
+\begin{description}
+\item[a.] Chip size:
+\begin{align*}
+(9 \times 765)\ \mu\mathrm{m} \times (9 \times 510)\ \mu\mathrm{m}
+&= 6885\ \mu\mathrm{m} \times 4590\ \mu\mathrm{m}\\
+&\approx 6.9\ \mathrm{mm} \times 4.6\ \mathrm{mm}
+\end{align*}
+\hfill(10\%)
+
+For Zeiss telescope: $FL = 10780$\,mm
+\[
+\text{Pixel size (arc sec)}
+ = 206265 \times \text{pixel size}\ (\mu\mathrm{m})
+   /(1000 \times \text{focal length (mm)})''
+\]
+\hfill(10\%)
+\[
+ = 206265 \times 9/(1000 \times 10780) = 0.1722''
+\]
+\hfill(10\%)
+\begin{align*}
+\text{FOV CCD chip} &= (765 \times 510) \times 0.1722
+  = 131.7330'' \times 87.8220''\\
+&= 2.1956' \times 1.4637'
+\end{align*}
+\hfill(10\%)
+
+For $\mu$ Sco 1: $\alpha_1 = 20^{\mathrm{h}}\,17^{\mathrm{m}}\,38^{\mathrm{s}}.90
+  = 20.2941^{\mathrm{h}} = 304.4121^\circ$,\quad
+$\delta_1 = -12^\circ\,30'\,30'' = -12.5083^\circ$
+
+For $\mu$ Sco 2: $\alpha_2 = 20^{\mathrm{h}}\,18^{\mathrm{m}}\,03^{\mathrm{s}}.30
+  = 20.3009^{\mathrm{h}} = 304.5138^\circ$,\quad
+$\delta_2 = -12^\circ\,32'\,41'' = -12.5447^\circ$
+
+Let the angular separation between the stars be $\gamma$.
+Use spherical trigonometry:
+\[
+\cos\gamma = \cos(90^\circ - \delta_1)\cos(90^\circ - \delta_2)
+ + \sin(90^\circ - \delta_1)\sin(90^\circ - \delta_2)\cos(\alpha_2 - \alpha_1)
+\]
+\hfill(10\%)
+\begin{align*}
+\cos\gamma &= \cos(90^\circ - (-12^\circ.5083))\cos(90^\circ - (-12^\circ.5447))\\
+&\quad + \sin(90^\circ - (-12^\circ.5083))\sin(90^\circ - (-12^\circ.5447))
+   \cos(304.5138^\circ - 304.4121^\circ)\\
+\cos\gamma &= \cos(102.5083^\circ)\cos(102.5447^\circ)\\
+&\quad + \sin(102.5083^\circ)\sin(102.5447^\circ)\cos(0.1017^\circ)
+ = 0.999998298
+\end{align*}
+\hfill(10\%)
+\[
+\gamma = 0.1057^\circ = 6.3424'
+\]
+% FIGURE NEEDED: spherical triangle with pole P at top, stars S1 and S2 below;
+% sides 90 deg - delta_1 and 90 deg - delta_2 from P, angle alpha_1 - alpha_2
+% at P, side gamma between S1 and S2 (2008_th_sol.pdf p. 18).
+
+NO, because $\gamma > \sqrt{2.1956^2 + 1.4637^2}$ (diagonal of FOV Chip).
+\hfill(10\%)
+
+\item[b.] Position angle ($S_1$):
+\[
+\frac{\sin(\alpha_2 - \alpha_1)}{\sin\gamma}
+ = \frac{\sin S_1}{\sin(90^0 - \delta_2)}
+\]
+\[
+\sin S_1 = \frac{\sin(0^\circ 6'\,6'')\,\sin(102^\circ 32'41'')}{\sin(6'.1020)}
+ = 0.9388
+% sic: the printed denominator is sin(6'.1020); numerically the quoted result
+% 0.9388 corresponds to dividing by sin(gamma) = sin(6'.3424).
+\]
+\[
+S_1 = 69.8535^\circ \text{ or } 110.1466^\circ
+\]
+\hfill(20\%)
+
+From the figure above, we found that the correct position angle is
+$110.15^\circ$ ($\pm 6^\circ$ is full mark). \hfill(10\%)
+\end{description}

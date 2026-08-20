@@ -1,0 +1,193 @@
+\begin{description}
+\item[(a)] By comparing with spectral charts in appendix 3, we notice that
+  \begin{itemize}
+  \item H-lines are the most promienent % sic
+    lines,
+  \item He I feature at 4144\,\AA\ is bearly % sic
+    visible and
+  \item Ca I feature around 4230\,\AA\ is not seen.
+  \end{itemize}
+  Thus, it may be reasonable to restrict the range of spectral types to
+  B5--A5. \hfill(2.0)
+
+  We find that the ratio of the intensity of a pair of lines and compare it
+  with the standard spectra. We see,
+  Ca II/H$\epsilon$ $\sim \frac{1}{4}$ \hfill(2.0)
+
+  For B8 standard spectra it is $\sim \frac{1}{5}$, for A0 standard spectra it
+  is $\sim \frac{1}{3}$. \hfill(2.0)
+
+  Thus, we deduce that the spectral type lies somewhere between B8 and A0.
+  One may write any spectral type in the range, say B9. \hfill(1.0)
+\item[(b)] \mbox{}
+  \begin{description}
+  \item[i.] Appendix 1 gives absolute magnitude for stars of different
+    spectral and luminosity classes. The relevant rows are A0 and B5.
+    \hfill(1.0)
+
+    In order to estimate the absolute magnitude of a B9 star, interpolate
+    between B5 and A0.
+
+    For MS:
+    \begin{align*}
+      M(\mathrm{B9}) &= M(\mathrm{A0})
+        - \frac{(M(\mathrm{A0}) - M(\mathrm{B5}))}{5}\times(10-9)\\
+        &= 0.7 - \frac{(0.7 - (-1.1))}{5} = 0.7 - 0.36\\
+        &= 0.34 \tag*{(2.0)}
+    \end{align*}
+    For subgiants:
+    \begin{align*}
+      M(\mathrm{B9}) &= M(\mathrm{A0})
+        - \frac{(M(\mathrm{A0}) - M(\mathrm{B5}))}{5}\times(10-9)\\
+        &= 0.1 - \frac{(0.1 - (-1.8))}{5} = 0.1 - 0.38\\
+        &= -0.28 \tag*{(2.0)}
+    \end{align*}
+  \item[ii.]
+    \begin{align*}
+      m_v &= M_v + 5\log(d) - 5\\
+      \therefore d &= 10^{\frac{m_v - M_v + 5}{5}} \tag*{(1.0)}
+    \end{align*}
+    For MS:
+    \[
+      d \approx 79.4\,\mathrm{kpc}
+    \]
+    \hfill(1.0)
+
+    For subgiants:
+    \[
+      d \approx 105.7\,\mathrm{kpc}
+    \]
+    \hfill(1.0)
+  \item[iii.] \textbf{Yes}. HSV1 % sic
+    is off the galactic plane, well into the halo. interstellar absorption
+    should not be very high. Thus, ignoring it will not affect the distance
+    very much. \hfill(2.0)
+  \item[iv.] (A) if it is a MS star,
+    \[
+      \pi = 1/d \sim 0.01\,\mathrm{mas} < \pi_{\mathrm{GAIA}}
+    \]
+    Hence, the answer is ``\textbf{No}''. \hfill(1.0)
+
+    (B) If it is a subgiant, then the distance is even larger. Hence, the
+    answer is again ``\textbf{No}''. \hfill(1.0)
+  \item[v.]
+    % FIGURE NEEDED: sketch of the relative positions of HVS1, the Sun and
+    % the Galactic centre (2020_da_sol.pdf p.11): left panel to scale with
+    % HVS1, Sun and GC; right panel showing the construction triangle H-S-C
+    % with P the projection of H on the galactic plane, angles l and b at the
+    % Sun S.
+    The left panel is to the scale. The right panel shows details of the
+    drawing. \hfill(2.0)
+    \begin{align*}
+      d(HC)^2 &= d(HP)^2 + d(PC)^2\\
+        &= d(HP)^2 + \left[d(SC)^2 + d(PS)^2
+           - 2\cdot d(SC)\cdot d(PS)\cos(\angle PSC)\right]\\
+      r^2 &= (d\sin b)^2 + r_\odot^2 + (d\cos b)^2
+           - 2r_\odot d\cos b\cos(360^\circ - l)\\
+      \therefore r &= \sqrt{d^2 + r_\odot^2 - 2r_\odot d\cos b\cos l}\\
+        &= \sqrt{105.7^2 + 8^2
+           - 2\times8\times105.7\cos(31.332^\circ)\cos(227.335^\circ)}\\
+      \therefore r &\approx 110\,\mathrm{kpc} \tag*{(4.0)}
+    \end{align*}
+  \end{description}
+\item[(c)] \mbox{}
+  \begin{description}
+  \item[i.] From the spectrum, we can estimate the line shift as
+    \[
+      \Delta\lambda = (11\pm2)\,\text{\AA},\ \lambda_0 = 3934\,\text{\AA}
+    \]
+    \hfill(3.0)
+
+    Doppler shift gives the heliocentric velocity
+    \[
+      v_{\mathrm{rHC}} = \frac{c\Delta\lambda}{\lambda_0}
+        = (840\pm150)\,\mathrm{km\,s^{-1}}
+    \]
+    \hfill(2.0)
+  \item[ii.]
+    \begin{align*}
+      v_{\mathrm{rf}} &= v_{\mathrm{rHC}} + 11.1\cos l\cos b
+          + 247.24\sin l\,\cos b + 7.25\sin b\\
+        &= 840 + 11.1\cos(227.335^\circ)\cos(31.332^\circ)\\
+        &\quad + 247.24\sin(227.335^\circ)\cos(31.332^\circ)
+          + 7.25\sin(31.332^\circ)\\
+      v_{\mathrm{rf}} &= (680\pm130)\,\mathrm{km\,s^{-1}} \tag*{(2.0)}
+    \end{align*}
+  \item[iii.] The length of an arc does not depend on the coordinate system.
+    Thus,
+    \begin{align*}
+      \Delta\mu &= \sqrt{\mu_\alpha^2 + \mu_\delta^2}\\
+        &= \sqrt{0.08^2 + 0.12^2}\\
+      \Delta\mu &= (0.144\pm0.340)\,\mathrm{mas/yr} \tag*{(2.0)}\\
+      v_\theta = d\Delta\mu
+        &= \frac{105.7\times10^{3}\times3.086\times10^{13}
+           \times0.144\times10^{-3}}{206\,265\times3.16\times10^{7}}\\
+        &= (72\pm170)\,\mathrm{km\,s^{-1}} \tag*{(2.0)}
+    \end{align*}
+  \item[iv.] The direction to the Galactic center is \emph{also}
+    perpendicular to the plane of the sky. Thus,
+    \begin{align*}
+      v_{\mathrm{T}} &= \sqrt{v_{\mathrm{rf}}^2 + v_\theta^2}
+        = \sqrt{680^2 + 72^2}\\
+      v_{\mathrm{T}} &= (684\pm210)\,\mathrm{km\,s^{-1}} \tag*{(2.0)}
+    \end{align*}
+    i.e.\ it is almost radial.
+    \[
+      \theta = \tan^{-1}\left(\frac{v_\theta}{v_{\mathrm{rf}}}\right)
+        \approx \tan^{-1}(0.105) \approx 6^\circ
+    \]
+    \hfill(2.0)
+  \item[v.] As the velocity is almost radial, extrapolating backwards, the
+    star would be in galactic disk somewhere close to the galactic centre.
+    Thus, the answer is \textbf{A}. \hfill(2.0)
+  \end{description}
+\item[(d)] \mbox{}
+  \begin{description}
+  \item[i.]
+    \[
+      v_{esc} = \sqrt{\frac{2GM}{r}}
+    \]
+    \hfill(1.0)
+  \item[ii.]
+    \begin{align*}
+      M_r &= 4\pi\rho_0 r_c^2
+        \left[r - r_c\tan^{-1}\left(\frac{r}{r_c}\right)\right]\\
+        &= 4\pi\times1.396\times10^{4}\times8^2
+        \left[110 - 8\times\tan^{-1}\left(\frac{110}{8}\right)\right]\\
+      M_r(110\,\mathrm{kpc}) &\approx 1.2\times10^{12}M_\odot \tag*{(2.0)}
+    \end{align*}
+  \item[iii.]
+    \begin{align*}
+      v_{esc} &= \sqrt{\frac{2GM}{r}}
+        = \sqrt{\frac{2\times6.674\times10^{-11}\times1.2\times10^{12}
+          \times1.998\times10^{30}}{110\times10^{3}\times3.086\times10^{16}}}\\
+        &= 311\,\mathrm{km\,s^{-1}} \tag*{(2.0)}
+    \end{align*}
+  \item[iv.] $v_{\mathrm{rf}} > v_{esc} \implies$ \textbf{Yes}. \hfill(1.0)
+  \end{description}
+\item[(e)] If HSV1 % sic
+  originated close to the galactic center and assuming is was % sic
+  ejected at the measured speed, it has been traveling for
+  \[
+    t_{\mathrm{trav}} = \frac{r}{v_{\mathrm{rf}}}
+      = \frac{110\times10^{3}\times3.086\times10^{16}}{680\times10^{3}}
+      = 1.6\times10^{8}\,\mathrm{yr}
+  \]
+  \hfill(2.0)
+\item[(f)] Main Sequence life time for the star will approximately be
+  \[
+    t \sim \frac{M}{L} \sim L^{-5/7}
+  \]
+  Comparing with absolute magnitude of the Sun,
+  \[
+    t \sim 10^{8}\,\mathrm{yr}
+  \]
+  This is very similar to the time taken by the star to travel from the disk
+  to present position. Thus, the anwer % sic
+  is \textbf{A}. \hfill(3.0)
+\item[(g)] Stars of early type are very young, so they cannot belong to the
+  native population of the halo. They must be coming from elsewhere. As a
+  result, they may be moving very fast and some of them may be on their way
+  to abandoning the Milky Way.
+  $\implies$ C. \hfill(2.0)
+\end{description}

@@ -1,0 +1,83 @@
+$U = 8.15$, $B = 8.50$, and $V = 8.14$.\\
+$(U-B)_{\mathrm{o}} = -0.45$. \quad
+$R = 2.3\,R_\odot = 1.60 \times 10^{11}$\,cm,\\
+$M_{bol} = -0.25$, $BC = -0.15$
+
+\begin{description}
+\item[a)] $U - B = 8.15 - 8.50 = -0.35$
+
+The color excess for $U-B$:
+\[
+E(U-B) = (U-B) - (U-B)_{\mathrm{o}} = -0.35 - (-0.45) = 0.10
+\]
+The relation between color excess of $U-B$ and of $B-V$:
+\[
+E(U-B) = 0.72\,E(B-V)
+\;\Longrightarrow\;
+E(B-V) = 0.10/0.72 = 0.14 \tag*{(15\%)}
+\]
+Let $A_v$ be the interstellar extinction and $R = 3.2$, then
+\[
+A_v = 3.2\,E(B-V) = 3.2\,(0.14) = 0.45
+\]
+\[
+V - V_{\mathrm{o}} = A_v
+\;\Longrightarrow\;
+V_{\mathrm{o}} = V - A_v = 8.14 - 0.45 = 7.69
+\]
+\begin{align*}
+E(B-V) = (B-V) - (B-V)_{\mathrm{o}}
+\;\Longrightarrow\;
+(B-V)_{\mathrm{o}} &= (B-V) - E(B-V)\\
+&= (8.50 - 8.14) - 0.14 = 0.22 \tag*{(15\%)}
+\end{align*}
+\[
+(B-V)_{\mathrm{o}} = B_{\mathrm{o}} - V_{\mathrm{o}} = 0{,}22
+\;\Longrightarrow\;
+B_{\mathrm{o}} = 0.22 + V_{\mathrm{o}} = 0.22 + 7.69 = 7.91 \tag*{(10\%)}
+\]
+\[
+(U-B)_{\mathrm{o}} = U_{\mathrm{o}} - B_{\mathrm{o}} = -0{,}45
+\;\Longrightarrow\;
+U_{\mathrm{o}} = B_{\mathrm{o}} - 0.45 = 7.91 - 0.45 = 7.46 \tag*{(10\%)}
+\]
+
+\item[b)] Luminosity -- absolute magnitude relation:
+\begin{align*}
+M_{bol} - M_{bol\odot} = -2.5 \log L/L_\odot
+\;\Longrightarrow\;
+L/L_\odot &= 10^{-(M_{bol} - M_{bol\odot})/2.5}\\
+&= 10^{-(-0{,}25 - 4{,}75)/2{,}5}\\
+&= 100 \tag*{(10\%)}
+\end{align*}
+\[
+L = 100\,L_\odot = 3.90 \times 10^{35}~\mathrm{erg/det}
+% sic: "det" (detik, Indonesian for second) in the source
+\]
+\[
+L = 4\pi\sigma R^2\,T_{ef}^4
+\]
+\[
+T_{ef} = \left( \frac{L}{4\pi\sigma R^2} \right)^{\!1/4}
+  = \left( \frac{3.90 \times 10^{35}}
+                {4\pi (5.67 \times 10^{-5})(1.60 \times 10^{11})^2}
+    \right)^{\!1/4}
+  = 12\,092~\mathrm{K} \tag*{(15\%)}
+\]
+
+\item[c)]
+\[
+M_v - M_{bol} = BC
+\;\Longrightarrow\;
+M_v = M_{bol} + BC = -0.25 - 0.15 = -0.40 \tag*{(10\%)}
+\]
+\begin{align*}
+m_v - M_v = -5 + 5 \log d + A_v
+\;\Longrightarrow\;
+5 \log d &= m_v - M_v + 5 - A_v\\
+&= 8.14 + 0.40 + 5 - 0.45 = 13.09
+\end{align*}
+\[
+d = 10^{13.09/5} = 10^{2.62} = 414.9~\mathrm{pc} \tag*{(15\%)}
+\]
+\end{description}

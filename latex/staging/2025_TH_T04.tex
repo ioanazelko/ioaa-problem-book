@@ -1,0 +1,38 @@
+Consider a main sequence star surrounded by a nebula. The observed V-band
+magnitude of the star is 11.315\,mag. The ionised region of nebula close to
+the star emits H$\alpha$ and H$\beta$ lines; their wavelengths are
+0.6563\,$\mu$m and 0.4861\,$\mu$m, respectively. The theoretically predicted
+ratio of fluxes in H$\alpha$ to H$\beta$ lines is
+$f_{\mathrm{H}\alpha}/f_{\mathrm{H}\beta} = 2.86$. However, when this
+radiation passes through the outer portion of the cold dusty nebula, the
+observed emission fluxes of H$\alpha$ and H$\beta$ lines are
+$6.80 \times 10^{-15}\,\mathrm{W\,m^{-2}}$ and
+$1.06 \times 10^{-15}\,\mathrm{W\,m^{-2}}$, respectively.
+
+The extinction $A_\lambda$ is a function of wavelength and is expressed as
+\[ A_\lambda = \kappa(\lambda)\,E(B-V). \]
+Here, $\kappa(\lambda)$ is the extinction curve and $E(B-V)$ denotes the
+colour excess in the filter bands B and V. The extinction curve (with
+$\lambda$ in $\mu$m) is given as follows.
+\[ \kappa(\lambda) =
+   \begin{cases}
+     2.659 \times \left( -1.857 + \dfrac{1.040}{\lambda} \right) + R_V, &
+       0.63 \le \lambda \le 2.20 \\[1ex]
+     2.659 \times \left( -2.156 + \dfrac{1.509}{\lambda}
+       - \dfrac{0.198}{\lambda^2} + \dfrac{0.011}{\lambda^3} \right) + R_V, &
+       0.12 \le \lambda < 0.63
+   \end{cases} \]
+where, $R_V = A_V/E(B-V) = 3.1$ is the ratio of total-to-selective extinction.
+
+\begin{description}
+\item[(T04.1)] Find the values of $\kappa(\mathrm{H}\alpha)$ and
+  $\kappa(\mathrm{H}\beta)$. \hfill[3]
+\item[(T04.2)] Find the value of the ratio of colour excess
+  $\dfrac{E(\mathrm{H}\beta - \mathrm{H}\alpha)}{E(B-V)}$. \hfill[4]
+\item[(T04.3)] Estimate the extinction due to nebula, $A_{\mathrm{H}\alpha}$
+  and $A_{\mathrm{H}\beta}$, at H$\alpha$ and H$\beta$ wavelengths,
+  respectively. \hfill[6]
+\item[(T04.4)] Estimate the extinction of the nebula ($A_V$) and the apparent
+  magnitude of the star in the V band, $m_{V0}$, in the absence of the nebula.
+  \hfill[2]
+\end{description}

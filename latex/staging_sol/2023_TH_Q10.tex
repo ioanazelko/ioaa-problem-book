@@ -1,0 +1,168 @@
+\begin{description}
+\item[(a)] Aldebaran is far enough away that the light rays from it can be
+  considered to be parallel, thus the problem can be modelled by the following
+  diagram:
+
+  % FIGURE NEEDED: diagram of parallel light rays from Aldebaran grazing the
+  % Moon (centre M, points C, D on the rays) and reaching the Earth (points B
+  % = Bologna and P at latitude phi_1, declination delta_A, radius r);
+  % 2023 theory solutions, page 26 (problem T10).
+
+  where the light ray through $C$ passes through the centre of the Earth and
+  thus $\delta_{\mathrm{A}}$ is the declination of Aldebaran; the ray through
+  $D$ and $B$ (Bologna) represents the situation observed by Copernicus, with
+  Aldebaran behind the Moon and $0.32'$ above the south edge; and the ray
+  through $M$ and $P$ represents the situation where Aldebaran is exactly
+  behind the centre of the Moon. $\varphi_{\mathrm{B}}$ is the geocentric
+  latitude of Bologna, $\varphi_1$ is the latitude of the place $P$ and $r$ is
+  the radius of the Earth (assume the Earth is spherical).
+
+  Calculating the latitude $\varphi_1$ is thus a matter of simple geometry,
+  where:
+  \begin{align*}
+    |CD| &= r\sin(\varphi_{\mathrm{B}} - \delta_{\mathrm{A}}),\\
+    |CM| &= r\sin(\varphi_1 - \delta_{\mathrm{A}}),
+  \end{align*}
+  and the distance $|DM|$ is the fraction of the Moon's radius given by:
+  \[
+    |DM| = 1\,737\ \mathrm{km} \times
+      \left(1 - \frac{0.32'}{31.5'/2}\right) = 1\,702\ \mathrm{km}.
+  \]
+  Therefore, since
+  \begin{align*}
+    |CM| &= |CD| + |DM| = 3\,099\ \mathrm{km} + 1\,702\ \mathrm{km}
+          = 4\,801\ \mathrm{km},\\
+    \Longrightarrow\ \varphi_1 &= \arcsin\left(\frac{4\,801}{6\,378}\right)
+      + \delta_{\mathrm{A}} = 64.19^\circ.
+  \end{align*}
+  \hfill(6 points)
+
+\item[(b)] Given the assumptions, the duration of the occultation will just
+  depend on the difference between the tangential speeds of the observer,
+  $v_{\mathrm{obs}}$, and Moon, $v_{\mathrm{Moon}}$, and on the diameter of
+  the Moon.
+
+  For the observer, the tangential speed is given by the circumference of
+  their path at latitude $\varphi_1$ divided by the sidereal day:
+  \[
+    v_{\mathrm{obs}} = \frac{2\pi r_{\mathrm{Earth}} \cos\varphi_1}
+                            {23^{\mathrm{h}}\,56\mathrm{m}\,4^{\mathrm{s}}}
+                     = 729\ \mathrm{km/h}
+  \]
+
+  % FIGURE NEEDED: sketch of Aldebaran, the Moon (M, velocity v_Moon) and the
+  % rotating Earth with observer P (velocity v_obs) at latitude phi_1;
+  % 2023 theory solutions, page 27 (problem T10).
+
+  Similarly for the Moon, using the semi-major axis of the Moon's orbit and
+  the length of the sidereal month (from the table of constants):
+  \[
+    v_{\mathrm{Moon}} = \frac{2\pi \times 3.844 \times 10^5\ \mathrm{km}}
+                             {27.321661\ \mathrm{d} \times 24}
+                      = 3\,683\ \mathrm{km/h}
+  \]
+  The difference of speeds is then:
+  \[
+    v_{\mathrm{rel}} = v_{\mathrm{Moon}} - v_{\mathrm{obs}}
+                     = 2\,954\ \mathrm{km/h}
+  \]
+  and the time taken to move across the lunar diameter
+  ($2 \times 1737$\,km) at that speed is:
+  \[
+    t = \frac{2 \times 1\,737\ \mathrm{km}}{2\,954\ \mathrm{km/h}}
+      = 1.176 \approx 1.18\ \mathrm{hours}.
+  \]
+  \hfill(5 points)
+
+\item[(c)] To determine the topocentric angular velocity, we need to find the
+  distance $d$ between the observer (at place $P$ at latitude $\varphi_1$) and
+  the Moon:
+
+  % FIGURE NEEDED: triangle Moon (M) - observer (P) - centre of the Earth,
+  % with the angles rho, delta, delta', alpha, sides a, d, r and latitude
+  % phi_1 marked; 2023 theory solutions, page 27 (problem T10).
+
+  where $a$ is the semi-major axis of the Moon's orbit, $\delta$ is the
+  geocentric declination of the Moon, and $\delta'$ is the topocentric
+  declination of the Moon as seen by the observer. We can rewrite
+  $\varrho = \delta - \delta'$ and
+  $\alpha = 180^\circ - (\varphi_1 - \delta) - \varrho
+          = 180^\circ - (\varphi_1 - \delta) - (\delta - \delta')
+          = 180^\circ - (\varphi_1 - \delta')$,
+  then using the sine theorem:
+  \[
+    \frac{d}{\sin(\varphi_1 - \delta)}
+      = \frac{a}{\sin\left(180^\circ - (\varphi_1 - \delta')\right)}
+      = \frac{r}{\sin(\delta - \delta')}
+  \]
+  Simplifying and substituting $\delta' = \delta_{\mathrm{A}}$:
+  \[
+    \frac{d}{\sin(\varphi_1 - \delta)}
+      = \frac{a}{\sin(\varphi_1 - \delta_{\mathrm{A}})}
+      = \frac{r}{\sin(\delta - \delta_{\mathrm{A}})}
+  \]
+  We can now calculate $\delta$:
+  \[
+    \delta = \arcsin\left(
+        \frac{r\sin(\varphi_1 - \delta_{\mathrm{A}})}{a}\right)
+      + \delta_{\mathrm{A}} = 16.08^\circ
+  \]
+  and $d$:
+  \[
+    d = a\,\frac{\sin(\varphi_1 - \delta)}
+                {\sin(\varphi_1 - \delta_{\mathrm{A}})}
+      = 380\,203\ \mathrm{km}.
+  \]
+  Thus the angular velocity is:
+  \[
+    \omega = \left(\frac{2\,R_{\mathrm{Moon}}}{d}\right)
+             \left(\frac{1}{1.176\ \mathrm{h}}\right) \mathrm{rad/h}
+           = \left(\frac{2 \times 1\,737}{380\,203}\right)
+             \left(\frac{1}{1.176\ \mathrm{h}}\right)
+             \left(\frac{180 \times 60}{\pi}\right)
+           = 26.71 \approx 27\ \mathrm{arcmin/h}.
+  \]
+  \hfill(7 points)
+
+\item[(d)] The result in part (c), 27\,arcmin/h, was calculated for the
+  situation when the Moon and observer are moving in the same direction,
+  reducing their relative velocity, and thus represents the lower limit of the
+  range of topocentric angular velocities. The upper limit is given by the
+  situation when the Moon and observer are moving in the opposite direction,
+  i.e.\ when the Moon is due north.
+
+  Using the calculation from part (b), we find that the relative linear speed
+  is:
+  \[
+    v'_{\mathrm{rel}} = v_{\mathrm{Moon}} + v_{\mathrm{obs}}
+                      = 3\,683 + 729 = 4\,412\ \mathrm{km/h}
+  \]
+  Neglecting the effect of the slightly greater distance between the observer
+  and the Moon when the Moon is on the northern side of the sky, the angular
+  speed will be greater by the ratio of the linear speeds,
+  \[
+    \omega' = \omega\,\frac{4\,416}{2\,954} = 39.89
+            \approx 40\ \mathrm{arcmin/h},
+    % sic: the official solution writes 4416 here; the relative speed derived
+    % above is 4412 km/h.
+  \]
+  thus the range is approximately 27--40 arcmin/h. \hfill(3 points)
+
+  If the additional distance is taken into account, the upper limit will be
+  around 1\% less.
+
+  Expressing the velocities as vectors,
+  \[
+    \vec{v}_{\mathrm{rel}} = \vec{v}_{\mathrm{Moon}} - \vec{v}_{\mathrm{obs}},
+  \]
+  the magnitude of the relative velocity,
+  $v_{\mathrm{rel}} = |\vec{v}_{\mathrm{rel}}|$ is given by the scalar
+  projection of $\vec{v}_{\mathrm{obs}}$ on $\vec{v}_{\mathrm{Moon}}$:
+  \[
+    v_{\mathrm{rel}} = v_{\mathrm{Moon}} - v_{\mathrm{obs}}\cos\alpha
+  \]
+  where $\alpha$ is the angle between the vectors. From this it can be seen
+  that the relative velocity must be minimum for $\alpha = 0^\circ$ and
+  maximum for $\alpha = 180^\circ$. These conditions are met on the local
+  meridian, due south or due north, respectively. \hfill(4 points)
+\end{description}

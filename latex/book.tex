@@ -1,0 +1,120 @@
+% IOAA Problems by Topic, 2007-2025 - LaTeX edition
+%
+% Build:  latexmk -pdf book.tex     (or: pdflatex book.tex, twice)
+%
+% This is the transcribed edition: problem statements are typed as real LaTeX
+% so they can be reflowed, restyled and reused in worksheets. Figures are the
+% original vector art, extracted from the official papers by extract_images.py.
+%
+% The companion crop edition (../IOAA_Problems_by_Topic_2007-2025.pdf) shows
+% every problem exactly as it appeared in the official paper. Where the two
+% disagree, the crop edition is authoritative.
+\documentclass[11pt,a4paper,twoside]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+% siunitx and enumitem make units and lists nicer but are not in every TeX
+% install (they are in texlive-science / texlive-latex-extra). Use them when
+% present so the book still builds on a minimal TeX Live.
+\makeatletter
+\IfFileExists{siunitx.sty}{\usepackage{siunitx}}{%
+  \providecommand{\si}[1]{\mathrm{##1}}%
+  \providecommand{\SI}[2]{##1\,\mathrm{##2}}%
+  \providecommand{\num}[1]{##1}}
+\makeatother
+\IfFileExists{enumitem.sty}{\usepackage{enumitem}}{}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage[hidelinks,bookmarksnumbered]{hyperref}
+
+\graphicspath{{images/}}
+
+% ---------------------------------------------------------------- problem env
+% Each problem carries its provenance: year, host, original label, points.
+% \probhead{number}{title}{year}{host}{round+label}{points}
+\newcommand{\probhead}[6]{%
+  \par\vspace{1.1em}\phantomsection\label{prob:#1}%
+  \noindent\textbf{Problem #1}%
+  \ifx\relax#2\relax\else\ \textbf{--- #2}\fi%
+  \hfill{\small\color{gray}IOAA #3 (#4) --- #5\ifx\relax#6\relax\else\ --- #6\,pt\fi%
+    \ \textbar\ \hyperref[sol:#1]{solution p.\,\pageref{sol:#1}}}%
+  \par\vspace{-0.35em}\noindent\rule{\linewidth}{0.4pt}\par\vspace{0.4em}%
+}
+\newcommand{\solhead}[2]{%
+  \par\vspace{1.1em}\phantomsection\label{sol:#1}%
+  \noindent\textbf{Solution #1}%
+  \ifx\relax#2\relax\else\ \textbf{--- #2}\fi%
+  \hfill{\small\color{gray}\hyperref[prob:#1]{problem p.\,\pageref{prob:#1}}}%
+  \par\vspace{-0.35em}\noindent\rule{\linewidth}{0.4pt}\par\vspace{0.4em}%
+}
+% figure from the original paper, scaled to fit the text width
+\newcommand{\ioaafig}[2][0.75]{%
+  \begin{center}\includegraphics[width=#1\linewidth]{#2}\end{center}}
+
+\title{\Huge International Olympiad on Astronomy \& Astrophysics\\[0.4em]
+       \Large Problems by Topic, 2007--2025}
+\author{Assembled by I. A. Zelko}
+\date{}
+
+\begin{document}
+\frontmatter
+\maketitle
+
+\chapter*{About this edition}
+\addcontentsline{toc}{chapter}{About this edition}
+
+All problems are from the official IOAA papers. This LaTeX edition transcribes
+the problem statements so they can be reflowed and reused; the figures are the
+original vector art extracted from the source PDFs.
+
+\medskip
+\noindent\textbf{AI usage.} This volume was assembled with the assistance of
+Claude (Anthropic). The AI classified each problem by subject, extracted the
+figures, and wrote the code that builds the book. The problems and official
+solutions are the work of the IOAA organisers. Transcription into LaTeX is
+error-prone in a way that cropping is not: an equation typed from a scan can be
+silently wrong. Every transcribed problem should be checked against the crop
+edition before it is used with students.
+
+\medskip
+\noindent\textbf{Conventions.} Solutions reproduce the official reasoning with
+inline point values; standalone marking rubrics are omitted. Genuine errors in
+the official papers are transcribed as printed and flagged with source comments,
+collected in the errata appendix. Decimal commas used by some papers (notably
+2014 Romania) are normalized to decimal points; trivial spelling slips are
+silently corrected, while wording quirks are kept verbatim. Every problem links
+to its solution and back.
+
+\medskip
+\noindent\textbf{Organisation.} Fourteen subject chapters. Within a chapter the
+theory problems come first, then data analysis, then observation (planetarium,
+written/sky-map and telescope rounds). Each chapter is followed by its own
+solutions.
+
+\tableofcontents
+
+\mainmatter
+\include{chapters/ch01}
+\include{chapters/ch02}
+\include{chapters/ch03}
+\include{chapters/ch04}
+\include{chapters/ch05}
+\include{chapters/ch06}
+\include{chapters/ch07}
+\include{chapters/ch08}
+\include{chapters/ch09}
+\include{chapters/ch10}
+\include{chapters/ch11}
+\include{chapters/ch12}
+\include{chapters/ch13}
+\include{chapters/ch14}
+
+\appendix
+\include{chapters/errata}
+
+\end{document}

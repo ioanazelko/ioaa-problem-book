@@ -1,0 +1,254 @@
+In this problem, we will explore the connection between the physical properties
+of exoplanets and their host stars and will use the observational data to
+discover as much as possible about these systems. You may neglect interstellar
+extinction.
+
+\medskip
+\noindent\textbf{Part 1 (20 points).}
+
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+Name of & Name of & $T_{\mathrm{eff}}$ & $g$ & $m_v$ & parallax \\
+planet & star & (K) & (m\,s$^{-2}$) & (magnitudes) & (milliarcsec) \\
+\midrule
+Gorgona & HD\,209458 & 5980 & 347 & 7.63 & 20.67 \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+Table 1: Observational data for exoplanet Gorgona and its parent star HD\,209458
+\end{center}
+
+The effective temperature ($T_{\mathrm{eff}}$) and the gravitational
+acceleration in the surface of the star ($g$) can be measured from the shape of
+the spectrum and its absorption lines.
+% sic: "in the surface" as in the original
+The visual apparent magnitude ($m_v$) and parallax are measured by doing
+photometry and astrometry, respectively.
+
+Additionally, it has been observed that every $3.52$ days the brightness of the
+star drops due to the transit of the planet in front of it, as it is
+represented in this lightcurve:
+
+\ioaafig{2021_DA_DA2-f1.pdf}
+% f1 = Figure 1: Normalized Flux (y-axis) against time (x-axis) for the parent
+% star HD 209458
+
+\begin{description}
+\item[(1.1)] Use the given information to calculate the following quantities
+  for the HD\,209458 system: \hfill[20\,pt]
+
+  \begin{center}
+  \begin{tabular}{ccccc}
+  \toprule
+  Luminosity of & Radius of & Mass of & Mean planet's & Radius of the planet\\
+  the star & the star & the star & orbital radius & in Jupiter's radius\\
+  $L_\star$ $[L_\odot]$ & $R_\star$ $[R_\odot]$ & $M_\star$ $[M_\odot]$
+    & $a$ $[\mathrm{au}]$ & $R_p$ $[R_J]$\\
+  \midrule
+  \phantom{xxxx} & \phantom{xxxx} & \phantom{xxxx} & \phantom{xxxx}
+    & \phantom{xxxx}\\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+
+  \textbf{Note:} Assume that the bolometric correction for all F and G type
+  stars is the same.
+\end{description}
+
+\medskip
+\noindent\textbf{Part 2 (25 points).}
+
+The habitable zone is defined as the region in which a planet may have liquid
+water on its surface. This is mainly related to the amount of radiation
+received from the host star, which must be within some limits to ensure a
+favorable range of planet surface temperatures.
+
+We define the effective flux received by a planet as
+$S_{\mathrm{eff}} = \frac{L}{a^2}$, where $L$ is the star luminosity in solar
+units, and $a$ is the mean orbital radius in au. The minimum flux in the
+habitable zone can be approximated by
+\[
+S_{\mathrm{min}} = S_{\mathrm{eff}_\odot} + n\cdot T_\star + b\cdot T_\star^2
+  + c\cdot T_\star^3 + d\cdot T_\star^4,
+\]
+where $T_\star = (T_{\mathrm{eff}} - T_{\mathrm{eff}_\odot})$, and
+$S_{\mathrm{eff}_\odot}$ is the equivalent flux for the case of the Sun, which
+along with the coefficients $n$, $b$, $c$, $d$ is given in the following
+table. The maximum flux for habitability, $S_{\mathrm{max}}$, is found with the
+same equation but different constants:
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+Constant & $S_{\mathrm{max}}$ & $S_{\mathrm{min}}$\\
+\midrule
+$S_{\mathrm{eff}_\odot}$ & $1.0512$ & $0.3438$\\
+$n$ & $1.3242\times10^{-4}$ & $5.8942\times10^{-5}$\\
+$b$ & $1.5418\times10^{-8}$ & $1.6558\times10^{-9}$\\
+$c$ & $-7.9895\times10^{-12}$ & $-3.0045\times10^{-12}$\\
+$d$ & $-1.8328\times10^{-15}$ & $-5.2983\times10^{-16}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The table below gives real data for 7 different star-planet systems. However
+planet names have been changed to honour some natural sanctuaries in Colombia:
+
+\begin{center}
+\begin{tabular}{cc cc}
+\toprule
+\multicolumn{2}{c}{Stellar Parameters} & \multicolumn{2}{c}{Planet Parameters}\\
+$T_{\mathrm{eff}}$ [K] & $M_V$ [mag] & Name & $a$ [au]\\
+\midrule
+6180 & 3.68 & Tayrona   & 0.04\\
+5730 & 3.87 & Iguaque   & 0.04\\
+5980 & 4.21 & Gorgona   & 0.04\\
+5480 & 6.04 & Amacayacu & 0.08\\
+5770 & 3.48 & Malpelo   & 0.05\\
+6130 & 3.07 & Pisba     & 0.03\\
+6140 & 3.85 & Tatam\'a  & 0.06\\
+\bottomrule
+\end{tabular}
+\end{center}
+% \ioaafig{2021_DA_DA2-f2.pdf} % f2 = image of the 7-system table transcribed
+% just above; kept here (commented) to avoid printing the same table twice
+
+\begin{description}
+\item[(2.1)] In the following figure, the vertical axis represents the
+  effective temperature of stars, and the horizontal axis represents the
+  effective flux received by orbiting planets. The dot marked on the graph
+  represents planet Earth, and dashed lines mark the limits of the habitable
+  zone. \hfill[15\,pt]
+
+  % NOTE: the original shows here an unlabelled grid (T_eff versus S_eff) with
+  % the Earth marked as a dot and the habitable-zone limits as dashed lines;
+  % no figure was extracted for it in the crop set (f1-f5).
+
+  Put numerical labels at tickmark position on both axes. Draw on the same
+  figure the exact position where Gorgona and Amacayacu would be, as if they
+  were also located at 1\,au from their corresponding stars.
+\item[(2.2)] Now considering the real orbital radius given in the table for
+  each planet, indicate with YES or NO which of them are in the habitable
+  zone. Show your quantitative reasoning on the working
+  sheets. \hfill[10\,pt]
+
+  \begin{center}
+  \begin{tabular}{cc}
+  \toprule
+  Planet's Name & In habitable zone? YES / NO\\
+  \midrule
+  Tayrona   & \\
+  Iguaque   & \\
+  Gorgona   & \\
+  Amacayacu & \\
+  Malpelo   & \\
+  Pisba     & \\
+  Tatam\'a  & \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  % \ioaafig{2021_DA_DA2-f3.pdf} % f3 = image of the blank YES/NO answer table
+  % transcribed just above; kept here (commented) to avoid duplication
+\end{description}
+
+\medskip
+\noindent\textbf{Part 3 (30 points).}
+
+In the last page you find a list of 38 exoplanets, and the goal is to find out
+if low-mass exoplanets (LME) and high-mass exoplanets (HME) tend to orbit
+around stars with different characteristics.
+
+\begin{description}
+\item[(3.1)] To get a robust low-mass subsample one can apply a technique
+  called ``iterative sigma-clipping''. The idea is to compute the mean ($\mu$)
+  and the standard deviation ($\sigma$) of the masses and to exclude from the
+  sample, those planets with masses above $\mu + \sigma$. Then repeat the same
+  steps with the remaining subsample two more times. We will say that planets
+  in the final subsample are the low-mass ones, and those excluded during the
+  iterations, the high-mass ones. Fill the following table with the numbers
+  you find in the process: \hfill[10\,pt]
+
+  \begin{center}
+  \begin{tabular}{cccccc}
+  \toprule
+  Low-mass sample & Sample size & $\mu$ & $\sigma$ & $\mu+\sigma$
+    & No.\ of planets\\
+  & & & & & to exclude\\
+  \midrule
+  Full / Original & 38 & & & & \\
+  subsample after 1st iteration & & & & & \\
+  subsample after 2nd iteration & & & & & \\
+  subsample after final iteration & & --- & --- & --- & ---\\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  % \ioaafig{2021_DA_DA2-f4.pdf} % f4 = image of the blank sigma-clipping
+  % answer table transcribed just above; kept here (commented) to avoid
+  % duplication
+\item[(3.2)] Make a plot using the X-axis for the serial number of the planets
+  in the list $(1, 2, 3, \ldots)$, and the Y-axis for the mass of the
+  planets. Mark 3 horizontal lines at the $\mu + \sigma$ thresholds you found
+  in the iterations. \hfill[5\,pt]
+\item[(3.3)] Let's investigate the possible difference in the effective
+  temperatures of host stars in both groups, computing some descriptive
+  statistics: \hfill[10\,pt]
+
+  \begin{center}
+  \begin{tabular}{cccccc}
+  \toprule
+  & Min. & 1st Quartile & Median (2nd quartile) & 3rd Quartile & Max\\
+  \midrule
+  LME & & & & & \\
+  HME & & & & & \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+\item[(3.4)] Draw boxplots summarizing the numbers you just computed. Do you
+  see a clear difference in the temperatures of the stars orbited by low-mass
+  and high-mass planets? Write YES or NO. \hfill[5\,pt]
+
+  % NOTE: the original provides here an empty chart frame labelled
+  % "Planetary type vs host star temperature (K)", with HME and LME on the
+  % vertical axis and temperature ticks 5200-6400 K on the horizontal axis;
+  % no figure was extracted for it in the crop set (f1-f5).
+\end{description}
+
+\medskip
+\noindent The list of 38 exoplanets (planet mass in Jupiter masses,
+$T_{\mathrm{eff}}$ of the host star in K):
+
+\begin{center}
+\begin{tabular}{clcc}
+\toprule
+No. & Name of Planet & Planet Mass $[M_J]$ & $T_{\mathrm{eff}}$ of the Host Star\\
+\midrule
+1 & KEPLER-37 b & 0.01 & 5520\\
+2 & KEPLER-21 b & 0.02 & 6256\\
+3 & HD 97658 b  & 0.02 & 5468\\
+4 & HD 46375 b  & 0.23 & 5345\\
+5 & HD 219134 h & 0.28 & 5209\\
+6 & HD 88133 b  & 0.30 & 5582\\
+7 & HD33283 b   & 0.33 & 5877\\
+8 & HD 149026 b & 0.36 & 6096\\
+9 & BD-10 3166 b & 0.46 & 5578\\
+10 & HD 75289 b & 0.47 & 6196\\
+\bottomrule
+\end{tabular}
+\end{center}
+% TABLE ABRIDGED — full data in crop edition
+% (remaining rows: 11 HD 217014 b 0.47 5755; 12 HD 2638 b 0.48 5564;
+% 13 WASP-13 b 0.49 6025; 14 WASP-34 b 0.59 5771; 15 HD 209458 b 0.69 5988;
+% 16 HAT-P-30 b 0.71 6177; 17 WASP-76 b 0.92 6133; 18 WASP-74 b 0.97 5727;
+% 19 HAT-P-6 b 1.06 6442; 20 HD189733 b 1.14 5374; 21 WASP-82 b 1.24 6257;
+% 22 KELT-7 b 1.29 6460; 23 HD 149143 b 1.33 6067; 24 KELT-3 b 1.42 6404;
+% 25 KELT-2A b 1.49 6164; 26 HD86081 b 1.50 6015; 27 HAT-P-7 b 1.74 6270;
+% 28 HD 118203 b 2.14 5847; 29 HAT-P-14 b 2.20 6490; 30 WASP-38 b 2.71 6178;
+% 31 HD17156 b 3.20 5985; 32 KELT-6 c 3.71 6176; 33 HD 75732 d 3.86 5548;
+% 34 HD 115383 b 4.00 5891; 35 HD 120136 b 5.84 6210; 36 WASP-14 b 7.34 6195;
+% 37 HAT-P-2 b 8.74 6439; 38 XO-3 b 11.79 6281)
+
+\ioaafig{2021_DA_DA2-f5.pdf}
+% f5 = image of the full 38-planet list (all rows), kept as the complete
+% data table

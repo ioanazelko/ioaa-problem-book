@@ -1,0 +1,68 @@
+% FIGURE NEEDED: solution sketch of the eclipse light curve labelling the
+% eclipse duration t_e (A to D) and total-eclipse duration t_t (B to C)
+% (2008_th_sol.pdf, page 9).
+
+Binary period: $P = 30$ days $= 0.0821$ years.
+
+Time of eclipse: $t_e = 8$ hours $= 0.0009$ years.
+
+Time of total eclipse: $t_t = 1$ hour 18 minutes $= 0.0001$ years.
+
+Radial velocity of primary star: $V_{r1} = 30\,\mathrm{km/s}
+= 6.3285$\,AU/year.
+
+The velocity of secondary star: $V_{r2} = 40\,\mathrm{km/s}
+= 8.4380$\,AU/year.
+
+For circular orbit
+\[ V_r = \frac{2\pi a}{P} \quad\Longrightarrow\quad
+   a = \frac{P V_r}{2\pi} \quad (a = \text{radius of orbit}) \]
+
+For primary star: \hfill(10\%)
+\[ a_1 = \frac{P V_{r1}}{2\pi}
+   = \frac{(0.0821)(6.3285)}{2\pi}
+   = 0.0827\ \mathrm{AU} = 1.24 \times 10^7\ \mathrm{km} \]
+
+For secondary star: \hfill(10\%)
+\[ a_2 = \frac{P V_{r2}}{2\pi}
+   = \frac{(0.0821)(8.4380)}{2\pi}
+   = 0.1103\ \mathrm{AU} = 1.65 \times 10^7\ \mathrm{km} \]
+\[ a = a_1 + a_2 = 0.0827 + 0.1103
+   = 0.1930\ \mathrm{AU} = 2.89 \times 10^7\ \mathrm{km} \]
+
+The radius of the primary star can be determined from the equation:
+\hfill(10\%)
+\[ \frac{(t_e + t_t)}{P} = \frac{4R_1}{2\pi a}
+   \qquad\text{or}\qquad
+   R_1 = \frac{2\pi a}{4P}(t_e + t_t)
+   = \frac{2\pi(0.1930)}{4(0.0821)}(0.0009 + 0.0001) \]
+\[ = 0.0039\ \mathrm{AU} = 5.86 \times 10^5\ \mathrm{km}
+   = 0.84\ R_\odot \]
+\hfill(20\%)
+
+The radius of the secondary star can be determined from the equation:
+\hfill(10\%)
+\begin{align*}
+\frac{(t_e - t_t)}{P} = \frac{4R_2}{2\pi a}
+  \qquad\text{or}\qquad
+  R_2 &= \frac{2\pi a}{4P}(t_e - t_t)
+  && \text{(10\%)} \\
+  &= \frac{2\pi(0.1930)}{4(0.0821)}(0.0009 - 0.0001) \\
+  &= 0.0028\ \mathrm{AU} = 4.22 \times 10^5\ \mathrm{km} = 0.61\ R_\odot
+  && \text{(15\%)}
+\end{align*}
+
+From the Kepler's third law:
+\[ \frac{a^3 \sin^3 i}{P^2} = \left(\mathcal{M}_1 + \mathcal{M}_2\right)
+   \qquad\text{and}\qquad
+   \frac{\mathcal{M}_1}{\mathcal{M}_2} = \frac{a_2}{a_1} \]
+
+Since $i = 90^\circ$, $\sin i = \sin 90^\circ = 1$, and then
+\[ \mathcal{M}_1 = \frac{a^3}{P^2(1 + a_1/a_2)}
+   = \frac{(0.1930)^3}{(0.0821)^2(1 + 0.0827/0.1103)}
+   = 0.61\ \mathcal{M}_\odot \]
+\hfill(15\%)
+\[ \mathcal{M}_2 = \frac{a^3}{P^2(1 + a_2/a_1)}
+   = \frac{(0.1930)^3}{(0.0821)^2(1 + 0.1103/0.0827)}
+   = 0.46\ \mathcal{M}_\odot \]
+\hfill(10\%)

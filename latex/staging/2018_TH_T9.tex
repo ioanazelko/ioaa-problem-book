@@ -1,0 +1,42 @@
+An observer wants to use the Five-hundred-meter Aperture Spherical radio
+Telescope (FAST) in China to observe a radio galaxy at redshift of $z = 0.06$.
+We assume that the radio source is compact compared to the beam size of the
+telescope at the observing frequencies, i.e., the source is point-like as seen
+through the telescope. To detect a point source with FAST, it must be
+sufficiently strong (bright) relative to the noise level (for single
+polarization observations), $\sigma$, which depends on the bandwidth,
+$\Delta\nu$, and the integration time (the radio astronomy equivalent of
+exposure time), $t_i$, as follows:
+\[ \sigma = \frac{2 k_B T_{sys}}{A_e \sqrt{t_i\,\Delta\nu}} \]
+where $T_{sys}$ is the system temperature (about 150\,K in the frequency range
+of 0.28\,GHz -- 0.56\,GHz and 25\,K in the frequency range of 1.05\,GHz --
+1.45\,GHz), and $A_e = 4.6 \times 10^4\,\mathrm{m}^2$ is the effective area of
+the telescope taking into account the total efficiency of the instrument.
+
+This radio galaxy has an observed continuum flux density of
+$f_\nu = 2.5 \times 10^{-3}$\,Jy at an observing frequency of 0.4\,GHz. The
+bandwidth $\Delta\nu$ for the continuum observation centered at 0.4\,GHz is
+$2.8 \times 10^8$\,Hz.
+
+\begin{description}
+\item[(a)] In order to detect the continuum flux density at 0.4\,GHz with a
+  signal-to-noise ratio of 30 (a so-called 30$\sigma$ detection), what is the
+  required integration time, $t_i$?
+\item[(b)] We want to search for the neutral Hydrogen (HI) in the galaxy using
+  21\,cm absorption line. The HI 21\,cm line, with rest frame frequency of
+  1.4204\,GHz. Calculate the observed frequency ($\nu_{obs}$) of the HI line
+  for this galaxy.
+\item[(c)] The radio continuum emission from this galaxy can be described by a
+  power law $f_\nu \sim \nu^\alpha$, with a spectral index of $\alpha = -0.2$.
+  Calculate the continuum flux density at $\nu_{obs}$ for this galaxy.
+\item[(d)] The line width of the HI 21\,cm absorption line is 90\,km/s.
+  Calculate the line width in Hz at the observing frequency of $\nu_{obs}$.
+  According to Figure 1, the HI 21\,cm line absorbs 4\% of the continuum flux
+  density (on average) over the line width of 90\,km\,s$^{-1}$. In order to
+  detect the absorption line at $\geq 3\sigma$ in three consecutive
+  30\,km\,s$^{-1}$ channels, what is the required integration time?
+\end{description}
+
+% Figure 1: spectrum of the HI 21cm absorption relative to the continuum
+% emission in the radio galaxy.
+\ioaafig{2018_TH_T9-f1.pdf}

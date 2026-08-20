@@ -1,0 +1,30 @@
+An astronomer takes pictures, in the $V$-band, of a faint celestial target,
+from a place with no light pollution. The selected target is the globular
+cluster Palomar 4, which has an angular diameter of $\theta = 72.0''$ and a
+uniform surface brightness in the $V$-band of $m_V = 20.6$\,mag/arcsec$^2$.
+The observation equipment consists of one reflector telescope, with diameter
+$D = 305$\,mm and f-ratio $f/5$, and a prime focus CCD with quantum
+efficiency $\eta = 80\%$ and square pixels with size $\ell = 3.80\,\mu$m.
+
+Given data:
+\begin{itemize}
+\item $V$-band central wavelength: $\lambda_V = 550$\,nm
+\item $V$-band bandwidth: $\Delta\lambda_V = 88.0$\,nm
+\item Photon flux for a 0-magnitude object in the $V$-band:
+  $10000\,\mathrm{counts/nm/cm^2/s}$
+\end{itemize}
+
+\begin{description}
+\item[(a)] Calculate the plate scale (the angle of sky projected per unit
+  length of the sensor) of the observation equipment in arcmin/mm.
+  \hfill(3 points)
+\item[(b)] Estimate the number of pixels, $n_p$, covered by the cluster
+  image on the CCD. \hfill(4 points)
+\item[(c)] With an exposure time of $t = 15$ seconds, the astronomer obtains
+  a signal-to-noise ratio of $S/N = 225$. Compute the brightness of the sky
+  at the observation site, knowing that the CCD has a readout noise
+  (standard deviation) of 5 counts per pixel and dark noise of 6 counts per
+  pixel per minute. Give your answer in mag/arcsec$^2$. You may find useful:
+  $\sigma^2_{RON} = n_p \cdot 1 \cdot RON^2$ and
+  $\sigma^2_{DN} = n_p \cdot DN \cdot t$. \hfill(13 points)
+\end{description}

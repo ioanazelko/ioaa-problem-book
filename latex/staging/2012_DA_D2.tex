@@ -1,0 +1,66 @@
+Cepheids are very bright variable stars whose mean absolute magnitudes are
+functions of their pulsation periods. This allows astrophysicists to easily
+determine their intrinsic luminosities from the variation in their observed,
+apparent luminosities.
+
+Below is a table with Cepheid data. $P_0$ is the pulsation period in days and
+$\langle M_V\rangle$ is the mean absolute visual magnitude.
+
+% The sixth Cepheid's name is printed with a corrupted glyph in the official
+% paper (it appears as a CJK character); it is rendered here as alpha UMi.
+\begin{center}
+\begin{tabular}{ccc}
+Cepheid & $P_0$ (days) & $\langle M_V\rangle$ \\
+SU Cas & 1.95 & $-1.99$ \\
+V1726 Cyg & 4.24 & $-3.04$ \\
+SZ Tau & 4.48 & $-3.09$ \\
+CV Mon & 5.38 & $-3.37$ \\
+QZ Nor & 5.46 & $-3.32$ \\
+$\alpha$ UMi & 5.75 & $-3.42$ \\
+V367 Sct & 6.30 & $-3.58$ \\
+U Sgr & 6.75 & $-3.64$ \\
+DL Cas & 8.00 & $-3.80$ \\
+S Nor & 9.75 & $-3.95$ \\
+$\zeta$ Gem & 10.14 & $-4.10$ \\
+X Cyg & 16.41 & $-4.69$ \\
+WZ Sgr & 21.83 & $-5.06$ \\
+SW Vel & 23.44 & $-5.09$ \\
+SV Vul & 44.98 & $-6.04$ \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item Plot all Cepheids in a scatter diagram. $\log_{10}(P_0)$ should be the
+  abscissa and $\langle M_V\rangle$ should be the ordinate.
+\item Fit, using least squares, a straight line to the $\langle M_V\rangle$
+  vs $\log_{10}(P_0)$ plot. This equation allows one to obtain the absolute
+  magnitude from the pulsation period for any Cepheid.
+\item Figures 1 and 2 show the light curves of two Cepheids. Use the
+  available data to estimate the distances to each of these two Cepheids.
+  Also estimate the uncertainty of the distance determination (exact
+  formulae are not necessary).
+\item Comparing the difference between the distances of the two stars with
+  the typical size of a galaxy, would it be possible for these two stars to
+  be in the same galaxy? Please mark ``YES'' (~) or ``NO'' (~).
+\end{enumerate}
+
+\paragraph{Appendix A: extinction coefficients.}
+The magnitude outside the atmosphere is given by:
+\[ M = m - A\cdot X + B \]
+where $A$ is the extinction coefficient and $B$ is the zero point coefficient
+for the night, $X$ is the airmass of the observation and $m$ is the
+instrumental magnitude (that is, the magnitude obtained directly from the
+image).
+
+\paragraph{Appendix B: calibrated differential magnitude.}
+If the standard star is in the same frame as the object, the calibrated
+magnitude of the object can be obtained by:
+\[ M_{\mathrm{ast}} = m_{\mathrm{ast}} - m_{\mathrm{star}}
+   + M_{\mathrm{star}} \]
+
+\paragraph{Appendix C: least squares estimation of angular coefficients.}
+Given straight lines described by
+\[ y_i = \alpha + \beta x_i,\ i = 1..n \]
+the least squares estimator of $\beta$ is given by
+\[ \beta = \frac{\sum_i^n x_i y_i - \frac{1}{n}\sum_i^n x_i \sum_i^n y_i}
+   {\sum_i^n x_i^2 - \frac{1}{n}\left(\sum_i^n x_i\right)^2} \]

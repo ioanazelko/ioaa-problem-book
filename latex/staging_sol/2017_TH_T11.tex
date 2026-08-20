@@ -1,0 +1,174 @@
+\begin{description}
+\item[a)]
+  \begin{equation*}
+  \frac{1}{2}m_1 v_1^2 + \frac{1}{2}m_2 v_2^2 - \frac{Gm_1 m_2}{r_1 + r_2} = E.
+  \tag*{[5]}
+  \end{equation*}
+  Note that the total energy is a negative quantity.
+
+\item[b)] From $m_1 r_1 = m_2 r_2$ and $r_1 + r_2 = r$, we have
+  \[
+  r_1 = \frac{m_2}{m_1 + m_2}\,r
+  \qquad\text{and}\qquad
+  r_2 = \frac{m_1}{m_1 + m_2}\,r.
+  \]
+  Substituting them into the solution obtained in a), we get
+  \begin{align*}
+  \frac{1}{2}\mu v^2 - \frac{G(m_1 + m_2)\mu}{r} &= E \\
+  v^2 - \frac{2GM}{r} &= \frac{2E}{\mu}
+  \end{align*}
+  Therefore,
+  \begin{equation*}
+  v^2 = 2\left(\frac{GM}{r} + \frac{E}{\mu}\right)
+  \tag*{[10]}
+  \end{equation*}
+
+\item[c)] From b), we have
+  \begin{align*}
+  v^2 &= \frac{2GM}{r} + \frac{2E}{\mu}
+  = (2GM)\left(\frac{1}{r} + \frac{E}{GM\mu}\right) \\
+  &= (2GM)\left(\frac{1}{r} - \frac{1}{r_0}\right),
+  \quad\text{where } r_0 = -\frac{GM\mu}{E}.
+  \tag*{[5]}
+  \end{align*}
+
+\item[d)] Substituting $r(\theta)$ in the equation of part c):
+  \[
+  v^2 = 2GM\left(\frac{1}{r} - \frac{1}{r_0}\right)
+  = 2GM\left(\frac{1}{\tfrac{1}{2}r_0(1-\cos\theta)} - \frac{1}{r_0}\right)
+  = \frac{2GM}{r_0}\left(\frac{1+\cos\theta}{1-\cos\theta}\right)
+  \]
+  \[
+  v^2 = \frac{2GM}{r_0}\,\frac{(1-\cos^2\theta)}{(1-\cos\theta)^2}
+  = \frac{2GM}{r_0}\,\frac{\sin^2\theta}{(1-\cos\theta)^2}
+  \;\Longrightarrow\;
+  v(\theta) = \left(\frac{2GM}{r_0}\right)^{1/2}\frac{\sin\theta}{1-\cos\theta}
+  \]
+  Combining $v(\theta)$, $t(\theta)$, and $r(\theta)$:
+  \[
+  \frac{v(\theta)\,t(\theta)}{r(\theta)}
+  = \frac{\left(\dfrac{2GM}{r_0}\right)^{1/2}
+      \dfrac{\sin\theta}{1-\cos\theta}\cdot
+      \left(\dfrac{r_0^3}{8GM}\right)^{1/2}(\theta - \sin\theta)}
+      {\dfrac{r_0}{2}\,(1-\cos\theta)}
+  = \frac{2}{r_0}\left(\frac{2GM r_0^3}{r_0\, 8GM}\right)^{1/2}
+    \frac{(\sin\theta)(\theta - \sin\theta)}{(1-\cos\theta)^2}
+  \]
+  \[
+  \frac{vt}{r} = \frac{(\sin\theta)(\theta - \sin\theta)}{(1-\cos\theta)^2}
+  \]
+
+  \emph{Alternative solution:}
+  From $r(\theta) = \dfrac{r_0}{2}(1-\cos\theta)$, we have
+  \[
+  v = \left(\frac{r_0}{2}\sin\theta\right)\dot\theta
+  \]
+  From $t(\theta) = \left(\dfrac{r_0^3}{8GM}\right)^{1/2}(\theta-\sin\theta)$,
+  we have
+  \[
+  1 = \left(\frac{r_0^3}{8GM}\right)^{1/2}(1-\cos\theta)\,\dot\theta
+  \]
+  \begin{equation*}
+  \therefore\;
+  \frac{vt}{r}
+  = \frac{\left(\dfrac{r_0}{2}\sin\theta\right)
+      \left(\dfrac{r_0^3}{8GM}\right)^{1/2}(\theta-\sin\theta)}
+      {\left(\dfrac{r_0^3}{8GM}\right)^{1/2}(1-\cos\theta)\,
+       \dfrac{r_0}{2}(1-\cos\theta)}
+  = \frac{(\sin\theta)(\theta-\sin\theta)}{(1-\cos\theta)^2}.
+  \tag*{[10]}
+  \end{equation*}
+
+\item[e)]
+  \begin{align*}
+  v &= -118~\mathrm{km\,s^{-1}} = -118 \times 10^{3}~\mathrm{m\,s^{-1}} \\
+  r &= 710~\mathrm{kpc} = 2.19 \times 10^{22}~\mathrm{m} \\
+  t &= 13700 \times 10^{6}~\mathrm{years} = 4.3233 \times 10^{17}~\mathrm{s}
+  \end{align*}
+  \begin{equation*}
+  \therefore\;
+  \frac{vt}{r}
+  = -\frac{118 \times 10^{3} \times 4.3233 \times 10^{17}}
+          {2.1908 \times 10^{22}}
+  = -2.33
+  = \frac{(\sin\theta)(\theta-\sin\theta)}{(1-\cos\theta)^2}
+  \tag*{[5]}
+  \end{equation*}
+  The negative value of the left-hand side of this equation implies that
+  $\theta$ is greater than $\pi$.
+
+  \begin{center}
+  \begin{tabular}{cc}
+  $\theta$ & $(\sin\theta)(\theta-\sin\theta)/(1-\cos\theta)^2$ \\
+  \hline
+  $200^\circ = 3.49$ radians & $-0.348$ \\
+  $210^\circ = 3.67$ radians & $-0.598$ \\
+  $240^\circ = 4.19$ radians & $-1.95$ \\
+  $244^\circ = 4.26$ radians & $-2.24$ \\
+  $245^\circ = 4.28$ radians & $-2.32$ \\
+  $246^\circ = 4.29$ radians & $-2.40$ \\
+  $250^\circ = 4.36$ radians & $-2.77$ \\
+  \end{tabular}
+  \end{center}
+  This gives the value of $\theta = 245^\circ = 4.28$ radians. \hfill[5]
+
+\item[f)] From $r(\theta) = \dfrac{r_0}{2}(1-\cos\theta)$, we have
+  $r_{\mathrm{max}} = r_0$, and hence
+  \begin{equation*}
+  r_{\mathrm{max}} = \frac{2r(\theta)}{1-\cos\theta}
+  = \frac{2 \times 710~\mathrm{kpc}}{1 - \cos 245^\circ}
+  = 998~\mathrm{kpc}
+  \tag*{[5]}
+  \end{equation*}
+  (This is the maximum separation between the Milky-Way Galaxy and Andromeda
+  Galaxy; they started to move towards each other afterwards.)
+
+  The value of $M$ can be calculated from the relation
+  $t(\theta) = \left(\dfrac{r_0^3}{8GM}\right)^{1/2}(\theta - \sin\theta)$:
+  \[
+  M = \left(\frac{r_{\mathrm{max}}^3}{8G}\right)
+      \left\{\frac{\theta - \sin\theta}{t(\theta)}\right\}^{2}.
+  \]
+  From the maximum separation of
+  $r_{\mathrm{max}} = 998~\mathrm{kpc} = 3.0795 \times 10^{22}$~m,
+  $\theta = 245^\circ = 4.276$~radians,
+  $t = t(\theta) = 13700 \times 10^{6}~\mathrm{years}
+     = 4.3233 \times 10^{17}$~s, and
+  $G = 6.67 \times 10^{-11}~\mathrm{N\,m^2\,kg^{-2}}$, we obtain
+  \begin{equation*}
+  \therefore\; M = 7.86 \times 10^{42}~\mathrm{kg}
+  = \frac{7.86 \times 10^{42}}{1.99 \times 10^{30}}\,M_\odot
+  = 3.95 \times 10^{12}\,M_\odot
+  \tag*{[5]}
+  \end{equation*}
+  The estimated number of stars, most of which are of less than a solar mass,
+  for Andromeda and Our Galaxy are $4 \times 10^{11}$ and $2 \times 10^{11}$
+  respectively. This implies that most of mass of the system is DARK.
+\end{description}
+
+\medskip
+\noindent\textbf{Note that}
+\[
+v = \frac{d}{dt}r = +(2GM)^{1/2}\left(\frac{r_0 - r}{r_0 r}\right)^{1/2}
+\quad\text{for } r_0 > r
+\]
+\[
+\int (2GM)^{1/2}\,dt = +\int \left(\frac{r_0 r}{r_0 - r}\right)^{1/2} dr
+\]
+Putting $\dfrac{r}{r_0} \equiv \sin^2\phi$,
+\[
+t = \left(\frac{r_0^3}{8GM}\right)^{1/2}\{2\phi - \sin 2\phi\} + D
+\]
+We choose the initial condition such that $m_1$ and $m_2$ are close together,
+that is that $r = 0$ at $t = 0$. This implies that $\phi = 0$ at $t = 0$,
+hence $D$ must be zero.
+\[
+t = \left(\frac{r_0^3}{8GM}\right)^{1/2}(\theta - \sin\theta),
+\quad \theta \equiv 2\phi.
+\]
+And from $r = r_0 \sin^2\phi = \dfrac{1}{2}r_0(1 - \cos 2\phi)$, we have:
+\[
+r = \frac{1}{2}r_0(1 - \cos\theta).
+\]
+These form the parametric solution:
+$r_{\mathrm{max}} = r(\theta = \pi) = r_0$.

@@ -1,0 +1,323 @@
+\subsubsection*{1. Polar version}
+
+\begin{description}
+\item[(a)] \textbf{Rewrite the orbit equation using polar coordinate}
+  \begin{align*}
+    x &= R(\alpha)\cos\alpha \\
+    y &= R(\alpha)\sin\alpha
+  \end{align*}
+  Thus, if we let
+  \begin{align*}
+    x^* &= R(\alpha)\cos\left(\alpha - \frac{\pi}{3}\right)
+      = \frac{x}{2} + \frac{y\sqrt{3}}{2} \\
+    y^* &= R(\alpha)\sin\left(\alpha - \frac{\pi}{3}\right)
+      = -\frac{x\sqrt{3}}{2} + \frac{y}{2}
+  \end{align*}
+  \hfill(10 points)
+
+  the equation of the orbit can be written as
+  \begin{align*}
+    9\left(R(\alpha)\cos\left(\alpha - \frac{\pi}{3}\right) - 4\right)^2
+      + 25\left(R(\alpha)\sin\left(\alpha - \frac{\pi}{3}\right)\right)^2
+      &= 225 \\
+    9(x^* - 4)^2 + 25(y^*)^2 &= 225
+  \end{align*}
+  \hfill(10 points)
+
+  \textbf{Determine semi major and semi minor axis of the orbit}
+
+  Since
+  \[
+    9(x^* - 4)^2 + 25(y^*)^2 = 225
+  \]
+  is equivalent to
+  \[
+    \frac{(x^* - 4)^2}{25} + \frac{(y^*)^2}{9} = 1
+  \]
+  then, the semi major axis is 5, and \hfill(5 points) \\
+  the semi minor axis is 3 \hfill(5 points)
+
+\item[(b)] \textbf{Determine the zenith angle at perigee} \hfill(20 points)
+
+  At the perigee, $\alpha - \frac{\pi}{3} = \pi$. Thus, the zenith angle at
+  the perigee is
+  \[
+    \alpha - \frac{\pi}{2} = \pi + \frac{\pi}{3} - \frac{\pi}{2}
+      = \frac{5\pi}{6}
+  \]
+
+% FIGURE NEEDED: rotated ellipse with the zenith angle at perigee marked at
+% the origin (2015 long-question solutions, page 2/13).
+
+\item[(c)] \textbf{Characterize the coordinates of the moon when it looks
+  largest to the observer.}
+
+  Let $P(x_0, y_0)$ be the point where it looks largest to the observer. Since
+  the distance between the moon and the observer decreases as it moves from
+  apogee towards perigee, then the moon looks largest to the observer at the
+  planet when it closest to the planet while the whole of the moon still can % sic: "when it closest"
+  be seen in full. Hence, $y_0 = r$.
+  \begin{align*}
+    y_0 &= r = R(\pi - \alpha_0\alpha_0)\sin(\pi - \alpha_0)
+      = R_0\sin(\pi - \alpha_0) \\ % sic: "R(pi - alpha_0 alpha_0)" as printed
+    x_0 &= R_0\cos(\pi - \alpha_0)
+  \end{align*}
+  \hfill(10 points)
+
+% FIGURE NEEDED: sketch of the orbit arc near perigee with the moon of radius
+% r at (x_0, r), the distance R_0 to the observer at the origin and the angle
+% alpha_0 = theta_0/2 below the x-axis (2015 long-question solutions, page
+% 3/13).
+
+  \textbf{Determine the coordinates of the point.}
+
+  Let the coordinate be $(x_0, r)$.
+  \[
+    9\left(\frac{x_0}{2} + \frac{\sqrt{3}r}{2} - 4\right)^2
+      + 25\left(-\frac{\sqrt{3}x_0}{2} + \frac{r}{2}\right)^2 = 225
+  \]
+  Rewrite it as a quadratic equation in $x_0$.
+  \begin{align*}
+    9\left(x_0 + r\sqrt{3} - 8\right)^2
+      + 25\left(-x_0\sqrt{3} + r\right)^2 &= 900 \\
+    84(x_0)^2 + \left(-32\sqrt{3}r - 144\right)x_0
+      + \left(52r^2 - 144\sqrt{3}r + 576 = 900\ \right) % sic: stray "= 900" inside the bracket as printed
+  \end{align*}
+  \hfill(20 points)
+
+  Solving for $x$, we get
+  \[
+    x_0 = \frac{4r\sqrt{3} + 18}{21}
+      \pm \frac{15\sqrt{-r^2 + 4r\sqrt{3} + 9}}{21}
+  \]
+  Then choose the smaller one
+  \[
+    x_0 = \frac{4r\sqrt{3} + 18}{21}
+      - \frac{15\sqrt{-r^2 + 4r\sqrt{3} + 9}}{21}
+  \]
+  \hfill(10 points)
+
+  \textbf{Find $\tan\frac{\theta}{2}$.} Hence
+  \[
+    \tan\frac{\theta_0}{2} = \tan\alpha_0 = \frac{r}{x_0}
+      = \frac{21r}{4r\sqrt{3} + 18 - 15\sqrt{-r^2 + 4r\sqrt{3} + 9}}
+  \]
+  \hfill(10 points)
+\end{description}
+
+\subsubsection*{2. Cartesian version}
+
+\begin{description}
+\item[(a)] \textbf{Notice the standard version of the orbits}
+
+  Simplify the equation by introducing new variables
+  \begin{align*}
+    x^* &= \frac{x}{2} + \frac{\sqrt{3}y}{2}
+      = x\cos\frac{\pi}{3} + y\sin\frac{\pi}{3} \\
+    y^* &= -\frac{\sqrt{3}x}{2} + \frac{y}{2}
+      = x\sin\left(-\frac{\pi}{3}\right) + y\cos\frac{\pi}{3}
+  \end{align*}
+  \hfill(10 points)
+
+  Write the orbit equation in terms new variables % sic: "in terms new variables"
+  \[
+    9(x^* - 4)^2 + 25(y^*) = 225 % sic: exponent missing on (y*) as printed
+  \]
+  \hfill(10 points)
+
+% FIGURE NEEDED: plot of the original tilted ellipse through (x,y) and the
+% rotated standard ellipse (dashed) through (x*,y*), axes graduated 0..8
+% (2015 long-question solutions, page 4/13).
+
+  \textbf{Determine semi major and semi minor axis of the orbit}
+
+  Since
+  \[
+    9(x^* - 4)^2 + 25(y^*)^2 = 225
+  \]
+  is equivalent to
+  \[
+    \frac{(x^* - 4)^2}{25} + \frac{(y^*)^2}{9} = % sic: right-hand side left blank as printed
+  \]
+  then, the semi major axis is 5, and \hfill(5 points) \\
+  the semi minor axis is 3 \hfill(5 points)
+
+\item[(b)] \textbf{Determine the zenith angle at perigee} \hfill(20 points)
+
+  Since the original ellipse may be obtained from standard ellipse
+  \[
+    \frac{(x^* - 4)^2}{25} + \frac{(y^*)^2}{9} = 1
+  \]
+  by $\pi/3$ counterclockwise rotation respect to the origin, the the zenith % sic: "the the"
+  angle at perigee is equal to
+  \[
+    \pi + \frac{\pi}{3} - \frac{\pi}{2} = \frac{5\pi}{6}
+  \]
+
+\item[(c)] \textbf{Characterize the coordinates of the moon when it looks
+  largest to the observer.}
+
+  Let $P(x_0, y_0)$ be the point where it looks largest to the observer. Since
+  the distance between the moon and the observer decreases as it moves from
+  apogee towards perigee, then the moon looks largest to the observer at the
+  planet when it closest to the planet while the whole of the moon still can
+  be seen in full. Hence, $y_0 = r$. \hfill(10 points)
+
+  \textbf{Find $x_0$.}
+  \[
+    9\left(\frac{x_0}{2} + \frac{\sqrt{3}r}{2} - 4\right)^2
+      + 25\left(-\frac{\sqrt{3}x_0}{2} + \frac{r}{2}\right)^2 = 225
+  \]
+  Rewrite it as a quadratic equation in $x$.
+  \begin{align*}
+    9\left(x_0 + r\sqrt{3} - 8\right)^2
+      + 25\left(-x_0\sqrt{3} + r\right)^2 &= 900 \\
+    \left(9x_0^2 + \left(18\sqrt{3}r - 144\right)x_0 + 27r^2
+      - 144\sqrt{3}r + 576\right)
+      + \left(75x_0^2 - 50\sqrt{3}rx_0 + 25r^2\right) &= 900 \\
+    84(x_0)^2 + \left(-32\sqrt{3}r - 144\right)x_0
+      + \left(52r^2 - 144\sqrt{3}r + 576\ \right) &= 900
+  \end{align*}
+  Solving it for $x$ we get
+  \[
+    x_0 = \frac{4r\sqrt{3} + 18}{21}
+      \pm \frac{15\sqrt{-r^2 + 4r\sqrt{3} + 9}}{21}
+  \]
+  \hfill(20 points)
+
+  Then choose the smaller one
+  \[
+    x_0 = \frac{4r\sqrt{3} + 18}{21}
+      - \frac{15\sqrt{-r^2 + 4r\sqrt{3} + 9}}{21}
+  \]
+  \hfill(10 points)
+
+  \textbf{Find $\tan\frac{\theta}{2}$.} Hence
+  \[
+    \tan\frac{\theta}{2} = \tan\alpha_0 = \frac{r}{x_0}
+      = \frac{21r}{4r\sqrt{3} + 18 - 15\sqrt{-r^2 + 4r\sqrt{3} + 9}}
+  \]
+  \hfill(10 points)
+\end{description}
+
+\subsubsection*{3. Cartesian version} % sic: both the second and third versions are titled "Cartesian version"
+
+\begin{description}
+\item[(a)] \textbf{Notice the standard version of the orbits}
+
+  Simplify the equation by introducing new variables
+  \begin{align*}
+    x^* &= \frac{x}{2} + \frac{\sqrt{3}y}{2}
+      = x\cos\frac{\pi}{3} + y\sin\frac{\pi}{3} \\
+    y^* &= -\frac{\sqrt{3}x}{2} + \frac{y}{2}
+      = x\sin\left(-\frac{\pi}{3}\right) + y\cos\frac{\pi}{3}
+  \end{align*}
+  \hfill(10 points)
+
+  Write the orbit equation in terms new variables
+  \[
+    9(x^* - 4)^2 + 25(y^*) = 225
+  \]
+  \hfill(10 points)
+
+  \textbf{Determine semi major and semi minor axis of the orbit}
+
+  Since
+  \[
+    9(x^* - 4)^2 + 25(y^*)^2 = 225
+  \]
+  is equivalent to
+  \[
+    \frac{(x^* - 4)^2}{25} + \frac{(y^*)^2}{9} =
+  \]
+  The semi major axis is 5 \hfill(5 points) \\
+  The semi major axis is 3 \hfill(5 points) % sic: "semi major" twice as printed
+
+\item[(b)] \textbf{Notice the standard version of the orbits} \hfill(20 points)
+  % sic: heading repeated from (a) as printed
+
+  Since the original ellipse may be obtained from standard ellipse
+  \[
+    \frac{(x^* - 4)^2}{25} + \frac{(y^*)^2}{9} = 1
+  \]
+  by counterclockwise $\pi/3$ rotation respect to the origin, the zenith angle
+  at perigee is
+  \[
+    \pi + \frac{\pi}{3} - \frac{\pi}{2} = \frac{5\pi}{6}
+  \]
+
+\item[(c)] \textbf{Identify and characterized the coordinates when the planet
+  looks largest.} % sic: "characterized"
+
+  Since the distance between the moon and the observer decreases as it moves
+  from apogee towards perigee, then the moon looks largest to the observer at
+  the planet when it closest to the planet while the whole of the moon still
+  can be seen in full. Hence, it is at necessary that $y = r$. Let the % sic: "it is at necessary"
+  coordinates be $(x_0, r)$. \hfill(10 points)
+
+% FIGURE NEEDED: same near-perigee sketch as in the polar version, now with
+% the moon at (x,r), distance d_theta to the observer and angle alpha =
+% theta/2 (2015 long-question solutions, page 6/13).
+
+  \textbf{Obtain expression for calculating distance from a point on an
+  ellipse to the foci to set up an equation}
+
+  Consider standard ellipse
+  \[
+    \frac{(x^* - 4)^2}{5^2} + \frac{(y^*)^2}{3^2} = 1
+  \]
+  Choose any point $(x^*, y^*)$ on the ellipse. Let $d_1$ and $d_2$ be the
+  distances from any point $(x^*, y^*)$ on the ellipse to the foci $(0{,}0)$
+  and $d(8{,}0)$; $d_1^2 = (x^*)^2 + (y^*)^2$ and
+  $d_2^2 = (x^* - 8)^2 + (y^*)^2$
+
+  Thus,
+  \[
+    d_1^2 = (x^*)^2 + (y^*)^2
+      = (x^*)^2 + \left(9 - \frac{9(x^* - 4)^2}{5^2}\right)
+      = \frac{(16(x^*)^2 + 72x^* + 81)}{25}
+  \]
+  Therefore
+  \[
+    d_1^2 = \frac{(16(x^*)^2 + 72x^* + 81)}{25} = x^2 + r^2
+  \]
+  \hfill(10 points)
+
+  where $x^* = \frac{x}{2} + \frac{r\sqrt{3}}{2}$. Therefore, we can obtain
+  the value of $x$ by solving the above equation for $x$.
+
+  \textbf{Solve equation
+  $\frac{(16(x^*)^2 + 72x^* + 81)}{25} = x^2 + r^2$ to obtain value of $x$.}
+
+  Substituting $x^* = \frac{x}{2} + \frac{r\sqrt{3}}{2}$ to the equation, we
+  have
+  \[
+    25d_1^2 = 25x^2 + 25r^2
+      = 16\left(\frac{x}{2} + \frac{r\sqrt{3}}{2}\right)^2
+      + 72\left(\frac{x}{2} + \frac{r\sqrt{3}}{2}\right) + 81 = % sic: trailing "=" as printed
+  \]
+  or
+  \begin{align*}
+    25x^2 + 25r^2 &= 4x^2 + \left(8r\sqrt{3} + 36\right)x
+      + \left(12r^2 + 36\sqrt{3}r + 81\right) \\
+    21x^2 - \left(8r\sqrt{3} + 36\right)x
+      + \left(13r^2 - 36r\sqrt{3} - 81\right) &= 0
+  \end{align*}
+  Then use quadratic formula to obtain $x$ in term of $r$. Choose smaller
+  value of $x$ to get larger value of
+  $\tan\frac{\theta}{2} = \frac{r}{x}$. The smaller one is
+  \[
+    x = \frac{4r\sqrt{3} + 18}{21}
+      - \frac{15\sqrt{-r^2 + 4r\sqrt{3} + 9}}{21}
+  \]
+  \hfill(20 points)
+
+  \textbf{Find the expression of $\tan\frac{\theta}{2}$.}
+
+  Hence
+  \[
+    \tan\frac{\theta}{2} = \frac{r}{x}
+      = \frac{21r}{4r\sqrt{3} + 18 - 15\sqrt{-r^2 + 4r\sqrt{3} + 9}}
+  \]
+  \hfill(10 points)
+\end{description}

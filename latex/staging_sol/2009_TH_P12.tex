@@ -1,0 +1,45 @@
+The rate of change of solar mass could be estimated from solar luminosity:
+\hfill(2 points)
+\[
+  L_\odot = -\frac{\Delta E}{\Delta t} = -\frac{\Delta M c^2}{\Delta t}
+          = -\dot{M}c^2
+\]
+\[
+  \dot{M} = -\frac{L_\odot}{c^2}
+          = -\frac{3.83\times 10^{26}}{(3.00\times 10^{8})^2}
+          = -4.26\times 10^{9}\,(kg\,s^{-1})
+\]
+Newton second law will give us:
+\[
+  \frac{v^2}{r} = \frac{GM}{r^2} \;\Longrightarrow\; v^2 = \frac{GM}{r}
+\]
+\hfill(2 points)
+
+where $v$ and $r$ are orbital velocity and orbital radius of the Earth.
+From conservation of angular momentum:
+\[
+  l = rmv \;\Longrightarrow\; v = \frac{l}{mr}
+\]
+\hfill(2 points)
+
+Where $m$ and $l$ are the Earth mass and angular momentum which are constant:
+\begin{align*}
+  \frac{l^2}{m^2r^2} = \frac{GM}{r}
+  \Rightarrow r = \frac{l^2}{GMm^2}
+  &\Rightarrow \dot{r} = -\frac{l^2}{Gm^2}\,\frac{\dot{M}}{M^2}
+   = -\frac{r^2m^2v^2}{GM^2m^2}\,\dot{M} \\
+  \Rightarrow \dot{r} = -\frac{(GM/r)r^2}{G}\,\frac{\dot{M}}{M^2}
+   = -r\,\frac{\dot{M}}{M}
+  &\Rightarrow \frac{\dot{r}}{r} = -\frac{\dot{M}}{M}
+   \Rightarrow \dot{r} = -r\,\frac{\dot{M}}{M} \\
+  \Rightarrow \dot{r}
+   = -\frac{1.50\times 10^{11}\times 4.26\times 10^{9}}{1.99\times 10^{30}}
+  &= 3.21\times 10^{-10}\,(m/s)
+\end{align*}
+\hfill(2 points)
+\[
+  \Delta r = 3.19\times 10^{-10}\times 100\times 86400\times 365.24
+  % sic: source uses 3.19e-10 here although \dot{r} was 3.21e-10 above
+  = 1.01\,m \quad (for\ 100\ years)
+\]
+\hfill(2 points)

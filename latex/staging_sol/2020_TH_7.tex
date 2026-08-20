@@ -1,0 +1,289 @@
+\begin{description}
+\item[(a)] Step 1: Determine the GST at the time of observation.
+
+  Let us denote the GST at 00:00 UT on 1st January 2020 as
+  $\mathrm{GST}_0$. Total 268 days have elapsed since start of the year till
+  $0^{\mathrm{h}}$ UT on 25 September. \hfill(1.0)
+
+  At 21:00 for GMT+8 timezone, UT will be
+  $21^{\mathrm{h}} - 8^{\mathrm{h}} = 13^{\mathrm{h}}$. Hence,
+  \begin{align*}
+    GST &= GST_0 + \Delta t\\
+        &= 6^{\mathrm{h}}40^{\mathrm{m}}30^{\mathrm{s}}
+           + \frac{268 \times 24}{365.2422} + \frac{13 \times 24}{23.9344}\\
+        &\approx 6^{\mathrm{h}}40^{\mathrm{m}}30^{\mathrm{s}}
+           + 17^{\mathrm{h}}36^{\mathrm{m}}36^{\mathrm{s}}
+           + 13^{\mathrm{h}}2^{\mathrm{m}}8^{\mathrm{s}}\\
+        &= 37^{\mathrm{h}}19^{\mathrm{m}}14^{\mathrm{s}}
+         = \mathbf{13^{h}19^{m}14^{s}}
+  \end{align*}
+  \hfill(3.0)
+
+  As longitude of observer is $120.4^\circ$, the LST of observation is,
+  \begin{align*}
+    LST &= GST + 24^{\mathrm{h}} \times \frac{120.4^\circ}{360^\circ}\\
+        &= 13^{\mathrm{h}}19^{\mathrm{m}}14^{\mathrm{s}}
+           + 8^{\mathrm{h}}1^{\mathrm{m}}36^{\mathrm{s}}\\
+        &= \mathbf{21^{h}20^{m}50^{s}}
+  \end{align*}
+  \hfill(2.0)
+
+\item[(b)] For horizontal coordinates
+
+  % FIGURE NEEDED: spherical-triangle sketch with the zenith, the radiant
+  % (A,a), and the initial (A_i,a_i) and final (A'_i,a'_i) points of the i-th
+  % meteor, with the angle theta at the meteor track; 2020 (GeCAA) theory
+  % solutions, page 18 (problem 7).
+  \hfill(1.0)
+
+  The spherical triangle has the radiant, initial position and final position
+  of the $i$-th meteor to be $(A, a), (A_i, a_i)$ and $(A'_i, a'_i)$, where $a$
+  and $A$ denotes the altitude and azimuth respectively.
+
+  Using the four-parts (cotangent) equation on the left and right triangles, we
+  have, for both meteors:
+  \begin{align*}
+    \cos(90 - a_i)\cos(A'_i - A_i)
+      &= \sin(90 - a_i)\cot(90 - a'_i) - \sin(A'_i - A_i)\cot\theta\\
+    \therefore \sin a_i \cos(A'_i - A_i)
+      &= \cos a_i \tan a'_i - \sin(A'_i - A_i)\cot\theta
+  \end{align*}
+  Similarly,
+  \begin{align*}
+    \cos(90 - a_i)\cos(A_i - A)
+      &= \sin(90 - a_i)\cot(90 - a) - \sin(A_i - A)\cot(180 - \theta)\\
+    \therefore \sin a_i \cos(A_i - A)
+      &= \cos a_i \tan a + \sin(A_i - A)\cot\theta
+  \end{align*}
+  \hfill(2.0)
+
+  We can then eliminate $\cot\theta$ to yield:
+  \[
+    \frac{\sin a_i \cos(A_i - A)}{\sin(A_i - A)}
+      - \frac{\cos a_i \tan a}{\sin(A_i - A)}
+    = \frac{\cos a_i \tan a'_i}{\sin(A'_i - A_i)}
+      - \frac{\sin a_i \cos(A'_i - A_i)}{\sin(A'_i - A_i)}
+    = \cot\theta
+  \]
+  multiplying the whole equation by
+  $\dfrac{\sin(A'_i - A_i)\sin(A_i - A)}{\cos a_i}$
+  \begin{align*}
+    \tan a_i \cos(A_i - A)\sin(A'_i - A)
+      - \tan a \sin(A'_i - A)
+      % sic: the printed solution has sin(A'_i - A) in the two left-hand
+      % terms; mathematically it should be sin(A'_i - A_i).
+      &= \tan a'_i \sin(A_i - A)
+       - \tan a_i \cos(A'_i - A_i)\sin(A_i - A)\\
+    \tan a_i \sin[(A'_i - A_i) + (A_i - A)]
+      &= \tan a'_i \sin(A_i - A) + \tan a \sin(A'_i - A_i)\\
+    \tan a_i \sin(A'_i - A)
+      &= \tan a'_i \sin(A_i - A) + \tan a \sin(A'_i - A_i)
+  \end{align*}
+  \hfill(3.0)
+
+  Plugging in $i = 1, 2$, and eliminating $\tan a$ by division, we have
+  \[
+    \frac{\tan a_1 \sin(A'_1 - A) - \tan a'_1 \sin(A_1 - A)}
+         {\tan a_2 \sin(A'_2 - A) - \tan a'_2 \sin(A_2 - A)}
+    = \frac{\sin(A'_1 - A_1)}{\sin(A'_2 - A_2)}
+    \overset{\text{def}}{=} k
+  \]
+  where $k$ is the RHS defined above (which is a known value). Expanding the
+  equation above and dividing by $\cos A$, gathering terms of $\tan A$, we get
+  \[
+    \tan A = \frac{\tan a_1 \sin A'_1 - \tan a'_1 \sin A_1
+                   - k\tan a_2 \sin A'_2 + k\tan a'_2 \sin A_2}
+                  {\tan a_1 \cos A'_1 - \tan a'_1 \cos A_1
+                   - k\tan a_2 \cos A'_2 + k\tan a'_2 \cos A_2}
+  \]
+  \hfill(2.0)
+
+  and
+  \[
+    \tan a = \frac{\tan a_1 \sin(A'_1 - A) - \tan a'_1 \sin(A_1 - A)}
+                  {\sin(A'_1 - A_1)}
+  \]
+
+  Plugging in the respective values from the question,
+  \begin{align*}
+    A_1 &= 0^\circ  & a_1 &= 15^\circ\\
+    A'_1 &= 90^\circ & a'_1 &= 0^\circ\\
+    A_2 &= 210^\circ & a_2 &= 23.5^\circ\\
+    A'_2 &= 255^\circ & a'_2 &= 75^\circ
+  \end{align*}
+  We get
+  \begin{align*}
+    k &= \frac{\sin(A'_1 - A_1)}{\sin(A'_2 - A_2)}
+       = \frac{\sin 90^\circ}{\sin 15^\circ}\\
+    k &= 1.414\\
+    \tan a_1 \sin A'_1 &= 0.268\\
+    \tan a'_1 \sin A_1 &= 0\\
+    k\tan a_2 \sin A'_2 &= -0.594\\
+    k\tan a'_2 \sin A_2 &= -2.639\\
+    \tan a_1 \cos A'_1 &= 0\\
+    \tan a'_1 \cos A_1 &= 0\\
+    k\tan a_2 \cos A'_2 &= -0.159\\
+    k\tan a'_2 \cos A_2 &= -4.571\\
+    \therefore \tan A &= \frac{0.268 - 0 + 0.594 - 2.639}
+                              {0 - 0 + 0.159 - 4.571} = 0.403\\
+    \therefore A &= 21.94^\circ\\
+    \text{OR } A &= 201.94^\circ
+  \end{align*}
+  \hfill(4.0)
+
+  However, the student should realize that for $A = 21.94^\circ$, the radiant
+  is in the path of the first meteor, which is unrealistic. Hence, it is more
+  likely that the azimuth takes the second value. \hfill(1.0)
+
+  Plugging in for the altitude, we find the coordinate of the radiant to be
+  \begin{align*}
+    \tan a_1 \sin(A'_1 - A) &= -0.249\\
+    \tan a'_1 \sin(A_1 - A) &= 0\\
+    \sin(A'_1 - A_1) &= 1\\
+    \therefore \tan a &= (-0.2485 - 0)/1 = -0.2485\\
+    a &= -13.96^\circ
+  \end{align*}
+  \hfill(2.0)
+
+  As the meteor track origin and end points are rounded to integer degrees,
+  the horizontal coordinates of the radiant will be
+  \[
+    (\mathbf{A}, \mathbf{a}) = (202^\circ, -14^\circ)
+  \]
+  \hfill(1.0)
+
+  \textbf{Alternative solution}
+
+  In the vector representation, let the starting and final locations of the
+  meteroids be $\vec{u}_i$ and $\vec{v}_i$ respectively. For the subsequent
+  calculations, the vectors are most conveniently represented in Cartesian
+  coordinates. Letting the $x$-axis point east, $y$-axis north, and $z$-axis
+  towards the zenith, we have
+  \[
+    \vec{u} = (u_x, u_y, u_z) = (\cos a \sin A, \cos a \cos A, \sin a)
+    \tag{1}
+  \]
+  for a generic vector $\vec{u}$ with azimuth $A$ and altitude $a$. We can
+  therefore compute
+  \begin{align*}
+    \vec{u}_1 &= (\cos 15^\circ \sin 0^\circ,
+                  \cos 15^\circ \cos 0^\circ,
+                  \sin 15^\circ) = (0, 0.9659, 0.2588)\,,\\
+    \vec{u}_2 &= (\cos 23.5^\circ \sin 210^\circ,
+                  \cos 23.5^\circ \cos 210^\circ,
+                  \sin 23.5^\circ) = (-0.4585, -0.7942, 0.3988)\,,\\
+    \vec{v}_1 &= (\cos 0^\circ \sin 90^\circ,
+                  \cos 0^\circ \cos 90^\circ,
+                  \sin 0^\circ) = (1, 0, 0)\,,\\
+    \vec{v}_2 &= (\cos 75^\circ \sin 255^\circ,
+                  \cos 75^\circ \cos 255^\circ,
+                  \sin 75^\circ) = (-0.25, -0.0670, 0.9659)\,.
+  \end{align*}
+  \hfill(3.0)
+
+  The meteors move along great arcs, and the two intersections of the great
+  arcs correspond to the two possible locations of the radiant. A great arc is
+  uniquely defined by its normal vector, denote it with $\vec{n}_i$. The
+  normal vector is conveniently calculated through the cross product of the
+  starting and final position, $\vec{n}_i = \vec{u}_i \times \vec{v}_i$. The
+  cross product can be calculated via the determinant of the following matrix
+  \[
+    \vec{u}_i \times \vec{v}_i =
+    \begin{vmatrix}
+      i & j & k\\
+      u_{ix} & u_{iy} & u_{iz}\\
+      v_{ix} & v_{iy} & v_{iz}
+    \end{vmatrix}
+    = (u_{iy}v_{iz} - u_{iz}v_{iy},\,
+       u_{iz}v_{ix} - u_{ix}v_{iz},\,
+       u_{ix}v_{iy} - u_{iy}v_{ix}).
+  \]
+  \hfill(4.0)
+
+  This yields
+  \begin{align*}
+    \vec{n}_1 &= (0, 0.2588, -0.9659)\,,\\
+    \vec{n}_2 &= (-0.7404, 0.3432, -0.1678)\,.
+  \end{align*}
+  \hfill(1.0)
+
+  Every point on the great circle $i$ is perpendicular to $\vec{n}_i$. This
+  means that the intersections of the two great circles are perpendicular to
+  both $\vec{n}_1$ and $\vec{n}_2$. The vector parallel to the intersections
+  can therefore be calculated by the cross product of $\vec{n}_1$ and
+  $\vec{n}_2$. Let the vector corresponding to the intersection be $\vec{m}$.
+  Then
+  \begin{align*}
+    \vec{m} &= \vec{n}_1 \times \vec{n}_2 & \text{(3.0)}\\
+            &= (0.3626, 0.9002, 0.2412)\,. & \text{(1.0)}
+  \end{align*}
+
+  Now all that's left is to calculate the azimuth and altitude corresponding
+  to $\vec{m}$. Note that $-\vec{m}$ is also an intersection. The equations
+  for the altitude and azimuth can be reverse-engineered from equation (1):
+  \[
+    a = \arctan\left(\frac{z}{\sqrt{x^2 + y^2}}\right), \qquad
+    A = \arctan\left(\frac{x}{y}\right).
+  \]
+  \hfill(1.0)
+
+  One has to take care that the arctans are signed. This gives the final
+  values of the intersection points to be
+  \[
+    (A, a) = (22^\circ, 14^\circ)
+    \quad\text{and}\quad
+    (A, a) = (202^\circ, -14^\circ).
+  \]
+  \hfill(2.0)
+
+  As in the first solution, the $A = 22^\circ$ solution can be eliminated due
+  to it being on the path of the first meteor. This gives the final answer of
+  \[
+    (\mathbf{A}, \mathbf{a}) = (202^\circ, -14^\circ)
+  \]
+  \hfill(1.0)
+
+\item[(c)] Now, it is easy to convert the horizontal coordinates of the
+  radiant to equatorial coordinates.
+
+  % FIGURE NEEDED: celestial-sphere diagram with zenith Z, pole P, points
+  % N, E, S, W, O, the radiant J, and the arcs (90-phi), (90-delta), (90-a),
+  % 360-A and hour angle H; 2020 (GeCAA) theory solutions, page 21
+  % (problem 7).
+  \hfill(1.0)
+
+  Using the cosine rule:
+  \begin{align*}
+    \sin\delta &= \sin\phi \sin a + \cos\phi \cos a \cos A\\
+      &= \sin(23.5^\circ)\sin(-13.4^\circ)
+         + \cos(23.5^\circ)\cos(-13.96^\circ)\cos(201.94^\circ)\\
+      % sic: the official solution writes -13.4 deg in two places here and
+      % below where the altitude is a = -13.96 deg.
+      &= -0.9217\\
+    \therefore \delta &= -67.2^\circ
+  \end{align*}
+  \hfill(2.0)
+  \begin{align*}
+    \cos H &= \frac{\sin a - \sin\delta \sin\phi}{\cos\phi \cos\delta}\\
+      &= \frac{\sin(-13.4^\circ) - \sin(-67.2^\circ)\sin(23.5^\circ)}
+              {\cos(23.5^\circ)\cos(-67.2^\circ)} = 0.3551\\
+    \therefore H &= 4^{\mathrm{h}}36^{\mathrm{m}}47^{\mathrm{s}}
+  \end{align*}
+  \hfill(1.5)
+
+  From the relationship between the LST and the Hour Angle
+  ($H = LST - \alpha$), we get the equatorial coordinates of the radiant to be
+  \begin{align*}
+    \alpha &= 21^{\mathrm{h}}20^{\mathrm{m}}50^{\mathrm{s}}
+              - 4^{\mathrm{h}}36^{\mathrm{m}}47^{\mathrm{s}}\\
+           &= 16^{\mathrm{h}}44^{\mathrm{m}}3^{\mathrm{s}}
+  \end{align*}
+  \hfill(1.5)
+
+  Thus, the equatorial coordinates of the radiant are,
+  \[
+    (\alpha, \delta) = (16^{\mathrm{h}}44^{\mathrm{m}}, -67.2^\circ)
+  \]
+
+\item[(d)] Triangulum Australes \hfill(2.0)
+\end{description}

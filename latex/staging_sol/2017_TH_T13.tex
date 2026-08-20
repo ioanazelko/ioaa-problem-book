@@ -1,0 +1,181 @@
+\begin{description}
+\item[(a)] From centre of mass for planet--moon system, the distance of the
+moon to the planet--moon barycenter can be written as,
+\[ a_m = \frac{M_p}{M_m}\,a_{pb} \]
+\hfill(2.0)
+
+where $a_{pb}$ is distance of the planet to the planet--moon barycentre.
+
+For the observers on the Earth, projection distance of the planet to the
+planet--moon barycenter is
+\[ a_{proj} = a_{pb}\sin(f_m) \]
+\hfill(3.0)
+
+From angular velocity, TTV signal can be calculated from
+\begin{align*}
+\sigma_{TTV} &\equiv t_m - t\\
+\sigma_{TTV} &= \frac{\theta_{trans}}{\omega_p}
+\end{align*}
+\hfill(1.0)
+\[ \sigma_{TTV} = \left.\left(\frac{a_{proj}}{a_p}\right)\middle/
+   \left(\frac{2\pi}{P_p}\right)\right. \]
+\hfill(2.0)
+\[ \sigma_{TTV} = \frac{a_{proj}P_p}{a_p 2\pi} \]
+\[ \sigma_{TTV} = \left[\frac{a_m M_m P_p}{2\pi a_p M_p}\right]\sin(f_m) \]
+\hfill(2.0)
+
+\item[(b)] The velocity of planet--moon barycenter around the star is
+\[ v_p = \frac{2\pi}{P_p}\,a_p \]
+\hfill(1.0)
+
+The velocity of planet around the planet--moon barycentre is
+\[ v_{pb} = \frac{2\pi}{P_m}\,a_{pb} \]
+\hfill(1.0)
+
+Therefore, the transverse velocity of planet around the planet--moon
+barycentre is
+\begin{align*}
+v_{trans} &= -v_{pb}\cos(f_m)\\
+v_{trans} &= -\frac{2\pi M_m}{P_m M_p}\,a_m\cos(f_m)
+\end{align*}
+\hfill(3.0)
+
+Average transit duration can be written as
+\[ \tau = \frac{D}{v_p} \]
+\hfill(2.0)
+
+where $D$ is the distance of the planet has to cross in order to complete the
+transit. The transit duration with exomoon can be written as
+\[ \tau_m = \frac{D}{v_p + v_{trans}} \]
+\hfill(2.0)
+
+Therefore, the TDV signal is
+\[ \sigma_{TDV} \equiv \tau_m - \tau
+   = \frac{\tau v_p}{v_p + v_{trans}} - \tau \]
+\hfill(1.0)
+\[ \sigma_{TDV} = \tau\left[\frac{-v_{trans}}{v_p + v_{trans}}\right] \]
+In case $v_p \gg v_{trans}$
+\[ \sigma_{TDV} = -\tau\left[\frac{v_{trans}}{v_p}\right] \]
+\hfill(2.0)
+\[ \sigma_{TDV} = \tau\left[\frac{P_p M_m a_m}{P_m M_p a_p}\right]\cos(f_m) \]
+\hfill(1.0)
+
+\item[(c)] From Kepler's third's law, assume that the moon mass is much
+smaller than the planet mass, the distance of the planet--moon barycentre to
+the star is
+\[ P^2 = \frac{4\pi^2}{G(M_* + M_p)}\,a_p^3 \]
+\hfill(1.0)
+\[ (3.5\times86400)^2
+   = \frac{4\pi^2}{6.67\times10^{-11}\times(1.99\times10^{30}
+     + 120\times5.98\times10^{24})}\,a_p^3 \]
+\[ a_p = 6.75\times10^{9}\ \mathrm{m} \]
+
+The mean transit duration of the planet can be calculated from the transit
+duration of exoplanet without exomoon.
+% FIGURE NEEDED: sketch of the transit chord -- star disk with the planet's
+% orbit crossing it, orbital radius a_p and transit arc angle alpha marked
+% (2017_Theory_Solution.pdf, page 38).
+\[ \tau = P\,\frac{\alpha}{2\pi} \]
+\hfill(1.0)
+\[ \tau = \frac{P}{2\pi}\times 2\sin^{-1}\!\left(\frac{R_* + R_p}{a_p}\right) \]
+\hfill(2.0)
+\[ \tau = \frac{3.5}{\pi}\,\sin^{-1}\!\left(
+   \frac{6.96\times10^{8} + 12\times6.38\times10^{6}}{6.75\times10^{9}}\right)
+   \ \mathrm{days} \]
+\[ \tau = 0.128\ \mathrm{days} \]
+\hfill(2.0)
+
+\item[(d)] The TTV signal is 90 degrees out of phase with the TDV signal in
+edge-on circular orbit system. Therefore, the relation between the TTV and TDV
+signals is,
+\[ \sigma_{TDV}^2 = -\left(\frac{2\pi\tau}{P_m}\right)^2\sigma_{TTV}^2
+   + \tau^2\left(\frac{a_m M_m P_p}{a_p M_p P_m}\right)^2 \]
+\hfill(3.0)
+
+The observed relation between $\sigma_{TTV}^2$ and $\sigma_{TDV}^2$ can be
+written as
+\[ \sigma_{TDV}^2 = -0.7432\,\sigma_{TTV}^2 + 1.933\times10^{-8}\ \mathrm{days}^2 \]
+
+Therefore
+\[ -\left(\frac{2\pi\tau}{P_m}\right)^2 = -0.7432 \]
+\hfill(2.0)
+\[ P_m = 0.933\ \mathrm{days} \]
+\hfill(2.0)
+
+\item[(e)] From Kepler third law, assuming that moon is small and can be
+neglected, the distance of the moon to the planet--moon barycentre is
+\[ P_m^2 = \frac{4\pi^2}{GM_p}\,a_m^3 \]
+\hfill(1.0)
+\[ (0.933\times86400)^2
+   = \frac{4\pi^2}{6.67\times10^{-11}\times(120\times5.98\times10^{24})}\,a_m^3 \]
+\[ a_m = 1.99\times10^{8}\ \mathrm{m} = 31.2 R_\oplus \]
+\hfill(2.0)
+
+From the observed relation between $\sigma_{TTV}^2$ and $\sigma_{TDV}^2$, the
+moon mass is
+\[ \tau^2\left(\frac{a_m M_m P_p}{a_p M_p P_m}\right)^2
+   = 1.933\times10^{-8}\ \mathrm{days}^2 \]
+\hfill(2.0)
+\[ (0.128)^2\left(\frac{(1.99\times10^{8})\times M_m\times(3.5)}
+   {(6.75\times10^{9})\times(120)\times(0.933)}\right)^2
+   = 1.933\times10^{-8}\ \mathrm{days}^2 \]
+\[ M_m = 1.18 M_\oplus \]
+\hfill(2.0)
+
+\item[(f)] For planet--moon system, the angular velocity of barycenter of
+planet--moon system is
+\begin{align*}
+F_{centrifugal-bary} &= F_{star-bary}\\
+(M_p + M_m)\,\omega_p^2 a_p &= \frac{GM_*(M_p + M_m)}{a_p^2}\\
+\omega_p^2 &= \frac{GM_*}{a_p^3}
+\end{align*}
+\hfill(2.0)
+
+For exomoon at Lagrange point $L_1$ or $L_2$,
+\[ F_{centrifugal-moon} = F_{star-moon} \pm F_{planet-moon} \]
+\hfill(1.0)
+\[ M_m\omega_p^2(a_p \pm a_m)
+   = \frac{GM_*M_m}{(a_p \pm a_m)^2} \pm \frac{GM_pM_m}{(a_{pb}+a_m)^2} \]
+\hfill(3.0)
+\[ \frac{M_*(a_p \pm a_m)}{a_p^3}
+   = \frac{M_*}{(a_p \pm a_m)^2} \pm \frac{M_p}{(a_{pb}+a_m)^2} \]
+
+Since $M_p \gg M_m$ and $a_{pb} \ll a_m$
+\[ \frac{M_*(a_p \pm a_m)}{a_p^3}
+   = \frac{M_*}{(a_p \pm a_m)^2} \pm \frac{M_p}{a_m^2} \]
+\hfill(1.0)
+\begin{align*}
+M_*(a_p \pm a_m)^3 a_m^2 &= M_*a_p^3 a_m^2 \pm M_p a_p^3 (a_p \pm a_m)^2\\
+M_*(\pm 3a_p^2 a_m^3 + 3a_p a_m^4 \pm a_m^5)
+  &= \pm M_p a_p^3 (a_p \pm a_m)^2
+\end{align*}
+
+For $a_p \gg a_m$, $M_*(3a_p^2 a_m^3) \approx M_p a_p^5$ \hfill(1.0)
+\begin{align*}
+a_m^3 &= \frac{M_p}{3M_*}\,a_p^3\\
+a_m &= a_p\sqrt[3]{\frac{M_p}{3M_*}}
+\end{align*}
+\[ x = 3 \]
+\hfill(1.0)
+
+The radius of the Hill sphere of this planetary system is
+\[ R_h = a_p\sqrt[3]{\frac{M_p}{3M_*}} \]
+\[ R_h = 6.75\times10^{9}\times
+   \sqrt[3]{\frac{120\times5.98\times10^{24}}{3\times1.99\times10^{30}}}
+   \ \mathrm{m} \]
+\[ R_h = 3.33\times10^{8}\ \mathrm{m} = 52.2 R_\oplus \]
+\hfill(2.0)
+
+\item[(g)] From Roche limit equation
+\[ R_r = 1.26\,R_p\sqrt[3]{\frac{\rho_p}{\rho_m}} \]
+\[ R_r = 1.26\times12\times\sqrt[3]{\frac{120/(12)^3}{1}}\,R_\oplus \]
+\[ R_r = 6.21 R_\oplus \]
+\hfill(3.0)
+
+\item[(h)] \textbf{Stable orbit} because the distance between the moon and
+planet--moon barycentre is between Roche limit and Hill sphere radius
+($R_r < a_m < R_H$). \hfill(3.0)
+
+\textit{Mark only if students get the answers for e) \& g) \& h). Students
+obtain full mark if answer ``YES'' for $R_r < a_m < R_H$, and vice versa.}
+\end{description}

@@ -1,0 +1,133 @@
+\begin{description}
+\item[a)]
+% FIGURE NEEDED: ray diagram of a telescope objective focusing two ray
+% bundles (solid and dashed) separated by angle theta onto points separated
+% by S at the focal plane; 2017_Theory_Solution.pdf page 20.
+For any two points on the sky separated by small angular distance $\theta$,
+at the focal plane of the telescope the distance is $S$
+\[ \tan\theta = \frac{S}{f}, \]
+\hfill(0.5 marks)\\
+where $f$ is the focal length.
+
+For small angle $\theta$
+\[ \tan\theta \approx \theta \]
+Then plate scale is
+\[ \frac{\theta}{S} = \frac{1}{f} \]
+\hfill(0.5 marks)
+\[ f = \text{F-ratio} \times \text{Diameter} \]
+\hfill(1 mark)
+\[ \text{Plate scale} = \frac{1}{\text{F-ratio} \times \text{Diameter}} \]
+\hfill(1 mark)
+\begin{align*}
+\text{Plate Scale}
+  &= \frac{1}{2.5 \times 40 \times 10^{-2}\,(\mathrm{m})
+     \times 10^{3}\,(\mathrm{mm\,m^{-1}})}
+     \times \frac{180 \times 3600\,(\mathrm{arcsec})}{\pi}
+  && \text{(1 mark)} \\
+  &= 206~\mathrm{arcsec/mm} \\
+\text{Plate Scale} &= 3.44~\mathrm{arcmin/mm}
+  && \text{(1 mark)}
+\end{align*}
+
+\item[b)]
+From plate scale calculated in a), size of a star for typical seeing 1\,arcsec
+\begin{align*}
+  &= \frac{1/60~\mathrm{arcmin}}
+     {\left(3.44~\mathrm{arcmin/mm} \times 6 \times 10^{-3}~\mathrm{mm}\right)}
+     ~\text{pixels}
+  && \text{(1 mark)} \\
+  &= 0.8~\text{pixel}
+\end{align*}
+$\Rightarrow$ light from star is mostly contained within
+$N_{\mathrm{pix}} = 1$ pixel. \hfill(1 mark)
+
+\emph{Alternative solution:} If a student gets the correct answer for
+1\,arcsec $= 0.8$ pixel but clearly explains that the chosen aperture size is
+$N \times$ ``seeing'' or a circular aperture with radius $R_{N\mathrm{pix}}$
+(where $R_{N\mathrm{pix}}$ is not larger than $2\times$ seeing), calculates
+the total number of pixels as the closest round-up integer, and correctly uses
+\[ \mathrm{SNR} = \frac{\mathrm{CR} \times t}
+   {\sqrt{N_{\mathrm{pix}}\,\mathrm{RON}^2
+    + (N_{\mathrm{pix}} \times \mathrm{DN} \times t)}} \]
+then the student will be awarded full marks for the relevant parts (this
+also applies to part c).
+
+From the definition of the zero-point magnitude given in the question
+\[ m = -2.5\log_{10}(\text{count rate}) + \text{Zero-Point} \]
+\hfill(2 marks)
+\[ m = 21,~\mathrm{ZP} = 18.5 \]
+$\Rightarrow$ source count rate
+$\mathrm{CR} = 10^{-(21-18.5)/2.5} = 0.1$ per second \hfill(1 mark)
+
+Signal-to-noise ratio
+\begin{gather*}
+\mathrm{SNR} = \frac{\mathrm{CR} \times t}
+  {\sqrt{\mathrm{RON}^2 + (\mathrm{DN} \times t)}} \\
+(\mathrm{CR} \times t)^2 = 25(\mathrm{RON}^2 + (\mathrm{DN} \times t))
+\end{gather*}
+\hfill(1 mark)
+
+Solve quadratic equation
+\[ t = \frac{25\,\mathrm{DN}
+   + \sqrt{(25\,\mathrm{DN})^2 + 100\,\mathrm{CR}^2\,\mathrm{RON}^2}}
+   {2\,\mathrm{CR}^2} \]
+\hfill(1 mark)
+\[ t = \frac{\dfrac{25}{60}
+   + \sqrt{\left(\dfrac{25}{60}\right)^2 + 100\,(0.1)^2\,10^2}}
+   {2 \times 0.1^2}
+   = 521~\mathrm{s} = 8.68~\text{minutes} \]
+\hfill(1 mark)
+
+\item[c)]
+If we include the source Poisson noise,
+\[ \mathrm{SNR} = \frac{\mathrm{CR} \times t}
+   {\sqrt{\mathrm{RON}^2 + (\mathrm{DN} \times t) + \mathrm{CR} \times t}} \]
+\hfill(1 mark)
+
+For the Poisson noise dominated case
+\[ \mathrm{SNR} \approx \frac{\mathrm{CR} \times t}
+   {\sqrt{\mathrm{CR} \times t}} \]
+\hfill(1 mark)
+
+Hence
+\[ \mathrm{SNR} \propto t^{\frac{1}{2}} \]
+\hfill(1 mark)
+
+Re-calculate exposure time
+\begin{gather*}
+\mathrm{SNR} = \frac{\mathrm{CR} \times t}
+  {\sqrt{\mathrm{RON}^2 + (\mathrm{DN} \times t) + \mathrm{CR} \times t}}, \\
+(\mathrm{CR} \times t)^2
+  = 25(\mathrm{RON}^2 + (\mathrm{DN} + \mathrm{CR})t)
+\end{gather*}
+\hfill(1 mark)
+
+Solve quadratic equation
+\[ t = \frac{25(\mathrm{DN} + \mathrm{CR})
+   + \sqrt{25^2(\mathrm{DN} + \mathrm{CR})^2
+   + 100\,\mathrm{CR}^2\,\mathrm{RON}^2}}{2\,\mathrm{CR}^2} \]
+\hfill(1 mark)
+\[ t = 666~\mathrm{s} = 11.1~\text{minutes} \]
+\hfill(1 mark)
+
+\item[d)]
+In 1\,hr, one can observe $\dfrac{60}{11.1} = 5.4$ \hfill(1 mark)\\
+$\Rightarrow$ 5 pointings (round down to the nearest integer). \hfill(1 mark)
+
+Therefore, we need to cover $100~\mathrm{deg}^2$ $\Rightarrow$ one pointing
+needs to cover
+\[ \frac{100}{(5 \times 4~\text{telescope})} = 5~\mathrm{deg}^2 \]
+\hfill(1 mark)\\
+or $2.24 \times 2.24$ deg per pointing per telescope. \hfill(1 mark)
+
+Calculate size of each CCD
+\begin{align*}
+  &= \frac{2.24~\mathrm{deg} \times 60}
+     {(3.4~\mathrm{arcmin/mm})(6 \times 10^{-3}~\mathrm{mm})}~\text{pixels}
+  && \text{(1 mark)} \\
+  &= 6588.2~\text{pixels}
+   \;\Rightarrow\; 6589~\text{pixels (pixel number needs to be integer)}
+\end{align*}
+Therefore, we need minimum $\mathrm{CCD~size} = 6589 \times 6589$ pixels.
+\hfill(1 mark)
+\end{description}

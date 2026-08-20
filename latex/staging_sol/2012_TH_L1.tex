@@ -1,0 +1,81 @@
+\begin{description}
+\item[(1.1)] Look at the figure:
+
+% FIGURE NEEDED: cluster sphere of radius R with Obs_1 at its centre and
+% Obs_2 at distance D subtending aperture angle alpha (2012_th_sol.pdf,
+% scanned solutions page S8)
+\[
+\tan\alpha \approx \alpha \approx \sin\alpha \approx \frac{2R}{D}
+\]
+\[
+\Delta m = m_B - m_A = -2.5 \log\frac{F_B}{F_A}
+\]
+The brightness as seen by the astronomer ($F_A$) is the brightness of $N$
+stars with absolute magnitude $M_0$ (and luminosity $L_0$) at a distance $D$
+from him:
+\[
+F_A = N \frac{L_0}{4\pi D^2} \tag*{(4 pt)}
+\]
+We assume the cluster is homogeneous, so the density of stars $\rho$ inside
+the cluster should be constant. The brightness coming from a spherical shell
+with small thickness $\Delta R$ at a distance $R'$ is
+\[
+F_{\text{shell}}(R', \Delta R)
+  = \rho V_{\text{shell}} \frac{L_0}{4\pi R'^2}
+  = \frac{N}{\frac{4}{3}\pi R^3}\, 4\pi R'^2 \Delta R\, \frac{L_0}{4\pi R'^2}
+  = \frac{3 N L_0 \Delta R}{4\pi R^3} \tag*{(5 pt)}
+\]
+The brightness doesn't depend on the radius of the shell $R'$. If we divide
+the cluster in $n$ shells, $R = n \Delta R$, the brightness of the cluster as
+seen by the astronomer 2 is: % sic: "astronomer 2" in the source; this is the
+% flux seen by the observer at the centre (the biologist)
+\[
+F_B = n F_{\text{shell}} = n \frac{3 N L_0 \Delta R}{4\pi R^3}
+    = \frac{3 N L_0}{4\pi R^2} \tag*{(4 pt)}
+\]
+So the difference in the magnitudes $\Delta m$ is:
+\[
+\Delta m = -2.5 \log\!\left(\frac{\;\frac{3NL_0}{4\pi R^2}\;}
+                                 {\frac{NL_0}{4\pi D^2}}\right)
+  = -2.5 \log\!\left[ 3 \left(\frac{D}{R}\right)^{\!2} \right]
+  = 2.5 \log\!\left(\frac{\alpha^2}{12}\right) \tag*{(2 pt)}
+\]
+
+\item[(1.2)] The total energy received is proportional to the objective area:
+\[
+F'_A = F_A \frac{\pi \left(\frac{x}{2}\right)^2}
+                {\pi \left(\frac{d_{\mathrm{pup}}}{2}\right)^2}
+\quad\Rightarrow\quad
+x = 6 \cdot 10^{-3} \sqrt{\frac{F'_A}{F_A}} \tag*{(3 pt)}
+\]
+\[
+F'_A = F_B \quad\Rightarrow\quad
+\frac{F'_A}{F_A} = \frac{F_B}{F_A} = \frac{12}{\alpha^2}
+\quad\Rightarrow\quad
+x = 6 \cdot 10^{-3} \sqrt{\frac{12}{\alpha^2}}
+  = \frac{0.021}{\alpha}~m \tag*{(3 pt)}
+\]
+
+\item[(1.3)] In this case, a fraction
+$\xi(d) = \dfrac{A(\alpha)}{4\pi d^2}$ of the light that comes from the
+distance $d$ is seen by the biologist. $A(\alpha)$ is the area of the
+interior of a cone with aperture $\alpha$ that intersects the sphere with
+radius $d$ and center in the vertices of the cone (a spherical cap of radius
+$d$ and height $D$): \hfill(2 pt)
+\[
+\cos\left(\frac{\alpha}{2}\right) = \frac{d - D}{d}
+\quad\text{and}\quad
+A(\alpha) = 2\pi D d
+\;\Rightarrow\;
+A(\alpha) = 2\pi d^2 \left[ 1 - \cos\left(\frac{\alpha}{2}\right) \right]
+\;\Rightarrow\;
+\xi = \sin^2\left(\frac{\alpha}{4}\right) \tag*{(4 pt)}
+\]
+So the fraction is independent of the distance $d$, and the fraction of light
+that the biologist sees is $F'_B = \xi F_B$:
+\[
+\Delta m' = m'_B - m_A = -2.5 \log\frac{F'_B}{F_A}
+  = -2.5 \log\!\left[ \frac{12 \sin^2\left(\frac{\alpha}{4}\right)}{\alpha^2} \right]
+\tag*{(3 pt)}
+\]
+\end{description}

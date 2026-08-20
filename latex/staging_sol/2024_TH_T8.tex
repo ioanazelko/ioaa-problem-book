@@ -1,0 +1,141 @@
+\begin{description}
+\item[(a)] Let $v_p$ be the closest approach velocity of the star. From
+  conservation of mechanical energy:
+  \[ -\frac{G M_T m}{r_p} + \frac{1}{2} m v_p^2 = \frac{1}{2} m v^2 \]
+  \hfill(2.0)
+
+  where $M_T = 2M$ is the total mass of the binary. From conservation of
+  angular momentum, we obtain $v_p$:
+  \[ v_p = \frac{b}{r_p}\,v \]
+  \hfill(2.0)
+
+  setting $r_p \approx a/2$ and inserting $v_p$ into the first equation, we
+  solve for $b$:
+  \begin{align*}
+    b &= a\sqrt{\frac{1}{4} + \frac{2GM}{a v^2}} \\
+    b &\approx \frac{\sqrt{2GMa}}{v}
+  \end{align*}
+  \hfill(1.0)
+
+  Where we have used $v^2 \ll \frac{GM}{a}$ in the last step.
+
+  \textbf{Note:} The student can also solve it by exploring the geometry of
+  the star's orbit, which is hyperbolic, by writing
+  $r_p = a_{orbit}(e - 1)$ and finding $a_{orbit}$ and $e$ by writing out
+  equations for the angular momentum and mechanical energy.
+
+\item[(b)] The speed of the black hole in circular orbit can be found by
+  equating the gravitational force to the centripetal net force:
+  \[ \frac{GM^2}{a^2} = \frac{M V^2}{\frac{a}{2}}
+     \qquad \therefore\ V = \sqrt{\frac{GM}{2a}} \]
+  \hfill(1.0)
+
+  For the rest of the problem, we propose two different solutions:
+
+  \textbf{Solution I:}
+  Additionally, let $v_f$ be the ejection speed of the star, and $V'$ the
+  final speed of the black hole. To find $v_f$, we use conservation of linear
+  momentum and conservation of mechanical energy for the two bodies:
+  \[ M V = M V' + m v_f \]
+  \hfill(1.5)
+  \[ \frac{1}{2} M V^2 = \frac{1}{2} m v_f^2 + \frac{1}{2} M V'^2 \]
+  \hfill(1.5)
+  \begin{align*}
+    \frac{1}{2} M V^2
+      &= \frac{1}{2} m v_f^2
+       + \frac{1}{2} M \left( V - \frac{m}{M} v_f \right)^2 \\
+    0 &= v_f^2 - 2 V v_f + \frac{m}{M} v_f^2
+  \end{align*}
+  Since $m \ll M$ \hfill(1.0)\\
+  we neglect the last term, yielding:
+  \[ v_f = 2V = \sqrt{\frac{2GM}{a}} \]
+  \hfill(1.0)
+
+  Because we are considering two moments where the distance between the star
+  and the black hole is very large, we disregard potential energy terms.
+
+  \textbf{Solution II:}
+  In the reference frame of the component, the star approaches the component
+  with a velocity $-\vec{V}$. \hfill(1.5)
+
+  And, since mechanical energy and linear momentum are conserved, it can be
+  shown that the relative speed between the components is the same before and
+  after the interaction --- that is, restitution coefficient equal to unity.
+  Furthermore, since $M \gg m$, the velocity of the component can be
+  considered unchanged (notice this is not valid in Solution I, as there we
+  deal with second order terms arising from energy considerations) in the
+  interaction. Therefore, after the interaction, the star is ejected back with
+  a velocity $\vec{v}\,'_f = \vec{V}$ in the opposite direction. \hfill(1.5)
+
+  To return to the CM frame, we write $\vec{v}_f = \vec{v}\,'_f + \vec{V}$,
+  such that
+  \[ v_f = 2V \]
+  \hfill(2.0)
+
+  As we have previously found.
+
+\item[(c)] First, we know the kinetic energy acquired by a star during an
+  encounter:
+  \[ \Delta K_* = \frac{1}{2} m v_f^2 - \frac{1}{2} m v^2
+     \approx \frac{GMm}{a} \]
+  \hfill(1.0)
+
+  Where we used that $v^2$ is negligible with respect to $v_f^2$, since
+  $v_f^2 = \frac{2GM}{a}$, and $v^2 \ll \frac{GM}{a}$. This is also the
+  energy lost by the binary during an encounter.
+
+  In order to find the rate of energy extraction, we must first obtain the
+  rate of encounters, which can be estimated as follows: imagine the binary
+  travelling with velocity $v$ in the reference frame of a far away star of
+  impact parameter $b$. During a small interval $dt$, all the stars included
+  inside the annular cylinder of length $L = v\,dt$ bounded by radii of $b$
+  and $b + db$ will interact with the star. Call this number of stars $dN$.
+  It is given by:
+  \begin{align*}
+    dN &= n \cdot V_{\mathrm{cylinder}} \\
+       &= n \cdot A_{\mathrm{annulus}} \cdot L \\
+       &= n \cdot \pi \cdot \left[ (b + db)^2 - b^2 \right] \cdot v \cdot dt \\
+       &\approx 2\pi n\, b\, v\, db\, dt
+  \end{align*}
+  \hfill(4.0)
+
+  Defining $d\varphi \equiv \frac{dN}{dt}$ to be the rate of encounters with
+  stars of impact parameter between $b$ and $b + db$ and using $b$ from part
+  (a),
+  \begin{align*}
+    d\varphi &= 2\pi n\, b\, v\, db \\
+             &= 2\pi n \cdot \frac{\sqrt{2GMa}}{v} \cdot v \cdot db \\
+    d\varphi &= 2\pi n \sqrt{2GMa} \cdot db
+  \end{align*}
+  \hfill(1.0)
+
+  To find the total rate of encounters ($\varphi = \sum d\varphi$), we sum
+  over all impact parameters in the interval
+  $\frac{1}{2} b_0 \le b \le \frac{3}{2} b_0$. Notice
+  $\sum db = \frac{3}{2} b_0 - \frac{1}{2} b_0 = b_0$, so that:
+  \begin{align*}
+    \varphi &= 2\pi n \sqrt{2GMa} \cdot \sum db \\
+            &= 2\pi n \sqrt{2GMa} \cdot \frac{\sqrt{2GMa}}{v_0} \\
+            &= \frac{4\pi n G M a}{v_0}
+  \end{align*}
+  \hfill(3.0)
+
+  Since each encounter takes away $\Delta K_*$ and there are $\varphi$
+  encounters per unit time, the rate of change of energy for the binary is:
+  \[ \frac{dE_{\mathrm{bin}}}{dt} = (-\Delta K_*) \cdot \varphi
+     = -\frac{4\pi n G^2 M^2 m}{v_0} \]
+  \hfill(2.0)
+
+  A change in the binary total energy can also be written as:
+  \[ \frac{dE_{\mathrm{bin}}}{dt}
+     = \frac{d}{dt}\left( -\frac{G M^2}{2a} \right)
+     = -\frac{G M^2}{2} \frac{d}{dt}\left( \frac{1}{a} \right) \]
+  \hfill(2.0)
+
+  Therefore, equating the two:
+  \[ \frac{d}{dt}\left( \frac{1}{a} \right) = \frac{8\pi G n m}{v_0} \]
+  \[ \frac{d}{dt}\left( \frac{1}{a} \right) = 8\pi\,\frac{G\rho}{v_0} \]
+  \hfill(1.0)
+
+  Thus, $H = 8\pi$.
+\end{description}

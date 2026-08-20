@@ -1,0 +1,10 @@
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+__pycache__/
+book.pdf
+# Obsolete manually copied build; book.pdf is the sole LaTeX output.
+book_c.pdf

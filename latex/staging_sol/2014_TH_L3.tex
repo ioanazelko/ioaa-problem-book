@@ -1,0 +1,249 @@
+\begin{description}
+\item[a)] The two places are represented in the figure.
+
+% FIGURE NEEDED: globe diagram (2014 long problems, page 24 of 31): sphere
+% with poles N_g, S_g, Greenwich meridian through G_0, launch point
+% X(phi_X; lambda_X) in the northern hemisphere, its antipode
+% Y(phi_Y; lambda_Y) in the southern hemisphere, equator ("Ecuatorul"),
+% angles phi_X, phi_Y, lambda_X, lambda_Y at the centre O.
+
+  \begin{gather*}
+    \varphi_{\mathrm{Y}} = \varphi_{\mathrm{Y,Sud}}
+      = \varphi_{\mathrm{X,Nord}} = \varphi_{\mathrm{X}}; \\
+    \lambda_{\mathrm{Y,Vest}} + \lambda_{\mathrm{X,Eest}} = 180^\circ;\quad % sic: "Eest"
+      \lambda_{\mathrm{Y}} + \lambda_{\mathrm{X}} = 180^\circ. \\
+    \varphi_{\mathrm{Romania}} = 43^\circ\ \text{Nord};\quad % sic: statement gives 44 deg North
+      \lambda_{\mathrm{Romania}} = 30^\circ\ \text{Est},
+  \end{gather*}
+  The landing point is
+  \[
+    \varphi_{\mathrm{Antipod}} = 43^\circ\ \text{Sud};\quad
+    \lambda_{\mathrm{Antipod}} = 150^\circ\ \text{Vest},
+  \]
+  Somewhere South EEst from Tasmania (South from Australia). % sic: "EEst"
+
+% FIGURE NEEDED: map of Romania with the launch point marked near Constanta
+% and political world map with the ballistic trajectory arrow from Romania to
+% the antipodal point south-east of Tasmania (2014 long problems, page 25 of
+% 31).
+
+\item[b)] The schetch of the trajectory % sic: "schetch"
+
+% FIGURE NEEDED: trajectory construction (2014 long problems, page 26 of 31):
+% grey Earth disc of radius R with centre F_1(O), launch point "Romania" at
+% the top with horizon and tangent-to-trajectory directions and angle alpha,
+% the antipode at the bottom, the transfer ellipse with second focus F_2,
+% apogee ("Apogeu") at left with v_min and h_max, perigee ("Perigeu") at
+% right, bysector of F_1AF_2, points B, C, D and angle beta.
+
+  In order to hit the point the trajectory of the missile has to be an elypse % sic: "elypse"
+  with the Earth center in the center of the Earth. Se \c{s}tie c\u{a}: % sic: Romanian "it is known that"
+  \[
+    \mathrm{F_2B} = 2\cdot\mathrm{F_1B};\quad
+    \mathrm{F_1F_2} = 3\cdot\mathrm{F_1B}.
+  \]
+  Rezult\u{a}: % sic: Romanian "it results"
+  \begin{gather*}
+    \tan2\alpha = \frac{\mathrm{F_1F_2}}{R};\quad
+      \mathrm{F_1F_2} = R\cdot\tan2\alpha; \\
+    \tan\alpha = \frac{\mathrm{F_1B}}{R};\quad
+      \mathrm{F_1B} = R\cdot\tan\alpha; \\
+    R\cdot\tan2\alpha = \mathrm{F_1B} = R\cdot\tan\alpha; \\ % sic: missing factor 3 in the middle member
+    \tan2\alpha = 3\cdot\tan\alpha; \\
+    \frac{\sin2\alpha}{\cos2\alpha} = 3\frac{\sin\alpha}{\cos\alpha}; \\
+    \frac{2\sin\alpha\cdot\cos\alpha}{\cos2\alpha}
+      = 3\frac{\sin\alpha}{\cos\alpha}; \\
+    2\cos^2\alpha = 3\cos2\alpha;\quad
+      2\cos^2\alpha = 3\left(\cos^2\alpha - \sin^2\alpha\right); \\
+    3\sin^2\alpha = \cos^2\alpha;\quad \tan^2\alpha = \frac{1}{3}; \\
+    \tan\alpha = \frac{\sqrt{3}}{3};\quad \alpha = 30^\circ;\quad
+      2\alpha = 60^\circ;\quad
+      \beta = 90^\circ - 2\alpha = 30^\circ;\quad 2\beta = 60^\circ; \\
+    \Delta(\mathrm{RF_2A}) \rightarrow \text{triunghi echilateral;} \\ % sic: Romanian "equilateral triangle"
+    \mathrm{RF_2} = \mathrm{AF_2} = \mathrm{RA} = 2R; \\
+    \mathrm{RF_2} + \mathrm{RF_1} = 2a = 3R; \\
+    a = \frac{3}{2}R;
+  \end{gather*}
+  \begin{gather*}
+    \mathrm{v}_0 = \sqrt{KM\left(\frac{2}{r} - \frac{1}{a}\right)};\quad
+      r = R;\ g_0 = K\frac{M}{R^2}; \\
+    \mathrm{v}_0 = \sqrt{\frac{KM}{R^2}\cdot R^2
+      \left(\frac{2}{R} - \frac{2}{3R}\right)}
+      = 2\sqrt{\frac{g_0R}{3}}.
+  \end{gather*}
+
+\item[c)]
+  \[
+    \mathrm{v}_{\mathrm{Antipod}} = \mathrm{v}_0.
+  \]
+
+\item[d)]
+  \begin{gather*}
+    \mathrm{F_1F_2} = R\cdot\tan2\alpha = 2c;\quad
+      c = \frac{R}{2}\cdot\tan2\alpha = \frac{R}{2}\cdot\tan60^\circ
+      = \frac{\sqrt{3}}{2}R; \\
+    b = \sqrt{a^2 - c^2} = \sqrt{\frac{3}{2}}R; \\
+    2a = 2r_{\min} + 2c;\quad
+      r_{\min} = a - c = \frac{1}{2}\left(3 - \sqrt{3}\right)R; \\
+    r_{\max} = 2a - r_{\min} = \frac{1}{2}\left(3 + \sqrt{3}\right)R; \\
+    \mathrm{v}_{\min} = \sqrt{KM\left(\frac{2}{r_{\max}}
+      - \frac{1}{a}\right)};\quad
+      r_{\max} = \frac{1}{2}\left(3 + \sqrt{3}\right)R; \\
+    \mathrm{v}_{\min} = \sqrt{\frac{KM}{R^2}\cdot R^2
+      \left(\frac{4}{\left(3 + \sqrt{3}\right)R} - \frac{2}{3R}\right)}
+      = \sqrt{\frac{2g_0R}{3}\cdot\frac{3 - \sqrt{3}}{3 + \sqrt{3}}}.
+  \end{gather*}
+
+\item[e)] Accordin to Kepplers laws: % sic: "Accordin to Kepplers"
+
+% FIGURE NEEDED: two shaded transfer-ellipse sketches (2014 long problems,
+% page 27 of 31): left, ellipse with swept area S_0, period T, launch point R
+% at top of the small dashed Earth circle and apogee A below; right, the same
+% ellipse showing the complementary swept areas about the minor axis.
+
+  \begin{gather*}
+    \Omega = \frac{\mathrm{d}S}{\mathrm{d}t} = \text{constant}; \\
+    \frac{S_0}{T} = \frac{2\dfrac{S_0}{4} + 2S_1}{\Delta t};\quad
+    \frac{S_0}{T} = \frac{\dfrac{S_0}{2} + 2S_1}{\Delta t};\quad
+    \frac{S_0}{T} = \frac{S_0 + 4S_1}{2\cdot\Delta t}; \\
+    S_0 = \pi ab;\quad
+    S_1 = \frac{ab}{2}\left[\sqrt{1 - \frac{b^2}{a^2}}\cdot\frac{b}{a}
+      + \arcsin\sqrt{1 - \frac{b^2}{a^2}}\right]; \\
+    \Delta t = \frac{S_0 + 4S_1}{2S_0}\cdot T
+      = \left(\frac{1}{2} + 2\frac{S_1}{S_0}\right)\cdot T; \\
+    T = 2\pi\sqrt{\frac{a^3}{KM}};\quad
+      T = \frac{2\pi}{R}\sqrt{\frac{a^3}{g_0}}; \\
+    \frac{2S_1}{S_0} = \frac{1}{\pi}\left(\frac{b}{a}\cdot
+      \sqrt{1 - \frac{b^2}{a^2}}
+      + \arcsin\sqrt{1 - \frac{b^2}{a^2}}\right); \\
+    \sqrt{1 - \frac{b^2}{a^2}} = e;\quad
+      \frac{2S_1}{S_0} = \frac{1}{\pi}\left(\frac{b}{a}\cdot e
+      + \arcsin e\right); \\
+    \Delta t = \left(\frac{1}{2} + \frac{eb}{\pi a}
+      + \frac{\arcsin e}{\pi}\right)\cdot T.
+  \end{gather*}
+
+\item[f)] The integral luminosity of Sun:
+  \[
+    L_{\mathrm{S}} = \frac{E_{\mathrm{emis,Soare}}}{t}
+      = 3{,}86\cdot10^{26}\ \mathrm{W},
+  \]
+  Dac\u{a} For a circumsolar surface $\Sigma$ with radius % sic: "Daca For", mixed Romanian/English
+  $r_{\mathrm{PS}}$, see picture bellow the solar radiation enegy passing % sic: "bellow", "enegy"
+  through the surface in one second is $L_{\mathrm{S}}$.
+
+% FIGURE NEEDED: circumsolar sphere diagram (2014 long problems, page 29 of
+% 31): Sun of radius R_S at the centre of a sphere Sigma of radius
+% r_LS = r_PS with outgoing rays, the Moon ("Luna") of cross-section
+% pi R_L^2 on the sphere, Romanian caption "Sfera circumsolara a carei raza
+% este egala cu distanta de la Soare la Pamant (Luna)".
+
+  \textit{Density of solar flux}
+  \[
+    \phi_{\mathrm{Soare},r_{\mathrm{PS}}}
+      = \frac{E_{\mathrm{emis,Soare}}}{St}
+      = \frac{\dfrac{E_{\mathrm{emis,Soare}}}{t}}{S}
+      = \frac{L_{\mathrm{S}}}{S}
+      = \frac{L_{\mathrm{S}}}{4\pi r_{\mathrm{PS}}^2}
+      = \text{constant}.
+  \]
+  \[
+    F_{\mathrm{incident},FullMoon}
+      = \phi_{\mathrm{S}un,r_{\mathrm{PS}}}\cdot\pi R_{\mathrm{L}}^2.
+  \]
+  Dac\u{a} $\alpha_{\mathrm{L}}$ este albedoul Lunii, rezult\u{a}: % sic: the remainder of f) is largely in Romanian
+  \[
+    \alpha_{\mathrm{L}} = \frac{F_{\mathrm{reflectat},FullMoon}}
+      {F_{\mathrm{incident},FullMoon}},
+  \]
+  unde $F_{\mathrm{reflectat,Luna\,Plina}}$ -- fluxul energetic al
+  radia\c{t}iilor reflectate de Luna Plin\u{a} spre observatorul de pe
+  P\u{a}m\^ant;
+  \[
+    F_{\mathrm{reflectat},FullMoon}
+      = \alpha_{\mathrm{L}}\cdot F_{\mathrm{incident},FullMoon}
+      = \alpha_{\mathrm{L}}\cdot
+        \phi_{\mathrm{Soa,,re},r_{\mathrm{PS}}}\cdot % sic: garbled subscript "Soa,,re" as printed
+        \pi R_{\mathrm{L}}^2.
+  \]
+  \^In consecin\c{t}\u{a}, densitatea fluxului energetic ajuns la observator,
+  dup\u{a} reflexia pe suprafa\c{t}a Lunii, este:
+  \[
+    \phi_{moon,\ \mathrm{observator}}
+      = \frac{F_{\mathrm{reflectat},\ FullMoon}}{2\pi r_{\mathrm{PL}}^2}
+      = \alpha_{\mathrm{L}}\cdot\phi_{\mathrm{Soare},r_{\mathrm{PS}}}\cdot
+        \frac{\pi R_{\mathrm{L}}^2}{2\pi r_{\mathrm{PL}}^2}.
+  \]
+  Symilarly % sic: "Symilarly"
+  \[
+    \phi_{\mathrm{proiectil,\ observator}}
+      = \frac{F_{\mathrm{reflectat,\ proiectil}}}
+        {4\pi r_{\mathrm{D,proiectil}}^2}
+      = \alpha_{\mathrm{proiectil}}\cdot
+        \phi_{\mathrm{Soare},r_{\mathrm{PS}}}\cdot
+        \frac{\pi R_{\mathrm{proiectil}}^2}{4\pi r_{\mathrm{D,proiectil}}^2}.
+  \]
+  \^In expresia anterioar\u{a} s-a avut \^in vedere faptul c\u{a} densitatea
+  fluxului energetic al proiectilului la observator rezult\u{a} din
+  distribuirea prin suprafa\c{t}a sferei cu raza $r_{\mathrm{P,proiectil}}$.
+
+  Utiliz\^and formula lui Pogson, vom compara magnitudinea aparent\u{a}
+  vizual\u{a} a Lunii Pline cu magnitudinea aparent\u{a} vizual\u{a} a
+  proiectilului balistic:
+  \begin{gather*}
+    \log\frac{\phi_{\mathrm{Luna,observator}}}
+      {\phi_{\mathrm{proiectil,observator}}}
+      = -0{,}4\left(m_{\mathrm{Luna\,Plina}}
+        - m_{\mathrm{proiectil}}\right); \\
+    \log\frac{\phi_{\mathrm{Luna,observator}}}
+      {\phi_{\mathrm{proiectil,observator}}}
+      = \log\frac{\alpha_{\mathrm{L}}\cdot
+        \phi_{\mathrm{Soare},r_{\mathrm{PS}}}\cdot
+        \dfrac{\pi R_{\mathrm{L}}^2}{2\pi r_{\mathrm{PL}}^2}}
+        {\alpha_{\mathrm{proiectil}}\cdot
+        \phi_{\mathrm{Soare},r_{\mathrm{PS}}}\cdot
+        \dfrac{\pi R_{\mathrm{proiectil}}^2}
+          {4\pi r_{\mathrm{D,proiectil}}^2}}
+      = \log\frac{\alpha_{\mathrm{L}}\cdot
+        \dfrac{R_{\mathrm{L}}^2}{r_{\mathrm{PL}}^2}}
+        {\alpha_{\mathrm{proiectil}}\cdot
+        \dfrac{R_{\mathrm{proiectil}}^2}{2r_{\mathrm{D,proiectil}}^2}}; \\
+    \log\frac{\alpha_{\mathrm{L}}\cdot
+      \dfrac{R_{\mathrm{L}}^2}{r_{\mathrm{PL}}^2}}
+      {\alpha_{\mathrm{proiectil}}\cdot
+      \dfrac{R_{\mathrm{proiectil}}^2}{2r_{\mathrm{D,proiectil}}^2}}
+      = -0{,}4\left(m_{\mathrm{L}} - m_{\mathrm{proiectil}}\right); \\
+    \log\frac{\alpha_{\mathrm{L}}}{\alpha_{\mathrm{proiectil}}}\cdot
+      \left(\frac{R_{\mathrm{L}}}{R_{\mathrm{proiectil}}}\right)^2\cdot
+      2\cdot\left(\frac{r_{\mathrm{D,proiectil}}}{r_{\mathrm{PL}}}\right)^2
+      = -0{,}4\left(m_{\mathrm{L}} - m_{\mathrm{proiectil}}\right); \\
+    \alpha_{\mathrm{L}} = 0{,}12;\quad \alpha_{\mathrm{proiectil}} = 1; \\
+    R_{\mathrm{L}} = 1738\,\mathrm{km};\quad
+      R_{\mathrm{proiectil}} = 400\,\mathrm{mm}; \\
+    r_{\mathrm{D,proiectil}}
+      = r_{\mathrm{max,observator-proiectil}} = h_{\max}
+      = r_{\max} - R;\quad
+      r_{\max} = \frac{1}{2}\left(3 + \sqrt{3}\right)R; \\
+    h_{\max} = \frac{1}{2}\left(3 + \sqrt{3}\right)R - R
+      = \frac{1}{2}\left(1 + \sqrt{3}\right)R \approx 8700\ \mathrm{km}; \\
+    r_{\mathrm{PL}} = r_{\mathrm{observator,Luna}} = 384400\,\mathrm{km};\quad
+      m_{\mathrm{L}} = -12{,}7^{\mathrm{m}}; \\
+    \log\frac{\alpha_{\mathrm{L}}}{\alpha_{\mathrm{proiectil}}}
+      + 2\log\frac{R_{\mathrm{L}}}{R_{\mathrm{proiectil}}} + \log2
+      + 2\log\frac{r_{\mathrm{D-proiectil}}}{r_{\mathrm{PL}}}
+      = -0{,}4\left(m_{\mathrm{L}} - m_{\mathrm{proiectil}}\right); \\
+    \log(0{,}12) + 2\log\frac{1738000\ \mathrm{m}}{0{,}400\ \mathrm{m}}
+      + \log2 + 2\log\frac{8700\ \mathrm{km}}{384400\ \mathrm{km}}
+      = -0{,}4\left(m_{\mathrm{L}} - m_{\mathrm{proiectil}}\right); \\
+    \log(0{,}12) + 2\log\frac{1738000}{0{,}400} + \log2
+      + 2\log\frac{8700}{384400}
+      = -0{,}4\left(m_{\mathrm{L}} - m_{\mathrm{proiectil}}\right); \\
+    -0{,}920818754 + 13{,}27597956 + 0{,}301029995 - 3{,}290528253
+      = -0{,}4\left(m_{\mathrm{L}} - m_{\mathrm{proiectil}}\right); \\
+    23{,}4^{\mathrm{m}} = 12{,}7^{\mathrm{m}} + m_{\mathrm{proiectil}}; \\
+    m_{\mathrm{proiectil}} = 10{,}7^{\mathrm{m}}; \\
+    m_{\max} \approx 6^{\mathrm{m}};\quad
+      m_{\mathrm{proiectil}} > m_{\max},
+  \end{gather*}
+  The projectile wasn't seen when it was at its apogee
+\end{description}

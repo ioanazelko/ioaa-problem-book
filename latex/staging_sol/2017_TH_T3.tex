@@ -1,0 +1,50 @@
+\begin{description}
+\item[a)]
+  % FIGURE NEEDED: annotated version of the problem's spiral-arm sketch
+  % (2017_Theory_Solution.pdf p.4): triangle AGS with A the start of the new
+  % arm, G the Galactic centre and S the Sun; d = AG, x = AS, angle alpha at A,
+  % R_0 = GS and galactic longitude l at S.
+  If there is the flat rotation curve beyond 2\,kpc from the Galactic centre,
+  the orbital velocity of the Sun and the start of the arm are both equal to
+  \[
+    v_r = -v_{\mathrm{LSR}}\sin(\ell) + v_{\mathrm{LSR}}\sin(\alpha)
+  \]
+  \hfill[3.0]
+
+  Sine law ($\triangle AGS$):\quad
+  $\dfrac{\sin(\ell)}{d} = \dfrac{\sin(\alpha)}{R_0}$ \hfill[1.0]
+  \[
+    v_r = -v_{\mathrm{LSR}}\sin(\ell) + v_{\mathrm{LSR}}R_0\,\frac{\sin(\ell)}{d}
+  \]
+  \hfill[1.0]
+  \[
+    20.9 = 220\sin(13.25^\circ) - 220\times8.5\times\frac{\sin(13.25^\circ)}{d}
+  \]
+  \hfill[1.0]
+
+  \emph{Correctly substitute numerical values}
+  \[
+    d = 14.5\,\mathrm{kpc}
+  \]
+  \hfill[1.0]
+\item[b)]
+  Cosine law ($\triangle AGS$):
+  \[
+    d^2 = x^2 + R_0^2 - 2xR_0\cos(\ell)
+  \]
+  \hfill[1.0]
+  \[
+    14.5^2 = x^2 + 8.5^2 - 2\times8.5\,x\cos(13.25^\circ)
+  \]
+  \hfill[1.0]
+
+  \emph{Correctly substitute numerical values}
+  \[
+    x = \frac{17\cos(13.25^\circ)
+        + \sqrt{17^2\cos^2(13.25^\circ) - 4\times(8.5^2 - 14.5^2)}}{2}
+  \]
+  \[
+    x = 22.6\,\mathrm{kpc}
+  \]
+  \hfill[1.0]
+\end{description}

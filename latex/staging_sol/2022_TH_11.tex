@@ -1,0 +1,129 @@
+\begin{description}
+\item[(a)] Heat absorbed must be fully emitted to maintain the thermal
+  equilibrium
+  \begin{align*}
+  kL_\odot &= 4\pi R^2\epsilon\sigma T_{\mathrm{eq}}^4
+    \tag*{2.0}\\
+  \therefore\ T_{\mathrm{eq}} &=
+    \sqrt[4]{\frac{kL_\odot}{4\pi R^2\epsilon\sigma}}
+    \tag*{1.0}
+  \end{align*}
+\item[(b)] In this part, we try minimize the radius at the expanse of
+  reaching the highest operational temperature for panels. Again
+  \begin{align*}
+  kL_\odot &= 4\pi R^2\epsilon\sigma T_{\max}^4\\
+  R &= \sqrt{\frac{kL_\odot}{4\pi\epsilon\sigma T_{\max}^4}}
+    \tag*{1.0}\\
+  &\approx 1\times10^{11}\,\mathrm{m} = 0.665\,\mathrm{au}
+    \tag*{2.0}
+  \end{align*}
+  Clearly, this distance is approximately 1.5 times smaller than Earth-Sun
+  separation. Hence, Earth will stay \textbf{OUT}side the sphere. \hfill 1.0
+\item[(c)] Power transmitted into usable energy
+  \begin{align*}
+  P &= \eta L_\odot\\
+  P &= 7.65\times10^{25}\,\mathrm{W}
+    \tag*{2.0}
+  \end{align*}
+\item[(d)] Energy harnessed in 1 second will be enough for
+  \[ \tau = \frac{7.65\times10^{25}\,\mathrm{W}\times1\,\mathrm{s}}
+       {17\times10^{12}\,\mathrm{W}}
+     = 4.5\times10^{12}\,\mathrm{s} \approx 143\,000\,\mathrm{yr} \]
+  \hfill 2.0
+\item[(e)] New equilibrium temperature may be found as
+  \begin{align*}
+  kL_\odot\frac{\pi R_\oplus^2}{4\pi a_\oplus^2}
+    &= 4\pi R_\oplus^2\sigma T_{\mathrm{new}}^4
+    \tag*{2.0}\\
+  T_{\mathrm{new}} &= \sqrt[4]{\frac{kL_\odot}{16\pi\sigma a_\oplus^2}}\\
+  T_{\mathrm{new}} &\approx 206\,\mathrm{K}
+    \tag*{2.0}\\
+  \Delta T &= 288 - 206 = 82\,\mathrm{K}
+    \tag*{1.0}
+  \end{align*}
+\item[(f)] By Kepler's Third Law
+  \begin{align*}
+  T^2 &= \frac{4\pi^2}{GM_\odot}R^3\\
+  \therefore\ T &= (0.665)^{1.5}\,\mathrm{yr}\\
+  T &\approx 0.542\,\mathrm{yr} = 198\,\mathrm{days}
+    \tag*{3.0}
+  \end{align*}
+\item[(g)] We compare the two forces for given area $A$ of the solar panel
+  \begin{align*}
+  F_{\mathrm{RP}} &= \frac{I_{inc}A}{c} = \frac{L_\odot A}{4\pi R^2 c}
+    \tag*{2.0}\\
+  F_{\mathrm{Grav}} &= \frac{GM_\odot A\rho}{R^2}
+    \tag*{1.0}\\
+  \alpha &= \frac{F_{\mathrm{RP}}}{F_{\mathrm{Grav}}}
+    = \frac{L_\odot}{4\pi cGM_\odot\rho}\\
+  \alpha &\approx 7.65\times10^{-4}
+    \tag*{2.0}
+  \end{align*}
+  At the first sight, this might seem like a negligible effect, but let us
+  look at the change of the orbital period
+  \[ (1-\alpha)F_{\mathrm{Grav}} = m\omega_1^2 R \]
+  \hfill 3.0
+
+  The radius should be the same, because our aim is to minimize the radius.
+  \begin{align*}
+  \omega_1 &= \sqrt{\frac{GM_\odot(1-\alpha)}{R^3}}\\
+  T_1 &= 2\pi\sqrt{\frac{R^3}{GM_\odot}}\,(1-\alpha)^{-0.5}
+    \tag*{1.0}\\
+  \therefore\ \frac{T_1}{T} &= (1-\alpha)^{-0.5} \approx 1 + 0.5\alpha\\
+  \Delta T &= 0.5\alpha T\\
+  \Delta T &\approx 1.8\,\mathrm{h}
+    \tag*{3.0}
+  \end{align*}
+  Therefore, \textbf{YES} this additional force has an easily detectable
+  effect. \hfill 1.0
+\item[(h)] First, we find the angle between entrance and exit points
+  \begin{align*}
+  r &= \frac{a}{1-\cos\theta}\\
+  R - R\cos\theta &= a\\
+  \cos\theta &= \frac{R-a}{R} = \frac{0.665-1}{0.665}
+    \tag*{1.0}\\
+  \cos\theta &= -0.5046
+    \tag*{1.0}\\
+  \theta_1 &= 2.099\,\mathrm{rad} = 120.2^\circ = 120^\circ14'\\
+  \theta_2 &= 4.185\,\mathrm{rad} = 239.8^\circ = 239^\circ46'\\
+  2\phi &= 2.086\,\mathrm{rad} = 119.5^\circ = 119^\circ32'
+    \tag*{3.0}
+  \end{align*}
+  % FIGURE NEEDED: Figure 1 (2022_Solutions.pdf p.13): sphere with rotation
+  % axis omega, equatorial plane, and the blue hyperbolic transit path of the
+  % asteroid crossing the sphere, central angle 2*phi marked.
+  % FIGURE NEEDED: Figure 2 (2022_Solutions.pdf p.14): transit of the
+  % asteroid in a polar coordinate system; circle of radius R centred at the
+  % origin, hyperbolic trajectory, angles theta and 2*phi marked.
+
+  We know the that asteroid will stay inside the sphere for about
+  $\tau_0 = 37$ days. During this time, sphere will rotate with an angle
+  % sic: "We know the that asteroid" in source
+  \begin{align*}
+  \Delta\gamma &= \omega\tau_0 = \frac{2\pi\tau_0}{T}\\
+  \Delta\gamma &\approx 1.17\,\mathrm{rad}
+    \tag*{2.0}
+  \end{align*}
+  Hence, if the angular distance between holes is $\beta$, the asteroid to
+  go through safely, the following condition must be satisfied
+  \begin{align*}
+  2\phi &= \Delta\gamma + \beta
+    \tag*{5.0}\\
+  \therefore\ \beta &= 2\phi - \Delta\gamma\\
+  \beta &\approx 0.91\,\mathrm{rad} = 52.3^\circ
+    \tag*{1.0}
+  \end{align*}
+\item[(i)] By Wien's law, the most probable wavelength radiated by the
+  sphere would be
+  \begin{align*}
+  \lambda_1 &= \frac{b}{T_1}\\
+  \lambda_2 &= \frac{b}{T_2}
+    \tag*{2.0}\\
+  \lambda_1' &\approx \lambda_1\left(1+\frac{dH_0}{c}\right)\\
+  \lambda_2' &\approx \lambda_2\left(1+\frac{dH_0}{c}\right)
+    \tag*{2.0}
+  \end{align*}
+  \[ \frac{b}{T_2}\left(1+\frac{dH_0}{c}\right) < \lambda_{obs}
+     < \frac{b}{T_1}\left(1+\frac{dH_0}{c}\right) \]
+  \hfill 1.0
+\end{description}

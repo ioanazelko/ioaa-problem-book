@@ -1,0 +1,121 @@
+A low surface brightness galaxy (LSB) is a diffuse galaxy with a surface
+brightness that, when viewed from the Earth, is at least one magnitude lower
+than the ambient night sky.
+
+Some of its matter is in the form of ``baryonic'' matter such as neutral
+hydrogen gas and stars. However, most of its matter is in the form of
+invisible mass -- so called ``dark matter''. In this question, we will
+investigate the mass of dark matter in a galaxy, the effect of dark matter on
+the rotation curves of the galaxy, and the distribution of dark matter in the
+galaxy.
+
+The table below provides the data of a LSB galaxy named UGC4325. The galaxy is
+assumed to be edge-on. At every distance $r$ from the centre of the galaxy, we
+measure
+\begin{enumerate}
+\item $\lambda_{\mathrm{obs}}$, the observed wavelength of the H$\alpha$
+  emission line. The Hubble expansion of the Universe has already been
+  excluded from the data.
+\item $V_{\mathrm{gas}}$, the contribution of the gas component to the
+  rotation due to $M_{\mathrm{gas}}$, derived from HI surface densities.
+\item $V_*$, the contribution of the stellar component to the rotation due to
+  $M_*$, derived from R-band photometry.
+\end{enumerate}
+The rotational velocities of the test particle due to the gas component,
+$V_{\mathrm{gas}}$, and the star component, $V_*$, are defined as the
+velocities in the plane of the galaxy that would result from the corresponding
+components without any external influences. These velocities are calculated
+from the observed baryonic mass density distributions.
+
+\begin{center}
+\begin{tabular}{cccc}
+$r$ & $\lambda_{\mathrm{obs}}$ & $V_{\mathrm{gas}}$ & $V_*$ \\
+(kpc) & (nm) & (km/s) & (km/s) \\
+\hline
+ 0.70 & 656.371 &  2.87 & 20.97 \\
+ 1.40 & 656.431 &  6.75 & 32.22 \\
+ 2.09 & 656.464 & 14.14 & 40.91 \\
+ 2.79 & 656.475 & 20.18 & 46.75 \\
+ 3.49 & 656.478 & 24.08 & 50.10 \\
+ 4.89 & 656.484 & 28.08 & 47.94 \\
+ 6.25 & 656.481 & 29.25 & 45.47 \\
+ 7.10 & 656.481 & 27.03 & 47.78 \\
+ 9.03 & 656.482 & 25.90 & 45.32 \\
+12.05 & 656.482 & 21.03 & 42.30 \\
+\end{tabular}
+\end{center}
+
+The mass of dark matter $M_{\mathrm{DM}}(r)$ within a volume of radius $r$ can
+be defined in terms of the rotational velocity due to dark matter
+$V_{\mathrm{DM}}$, the radius $r$ and the gravitational constant $G$,
+\begin{equation}
+M_{\mathrm{DM}}(r) = \frac{rV_{\mathrm{DM}}^2}{G}. \tag{1}
+\end{equation}
+To a good approximation, the observed rotational velocity $V_{\mathrm{obs}}$
+can be modelled as
+\begin{equation}
+V_{\mathrm{obs}}^2 = V_{\mathrm{gas}}^2 + V_*^2 + V_{\mathrm{DM}}^2.
+\tag{2}
+\end{equation}
+The observed rotational velocity $V_{\mathrm{obs}}$ depends on the mass of the
+galaxy $M(r)$ within a volume of radius $r$ measured from the galaxy's centre.
+
+The mass density $\rho_{\mathrm{DM}}(r)$ of dark matter within a volume of
+radius $r$ can be modelled by a galaxy density profile,
+\begin{equation}
+\rho_{\mathrm{DM}}(r)
+  = \frac{\rho_0}{1 + \left(\dfrac{r}{r_{\mathrm{C}}}\right)^2}
+\tag{3}
+\end{equation}
+where $\rho_0$ and $r_{\mathrm{C}}$ are the central density and the core
+radius of the galaxy, respectively. According to the density profile, the mass
+of dark matter $M_{\mathrm{DM}}(r)$ within a volume of a radius $r$ can be
+described by
+\begin{equation}
+M_{\mathrm{DM}}(r) = 4\pi\rho_0 r_{\mathrm{C}}^2
+  \left[r - r_{\mathrm{C}}\arctan(r/r_{\mathrm{C}})\right].
+\tag{4}
+\end{equation}
+
+\medskip
+\textbf{Part 1 The mass of dark matter and rotation curves of the galaxy}
+
+\begin{description}
+\item[(D2.1)] In laboratories on Earth, H$\alpha$ has an emitted wavelength
+  $\lambda_{\mathrm{emit}}$ of 656.281\,nm. Compute the observed rotational
+  velocities of the galaxy $V_{\mathrm{obs}}$ and the rotational velocities
+  due to the dark matter $V_{\mathrm{DM}}$ at distance $r$ in units of
+  km\,s$^{-1}$.
+
+  For the different values of $r$ given in the table, compute the dynamical
+  mass $M(r)$ and the mass of dark matter $M_{\mathrm{DM}}(r)$ in solar
+  masses. \hfill[21]
+\item[(D2.2)] Create rotation curves of the galaxy on graph paper by plotting
+  the points of $V_{\mathrm{obs}}$, $V_{\mathrm{DM}}$, $V_{\mathrm{gas}}$,
+  $V_*$ versus the radius $r$ and draw smooth curves through the points (mark
+  your graph as ``D2.2'').
+
+  Order the contribution of the different components to the observed velocity
+  in descending order. \hfill[16]
+\end{description}
+
+\medskip
+\textbf{Part 2 Dark matter distribution}
+
+\begin{description}
+\item[(D2.3)] Take a data point at small $r$ and large $r$ to estimate
+  $\rho_0$ and $r_{\mathrm{C}}$. Note that for large values of $x$,
+  $\arctan(x) \approx \pi/2$ and at small $x$,
+  $\arctan(x) \approx x - x^3/3$. \hfill[7]
+\item[(D2.4)] By comparing Equation (4) to a linear function, the central
+  density $\rho_0$ could also be found by a linear fit. Plot an appropriate
+  graph so that a linear fit can be used to find another value of $\rho_0$.
+  Evaluate $\rho_0$ in units of $M_\odot$\,kpc$^{-3}$. (Mark your graph as
+  ``D2.4''). If you cannot find the value of $r_{\mathrm{C}}$ from the
+  previous part, use $r_{\mathrm{C}} = 3.2$\,kpc as an estimate for this
+  part. \hfill[19]
+\item[(D2.5)] Compute logarithmic values of the dark matter density,
+  $\ln[\rho_{\mathrm{DM}}(r)]$, and plot the distribution of dark matter in
+  the galaxy as a function of radius $r$ on graph paper. (Mark your graph as
+  ``D2.5''). \hfill[12]
+\end{description}

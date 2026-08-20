@@ -1,0 +1,100 @@
+2007	TH	1.1	-	2	1	sunrise time at latitude 42.5N solstice	-
+2007	TH	1.2	-	2	3	Venus greatest elongation gives orbit radius	2
+2007	TH	1.3	-	2	1	convert solar days to sidereal days	-
+2007	TH	1.4	-	2	3	Moon distance from angular diameter	1
+2007	TH	1.5	-	2	1	annual parallax of star at 100 pc	-
+2007	TH	1.6	-	2	2	comet period from Kepler third law	3
+2007	TH	1.7	-	2	2	areal velocity, Kepler second law	3
+2007	TH	1.8	-	2	6	Wien law peak wavelength 4000 K	-
+2007	TH	1.9	-	2	7	stellar luminosity via Stefan-Boltzmann	6
+2007	TH	1.10	-	2	6	distance from flux and luminosity	7
+2007	TH	1.11	-	2	6	supernova distance from flux comparison	7
+2007	TH	1.12	-	2	6	21-cm Doppler velocity of gas cloud	11
+2007	TH	1.13	-	2	5	naked-eye diffraction limit, lunar crater	-
+2007	TH	1.14	-	2	10	Schwarzschild radius of the Sun	-
+2007	TH	1.15	-	2	6	flux ratio from magnitude difference	-
+2007	TH	Q2	A Planet & Its Surface Temperature	8	3	planet equilibrium temperature, albedo, rotation	6
+2007	TH	Q3	Binary System	8	8	binary mass transfer, period change	2
+2007	TH	Q4	Gravitational Lensing	8	10	Einstein ring, two lensed images	-
+2007	DA	D1	Galilean moons	4	3	identify Galilean moons from motion	-
+2007	DA	D2	The Moon's age	8	1	lunar age via synodic month	3
+2007	DA	D3	Solar System objects	8	3	identify objects from positions, elongations	1
+2008	TH	S1	-	20	1	Moon's parallax, RA difference two observers	3
+2008	TH	S2	-	20	4	sunspot area in msh, foreshortening	5
+2008	TH	S3	-	20	1	full-Moon time above horizon extremes	-
+2008	TH	S4	-	20	7	helium-burning lifetime, triple-alpha	-
+2008	TH	S5	-	20	13	dark matter/dark energy ratio at recombination	-
+2008	TH	S6	-	20	11	Sgr A* black-hole mass from cloud Doppler	10
+2008	TH	S7	-	20	7	giant-branch luminosity, visibility distance	6
+2008	TH	S8	-	20	2	horizontal tidal acceleration due to Moon	-
+2008	TH	S9	-	20	3	Earth temperature with atmospheric transmittance	6
+2008	TH	S10	-	20	5	CCD frame fit and position angle	1
+2008	TH	S11	-	20	3	annular eclipse photo: distances, coverage	5
+2008	TH	S12	-	20	13	SN Ia distance and Hubble time	6
+2008	TH	S13	-	20	3	tangent-line angles to circular asteroid	-
+2008	TH	S14	-	20	2	orbit mass/energy from u-p data	-
+2008	TH	S15	-	20	12	Tully-Fisher mass and luminosity NGC 2639	6
+2008	TH	L1	-	100	8	eclipsing binary radii, masses	-
+2008	TH	L2	-	100	6	UBV extinction, intrinsic colors, Teff	7
+2008	TH	L3	-	100	13	CMB horizon distance, scale factor, inflation	-
+2008	DA	D1	Virgo Cluster	100	13	Virgo distance, H0, Hubble time	12
+2008	DA	D2	Stellar masses in a visual binary system	100	8	alpha Cen visual binary masses	6
+2008	DA	D3	The Age of Meteorite	100	3	Rb-Sr isochron regression	-
+2009	TH	P1	-	10	10	SMBH mean density inside Schwarzschild radius	-
+2009	TH	P2	-	10	6	photon rate into eye from m=6 star	5
+2009	TH	P3	-	10	2	planet radius escapable by jumping	3
+2009	TH	P4	-	10	1	solstice solar altitudes, window geometry	-
+2009	TH	P5	-	10	1	circumpolar declination with horizon dip	-
+2009	TH	P6	-	10	2	escape velocity from uniform cloud	7
+2009	TH	P7	-	10	5	eyepiece FOV from star drift time	1
+2009	TH	P8	-	10	11	globular cluster virial mass estimate	-
+2009	TH	P9	-	10	11	galactic rotation, galactocentric distance	-
+2009	TH	P10	-	10	10	magnetic flux conservation, neutron star	7
+2009	TH	P11	-	10	13	neutrino number density as dark matter	-
+2009	TH	P12	-	10	2	Earth orbit growth from solar mass loss	4
+2009	TH	P13	-	10	3	Mars-Sun distance, opposition-quadrature timing	1
+2009	TH	P14	-	10	2	satellite distance from zenith angle	1
+2009	TH	P15	-	10	8	prolate-spheroid eclipsing binary amplitude	6
+2009	TH	P16	High Altitude Projectile	45	2	projectile as elliptical orbit	-
+2009	TH	P17	Apparent number density of stars in the Galaxy	45	11	red-clump counts, disk density, extinction	6
+2009	DA	D1	CCD Image Processing	60	5	aperture photometry, zero point, seeing	6
+2009	DA	D2	Venus	60	3	Venus orbit elements from phase	2
+2010	TH	S1	-	10	6	combined magnitude of two stars	8
+2010	TH	S2	-	10	10	radius where escape velocity exceeds light	-
+2010	TH	S3	-	10	13	QSO distance from redshift, Hubble law	-
+2010	TH	S4	-	10	8	visual binary component masses via Kepler	2
+2010	TH	S5	-	10	7	maximum solar lifetime from mass-energy	4
+2010	TH	S6	-	10	2	walking speed vs orbital velocity on asteroid	3
+2010	TH	S7	-	10	9	Earth-like exoplanet transit depth	-
+2010	TH	S8	-	10	5	VLBI wavelength to resolve Sgr A*	10
+2010	TH	S9	-	10	5	photon count rate, Gemini 8-m	6
+2010	TH	S10	-	10	11	vertical exponential disk stellar density	-
+2010	TH	S11	-	10	3	next Mars great opposition, synodic period	1
+2010	TH	S12	-	10	7	stellar radius ratio from dm and Teff	6
+2010	TH	S13	-	10	4	solar photosphere temperature from color	6
+2010	TH	S14	-	10	3	Venus transit chord geometry	1
+2010	TH	S15	-	10	3	annular vs total eclipse ratio	2
+2010	TH	L16	-	30	2	parabolic orbit crossing Mars	-
+2010	TH	L17	-	30	3	fictional planetary system days, moons	1
+2010	DA	D1	CCD image	35	5	plate scale, chip size, moving objects	3
+2010	DA	D2	Light curves of stars	35	8	KZ Hya pulsation period, amplitude	-
+2011	TH	S1	-	10	2	Oort-cloud comet infall travel time	3
+2011	TH	S2	-	10	11	globular cluster star count from escape velocity	-
+2011	TH	S3	-	10	2	Voyager orbit type; Sun's magnitude	6
+2011	TH	S4	-	10	2	Phobos time above Martian horizon	1
+2011	TH	S5	-	10	5	radio dish matching optical resolution	-
+2011	TH	S6	-	10	2	tidal spin-down, ancient day count	1
+2011	TH	S7	-	10	2	impulse direction vs orbit types	-
+2011	TH	S8	-	10	6	dust grain radiation pressure vs gravity	2
+2011	TH	S9	-	10	6	sky covering fraction, surface brightness	12
+2011	TH	S10	-	10	3	proton energy to penetrate magnetosphere	10
+2011	TH	S11	-	10	13	star-formation redshift matter-dominated	-
+2011	TH	S12	-	10	1	precession alters Sirius/Canopus visibility	-
+2011	TH	S13	-	10	1	galactic equator in horizontal coordinates	-
+2011	TH	S14	-	10	4	solar neutrino flux from fusion	-
+2011	TH	S15	-	10	13	CMB temperature scaling with redshift	-
+2011	TH	L1	-	30	9	HD209458 transit + Doppler: star radius	2
+2011	TH	L2	-	30	12	elliptical galaxy K-correction, cluster membership	13
+2011	TH	L3	-	30	8	two stars gravitationally bound?	1
+2011	DA	D1	Analysis of times of minima	25	8	V1107 Cas O-C diagram, period	-
+2011	DA	D2	Weighing a galaxy	25	12	NGC 7083 rotation curve, bulge mass	11

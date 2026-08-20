@@ -1,0 +1,161 @@
+\begin{description}
+\item[(a)] The first step is to convert the extinction corrected distance
+  moduli ($DM$) of all globular clusters to distance ($d$), in parsecs:
+  \[
+    DM = (m - M) - Av = 5\cdot\log(d) - 5
+    \quad\Rightarrow\quad
+    d = 10^{(DM+5)/5}\,\mathrm{pc}
+  \]
+  So, it follows to calculate the cartesian coordinates ($x$, $y$, $z$) of the
+  globular clusters with respect to the Sun, using the galactic coordinates
+  (longitude l and latitude b). The $x$-axis points to the Galactic Centre,
+  the $y$-axis points to direction of galactic rotation and the $z$-axis is
+  perpendicular to the galactic disk, and points in the direction antiparallel
+  to the angular momentum. The conversion of coordinates should be done as
+  follows:
+  \[
+    x = d\cdot\cos(l)\cdot\cos(b)\;,\quad
+    y = d\cdot\sin(l)\cdot\cos(b)\;,\quad
+    z = d\cdot\sin(b)
+  \]
+  The table below shows the calculated values of $d$, $x$, $y$, and $z$ for
+  all globular clusters.
+
+  \begin{center}
+  \begin{tabular}{|l|r|r|r|r|}
+  \hline
+  \textbf{Name} & \textbf{d (pc)} & \textbf{x (pc)} & \textbf{y (pc)} & \textbf{z (pc)}\\
+  \hline
+  NGC 6522    &  7244.36 &  7226.20 &   129.29 &  -496.01\\
+  NGC 6401    &  7585.78 &  7553.77 &   455.39 &   526.52\\
+  NGC 6342    &  7943.28 &  7800.55 &   668.47 &  1341.77\\
+  NGC 6553    &  5248.07 &  5218.73 &   479.81 &  -277.32\\
+  NGC 6440    &  8317.64 &  8223.94 &  1116.16 &   551.39\\
+  Ter 12      &  5248.07 &  5188.85 &   762.34 &  -192.40\\
+  VVV-CL 160  &  6918.31 &  6809.92 &  1219.29 &    36.47\\
+  2MASS-GC01  &  3311.31 &  3256.16 &   601.79 &     5.78\\
+  NGC 6517    &  9120.11 &  8551.60 &  2982.17 &  1073.85\\
+  NGC 6402    &  9120.11 &  8213.73 &  3206.36 &  2330.31\\
+  NGC 6712    &  7244.36 &  6528.00 &  3093.30 &  -545.44\\
+  NGC 6426    & 20892.96 & 17697.53 &  9444.44 &  5840.86\\
+  NGC 5466    & 15848.93 &  3319.16 &  3004.35 & 15203.48\\
+  NGC 7089    & 11481.54 &  5558.08 &  7476.05 & -6711.34\\
+  NGC 288     &  9120.11 &   -86.55 &    47.41 & -9119.57\\
+  NGC 2298    & 10000.00 & -3966.46 & -8755.80 & -2757.38\\
+  NGC 4590    & 10471.29 &  4185.03 & -7359.22 &  6162.41\\
+  NGC 4372    &  5754.40 &  2919.15 & -4859.63 &  -987.77\\
+  NGC 362     &  8709.64 &  3150.05 & -5133.77 & -6291.21\\
+  BH 140      &  4786.30 &  2611.38 & -3995.02 &  -359.45\\
+  NGC 5927    &  8317.64 &  6919.31 & -4561.75 &   704.68\\
+  Patchick 126&  7943.28 &  7465.49 & -2661.12 &  -530.03\\
+  NGC 5897    & 12589.25 & 10392.20 & -3187.93 &  6350.49\\
+  NGC 6380    &  9549.93 &  9393.28 & -1625.54 &  -570.03\\
+  Djor 1      & 10000.00 &  9973.79 &  -579.45 &  -433.40\\
+  \hline
+  \end{tabular}
+  \end{center}
+\item[(b)] In order to estimate the distance from the Sun to the centre of
+  the distribution and its uncertainty, we first need the mean values of each
+  coordinate $\bar{x}$, $\bar{y}$ and $\bar{z}$, as well as the standard
+  deviations in each axis, $\sigma_x$, $\sigma_y$ and $\sigma_z$. The
+  calculations of the mean and standard deviation for the $x$, $y$, and $z$
+  coordinates are as follows:
+
+  \textbf{Mean in the three axes:}
+  \[
+    \bar{x} = \frac{1}{N}\sum_{i=1}^{N}x_i,\quad
+    \bar{y} = \frac{1}{N}\sum_{i=1}^{N}y_i,\quad
+    \bar{z} = \frac{1}{N}\sum_{i=1}^{N}z_i
+  \]
+  \[
+    \bar{x} = 6164.1\ \mathrm{pc},\quad
+    \bar{y} = -321.3\ \mathrm{pc},\quad
+    \bar{z} = 434.3\ \mathrm{pc}
+  \]
+
+  \textbf{Standard deviations in the three axes:}
+  \[
+    \sigma_x = \sqrt{\frac{\sum_{i=1}^{N}(x_i-\bar{x})^2}{N-1}},\quad
+    \sigma_y = \sqrt{\frac{\sum_{i=1}^{N}(y_i-\bar{y})^2}{N-1}},\quad
+    \sigma_z = \sqrt{\frac{\sum_{i=1}^{N}(z_i-\bar{z})^2}{N-1}}
+  \]
+  \[
+    \sigma_x = 4057.7\,\mathrm{pc}\;,\quad
+    \sigma_y = 4196.4\,\mathrm{pc}\;,\quad
+    \sigma_z = 4682.6\,\mathrm{pc}
+  \]
+  Consequently, we obtain the uncertainties associated to the mean in each
+  axis:
+
+  \textbf{Uncertainties of means in the three axes:}
+  \[
+    \delta\bar{x} = \frac{\sigma_x}{\sqrt{N}},\quad
+    \delta\bar{y} = \frac{\sigma_y}{\sqrt{N}},\quad
+    \delta\bar{z} = \frac{\sigma_z}{\sqrt{N}}
+  \]
+  \[
+    \delta\bar{x} = 811.54\ \mathrm{pc},\quad
+    \delta\bar{y} = 839.28\ \mathrm{pc},\quad
+    \delta\bar{z} = 936.52\ \mathrm{pc}
+  \]
+  Finally, the distance $D$, in parsecs, from the Sun to the centre of the
+  distribution of globular clusters is estimated as:
+  \begin{align*}
+    D &= \sqrt{\bar{x}^2 + \bar{y}^2 + \bar{z}^2}\\
+    D &= \sqrt{(6164.1)^2 + (-321.3)^2 + (434.3)^2} = 6187.73\ \mathrm{pc}
+  \end{align*}
+  And, to estimate its uncertainty $\delta D$, we should perform an error
+  propagation calculation:
+  \begin{align*}
+    (\delta D)^2 &= \left(\frac{\partial D}{\partial\bar{x}}\right)^2
+        \cdot(\delta\bar{x})^2
+      + \left(\frac{\partial D}{\partial\bar{y}}\right)^2
+        \cdot(\delta\bar{y})^2
+      + \left(\frac{\partial D}{\partial\bar{z}}\right)^2
+        \cdot(\delta\bar{z})^2 \Rightarrow\\
+    (\delta D)^2 &= \left[
+        \left(\frac{\bar{x}}{D}\cdot\delta\bar{x}\right)^2
+      + \left(\frac{\bar{y}}{D}\cdot\delta\bar{y}\right)^2
+      + \left(\frac{\bar{z}}{D}\cdot\delta\bar{z}\right)^2
+      \right] \Rightarrow\\
+    \delta D &= \frac{1}{6187.73}\cdot
+      \left[(6164.1\cdot811.54)^2 + (-321.3\cdot839.28)^2
+      + (434.3\cdot936.52)^2\right]^{1/2} \Rightarrow\\
+    \delta D &= 812.28\,\mathrm{pc}
+  \end{align*}
+\item[(c)] The table below shows the calculated values of the quartiles for
+  each distribution.
+
+  \begin{center}
+  \begin{tabular}{|c|r|r|r|}
+  \hline
+  \textbf{Axis} & \textbf{Q1 (pc)} & \textbf{Q2 (pc)} & \textbf{Q3 (pc)}\\
+  \hline
+  $x$ &  3287.66 & 6809.92 & 8218.84\\
+  $y$ & -3591.48 &  455.39 & 2100.73\\
+  $z$ &  -557.74 & -192.40 & 1207.81\\
+  \hline
+  \end{tabular}
+  \end{center}
+
+  The expected histograms for each axis are as follows:
+  % FIGURE NEEDED: three five-bin histograms of the globular-cluster x, y and
+  % z distributions (2024_da_sol.pdf pp.7-8, "X axis histogram", "Y Axis
+  % Histogram", "Z axis histogram"), each with dashed vertical lines marking
+  % Q1, Q2, Q3 (values as in the table above).
+\item[(d)] \textbf{F} (False). The analysed sample does not follow Shapley's
+  hypothesis, because all distributions are asymmetrical. See table below for
+  the values of calculated symmetry factors for each distribution.
+
+  \begin{center}
+  \begin{tabular}{|c|c|l|}
+  \hline
+  \textbf{Axis} & $\Phi$ & \textbf{Symmetry Type}\\
+  \hline
+  $x$ & 0,429 & asymmetrical\\ % sic: decimal commas as printed
+  $y$ & 0,422 & asymmetrical\\
+  $z$ & 0,588 & asymmetrical\\
+  \hline
+  \end{tabular}
+  \end{center}
+\end{description}

@@ -1,0 +1,179 @@
+\begin{description}
+\item[(a)] Assuming the positions of the two stars are: Vega:
+  $(\alpha_1, \delta_1)$; Altair: $(\alpha_2, \delta_2)$
+  \[ (\alpha_1, \delta_1) = (279.23538^\circ,\ 38.78547^\circ)
+     \quad\text{and}\quad
+     (\alpha_2, \delta_2) = (297.69875^\circ,\ 8.87036^\circ) \]
+  \hfill(2 points)
+
+  Cosine formula of the spherical geometry is given by:
+  \[ \cos[a] = \cos[b]\cos[c] + \sin[b]\sin[c]\cos[A] \]
+  \hfill(0.5 point)
+
+  In our triangle, $b = (90 - \delta_1)$, $c = (90 - \delta_2)$ and
+  $A = (\alpha_2 - \alpha_1)$. Then the angular distance $\beta$ between
+  Vega and Altair is:
+  \[ \cos[\beta] = \cos[90^\circ - \delta_1]\cos[90^\circ - \delta_2]
+     + \sin[90^\circ - \delta_1]\sin[90^\circ - \delta_2]
+       \cos[\alpha_2 - \alpha_1]; \]
+  \hfill(3 points)
+  \[ \cos[\beta] = \cos[51.21453^\circ]\cos[81.12964^\circ]
+     + \sin[51.21453^\circ]\sin[81.12964^\circ]\cos[18.46337^\circ]; \]
+  \hfill(1.5 points)
+  \[ \beta = 34.19582^\circ \]
+  \hfill(2 points)
+
+\item[(b)] The distance of Vega is:
+  $r_1 = 1/(130.23\times 10^{-3}) = 7.6787\,pc$
+
+  The distance of Altair is:
+  $r_2 = 1/(194.95\times 10^{-3}) = 5.1295\,pc$ \hfill(2 points)
+
+  Using the Law of Cosines:
+  $d^2 = r_1^{\,2} + r_2^{\,2} - 2r_1 r_2\cos[\beta]$ \hfill(2 point)
+
+  we can obtain the distance: $d = 4.4855\,pc$ \hfill(2 points)
+
+\item[(c)] Given the proper motions and radial velocities of the two stars,
+  the directions of their movements on the celestial sphere can be
+  estimated.
+
+  For Vega:
+  \begin{align*}
+  \mu_{\alpha 1}\cos\delta_1 &= 200.94;\ \mu_{\delta 1} = 286.23\\
+  \theta_1 &= \arctan\left[\frac{\mu_{\alpha 1}\cos\delta_1}
+    {\mu_{\delta 1}}\right]\times\frac{180^\circ}{\pi} = 35.0697^\circ
+  \end{align*}
+  \hfill(2 points)
+
+  For Altair:
+  \begin{align*}
+  \mu_{\alpha 2}\cos\delta_2 &= 536.23;\ \mu_{\delta 2} = 385.29\\
+  \theta_2 &= \arctan\left[\frac{\mu_{\alpha 2}\cos\delta_2}
+    {\mu_{\delta 2}}\right]\times\frac{180^\circ}{\pi} = 54.302^\circ
+  \end{align*}
+  \hfill(1 points)
+
+\item[(d)] As the position angles of the proper motion of the two stars are
+  different, the stars' paths will intersect. As the paths are circular on
+  the celestial sphere, they will intersect in exactly \textbf{two} points.
+  \hfill(2 points)
+
+\item[(e)] Let the closer point of intersection be I with the coordinates
+  $(\alpha_3, \delta_3)$.
+
+  In triangle PVA,
+  \[ PAV = \arcsin\left[\frac{\sin VPA\,\sin PV}{\sin VA}\right]
+     = \arcsin\left[\frac{\sin(\alpha_1 - \alpha_2)
+       \sin(90^\circ - \delta_1)}{\sin\beta}\right] = 26.055^\circ \]
+  \[ PVA = \arcsin\left[\frac{\sin VPA\,\sin PA}{\sin VA}\right]
+     = \arcsin\left[\frac{\sin(\alpha_1 - \alpha_2)
+       \sin(90^\circ - \delta_2)}{\sin\beta}\right] = 146.196^\circ \]
+  \hfill(5 points)
+
+  Note that angle PVA is more than $90^\circ$, which will be evident from
+  the diagram. \hfill(1 point)
+
+  The motion of the stars on the celestial sphere will always be along some
+  great circle. So VAI is a spherical triangle. Using the four parts formula
+  for VAI
+  \[ \cot VI = \frac{\cos VA\cos IVA + \sin IVA\cot VAI}{\sin VA} \]
+  \[ VI = 90^\circ - \arctan\left[\frac{\cos 34.19582^\circ
+     \cos(68.900^\circ) + \sin(68.900^\circ)\cot(99.643^\circ)}
+     {\sin 34.19582^\circ}\right] = 76.085^\circ \]
+  \hfill(5 points)
+
+  by sine rule,
+  \[ AI = \arcsin\left[\frac{\sin VI\sin IVA}{\sin VAI}\right]
+     = \arcsin\left[\frac{\sin 76.085^\circ\sin 68.900^\circ}
+       {\sin 99.643^\circ}\right] = 66.715^\circ \]
+  \hfill(2 points counted in next part)
+
+  Now we use triangle PVI: by cosine rule,
+  \begin{align*}
+  \cos[PI] &= \cos[PV]\cos[VI] + \sin[PV]\sin[VI]\cos[PVI];\\
+  \cos[90^\circ - \delta_3] &= \cos[90^\circ - \delta_1]\cos[VI]
+    + \sin[90^\circ - \delta_1]\sin[VI]\cos[180^\circ - \theta_1];\\
+  \sin[\delta_3] &= \cos[51.215^\circ]\cos[76.085^\circ]
+    + \sin[51.215^\circ]\sin[76.085^\circ]\cos[144.930^\circ];
+  \end{align*}
+  Thus, $\delta_3 = -27.945^\circ$ \hfill(4 points)
+
+  Applying sine rule,
+  \[ VPI = \arcsin\left[\frac{\sin PVI\sin VI}{\sin PI}\right]
+     = \arcsin\left[\frac{\sin 144.930^\circ\sin 76.085^\circ}
+       {\sin 117.945^\circ}\right] = 39.148^\circ \]
+  Hence,
+  $\alpha_3 = \alpha_1 - VPI = 279.235^\circ - 39.148^\circ = 240.087^\circ
+   \approx 16^{\mathrm{h}}0^{\mathrm{m}}21^{\mathrm{s}}$ \hfill(5 points)
+
+  Out of 5 points, 1 point is reserved for realising that the intersection
+  point is in the past path.
+
+\item[(f)] The total velocity along the great circle for Vega is
+  \[ \mu_1 = \sqrt{(\mu_{\alpha 1}\cos\delta_1)^2 + \mu_{\delta 1}^{\,2}}
+     = \sqrt{200.94^2 + 286.23^2} = 349.72\ \text{mas/year} \]
+  \hfill(2 points)
+  \[ \text{Number of years} = \frac{VI}{\mu_1}
+     = \frac{76.085\times 3600}{0.34972} \approx 783200\ \text{years} \]
+  It will happen in the year 781200 BCE. \hfill(2 points)
+
+  Similarly, $\mu_2 = 660.30$ and number of years $= 363700$ years.
+
+  It will happen in the year 3617 BCE.
+  % sic: source says "3617 BCE"; 363700 years ago would be ~361700 BCE
+  \hfill(2 points)
+
+\item[(g)] After 363700 years, Vega would have traversed $35.335^\circ$
+  along its path. \hfill(3 points)
+
+  Thus, its separation from Altair will be
+  $(76.085^\circ - 35.335^\circ) = 40.750^\circ$ \hfill(2 points)
+
+\item[(h)] In earth centric Cartesian frame, coordinates of Vega (in units
+  of parsec) will be:
+  \begin{align*}
+  x_1 &= r_1\cos\delta_1\cos(360^\circ - \alpha_1) = 0.96062\,\text{pc}\\
+  y_1 &= r_1\cos\delta_1\sin(360^\circ - \alpha_1) = 5.90793\,\text{pc}\\
+  z_1 &= r_1\sin\delta_1 = 4.80998\,\text{pc}
+  \end{align*}
+  Similarly, coordinates of Altair will be, $x_2 = 2.35579$,
+  $y_2 = 4.48736$\,pc and $z_2 = 0.79097$\,pc. \hfill(6 points)
+
+  Here, we are assuming the North as positive x-direction and pole as
+  positive z-direction.
+
+  The direction vectors for velocities in spherical coordinates are
+  \[ v_1 = (-13.9, 7.33, 10.45)\quad\text{and}\quad
+     v_2 = (-26.9, 19.57, 14.06) \]
+  \hfill(4 points)
+
+  The same in Cartesian coordinates will be
+  \begin{align*}
+  v_{x1} &= v_{r1}\cos\delta_1\cos\alpha_1 - v_{\alpha 1}\sin\alpha_1
+    - v_{\delta 1}\sin\delta_1\cos\alpha_1 = 4.45\\
+  v_{y1} &= -v_{r1}\cos\delta_1\sin\alpha_1 - v_{\alpha 1}\cos\alpha_1
+    + v_{\delta 1}\sin\delta_1\sin\alpha_1 = -18.33\\
+  v_{z1} &= v_{r1}\sin\delta_1 + v_{\delta 1}\cos\delta_1 = -0.56
+  \end{align*}
+  Similarly, Cartesian velocity vector of Altair will be,
+  $v_2 = (4.33, -33.85, 9.87)$. \hfill(8 points)
+
+  Lastly, we evaluate the value of the determinant,
+  \[ \begin{vmatrix}
+     (x_1 - x_2) & (y_1 - y_2) & (z_1 - z_2)\\
+     v_{x1} & v_{y1} & v_{z1}\\
+     v_{x1} & v_{y1} & v_{z1}
+     % sic: source labels the third row with Vega's components again;
+     % the numbers below are Altair's
+     \end{vmatrix}
+   = \begin{vmatrix}
+     -1.40 & 1.42 & 4.02\\
+     4.45 & -18.33 & -0.56\\
+     4.33 & -33.85 & 9.87
+     \end{vmatrix} \]
+  \[ = 279.82 - 65.81 - 286.48 = -72.47 \]
+  As the value of the determinant is non-zero, the direction vectors of
+  these two stars do not cross each other. Hence no such point can exist.
+  \hfill(4 points)
+\end{description}

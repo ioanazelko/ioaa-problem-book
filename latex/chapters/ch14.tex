@@ -1,0 +1,762 @@
+\chapter{Gravitational Waves}
+
+\section*{Theory problems}
+
+\probhead{14.1}{Gravitational Waves}{2016}{Bhubaneswar, India}{TH T11}{50}
+% source id: 2016_TH_T11   tag: GW frequency at merger MS/WD/NS/BH
+The first signal of gravitational waves was observed by two advanced LIGO
+detectors at Hanford and Livingston, USA in September 2015. One of these
+measurements (strain vs.\ time in seconds) is shown in the accompanying figure.
+In this problem, we will interpret this signal in terms of a small test mass $m$
+orbiting around a large mass $M$ (i.e.\ $m \ll M$), by considering several
+models for the nature of the central mass.
+
+\ioaafig{2016_TH_T11-f1.pdf}
+
+The test mass loses energy due to the emission of gravitational waves. As a
+result the orbit keeps on shrinking, until the test mass reaches the surface of
+the object, or in the case of a black hole, the innermost stable circular orbit
+--- ISCO --- which is given by $R_{\mathrm{ISCO}} = 3R_{\mathrm{sch}}$, where
+$R_{\mathrm{sch}}$ is the Schwarzschild radius of the black hole. This is the
+``epoch of merger''. At this point, the amplitude of the gravitational wave is
+maximum, and so is its frequency, which is always twice the orbital frequency.
+In this problem, we will only focus on the gravitational waves before the
+merger, when Kepler's laws are assumed to be valid. After the merger, the form
+of gravitational waves will drastically change.
+
+\begin{description}
+\item[(T11.1)] Consider the observed gravitational waves shown in the figure
+  above. Estimate the time period, $T_0$, and hence calculate the frequency,
+  $f_0$, of gravitational waves just before the epoch of merger. \hfill[7]
+\item[(T11.2)] For any main sequence (MS) star, the radius of the star,
+  $R_{\mathrm{MS}}$, and its mass, $M_{\mathrm{MS}}$, are related by a power
+  law. Find the highest frequency of emitted gravitational waves,
+  $f_{\mathrm{MS,max}}$, if the test mass is orbiting a main sequence star.
+\item[(T11.3)] Find the highest frequency of emitted gravitational waves,
+  $f_{\mathrm{WD,max}}$, if the test mass is orbiting a white dwarf. Take the
+  radii of white dwarfs to be in the range $\sim 3000$ to $6000$\,km.
+\item[(T11.4)] Neutron stars (NS) are a peculiar type of compact objects which
+  have masses between $1$ and $3M_\odot$ and radii in the range $10$--$15$\,km.
+  Find the range of frequencies of emitted gravitational waves,
+  $f_{\mathrm{NS,min}}$ and $f_{\mathrm{NS,max}}$, if the test mass is orbiting
+  a neutron star at a distance close to the neutron star radius.
+\item[(T11.5)] If the test mass is orbiting a black hole (BH), write the
+  expression for the frequency of emitted gravitational waves,
+  $f_{\mathrm{BH}}$, in terms of the mass of the black hole,
+  $M_{\mathrm{BH}}$, and the solar mass $M_\odot$. \hfill[5]
+\item[(T11.6)] Based only on the time period (or frequency) of gravitational
+  waves before the epoch of merger, determine whether the central object can be
+  a main sequence star (MS), a white dwarf (WD), a neutron star (NS), or a
+  black hole (BH). Estimate the mass of this object, $M_{\mathrm{obj}}$, in
+  units of $M_\odot$. \hfill[8]
+\end{description}
+
+\probhead{14.2}{LIGO}{2021}{Bogot\'a (remote)}{TH Q1}{5}
+% source id: 2021_TH_Q1   tag: BH-merger GW energy vs supernova
+The first detection of gravitational waves GW150914 was announced in 2016 by
+the collaboration LIGO (Laser Interferometer Gravitational-Wave Observatory).
+The detected signal corresponds to the merger of two black holes with masses of
+$35M_\odot$ and $30M_\odot$, which when joined formed a black hole of
+$62M_\odot$. Ignoring the rotational energies of the black holes, you may assume
+that the energy released by this process ($E_{GW}$) is emitted solely in the
+form of gravitational waves, that were observed by the interferometer in 2015.
+You are given that the explosion of a supernova (SN) releases
+$E_{SN} = 2 \times 10^{44}$\,J.
+
+\begin{description}
+\item[(1.1)] To find out which of these two events (SN, GW) releases more
+  energy, estimate the energy ratio $E_{SN}/E_{GW}$. \hfill[5.0\,pt]
+\end{description}
+
+\probhead{14.3}{LISA}{2023}{Katowice, Poland}{TH Q13}{45}
+% source id: 2023_TH_Q13   tag: white-dwarf binary GW strain, chirp mass
+The Laser Interferometer Space Antenna (LISA) is a proposed experiment to detect
+low-frequency gravitational waves. It consists of three spacecraft arranged in
+an equilateral triangle. A passing gravitational wave changes the distance
+between the spacecraft, which can be precisely measured (more details are given
+in the notes below).
+
+One of the sources of low-frequency gravitational waves are compact binary star
+systems, for example binary white dwarfs. Such a system was recently discovered
+at a distance of $2.34$\,kpc from the Sun. The orbital period of the binary was
+found to be $414.79$\,s and is changing at a rate of
+$-7.49 \times 10^{-4}$\,s\,yr$^{-1}$ due to the emission of gravitational waves.
+
+\begin{description}
+\item[(a)] Check if this binary system can be detected by LISA. \hfill[25 points]
+\item[(b)] Calculate the chirp mass. \hfill[5 points]
+\item[(c)] Determine the masses of both components knowing that the ratio
+  between the radius of one of the components to the semi-major axis of the
+  orbit is $0.139$, and assuming both components follow the mass--radius
+  relation for white dwarfs given in the table below. \hfill[15 points]
+\end{description}
+
+\noindent\textbf{Notes:}
+\begin{enumerate}
+\item A binary star system with an orbital period $P$ emits gravitational waves
+  with a frequency of $f = 2/P$.
+\item LISA measures a dimensionless quantity called the characteristic strain
+  amplitude, $S$, given by
+  \[ S = h\sqrt{f T_{\mathrm{obs}}}, \]
+  where $T_{\mathrm{obs}} = 4$\,yr is the expected duration of the mission. $h$
+  is the gravitational wave strain, given by
+  \[ h = \frac{2(G\mathcal{M})^{5/3}(\pi f)^{2/3}}{c^4 D}, \]
+  where $\mathcal{M}$ is the so-called chirp mass, $f$ is the frequency of the
+  gravitational wave and $D$ is the distance to the system. If we denote the
+  masses of the components by $M_1$ and $M_2$, then the chirp mass is given by
+  \[ \mathcal{M} = \frac{(M_1 M_2)^{3/5}}{(M_1 + M_2)^{1/5}}. \]
+  The expected sensitivity of LISA as a function of gravitational wave
+  frequency is presented in the figure below.
+\item The semi-major axis $a$ of the binary system changes due to the emission
+  of gravitational waves at a rate
+  \[ \frac{\Delta a}{\Delta t} = -\frac{64}{5}\,\frac{G^3}{c^5}\,
+     \frac{M_1 M_2 (M_1 + M_2)}{a^3}. \]
+\end{enumerate}
+
+\ioaafig{2023_TH_Q13-f2.pdf}
+
+\probhead{14.4}{Gravitational Waves}{2025}{Mumbai, India}{TH T03}{15}
+% source id: 2025_TH_T03   tag: binary BH chirp, merger time
+Orbiting binary black holes generate gravitational waves. Consider two black
+holes, in our Galaxy, with masses $M = 36\,M_\odot$ and $m = 29\,M_\odot$,
+revolving in circular orbits with orbital angular frequency $\omega$ around
+their centre of mass.
+
+\begin{description}
+\item[(T03.1)] Assuming Newtonian gravity, derive an expression for the angular
+  frequency, $\omega_{\mathrm{ini}}$, of the black hole orbits at a time
+  $t_{\mathrm{ini}}$, when the separation between the black holes was $4.0$
+  times the sum of their Schwarzschild radii, in terms of only $M$, $m$, and
+  physical constants. Calculate the value of $\omega_{\mathrm{ini}}$
+  (in rad\,s$^{-1}$). \hfill[5]
+\item[(T03.2)] In general relativity, black holes in orbit emit gravitational
+  waves with frequency $f_{\mathrm{GW}}$, such that
+  $2\pi f_{\mathrm{GW}} = \omega_{\mathrm{GW}} = 2\omega$. This shrinks the
+  black hole orbits, which in turn increases $f_{\mathrm{GW}}$. The rate of
+  change of $f_{\mathrm{GW}}$ is
+  \[ \frac{\mathrm{d}f_{\mathrm{GW}}}{\mathrm{d}t}
+     = \frac{96\pi^{8/3}}{5}\,G^{5/3} c^{\beta}
+       \mathcal{M}_{\mathrm{chirp}}^{\alpha/3} f_{\mathrm{GW}}^{\delta/3}, \]
+  where $\mathcal{M}_{\mathrm{chirp}} = \dfrac{(mM)^{3/5}}{(m+M)^{1/5}}$ is
+  called the ``chirp mass''. Find the values of $\alpha$, $\beta$ and $\delta$.
+  \hfill[4]
+\item[(T03.3)] Assume that the gravitational waves associated with the event
+  were first detected at time $t_{\mathrm{ini}} = 0$. Derive an expression for
+  the observed time of black hole merger, $t_{\mathrm{merge}}$, when
+  $f_{\mathrm{GW}}$ becomes very large, in terms of $\omega_{\mathrm{ini}}$,
+  $\mathcal{M}_{\mathrm{chirp}}$, and physical constants only. Calculate the
+  value of $t_{\mathrm{merge}}$ (in seconds). \hfill[6]
+\end{description}
+
+\section*{Data-analysis problems}
+
+\probhead{14.5}{Gravitational wave astronomy}{2022}{Kutaisi, Georgia}{DA 1}{45}
+% source id: 2022_DA_1   tag: GW170817 chirp mass from f(t)
+In this problem, we will analyze frequency vs.\ time representations of data
+containing the gravitational wave event GW170817, which was the first
+observation by LIGO of a merger of a binary neutron star system.
+
+\ioaafig{2022_DA_1-f1.pdf}
+
+\subsection*{1.1 Data from the graph}
+\begin{description}
+\item[(1.1.1)] You are given a semi-logarithmic graph, from which you need to
+  extract values of frequency and time. Let the bottom left corner be the
+  origin $(0,0)$, horizontal coordinate $x$ is measured in centimetres. Find a
+  linear expression to obtain actual time $t$ from $x$. \hfill[2\,pt]
+\item[(1.1.2)] Similarly, find an expression for the frequency $f$ as a
+  function of the vertical coordinate $y$ measured in centimetres.
+  \hfill[3\,pt]
+\item[(1.1.3)] Extract 14 values of time and corresponding frequency from the
+  given graph into a table. At least one of the values should correspond to a
+  frequency more than $100$\,Hz. \hfill[7\,pt]
+\end{description}
+
+\subsection*{1.2 Calculate system parameters}
+The most plausible explanation for this evolution of frequency is the
+in-spiraling of two orbiting masses, $m_1$ and $m_2$, due to gravitational-wave
+emission. At the lower frequencies, such evolution is characterized by the
+``chirp mass''
+\[ M_{\mathrm{chirp}} = \frac{(m_1 m_2)^{3/5}}{(m_1+m_2)^{1/5}}
+   = \frac{c^3}{G}\left[\frac{5}{96}\,\pi^{-8/3} f^{-11/3}\dot{f}\right]^{3/5}, \]
+where $f$ and $\dot{f}$ are the observed frequency and its rate of change with
+respect to time, and $G$ and $c$ are the gravitational constant and the speed
+of light.
+
+\begin{description}
+\item[(1.2.1)] From the equation above, derive an expression for the frequency
+  dependence on time. \hfill[3\,pt]\\
+  \textit{Note:} if $x^n \dot{x} = k$, then $\dfrac{x^{n+1}}{n+1} = kt + C$,
+  where $k$, $n$ and $C$ are constants.
+\item[(1.2.2)] By plotting the appropriate graph, find the chirp mass and
+  estimate its error caused by uncertainty in the slope calculation.
+  \hfill[22\,pt]
+\end{description}
+
+We realize that what is measured by the ground-based GW detectors are actually
+the detector-frame masses, which are related to the source-frame masses by
+\[ m_{\mathrm{detector}} = (1+z)\,m, \]
+where $z$ is the redshift of the binary.
+
+\begin{description}
+\item[(1.2.3)] If the host galaxy NGC 4993 has a redshift $z = 0.009783$, find
+  the source-frame chirp mass. \hfill[2\,pt]
+\item[(1.2.4)] The mass ratio $q = m_1/m_2$ is much harder to measure. Advanced
+  waveform analysis constrains this ratio; using the chirp mass found above,
+  determine the range of possible values of the individual masses $m_1$ and
+  $m_2$. \hfill[6\,pt]
+\end{description}
+
+\clearpage
+\section*{Solutions to Chapter 14}
+
+\solhead{14.1}{Gravitational Waves}
+% source id: 2016_TH_T11
+\begin{description}
+\item[(T11.1)] From the graph, just before the peak of emission, the time
+  period of gravitational waves is approximately $(0.007 \pm 0.004)$\,s.
+  \[ T_0 \approx 0.007\,\mathrm{s} \]
+  \hfill(2 points)
+
+  That is, the frequency of the gravitational waves is
+  $f_0 \approx 142.86$\,Hz. \hfill(1 point)
+
+\item[(T11.2)] Since $m \ll M$ then, by Kepler's third law
+  \[ f_{\mathrm{orbital}} = \frac{1}{2\pi}\sqrt{\frac{GM}{r^3}} \]
+  \hfill(4 points)
+
+  Hence the frequency of the gravitational waves is
+  \[ f_{\mathrm{grav}} = 2 f_{\mathrm{orbital}}
+     = \frac{1}{\pi}\sqrt{\frac{GM}{r^3}} \]
+  \hfill(1 point)
+
+  The frequency will be maximum when $r = R_{\mathrm{MS}}$. \hfill(1 point)
+
+  For main sequence stars,
+  \[ \frac{R_{\mathrm{MS}}}{R_\odot}
+     = \left(\frac{M_{\mathrm{MS}}}{M_\odot}\right)^{\alpha}
+     \qquad\therefore\quad R_{\mathrm{MS}}
+     = R_\odot \left(\frac{M_{\mathrm{MS}}}{M_\odot}\right)^{\alpha} \]
+  \hfill(1 point)
+  \begin{align*}
+    \therefore f_{\mathrm{MS}}
+      &= \frac{1}{\pi}\sqrt{\frac{G M_{\mathrm{MS}}}{R_\odot^3}}
+         \left(\frac{M_\odot}{M_{\mathrm{MS}}}\right)^{3\alpha/2} \\
+      &= \frac{1}{\pi}\sqrt{\frac{G M_\odot}{R_\odot^3}}
+         \left(\frac{M_\odot}{M_{\mathrm{MS}}}\right)^{(3\alpha-1)/2} \\
+    f_{\mathrm{MS}}
+      &= \frac{1}{\pi}\sqrt{\frac{G M_\odot}{R_\odot^3}}
+         \left(\frac{M_{\mathrm{MS}}}{M_\odot}\right)^{(1-3\alpha)/2}
+  \end{align*}
+  \hfill(3 points)
+
+\item[(T11.3)] For possible values of $\alpha$ given in the question, the
+  exponent $\frac{1-3\alpha}{2}$ is negative. Thus, if
+  $M_{\mathrm{MS}} > M_\odot$, the frequency will be smaller. Thus, for highest
+  possible frequency coming from a main sequence star, you should take lowest
+  possible mass i.e.\ $\alpha = 1.0$. \hfill(4 points)
+  \begin{align*}
+    f_{\mathrm{MS,max}}
+      &= \frac{1}{\pi}\sqrt{\frac{G M_\odot}{R_\odot^3}}
+         \left(\frac{M_{\mathrm{MS}}}{M_\odot}\right)^{\left(\frac{1-3\times 1}{2}\right)} \\
+      &= \frac{1}{\pi}\sqrt{\frac{G M_\odot}{R_\odot^3}}
+         \times \frac{M_\odot}{M_{\mathrm{MS}}}
+  \end{align*}
+  \hfill(2 points)
+
+  The frequency of gravitational waves will be given by,
+  \begin{align*}
+    f_{\mathrm{MS,max}}
+      &= \frac{1}{\pi}\sqrt{\frac{6.674 \times 10^{-11} \times 1.989 \times 10^{30}}
+         {(6.955 \times 10^{8})^{3}}} \times \frac{1}{0.08} \\
+    f_{\mathrm{MS,max}} &= 2.5\,\mathrm{mHz}
+  \end{align*}
+  \hfill(3 points)
+
+\item[(T11.4)] The maximum frequency would be when $r = R_{\mathrm{WD}}$.
+  \hfill(1 point)
+
+  We use the notation $R_{WD\odot}$ for the radius of a solar mass white
+  dwarf. Then for white dwarfs
+  % sic: the official solution prints the mass ratio below as M_WD/M_sun;
+  % from R \propto M^{-1/3} it should be M_sun/M_WD, which is what the
+  % subsequent lines (and the numerical answer) actually use.
+  \[ R_{WD}^3 = R_{WD\odot}^3 \frac{M_{WD}}{M_\odot} \]
+  \hfill(1 point)
+  \begin{align*}
+    f_{\mathrm{WD}}
+      &= \frac{1}{\pi}\sqrt{\frac{G M_{\mathrm{WD}}}{R_{WD}^3}} \\
+      &= \frac{1}{\pi}\sqrt{\frac{G M_\odot}{R_{WD\odot}^3}}\,
+         \frac{M_{WD}}{M_\odot}
+  \end{align*}
+  \hfill(2 points)
+
+  For maximum frequency, we have to take highest white dwarf mass.
+  \hfill(2 points)
+  \begin{align*}
+    f_{\mathrm{WD,max}}
+      &= 2.600 \times 10^{-6} \times
+         \sqrt{\frac{1.989 \times 10^{30}}{(6000 \times 10^{3})^{3}}}
+         \times 1.44 \\
+      &= 2.600 \times 10^{-6} \times 95.96 \times 10^{3} \times 1.44 \\
+    f_{\mathrm{WD,max}} &= 0.359\,\mathrm{Hz}
+  \end{align*}
+  \hfill(2 points)
+
+\item[(T11.5)]
+  \[ f_{grav} = \frac{1}{\pi}\sqrt{\frac{G M_{\mathrm{NS}}}{R_{\mathrm{NS}}^3}} \]
+  The lowest possible frequency is when $M_{\mathrm{NS}}$ is lowest and
+  $R_{\mathrm{NS}}$ is the highest. \hfill(2 points)
+
+  For $M_{\mathrm{NS}} = M_\odot$ and $R = 15$\,km, we get
+  \[ f_{\mathrm{NS,min}} = 1.996\,\mathrm{kHz} \]
+  \hfill(2 points)
+
+  Similarly, the largest possible frequency is when $M_{\mathrm{NS}}$ is the
+  largest and $R_{\mathrm{NS}}$ is the smallest. \hfill(2 points)
+
+  For $M_{\mathrm{NS}} = 3M_\odot$ and $R = 10$\,km, we get
+  \[ f_{\mathrm{NS,max}} = 6.352\,\mathrm{kHz} \]
+  \hfill(2 points)
+
+\item[(T11.6)] For black holes, we have to consider $R_{ISCO}$.
+  \hfill(2 points)
+
+  Hence the equation will be,
+  \[ f_{BH} = \frac{1}{\pi} \times
+     \sqrt{\frac{G M_\odot}{27 R_{sch-\odot}^3}} \times
+     \frac{M_\odot}{M_{BH}} \]
+  \hfill(2 points)
+  \[ f_{BH} = 4.396\,\mathrm{kHz} \times \frac{M_\odot}{M_{BH}} \]
+  \hfill(3 points)
+
+\item[(T11.7)] We found the frequency of the LIGO-detected wave to be
+  166.67\,Hz just before merger.
+  % sic: the official solution says 166.67 Hz here, although part (T11.1)
+  % found 142.86 Hz (and 142.86 is used in the mass estimate below).
+  As per our analysis above, only black holes can lead to emission in this
+  frequency range: Black Hole. \hfill(2 points)
+
+  By using corresponding expression,
+  \[ M_{\mathrm{obj}} = \frac{4396}{142.86} M_\odot \approx 31 M_\odot \]
+  \hfill(3 points)
+\end{description}
+
+\solhead{14.2}{LIGO}
+% source id: 2021_TH_Q1
+\begin{description}
+\item[(1.1)] Based on Einstein's relationship, $E = mc^2$. Doing a mass-energy
+  balance:
+  % note: the source writes the speed of light as a capital C throughout.
+  \[ 35 M_\odot c^2 + 30 M_\odot c^2 = 62 M_\odot c^2 + E_{GW} \]
+  \hfill(1 point)
+  \[ 3 M_\odot c^2 = E_{GW} \]
+  \hfill(1 point)
+  \[ M_\odot = 1.988 \times 10^{30}\,\mathrm{kg} \]
+  \[ E_{GW} = 3\,(1.988 \times 10^{30}\,\mathrm{kg})
+     (9 \times 10^{16}\,\mathrm{m^2\,s^{-2}}) \]
+  \hfill(1 point)
+  \[ E_{GW} = 5.36 \times 10^{47}\,\mathrm{J} \]
+  \hfill(1 point)
+
+  Now using $E_{SN} = 2 \times 10^{44}$\,J we have the ratio:
+  \[ \frac{E_{SN}}{E_{GW}} = 3.7 \times 10^{-4} \]
+  \hfill(1 point)
+
+  GW150914 released approximately 2865 times more energy than a supernova
+  explosion. $E_{SN} \ll E_{GW}$.
+\end{description}
+
+\solhead{14.3}{LISA}
+% source id: 2023_TH_Q13
+% Note: the official solution is divided into Part (a) and Part (b) only;
+% its Part (b) covers both parts (b) and (c) of the problem statement.
+\begin{description}
+\item[Part (a)] To determine whether the system can be detected by LISA, we
+  need to determine two quantities: the gravitational-wave frequency and the
+  characteristic strain amplitude.
+
+  It is straightforward to calculate the gravitational-wave frequency:
+  \[ f = \frac{2}{P} = \frac{2}{414.79} = 4.8 \times 10^{-3}\,\mathrm{Hz}. \]
+  This frequency is within the LISA band and close to the maximum LISA
+  sensitivity. \hfill(2 points)
+
+  To estimate the characteristic strain amplitude, we need to know the chirp
+  mass $\mathcal{M}$. The other required quantities (such as the gravitational
+  wave frequency, distance, and duration of the LISA observations) are already
+  known.
+
+  The orbital period change rate $\Delta P/\Delta t$ is given in the problem.
+  We need to link it to $\Delta a/\Delta t$ which we know from Note 3 is
+  linked to the mass function. From Kepler's third law, we know that:
+  \[ \frac{a^3}{P^2} = \frac{G(M_1 + M_2)}{4\pi^2}, \]
+  where $M_1$ and $M_2$ are masses of both components of the system. If, due
+  to the emission of gravitational waves, the semi-major axis changes from $a$
+  to $a + \Delta a$, then the orbital period changes from $P$ to
+  $P + \Delta P$, as the masses of both components are constant. Then:
+  \[ \frac{a^3}{P^2} = \frac{(a+\Delta a)^3}{(P+\Delta P)^2}
+     = \frac{a^3(1+\Delta a/a)^3}{P^2(1+\Delta P/P)^2}
+     = \frac{a^3}{P^2}\left(1 + \frac{3\Delta a}{a}
+       - \frac{2\Delta P}{P}\right), \]
+  hence:
+  \[ \frac{\Delta P}{P} = \frac{3}{2}\,\frac{\Delta a}{a}. \]
+  Here, we used the fact that $(1+x)^n \approx 1 + nx$ for $x \ll 1$.
+
+  Therefore:
+  \begin{align*}
+    \frac{\Delta P}{\Delta t}
+      &= \frac{3P}{2a}\frac{\Delta a}{\Delta t}
+       = -\frac{3}{2}\cdot\frac{64}{5}\,\frac{P}{a}\,\frac{G^3}{c^5}\,
+         \frac{M_1 M_2 (M_1+M_2)}{a^3} \\
+      &= -\frac{96}{5}\,\frac{G^3}{c^5}\,\frac{P}{a}\,
+         \frac{M_1 M_2 (M_1+M_2)}{G(M_1+M_2)P^2}\cdot 4\pi^2 \\
+      &= -\frac{96}{5}(2\pi)^2\,\frac{G^2}{c^5}\,\frac{M_1 M_2}{aP}
+       = -\frac{96}{5}(2\pi)^2\,\frac{G^2}{c^5}\,\frac{M_1 M_2}{P}\,
+         \frac{(2\pi)^{2/3}}{G^{1/3}(M_1+M_2)^{1/3}P^{2/3}} \\
+      &= -\frac{96}{5}(2\pi)^{8/3}\,\frac{G^{5/3}}{c^5}\,
+         \frac{M_1 M_2}{(M_1+M_2)^{1/3}}\,\frac{1}{P^{5/3}} \\
+      % note: the source prints the expression on the line above twice.
+      &= -\frac{96}{5c^5}(2\pi)^{8/3}
+         \left(\frac{G\mathcal{M}}{P}\right)^{5/3}
+       = -\frac{192\pi}{5c^5}(G\mathcal{M})^{5/3}
+         \left(\frac{P}{2\pi}\right)^{-5/3},
+  \end{align*}
+  Thus, by knowing the orbital period and its rate of change from
+  observations, we can determine the chirp mass:
+  \[ \mathcal{M} = \left(\frac{5}{192\pi}\right)^{3/5}\frac{c^3}{G}\,
+     \frac{P}{2\pi}\left(-\frac{\Delta P}{\Delta t}\right)^{3/5}
+     = 0.319\,M_\odot, \]
+  and find the characteristic strain amplitude $h$.
+
+  Alternatively, if we notice that the characteristic strain amplitude $h$
+  depends on $(G\mathcal{M})^{5/3}$ which we can get directly from the rate of
+  change of the period:
+  \[ (G\mathcal{M})^{5/3} = -\frac{\Delta P}{\Delta t}
+     \left(\frac{P}{2\pi}\right)^{5/3}\frac{5c^5}{192\pi}, \]
+  we can skip calculating the chirp mass and get the characteristic strain
+  amplitude directly, which is all we need to check if the binary can be
+  detected.
+
+  Either way, the gravitational wave strain is:
+  \[ h = -\frac{5c}{192\pi^2}\,P\,\frac{\Delta P}{\Delta t}\,\frac{1}{D}. \]
+  If we plug in the numerical values, we get $h = 1.1 \times 10^{-22}$ and
+  $S = 8.4 \times 10^{-20}$. Checking the plot, this is above the expected
+  sensitivity of LISA at 5\,mHz. Thus, this object should be detected by LISA.
+
+\item[Part (b)] To determine the masses of both components $M_1$ and $M_2$ we
+  need two simultaneous $M_1 - M_2$ relations. The expression for the chirp
+  mass:
+  \[ \mathcal{M} = \frac{(M_1 M_2)^{3/5}}{(M_1 + M_2)^{1/5}}, \]
+  gives us one relation, and we can calculate the chirp mass of the observed
+  system from the rate of change of the period, if that was not already done
+  in part (a):
+  \[ \mathcal{M} = \left(\frac{5}{192\pi}\right)^{3/5}\frac{c^3}{G}\,
+     \frac{P}{2\pi}\left(-\frac{\Delta P}{\Delta t}\right)^{3/5}
+     = 0.319\,M_\odot. \]
+  The second relation can be obtained from the mass--radius relation for white
+  dwarfs given in the table and Kepler's third law.
+
+  We are told that for one of the components (call it `1'),
+  \[ a = \frac{R_1}{0.139}. \]
+  From Kepler's third law we know that:
+  \[ M_1 + M_2 = \left(\frac{a}{1\,\mathrm{au}}\right)^3
+     \left(\frac{P}{1\,\mathrm{yr}}\right)^2, \]
+  which will give us the mass of the second component $M_2$ from the mass of
+  the first, $M_1$.
+
+  From here, it is not possible to derive an analytical formula for the masses
+  of the components. Instead, we need to use numerical methods to estimate the
+  result.
+
+  Taking the masses and radii listed in the given table as $M_1$ and $R_1$, we
+  can obtain $a$ and thus $M_1 + M_2$, $M_2$ and finally $\mathcal{M}$ for
+  each mass:
+
+  \begin{center}
+  \begin{tabular}{cccccc}
+    \hline
+    $M_1$ ($M_\odot$) & $R$ ($R_\odot$) & $a$ ($R_\odot$) & $M_1+M_2$ &
+    $M_2$ & $\mathcal{M}$ \\
+    \hline
+    0.48 & 0.0144 & 0.104 & 0.647 & 0.167 & 0.240 \\
+    0.50 & 0.0147 & 0.106 & 0.689 & 0.189 & 0.261 \\
+    0.52 & 0.0150 & 0.108 & 0.732 & 0.212 & 0.283 \\
+    0.54 & 0.0153 & 0.110 & 0.776 & 0.236 & 0.306 \\
+    0.56 & 0.0156 & 0.112 & 0.823 & 0.263 & 0.329 \\
+    0.58 & 0.0159 & 0.114 & 0.871 & 0.291 & 0.354 \\
+    0.60 & 0.0162 & 0.117 & 0.922 & 0.322 & 0.379 \\
+    0.62 & 0.0165 & 0.119 & 0.974 & 0.354 & 0.405 \\
+    0.64 & 0.0168 & 0.121 & 1.028 & 0.388 & 0.431 \\
+    \hline
+  \end{tabular}
+  \end{center}
+
+  The actual chirp mass is $\mathcal{M} = 0.319\,M_\odot$. Therefore, by
+  linear interpolation or graphically, we estimate $M_1 = 0.55\,M_\odot$ and
+  $M_2 = 0.25\,M_\odot$.
+
+  (The student does not need to calculate $\mathcal{M}$ for all values of
+  $M_1$.)
+
+  \ioaafig{2023_TH_Q13-s1.pdf}
+\end{description}
+
+\solhead{14.4}{Gravitational Waves}
+% source id: 2025_TH_T03
+\begin{description}
+\item[(T03.1)] Assuming Newtonian gravity, for black hole masses $M$ and $m$
+  at distances $R$ and $r$, respectively, from their centre of mass,
+  \begin{align*}
+    \omega^2 r &= \frac{GM}{(R+r)^2} \\
+    \omega &= \left[\frac{GM}{r(R+r)^2}\right]^{1/2}
+  \end{align*}
+  \hfill(1 point)
+
+  Since $MR = mr$, we can rewrite this as
+  \[ \omega = \left[\frac{G(M+m)}{(R+r)^3}\right]^{1/2} \]
+  \hfill(1 point)
+
+  Let $R_{\mathrm{s}}$ and $r_{\mathrm{s}}$ be the respective Schwarzschild
+  radii of the black holes of mass $M$ and $m$. Expressing the separation
+  $(r+R) = 4.0 \times (r_{\mathrm{s}} + R_{\mathrm{s}})$ at
+  $t_{\mathrm{ini}}$, we obtain,
+  \begin{align*}
+    \omega_{\mathrm{ini}}
+      &= \left[\frac{G(M+m)}{4^3 (R_{\mathrm{s}}+r_{\mathrm{s}})^3}\right]^{1/2}
+       = \left[\frac{c^6 G(M+m)}{8 \times 4^3 G^3 (M+m)^3}\right]^{1/2} \\
+      &= \frac{c^3}{16\sqrt{2}\,G(M+m)} \\
+    \omega_{\mathrm{ini}} &= \frac{c^3}{16\sqrt{2}\,G(M+m)}
+  \end{align*}
+  \hfill(2 points)
+
+  Substituting the values of the masses,
+  \[ \omega_{\mathrm{ini}} = 1.4 \times 10^2\,\mathrm{rad\,s^{-1}}. \]
+  \hfill(1 point)
+
+\item[(T03.2)] We use dimensional analysis to calculate the exponents in the
+  above equation. The dimension of $\mathcal{M}_{\mathrm{chirp}}$ is [M].
+
+  The dimensions of the left and right hand sides of the equation are
+  \[ [\mathrm{T}]^{-2} = [\mathrm{T}]^{-\delta/3}
+     \left([\mathrm{L}]^3[\mathrm{T}]^{-2}[\mathrm{M}]^{-1}\right)^{5/3}
+     \left([\mathrm{L}][\mathrm{T}]^{-1}\right)^{\beta}
+     [\mathrm{M}]^{\alpha/3} \]
+  \hfill(1 point)
+
+  Equating the dimensions for T, L, and M, we get
+  \begin{align*}
+    -2 &= -\frac{\delta}{3} - \frac{10}{3} - \beta \\
+    0 &= 5 + \beta \\
+    0 &= \frac{\alpha}{3} - \frac{5}{3},
+  \end{align*}
+  respectively. Solving, we get $\alpha = 5$, $\beta = -5$ and $\delta = 11$.
+  \hfill(3 points)
+
+\item[(T03.3)] From (T03.2), we get
+  \[ \frac{\mathrm{d}f_{\mathrm{GW}}}{\mathrm{d}t}
+     = \frac{96\pi^{8/3}}{5}\,\frac{G^{5/3}}{c^5}\,
+       \mathcal{M}_{\mathrm{chirp}}^{5/3} f_{\mathrm{GW}}^{11/3}. \]
+  \hfill(1 point)
+
+  Integrating the equation for $f_{\mathrm{GW}}$, we obtain
+  \[ \int_{\omega_{\mathrm{ini}}/\pi}^{\infty}
+     f_{\mathrm{GW}}^{-11/3}\,\mathrm{d}f_{\mathrm{GW}}
+     = \int_{0}^{t_{\mathrm{merge}}} \frac{96\pi^{8/3}}{5}\,
+       \frac{G^{5/3}}{c^5}\,\mathcal{M}_{\mathrm{chirp}}^{5/3}\,\mathrm{d}t \]
+  \hfill(1 point)
+  \[ \left.-\frac{3}{8} f_{\mathrm{GW}}^{-8/3}
+     \right|_{\omega_{\mathrm{ini}}/\pi}^{\infty}
+     = \frac{96\pi^{8/3}}{5}\,\frac{G^{5/3}}{c^5}\,
+       \mathcal{M}_{\mathrm{chirp}}^{5/3}\,t_{\mathrm{merge}} \]
+  \hfill(1 point)
+  \begin{align*}
+    t_{\mathrm{merge}}
+      &= \frac{3}{8}\left[\frac{\omega_{\mathrm{ini}}}{\pi}\right]^{-8/3}
+         \frac{5}{96\pi^{8/3}}\,\frac{c^5}{G^{5/3}}\,
+         \frac{1}{\mathcal{M}_{\mathrm{chirp}}^{5/3}} \\
+      &= \frac{5}{256}\,\omega_{\mathrm{ini}}^{-8/3}\,
+         \frac{c^5}{(G\mathcal{M}_{\mathrm{chirp}})^{5/3}}. \\
+    t_{\mathrm{merge}}
+      &= \frac{5}{256}\,\omega_{\mathrm{ini}}^{-8/3}\,
+         \frac{c^5}{(G\mathcal{M}_{\mathrm{chirp}})^{5/3}}
+  \end{align*}
+  \hfill(1 point)
+
+  We calculate
+  $\mathcal{M}_{\mathrm{chirp}} = \dfrac{(mM)^{3/5}}{(m+M)^{1/5}}
+   = 28\,\mathrm{M}_\odot$. \hfill(1 point)
+
+  Substituting the values of $\mathcal{M}_{\mathrm{chirp}}$, and
+  $\omega_{\mathrm{ini}}$ we get the value of
+  $t_{\mathrm{merge}} = 0.10$\,s. \hfill(1 point)
+\end{description}
+
+\solhead{14.5}{Gravitational wave astronomy}
+% source id: 2022_DA_1
+% Note: part labels below are those of the official solution ((1.1)-(3.5)).
+% The statement transcribed in the book is the released exam version, whose
+% numbering (1.1.1, 1.2.1, ...) differs slightly and which omits the
+% distance part (2.4) and the whole section 3 (speed of the gravitational
+% wave); the full official solution is transcribed here.
+
+\noindent\textbf{1\quad Data from the graph}
+\begin{description}
+\item[(1.1)] To make the scaling as accurate as possible, we take the time
+  values far apart. When $x = 0.0$\,cm $t = -30$\,s, using the ruler we can
+  also measure that at $t = 0$\,s we have $x = 11.1$\,cm. \hfill(1 point)
+
+  This leads to
+  \begin{align*}
+    0.0\,\mathrm{cm} &= (-30\,\mathrm{s})A + B \\
+    11.1\,\mathrm{cm} &= (0\,\mathrm{s})A + B = B \\
+    A &= \frac{11.1\,\mathrm{cm}}{30\,\mathrm{s}} = 0.37\,\mathrm{cm/s} \\
+    \therefore t &= \frac{x - 11.1}{0.37}\,\mathrm{s}
+  \end{align*}
+  \hfill(1 point)
+
+\item[(1.2)] Analogues to the previous scaling,
+  \begin{align*}
+    0.0\,\mathrm{cm} &= C\log(30\,\mathrm{Hz}) + D \\
+    5.3\,\mathrm{cm} &= C\log(500\,\mathrm{Hz}) + D
+  \end{align*}
+  \hfill(1 point)
+  \begin{align*}
+    5.3\,\mathrm{cm} &= C\log\left(\frac{500}{30}\right) \\
+    C &= 4.34\,\mathrm{cm} \\
+    D &= -6.41\,\mathrm{cm} \\
+    \therefore f &= 10^{\left(\frac{y+6.41}{4.34}\right)}\,\mathrm{Hz}
+  \end{align*}
+  \hfill(2 points)
+
+\item[(1.3)] It is not necessary to use $X$-scaling as students can choose
+  convenient points from the graph.
+
+  \begin{center}
+  \begin{tabular}{ccccc}
+    \hline
+    $x$ (cm) & $y$ (cm) & $t$ (s) & $f$ (Hz) & $f^{-8/3}$ ($\mathrm{Hz}^{-8/3}$) \\
+    \hline
+    - & 0.5 & $-28.0$ & 39.1 & 5.67E-05 \\
+    - & 0.5 & $-26.0$ & 39.1 & 5.67E-05 \\
+    - & 0.6 & $-24.0$ & 41.3 & 4.92E-05 \\
+    - & 0.6 & $-22.0$ & 41.3 & 4.92E-05 \\
+    - & 0.7 & $-20.0$ & 43.5 & 4.27E-05 \\
+    - & 0.8 & $-18.0$ & 45.9 & 3.71E-05 \\
+    - & 0.9 & $-16.0$ & 48.4 & 3.22E-05 \\
+    - & 1.0 & $-14.0$ & 51.0 & 2.79E-05 \\
+    - & 1.1 & $-12.0$ & 53.8 & 2.43E-05 \\
+    - & 1.2 & $-10.0$ & 56.7 & 2.11E-05 \\
+    - & 1.4 & $-8.0$  & 63.1 & 1.59E-05 \\
+    - & 1.6 & $-6.0$  & 70.1 & 1.20E-05 \\
+    - & 1.8 & $-4.0$  & 78.0 & 0.90E-05 \\
+    - & 2.3 & $-2.0$  & 101.7 & 0.43E-05 \\
+    - & 3.4 & 0.0     & 182.4 & 0.09E-05 \\
+    \hline
+  \end{tabular}
+  \end{center}
+\end{description}
+
+\noindent\textbf{2\quad Calculate system parameters}
+\begin{description}
+\item[(2.1)]
+  \begin{align*}
+    \frac{96}{5}\pi^{8/3}
+      \left(\frac{G M_{chirp}}{c^3}\right)^{5/3} &= f^{-11/3}\dot{f} \\
+    \therefore \left[\frac{96}{5}\pi^{8/3}
+      \left(\frac{G M_{chirp}}{c^3}\right)^{5/3}\right]t
+      + \left[\frac{3}{8}\right] f^{-8/3} + C &= 0
+  \end{align*}
+  \hfill(3 points)
+
+\item[(2.2)]
+  \ioaafig{2022_DA_1-s1.pdf}
+  Calculation of $f^{-8/3}$ values \hfill(3 points)
+
+  Properly drawn graph \hfill(6 points)
+  \begin{align*}
+    \mathrm{slope} &= \frac{8}{3}\left[\frac{96}{5}\pi^{8/3}
+      \left(\frac{G M_{chirp}}{c^3}\right)^{5/3}\right] \\
+    M_{chirp} &= \left[\left(\frac{5}{256}\right)^{3/5}
+      \frac{c^3}{G}\,\pi^{-8/5}\right](\mathrm{slope})^{3/5}
+  \end{align*}
+  \hfill(2 points)
+  \[ \mathrm{slope} = 2.10 \times 10^{-6} \]
+  \hfill(2 points)
+  \[ \therefore M_{chirp} = 2.39 \times 10^{30}\,\mathrm{kg} = 1.20 M_\odot \]
+  \hfill(2 points)
+
+  with 95\% confidence interval
+  \begin{align*}
+    \Delta\mathrm{slope} &= 9 \times 10^{-8} \\
+    \frac{\Delta M_{chirp}}{M_{chirp}}
+      &= \frac{3}{5}\,\frac{\Delta\mathrm{slope}}{\mathrm{slope}} = 0.04 \\
+    \Delta M_{chirp} &= 0.03 M_\odot
+  \end{align*}
+
+\item[(2.3)]
+  \[ M_{chirp} = \frac{M_{chirp\,\mathrm{detector}}}{1+z}
+     = \frac{1.20 M_\odot}{1.009783} = 1.19 M_\odot \]
+  \hfill(2 points)
+
+\item[(2.4)] According to the Hubble law,
+  \[ D = \frac{zc}{H} = \frac{0.009783 \times 3 \times 10^5}{70}
+     = 41.9\,\mathrm{Mpc} \]
+  \hfill(2 points)
+
+\item[(2.5)]
+  \begin{align*}
+    M_{chirp} &= \frac{(m_1 m_2)^{3/5}}{(m_1+m_2)^{1/5}} \\
+    \therefore M_{chirp} &= m_2 \sqrt[5]{\frac{q^3}{1+q}}
+  \end{align*}
+  \hfill(2 points)
+
+  This is an increasing function of $q$
+  \begin{align*}
+    \therefore m_{2,min} &= M_{chirp} 2^{1/5} = 1.37 M_\odot \\
+    m_{2,max} &= 1.60 M_\odot
+  \end{align*}
+  \hfill(1 point)
+
+  Also,
+  \[ M_{chirp} = \frac{m_1}{q}\sqrt[5]{\frac{q^3}{1+q}}
+     = \frac{m_1}{\sqrt[5]{q^2(1+q)}} \]
+  \hfill(2 points)
+  \begin{align*}
+    \therefore m_{1,max} &= M_{chirp} 2^{1/5} = 1.37 M_\odot \\
+    m_{2,min} &= 1.17 M_\odot
+    % sic: the official solution labels this second value m_{2,min};
+    % it is the minimum of the primary mass, m_{1,min}.
+  \end{align*}
+  \hfill(1 point)
+\end{description}
+
+\noindent\textbf{3\quad Speed of the gravitational wave}
+\begin{description}
+\item[(3.1)]
+  \ioaafig{2022_DA_1-s2.pdf}
+
+\item[(3.2)] It appears that the event is starting from $\Delta t = 1.8$\,s.
+  Some students may also write $\Delta t = 2.2$\,s as that is when the signal
+  is truly above fluctuations seen before the event. We will accept both the
+  answers. \hfill(1 point)
+
+\item[(3.3)] By simple substitution we can calculate that
+  \[ \frac{\Delta v}{v_{EM}} = \frac{\Delta t\, v_{GW}}{D}
+     \approx \frac{\Delta t\, c}{D} \]
+  \hfill(1 point)
+
+\item[(3.4)]
+  \[ \frac{\Delta v}{v_{EM}} = 4.2 \times 10^{-16}
+     \text{ to } 5.1 \times 10^{-16} \]
+  \hfill(1 point)
+
+\item[(3.5)]
+  \[ \Delta t' = \Delta t - 10 = -8.2\,\mathrm{s} \text{ to } 7.8\,\mathrm{s} \]
+  % sic: the official solution omits the minus sign; the upper value should
+  % be -7.8 s (= 2.2 s - 10 s).
+  From this time delay
+  \[ \frac{\Delta v}{v_{EM}} = -1.9 \times 10^{-15}
+     \text{ to } 1.8 \times 10^{-15} \]
+  % sic: correspondingly, the upper value should be -1.8e-15.
+  \hfill(1 point)
+\end{description}

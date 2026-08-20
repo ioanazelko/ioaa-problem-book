@@ -1,0 +1,83 @@
+India astronomy satellite, AstroSat, launched in September 2015, has five
+different instruments.
+
+\ioaafig{2016_TH_T12-f1.pdf}
+
+In this question, we will discuss three of these instruments (SXT, LAXPC,
+CZTI), which point in the same direction and observe in X-ray wavelengths. The
+details of these instruments are given in the table below.
+
+\begin{center}
+\small
+\begin{tabular}{|l|c|c|c|p{3.2cm}|c|}
+\hline
+Instrument & Band & Collecting & Effective Photon & Saturation level & No.\ of
+\\
+ & [keV] & Area [m$^2$] & Detection Efficiency & [counts] & Pixels \\
+\hline
+SXT & 0.3--80 & 0.067 & 60\% & 15000 (total) & $512 \times 512$ \\
+\hline
+LAXPC & 3--80 & 1.5 & 40\% & 50000 (in any one counter) or 200000 (total)
+  & --- \\
+\hline
+CZTI & 10--150 & 0.09 & 50\% & --- & $4 \times 4096$ \\
+\hline
+\end{tabular}
+\end{center}
+
+You should note that LAXPC energy range is divided into 8 different energy band
+counters of equal bandwidth with no overlap.
+
+\begin{description}
+\item[(T12.1)] Some X-ray sources like Cas A have a prominent emission line at
+  0.01825\,nm corresponding to a radioactive transition of $^{44}$Ti. Suppose
+  there exists a source which emits only one bright emission line corresponding
+  to this transition. What should be the minimum relative velocity ($v$) of the
+  source, which will make the observed peak of this line to get registered in a
+  different energy band counter of LAXPC as compared to a source at rest?
+\end{description}
+
+These instruments were used to observe an X-ray source (assumed to be a point
+source), whose energy spectrum followed the power law,
+\[ F(E) = K E^{-2/3} \qquad
+   [\text{in units of counts/keV/m}^2\text{/s}] \]
+where $E$ is the energy in keV, $K$ is a constant and $F(E)$ is photon flux
+density at that energy. Photon flux density, by definition, is given for per
+unit collecting area (m$^2$) per unit bandwidth (keV) and per unit time
+(seconds). From prior observations, we know that the source has a flux density
+of 10\,counts/keV/m$^2$/s at 1\,keV, when measured by a detector with 100\%
+photon detection efficiency. The ``counts'' here mean the number of photons
+reported by the detector.
+
+As the source flux follows the power law given above, we know that for a given
+energy range from $E_1$ (lower energy) to $E_2$ (higher energy) the total
+photon flux ($F_{\mathrm{T}}$) will be given by
+\[ F_{\mathrm{T}} = 3K\left(E_2^{1/3} - E_1^{1/3}\right) \qquad
+   [\text{in units of counts/m}^2\text{/s}] \]
+
+\begin{description}
+\item[(T12.2)] Estimate the incident flux density from the source at 1\,keV,
+  5\,keV, 40\,keV and 100\,keV. Also estimate what will be the total count per
+  unit bandwidth recorded by each of the instruments at these energies for an
+  exposure time of 200 seconds.
+\item[(T12.3)] For this source, calculate the maximum exposure time
+  ($t_{\mathrm{S}}$), without suffering from saturation, for the CCD of SXT.
+\item[(T12.4)] If the source became 3500 times brighter, calculate the expected
+  counts per second in LAXPC counter 1, counter 8 as well as total counts
+  across the entire energy range. If we observe for longer period, will the
+  counter saturate due to any individual counter or due to the total count?
+  Tick the appropriate box in the Summary Answersheet.
+\item[(T12.5)] Assume that the counts reported by CZTI due to random
+  fluctuations in electronics are about 0.00014 counts per pixel per keV per
+  second at all energy levels. Any source is considered as ``detected'' when
+  the SNR (signal to noise ratio) is at least 3. What is minimum exposure time,
+  $t_c$, needed for the source above to be detected in CZTI?\\
+  Note that the ``noise'' in a detector is equal to the square root of the
+  counts due to random fluctuations.
+\item[(T12.6)] Let us consider the situation where the source shows variability
+  in number flux, so that the factor $K$ increases by 20\%. AstroSat observed
+  this source for 1 second before the change and 1 second after this change in
+  brightness. Calculate the counts measured by SXT, LAXPC and CZTI in both the
+  observations. Which instrument is best suited to detect this change? Tick the
+  appropriate box in the Summary Answersheet.
+\end{description}

@@ -1,0 +1,195 @@
+% Official solution ("Problem 3 B. Marking scheme -- Observer on an extrasolar
+% star, 25 points", 2014_da_sol.pdf pp.36-39). Decimal commas kept as printed.
+% Note: the official solution names the asterism "Big Dipper" (and keeps some
+% Romanian words: Planeta, Soare, Pamant); the official English statement --
+% and the book's problem text -- uses the Mizar system instead. Transcribed
+% as printed.
+
+\begin{description}
+\item[a)] The magnitude of the \textbf{SUN as seen from the observer on the
+  Sirrius planet} % sic: "Sirrius" in source
+  \[ \log\frac{E_{\mathrm{SUN},EARTH}}{E_{\mathrm{SUN},PLANET}}
+     = -0{,}4\left(m_{\mathrm{SUN},EARTH} - m_{\mathrm{SUN},PLANET}\right), \]
+  Where: $E$ represents the apparent brightness of the body at the
+  corresponding distance to the observer.
+  \begin{align*}
+  \log\frac{\dfrac{L_{\mathrm{S}}}{4\pi d_{\mathrm{S},E}^2}}
+           {\dfrac{L_{\mathrm{S}}}{4\pi d_{\mathrm{S,P}}^2}}
+    &= -0{,}4\left(m_{\mathrm{S},E} - m_{\mathrm{S,P}}\right);\\
+  d_{\mathrm{S},E} = 1\,\mathrm{A}U;\
+  d_{\mathrm{S,P}} &= 2{,}6\,\mathrm{pc}
+    = 2{,}6\cdot206265\ \mathrm{A}U;\\
+  m_{\mathrm{S},E} &= -26{,}78^{\mathrm{m}};\\
+  m_{\mathrm{S,P}} &= 1{,}87^{\mathrm{m}},
+  \end{align*}
+  Apparent magnitude of Sun seen from the observer on one of the Sirius
+  planet.
+\item[b)] \textbf{Magnitude of Sirius, seen from the observer from its
+  planet}:
+  \begin{align*}
+  \log\frac{E_{\mathrm{Sirius,Planeta}}}{E_{\mathrm{Sun,Planeta}}}
+    &= -0{,}4\left(m_{\mathrm{Sirius,Planeta}}
+       - m_{\mathrm{Sun,Planeta}}\right),\\
+  d_{\mathrm{Sun,Planeta}} &= 2{,}6\,\mathrm{pc}
+    = 2{,}6\cdot206265\ A\mathrm{U};\\
+  d_{\mathrm{Sirius,Planeta}} &= 10\ A\mathrm{U};\\
+  L_{\mathrm{Sirius}} &= 25\cdot L_{SUN};\\
+  m_{\mathrm{Sun,Planeta}} &= 1{,}87^{\mathrm{m}};\\
+  m_{\mathrm{Sirius,Planeta}} &= -25{,}255^{\mathrm{m}},
+  \end{align*}
+\item[c)] The luminosity of \textbf{Big Dipper}:
+  \[ L_{\mathrm{Big\ Dipper}} = L_1 + L_2 + L_3 + L_4 + L_5 + L_6 + L_7, \]
+  where $L_1$, $L_2$, \dots, $L_7$ are the luminosties % sic: "luminosties"
+  of the seven stars of the asterism:
+  \begin{align*}
+  \log\frac{E_{\mathrm{S}un,Earth}}{E_{1,Earth}}
+    &= -0{,}4\left(m_{\mathrm{SUN},Earth} - m_{1,Earth}\right),\\
+  \log\frac{\dfrac{L_{\mathrm{S}un}}{4\pi d_{\mathrm{S}un,Earth}^2}}
+           {\dfrac{L_1}{4\pi d_{1,Earth}^2}}
+    &= -0{,}4\left(m_{\mathrm{S}un,Earth} - m_{1,Earth}\right);\\
+  d_{1,Earth} &= 124\cdot63240\ A\mathrm{U};\\
+  m_{\mathrm{S}un,Earth} = -26{,}78^{\mathrm{m}};\
+  m_{1,Earth} &= 1{,}8^{\mathrm{m}};\\
+  L_1 &\approx 225\cdot L_{\mathrm{S}},
+  \end{align*}
+  The luminosity of star 1 (Dubhe) from the asterism Big Dipper.
+
+  Symilarly for the rest of stars in the asterism: % sic: "Symilarlyfor"
+  \begin{align*}
+  L_2 &\approx 50\cdot L_{\mathrm{S}};\\
+  L_3 &\approx 60\cdot L_{\mathrm{S}};\\
+  L_4 &\approx 0{,}134\cdot L_{\mathrm{S}};
+    % sic: 0,134 as printed; the data of the problem (m = 3,3 at 58 ly)
+    % give L_4 of order 13 L_S
+  \\
+  L_5 &\approx 52\cdot L_{\mathrm{S}};\\
+  L_6 &\approx 4\cdot L_{\mathrm{S}};\\
+  L_7 &\approx 1{,}37\cdot L_{\mathrm{S}}.
+  \end{align*}
+  The luminosity of the asterism Big Dipper is:
+  \begin{align*}
+  L_{\mathrm{Big\ Dipper}} &= L_1 + L_2 + L_3 + L_4 + L_5 + L_6 + L_7;\\
+  L_{\mathrm{Big\ Dipper}} &= (225 + 50 + 60 + 0{,}134 + 52 + 4
+    + 1{,}37)L_{Sun};\\
+  L_{\mathrm{Big\ Dipper}} &= 392{,}5\cdot L_{\mathrm{S}un}.
+  \end{align*}
+\item[d)] \textbf{The distance between Big Dipper and Earth}
+  $d_{\mathrm{Big\ Dipper},Earth}$:
+  \begin{align*}
+  \log\frac{E_{\mathrm{Big\ Dipper},Earth}}{E_{\mathrm{Soare},Earth}}
+    &= -0{,}4\left(m_{\mathrm{Big\ Dipper},Earth}
+       - m_{\mathrm{Soare},Earth}\right),\\
+  L_{\mathrm{Big\ Dipper}} &= 392{,}5\cdot L_{\mathrm{S}};\\
+  d_{\mathrm{Big\ Dipper},Earth} &= 573\cdot10^{3}\cdot\sqrt{392{,}5}
+    \cdot d_{\mathrm{Soare},Earth};\\
+  d_{\mathrm{Big\ Dipper},Earth} &\approx 11{,}3\cdot10^{6}\ AU.
+  \end{align*}
+\item[e)] Geocentric angular distance $\Delta\theta$, \textbf{between
+  Big Dipper and Sirius}. % sic: source prints "between dintre Big Dipper"
+
+  The equatorial coordinates of asterism Big Dipper $(\sigma_1)$ and Sirius
+  $(\sigma_2)$ located on the sphere of geocentric celestial sphere are:
+  \begin{align*}
+  \alpha_{\mathrm{Big\ Dipper}} &= \alpha_1
+    = 13^{\mathrm{h}}23^{\mathrm{min}}55{,}5^{\mathrm{s}};\
+  \delta_{\mathrm{Big\ Dipper}} = \delta_1 = 54^\circ55'31'';\\
+  \alpha_{\mathrm{Sirius}} &= \alpha_2 = 6^{\mathrm{h}}45^{\mathrm{min}};\
+  \delta_{\mathrm{Sirius}} = \delta_2 = -16^\circ43'.
+  \end{align*}
+  % FIGURE NEEDED: celestial-sphere diagram (2014_da_sol.pdf p.38): sphere
+  % with poles P, P', equator Q'Q, vernal point gamma, the two stars
+  % sigma_1(alpha_1; delta_1) (Big Dipper, point B) and
+  % sigma_2(alpha_2; delta_2) (Sirius, point C), their hour-circle feet
+  % sigma_01, sigma_02, the angle Delta-theta at O and the right angle at A.
+
+  In the spherical dreptunghic triangle ABC: % sic: "dreptunghic"
+  % (Romanian: right-angled)
+  \[ \sphericalangle\left(\sigma_1\,\mathrm{O}\,\sigma_2\right)
+     = \Delta\theta. \]
+  Also
+  \begin{align*}
+  \sphericalangle\left(\gamma\,\mathrm{O}\,\sigma_{01}\right)
+    &= \alpha_{\mathrm{Big\ Dipper}} = \alpha_1;\
+  \sphericalangle\left(\sigma_{01}\,\mathrm{OB}\right)
+    = \delta_{\mathrm{Big\ Dipper}} = \delta_1;\\
+  \sphericalangle\left(\gamma\,\mathrm{O}\,\sigma_{02}\right)
+    &= \alpha_{\mathrm{Sirius}} = \alpha_2;\
+  \sphericalangle\left(\sigma_{02}\,\mathrm{OC}\right)
+    = \delta_{\mathrm{Sirius}} = \delta_2;\\
+  \sphericalangle\left(\sigma_{01}\,\mathrm{O}\,\sigma_{02}\right)
+    &= \sphericalangle\left(\mathrm{AOC}\right)
+    = \alpha_1 - \alpha_2 = \Delta\alpha;\\
+  \sphericalangle\left(\sigma_1\,\mathrm{OA}\right)
+    &= \sphericalangle\left(\sigma_{01}\,\mathrm{O}\,\sigma_1\right)
+     + \sphericalangle\left(\sigma_{01}\,\mathrm{OA}\right)
+    = \delta_{\mathrm{Big\ Dipper}} - \delta_{\mathrm{Sirius}}
+    = \Delta\delta;\\
+  \sphericalangle\left(\sigma_1\,\mathrm{O}\,\sigma_2\right)
+    &= \Delta\theta.
+  \end{align*}
+  Results
+  \begin{align*}
+  \cos a &= \cos b\cdot\cos c + \sin b\cdot\sin c\cdot\cos A;\\
+  A &= 90^{0};\\
+  \cos a &= \cos b\cdot\cos c;\\
+  a = \Delta\theta;\ b &= \Delta\alpha;\quad c = \Delta\delta;\\
+  \cos\Delta\theta &= \cos\Delta\alpha\cdot\cos\Delta\delta;\\
+  \Delta\alpha = \alpha_1 - \alpha_2
+    &= 13^{\mathrm{h}}23^{\mathrm{min}}55{,}5^{\mathrm{s}}
+     - 6^{\mathrm{h}}45^{\mathrm{min}}
+     = 6^{\mathrm{h}}38^{\mathrm{min}}55{,}5' \approx 100^\circ;
+    % sic: 55,5' for seconds as printed
+  \\
+  \Delta\delta = \delta_1 - \delta_2
+    &= 54^\circ55'31'' + 16^\circ43' = 71^\circ38'31''
+    \approx 72{,}4^\circ;\\
+  \cos\Delta\theta &= \cos\left(100^\circ\right)
+    \cdot\cos\left(72{,}4^\circ\right)
+    = \left(-0{,}173648177\right)\cdot\left(0{,}30236989\right)
+    = -0{,}05250598;\\
+  \Delta\theta &\approx 90{,}3^\circ \approx 90^\circ,
+  \end{align*}
+\item[f)] The distance between \textbf{Big Dipper and the observer on sirius
+  planet of Sirius}, % sic: as printed
+  $d_{\mathrm{Big\ Dipper,Planeta}}$:
+  \begin{align*}
+  d_{\mathrm{Big\ Dipper,Planeta}}
+    &\approx d_{\mathrm{Big\ Dipper,Sirius}};\\
+  d_{\mathrm{Sirius},Earth} &\approx d_{\mathrm{Sirius,Soare}}
+    \approx d_{\mathrm{Soare,Planeta}};\\
+  d_{\mathrm{Sirius,Pamant}} &= 2{,}6\,\mathrm{pc};\\
+  d_{\mathrm{Soare,Planeta}} &= 2{,}6\,\mathrm{pc}
+    = 2{,}6\cdot206265\ \mathrm{UA} = d_{Earth};\\
+  d_{\mathrm{Big\ Dipper},Earth} &\approx 11{,}3\cdot10^{6}\ AU;
+  \end{align*}
+  % FIGURE NEEDED: triangle diagram (2014_da_sol.pdf p.39): right triangle
+  % with "Earth + Sun" at the right-angle vertex, "Sirius + Planeta" above
+  % it at distance d_Sirius,Pamant, "Big Dipper" to the right at distance
+  % d_BigDipper,Earth, hypotenuse d_BigDipper,Sirius, and the angle
+  % Delta-theta ~ 90 degrees marked at Earth.
+  \[ d_{\mathrm{Big\ Dipper,Sirius}}
+     = \sqrt{d_{\mathrm{Big\ Dipper,Pamant}}^2
+       + d_{\mathrm{Sirius},Eaarth}^2} % sic: "Eaarth" in source
+     = d_{\mathrm{Big\ Dipper,Planeta}}
+     \approx 11{,}312\cdot10^{6}\ \mathrm{UA}. \]
+\item[g)] The magnitude of \textbf{Big Dipper for an observer from the
+  observer on planet of Sirius}: % sic: as printed
+  \begin{align*}
+  \log\frac{E_{\mathrm{Big\ Dipper,Planeta}}}
+           {E_{\mathrm{Big\ Dipper},Earth}}
+    &= -0{,}4\left(m_{\mathrm{Big\ Dipper,Planeta}}
+       - m_{\mathrm{Big\ Dipper},Earth}\right),\\
+  m_{\mathrm{Big\ Dipper},Earth} \approx 2^{\mathrm{m}};\
+  d_{\mathrm{Big\ Dipper},Earth} &\approx 11{,}3\cdot10^{6}\ A\mathrm{U};\\
+  d_{\mathrm{Big\ Dipper,Sirius}} = d_{\mathrm{Big\ Dipper,Planeta}}
+    &\approx 11{,}312\cdot10^{6}\ \mathrm{A}U;\\
+  m_{\mathrm{Big\ Dipper,Planeta}}
+    &= 2^{\mathrm{m}} + 5^{\mathrm{m}}\cdot
+       \log\frac{11{,}312\cdot10^{6}\ \mathrm{AU}}
+                {11{,}3\cdot10^{6}\ \mathrm{AU}};\\
+  m_{\mathrm{Big\ Dipper,Planeta}}
+    &= 2^{\mathrm{m}} + 5^{\mathrm{m}}\cdot
+       \log\frac{11{,}312}{11{,}3};\\
+  m_{\mathrm{Big\ Dipper,Planeta}} &\approx 2{,}0023^{\mathrm{m}},
+  \end{align*}
+\end{description}

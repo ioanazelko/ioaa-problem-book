@@ -1,0 +1,91 @@
+\begin{description}
+\item[(a)] From the figure, the centre of GRS lies at $\phi = -20.0^\circ$. \hfill(1.0)
+\begin{align*}
+\epsilon &= \frac{R_e}{R_p} = \frac{7.15}{6.69}\\
+ &= 1.069 & &\hspace{-2em}(1.0)\\
+\overline{r} = r(-20^\circ) &= R_e\left(1 + \epsilon^{-2}\tan^2\phi\right)^{-1/2}\\
+ &= 7.15\times10^7 \times \left(1 + (1.0688)^{-2}\tan^2(-20^\circ)\right)^{-1/2}\\
+\overline{r} &= 6.77\times10^7\,\mathrm{m} & &\hspace{-2em}(1.0)\\
+\overline{R} = R(-20^\circ) &= R_e\epsilon^{-2}\left(\frac{r(\phi)}{R_e\cos\phi}\right)^3\\
+ &= 7.15\times10^7 \times (1.0688)^{-2}
+   \left(\frac{r(-20^\circ)}{7.15\times10^7\times\cos(-20^\circ)}\right)^3\\
+\overline{R} &= 6.40\times10^7\,\mathrm{m} & &\hspace{-2em}(1.0)
+\end{align*}
+
+\item[(b)] We use the figure to estimate size major and minor axis of the GRS and hence
+estimate the eccentricity.
+\begin{align*}
+a &= \overline{r}\theta_{long}\\
+ &= 6.77\times10^7 \times \frac{8.2^\circ\times\pi}{180^\circ}\\
+a &= 9.69\times10^6\,\mathrm{m} & &\hspace{-2em}(2.0)\\
+b &= \overline{R}\theta_{lat}\\
+ &= 6.40\times10^7 \times \frac{4.3^\circ\times\pi}{180^\circ}\\
+b &= 4.80\times10^6\,\mathrm{m} & &\hspace{-2em}(2.0)\\
+e_{GRS} &= \sqrt{1 - \left(\frac{b}{a}\right)^2} = \sqrt{1 - \left(\frac{4.8}{9.7}\right)^2}\\
+e_{GRS} &\approx 0.87 & &\hspace{-2em}(1.0)
+\end{align*}
+
+\item[(c)] The maximum value of wind velocity ($V_w$) is about $120\,\mathrm{m/s}$. \hfill(1.0)
+\begin{align*}
+A_{GRS} &= \pi a b & &\hspace{-2em}(1.0)\\
+L_{GRS} &\approx \frac{2\pi a + 2\pi b}{2} = \pi a(1 + \sqrt{1 - e^2}) & &\hspace{-2em}(2.0)\\
+\therefore \xi &= \frac{V_w L_{GRS}}{A_{GRS}} = \frac{V_w\pi a(1 + \sqrt{1 - e^2})}{\pi a b}\\
+ &= \frac{120\times(1 + \sqrt{1 - 0.87^2})}{4.8\times10^6}\\
+\xi &\approx 3.7\times10^{-5}\,\mathrm{s}^{-1} & &\hspace{-2em}(2.0)
+\end{align*}
+
+\item[(d)] The absolute vorticity will be given by
+\begin{align*}
+\xi_a &= \xi + 2\Omega\sin\phi\\
+ &= \xi + \frac{2\times2\times\pi\sin-20^\circ}{P}
+   = 3.7\times10^{-5} + \frac{4\pi\sin-20^\circ}{3.57\times10^4}\\
+ &= 3.7\times10^{-5} - 1.2\times10^{-4}\\
+\xi_a &= -8.3\times10^{-5} & &\hspace{-2em}(2.0)
+\end{align*}
+
+\item[(e)] The GRS is a cyclonic system. \hfill(1.0)
+
+\item[(f)] For this, we have to write $\xi_a$ as a function of $\phi$ and then find root of the
+function closest to the current latitude.
+\begin{align*}
+\xi_a = 0 &= \xi + 2\Omega\sin\phi & &\hspace{-2em}(1.0)\\
+0 &= \frac{V_w(1 + \sqrt{1 - e^2})}{b} + 2\Omega\sin\phi_1\\
+0 &= \frac{V_w(1 + \sqrt{1 - e^2})}{\overline{R}_1\theta_{lat}} + 2\Omega\sin\phi_1\\
+0 &= \frac{V_w\epsilon^2 R_e^2(1 + \sqrt{1 - e^2})\cos^3\phi}{\theta_{lat}r^3(\phi_1)}
+   + 2\Omega\sin\phi_1\\
+0 &= \frac{V_w\epsilon^2 R_e^2(1 + \sqrt{1 - e^2})\cos^3\phi_1}
+   {\theta_{lat}(R_e\left(1 + \epsilon^{-2}\tan^2\phi_1\right)^{-1/2})^3}
+   + 2\Omega\sin\phi_1 & &\hspace{-2em}(3.0)\\
+0 &= \left(\frac{V_w\epsilon^2(1 + \sqrt{1 - e^2})}{\theta_{lat}R_e}\right)
+   \left(\cos\phi_1\sqrt{1 + \epsilon^{-2}\tan^2\phi_1}\right)^3 + 2\Omega\sin\phi_1\\
+-3.520\times10^{-4}\sin\phi_1 &= 3.81\times10^{-5}\times
+   \left(1 - (1 - \epsilon^{-2})\sin^2\phi_1\right)^{3/2}\\
+35.2^2\sin^2\phi_1 &= 3.81^2\times\left(1 - (1 - \epsilon^{-2})\sin^2\phi_1\right)^3
+\end{align*}
+Let us define $\sin^2\phi_1 = x$
+\[
+\therefore x = 0.01172\,(1 - 0.1245x)^3
+\]
+\hfill(4.0)
+
+Iterating over $x$, with starting value as $x_0 = \sin^2(-20^\circ) = 0.11698$
+\begin{center}
+\begin{tabular}{cc}
+$\mathbf{x_0}$ & $\mathbf{x_1}$\\
+\hline
+0.11698 & 0.01121\\
+0.01121 & 0.01167\\
+0.01167 & 0.01167\\
+\end{tabular}
+\end{center}
+\hfill(2.0)
+
+Thus,
+\begin{align*}
+\phi_1 &= -\sin^{-1}(\sqrt{0.01167})\\
+\phi_1 &= -6.2^\circ \approx -6^\circ & &\hspace{-2em}(2.0)
+\end{align*}
+
+An alternative solution is to try to find this using the plotting method, but one needs to
+make sure the result is obtained to the equivalent precision.
+\end{description}

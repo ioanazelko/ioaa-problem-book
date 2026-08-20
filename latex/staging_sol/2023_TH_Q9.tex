@@ -1,0 +1,88 @@
+% Official solution, 2023 theory solutions pp. 22-24. The interleaved
+% marking-rubric tables ("Noticing that R1 = R2 ... 1 point", etc.) are
+% omitted per transcription policy.
+
+For each of the systems, since the eclipses are short we can assume that the
+angle swept along the orbit during the eclipse is negligibly small, which means
+that the tangential velocity in relative orbital motion is constant.
+
+\medskip
+\noindent\textbf{System A}
+
+A sharp peak minimum in a central eclipse implies that $R_1 = R_2$. Therefore,
+both eclipses will be total, with minima of brightnesses $m_1$ and $m_2$,
+respectively.
+
+Define the magnitude at minimum as $m_{\min} = m_1$ and the baseline magnitude
+as $m_{1,2} = m_1 + m_2$.
+% sic — the source writes "m_{1,2} = m_1 + m_2"; m_{1,2} is really the
+% combined magnitude of both stars, not a literal sum of magnitudes.
+From Pogson's law applied to the two cases:
+$m_1 - m_{1,2} = -2.5\log_{10}\left(L_1/(L_1 + L_2)\right)$ and
+$m_2 - m_1 = -2.5\log_{10}\left(L_2/L_1\right)$. For the first case, with
+simple operations we obtain: $L_2/L_1 = 10^{(m_1 - m_{1,2})/2.5} - 1$.
+Plugging this into the second case:
+\[ m_2 = m_1 - 2.5\log_{10}\left(10^{(m_1 - m_{1,2})/2.5} - 1\right). \]
+
+As the orbits are near-circular, timescales will be the same for both eclipses.
+Therefore it is sufficient to `copy' the shape of the primary one while scaling
+down the depth to $|m_{1,2} - m_2|$. Reading off $m_{1,2}$ and $m_{\min}$ from
+the plot, we arrive at $L_2/L_1 = 2$, $m_2 = 11.44$, and the following figure:
+
+% FIGURE NEEDED: predicted secondary-eclipse light curve for system A (Bolek) —
+% same V-shaped profile and contact times as the primary but with depth scaled
+% to minimum V = 11.44 mag (2023 theory solutions, Figure 5, page 22).
+
+\medskip
+\noindent\textbf{System B}
+
+For the second system, we follow a generally similar scheme, but we see that
+the minimum is flat. $t_{\mathrm{fall}}$ is the time of the descent from the
+baseline brightness to the lowest point, i.e., between contacts I and II, while
+$t_{\mathrm{flat}}$ is the time between contacts II and III during which the
+lightcurve remains at its lowest point:
+
+% FIGURE NEEDED: schematic trapezoidal eclipse light curve marking contacts
+% I-IV, with t_fall between contacts I and II and t_flat between contacts II
+% and III (2023 theory solutions, page 23).
+
+From this, we obtain
+$t_{\mathrm{flat}}/t_{\mathrm{fall}} = 2(R_2 - R_1)/2R_1$ and, after
+rearranging, $R_2/R_1 = t_{\mathrm{flat}}/t_{\mathrm{fall}} + 1$.
+
+Here $R_1$ is the radius of the smaller star and there are two solutions --- it
+could either be (partially) \emph{eclipsing} or (entirely) \emph{eclipsed}.
+Let us first assume that it was eclipsed. After measuring $m_{\min}$ for the
+eclipse and $m_{1,2}$ for the baseline we again (just like for system A) assume
+$m_{\min} = m_1$ and write down: $L_1/L_2 = 10^{(m_1 - m_{1,2})/2.5} - 1$.
+
+Reading off $m_{1,2}$ and $m_{\min}$ from the plot, we arrive at $L_2/L_1 = 4$,
+$R_2/R_1 = 2$.\\
+$L_i = S_i \pi R_i^2$, where $S_i$ stands for the surface brightness of each
+star.\\
+$\implies S_1 = S_2 = S$ (or
+$T_{\mathrm{eff},1} = T_{\mathrm{eff},2} = T_{\mathrm{eff}}$).
+
+In such a case, \emph{it does not matter} if star 2 is eclipsing or eclipsed.
+During the baseline, we always see two disks with a total brightness of
+$S(\pi R_1^2 + \pi R_2^2)$, while during the eclipse, we see one disk of radius
+$R_2$ and total brightness $S\pi R_2^2$.
+
+\textbf{Note about marking:} This solution can be independently verified by
+assuming that the smaller component was eclipsing and cutting out a disk of
+surface $\pi R_1^2$ and brightness contribution $S_1 \pi R_1^2$ in the star of
+surface $\pi R_2^2$ and surface brightness $S_2$. Instead of
+$m_{\min} = m_1$ of star 1, we would have measured
+$m_{\min} = m_{\mathrm{ecl},1}$ of a combination of the two, with a brightness
+$L_{ecl1} = S_1 \pi R_1^2 + S_2 \pi (R_2^2 - R_1^2)$. The same conclusion
+$S_1 = S_2 = S$ will follow. Any solution correctly arriving at this conclusion
+and the correct figure --- no matter the order of steps taken --- should be
+scored equally. For the maximum number of points, however, the student should
+make a convincing point that this is the \emph{only} solution, i.e.\ lifting
+the previously made assumption (or exploring both cases).
+
+To draw the second eclipse, one must simply copy the shape of the first one:
+
+% FIGURE NEEDED: predicted secondary-eclipse light curve for system B (Lolek) —
+% identical trapezoidal shape, depth and contact times as the primary eclipse
+% (2023 theory solutions, Figure 6, page 24).

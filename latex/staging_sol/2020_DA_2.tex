@@ -1,0 +1,216 @@
+\begin{description}
+\item[(a)] We consider the $\triangle ESP$, the vertices of which are Earth
+  (E), Sun (S) and the minor planet (P).
+
+% FIGURE NEEDED: triangle sketch (2020 GeCAA data analysis solutions, page 5):
+% triangle E-S-P with E at top left, S at bottom, P at right; side ES labelled
+% a_earth = 1 au, side EP labelled r, side SP labelled r_h; angle Delta-lambda
+% at E, angle theta_h at S between ES and SP, and angle psi_P at S between SP
+% and a dashed reference direction.
+
+  where $\Delta\lambda = |\lambda - \lambda_\odot|$. \hfill(2.0 points)
+  \begin{align*}
+    r\ \text{(in m)} &= \frac{R_\oplus}{p\ \text{(in rad)}} \\
+    \therefore\ r\ \text{(in au)} &= \frac{206265 R_\oplus}{p\cdot a_\oplus}
+  \end{align*}
+  \hfill(1.0 points)
+
+  By using the cosine rule and sine rule,
+  \begin{align*}
+    r_h^2 &= a_\oplus^2 + r^2 - 2a_\oplus r\cos(\Delta\lambda) \\
+    r_h &= \sqrt{a_\oplus^2 + r^2 - 2a_\oplus r\cos(\Delta\lambda)}
+  \end{align*}
+  \hfill(1.0 points)
+  \begin{align*}
+    \frac{\sin\theta_h}{r} &= \frac{\sin(\Delta\lambda)}{r_h} \\
+    \therefore\ \theta_h &=
+      \sin^{-1}\left(\frac{r\sin(\Delta\lambda)}{r_h}\right)
+  \end{align*}
+  \hfill(1.0 points)
+
+  An angle $\psi_P$ is defined as angle swept by the vector
+  $\overrightarrow{SP}$ from an arbitrary x axis (see figure). Let us fix the
+  direction of the x-axis as the direction $\overrightarrow{SP}$ at the
+  initial moment $t = 2012.3$. In other words, $\psi_P(2012.3) = 0$. Using the
+  same x-axis, let us define corresponding angle for the Earth,
+  $\psi_E$. Thus, we have
+  \[
+    \psi_P = \psi_E - \theta_h
+  \]
+  If we take any two consecutive measurements,
+  \[
+    \Delta\psi_E = \Delta\lambda_\odot
+  \]
+  \hfill(2.0 points)
+
+  This is preferred over the conversion of time difference to angle as this
+  data has better accuracy.
+
+  Using these formulae, one can find $r$, $r_h$, $\psi_E$ and $\psi_P$ for
+  every measurement instance in the data. $\psi_P$ and $r_h$ can be used to
+  plot locations of the minor planet.
+
+  Alternatively, one can also convert these to rectangular coordinates, i.e.
+  \begin{align*}
+    x &= r_h\cos\psi_P, \\
+    y &= r_h\sin\psi_P;
+  \end{align*}
+
+  \begin{center}
+  \begin{tabular}{rrrrrrrrr}
+    \multicolumn{1}{c}{$t$} & \multicolumn{1}{c}{$r$} &
+    \multicolumn{1}{c}{$r_h$} & \multicolumn{1}{c}{$\sin\theta_h$} &
+    \multicolumn{1}{c}{$\theta_h$} & \multicolumn{1}{c}{$\psi_E$} &
+    \multicolumn{1}{c}{$\psi_P$} & \multicolumn{1}{c}{$x$} &
+    \multicolumn{1}{c}{$y$} \\
+    \multicolumn{1}{c}{[year]} & \multicolumn{1}{c}{[au]} &
+    \multicolumn{1}{c}{[au]} & &
+    \multicolumn{1}{c}{[$^\circ$]} & \multicolumn{1}{c}{[$^\circ$]} &
+    \multicolumn{1}{c}{[$^\circ$]} & \multicolumn{1}{c}{[au]} &
+    \multicolumn{1}{c}{[au]} \\
+    \hline
+    2012.3 & 2.302 & 2.073 & $-1.0000$ & 270.00 & 270.00 & 0 & 2.073 & 0 \\
+    2012.6 & 1.215 & 2.020 & $-0.4510$ & $-26.81$ & 3.88 & 30.69 & 1.737 & 1.031 \\
+    2012.9 & 1.240 & 2.229 & 0.1097 & 6.30 & 111.13 & 104.83 & $-0.571$ & 2.155 \\
+    2013.4 & 3.664 & 2.839 & 0.6391 & 140.27 & 293.89 & 153.62 & $-2.543$ & 1.262 \\
+    2013.6 & 4.071 & 3.106 & $-0.2991$ & 197.40 & 3.64 & 166.24 & $-3.017$ & 0.739 \\
+    2013.9 & 3.198 & 3.309 & $-0.9655$ & $-74.92$ & 110.87 & 185.79 & $-3.292$ & $-0.334$ \\
+    2014.2 & 2.783 & 2.007 & 0.7357 & 132.63 & 222.34 & 89.71 & 0.010 & 2.007 \\
+    2014.5 & 4.419 & 3.845 & 0.8735 & 119.13 & 328.09 & 208.96 & $-3.364$ & $-1.862$ \\
+    2014.8 & 4.805 & 3.962 & $-0.5914$ & 216.26 & 74.50 & 218.24 & $-3.112$ & $-2.453$ \\
+    2015.0 & 4.332 & 3.994 & $-0.9738$ & $-76.85$ & 149.24 & 226.09 & $-2.770$ & $-2.877$ \\
+    2015.3 & 3.035 & 3.985 & 0.2736 & 15.88 & 257.6 & 241.72 & $-1.888$ & $-3.509$ \\
+    \hline
+  \end{tabular}
+  \end{center}
+  % In the original the 2014.2 row is printed in red (the outlier).
+
+  there are 11 rows. Two points for each row. \hfill(22.0 points)
+
+  \textbf{Note.} The parallax value for $p(2014.2) = 3.16''$ is obviously an
+  outlier. Due to this, the corresponding position of the minor planet is also
+  an outlier. Therefore, it should not be included in the plot or in the next
+  analysis. \hfill(1.0 points)
+
+% FIGURE NEEDED: rectangular plot (2020 GeCAA data analysis solutions, page
+% 6): planet positions (blue points), visually fit ellipse (light-blue), fit
+% axis (green line), approximate axis through supposed aphelion and (0,0)
+% (magenta line), Sun at origin (yellow) and Earth positions (orange points),
+% x and y in au. Worth 4.0 points.
+
+  These 4 points are for merely drawing the approximate polar or rectangular
+  plot. Points for the line of apsides are separate (see below). Marking the
+  earth positions or drawing the visually fit ellipse (blue line) is NOT
+  expected.
+
+  One may try to identify a minimum and a maximum and maximum in the % sic: "a maximum and maximum"
+  calculated values of $r_h$ and take these as the aphelion and perihelion. In
+  the figure these two points are shown and the line between drawn, i.e.\ the
+  magenta line. Clearly these are not the aphelion and perihelion (as
+  evidenced by the fact that the line connecting them does not pass through
+  the focus), but they lie close. \hfill(1.0 + 1.0 points)
+
+  We see that the points on either side of supposed aphelion are reasonably
+  close (and the planet will be moving slower close to aphelion). However,
+  there is a big gap between the second and third point, we take the aphelion
+  position to be the correct one and draw the line of apsides to pass through
+  aphelion and (0,0). (see below for the actual calculation of $a_p$ that does
+  not rely on the graphical identification of the line of the apsides.)
+  \hfill(2.0 points)
+
+\item[(b)]
+  \begin{description}
+  \item[(i)] Assuming that the points above are close to the perihelion and
+    aphelion, we should realise that the distance between them is roughly
+    equal to the length of the major axis. Using the cosine rule,
+    \begin{align*}
+      \psi_1 &= 30.69^\circ \\
+      r_1 &= 2.020\,\mathrm{au} \\
+      \psi_2 &= 226.09^\circ \\
+      r_2 &= 3.994\,\mathrm{au} \\
+      \therefore\ \Delta\psi_P &= 226.09^\circ - 30.69^\circ \\
+        &= 195.40^\circ \\
+      2a_P &\approx \sqrt{r_1^2 + r_2^2 - 2r_1 r_2\cos\Delta\psi_P} \\
+        &= \sqrt{2.020^2 + 3.994^2
+           - 2\times2.02\times3.994\times\cos195.40^\circ} \\
+        &= 5.965\,\mathrm{au} \\
+      \therefore\ a_P &\approx 2.98\,\mathrm{au}
+    \end{align*}
+    \hfill(3.0 points)
+
+  \item[(ii)]
+    \[
+      e = \frac{r_a - r_p}{r_a + r_p}
+        \approx \frac{3.994 - 2.02}{3.994 + 2.02}
+        \approx \frac{1}{3} = 0.33
+    \]
+    \hfill(2.0 points)
+
+    Some students may visually fit an ellipse to the data and draw this line
+    up to this visually fit ellipse. For the fit ellipse in the figure, the
+    length of the major axis (green line) is $2a = 2.98$\,au and
+    $e = \frac{1}{3}$, rotated by $52^\circ$. % sic: 2a = 2.98 au (cf. 2a_P = 5.965 au above)
+
+  \item[(iii)] From Kepler's Laws,
+    \begin{align*}
+      P &= \sqrt{a_P^3} = \sqrt{2.98^3} \\
+        &= 5.15\,\mathrm{yr}
+    \end{align*}
+    \hfill(1.0 points)
+
+    The semi-period will be 2.58\,yr. Note that the time difference between
+    our chosen points is only 2.4\,yr. This is fine, as we can see from the
+    best fit ellipse that these points are not exactly along the line of
+    apsides.
+
+    At the same time, this is precisely the reason why one should not take
+    $\Delta t$ between these two points as the semi-period.
+  \end{description}
+
+\item[(c)] The error in the semimajor axis is determined by the error in $r_1$
+  and $r_2$ which, in turn, depend on $p$ and $\Delta\psi$. The latter is
+  dominated by the uncertainty in the orientation of the ellipse (i.e., the
+  assumption that $r_1$ and $r_2$ are close to the line of the apsides).
+
+  In order to take this into account we take as $\Delta\psi_P$ the difference
+  with the value that corresponds to the difference in angles of the actual
+  perihelion and aphelion ($180^\circ$); i.e.,
+  $\delta\Delta\psi_P \approx 15/180$, corresponding to
+  $\Delta(\Delta\psi) \approx 0.08\pi \approx 0.26$. The geocentric distance
+  is determined via parallax, the other quantities are constants, so it may be
+  written $r_g \propto p^{-1}$. The immediate consequence is
+  $\delta r_g = \delta p$ where $\delta$ is the designation for the relative
+  error. Thus,
+  \[
+    \Delta r = r\delta r = r\delta p
+  \]
+  This gives $\Delta r_1 = 1.01\times10^{-2}$\,au and
+  $\Delta r_2 = 1.997\times10^{-2}$\,au.
+
+  The error in $a_p$ is then
+  \begin{align*}
+    \Delta a_P &= \frac{\sqrt{(r_1 - r_2\cos\Delta\Psi_p)^2\Delta r_1^2
+      + (r_2 - r_1\cos\Delta\Psi_p)^2\Delta r_2^2
+      + (r_1 r_2\sin\Delta\Psi_p)^2\Delta(\Delta\Psi_p)^2}}{2\sqrt{2}a_P} \\
+      &= 0.04\,\mathrm{au} \\
+    \therefore\ a_P &= (2.98\pm0.04)\,\mathrm{yr} % sic: units given as yr in source, should be au
+  \end{align*}
+  \hfill(3.0 points)
+
+  The uncertainty in the period can then be obtained from Kepler's law and is
+  \begin{align*}
+    \delta P &= 3/2\,\delta a_p = 2\times10^{-2} \\
+    \therefore\ P &= (5.2\pm0.1)\,\mathrm{yr}
+  \end{align*}
+  \hfill(1.0 points)
+
+  The eccentricity can be calculated from $r_p = a_p(1 - e)$. Error
+  propagation leads to
+  \begin{align*}
+    \Delta e &= \sqrt{\left((1 - e)\delta r\right)^2
+      + \left(\frac{1 - e}{a_p}\Delta a_p\right)^2} \\
+      &= 9\times10^{-3} \approx 0.01 \\
+    \therefore\ e &= 0.33\pm0.01
+  \end{align*}
+  \hfill(2.0 points)
+\end{description}

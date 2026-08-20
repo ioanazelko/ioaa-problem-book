@@ -1,0 +1,75 @@
+\begin{description}
+\item[(T9.1)]
+Let apogee and perigee distances be $r_{\mathrm{a}}$ and $r_{\mathrm{p}}$
+respectively.
+\begin{align*}
+r_{\mathrm{p}} &= R_\oplus + h^i_{\mathrm{p}} = (6371 + 264)\,\mathrm{km}
+  = 6635\,\mathrm{km} \\
+r_{\mathrm{a}} &= R_\oplus + h^i_{\mathrm{a}} = (6371 + 23904)\,\mathrm{km}
+  = 30\,275\,\mathrm{km}
+\end{align*}
+Conservation of energy and angular momentum gives
+\[ E = -\frac{GmM_\oplus}{r_{\mathrm{p}} + r_{\mathrm{a}}} \]
+Total energy at perigee
+\begin{align*}
+\frac{1}{2}m{v_{\mathrm{p}}}^2 - \frac{GmM_\oplus}{r_{\mathrm{p}}}
+  &= E = -\frac{GmM_\oplus}{r_{\mathrm{p}} + r_{\mathrm{a}}} \\
+\frac{1}{2}{v_{\mathrm{p}}}^2
+  &= \frac{GM_\oplus}{r_{\mathrm{p}}}
+     \left(1 - \frac{r_{\mathrm{p}}}{r_{\mathrm{p}} + r_{\mathrm{a}}}\right) \\
+\therefore v_{\mathrm{p}}
+  &= \sqrt{2\,\frac{GM_\oplus}{r_{\mathrm{a}} + r_{\mathrm{p}}}\,
+     \frac{r_{\mathrm{a}}}{r_{\mathrm{p}}}} \\
+  &= \sqrt{\frac{2 \times 6.674 \times 10^{-11} \times 5.972 \times 10^{24}
+     \times 3.0275 \times 10^{7}}
+     {6.635 \times 10^{6} \times (3.0275 + 6.635 \times 10^{6})}} \\
+% sic: the source prints the denominator as "(3.0275 + 6.635 x 10^6)";
+% it should read (3.0275 x 10^7 + 6.635 x 10^6).
+  &= 9.929\,\mathrm{km\,s^{-1}}
+\end{align*}
+As the engine burn is just 41.6\,s, we assume that the entire impulse is
+applied instantaneously at perigee. The impulse is
+$J = 1.73 \times 10^{5}\,\mathrm{kg\,m\,s^{-1}}$. Note that the total mass of
+MOM must include the fuel, so we have to use
+\[ m = 500 + 852 = 1352\,\mathrm{kg}. \]
+Change in velocity due to impulse at perigee is
+\[ \Delta v = \frac{J}{m} = \frac{1.73 \times 10^{5}}{1352}
+   = 128.0\,\mathrm{m\,s^{-1}} \]
+The new velocity will be given by (we use $'$ symbol to denote quantities
+after the first orbit-raising maneuvre)
+\[ v'_{\mathrm{p}} = v_{\mathrm{p}} + \Delta v = 10.06\,\mathrm{km\,s^{-1}} \]
+The perigee remains unchanged. So we get $r'_{\mathrm{p}} = r_{\mathrm{p}}$.
+Since the satellite is moving faster, the new apogee will be higher.
+\begin{align*}
+v'_{\mathrm{p}}
+  &= \sqrt{2GM_\oplus \frac{r'_{\mathrm{a}}}
+     {r'_{\mathrm{p}}(r'_{\mathrm{a}} + r'_{\mathrm{p}})}} \\
+\therefore 1 + \frac{r'_{\mathrm{p}}}{r'_{\mathrm{a}}}
+  &= \frac{2GM_\oplus}{(v'_{\mathrm{p}})^2 \times r'_{\mathrm{p}}} \\
+  &= \frac{2 \times 6.674 \times 10^{-11} \times 5.972 \times 10^{24}}
+     {(10.06 \times 10^{3})^2 \times 6.635 \times 10^{6}} = 1.188 \\
+r'_{\mathrm{a}} &= \frac{6635}{0.188} = 35\,380\,\mathrm{km} \\
+h_{\mathrm{a}} &= 35380 - 6371 \\
+  &= \boxed{29\,009\,\mathrm{km}}
+\end{align*}
+Acceptable range: $\pm 150$\,km
+
+\item[(T9.2)]
+As seen above,
+\begin{align*}
+\frac{r'_{\mathrm{p}}}{r'_{\mathrm{a}}} &= 0.188 = \frac{1-e}{1+e} \\
+\therefore e &= \frac{1 - 0.188}{1 + 0.188} = \boxed{0.683}
+\end{align*}
+Acceptable range: $\pm 0.002$
+
+The new orbital semi-major axis and orbital period will be,
+\begin{align*}
+a' &= \frac{r'_{\mathrm{a}} + r'_{\mathrm{p}}}{2} \\
+   &= \frac{35380 + 6635}{2} = 20\,933\,\mathrm{km} \\
+P &= 2\pi\sqrt{\frac{a'^3}{GM_\oplus}} \\
+  &= 2\pi\sqrt{\frac{(2.0933 \times 10^{7})^3}
+     {6.674 \times 10^{-11} \times 5.972 \times 10^{24}}}
+   = \boxed{30\,136\,\mathrm{s} = 8.37\,\mathrm{h}}
+\end{align*}
+Acceptable range: $\pm 0.1$\,h
+\end{description}

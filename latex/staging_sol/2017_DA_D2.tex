@@ -1,0 +1,203 @@
+\begin{description}
+\item[(D2.1)] Redshift:
+  $z = \dfrac{\lambda_{\mathrm{obs}} - \lambda_{\mathrm{emit}}}
+             {\lambda_{\mathrm{emit}}}$ \hfill[0.5]
+
+  Observed rotation velocity: $V_{\mathrm{obs}} = zc$ \hfill[0.5]
+
+  \begin{center}
+  \begin{tabular}{cccccc}
+  $r$ (kpc) & $z$ & $V_{\mathrm{obs}}$ (km/s) & $V_{\mathrm{DM}}$ (km/s)
+    & $M(r)$ ($M_\odot$) & $M_{\mathrm{DM}}(r)$ ($M_\odot$)\\
+  0.70 & $1.37\times 10^{-4}$ & 41.11 & 35.25
+    & $2.75\times 10^{8}$ & $2.02\times 10^{8}$\\
+  1.40 & $2.29\times 10^{-4}$ & 68.52 & 60.10
+    & $1.53\times 10^{9}$ & $1.18\times 10^{9}$\\
+  2.09 & $2.79\times 10^{-4}$ & 83.60 & 71.52
+    & $3.40\times 10^{9}$ & $2.49\times 10^{9}$\\
+  2.79 & $2.96\times 10^{-4}$ & 88.62 & 72.53
+    & $5.09\times 10^{9}$ & $3.41\times 10^{9}$\\
+  3.49 & $3.00\times 10^{-4}$ & 89.99 & 70.77
+    & $6.57\times 10^{9}$ & $4.06\times 10^{9}$\\
+  4.89 & $3.09\times 10^{-4}$ & 92.73 & 74.25
+    & $9.78\times 10^{9}$ & $6.27\times 10^{9}$\\
+  6.25 & $3.05\times 10^{-4}$ & 91.36 & 73.65
+    & $1.21\times 10^{10}$ & $7.88\times 10^{9}$\\
+  7.10 & $3.05\times 10^{-4}$ & 91.36 & 73.03
+    & $1.38\times 10^{10}$ & $8.80\times 10^{9}$\\
+  9.03 & $3.06\times 10^{-4}$ & 91.82 & 75.54
+    & $1.77\times 10^{10}$ & $1.20\times 10^{10}$\\
+  12.05 & $3.06\times 10^{-4}$ & 91.82 & 78.74
+    & $2.36\times 10^{10}$ & $1.74\times 10^{10}$
+  \end{tabular}
+  \end{center}
+
+\item[(D2.2)]
+  % FIGURE NEEDED: official rotation-curve decomposition graph "D2.2":
+  % V_obs, V_DM, V_*, V_gas versus r (kpc) with smooth curves through the
+  % points (2017_DataAnalysis_Solution.pdf page 4)
+  From the official graph, the curves in descending order of contribution
+  to the observed velocity are $V_{\mathrm{obs}}$, $V_{\mathrm{DM}}$,
+  $V_{*}$, $V_{\mathrm{gas}}$.
+
+\item[(D2.3)] Evaluating for $\rho_0$:
+  \[ M_{\mathrm{DM}}(r) = 4\pi\rho_0 r_C^2
+     \left[r - r_C\arctan(r/r_C)\right] \]
+  \[ M_{DM}(r) = 4\pi\rho_0 r_C^3\left[x - \arctan(x)\right],
+     \text{ where } x = r/r_C \]
+  \hfill[1.0]
+  \[ M_{DM}(r) \approx 4\pi\rho_0 r_C^3
+     \left[x - \left(x - \frac{x^3}{3}\right)\right],
+     \text{ for small } x \]
+  \hfill[1.0]
+  \[ M_{DM}(r) \approx 4\pi\rho_0 r_C^3\left(\frac{x^3}{3}\right)
+     = \frac{4\pi\rho_0 r^3}{3} \]
+  \[ \rho_0 \approx \frac{2.02\times 10^{8}M_\odot\times 3}
+     {4\pi(0.7\,kpc)^3} = 1.42\times 10^{8}\,M_\odot/kpc^3 \]
+  \hfill[1.5]
+
+  Selected correct data to put into the formula gets 0.5, correct answer
+  gets 0.5 and correct unit gets 0.5.
+
+  \[ M_{DM}(r) = 4\pi\rho_0 r_C^2
+     \left[r - r_C\arctan\left(\frac{r}{r_C}\right)\right] \]
+
+  Evaluating for $r_C$ (Method 1):
+  \[ M_{DM}(r) \approx 4\pi\rho_0 r_C^2
+     \left[r - r_C\frac{\pi}{2}\right], \]
+  \hfill[1.0]
+
+  Take the last two data points at large $r$, then we get (for
+  $r \gg r_C$
+  \[ \Delta M_{DM}(r) \approx 4\pi\rho_0 r_C^2\left[\Delta r\right] \]
+  \hfill[1.5]
+  \[ r_C = 1.01\ kpc \]
+  \hfill[1.0]
+
+  Evaluating for $r_C$ (Method 2):
+  \[ M_{DM}(r) \approx 4\pi\rho_0 r_C^2
+     \left[r - r_C\frac{\pi}{2}\right], \]
+  \hfill[1.0]
+
+  Take the last data point, we get a cubic equation which students can
+  solve to give
+  \[ r_C = -0.855,\ 0.964,\ 7.56\ \text{kpc} \]
+  \hfill[1.0]
+
+  Select the correct $r_C = 0.964$ for the final answer because for the
+  last data point $r \gg r_C$ \hfill[1.5]
+
+  Less accurate $r_C$:
+
+  Omit the last term,
+  \[ M_{DM}(r) \approx 4\pi\rho_0 r_C^2 r \]
+  \hfill[1.0]
+  \[ r_C \approx \sqrt{\frac{1.74\times 10^{10}M_\odot}
+     {4\pi\times 1.40\times\frac{10^{8}M_\odot}{kpc^3}\times 12.05\,kpc}}
+     = 0.901\ kpc \]
+  \hfill[1.0]
+
+\item[(D2.4)] Solution 1:
+  \[ x = \left[r - r_c\arctan\left(\frac{r}{r_C}\right)\right] \]
+  \[ y = M_{DM}(r) \]
+
+  \begin{center}
+  \begin{tabular}{cc}
+  $x = \left[r - r_C\arctan(r/r_C)\right]$ (kpc)
+    & $y = M_{\mathrm{DM}}(r)$ (kg)\\
+  % sic: source table header says (kg); the values are in solar masses
+  0.010855 & $2.02\times 10^{8}$\\
+  0.0803 & $1.18\times 10^{9}$\\
+  0.2386 & $2.49\times 10^{9}$\\
+  0.495 & $3.41\times 10^{9}$\\
+  0.838 & $4.06\times 10^{9}$\\
+  1.718 & $6.27\times 10^{9}$\\
+  2.738 & $7.88\times 10^{9}$\\
+  3.428 & $8.80\times 10^{9}$\\
+  5.093 & $1.20\times 10^{10}$\\
+  7.854 & $1.74\times 10^{10}$
+  \end{tabular}
+  \end{center}
+
+  % FIGURE NEEDED: hand-drawn linear fit "Graph Number D2.4: Solution 1",
+  % M_DM [x10^10 M_sun] vs r - r_C arctan(r/r_C) [kpc]; annotation:
+  % slope = (1.7-0.6)x10^10 M_sun / (7.5-2) kpc = 2x10^9 M_sun/kpc,
+  % rho_0 = slope/(4 pi r_c^2) = 1.43x10^8 M_sun/kpc^3
+  % (2017_DataAnalysis_Solution.pdf page 7)
+  From the linear fit,
+  \[ \text{slope} = \frac{\Delta y}{\Delta x} \approx
+     2\times 10^{9}\,M_\odot/kpc,\qquad
+     \rho_0 = \frac{\text{slope}}{4\pi r_c^2}
+     = 1.43\times 10^{8}\ M_\odot/kpc^3 \]
+
+  Solution 2:
+  \[ x = \frac{r_C}{r}\arctan\left(\frac{r}{r_C}\right) \]
+  \[ y = M_{DM}(r) \]
+  % sic: source labels y as M_DM(r); the tabulated values are M_DM(r)/r
+
+  \begin{center}
+  \begin{tabular}{cc}
+  $x = \dfrac{r_C}{r}\arctan\left(\dfrac{r}{r_C}\right)$
+    & $y = M_{\mathrm{DM}}(r)$ ($M_\odot$)\\
+  0.984 & $2.89\times 10^{8}$\\
+  0.943 & $8.40\times 10^{8}$\\
+  0.886 & $1.19\times 10^{9}$\\
+  0.822 & $1.22\times 10^{9}$\\
+  0.760 & $1.16\times 10^{9}$\\
+  0.649 & $1.28\times 10^{9}$\\
+  0.562 & $1.26\times 10^{9}$\\
+  0.517 & $1.24\times 10^{9}$\\
+  0.436 & $1.33\times 10^{9}$\\
+  0.348 & $1.44\times 10^{9}$
+  \end{tabular}
+  \end{center}
+
+  % FIGURE NEEDED: hand-drawn linear fit "Graph Number D2.4: Solution 2",
+  % M_DM/r [x10^8 M_sun/kpc] vs (r_C/r) arctan(r/r_C); annotation:
+  % slope = (16-9)x10^8 / (0.9-0.25) = 0.1x10^10 M_sun/kpc
+  % (2017_DataAnalysis_Solution.pdf page 9)
+
+\item[(D2.5)] Solution 1: $r_c = 0.906\ kpc$ from D2.3
+
+  \begin{center}
+  \begin{tabular}{cc}
+  $r$ (kpc) & $\ln\left[\rho_{\mathrm{DM}}(r)\right]$
+    $\left(\frac{M_\odot}{kpc^3}\right)$\\
+  0.70 & 16.11\\
+  1.40 & 15.36\\
+  2.09 & 14.73\\
+  2.79 & 14.23\\
+  3.49 & 13.81\\
+  4.89 & 13.17\\
+  6.25 & 12.69\\
+  7.10 & 12.44\\
+  9.03 & 11.97\\
+  12.05 & 11.40
+  \end{tabular}
+  \end{center}
+  % FIGURE NEEDED: hand-drawn "Graph Number D2.5: Solution 1",
+  % ln(rho_DM) [M_sun/kpc^3] vs r [kpc], smooth declining curve
+  % (2017_DataAnalysis_Solution.pdf page 10)
+
+  Solution 2: $r_c = 3.2\ kpc$
+
+  \begin{center}
+  \begin{tabular}{cc}
+  $r$ (kpc) & $\ln\left[\rho_{\mathrm{DM}}(r)\right]$
+    $\left(\frac{M_\odot}{kpc^3}\right)$\\
+  0.70 & 12.79\\
+  1.40 & 11.95\\
+  2.09 & 11.47\\
+  2.79 & 11.21\\
+  3.49 & 11.07\\
+  4.89 & 11.16\\
+  6.25 & 11.26\\
+  7.10 & 11.16\\
+  9.03 & 11.27\\
+  12.05 & 11.41
+  \end{tabular}
+  \end{center}
+  % FIGURE NEEDED: hand-drawn "Graph Number D2.5 Solution 2",
+  % ln(rho_DM) vs r for r_c = 3.2 kpc
+  % (2017_DataAnalysis_Solution.pdf page 12)
+\end{description}

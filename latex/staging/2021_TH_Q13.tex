@@ -1,0 +1,54 @@
+CCD cameras on space probes are very sensitive and exposed to space weather
+conditions. Intense radiation passing through the CCD produces electron-hole
+pairs in the silicon of the CCD chip. The rate at which these pairs are
+produced is an important parameter when operating cameras on board spacecraft
+and can be calculated for radiation of any given energy.
+
+A high energy particle or photon of radiation passing through the CCD will
+deposit some energy in the chip with each electron-hole pair it creates. The
+`stopping power' of silicon for a given type of particle can be measured as
+the energy per areal density ($\mathrm{areal\ density} = \mathrm{mass\ per\
+unit\ area}$) that the silicon `takes away' from the travelling particle.
+
+\ioaafig{2021_TH_Q13-f1.pdf}
+
+NASA's Lucy mission will be the first to study the Trojan asteroids and will
+revolutionize our understanding of the formation of the Solar System. One of
+the instruments on board is L'LORRI (Lucy LOng Range Reconnaissance Imager),
+which contains a sensitive CCD in order to produce detailed images of the
+Trojan asteroids. Unfortunately, the radiation around Jupiter is very intense
+and it can generate a lot of `noise' in the pixels of the CCD.
+
+Let us assume that an average charged particle trapped in Jupiter's magnetic
+field has an energy of 15\,MeV and that the flux of such particles in this
+region is equivalent to about 600 electrons $\mathrm{s}^{-1}\,
+\mathrm{cm}^{-2}$. Also assume that for each electron-hole pair which a
+particle passing through a pixel creates, it deposits exactly the excitation
+energy of the pair in that pixel. After the pixel crosses a threshold number
+of electron-hole pairs it is `excited' and no more pairs can be produced in
+that pixel. Any remaining energy in the particle is passed to the next pixel
+(and so on).
+
+Using the data given below for the CCD chip in the L'LORRI camera, answer the
+following questions:
+
+\begin{description}
+\item[(13.1)] How many pixels will be excited by one such particle of
+  radiation passing through the CCD when the spacecraft is near Jupiter's
+  orbit? \hfill[10.0\,pt]
+\item[(13.2)] Given the radiation flux near Jupiter, what percentage of the
+  total number of pixels in an image will be excited? \hfill[5.0\,pt]
+\end{description}
+
+CCD Data:
+\begin{itemize}
+\item Exposure time of an image $= 30$\,ms
+\item Pixels on the CCD $= 1024 \times 1024$
+\item CCD Area $= 13\,\mathrm{mm} \times 13\,\mathrm{mm}$
+\item CCD chip thickness $= 0.06$\,cm
+\item Density of silicon, $\rho = 2.34\,\mathrm{g\,cm}^{-3}$
+\item Excitation energy of single pair $= 2.36$\,eV
+\item Excitation threshold of a single pixel $= 250$ pairs
+\item `Stopping power' of silicon for a 15\,MeV electron
+  $= 3.012\,\mathrm{MeV\,g}^{-1}\,\mathrm{cm}^{2}$
+\end{itemize}

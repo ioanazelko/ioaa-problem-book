@@ -1,0 +1,48 @@
+In 2019 an international collaboration led by Polish astronomers measured,
+with very high precision and accuracy, the distance to the Large Magellanic
+Cloud (LMC), a satellite galaxy of the Milky Way. In this way they set the
+zero point of the extragalactic distance scale, which allowed for a very
+precise measurement of the Hubble constant. Their method involved measuring
+the distances to 20 eclipsing binary stars in the LMC, using the concept of
+the surface brightness $S_V$ of a star defined as:
+\[ S_V = m_V + 5 \log_{10} \theta, \]
+where $m_V$ is the magnitude of a star in the optical $V$ band and $\theta$ is
+the angular diameter of the star on the sky in milliarcseconds (mas).
+
+The quantity $S_V$ can be understood as the magnitude of a star with an
+angular diameter of 1\,mas. An empirical relation has been established between
+$S_V$ and the colour index $(m_V - m_K)$, where $m_V$ and $m_K$ are magnitudes
+in the $V$-band and infrared $K$-band. This is shown in the figure below for
+giant stars of spectral types G and K.
+
+\ioaafig{2023_DA_Q1-f1.pdf}
+
+Using this relation, the distance to an eclipsing binary system can be
+determined by deriving the physical radii of the components (using photometry
+and spectroscopy), and comparing these with the angular diameters predicted by
+the $S_V - (m_V - m_K)$ relation.
+
+The table below gives the parameters of three eclipsing binary stars. $R_1$
+and $R_2$ are the radii of each component, $V_{1+2}$ and $K_{1+2}$ are the
+total brightness in magnitudes of the binary in the $V$- and $K$-bands, and
+$L_2/L_1$ is the luminosity ratio of the components in each band.
+
+\begin{center}
+\begin{tabular}{l|c|c|c|c|c|c}
+source ID & $R_1$ [$R_\odot$] & $R_2$ [$R_\odot$] & $V_{1+2}$ [mag]
+  & $K_{1+2}$ [mag] & $L_2/L_1$ ($V$) & $L_2/L_1$ ($K$) \\
+\hline
+OGLE-LMC-ECL-03160 & 17.03 & 37.42 & 16.73 & 14.10 & 2.80  & 4.23  \\
+OGLE-LMC-ECL-10567 & 24.60 & 36.64 & 16.15 & 13.83 & 1.41  & 1.99  \\
+OGLE-LMC-ECL-18365 & 37.30 & 15.94 & 16.27 & 14.01 & 0.206 & 0.188 \\
+\end{tabular}
+\end{center}
+
+Apply the method outlined above to the three eclipsing binary systems and
+calculate the distance to the LMC in kiloparsecs. Estimate the total error of
+the result. Assume that the fitting of the $S_V - (m_V - m_K)$ relation
+contributes to a bias of up to 0.8\% in all measurements simultaneously.
+
+Hint: in your calculations keep at least three significant figures and two
+decimal places. Assume that interstellar extinction is negligible and that the
+angular size of the LMC is small.

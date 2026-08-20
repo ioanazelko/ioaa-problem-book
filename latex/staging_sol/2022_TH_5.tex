@@ -1,0 +1,60 @@
+% FIGURE NEEDED: flaring disk cross-section with the star, surface layer, tangent line, angles h/r, dh/dr, beta and height h(r) at radius r (2022 Solutions, p. 3)
+\begin{description}
+\item[(a)] The angle between the light beam and the horizontal plane is
+  \[
+    \theta_l \approx \tan\theta_l = \frac{h(r)}{r}
+  \]
+  \hfill(1.0 points)
+
+  Additionally, a tangent is inclined to the disc plane with an angle of
+  \[
+    \theta_T \approx \tan\theta_T = \frac{\Delta h(r)}{\Delta r}
+  \]
+  \hfill(2.0 points)
+
+  An exterior angle of a triangle is equal to the sum of its two interior
+  opposite angles. Thus,
+  \[
+    \beta = \theta_T - \theta_l = \frac{\Delta h(r)}{\Delta r} - \frac{h(r)}{r}
+  \]
+  \hfill(1.0 points)
+\item[(b)] The flux from of stellar radiation at distance $r$ from the star is
+  $E_s = \frac{L_s}{4\pi r^2}$, where $L_s$ is the luminosity of the star.
+  However, the irradiation flux is the normal projection of this flux onto the
+  infinitesimal small surface $A$ of the disk.
+  \[
+    Q_+ = E_s A\sin\beta \approx \frac{L_s A\beta}{4\pi r^2}
+  \]
+  \hfill(1.5 points)
+
+  From the Stefan-Boltzmann law, the cooling rate is give by
+  \[
+    Q_- = A\sigma T_D^4.
+  \]
+  \hfill(0.5 points)
+
+  In the thermal equilibrium
+  \[
+    Q_+ = Q_- \Longrightarrow
+    T_D = \left(\frac{L_s\beta}{4\pi\sigma r^2}\right)^{\!\frac{1}{4}}
+  \]
+  \hfill(1.0 points)
+\item[(c)] The condition for the isothermal layer can be solved by applying
+  \begin{align*}
+    \beta &= \frac{\Delta h(r)}{\Delta r} - \frac{h(r)}{r}
+      = \frac{a(r+\Delta r)^b - ar^b}{\Delta r} - \frac{ar^b}{r} \\
+    &= ar^b\left(\frac{(1+\frac{\Delta r}{r})^b - 1}{\Delta r} - \frac{1}{r}\right)
+      = ar^b\left(\frac{b\Delta r}{r\Delta r} - \frac{1}{r}\right) \\
+    &= a(b-1)r^{b-1} \propto r^2 \\
+    &\Longrightarrow b = 3
+  \end{align*}
+  \hfill(2.0 points)
+
+  Finally, one can determine the second constant by
+  \begin{align*}
+    \beta &= a(b-1)r^{b-1} = 2ar^2 \\
+    \therefore\; T_{SL}^4 &= \left(\frac{aL_s}{2\pi\sigma}\right) \\
+    a &= \left(\frac{2\pi\sigma T_{SL}^4}{L_s}\right)
+  \end{align*}
+  \hfill(1.0 points)
+\end{description}

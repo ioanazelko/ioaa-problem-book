@@ -1,0 +1,61 @@
+\begin{description}
+\item[(8.1)] Assuming $R = 6378$\,km (as per the table of constants)
+  \begin{align*}
+    \Delta x &= R \cdot
+      \left[(4^\circ 36' 18'') - (4^\circ 35' 30'')\right]
+      \cdot \frac{\pi}{180} = 1.4842\ \mathrm{km}\\
+    \Delta y &= R \cdot
+      \left[(74^\circ 3' 19'') - (74^\circ 3' 15'')\right]
+      \cdot \frac{\pi \cdot \cos(4,35,54)}{180} = 0.1237\ \mathrm{km}\\
+    \Delta z &= (3.100 - 3.296) = -0.196\ \mathrm{km}
+  \end{align*}
+  \hfill[2 points]
+  \[
+    d_{2-3} = \sqrt{(x^2 + y^2 + z^2)} = 1.502\ \mathrm{km}
+  \]
+  \hfill[1 point]
+
+\item[(8.2)] Using the same method as part 8.1:
+  \[
+    d_{1-2} = 2.722\ \mathrm{km}
+  \]
+  \hfill[2 points]
+  \[
+    d_{1-3} = 2.580\ \mathrm{km}
+  \]
+  \hfill[2 points]
+
+  Using Cosine rule for spherical triangle,
+  \[
+    \cos(A) = \frac{\bigl(d_{1-2}^{\;2} + d_{1-3}^{\;2}
+                          - d_{2-3}^{\;2}\bigr)}
+                   {2\,d_{1-2}\,d_{1-2}} = 0.841
+    % sic: the official solution writes d_{1-2} twice in the denominator;
+    % it should be 2 d_{1-2} d_{1-3}.
+  \]
+  \[
+    A = 32.78^\circ
+  \]
+  \hfill[2 points]
+
+\item[(8.3)] ~
+  \[
+    \alpha = \tan^{-1}\left(
+      \frac{-\sin(\beta)\cdot\sin(\varepsilon)
+            + \cos(\beta)\cdot\cos(\varepsilon)\cdot\sin(\lambda)}
+           {\cos(\beta)\cdot\cos(\lambda)}\right)
+  \]
+  \[
+    \alpha = 12^\circ 43' 3''
+           = 0^{\mathrm{h}} 50^{\mathrm{m}} 52^{\mathrm{s}}
+  \]
+  \hfill[3 points]
+  \[
+    \delta = \sin^{-1}\bigl(\sin(\beta)\cdot\cos(\varepsilon)
+             + \cos(\beta)\cdot\sin(\varepsilon)\cdot\sin(\lambda)\bigr)
+  \]
+  \[
+    \delta = 1^\circ 33' 43''
+  \]
+  \hfill[3 points]
+\end{description}

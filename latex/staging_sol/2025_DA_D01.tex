@@ -1,0 +1,337 @@
+\begin{description}
+\item[(D01.1)] \hfill(8 points)\\
+Given\\
+Parallax: $p = (20.67\pm0.05)$~milliarcsecond\\
+V-band apparent magnitude: $m_{\mathrm{V}} = (7.65\pm0.03)$~mag\\
+Let:\\
+V-band absolute magnitude: $M_{\mathrm{V}}$\\
+Bolometric Magnitude: $M_{\mathrm{bol}}$\\
+Bolometric Magnitude of the Sun: $M_{\mathrm{bol},\odot} = 4.74$~mag (given)
+\begin{align*}
+M_{\mathrm{V}} &= m_{\mathrm{V}} + 5(\log p + 1) = 4.227\ \mathrm{mag}\\
+M_{\mathrm{bol}} &= M_{\mathrm{V}} + BC\\
+  &= m_{\mathrm{V}} + 5(\log p + 1) + \mathrm{BC} = 4.162\ \mathrm{mag}
+\end{align*}
+Also
+\[ M_{\mathrm{bol}} = M_{\mathrm{bol},\odot} - 2.5\log\frac{L_{\mathrm{bol}}}{L_\odot} \]
+\[ \therefore\quad L_{\mathrm{bol}}
+   = 10^{\frac{M_{\mathrm{bol},\odot}-M_{\mathrm{bol}}}{2.5}}\,L_\odot
+   = 6.521\times10^{26}\ \mathrm{W} \]
+Then
+\[ M_{\mathrm{s}} = \left(\frac{L_{\mathrm{bol}}}{L_\odot}\right)^{1/4} M_\odot
+   = 1.14\ \mathrm{M_\odot} \]
+Uncertainty estimate:
+\begin{align*}
+\Delta M_{\mathrm{bol}} &= \sqrt{(\Delta m_{\mathrm{V}})^2
+  + \left(\frac{5}{\ln 10}\,\frac{\Delta p}{p}\right)^2}\\
+  &= 0.03\ \mathrm{mag}
+\end{align*}
+Now,
+\[ M_{\mathrm{s}} = 10^{\frac{M_{\mathrm{bol},\odot}-M_{\mathrm{bol}}}{10}} \]
+\begin{align*}
+\therefore\quad \Delta M_{\mathrm{s}}
+  &= M_{\mathrm{s}}\,\frac{\Delta M_{\mathrm{bol}}}{10}\,\ln 10\\
+  &= 0.01\ \mathrm{M_\odot}
+\end{align*}
+\[ \boxed{M_{\mathrm{s}} = (1.14\pm0.01)\ \mathrm{M_\odot}} \]
+
+\item[(D01.2a)] \hfill(2 points)\\
+% FIGURE NEEDED: smooth sinusoidal curve drawn through the delta-lambda vs
+% time data (6 periods over 24 days, amplitude ~160e-15 m)
+% (2025_data_analysis_solutions.pdf, page 3).
+
+\item[(D01.2b)] \hfill(11 points)\\
+$T$ Determination:\\
+Least count on time axis $= 0.2$~d\\
+There are 13 zero crossings (ZC) and 6 periods.\\
+Difference between ZC-1 and ZC-13 $= (21.6-0.6) = 21.0$~d
+\[ T = \frac{21}{6} = 3.5\ \mathrm{d} \]
+Uncertainty in $T$:
+\[ \Delta T = \frac{1}{6}\sqrt{(0.2^2+0.2^2)} = 0.05\ \mathrm{d} \]
+\[ \boxed{T = (3.50\pm0.05)\ \mathrm{d}} \]
+
+$K$ Determination:
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+Serial No. & Values of Extrema & $2\delta\lambda$ & $K$\\
+of Extrema & $(\times10^{-15}\mathrm{m})$ & m & m\,s$^{-1}$\\
+\midrule
+1 & $-165$ & & \\
+2 & 160 & 325 & \\
+3 & $-160$ & & \\
+4 & 165 & 325 & \\
+5 & $-160$ & & \\
+6 & 155 & 315 & \\
+7 & $-165$ & & \\
+8 & 155 & 320 & \\
+9 & $-160$ & & \\
+10 & 160 & 320 & \\
+11 & $-165$ & & \\
+\bottomrule
+\end{tabular}
+\end{center}
+% note: the table is cut by the page break in the source PDF after serial
+% no. 11; the quoted mean 2(delta lambda) = 321.67e-15 m implies a 12th
+% extremum (2 delta lambda = 325e-15 m) on the truncated row.
+
+Least count on $\delta\lambda$ axis $= 5\times10^{-15}$~m\\
+Differences in measured extrema ($\delta\lambda$) of alternate pairs are
+written in table.
+\begin{align*}
+2(\delta\lambda)_{\mathrm{Mean}} &= 321.67\times10^{-15}\ \mathrm{m}\\
+(\delta\lambda)_{\mathrm{Mean}} &= 160.83\times10^{-15}\ \mathrm{m}\\
+K &= \frac{\delta\lambda}{\lambda}\times c\\
+  &= \frac{160.83\times10^{-15}\times2.998\times10^{8}}{543.45\times10^{-9}}\\
+  &= 88.73\ \mathrm{m\,s^{-1}}
+\end{align*}
+Uncertainty in $K$:
+\begin{align*}
+\sigma_{\delta\lambda} &= \sqrt{\frac{1}{N-1}
+  \Sigma\left(\delta\lambda-(\delta\lambda)_{\mathrm{Mean}}\right)^2}\\
+  &= 2.041\times10^{-15}\ \mathrm{m}\\
+\sigma_K &= \frac{\sigma_{\delta\lambda}}{\lambda}\times c\\
+  &= \frac{2.041\times10^{-15}\times2.998\times10^{8}}{543.45\times10^{-9}}
+   = 1.12\ \mathrm{m\,s^{-1}}
+\end{align*}
+\[ \boxed{K = (89\pm1)\ \mathrm{m\,s^{-1}}} \]
+
+\item[(D01.2c)] \hfill(5 points)\\
+The minimum mass of the planet
+$M_{\mathrm{p,min}} \equiv M_{\mathrm{p}}\sin i$ comes from equation of $K$.
+\[ K = \left(\frac{2\pi G}{T}\right)^{1/3}
+   \frac{M_{\mathrm{p}}\sin i}{(M_{\mathrm{p}}+M_{\mathrm{s}})^{2/3}} \]
+We assume $M_{\mathrm{p}} + M_{\mathrm{s}} \approx M_{\mathrm{s}}$.
+
+For $M_{\mathrm{s}} = 1.14\,\mathrm{M_\odot}$, $T = 3.5$~d:
+\[ M_{\mathrm{p,min}} \approx K M_{\mathrm{s}}^{2/3}
+   \left(\frac{T}{2\pi G}\right)^{1/3}
+   = 6.927\times10^{-4}\ \mathrm{M_\odot} \]
+Uncertainty in $M_{\mathrm{p,min}}$:
+\begin{align*}
+\Delta M_{\mathrm{p,min}} &= M_{\mathrm{p,min}}
+  \sqrt{\left(\frac{\Delta K}{K}\right)^2
+  + \left(\frac{2}{3}\frac{\Delta M_{\mathrm{s}}}{M_{\mathrm{s}}}\right)^2
+  + \left(\frac{1}{3}\frac{\Delta T}{T}\right)^2}\\
+  &= 0.091\times10^{-4}\ \mathrm{M_\odot}
+\end{align*}
+\[ \boxed{M_{\mathrm{p,min}} = (6.93\pm0.09)\times10^{-4}\ \mathrm{M_\odot}} \]
+
+\item[(D01.2d)] \hfill(4 points)
+\begin{align*}
+a_{\min} &= \left(\frac{T^2G(M_{\mathrm{s}}+M_{\mathrm{p}}\sin i)}{4\pi^2}\right)^{1/3}
+  = \left(\frac{T^2G(M_{\mathrm{s}}+M_{\mathrm{p,min}})}{4\pi^2}\right)^{1/3}\\
+  &= 0.0471\ \mathrm{au}
+\end{align*}
+Uncertainty in $a_{\min}$:
+\begin{align*}
+\Delta a_{\min} &= a_{\min}\sqrt{\left(\frac{2}{3}\frac{\Delta T}{T}\right)^2
+  + \left(\frac{1}{3}\right)^2\frac{(\Delta M_{\mathrm{s}})^2
+    + (\Delta M_{\mathrm{p,min}})^2}{(M_{\mathrm{s}}+M_{\mathrm{p,min}})^2}}\\
+  &= 0.0005\ \mathrm{au}
+\end{align*}
+\[ \boxed{a_{\min} = (0.0471\pm0.0005)\ \mathrm{au}} \]
+
+\item[(D01.3)] \hfill(3 points)
+\[ bR_{\mathrm{s}} = a\cos i \quad\Longrightarrow\quad
+   i = \cos^{-1}\frac{bR_{\mathrm{s}}}{a} \]
+The minimum value of $i$ corresponds to the maximum value of $b(=1)$ and the
+minimum value of $a$. Therefore,
+\[ i_{\min} = \cos^{-1}\!\left(\frac{b_{\max}R_{\mathrm{s}}}{a_{\min}}\right)
+   = \cos^{-1}\!\left(\frac{R_{\mathrm{s}}}{a_{\min}}\right)
+   = \cos^{-1}\!\left(\frac{1.20\ \mathrm{R_\odot}}{0.0471\ \mathrm{au}}\right) \]
+\[ \boxed{i_{\min} = 83.20^\circ} \]
+
+\item[(D01.4a)] \hfill(3 points)\\
+% FIGURE NEEDED: the transit lightcurve with dashed vertical lines marking
+% the four contact readings and dashed horizontal lines at the dip levels
+% (2025_data_analysis_solutions.pdf, page 7).
+In the figure of the transit curve, least count on time axis $= 0.006$~d, and
+on the intensity axis $= 4\times10^{-4}$.\\
+The measurements on the left and right edges of the transit for
+$t_{\mathrm{T}}$ are $-0.072$~d and $0.072$~d.\\
+The measurements on the left and right edges of the transit for
+$t_{\mathrm{F}}$ are $-0.048$~d and $0.048$~d.\\
+Therefore,
+\[ \boxed{t_{\mathrm{T}} = 0.144\ \mathrm{d}} \qquad
+   \boxed{t_{\mathrm{F}} = 0.096\ \mathrm{d}} \]
+
+\item[(D01.4b)] \hfill(2 points)\\
+The value of the dip is $(0.9860+0.9848)/2 = 0.9854$
+\[ \Delta\ \text{measured from the graph is } 1-0.9854 = 0.0146 \]
+\[ \therefore\ \frac{R_{\mathrm{p}}}{R_{\mathrm{s}}} = \sqrt{\Delta} = 0.121 \]
+\[ \Longrightarrow\ R_{\mathrm{p}} = 0.121 R_{\mathrm{s}} \]
+\[ \boxed{R_{\mathrm{p}} = 0.145\ \mathrm{R_\odot}} \]
+
+\item[(D01.4c)] \hfill(2 points)
+\[ b = \left[\frac{(1-\sqrt{\Delta})^2
+   - (t_{\mathrm{F}}/t_{\mathrm{T}})^2(1+\sqrt{\Delta})^2}
+   {1-(t_{\mathrm{F}}/t_{\mathrm{T}})^2}\right]^{1/2} \]
+Plugging in values of $\Delta$, $t_{\mathrm{T}}$, and $t_{\mathrm{F}}$, we get
+$b = 0.622$
+\[ bR_{\mathrm{s}} = a\cos i \]
+Putting $a = a_{\min}$,
+\begin{align*}
+i &= \cos^{-1}\!\left(\frac{bR_{\mathrm{s}}}{a_{\min}}\right)\\
+  &= \cos^{-1}\!\left(\frac{0.622\times1.2\ \mathrm{R_\odot}}{0.0471\ \mathrm{au}}\right)
+\end{align*}
+\[ \boxed{i = 85.77^\circ} \]
+
+\item[(D01.5a)] \hfill(2 points)\\
+Define
+\[ \boxed{x_1 = 1-\cos\theta} \qquad\text{and}\qquad
+   \boxed{y_1 = \frac{J-1}{1-\cos\theta} \equiv \frac{J-1}{x_1}} \]
+Then, $y_1 = -a_1 - a_2 x_1$.\\
+In this method $a_1$ and $a_2$ can be determined from the intercept and
+slope, respectively, of a best fit straight line to a plot of $y_1$ vs $x_1$.
+
+\item[(D01.5b)] \hfill(4 points)
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+$\theta$ & $J(\theta)$ & $x_1$ & $y_1$\\
+\midrule
+$0^\circ$ & 1.000 & 0.000 & $\times$\\
+$10^\circ$ & 0.994 & 0.015 & $-0.395$\\
+$15^\circ$ & 0.984 & 0.034 & $-0.470$\\
+$20^\circ$ & 0.971 & 0.060 & $-0.481$\\
+$20^\circ$ & 0.970 & 0.060 & $-0.497$\\
+$25^\circ$ & 0.950 & 0.094 & $-0.534$\\
+$30^\circ$ & 0.943 & 0.134 & $-0.425$\\
+$40^\circ$ & 0.883 & 0.234 & $-0.500$\\
+$40^\circ$ & 0.890 & 0.234 & $-0.470$\\
+$50^\circ$ & 0.794 & 0.357 & $-0.577$\\
+$60^\circ$ & 0.724 & 0.500 & $-0.552$\\
+$70^\circ$ & 0.595 & 0.658 & $-0.616$\\
+$80^\circ$ & 0.475 & 0.826 & $-0.635$\\
+$90^\circ$ & 0.312 & 1.000 & $-0.688$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\item[(D01.5c)] \hfill(7 points)\\
+Plot of $y_1$ vs $x_1$ with straight line fit:
+% FIGURE NEEDED: hand-drawn graph of y_1 vs x_1 on graph paper with best-fit
+% straight line; marked points (0.15, -0.490) and (0.9, -0.664); annotations
+% "c = -0.456", "m = -0.232"; scale 1 cm = 0.05 units (X), 0.002 units (Y)
+% (2025_data_analysis_solutions.pdf, page 9).
+
+\item[(D01.5d)] \hfill(7 points)\\
+Slope of best fit line $= -0.232$; Intercept $= -0.456$
+\[ \boxed{\Longrightarrow\ a_1 = 0.46, \quad a_2 = 0.23} \]
+
+\item[(D01.6a)] \hfill(2 points)\\
+As $i$ decreases, the transit chord moves closer to the limb and the
+contribution of the midpoint of the transit to the dip in the average
+brightness reduces. Therefore, $\Delta$ decreases with decreasing $i$.\\
+Correct option: \fbox{B}
+
+\item[(D01.6b)] \hfill(4 points)\\
+Since the limb darkening effect is stronger for $\lambda_{\mathrm{B}}$, it
+causes \textit{lesser} reduction in the total light at the ingress and egress
+and more reduction at the transit centre, than for $\lambda_{\mathrm{R}}$.
+Therefore, the curves must intersect.
+% FIGURE NEEDED: schematic normalized-intensity vs time sketch of the two
+% transit curves: "R" flat-bottomed and shallower at centre, "B" rounder and
+% deeper at centre, intersecting on both branches
+% (2025_data_analysis_solutions.pdf, page 11).
+
+\item[(D01.7a)] \hfill(6 points)
+\begin{align*}
+\Delta &= \frac{I(\theta_{\mathrm{C}})}{\langle I\rangle}
+  \left(\frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right)^2\\
+\Longrightarrow\ \left(\frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right)^2
+  &= \frac{\Delta\langle I\rangle}{I(\theta_{\mathrm{C}})}
+\end{align*}
+Here, $I(\theta_{\mathrm{C}})$ is a function of $i$. Further,
+$\langle I\rangle = \left(1-\frac{a_1}{3}-\frac{a_2}{6}\right)I(0)$.
+% FIGURE NEEDED: side-on geometry sketch -- stellar disk with inclination i,
+% right triangle showing R_s, bR_s and theta_C, planet at distance a
+% (2025_data_analysis_solutions.pdf, page 11).
+
+From the figure,
+\[ \sin\theta_{\mathrm{C}} = \frac{bR_{\mathrm{s}}}{R_{\mathrm{s}}} = b
+   = \frac{a\cos i}{R_{\mathrm{s}}} \]
+\[ \Longrightarrow\ \cos\theta_{\mathrm{C}} = \sqrt{1-b^2}
+   = \sqrt{1-\left(\frac{a\cos i}{R_{\mathrm{s}}}\right)^2} \]
+Therefore,
+\begin{align*}
+I(\theta_{\mathrm{C}}) &= J(\theta_{\mathrm{C}})I(0)\\
+  &= \left[1 - a_1(1-\cos\theta_{\mathrm{C}})
+    - a_2(1-\cos\theta_{\mathrm{C}})^2\right]I(0)\\
+  &= \left[1 - a_1\left(1-\sqrt{1-b^2}\right)
+    - a_2\left(1-\sqrt{1-b^2}\right)^2\right]I(0)
+\end{align*}
+Thus,
+\[ \left(\frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right)
+   = \left[\frac{\Delta\langle I\rangle}{I(\theta_{\mathrm{C}})}\right]^{1/2} \]
+\[ \left(\frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right)
+   = \left[\frac{\Delta\left(1-\frac{a_1}{3}-\frac{a_2}{6}\right)}
+   {1 - a_1\left(1-\sqrt{1-b^2}\right)
+    - a_2\left(1-\sqrt{1-b^2}\right)^2}\right]^{1/2} \]
+\[ \left(\frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right)
+   = \left[\frac{\Delta\left(1-\frac{a_1}{3}-\frac{a_2}{6}\right)}
+   {1 - a_1\left(1-\sqrt{1-\left(\frac{a\cos i}{R_{\mathrm{s}}}\right)^2}\right)
+    - a_2\left(1-\sqrt{1-\left(\frac{a\cos i}{R_{\mathrm{s}}}\right)^2}\right)^{2}}
+   \right]^{1/2} \]
+
+\item[(D01.7b)] \hfill(5 points)
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+$i$ ($^\circ$) & $b$ & $(R_{\mathrm{p}}/R_{\mathrm{s}})_{\lambda_{\mathrm{B}}}$
+  & $(R_{\mathrm{p}}/R_{\mathrm{s}})_{\lambda_{\mathrm{R}}}$\\
+\midrule
+83.5 & 0.96 & 0.1842 & 0.1395\\
+84.0 & 0.89 & 0.1547 & 0.1316\\
+84.5 & 0.81 & 0.1419 & 0.1276\\
+85.0 & 0.74 & 0.1341 & 0.1251\\
+85.5 & 0.66 & 0.1287 & 0.1234\\
+86.0 & 0.59 & 0.1248 & 0.1221\\
+86.5 & 0.52 & 0.1218 & 0.1211\\
+87.0 & 0.44 & 0.1196 & 0.1204\\
+87.5 & 0.37 & 0.1178 & 0.1198\\
+88.0 & 0.30 & 0.1165 & 0.1194\\
+88.5 & 0.22 & 0.1155 & 0.1191\\
+89.0 & 0.15 & 0.1149 & 0.1189\\
+89.5 & 0.07 & 0.1145 & 0.1188\\
+90.0 & 0.00 & 0.1143 & 0.1187\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\item[(D01.7c)] \hfill(7 points)\\
+One can plot the full range ($i_{\min}\le i\le 90^\circ$):
+% FIGURE NEEDED: hand-drawn graph of R_p/R_s vs i for both wavelengths, two
+% curves crossing at the marked intersection point (86.75, 0.1208); scale
+% 1 cm = 0.5 deg (X), 0.004 (Y) (2025_data_analysis_solutions.pdf, page 13).
+However, it is enough to plot around the point of intersection (can be
+deduced from the table above), to get a better resolution for the coordinates
+of the intersection point.
+
+\item[(D01.7d)] \hfill(4 points)\\
+Intersection point of the graphs of
+$\left(\frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right)$ vs $i$ for
+$\lambda_{\mathrm{B}}$ and $\lambda_{\mathrm{R}}$ will give the values of both
+quantities.\\
+Values deduced from either graph:
+\begin{align*}
+\left(\frac{R_{\mathrm{p}}}{R_{\mathrm{s}}}\right) &= 0.1208\\
+\Longrightarrow\ R_{\mathrm{p}} &= 0.1208\times1.2\ \mathrm{R_\odot}
+\end{align*}
+\[ \boxed{R_{\mathrm{p}} = 0.145\ \mathrm{R_\odot}} \]
+and
+\[ \boxed{i = 86.75^\circ} \]
+
+\item[(D01.8)] \hfill(2 points)
+\begin{align*}
+\text{Estimated mass of the planet P }
+  M_{\mathrm{p}} &= 6.93\times10^{-4}\ \mathrm{M_\odot}
+  = 1.389\times10^{27}\ \mathrm{kg}\\
+\text{Estimated radius of the planet P }
+  R_{\mathrm{p}} &= 0.145\ \mathrm{R_\odot} = 1.009\times10^{8}\ \mathrm{m}\\
+\therefore\ \text{Average density of the planet} &= 320\ \mathrm{kg\,m^{-3}}
+\end{align*}
+The average density of the planet P is much less than that of Jupiter (a
+known gaseous planet). Hence the planet P is \fbox{GASEOUS}.
+\end{description}

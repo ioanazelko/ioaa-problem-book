@@ -1,0 +1,318 @@
+\textbf{PART A:}
+
+\begin{description}
+\item[A.1] In cylindrical coordinates, the gravitational field is given by
+  \[ \vec{g} = \vec{g}(r) = g(r)\,\hat{r} = g\,\hat{r}, \]
+  \hfill[1 point]
+
+  where, in view of the axial symmetry, $g$ can be computed from the Gauss
+  law for the gravitational field:
+  \[ \vec{g}\bullet\vec{A} = -\,4\pi G M_{in}, \]
+  \hfill[1 point]
+
+  where $M_{in}$ is the mass enclosed by the surface $A$, as shown in the
+  figure below:
+  % FIGURE NEEDED: hand-drawn Gaussian cylinder of length L and radius r
+  % around the string (2021_T15_Solution.pdf page 1)
+
+  Taking the surface to be a cylinder of length $L$ and radius $r$, from
+  the above equation:
+  \[ 2\pi r L g = -\,4\pi G M_{in} \]
+  \[ g = -\frac{2GM_{in}}{rL} \]
+  \hfill[1 point]
+
+  There are two cases (regions):
+  \begin{itemize}
+  \item For $r > r_0$, one has $M_{in} = \mu L$ and so \hfill[0.5 points]
+    \[ g = -\frac{2G\mu}{r} \]
+    \hfill[1 point]
+  \item For $r < r_0$, one has $M = \frac{r^2}{r_0^2}\mu L$ and so
+    \hfill[0.5 points]
+    \[ g = -\frac{2G\mu}{r_0}\left(\frac{r}{r_0}\right) \]
+    \hfill[1 point]
+  \end{itemize}
+
+\item[A.2] Writing $\vec{g}(r_0)$, in terms of $G$, $\mu$ and $r_0$:
+  \begin{align*}
+  \vec{g}(r_0) &= -\frac{2G\mu}{r_0}\hat{r}\\
+  g_0 \equiv \left|\vec{g}(r_0)\right| &= \frac{2G\mu}{r_0}
+  \end{align*}
+  \hfill[1 point]
+
+\item[A.3] The following points should be included in the sketch:
+  \begin{itemize}
+  \item $(0, 0)$ \hfill[0.5 points]
+  \item $(1, -1)$ \hfill[0.5 points]
+  \end{itemize}
+  Additionally,
+  \begin{itemize}
+  \item the sketch is linear between $(0,0)$ and $(1,-1)$
+    \hfill[0.8 points]
+  \item the sketch is concave for $r > r_0$,
+    $\left(\sim\frac{1}{r}\right)$ \hfill[0.8 points]
+  \item the sketch is drawn below x-axis. \hfill[0.4 points]
+  \end{itemize}
+  % FIGURE NEEDED: sketch of g(r): linear from (0,0) down to (r_0, -g_0),
+  % then concave ~ -1/r rising back toward zero
+  % (2021_T15_Solution.pdf page 2)
+
+\item[A.4] The centripetal acceleration equals the gravitational
+  acceleration, thus
+  \[ \frac{v^2}{R} = \frac{2G\mu}{R} \]
+  \hfill[1 point]
+  \[ \frac{2\pi R}{\tau} = \sqrt{2G\mu} \]
+  \hfill[1 point]
+  \[ R = \frac{\sqrt{2G\mu}}{2\pi}\tau \]
+  \[ A = \frac{\sqrt{2G\mu}}{2\pi} \]
+  \hfill[1 point]
+  \[ \alpha = 1 \]
+  \hfill[1 point]
+
+\item[A.5] The potential energy of the particle is given by
+  \[ U(r) = -\int_b^r \vec{F}(r)\cdot\vec{dr} \]
+  \[ = m\int_b^r g(r)\,dr \]
+  \hfill[1 point]
+  \[ = 2Gm\mu\int_b^r \frac{1}{r}\,dr \]
+  \hfill[1 point]
+  \[ = 2Gm\mu\,\ln\!\left(\frac{r}{b}\right) \]
+  \hfill[1 point]
+
+  Where $b$ is a constant that sets the 0 of $U$.
+
+  Note 1: Usually, $U = 0$ is set at $b = \infty$. For a cosmic string,
+  this is not possible. Instead, we can choose $U = 0$, for example, at
+  the string's surface $b = r_0$ \emph{(this choice is not relevant!)}.
+  Thus
+  \[ U = 2Gm\mu\,\ln\!\left(\frac{r}{r_0}\right) \]
+
+  Note 2: For completeness, notice that the potential inside the string,
+  $r < r_0$ is
+  \[ U = 2Gm\mu\left(\frac{r}{r_0}\right)^2 - U_0, \]
+  where
+  $U_0 = 2Gm\mu\left(\frac{r}{r_0}\right)^2
+   - 2\,Gm\mu\,\ln\!\left(\frac{r}{r_0}\right)$
+  is a constant (again, not relevant!) that can be chosen such that $U$
+  is continuous at the surface of the string. However, for the solution
+  of the problem, it is not necessary to show this.
+
+\item[A.6] The total energy of the particle is conserved, thus:
+  \[ \frac{1}{2}mv^2 + 2Gm\mu\,\ln\!\left(\frac{r}{b}\right)
+     = 2Gm\mu\,\ln\!\left(\frac{R_{max}}{b}\right) \]
+  \hfill[2 point]
+
+  Solving for $R_{max}$:
+  \[ R_{max} = Re^{\frac{v^2}{4G\mu}} \]
+  \hfill[2 point]
+
+  Notice that the answer does not depend on $b$.
+
+\item[A.7] \textbf{NO.} \hfill[1 point]
+
+  From the previous result,
+  \[ R_{max} = Re^{\frac{v^2}{4G\mu}}, \]
+  we see that it is \textbf{not possible} to escape the gravitational
+  field since for any speed, there is always a maximum distance
+  $R_{max} < \infty$
+\end{description}
+
+\textbf{PART B:}
+
+\begin{description}
+\item[B.1] The energy density is given by
+  \[ \rho = aT^4 \]
+  \hfill[1 point]
+
+  Equivalently:
+  \[ \rho = \frac{4\sigma}{c}T^4
+     = \frac{\pi^2 k_B^4}{15\,\hbar^3 c^3}T^4 \]
+  \hfill[1 point]
+
+  Note 3: This result arrives from the integration of the spectral energy
+  density given by the Planck law over all frequencies. However, it is
+  not required to show this integral.
+
+\item[B.2]
+  \[ r_0 = \frac{\hbar^{n_1}c^{n_2}}{k_B T} \]
+  \begin{itemize}
+  \item $r_0$ has dimensions of length: $[l]$
+  \item $\hbar$ has dimensions of energy $\times$ time: $[e\,t]$
+  \item $c$ has dimensions of speed: $[l/t]$
+  \item $k_B T$ has dimensions of energy: $[e]$
+  \end{itemize}
+  Then:
+  \[ [l] = \frac{[e\,t]^{n_1}\left[\frac{l}{t}\right]^{n_2}}{[e]} \]
+
+  Since the LHS and the RHS should have the same dimensions, we get:
+  \begin{align*}
+  [l]&:\ 1 = n_2\\
+  [e]&:\ 0 = n_1 - 1\\
+  [t]&:\ n_1 = n_2
+  \end{align*}
+  \hfill[2 points]
+
+  The solution is
+  \[ n_1 = 1 \]
+  \hfill[1 point]
+  \[ n_2 = 1 \]
+  \hfill[1 point]
+
+\item[B.3] The energy of a piece of the string of length $L$ is
+  \[ E = \rho\pi r_0^2 L = Mc^2 \]
+  \hfill[1 point]
+
+  where $M = \mu L$ is the mass of the piece. Solving for $\mu$:
+  \[ \mu = \frac{\rho\pi r_0^2}{c^2} \]
+  \hfill[1 point]
+
+\item[B.4] The weak field condition is
+  \[ \frac{2G\mu}{c^2}\ll 1 \]
+  \[ 2G\frac{\rho\pi r_0^2}{c^2}\ll 1 \]
+  \hfill[1 point]
+  \[ 2G\frac{\pi}{c^2}\left(aT^4\right)
+     \left(\frac{\hbar c}{k_B T}\right)^2\ll 1 \]
+  \hfill[1 point]
+  \[ \frac{2Ga\hbar^2\pi}{c^2 k_B^2}\,T^2\ll 1 \]
+  \hfill[2 point]
+
+  Where we used: $\mu = \frac{\rho\pi r_0^2}{c^2}$, $\rho = aT^4$,
+  $r_0 = \frac{\hbar c}{k_B T}$
+  \begin{align*}
+  \frac{2Ga\hbar^2\pi}{c^2 k_B^2}\,T^2 &\ll 1\\
+  \frac{2G\hbar^2\pi}{c^2 k_B^2}
+    \left(\frac{\pi^2 k_B^4}{15\,\hbar^3 c^3}\right)T^2 &\ll 1\\
+  \frac{2\pi^3}{15}\left(\frac{Gk_B^2}{\hbar c^5}\right)T^2 &\ll 1\\
+  \frac{2\pi^3}{15}\,\frac{T^2}{T_{Pl}^2} &\ll 1
+  \end{align*}
+  \hfill[2 point]
+
+  where $T_{Pl} = 1.416784\times 10^{32}\,K$ (known as the Planck
+  Temperature)
+
+  Note 4: the numerical factor $\frac{2\pi^3}{15}\sim 4.13$,
+  \emph{(a 5\% error tolerance is accepted)}
+
+  Note 5: From \textbf{A.4} we get that
+  \[ 2G\mu = v^2 \]
+  where $v$ is the speed with which a particle would orbit a string. Thus
+  the weak field is rewritten as
+  \[ \frac{v^2}{c^2}\ll 1 \]
+  which is equivalent to a non-relativistic condition.
+
+\item[B.5] The weak field condition is
+  \[ 4.13\left(\frac{T}{T_{Pl}}\right)^2\ll 1 \]
+  equivalently
+  \[ \sim 2\frac{T}{T_{Pl}}\ll 1 \]
+  \hfill[1 point]
+  \begin{description}
+  \item[i.] $\frac{2T_{EW}}{T_{Pl}}\sim
+    2\times\frac{10^{15}}{10^{32}}\approx 1.4\times 10^{-17}\ll 1$
+    \hfill[1 point]
+  \item[ii.] $\frac{2T_{GUT}}{T_{Pl}}\sim
+    2\times\frac{10^{29}}{10^{32}}\approx 1.4\times 10^{-3}\ll 1$
+    \hfill[1 point]
+  \end{description}
+
+  Note 6: Using the following expression
+  $4.13\left(\frac{T}{T_{Pl}}\right)^2\ll 1$
+
+  One gets
+  \begin{description}
+  \item[i.] $4.13\left(\frac{T_{EW}}{T_{Pl}}\right)^2
+    \sim 2.1\times 10^{-34}\ll 1$
+  \item[ii.] $4.13\left(\frac{T_{GUT}}{T_{Pl}}\right)^2
+    \sim 2.1\times 10^{-6}\ll 1$
+  \end{description}
+  And are also acceptable answers \emph{(a 5\% error tolerance is
+  accepted)}
+
+\item[B.6]\
+  \begin{description}
+  \item[i.] Yes \hfill[0.5 point]
+  \item[ii.] Yes \hfill[0.5 point]
+  \end{description}
+\end{description}
+
+\textbf{PART C:}
+
+\begin{description}
+\item[C.1] From the figure, the asymptotic condition for the observer to
+  see a second image is that the light ray travelling from O directly to
+  S should bend and travel along SE. This is the maximum angle of
+  bending.
+
+  As all angles are small, we can safely use
+  \[ \sin x \approx \tan x \approx x \]
+  Now,
+  \[ \frac{p}{SP} < \delta\phi \]
+  \hfill[2 points]
+  \begin{align*}
+  &< \frac{4\pi G\mu}{c^2}\\
+  &< 2\pi\left(\frac{2G\mu}{c^2}\right)\\
+  &< 2\pi\left(\frac{2\pi^3}{15}\right)
+     \left(\frac{T^2}{T_{Pl}^2}\right)
+  \end{align*}
+  \hfill[2 points]
+
+  And $SP \approx \left(D_{OE} - D_{ES}\right)$
+  \[ p < \frac{4\pi^4}{15T_{Pl}^2}\,T^2\left(D_{OE} - D_{ES}\right) \]
+  \hfill[2 points]
+
+  % FIGURE NEEDED: lensing geometry: points E, S, P on a line, observer O
+  % above P; images O1, O2 along ES1, ES2; angles alpha, beta, delta-phi
+  % (2021_T15_Solution.pdf page 7)
+
+\item[C.2] In the figure, the blue lines represent the bending of two
+  light rays corresponding to the images O1 and O2. Note that
+  $D_{ES} \approx D_{ES1} \approx D_{ES2}$ and
+  $D_{OS} \approx D_{OS1} \approx D_{OS2}$. Thus the angle
+  $S1EO \approx S2EO \equiv \alpha$ and
+  $S1OE \approx S2OE \equiv \beta$. $2\alpha$ is the angular separation
+  we are looking for. \hfill[2 points]
+
+  Further, notice
+  \[ \alpha + \beta = \delta\phi \]
+  \hfill[1 point]
+
+  Using law of sines in the triangle \textbf{EOS1}
+  \[ \frac{\alpha}{D_{S1O}} = \frac{\beta}{D_{ES1}} \]
+  \hfill[1 point]
+
+  we get
+  \[ 2\alpha = 2\delta\phi
+     \left(\frac{D_{OE} - D_{ES}}{D_{OE}}\right) \]
+  \hfill[2 points]
+
+\item[C.3] If $D_{OE} = 2D_{ES}$,
+  \[ 2\alpha = \delta\phi
+     = 2\pi\left(\frac{2\pi^3}{15}\right)
+       \left(\frac{T_{GUT}^2}{T_{Pl}^2}\right)
+     \approx 1.29\times 10^{-5} \]
+  \hfill[2 points]
+
+  and
+  \[ \delta\phi = 1.22\frac{\lambda}{D} \]
+
+  Thus, using
+  $\lambda\in[3\times 10^{-7}m,\ 8\times 10^{-7}m]$
+  \[ D = 1.22\frac{\lambda}{\delta\phi}
+     \in\left[3.75\times 10^{-2}m,\ 7.51\times 10^{-2}m\right] \]
+  \hfill[2 points]
+
+  Any answer within this interval is valid.
+
+  A remarkable result of this model is light deflection by a cosmic
+  string, which leads to the possibility of detection through
+  gravitational lensing. For instance, cosmic string trings moving across
+  the line of sight with respect to an Earth-based observer will cause
+  line-like discontinuities as shown in the figure below (taken from
+  [1]).
+  % sic: "cosmic string trings" as in source
+  % FIGURE NEEDED: lensed spiral-galaxy images from Sazhin et al. (2007),
+  % Fig. 6 reproduction (2021_T15_Solution.pdf page 9)
+
+  [1] M. V. Sazhin, O. S. Khovanskaya, M. Capaccioli, G. Longo,
+  M. Paolillo, G. Covone, N. A. Grogin, E. J. Schreier, Gravitational
+  lensing by cosmic strings: what we learn from the CSL-1 case,
+  \emph{Monthly Notices of the Royal Astronomical Society}, Volume 376,
+  Issue 4, March 2007, Pages 1731--1739.
+\end{description}

@@ -1,0 +1,100 @@
+\begin{description}
+\item[a)]
+The $\angle SVE$ angle should be calculated from the phase of Venus. Figure 2.1 shows that
+projected area of Venus disk which is illuminated by the Sun is
+\[
+\frac{\pi r^2}{2} + \frac{\pi r r'}{2}
+\]
+where
+\[
+r' = r\cos(\angle SVE)
+\]
+Then,
+\[
+Phase = \Bigl(\frac{\dfrac{\pi r^2}{2} + \dfrac{\pi r^2\cos(\angle SVE)}{2}}{\pi r^2}\Bigr)
+\times 100
+= \frac{100}{2}\,(1 + \cos(\angle SVE)) = 100\cos^2\Bigl(\frac{\angle SVE}{2}\Bigr)
+\]
+The angle $\angle SVE$ is calculated and written in table 2.2, column 2.
+% FIGURE NEEDED: Figure 2.1 (2009_da_sol.pdf p.73): left, the Sun (S) - Venus (V) -
+% Earth (E) triangle with sides r_v, r_e and Delta; right, the Venus disk divided into
+% illuminated side and dark side, with radii r and r' and the angle SVE at the terminator.
+
+\item[b)]
+As in figure 2.1, in $SEV$ triangle we have,
+\begin{align*}
+\frac{r_e}{\sin(\angle SVE)} &= \frac{r_v}{\sin(\angle SEV)}\\
+r_v &= r_e\,\frac{\sin(\angle SEV)}{\sin(\angle SVE)}
+\end{align*}
+where $r_e$ and $\angle SEV$ (elongation) is given in table 2.1 then, $r_v$ for all observing
+dates is calculated and written in table 2.2 column 3.
+
+\item[c)]
+% FIGURE NEEDED: plot "Sun - Venus Distance (AU)" (2009_da_sol.pdf p.74): the column-3
+% values of table 2.2 plotted against date (20/9/2008 ... 19/3/2009), rising to a flat
+% maximum near 0.728 AU in Oct-Nov 2008, falling to a minimum near 0.718 AU in Feb 2009,
+% then rising again.
+
+\item[d)]
+According to the obtained values written in table 2.2 column 3,
+\begin{align*}
+r_v^{max} &= 0.728\ AU\\
+r_v^{min} &= 0.718\ AU
+\end{align*}
+
+\item[e)]
+Semi-major axis is
+\[
+a = \frac{(r_v^{max} + r_v^{min})}{2} = 0.723\ AU
+\]
+
+\item[f)]
+Eccentricity could be calculated from both of aphelion and perihelion distances as
+\[
+e = \frac{r_v^{max} - r_v^{min}}{2a} = 6.92\times10^{-3}
+\]
+\end{description}
+
+\begin{center}
+Table 2.2
+
+\begin{tabular}{|c|c|c|}
+\hline
+Column 1 & Column 2 & Column 3\\
+\hline
+Date & SVE ($^\circ$) & Sun - Venus Distance (AU)\\
+\hline
+2008-Sep-20 & 39.83 & 0.726\\
+\hline
+2008-Oct-10 & 47.16 & 0.728\\
+\hline
+2008-Oct-20 & 50.80 & 0.728\\
+\hline
+2008-Oct-30 & 54.55 & 0.728\\
+\hline
+2008-Nov-09 & 58.26 & 0.728\\
+\hline
+2008-Nov-19 & 62.10 & 0.728\\
+\hline
+2008-Nov-29 & 66.17 & 0.727\\
+\hline
+2008-Dec-19 & 74.81 & 0.725\\
+\hline
+2008-Dec-29 & 79.63 & 0.723\\
+\hline
+2009-Jan-18 & 90.57 & 0.721\\
+\hline
+2009-Feb-07 & 104.83 & 0.719\\
+\hline
+2009-Feb-17 & 114.08 & 0.718\\
+\hline
+2009-Feb-27 & 125.59 & 0.719\\
+\hline
+2009-Mar-19 & 157.52 & 0.721\\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Note:} reported numbers in table 2 are not acceptable if they are out of 0.75 and
+1.25 times of designer answer.
+% The standalone "Venus Problem Marking Scheme" table (p.77) is omitted.

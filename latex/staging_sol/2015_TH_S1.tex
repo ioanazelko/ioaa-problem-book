@@ -1,0 +1,44 @@
+\textbf{Determine planet periods.}
+Synodic period of planet 1 and 2 (assume $P_1 < P_2$) is
+\[ \frac{1}{P_S} = \frac{1}{P_1} - \frac{1}{P_2}
+   \quad\Rightarrow\quad
+   P_S = \frac{P_1 P_2}{P_2 - P_1} \]
+Resonant orbit happens if
+\[ P_S = mP_1
+   \quad\Rightarrow\quad
+   \frac{P_1 P_2}{P_2 - P_1} = mP_1
+   \quad\Rightarrow\quad
+   m = \frac{P_2}{P_2 - P_1} > 1,\ \text{integer} \]
+
+Using the data of the Gliesean system we have
+\hfill(50 points)
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Gliese System} & \textbf{Mass (kg)} & \textbf{Semi Major Axis (m)}
+  & \textbf{Period (Earth, days)} $P = 2\pi\sqrt{\dfrac{a^3}{GM_G}}$ \\
+\hline
+Gliese 876 star & $6.64359 \times 10^{29}$ & & \\
+\hline
+Gliese 876 b & $4.31938 \times 10^{27}$ & $3.1161 \times 10^{10}$ & 60.07568 \\
+\hline
+Gliese 876 c & $1.35564 \times 10^{27}$ & $1.9388 \times 10^{10}$ & 29.48304 \\
+\hline
+Gliese 876 d & $4.079 \times 10^{25}$ & $3.1116 \times 10^{9}$ & 1.8956 \\
+\hline
+Gliese 876 e & $8.7194 \times 10^{25}$ & $5.0011 \times 10^{10}$ & 122.1432 \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Calculate resonant orbit for each planet.}
+From the results above we see that
+\begin{itemize}
+\item Gliese 876 c and Gliese 876 b have resonant orbit
+  \[ m = \frac{P_b}{P_b - P_c} = 1.96 \approx 2 \]
+  \hfill(25 points)
+\item Gliese 876 b and Gliese 876 e have resonant orbit
+  \[ m = \frac{P_e}{P_e - P_b} = 1.9679 \approx 2 \]
+  \hfill(25 points)
+\end{itemize}

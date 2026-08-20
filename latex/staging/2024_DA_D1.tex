@@ -1,0 +1,91 @@
+You are an astronomer working with large photometric surveys, such as the
+Sloan Digital Sky Survey (SDSS) and the Dark Energy Survey (DES), both of
+which have your host, Observat\'orio Nacional, as a participant. SDSS used a
+2.5\,m telescope in Apache Point, USA, during the 2000s, and DES used a 4\,m
+telescope in Cerro Tololo, Chile, from 2013 to 2019. Even though they mostly
+covered different hemispheres of the sky, they had an equatorial region in
+common known as Stripe 82 that you can use to compare and calibrate the
+photometry of different data sets, like SDSS and DES.
+
+The following tables containing object positions and magnitudes from Stripe
+82 were downloaded for analysis. However, due to a file system corruption on
+the computer, the file names were scrambled, and now you cannot tell which
+table belongs to which survey.
+
+Tables 1 and 2 appear next to each other below, with an identification
+number for each source, its equatorial coordinates, and its magnitude in the
+$g$-band ($m_g$) with its error (err $m_g$).
+
+\begin{description}
+\item[(a)] From these tables, which survey (SDSS or DES) is Table 1 and
+  which is Table 2? Assume that both surveys are equivalent regarding
+  detector response, exposure times, and site characteristics.
+  \hfill(5 points)
+\item[(b)] Using the data in the table, plot the magnitude ($m_g$) on the
+  $x$-axis (linear scale) and the error in magnitude (err $m_g$) on the
+  $y$-axis (logarithmic scale) using the semi-log paper marked as Graph 1.
+  Estimate the angular coefficient A (slope) and linear coefficient B
+  ($y$-axis intercept) for each dataset. There is no need to calculate the
+  associated errors. \hfill(35 points)
+\item[(c)] The Signal to Noise ratio ($S/N$) is approximately the inverse of
+  the error in the magnitude, $S/N \approx 1/(\mathrm{err}\ m_g)$. Using the
+  linear fit calculated in the previous part, what is the $S/N$ reached for
+  each survey at a magnitude of $m_g = 21.5$\,mag? \hfill(5 points)
+\item[(d)] An object in Table 1 that is within 1 arcsecond of an object in
+  Table 2 can be considered to be the same object. By looking at the RA and
+  Dec of the objects in both tables, identify the objects in common and
+  write down a new table with the matching IDs, $ID_1$ and $ID_2$.
+  \hfill(15 points)
+\item[(e)] Using the matched table from part (d), plot the $g$-band
+  magnitude of each survey against the other, Table 1 on $x$-axis, and
+  Table 2 on $y$-axis using the millimetre (linear) paper marked as Graph 2.
+  Draw on error bars for each point in both horizontal and vertical
+  directions, using values \textbf{double} err $m_g$ (known as a $2\sigma$
+  uncertainty). From your graph, identify the stars that would be suitable
+  for photometric calibration between the two surveys and write down their
+  correspondings IDs from Table 1. \hfill(15 points)
+\end{description}
+
+\begin{center}
+Table 1\\[2pt]
+\begin{tabular}{ccccc}
+$ID_1$ & RA & Dec & $m_g$ & err $m_g$ \\
+ & (deg) & (deg) & (mag) & (mag) \\
+\hline
+1 & 0.047255 & 0.000406 & 21.7649 & 0.0120 \\
+2 & 0.064741 & 0.021568 & 21.1111 & 0.0067 \\
+3 & 0.064911 & 0.026395 & 21.3931 & 0.0084 \\
+4 & 0.098343 & 0.054871 & 21.3934 & 0.0088 \\
+5 & 0.022256 & 0.039129 & 21.9933 & 0.0157 \\
+6 & 0.006188 & 0.066928 & 21.5490 & 0.0088 \\
+7 & 0.083945 & 0.074259 & 21.9395 & 0.0126 \\
+8 & 0.076715 & 0.079496 & 21.4808 & 0.0089 \\
+9 & 0.057422 & 0.076006 & 21.8897 & 0.0127 \\
+10 & 0.024412 & 0.087688 & 21.8341 & 0.0126 \\
+11 & 0.044723 & 0.091782 & 21.8868 & 0.0172 \\
+12 & 0.071089 & 0.091053 & 21.4390 & 0.0098 \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+Table 2\\[2pt]
+\begin{tabular}{ccccc}
+$ID_2$ & RA & Dec & $m_g$ & err $m_g$ \\
+ & (deg) & (deg) & (mag) & (mag) \\
+\hline
+1 & 0.006167 & 0.066874 & 21.9020 & 0.0576 \\
+2 & 0.018660 & 0.007450 & 21.8039 & 0.0529 \\
+3 & 0.047853 & 0.061487 & 21.3007 & 0.0418 \\
+4 & 0.050870 & 0.015659 & 21.1678 & 0.0388 \\
+5 & 0.051270 & 0.020812 & 21.2524 & 0.0401 \\
+6 & 0.057414 & 0.075999 & 21.8884 & 0.0578 \\
+7 & 0.064745 & 0.021583 & 21.3634 & 0.0422 \\
+8 & 0.064910 & 0.026419 & 21.6428 & 0.0488 \\
+9 & 0.071102 & 0.091058 & 21.9259 & 0.0751 \\
+10 & 0.074946 & 0.002792 & 21.3258 & 0.0410 \\
+11 & 0.076709 & 0.079474 & 21.5303 & 0.0476 \\
+12 & 0.092635 & 0.077395 & 21.6995 & 0.0513 \\
+13 & 0.098343 & 0.054854 & 21.6542 & 0.0499 \\
+14 & 0.099332 & 0.093711 & 21.8802 & 0.0577 \\
+\end{tabular}
+\end{center}

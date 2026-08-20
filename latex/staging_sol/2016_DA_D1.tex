@@ -1,0 +1,175 @@
+% Official solution, 2016 DA examination pp. 1-8. The per-item marking
+% bullet lists and the half/full-credit tolerance tables are omitted per
+% transcription policy.
+
+\begin{description}
+\item[(D1.1)] Graph Number: D1.1.
+  % FIGURE NEEDED: model graph D1.1 — data points with error bars plotted in
+  % the period-acceleration plane, a (m s^-2) vs P (mus), scale 1 cm = 0.1 mus
+  % (x), 1 cm = 0.2 m s^-2 (y), origin (7587.7, 0.0), with the best-fit
+  % ellipse of (D1.2) drawn through them; 2016 DA solutions, page 2 of 20.
+
+\item[(D1.2)] See above (the best-fit ellipse is drawn on graph D1.1).
+
+\item[(D1.3)] Values are determined from lengths of axes of ellipse and
+  mid-point of $P$-axis. Error margins may be determined by estimating
+  extreme ellipses covering the points with errorbars. Any reasonable method
+  of estimating error margins will be accepted.
+  \begin{align*}
+    2P_t &= (1.34 \pm 0.04)\,\mu\mathrm{s}
+      \quad [(13.4 \pm 0.4)\ \mathrm{cm\ on\ graph}] \\
+    P_t &= (0.67 \pm 0.02)\,\mu\mathrm{s}
+  \end{align*}
+  \hfill(2.0)
+  \[ P_0 = (7588.48 \pm 0.02)\,\mu\mathrm{s} \]
+  \hfill(2.0)
+  \begin{align*}
+    2a_t &= (3.42 \pm 0.12)\ \mathrm{m\,s^{-2}}
+      \quad [(17.1 \pm 0.6)\ \mathrm{cm\ on\ graph}] \\
+    a_t &= (1.71 \pm 0.06)\ \mathrm{m\,s^{-2}}
+  \end{align*}
+  \hfill(3.0)
+
+\item[(D1.4)] We can easily recover the orbital period ($P_B$) and the radius
+  of the orbit ($r$) in a circular orbit:
+  \[ a_t = \frac{4\pi^2}{P_B^2}\,r
+     \qquad \therefore\ r = \frac{P_B^2 a_t}{4\pi^2} \]
+  \hfill(1.0)
+  \[ P_t = \frac{2\pi P_0}{P_B} \times \frac{r}{c}
+     = \frac{2\pi P_0}{P_B c} \times \frac{P_B^2 a_t}{4\pi^2}
+     = \frac{P_0 P_B a_t}{2\pi c} \]
+  \[ \therefore\ P_B = \frac{P_t}{P_0}\,\frac{2\pi c}{a_t} \]
+  \hfill(1.0)
+  \[ r = \frac{a_t}{4\pi^2}
+     \left( \frac{P_t}{P_0}\,\frac{2\pi c}{a_t} \right)^2 \]
+  \hfill(1.0)
+  \[ \therefore\ r = \left( \frac{P_t}{P_0} \right)^2 \frac{c^2}{a_t} \]
+  \hfill(1.0)
+
+  Alternative algebraic routes accepted.
+
+\item[(D1.5)]
+  \[ P_B = \frac{P_t}{P_0}\,\frac{2\pi c}{a_t}
+     = \frac{0.67}{7588.48} \times
+       \frac{2\pi \times 2.998 \times 10^8}{1.71}\ \mathrm{s}
+     = 96\,260\ \mathrm{s} = 1.125\,70\ \mathrm{d} \]
+  \hfill(1.0)
+  \begin{align*}
+    \Delta P_B &= P_B \sqrt{
+      \left( \frac{\Delta P_t}{P_t} \right)^2
+      + \left( \frac{\Delta P_0}{P_0} \right)^2
+      + \left( \frac{\Delta a_t}{a_t} \right)^2 } \\
+    &= 1.12570 \times \sqrt{
+      \left( \frac{0.02}{0.67} \right)^2
+      + \left( \frac{0.02}{7588.48} \right)^2
+      + \left( \frac{0.06}{1.71} \right)^2 }\ \mathrm{d} \\
+    &= 1.12570 \times 0.0461 \simeq 0.052\ \mathrm{d}
+  \end{align*}
+  \hfill(1.0)
+  \[ \therefore\ P_B = (1.13 \pm 0.05)\ \mathrm{d} \]
+  \hfill(1.0)
+  \[ r = \left( \frac{P_t}{P_0} \right)^2 \frac{c^2}{a_t}
+     = \left( \frac{0.67}{7588.48} \right)^2 \times
+       \frac{\left( 2.998 \times 10^8 \right)^2}{1.71}\ \mathrm{m} \]
+  \[ \therefore\ r = 4.097\,39 \times 10^8\ \mathrm{m}
+     = 2.738\,90 \times 10^{-3}\ \mathrm{AU} \]
+  \hfill(1.0)
+  \begin{align*}
+    \Delta r &= r \sqrt{
+      \left( \frac{2\Delta P_t}{P_t} \right)^2
+      + \left( \frac{2\Delta P_0}{P_0} \right)^2
+      + \left( \frac{\Delta a_t}{a_t} \right)^2 } \\
+    &= 2.738\,90 \times 10^{-3} \times \sqrt{
+      \left( \frac{2 \times 0.02}{0.67} \right)^2
+      + \left( \frac{2 \times 0.02}{7588.48} \right)^2
+      + \left( \frac{0.06}{1.71} \right)^2 }\ \mathrm{AU} \\
+    &= 2.738\,90 \times 10^{-3} \times 0.069\,25\ \mathrm{AU}
+      \simeq 0.19 \times 10^{-3}\ \mathrm{AU}
+  \end{align*}
+  \hfill(1.0)
+  \[ r = (2.74 \pm 0.19) \times 10^{-3}\ \mathrm{AU} \]
+  \hfill(1.0)
+
+  Errors in $P_B$ and $r$ can be also estimated as maximum possible (worst
+  case) error. In such case, errors would be about 1.5 times the standard
+  error calculated above ($\delta P_B = 0.07$, $\delta r = 0.25$).
+
+\item[(D1.6)] Using these newly determined orbital parameters, we can
+  calculate the angular orbital phase for each data point, i.e., for each
+  pair of acceleration and period measured $(P, a)$.
+  \[ \varphi = \tan^{-1}\left( \frac{-a}{a_t}\,
+     \frac{P_t}{P - P_0} \right) \]
+  Care has to be taken to choose the value of the phase from among $\varphi$,
+  $\pi \pm \varphi$, $2\pi - \varphi$, depending on the sign of $\cos\varphi$
+  and $\sin\varphi$.
+
+  \begin{center}
+  \begin{tabular}{ccccc}
+    \hline
+    Sr. no. & $T$ (tMJD) & $P$ ($\mu$s) & $a$ ($\mathrm{m\,s^{-2}}$)
+      & $\varphi$ \\
+    \hline
+    1 & 5740.654 & 7587.8889 & $-0.92$ & $148.62^\circ$ \\
+    4 & 5746.675 & 7588.5810 & $+1.67$ & $278.77^\circ$ \\
+    6 & 5983.932 & 7587.8552 & $-0.44$ & $164.57^\circ$ \\
+    8 & 6040.857 & 7589.1350 & $+0.00$ & $0.00^\circ$ \\
+    9 & 6335.904 & 7589.1358 & $+0.00$ & $0.00^\circ$ \\
+    \hline
+  \end{tabular}
+  \end{center}
+
+\item[(D1.7a)]
+  \[ \frac{T_1 - T_0}{P_B} = \frac{\varphi_1}{2\pi}
+     \;\Rightarrow\; T_0 = T_1 - \frac{\varphi_1}{2\pi}\,P_B \]
+  \hfill(1.0)
+  \begin{align*}
+    T_0 &= 5740.654 - \frac{148.62^\circ}{360^\circ}
+      \times 1.12570\ \mathrm{tMJD} \\
+    T_0 &= 5740.189\ \mathrm{tMJD}
+  \end{align*}
+  \hfill(1.0)
+
+\item[(D1.7b)]
+  \[ T_{\mathrm{calc}} = T_0
+     + \left( n + \frac{\varphi}{360^\circ} \right) P_B \]
+  where $n$ = Integer part of $[(T - T_0)/P_B]$.
+
+  \begin{center}
+  \begin{tabular}{cccccc}
+    \hline
+    Sr. No. & $T$ (tMJD) & $\varphi$ & $n$ & $T_{\mathrm{calc}}$ (MJD)
+      & $T_{\mathrm{O-C}}$ (days) \\
+    \hline
+    1 & 5740.654 & $148.62^\circ$ & 0   & 5740.654 & $0.000$ \\
+    4 & 5746.675 & $278.77^\circ$ & 5   & 5746.689 & $-0.014$ \\
+    6 & 5983.932 & $164.57^\circ$ & 216 & 5983.855 & $0.077$ \\
+    8 & 6040.857 & $0.00^\circ$   & 267 & 6040.751 & $0.106$ \\
+    9 & 6335.904 & $0.00^\circ$   & 529 & 6335.684 & $0.220$ \\
+    \hline
+  \end{tabular}
+  \end{center}
+
+\item[(D1.7c)] Graph Number: D1.7.
+  % FIGURE NEEDED: model graph D1.7 — T_(O-C) (days) plotted against cycle
+  % number n for the five epochs, with linear best fit; 2016 DA solutions,
+  % page 6 of 20.
+
+\item[(D1.7d)] A linear fit to the plot of $T_{\mathrm{O-C}}$ vs $n$ gives
+  the offset of period per cycle (slope) and the shift in the zero-phase
+  point (intercept). \hfill(2.0)
+
+  From a linear fit,
+  \begin{align*}
+    \mathrm{Slope} &= 0.000\,43\ \mathrm{d}/n \\
+    \mathrm{Intercept} &= -0.010\ \mathrm{d}
+  \end{align*}
+  \hfill(3.0)
+  \[ T_{0,r} = 5740.189 - 0.010 = 5740.179\ \mathrm{tMJD} \]
+  \hfill(1.0)
+  \begin{align*}
+    P_{B,r} &= (1.12570 + 0.00043)\ \mathrm{d} \\
+            &= 1.126\,13\ \mathrm{d} \\
+    P_B &= 1.1261\ \mathrm{d}
+  \end{align*}
+  \hfill(1.0)
+\end{description}

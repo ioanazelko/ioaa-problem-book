@@ -1,0 +1,130 @@
+\begin{description}
+\item[(a)] The plate scale is simply the angular size of the image per unit
+length as projected at the focal plane. Hence, for small angles,
+\[ \tan\theta_i = \frac{\ell_i}{f} \approx \theta_i \]
+\hfill(1.0 points)\\
+where $\theta_i$ is the angular size of the image, $\ell_i$ is the unit
+length, and $f$ is the focal length of the telescope, which is given by
+($D \times$ F-ratio). \hfill(0.5 points)
+\begin{gather*}
+\theta_i = \frac{1\,\mathrm{mm}}{5 \times 305\,\mathrm{mm}}
+  = 6.56 \times 10^{-4}\,\mathrm{rad} = 2.254' \\
+PS \approx 2.25\,\mathrm{arcmin/mm}
+\end{gather*}
+\hfill(1.5 points)
+
+\item[(b)] Given the plate scale, the diameter of the image on the focal
+plane is
+\[ d_{GC} = \frac{72.0''}{2.25' \times 60} = 0.532\,\mathrm{mm} \]
+\hfill(1.0 points)
+
+This implies that the area covered by the image is
+\[ S_{GC} = \frac{\pi}{4} \cdot d_{GC}^2 = 0.223\,\mathrm{mm}^2 \]
+which can be divided by the area of a single pixel to estimate the pixel
+coverage
+\[ n_p = \frac{0.223}{(3.8 \times 10^{-3})^2}
+   \approx 15\,400~\text{pixels} \]
+\hfill(2.0 points)
+
+Since there are other methods to estimate such quantity, the accepted range
+is
+\[ 15300 \leqslant n_p \leqslant 15600 \]
+\hfill(1.0 points)
+
+\item[(c)] The signal-to-noise ratio is given by the expression
+\begin{align*}
+S/N &= \frac{N_{GC}}
+  {\sqrt{\sigma_{GC}^2 + \sigma_{sky}^2 + \sigma_{RON}^2 + \sigma_{DN}^2}} \\
+  &= \frac{N_{GC}}
+  {\sqrt{N_{GC} + N_{sky} + n_p \cdot RON^2 + n_p \cdot DN \cdot t}}
+\end{align*}
+\hfill(3.0 points)\\
+where,
+\[
+\begin{cases}
+N_{GC} \rightarrow~\text{Total Source Count} \\
+\sigma_{GC} = \sqrt{N_{GC}} \rightarrow~\text{Poisson Noise} \\
+N_{sky} \rightarrow~\text{Total Sky Count} \\
+\sigma_{sky} = \sqrt{N_{sky}} \rightarrow~\text{Sky Noise} \\
+\sigma_{RON} = \sqrt{n_p \cdot 1 \cdot RON^2}
+  \rightarrow~\text{Readout Noise} \\
+\sigma_{DN} = \sqrt{n_p \cdot DN \cdot t} \rightarrow~\text{Dark Noise}
+\end{cases}
+\]
+
+The noise values associated with the CCD operation can be easily calculated:
+\[
+\begin{cases}
+\sigma_{RON}^2 = 15400 \times 5^2 = 385000~\text{counts} \\
+\sigma_{DN}^2 = 15400 \times 6 \times \dfrac{1}{60} \times 15
+  = 23100~\text{counts}
+\end{cases}
+\]
+\hfill(2.0 points)
+
+Now, the apparent visual magnitude of the globular cluster must be
+calculated,
+\[ V_{GC} - m_V = -2.5\log\left(\frac{\Omega_{GC}}{1}\right) \]
+with $\Omega_{GC}$ being the solid angle subtended by the globular cluster,
+\[ \Omega_{GC} = \pi \cdot \left(\frac{\theta}{2}\right)^2
+   = \pi \times \left(\frac{72.0''}{2}\right)^2
+   = 4071.5\,\mathrm{arcsec}^2 \]
+\hfill(1.0 points)
+
+Hence,
+\[ V_{GC} = 20.6 - 2.5\log(4071.5) = 11.6\,\mathrm{mag} \]
+\hfill(1.0 points)\\
+and the associated flux of photons can now be evaluated using the
+0-magnitude as a reference:
+\begin{align*}
+V_{GC} - V_0 &= -2.5\log\left(\frac{\phi_{GC}}{\phi_0}\right) \\
+\phi_{GC} &= \phi_0 \cdot 10^{-V_{GC}/2.5} \\
+  &\approx 0.234\,\mathrm{counts/nm/cm^2/s}
+\end{align*}
+\hfill(1.0 points)
+
+With the calculated parameters, the total source count is:
+\begin{align*}
+N_{GC} &= \eta \cdot \phi_{GC} \cdot \frac{\pi}{4} \cdot D^2
+  \cdot \Delta\lambda \cdot t \\
+N_{GC} &= 0.80 \times 0.234 \times \frac{\pi}{4} \times (30.5)^2
+  \times 88.0 \times 15 \\
+  &= 180\,540~\text{counts}
+\end{align*}
+\hfill(1.0 points)
+
+By referring to the signal-to-noise ratio expression and substituting the
+values,
+\begin{align*}
+225 &= \frac{180540}{\sqrt{180540 + N_{sky} + 385000 + 23100}} \\
+N_{sky} &= \left(\frac{180540}{225}\right)^2 - 385000 - 180540 - 23100 \\
+N_{sky} &= 55250~\text{counts}
+\end{align*}
+\hfill(1.0 points)
+
+The inverse procedure to determine the Total Source Count is taken:
+\begin{align*}
+\phi_{sky} &= \frac{N_{sky}}
+  {\eta \cdot \frac{\pi}{4} \cdot D^2 \cdot \Delta\lambda \cdot t} \\
+  &= \frac{55250}
+  {0.80 \times \frac{\pi}{4} \times 30.5^2 \times 88.0 \times 15} \\
+\phi_{sky} &= 7.16 \times 10^{-2}\,\mathrm{counts/nm/cm^2/s}
+\end{align*}
+\hfill(1.0 points)\\
+which implies
+\[ V_{sky} = V_0 - 2.5\log\left(\frac{\phi_{sky}}{\phi_0}\right)
+   = 12.9\,\mathrm{mag} \]
+\hfill(1.0 points)\\
+and finally, since $\Omega_{sky} = \Omega_{GC}$
+\begin{align*}
+m_{sky} &= V_{sky} + 2.5\log\left(\frac{\Omega_{sky}}{1}\right) \\
+  &= 12.8 + 2.5\log(4071.5) \\
+% sic: the source prints 12.8 here although V_sky = 12.9 mag above.
+m_{sky} &= 21.9\,\mathrm{mag/arcsec^2}
+\end{align*}
+\hfill(1.0 points)
+
+Considering the accepted range of pixels from the previous item, the
+accepted answers for the brightness of the sky fall within the interval
+\[ 21.7 \leqslant m_{sky} \leqslant 22.1\,\mathrm{mag/arcsec^2} \]
+\end{description}

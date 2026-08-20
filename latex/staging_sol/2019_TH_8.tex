@@ -1,0 +1,97 @@
+\begin{description}
+\item[a)] The total power of the star in the given lambda:
+  \begin{equation*}
+  I(\lambda, T, R) = C_1 R^2 F(\lambda, T)
+    = C_1 R^2 \frac{1}{\lambda^5}
+      \exp\left(-\frac{C_b}{\lambda T}\right) \tag{8.1}
+  \end{equation*}
+  \hfill(1 p)
+
+  Converting to magnitudes:
+  \begin{equation*}
+  m(\lambda, T, R) = -2.5\log I(\lambda, T)
+    = C_2 + 12.5\log\lambda - 5\log R
+      - 2.5\log e\,\frac{C_b}{\lambda T} \tag{8.2}
+  % sic: expanding -2.5 log I gives +2.5 log e C_b/(lambda T); the sign slip
+  % is absorbed by the absolute value in (8.3).
+  \end{equation*}
+  \hfill(1 p)
+
+  Then:
+  \begin{equation*}
+  A(\lambda) = \left|m(\lambda, T_{\mathrm{max}})
+    - m(\lambda, T_{\mathrm{min}})\right|
+    = \frac{2.5\log e\,C_b}{\lambda}
+      \left(\frac{1}{T_{\mathrm{min}}}
+      - \frac{1}{T_{\mathrm{max}}}\right) \tag{8.3}
+  \end{equation*}
+  \hfill(1 p)
+
+  Thus:
+  \begin{equation*}
+  \frac{A(\lambda_1)}{A(\lambda_2)} = \frac{\lambda_2}{\lambda_1} \tag{8.4}
+  \end{equation*}
+  \hfill(1 p)
+
+  With numerical values:
+  \[ \frac{A(\lambda_1)}{A(\lambda_2)}
+     = \frac{2\times 10^{-6}\ \mathrm{m}}{5\times 10^{-7}\ \mathrm{m}}
+     = 4 \]
+  \hfill(1 p)
+\item[b)] From Eq.\ (8.3):
+  \begin{equation*}
+  A_{\mathrm{max}}(\lambda_1) = \frac{2.5\log e\,C_b}{\lambda_1}
+    \left(\frac{1}{T_{\mathrm{min}}}
+    - \frac{1}{T_{\mathrm{max}}}\right) \tag{8.5}
+  \end{equation*}
+  \hfill(2 p)
+
+  With numerical values:
+  \[ A_{\mathrm{max}}(\lambda_1)
+     = \frac{2.5\log e\times 0.0144\ \mathrm{m\,K}}
+            {5\times 10^{-7}\ \mathrm{m}}
+       \left(\frac{1}{6000\ \mathrm{K}}
+       - \frac{1}{7400\ \mathrm{K}}\right)
+     = 1^{\mathrm{m}} \]
+  \hfill(1 p)
+\item[c)] If we ignore the temperature variation, then:
+  \begin{equation*}
+  A(\lambda) = \left|m(\lambda, R_{\mathrm{max}})
+    - m(\lambda, R_{\mathrm{min}})\right|
+    = 5\log\frac{R_{\mathrm{max}}}{R_{\mathrm{min}}} \tag{8.6}
+  \end{equation*}
+  \hfill(2 p)
+
+  With numerical values:
+  \[ A(\lambda) = 5\log\frac{1.05}{0.9} = 0.33^{\mathrm{m}} \]
+  \hfill(1 p)
+\item[d)] From Eq.\ (8.4):
+  \begin{equation*}
+  A_{\mathrm{max}}(\lambda_2)
+    = A_{\mathrm{max}}(\lambda_1)\,\frac{\lambda_1}{\lambda_2}
+    = 1^{\mathrm{m}}\times\frac{1}{4} = 0.25^{\mathrm{m}} \tag{8.7}
+  \end{equation*}
+  \hfill(1 p)
+
+  Similarly:
+  \[ A_{\mathrm{min}}(\lambda_1)
+     = \frac{2.5\log e\times 0.0144\ \mathrm{m\,K}}
+            {5\times 10^{-7}\ \mathrm{m}}
+       \left(\frac{1}{6100\ \mathrm{K}}
+       - \frac{1}{6900\ \mathrm{K}}\right)
+     = 0.6^{\mathrm{m}} \]
+  \hfill(2 p)
+
+  and
+  \[ A_{\mathrm{min}}(\lambda_2)
+     = A_{\mathrm{min}}(\lambda_1)\,\frac{\lambda_1}{\lambda_2}
+     = 0.6^{\mathrm{m}}\times\frac{1}{4} = 0.15^{\mathrm{m}} \]
+  \hfill(2 p)
+
+  At $\lambda_1 = 500$\,nm the amplitude changes by
+  $1^{\mathrm{m}} - 0.6^{\mathrm{m}} = 0.4^{\mathrm{m}}$, while at
+  $\lambda_2 = 2000$\,nm it is reduced to
+  $0.25^{\mathrm{m}} - 0.15^{\mathrm{m}} = 0.1^{\mathrm{m}}$, that is a
+  significant difference.
+\item[e)] B and C \hfill(4 p)
+\end{description}

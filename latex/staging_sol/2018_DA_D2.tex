@@ -1,0 +1,162 @@
+% Official solution, 2018 DA solutions pp. 10-14. The grading-standard
+% paragraphs for the figures and per-item mark breakdowns are omitted per
+% transcription policy; the source's equation numbers (15)-(35) are kept.
+
+\noindent\textbf{2.1. APOGEE RV Measurements} \hfill[15 marks]
+
+\begin{description}
+\item[(D2.1.1)] \hfill[6 marks]\\
+  Table 3 gives 3 epochs of RV measurements from MJD 56204 to 56233, and the
+  maximum acceleration occurred during the first and the second observation:
+  \[ a_{\max} = \frac{RV_2 - RV_1}{t_2 - t_1}
+     = 2.89\ \mathrm{km/(s \cdot d)} \tag*{(15)} \]
+
+\item[(D2.1.2)] \hfill[9 marks]\\
+  An easy approach to estimate the companion mass is consider the force
+  exerted on the star:
+  \[ F = M_1 a = \frac{G M_1 M_2}{r^2}
+     \;\Rightarrow\; M_2 = \frac{a r^2}{G} \tag*{(16)} \]
+  Therefore, we need to estimate $a$ and $r$ properly. Here we can assume the
+  acceleration of the primary star as $a = a_{\max}$, and the distance
+  between the two star $r = (v_2 - v_1) \cdot (t_2 - t_1)/2$, and we can
+  derive:
+  \[ M_2 \sim \frac{(v_2 - v_1)^3 (t_2 - t_1)}{4G}
+     = 1.5\ M_\odot \tag*{(17)} \]
+  (Note: This is only a rough estimate. If examinees derive a $M_2$ within
+  the range of $0.5\,M_\odot \sim 3\,M_\odot$ with clear and proper
+  assumption, then his/her solution should be considered correct.)
+\end{description}
+
+\medskip
+\noindent\textbf{2.2. TRES RV Measurements} \hfill[25 marks]
+
+\begin{description}
+\item[(D2.2.1)] \hfill[14 marks]\\
+  Given the data in Table 4, we can plot out all the TRES RV measurements,
+  with a sinusoidal function connecting all the points:
+  % FIGURE NEEDED: Figure 4 — TRES radial velocity (km/s) vs MJD
+  % (58006-58144) with the best-fit sinusoid through the eleven points;
+  % 2018 DA solutions, page 11 of 14.
+
+  The best-fit parameters of period an RV semi-amplitude are:
+  \[ P_{\mathrm{orb}} = 83.26 \pm 0.02\ \mathrm{d};\quad
+     K = 45.02 \pm 0.03\ \mathrm{km/s} \tag*{(18)} \]
+  (error bars are reported here for benefit of jury. They do not carry any
+  points)
+
+  Answers within the range of $P_{\mathrm{orb}} \in [81, 85]$ d and
+  $K \in [44, 46]$ km/s could be considered correct.
+
+\item[(D2.2.2)] \hfill[4 marks]\\
+  The orbital radius satisfies that:
+  \[ 2\pi R_{\mathrm{orb}} = P_{\mathrm{orb}} \cdot
+     \frac{K}{\sin i_{\mathrm{orb}}}
+     \;\Rightarrow\;
+     R_{\mathrm{orb}} > \frac{P_{\mathrm{orb}} K}{2\pi}
+     = 74\ R_\odot = 0.34\ \mathrm{AU} \tag*{(19)} \]
+
+\item[(D2.2.3)] \hfill[7 marks]\\
+  The mass function of a binary system is defined as:
+  \[ f(M_1, M_2) = \frac{M_2^3 \sin^3 i_{\mathrm{orb}}}
+     {(M_1 + M_2)^2} \tag*{(20)} \]
+  This mass function is actually derived from Newton's law (force balance):
+  \[ \frac{G M_1 M_2}{D^2}
+     = M_1 \left( \frac{2\pi}{P} \right)^2 R_{\mathrm{orb}} \tag*{(21)} \]
+  And the relation between orbital radius and binary separation ($D$):
+  \[ R_{\mathrm{orb}} = \frac{M_2}{M_1 + M_2}\,D
+     = \frac{P_{\mathrm{orb}} K}{2\pi \sin i_{\mathrm{orb}}} \tag*{(22)} \]
+  Therefore, Equation 20 could be rewritten as:
+  \[ f(M_1, M_2) = \frac{M_2^3 \sin^3 i_{\mathrm{orb}}}{(M_1 + M_2)^2}
+     = \frac{K^3 P_{\mathrm{orb}}}{2\pi G}
+     \approx 0.79\ M_\odot \tag*{(23)} \]
+\end{description}
+
+\medskip
+\noindent\textbf{2.3. Stellar Parameters} \hfill[35 marks]
+
+\begin{description}
+\item[(D2.3.1)] \hfill[16 marks]\\
+  The first (and the most direct) thing we could solve from the given
+  parameter table is the distance of this system, which is:
+  \[ d = \frac{1}{\pi} = 3.68\ \mathrm{kpc} \tag*{(24)} \]
+  And the uncertainty of $d$ should be:
+  \[ \frac{\Delta d}{d}
+     = \sqrt{ \left( -\frac{\Delta\pi}{\pi} \right)^2 }
+     \;\Rightarrow\;
+     \Delta d = \frac{\Delta\pi}{\pi} \cdot d
+     = 0.66\ \mathrm{kpc} \tag*{(25)} \]
+  Therefore, the luminosity of the star should be:
+  \[ L_1 = 4\pi d^2 \cdot F = 464\ L_\odot \tag*{(26)} \]
+  And the uncertainty is:
+  \[ \frac{\Delta L_1}{L_1}
+     = \sqrt{ \left( \frac{\Delta F}{F} \right)^2
+       + \left( \frac{2\Delta d}{d} \right)^2 }
+     \;\Rightarrow\; \Delta L_1 = 173\ L_\odot \tag*{(27)} \]
+  By using Stefan-Boltzmann law, we can calculate the radius of the star:
+  \[ R_1 = \sqrt{ \frac{L_1}{\sigma T^4 \cdot 4\pi} }
+     = 30\ R_\odot \tag*{(28)} \]
+  With an uncertainty of:
+  \[ \Delta R_1 = R_1 \cdot \sqrt{
+       \left( -2\,\frac{\Delta T}{T} \right)^2
+       + \left( \frac{1}{2}\,\frac{\Delta L_1}{L_1} \right)^2 }
+     = R_1 \cdot \sqrt{
+       \left( -2\,\frac{\Delta T}{T} \right)^2
+       + \left( \frac{1}{2}\,\frac{\Delta F}{F} \right)^2
+       + \left( \frac{\Delta d}{d} \right)^2 }
+     = 6\ R_\odot \tag*{(29)} \]
+  Combined with the observed rotational velocity, we can calculate the sine
+  of inclination angle:
+  \[ \sin i = \frac{P \cdot v\sin i}{2\pi R_1} = 0.77 \tag*{(30)} \]
+  And the uncertainty should be:
+  \[ \Delta \sin i = \sin i \cdot \sqrt{
+       \left( -\frac{\Delta R_1}{R_1} \right)^2
+       + \left( \frac{\Delta (v\sin i)}{v\sin i} \right)^2 }
+     = 0.15 \tag*{(31)} \]
+  Now we can calculate the mass $M_1$. First of all, we need to translate the
+  surface gravity from log scale to linear scale:
+  \[ g = 10^{\log g} = 1.58\ \mathrm{m/s^2} \tag*{(32)} \]
+  With an uncertainty of:
+  \[ \Delta g = g \ln 10 \cdot \Delta(\log g)
+     = 0.36\ \mathrm{m/s^2} \tag*{(33)} \]
+  Therefore, $M_1$ should be:
+  \[ M_1 = \frac{g R_1^2}{G} = 5.2\ M_\odot \tag*{(34)} \]
+  And the uncertainty is:
+  \[ \Delta M_1 = M_1 \sqrt{
+       \left( \frac{\Delta g}{g} \right)^2
+       + \left( 2\,\frac{\Delta R_1}{R_1} \right)^2 }
+     = 2.3\ M_\odot \tag*{(35)} \]
+
+\item[(D2.3.2)] \hfill[4 marks]\\
+  From the temperature and the luminosity, we can find that the primary star
+  should be a (3) Red Giant.
+
+\item[(D2.3.3)] \hfill[10 marks]\\
+  Since we have derived the binary system mass function, with a given range
+  of $M_1$, we can calculate the corresponding range of $M_2$ and hence make
+  a plot of $M_2 - M_1$ (Figure 5).
+  % FIGURE NEEDED: Figure 5 — M_2 vs M_1 (both in solar masses, 0-8 and
+  % 0-10), three mass-function curves for sin i = 0.77 and sin i +/- Delta
+  % sin i, vertical shaded band M_1 = 2.9-7.5 M_sun, horizontal dashed lines
+  % at the white-dwarf (1.4 M_sun) and neutron-star (2.5 M_sun) maximum
+  % masses; 2018 DA solutions, page 14 of 14.
+
+\item[(D2.3.4)] \hfill[5 marks]\\
+  The vertical shadowed zone should start at $2.9\,M_\odot$ and end at
+  $7.5\,M_\odot$, while the maximum mass of white dwarf is $1.4\,M_\odot$ and
+  the maximum mass of neutron star should be around $2.4 \sim 2.6\,M_\odot$
+  (here we adopt $2.5\,M_\odot$ on the plot). From Figure 5, we can readout
+  that the possible mass of the companion is roughly
+  $6^{+4}_{-2.5}\,M_\odot$. Since we didn't receive any optical radiation
+  from the companion, as well as $M_2$ has already exceeded the maximum mass
+  of neutron star, the invisible companion in this binary system could be a
+  \textbf{stellar-mass black hole}, or some unknown compact object that
+  current theory hasn't predicted.
+
+  (Note: Examinee's answer is not required to give an uncertainty range of
+  $M_2$: if the answer is within the possible range of
+  $6^{+4}_{-2.5}\,M_\odot$, the answer will be considered correct. In
+  addition to this, examinee don't need to include ``unknown compact
+  object'' in his/her answer while addressing the possible type of the
+  companion: an answer like ``black hole'' or ``stellar-mass black hole'' is
+  enough for receiving full grades.)
+\end{description}

@@ -1,0 +1,72 @@
+2017	TH	T1	The Large Magellanic Cloud in Phuket	10	1	culmination date from sidereal time	-
+2017	TH	T2	Earth's Transit Zone	10	9	Earth-transit zone geometry	1
+2017	TH	T3	The Milky Way's Distant Outer Arm	10	11	Galactic rotation, CO radial velocity	-
+2017	TH	T4	21-cm HI galaxy survey	10	6	HI flux vs detection limit, max redshift	13
+2017	TH	T5	A Synchronous Satellite	10	1	geosynchronous satellite topocentric geometry	2
+2017	TH	T6	Supernova 1987A	15	6	magnitude decay, limiting magnitude	5
+2017	TH	T7	Life on Other Planets	20	9	habitability, MS lifetime, RV detection	7
+2017	TH	T8	The Star of Bethlehem	20	3	Jupiter-Saturn great conjunction period	1
+2017	TH	T9	Galactic Outflow	20	12	galaxy rotation, escape velocity, outflow	2
+2017	TH	T10	GOTO	25	5	plate scale, CCD noise, SNR, exposure	10
+2017	TH	T11	Mass of the Local Group	50	12	MW-M31 timing argument	2
+2017	TH	T12	Shipwreck	40	1	latitude/longitude from star alt-az	-
+2017	TH	T13	Exomoon	60	9	exomoon TTV/TDV, Hill sphere, Roche limit	2
+2017	DA	D1	Calibrating the distance ladder to the LMC	75	12	Cepheid PL/Wesenheit, LMC distance	8
+2017	DA	D2	The search for dark matter	75	13	LSB rotation curve, DM halo profile fit	12
+2018	TH	T1	Super Luminal Galaxies	10	13	superluminal recession true/false	-
+2018	TH	T2	Distance	10	1	parallax error statistics, distance estimators	-
+2018	TH	T3	Atmospheric Refraction	10	1	sunrise refraction, disk distortion	-
+2018	TH	T4	Height of a Hill	10	1	sunset delay, horizon dip, hill height	-
+2018	TH	T5	Sidereal Time	10	1	date when sidereal midnight occurs twice	-
+2018	TH	T6	Observe the Sun with FAST	25	6	Rayleigh-Jeans solar radio flux	5
+2018	TH	T7	Sunspot	25	4	sunspot magnetic pressure equilibrium	-
+2018	TH	T8	A Possible Dark Matter Deficient Galaxy	25	12	NGC1052-DF2 dynamical vs stellar mass	13
+2018	TH	T9	Radio Galaxy	25	5	radiometer equation, integration time	12
+2018	TH	T10	Vega and Altair	75	1	angular separation, proper motions, 3-D encounter	-
+2018	TH	T11	Thermal History of the Universe	75	13	Friedmann equation, CMB, equality	-
+2018	DA	D1	Dust and Young Stars in Star-forming Galaxies	75	12	UV slope, IRX-beta dust attenuation, CR7	6
+2018	DA	D2	Compact Object in a Binary System	75	8	RV curve, mass function, compact companion	10
+2019	TH	1	Famous astronomical events	10	3	chronological ordering of events	-
+2019	TH	2	Deflection of radio photons in the gravitational field of solar system bodies	10	10	GR light deflection by Jupiter/Moon	-
+2019	TH	3	The supermassive black hole in the centre of Milky Way Galaxy and M87	10	10	EHT resolving BH shadow	5
+2019	TH	4	Improving a common reflecting telescope	10	5	mirror reflectivity, limiting-magnitude gain	-
+2019	TH	5	Cosmic Microwave Background Oven	10	6	blackbody CMB absorption, heating	13
+2019	TH	6	The height of the chimney of Tiszaujvaros power plant	20	1	solar altitude from shadows at solstices	2
+2019	TH	7	Effect of sunspots on solar irradiance	20	4	solar constant with sunspot	-
+2019	TH	8	Amplitude variation of RR Lyrae stars	20	8	Blazhko effect, pulsation amplitude	6
+2019	TH	9	Distance of the Lagrangian point L2 of the Earth-Moon system	20	2	Earth-Moon L2 distance	-
+2019	TH	10	South to East to North	20	1	spherical-Earth closed path geography	-
+2019	TH	11	Identification of light curves of selected variable star types	25	8	light-curve type identification	-
+2019	TH	12	Distance to a Near-Earth Asteroid	25	1	two-site meridian parallax triangulation	3
+2019	TH	13	Distance to the Coma galaxy cluster	40	13	Hubble distance, virial mass, M/L	12
+2019	TH	14	Photographing a nanosatellite	60	5	cubesat magnitude, CCD detection, trailing	2
+2019	DA	1	Photometry and spectroscopy of Nova Del 2013	60	8	nova decline, MMRD distance, P Cygni	6
+2019	DA	2	Triply eclipsing hierarchical triple stellar system	90	8	triple-star eclipses, RV+ETV masses	-
+2020	TH	1	Astrophotography	10	5	camera FOV, pixel scale, star trails	1
+2020	TH	2	Flat Earth	10	3	flat-Earth equilibrium temperature	1
+2020	TH	3	Mirror	10	13	H0 from laser round-trip in expanding space	-
+2020	TH	4	Light Curves	20	8	eclipsing-binary light-curve changes	-
+2020	TH	5	HII region	20	11	Stromgren sphere, free-free emission	6
+2020	TH	6	Occultation of an X-ray Source	20	2	satellite-orbit occultation timing	1
+2020	TH	7	Radiant of a Meteor Shower	30	1	LST, great-circle radiant conversion	3
+2020	TH	8	Jupiter's Great Red Spot	30	3	GRS vorticity, spheroid curvature, Coriolis	-
+2020	DA	1	AGN	15	12	reverberation mapping, virial BH mass	10
+2020	DA	2	Minor Planet	50	2	orbit determination, Kepler elements	3
+2020	DA	3	Hypervelocity stars	55	11	HVS1 velocity, Galactic escape	7
+2021	TH	Q1	LIGO	5	14	BH-merger GW energy vs supernova	-
+2021	TH	Q2	Temperature of the Earth	10	3	Earth equilibrium temperature, greenhouse	-
+2021	TH	Q3	Mars	10	2	parabolic approach, braking burn	-
+2021	TH	Q4	ALMA - Calculating photons	10	5	photon rates, interferometer resolution	-
+2021	TH	Q5	Under Pressure	10	4	solar flux-tube magnetic vs gas pressure	-
+2021	TH	Q6	Macondo and Melquiades	12	9	exoplanet RV, orbital radius and period	6
+2021	TH	Q7	Menkalinan (beta Aurigae)	13	8	spectroscopic binary masses, luminosities	-
+2021	TH	Q8	IOAA Logo	15	1	angular separation, ecliptic-equatorial Moon	-
+2021	TH	Q9	Pluto Satellites	15	2	tidal + centrifugal gravity on Charon	3
+2021	TH	Q10	Terrestrial Transit	15	9	transit duration geometry	2
+2021	TH	Q11	Minimum velocity of a projectile	15	2	minimum-energy ballistic ellipse	-
+2021	TH	Q12	Hodograph	15	2	velocity-space hodographs of orbits	-
+2021	TH	Q13	Lucy: The First Mission to the Trojan Asteroids	15	5	CCD radiation noise, excited pixels	-
+2021	TH	Q14	Formation of the Venus-2	35	2	comet-Venus collision, new orbit	3
+2021	TH	Q15	Cosmic String	55	13	cosmic-string gravity, photon gas, lensing	10
+2021	DA	DA1	Scaling Relations	75	13	Tully-Fisher fit, dark-to-baryonic masses	12
+2021	DA	DA2	Stars and Exoplanets	75	9	transit parameters, habitable zone	7

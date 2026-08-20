@@ -1,0 +1,74 @@
+\begin{description}
+\item[(4.1)] To get the number of photons per second we have to multiply the
+Flux by the area of the dish, to know the incoming energy per second, and
+divide this by the energy of a photon.
+
+For $\lambda_1 = 0.32\,mm = 3.2 \times 10^{-4}\,m$:
+
+Energy of a photon:
+\[ E = \frac{hc}{\lambda} = 6.2076 \times 10^{-22}\,Jules \]
+% sic: the source spells "Jules" for Joules.
+\hfill(1 point)
+
+Area of the disk:
+\[ A = \pi R^2 = 113\,m^2 \]
+
+Number of photons per second:
+\[ n_1 = \frac{flux \times A}{E} \approx 1820~photon/s \]
+\hfill(1 point)
+
+\item[(4.2)] Same calculation, just changing the energy of the individual
+photons:
+
+For $\lambda_2 = 8.6\,mm = 8.6 \times 10^{-3}\,m$
+
+Energy of a photon:
+\[ E = \frac{hc}{\lambda} = 2.31 \times 10^{-23}\,Jules \]
+\hfill(1 point)
+
+Number of photons per second:
+\[ n_2 = \frac{flux \times A}{E} \approx 48900~photon/s \]
+\hfill(1 point)
+
+\item[(4.3)] Spatial resolution of a single telescope is given by:
+\[ \theta = 1.22\,\frac{\lambda}{D} \]
+where $D$ represents the diameter of the dish. This value will be given in
+radians, so it must be converted to arcsec afterwards.
+
+For a frequency of 74.9\,GHz, the corresponding wavelength is:
+\[ \lambda = \frac{c}{f} = 4\,mm \]
+\hfill(1 point)
+
+And the spatial resolution:
+\[ \theta = 1.22\,\frac{4\,mm}{12\,m} \approx 83.9~arcsec \]
+\hfill(1 point)
+
+\item[(4.4)] For an array the correct expression is:
+\[ \theta = \frac{\lambda}{B} \quad\text{or}\quad
+   \theta = \frac{\lambda}{2B} \]
+\hfill(1 point)\\
+being $B$ the longest baseline in the array.
+
+So in this case:
+\[ \theta = \frac{4\,mm}{16\,km} \approx 0.0516~arcsec
+   \quad\text{or}\quad 0.0258~arcsec \]
+\hfill(1 point)
+
+\item[(4.5)] The SEFD is a characteristic flux of a system, found by
+dividing the characteristic energy associated to the so-called temperature of
+the antenna by its effective area:
+\[ SEFD = \frac{2kT_{sys}}{A_e} \]
+\hfill(1 point)
+
+As no additional information is given about the effective area, the actual
+physical area of the array should be used:
+\[ A = 54\left(\pi \times 6^2\right) + 12\left(\pi \times 3.5^2\right)
+   \approx 6569\,m^2 \]
+\hfill(0.5 points)
+
+Substituting the Boltzmann constant, the given temperatura of the antenna,
+and converting the answer to Jansky we get:
+% sic: "temperatura" appears in the source.
+\[ SEFD \approx 290.5~Jy \]
+\hfill(0.5 points)
+\end{description}

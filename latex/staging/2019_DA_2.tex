@@ -1,0 +1,152 @@
+HD 181068 was one of the brightest targets which was continuously observed
+during the almost 4-year-long primary mission of NASA's exoplanet-hunter
+Kepler space telescope. The spacecraft observed ${\approx}3-4 \times 10^{-3}$
+magnitude dimmings every 0.453 days. (Note: the even dimmings were slightly
+smaller amplitude than the odd ones.) Furthermore, additional 0.007
+magnitude, 2.3-day-long dimmings were detected every 22.7 days.
+
+The correct explanation of this very unusual photometric behaviour was given
+by Hungarian astronomers. They found that HD 181068 is a compact hierarchical
+triple stellar system seen almost edge-on.
+
+Hierarchical triple star systems consist of three stars; A, B, and C. Two of
+these stars (B and C) form an inner or close stellar binary system, whilst
+the outer component (star A) orbits at a distance from the inner system
+significantly larger (usually orders of magnitude) than the semi-major axis
+of the inner system. The schematic view of an example of a triple star system
+is illustrated in Fig.~2.1 (the schematic pole-on view of a hypothetical
+hierarchical triple stellar system; the black arrow is directed towards the
+Earth; the thick segments of the three orbits represent the stars' orbital
+arcs during an outer eclipse).
+
+Mathematically, the motion of a hierarchical triple system can be well
+approximated with two unperturbed Keplerian two-body motions; (1) Keplerian
+motion of the inner binary. (2) The centre of mass of this close binary and
+the third star revolves on a second Keplerian orbit, ``outer binary''.
+
+In this problem, stars B and C form a $P_1 = 0.9056768$-day-period eclipsing
+binary, while the centre of mass of these stars with star A forms the
+$P_2 = 45.4711$-day-period outer binary. As the orbital plane of this outer
+orbit is seen almost edge-on from the Kepler spacecraft (and from the Earth),
+during their revolution on the outer orbit, stars B and C eclipse not only
+each other, but also star A or, a half outer revolution later are eclipsed by
+it, causing the extra dimmings.
+
+\begin{description}
+\item[i.] \emph{Determination of the physical stellar sizes (and other
+  quantities) from the geometry of the eclipses}
+
+  These assumptions are used throughout this section: (1) both the inner and
+  outer orbits are exactly circular, (2) the orbital planes of the inner and
+  outer orbits are identical, and (3) this plane is seen exactly edge-on
+  (i.e.\ $i_1 = i_2 = 90^\circ$ and $i_{\mathrm{rel}} = 0^\circ$). Let's
+  consider the extra dimmings, which are central eclipses (i.e.\ either
+  occultations or transits -- annular eclipses), therefore, these events
+  have four contacts. In the case of an ordinary eclipsing binary (or of a
+  transiting exoplanet) at the times of the outer contacts the sky-projected
+  disks of the two objects connect with each other at one point from
+  outside, while at the inner contacts they approach each other from inside.
+  While this last statement is also valid for outer eclipses, the situation
+  becomes more complex, because instead of two, three stars are involved
+  into the eclipses. However, despite this fact, we can certainly define the
+  times of each contact from the light curve, and furthermore, we can also
+  decide explicitly which member of the inner binary is involved in a given
+  contact. (The other member, of course, is always star A.)
+
+  In the table below, the accurate times of some contacts of different
+  eclipses observed by the Kepler spacecraft, the contact types and the
+  stars are documented. Time is expressed in barycentric Julian Days (BJD).
+
+  \begin{center}
+  \begin{tabular}{cccccc}
+  event no. & contact & stars & BJD & $\varphi_1$ & $\varphi_2$ \\
+  1 & I & A, B & 2455476.1096 & & \\
+    & II & A, C & 2455476.4245 & & \\
+    & III & A, B & 2455477.9677 & & \\
+    & IV & A, B & 2455478.4722 & & \\
+  2 & I & A, B & 2455521.5217 & & \\
+  3 & III & A, C & 2455568.9434 & & \\
+  4 & I & A, C & 2455612.4733 & & \\
+    & III & A, C & 2455614.3571 & & \\
+  5 & III & A, B & 2455659.9241 & & \\
+    & IV & A, C & 2455660.2422 & & \\
+  \end{tabular}
+  \end{center}
+
+  \begin{description}
+  \item[(a)] Given that $T_{01} = 2455051.2361$ and
+    $T_{02} = 2455522.7318$ denote the time of an inferior conjunction of
+    the inner and outer binaries respectively (i.e.\ that time, when, from
+    the perspective of the observer, star C eclipses star B, and when star A
+    eclipses the centre of mass of stars B and C.)
+
+    Define
+    \[ \varphi_1(t) = \{(t - T_{01})/P_1\}, \quad \mbox{and} \quad
+       \varphi_2(t) = \{(t - T_{02})/P_2\} \]
+    as the photometric phases of the inner and outer binaries respectively.
+    $\{x\}$ denotes the decimal part of the real number $x$. If
+    $\{x\} < 0$, use $\{x\} + 1$ instead. Calculate the phases for the times
+    of the tabulated contact events and write the answers in the appropriate
+    columns of the table on the answer sheet. Round your answers to four
+    decimal places. \hfill[10\,p]
+  \item[(b)] Determine, whether star A, or the close binary (i.e.\ stars B
+    and C) were closer to the observer during each eclipsing event. Write
+    your answer in the table on the answer sheet. \hfill[5\,p]
+  \item[(c)] Using the table above, calculate (1) the dimensionless radius
+    of each star relative to the semi-major axis of the outer orbit
+    ($R_{\mathrm{A,B,C}}/a_2$), (2) the ratio of the semi-major axes of the
+    two orbits ($a_1/a_2$) and (3) the mass ratio of stars B and C
+    ($q_1 = m_{\mathrm{C}}/m_{\mathrm{B}}$). Hint: use at least four decimal
+    place accuracy in your calculations. Be cautious, it may not be possible
+    to use all theoretically possible contact combinations with a given
+    limited accuracy of time data. \hfill[30\,p]
+  \item[(d)] Based on the results obtained above, calculate the outer mass
+    ratio ($q_2 = m_{\mathrm{BC}}/m_{\mathrm{A}}$). \hfill[8\,p]
+  \end{description}
+
+\item[ii.] \emph{Dynamical determination of the stellar masses using radial
+  velocity (RV) and eclipse timing variations (ETV) measurements}
+
+  To obtain RV data, ground-based spectroscopic follow up observations were
+  carried out with four different instruments. Only the lines of star A were
+  detectable in all spectra. Plotting all the measurements against time, the
+  RV curve was nicely fitted in the following form:
+  \[ V_{\mathrm{rad,A}} = V_\gamma + K_{\mathrm{A}}\sin\phi_{\mathrm{RV}}, \]
+  where $V_\gamma$ is the systemic velocity and $K_{\mathrm{A}}$ is the
+  velocity amplitude:
+  \[ V_\gamma = 6.993 \pm 0.011\,\mathrm{km\,s^{-1}}, \quad
+     K_{\mathrm{A}} = 37.195 \pm 0.053\,\mathrm{km\,s^{-1}}, \]
+  \[ P_2 = 45.4711 \pm 0.0002\,\mathrm{d}, \quad
+     \phi_{\mathrm{RV}} = \frac{2\pi}{P_2}
+     \left[t - (2455522.7318 \pm 0.0095)\right]. \]
+  Furthermore, the researchers determined the mid-times of the regular
+  eclipses of the close binary (formed by stars B and C), and found that the
+  occurrence of for example the eclipsing minima belonging to the $N$th
+  orbital revolution can be described by the simple expression:
+  \[ T_N = T_0 + P_1 N + A_{\mathrm{ETV}}
+     \sin\left(\frac{2\pi}{P_2}P_1 N + \phi_0\right), \]
+  where
+  \[ T_0 = \mathrm{BJD}\ 2455051.23607 \pm 5\times10^{-5}, \quad
+     P_1 = 0.9056768 \pm 3\times10^{-7}\,\mathrm{d}, \]
+  \[ A_{\mathrm{ETV}} = 0.001446 \pm 0.000110\,\mathrm{d}, \quad
+     \phi_0 = -0.76779 \pm 0.01937\,\mathrm{rad}. \]
+  In this expression $A_{\mathrm{ETV}}$ is the amplitude of the eclipse
+  timing variation, $T_0$ denotes the mid-eclipse time of the reference
+  (zeroth) primary eclipse, and $N$ is the cycle number, which is an integer
+  for primary eclipses (i.e.\ when the slightly fainter star C eclipses star
+  B), and half-integer for secondary ones (i.e.\ when star B eclipses star
+  C).
+
+  Determine (1) again the mass ratio
+  ($q_2 = m_{\mathrm{BC}}/m_{\mathrm{A}}$) of the centre of mass of the
+  inner binary and star A using only the results obtained in point ii., (2)
+  the mass of component A ($m_{\mathrm{A}}$) and (3) the total mass of the
+  inner, close binary ($m_{\mathrm{BC}}$). Calculate the errors for (1),
+  (2), and (3) in masses. Hint: you can save much time by expressing the
+  masses in solar mass and the orbital separations either in solar radius or
+  au. \hfill[22\,p]
+
+\item[iii.] Using results obtained in questions 1 and 2, determine the
+  masses of stars B and C respectively and calculate the physical dimensions
+  of all three stars (i.e.\ stellar radii in physical units). \hfill[15\,p]
+\end{description}

@@ -1,0 +1,139 @@
+\begin{description}
+\item[a)] Draw a correct celestial sphere. \hfill[4.0]
+  % FIGURE NEEDED: celestial sphere with zenith, NCP/SCP, horizon (N, E, S,
+  % W), the star, zenith distance z, angles A, LHA*, 90-phi, 90-delta
+  % (2017_Theory_Solution.pdf, page 31).
+  \[ \frac{\sin\mathrm{LHA}^{*}}{\sin z}
+     = \frac{\sin\mathrm{A}}{\sin(90^\circ - \delta)} \]
+  \hfill[2.0]
+  \begin{align*}
+  \mathrm{LHA}^{*} &= \sin^{-1}\left(
+    \frac{\sin\mathrm{A}\,\sin z}{\sin(90^\circ - \delta)}\right)\\
+  &= \sin^{-1}\left(
+    \frac{\sin 109^\circ\,\sin 37.5^\circ}{\sin 98.18^\circ}\right)
+  \end{align*}
+  \hfill[2.0]
+  \[ \mathrm{LHA}^{*} = 35.56^\circ = 2^{\mathrm{h}}\,22\ \mathrm{min} \]
+  \[ \mathrm{LHA} = 24^{\mathrm{h}} - 2^{\mathrm{h}}\,22\ \mathrm{min}
+     = 21^{\mathrm{h}}\,38\ \mathrm{min} \]
+  \hfill[2.0]
+
+\item[b)] Bangkok time of 01:00 21st November is Universal Time (UT) 18:00
+  20th November.
+
+  Day number $+$ Time $= 323$ day 18\,h \hfill[1.0]
+
+  GST $=$ GST of 1st Jan $+$ The angle that $\Upsilon$ moves away from 1st
+  Jan \hfill[2.0]
+  \[ \mathrm{GST} = 6^{\mathrm{h}}\,43^{\mathrm{min}}
+     + \left(323\tfrac{18}{24}\ \mathrm{days}\right)
+       \left(\frac{1}{365.2422}\right)\times 24\ \frac{\mathrm{h}}{\mathrm{day}}
+     + \left[18\mathrm{h}\times\left(\frac{24}{23.9344}\right)\right] \]
+  \hfill[5.0]
+  \begin{align*}
+  \mathrm{GST} &= 6^{\mathrm{h}}\,43^{\mathrm{min}}
+    + 21^{\mathrm{h}}\,16\ \mathrm{min} + 18^{\mathrm{h}}\,3^{\mathrm{min}}\\
+  \mathrm{GST} &= 46^{\mathrm{h}}\,2^{\mathrm{min}}\\
+  \mathrm{GST} &= 21^{\mathrm{h}}\,58^{\mathrm{min}}
+  \end{align*}
+  \hfill[2.0]
+
+  Any other correct alternative methods that provide the correct answer are
+  also acceptable.
+
+\item[c)]
+  % FIGURE NEEDED: circular diagram of the celestial equator: Greenwich and
+  % Local Meridians, vernal equinox Y, star, and the arcs GST, LST, RA, L,
+  % LHA (2017_Theory_Solution.pdf, page 32).
+  \begin{align*}
+  24^{\mathrm{h}} - \mathrm{LHA} &= \mathrm{RA} - \mathrm{LST}\\
+  \mathrm{LST} &= \mathrm{RA} - 24^{\mathrm{h}} + \mathrm{LHA}\\
+  \mathrm{L} &= \mathrm{RA} + \mathrm{LHA} - \mathrm{GST}\\
+  \mathrm{L} &= 5^{\mathrm{h}}\,15^{\mathrm{min}}
+    + 21^{\mathrm{h}}\,38\ \mathrm{min} - 21^{\mathrm{h}}\,58^{\mathrm{min}}
+    = 4^{\mathrm{h}}\,55^{\mathrm{min}}
+  \end{align*}
+  \hfill[3.0]
+  \[ \mathrm{L} = 73.75^\circ\,\mathrm{E} \]
+  \hfill[2.0]
+
+\item[d)]
+  \begin{align*}
+  \cos(90^\circ - \delta) &= \cos z\cos(90^\circ - \phi)
+    + \sin z\sin(90^\circ - \phi)\cos\mathrm{A}\\
+  \sin\delta &= \sin(h)\sin\phi + \cos(h)\cos\mathrm{A}\cos\phi
+  \end{align*}
+  \hfill[5.0]
+  \[ \alpha = \sin\delta,\quad \beta = \sin(h),\quad
+     \gamma = \cos(h)\cos\mathrm{A},\quad x = \sin\phi \]
+  \[ \alpha = \beta x + \gamma\sqrt{1 - x^2} \]
+  \[ (\beta^2 + \gamma^2)x^2 - 2\alpha\beta x + (\alpha^2 - \gamma^2) = 0 \]
+  \hfill[1.0]
+  \[ x = \frac{\alpha\beta \pm \gamma\sqrt{\gamma^2 + \beta^2 - \alpha^2}}
+              {\beta^2 + \gamma^2} \]
+  \hfill[1.0]
+  \[ \sin\phi = \frac{\sin\delta\sin(h)
+      \pm \cos(h)\cos\mathrm{A}
+      \sqrt{(\cos(h)\cos\mathrm{A})^2 + \sin^2(h) - \sin^2\delta}}
+     {\sin^2(h) + (\cos(h)\cos\mathrm{A})^2} \]
+  \hfill[1.0]
+  \[ \phi = -24.05^\circ,\ 4.01^\circ \]
+  \hfill[2.0]
+
+  For $\phi = -24.05^\circ\ \rightarrow\ \mathrm{A} = 71.0^\circ$
+  \hfill[2.0]
+
+  For $\phi = 4.01^\circ\ \rightarrow\ \mathrm{A} = 109^\circ$
+  \hfill[2.0]
+
+  The Latitude of the island is $4^\circ 1'$\,N. \hfill[1.0]
+\end{description}
+
+\textbf{Alternative Solutions}
+
+\begin{description}
+\item[b)] $-$LMT (Local Mean Time) $\rightarrow$ UT \hfill[1.0]
+
+  Calculate the sidereal day using the given tropical year:
+  \[ \gamma = \frac{\text{Sidereal time}}{\text{Solar time}}
+     = \frac{24^{\mathrm{h}}\times\left(1
+       + \dfrac{1}{T_{\mathrm{tropic}}}\right)}{24^{\mathrm{h}}}
+     = 1 + \frac{1}{T_{\mathrm{tropic}}} = 1.002737909 \]
+  \hfill[3.0]
+
+  On the 21st November 2017, GST can be calculated from GST on 1st January
+  2017.
+
+  Day number $+$ Time $= 323$\,d 18\,h \hfill[2.0]
+  \[ \mathrm{GST} = \mathrm{GST}_0 + \Delta\theta
+     = \mathrm{GST}_0 + \gamma\cdot\Delta\mathrm{T} \]
+  \hfill[2.0]
+  \begin{align*}
+  \Delta\theta &= \left(323^{\mathrm{d}}\ \tfrac{18}{24}\right)
+    \cdot 1.002737909\\
+  &= 324^{\mathrm{d}}.6363981
+   = 15^{\mathrm{h}}16^{\mathrm{m}}24^{\mathrm{s}}.8\\
+  \mathrm{GST} &= \mathrm{GST}_0
+    + 15^{\mathrm{h}}16^{\mathrm{m}}24^{\mathrm{s}}.8\\
+  &= 6^{\mathrm{h}}43^{\mathrm{m}}
+   + 15^{\mathrm{h}}16^{\mathrm{m}}24^{\mathrm{s}}.8\\
+  &= 21^{\mathrm{h}}59^{\mathrm{m}}24^{\mathrm{s}}.8
+  \end{align*}
+  \hfill[2.0]
+
+\item[d)] From Cosine law:
+  \begin{align*}
+  \sin\delta &= (\cos z)\cdot\sin\phi + (\sin z\cos A)\cdot\cos\phi\\
+  \cos z &= (\sin\delta)\cdot\sin\phi
+    + (\cos\delta\cos\mathrm{LHA}^{*})\cdot\cos\phi
+  \end{align*}
+  \hfill[5.0]
+
+  Correct calculation steps that can lead to the final answers. \hfill[5.0]
+
+  Final answers:
+  \[ \sin\phi = 0.0698,\quad \phi = 4.00^\circ \]
+  OR
+  \[ \cos\phi = 0.9976,\quad \phi = 4.00^\circ \]
+  \hfill[5.0]
+\end{description}

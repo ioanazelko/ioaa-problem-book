@@ -1,0 +1,52 @@
+\begin{description}
+\item[(a)] In order to find the redshift, we need $\lambda_{\mathrm{today}}$.
+  Since $T_{\mathrm{today}}$ refers to the temperature at the emission
+  peak, we use Wien's law:
+  \begin{align*}
+  \lambda_{\mathrm{today}}\cdot T_{\mathrm{today}} &= b\\
+  \lambda_{\mathrm{today}} &\approx 1\,\mathrm{mm}
+  \end{align*}
+  \hfill(1.0)
+
+  So the redshift of the CMB, when it is emmited at the infrared spectrum
+  (with the values mentioned) is
+  \[ z = \frac{\lambda_{\mathrm{today}} - \lambda_{\mathrm{infrared}}}
+              {\lambda_{\mathrm{infrared}}} \]
+  \hfill(1.0)
+  \[ z \approx \frac{1 - 0.1}{0.1} = 9 \]
+  \hfill(1.0)
+
+  \textbf{Note:} It is also possible to find $T_{\mathrm{infrared}}$ using
+  Wien's law, and then use the definition of redshift to find $z$, which
+  leads to the same answer.
+
+\item[(b)] As the Universe is assumed as composed of just matter (i.e.
+  $\Omega_m = 1$), so the expression for the age of the Universe is given,
+  in terms of the scale factor $\left(a = \frac{1}{1+z}\right)$, by
+  \[ a_{\mathrm{ir}} = \frac{1}{1+z} = \frac{1}{1+9} = 0.1 \]
+  \hfill(1.0)
+  \[ \text{Now, }\ \frac{\mathrm{d}a}{\mathrm{d}t} = H(t)\cdot a(t) \]
+  \hfill(1.0)
+
+  And, from the first Friedmann equation for a matter-dominated universe,
+  we know that:
+  \[ H^2 = \frac{H_0^2}{a^3} \]
+  \hfill(2.0)
+
+  Therefore:
+  \begin{align*}
+  \frac{da}{dt} &= \frac{H_0}{a^{1.5}(t)}a(t) = \frac{H_0}{\sqrt{a(t)}}\\
+  \therefore\ t &= \int_0^{0.1}\frac{\sqrt{a}}{H_0}\,\mathrm{d}a\\
+  &= \frac{1}{H_0}\int_0^{0.1}\sqrt{a}\ \mathrm{d}a
+   = \frac{2}{3\,H_0}\,a^{1.5}\big|_0^{0.1}
+  \end{align*}
+  \hfill(2.0)
+  \begin{align*}
+  &= \frac{2\times 0.1^{1.5}}{3\times 70}\\
+  &= 3\times 10^{-4}\,\mathrm{s\,Mpc/km}\\
+  &= \frac{3\times 10^{-4}\times 3.086\times 10^{22}}
+          {1000\times 86400\times 365.2422}
+  \end{align*}
+  \[ t \approx 0.3\,\mathrm{Gyr} \]
+  \hfill(1.0)
+\end{description}

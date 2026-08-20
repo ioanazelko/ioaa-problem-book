@@ -1,0 +1,196 @@
+\textbf{Observation 1: `Asteroid occultation'.}
+
+Beginning of occultation: 23:03:31\\
+End of occultation: 23:03:48
+
+\begin{center}
+\begin{tabular}{c|c|c|c}
+Mid-time of occultation & $\pm$ error & Duration of occultation & $\pm$ error \\
+\hline
+23:03:39.5 & 0.4 s & 17 s & 0.2 s \\
+\end{tabular}
+\end{center}
+
+Marking:
+\begin{enumerate}
+\item Mid-time $t$ of occultation:
+  \begin{itemize}
+  \item $23{:}03{:}39.3 \le t < 23{:}03{:}39.7$ $\Longrightarrow$ 4 points
+  \item $23{:}03{:}39.0 \le t < 23{:}03{:}39.3$ or
+    $23{:}03{:}39.7 < t \le 23{:}03{:}40.0$ $\Longrightarrow$ 3 points
+  \item $23{:}03{:}38.0 \le t < 23{:}03{:}39.0$ or
+    $23{:}03{:}40.0 < t \le 23{:}03{:}41.0$ $\Longrightarrow$ 1 point
+  \item outside this range $\Longrightarrow$ 0 points
+  \end{itemize}
+\item Error in mid-time $\Delta t$:
+  \begin{itemize}
+  \item $0.1 < \Delta x \le 0.5$ $\Longrightarrow$ 3 points
+  \item $0.5 < \Delta x \le 0.7$ $\Longrightarrow$ 2 points
+  \item $0.7 < \Delta x \le 1.0$ $\Longrightarrow$ 1 point
+  \item outside this range or missing $\Longrightarrow$ 0 points
+  \end{itemize}
+  % sic: the official solution uses "Delta x" in the bands for the error in
+  % mid-time although the heading defines it as Delta t
+\item Duration $x$ of occultation (should be to 1 s.f.):
+  \begin{itemize}
+  \item $16.8~\mathrm{s} \le x \le 17.2~\mathrm{s}$ $\Longrightarrow$ 4 points
+  \item $16~\mathrm{s} \le x < 16.8~\mathrm{s}$ or
+    $17.2~\mathrm{s} < x \le 18~\mathrm{s}$ $\Longrightarrow$ 3 points
+  \item $15~\mathrm{s} \le x < 16~\mathrm{s}$ or
+    $18~\mathrm{s} < x \le 19~\mathrm{s}$ $\Longrightarrow$ 1 point
+  \item outside this range $\Longrightarrow$ 0 points
+  \end{itemize}
+\item Error in duration $\Delta x$:
+  \begin{itemize}
+  \item $0.05 < \Delta x \le 0.2$ $\Longrightarrow$ 3 points
+  \item $0.2 < \Delta x \le 0.4$ $\Longrightarrow$ 2 points
+  \item $0.4 < \Delta x \le 1.0$ $\Longrightarrow$ 1 point
+  \item outside this range or missing $\Longrightarrow$ 0 points
+  \end{itemize}
+\item Error of duration lower than and different from error in mid time
+  ($\Delta x < \Delta t$) $\Longrightarrow$ 1 point
+\end{enumerate}
+
+\medskip
+\textbf{Observation 2: `Starlink'.}
+
+The satellites are at an altitude $h = 20^\circ$ and their height above the
+surface of the Earth is $H = 400$ km.
+
+1) In the (simplified) solution neglecting the Earth's curvature, the
+student will assume the distance to the satellites is equal to:
+\[
+d_{flat} = \frac{H}{\sin h} = 1170~\mathrm{km}
+\]
+
+% FIGURE NEEDED: flat-Earth sketch -- right triangle with the observer, the
+% satellite at height H and the line of sight d at altitude h
+% (2023_TEL_sol.pdf page 5)
+
+2) In the solution taking into account the Earth's curvature, let us draw
+the $OSC$ (observer--satellite--center of the Earth) triangle. The angles
+are: $\angle COS = 90^\circ + h$, $\angle OSC$ that we shall denote as
+$\eta$, and $\angle SCO = 180^\circ - (90^\circ + h) - \eta = 70^\circ - \eta$.
+
+% FIGURE NEEDED: curved-Earth sketch -- the observer O on the spherical
+% Earth, satellite S, centre C, with radii R_earth, height H and distance d
+% (2023_TEL_sol.pdf page 6)
+
+The law of sines can be applied:
+\[
+\frac{\sin(90^\circ + h)}{R_\oplus + H} = \frac{\sin\eta}{R_\oplus}
+= \frac{\sin(70^\circ - \eta)}{d_{curve}}
+\]
+We calculate the distance to the satellites:
+\[
+\eta = \arcsin\left(\frac{R_\oplus}{R_\oplus + H}\sin(90^\circ + h)\right)
+= 62^\circ.2
+\]
+\[
+d_{curve} = R_\oplus \frac{\sin(70^\circ - \eta)}{\sin\eta} = 980~\mathrm{km}
+\]
+
+Knowing the radius of the orbit is $R_\oplus + H$, we calculate
+$v_{orbit} = \sqrt{GM_\oplus/(R_\oplus + H)} = 7.6$ km/s. The observer can
+only measure the tangential component of motion $v_t$.
+
+The student will estimate the angular velocity to be
+$v_t/d = v_{orbit}\sin h/d = 2.2\cdot 10^{-3}\,[1/\mathrm{s}] = 7.6\,['/\mathrm{s}]$
+(for the solution neglecting the Earth's curvature) or
+$2.6\cdot 10^{-3}\,[1/\mathrm{s}] = 9.0\,['/\mathrm{s}]$ (for the solution
+taking into account the Earth's curvature).
+
+\begin{flushright}
+\textbf{5 points for predicting the angular velocity:}\\
+5 points if within $8.55 - 9.45\,['/\mathrm{s}]$;\\
+4 points if within $8.1 - 9.9\,['/\mathrm{s}]$;\\
+3 points if within $7.5 - 10.5\,['/\mathrm{s}]$;\\
+0 points otherwise
+\end{flushright}
+
+The simulated angular velocity is $8.5\,['/\mathrm{s}]$; the student should
+conclude this value is similar to their prediction (or optionally comment it
+is slightly lower and might imply e.g.\ the real orbit radius is minimally
+larger than predicted, but it is not necessary).
+
+\begin{flushright}
+\textbf{4 points for measuring the angular velocity:}\\
+4 points if agrees within 5\% ($8.1$ - $8.9$ $['/\mathrm{s}]$);\\
+2 points if agrees within 10\% ($7.65$ - $9.35$ $['/\mathrm{s}]$);\\
+0 points otherwise\\[4pt]
+\textbf{1 point for correct comparison}
+\end{flushright}
+
+The student should then measure the time interval between the passes to be
+$t = 2$ s.
+
+\begin{flushright}
+\textbf{2 points for measuring the time interval:}\\
+2 points if agrees within 5\% ($1.9$ - $2.1$ s); 0 points otherwise
+\end{flushright}
+
+In such a short time, the path along the orbit can be approximated with a
+straight line; the distance passed is $S = v_{orbit}t = 15$ km, which is the
+distance between the satellites. (Alternatively, if the student chooses to
+use their own $v_t$ measurement, $S = v_t t/\sin h = 14$ km).
+
+\begin{flushright}
+\textbf{2 points for calculating the distance}\\
+2 points if within 13.8-15.2 km\\
+1 point if within 12.5-16.5 km\\
+0 points otherwise
+\end{flushright}
+
+Finally, the student should mark the observed satellite path on the sky map.
+
+\begin{flushright}
+\textbf{1 point for correctly marking the satellite trail}
+\end{flushright}
+
+\medskip
+\textbf{Observation 3: `Planetary Moons'.}
+
+The displayed planet is Saturn. On the reference solution image the moons
+are marked and labelled with their names and magnitudes: Japetus (11.0),
+Rhea (9.9), Mimas (13.0), Tethys (10.4), Enceladus (11.8), Dione (10.6) and
+Titan (8.5) around the disk of Saturn.
+
+% FIGURE NEEDED: solution image of Saturn with the visible moons circled and
+% labelled (Japetus, Rea, Mimas, Tetyda, Enceladus, Dione, Tytan -- labels
+% in the original carry slightly different magnitudes: Rea 9.8, Tetyda 10.3,
+% Dione 10.5, Enceladus 11.8, Tytan 8.4, Mimas 13, Japetus 11)
+% (2023_TEL_sol.pdf page 9)
+
+2 points for each moon: position (1 pt) and name (1 pt).
+
+\medskip
+\textbf{Observation 4: `Supernova'.}
+
+\begin{center}
+\begin{tabular}{c|c|c}
+Right ascension & Declination & est.\ magnitude \\
+\hline
+$9^h\,55^m\,54^s$ & $+69^\circ\,09'\,11''$ & 10.2 mag \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item Declination:
+  \begin{itemize}
+  \item[(a)] $< \pm 1.5'$ $\Longrightarrow$ 4 points
+  \item[(b)] $\le \pm 3'$ $\Longrightarrow$ 2 points
+  \item[(c)] $> \pm 3'$ $\Longrightarrow$ 0 points
+  \end{itemize}
+\item Right ascension:
+  \begin{itemize}
+  \item[(a)] $< \pm\,22.5$ s $\Longrightarrow$ 4 points
+  \item[(b)] $\le \pm\,45$ s $\Longrightarrow$ 2 points
+  \item[(c)] $> \pm\,45$ s $\Longrightarrow$ 0 points
+  \end{itemize}
+\item Magnitude:
+  \begin{itemize}
+  \item[(a)] $< \pm\,0.4$ mag $\Longrightarrow$ 2 points
+  \item[(b)] $\le \pm\,0.8$ mag $\Longrightarrow$ 1 point
+  \item[(c)] $> \pm\,0.8$ mag $\Longrightarrow$ 0 points
+  \end{itemize}
+\end{enumerate}

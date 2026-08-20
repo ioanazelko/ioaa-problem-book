@@ -1,0 +1,98 @@
+\begin{description}
+\item[(a)] Consider a particle at a distance $r$ from the center of the
+  compact object. In case of maximal luminosity, the gravitational force must
+  be balanced by the radiation pressure.
+  \[ F_G = G\frac{m_H M}{r^2} \]
+  \hfill(0.5 pt)
+  \[ F_R = \frac{\sigma_e L_E}{4\pi c r^2} \]
+  \hfill(0.5 pt)
+  \[ \text{But, } F_G = F_R \]
+  \hfill(1.0 pt)
+  \[ \therefore\ L_E = \frac{4\pi G m_H M c}{\sigma_e} \]
+  \hfill(1.0 pt)
+\item[(b)] The lower bound of its mass given by:
+  \begin{align*}
+    \sigma_e &= \frac{8\pi}{3}
+      \left(\frac{e^2}{4\pi\varepsilon_0 m_e c^2}\right)^2\\
+    &\approx 6.65 \times 10^{-29}\ \mathrm{m}^2
+  \end{align*}
+  \hfill(1.5 pt)
+  \begin{align*}
+    M &= \frac{\sigma_e L_\odot}{4\pi G m_H c}\\
+      &= 6.04 \times 10^{25}\ \mathrm{kg}\\
+      &= 3.04 \times 10^{-5}\,M_\odot
+  \end{align*}
+  \hfill(2.5 pt)
+\item[(c)] Gravitational energy of atoms of total mass $\Delta m$:
+  \begin{align*}
+    \Delta E &= \frac{GM\Delta m}{R}\\
+    L_{\mathrm{acc}} &= \frac{\Delta E}{\Delta t}\\
+    \therefore\ L_{\mathrm{acc}} &= \frac{GM}{R}\frac{\Delta m}{\Delta t}
+      = \frac{GM}{R}\dot{M}
+  \end{align*}
+  \hfill(2.0 pt)
+\item[(d)] For maximum $\dot{M}$:
+  \begin{align*}
+    L_{\mathrm{acc}} &= L_E\\
+    \frac{GM}{R}\dot{M} &= \frac{4\pi G m_H M c}{\sigma_e}\\
+    \dot{M} &= \left(\frac{4\pi m_H c}{\sigma_e}\right) R
+  \end{align*}
+  \hfill(2.0 pt)
+\item[(e)] For given value of $R_*$:
+  \begin{align*}
+    \dot{M} &= \left(\frac{4\pi m_H c}{\sigma_e}\right) R_*\\
+    \dot{M} &= 1.14 \times 10^{21}\ \mathrm{kg/s}\\
+      &= 3.59 \times 10^{28}\ \mathrm{kg/yr}\\
+    \dot{M} &= 0.018\,\mathrm{M}_\odot/\mathrm{yr}
+  \end{align*}
+  \hfill(2.0 pt)
+\item[(f)] The total angular momentum and total mass must be conserved.
+  \[ L = M_1 r_1^2 \Omega + M_2 r_2^2 \Omega \]
+  \hfill(1.0 pt)
+  \begin{align*}
+    \text{Let } M_T &= M_1 + M_2\\
+    \text{and } a &= r_1 + r_2\\
+    r_1 = \frac{M_2 a}{M_T} &\quad\text{and}\quad r_2 = \frac{M_1 a}{M_T}
+  \end{align*}
+  \hfill(1.0 pt)
+  \begin{align*}
+    \therefore\ L &= \left[M_1\left(\frac{M_2 a}{M_T}\right)^2
+      + M_2\left(\frac{M_1 a}{M_T}\right)^2\right]\Omega\\
+    &= \left(M_1 M_2^2 + M_2 M_1^2\right)\frac{a^2\Omega}{M_T^2}\\
+    \therefore\ L &= \frac{a^2\Omega M_1 M_2}{M_T}
+      = \frac{a^2\Omega M_1 (M_T - M_1)}{M_T}
+  \end{align*}
+  \hfill(1.0 pt)
+  \begin{align*}
+    \therefore\ a &= \left(\sqrt{\frac{L M_T}{\Omega}}\right)
+      M_1^{-0.5}(M_T - M_1)^{-0.5}\\
+    a &= K M_1^{-0.5}(M_T - M_1)^{-0.5}
+  \end{align*}
+  \hfill(1.0 pt)
+
+  Now let us say mass of the compact object \textbf{increases} by small
+  fraction $\Delta M_1$. Let the corresponding \textbf{increases} in the
+  separation be $\Delta a$.
+  \begin{align*}
+    a + \Delta a &= K(M_1 + \Delta M_1)^{-0.5}
+      (M_T - M_1 - \Delta M_1)^{-0.5}\\
+    &= K M_1^{-0.5}(M_T - M_1)^{-0.5}
+      \left(1 + \frac{\Delta M_1}{M_1}\right)^{-0.5}
+      \left(1 - \frac{\Delta M_1}{M_T - M_1}\right)^{-0.5}\\
+    a + \Delta a &= a\left(1 + \frac{\Delta M_1}{M_1}\right)^{-0.5}
+      \left(1 - \frac{\Delta M_1}{M_2}\right)^{-0.5}
+  \end{align*}
+  \hfill(1.0 pt)
+  \begin{align*}
+    \therefore\ 1 + \frac{\Delta a}{a}
+      &\approx \left(1 - \frac{\Delta M_1}{2M_1}\right)
+        \left(1 + \frac{\Delta M_1}{2M_2}\right)\\
+    &\approx 1 - \frac{\Delta M_1}{2M_1} + \frac{\Delta M_1}{2M_2}\\
+    \therefore\ \frac{\Delta a}{a}
+      &= \frac{\Delta M_1}{2}\left(\frac{M_1 - M_2}{M_1 M_2}\right)
+  \end{align*}
+  \hfill(1.0 pt)
+
+  Thus, $\Delta a$ is positive (separation increases) when $M_1 > M_2$ and
+  the separation decreased when $M_1 < M_2$. \hfill(1.0 pt)
+\end{description}

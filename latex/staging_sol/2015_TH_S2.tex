@@ -1,0 +1,107 @@
+\textbf{First Version}
+
+Kepler third Law for satelite % sic: "satelite" in source
+and Moon: \hfill(30 points)
+\begin{align*}
+  \frac{P_S^2}{a_S^3} &= \frac{P_S^2}{(15.3\,R_P)^3} = \frac{4\pi^2}{GM_P}; \\
+  \frac{P_M^2}{a_M^3} &= \frac{P_M^2}{(60.3\,R_E)^3} = \frac{4\pi^2}{GM_E};
+\end{align*}
+
+Express mass in term of mass density: \hfill(30 points)
+\begin{align*}
+  \frac{P_S^2}{(15.3\,R_P)^3} &= \frac{4\pi^2}{GM_P}
+    = \frac{4\pi^2}{G\rho_P \frac{4}{3}\pi R_P^3} \\
+  \frac{P_M^2}{(60.3\,R_E)^3} &= \frac{4\pi^2}{GM_E}
+    = \frac{4\pi^2}{G\rho_E \frac{4}{3}\pi R_E^3}
+\end{align*}
+
+Evaluate ratio of mass-density: \hfill(30 points)
+\[ \frac{\rho_E}{\rho_P}
+   = \frac{60.3^3 \times P_S^2}{15.3^3 \times P_M^2} \]
+% sic: the source labels this ratio (and the next) rho_E/rho_P; the value
+% 0.238 is actually rho_P/rho_E, as the Second Alternate Version confirms
+\[ \frac{\rho_E}{\rho_P} = 0.238 \approx 0.24 \]
+\hfill(10 points)
+
+\textbf{Second Alternate Version}
+
+\begin{itemize}
+\item The period of the Satellite:
+  $P_S = 7\ \text{days},\ 3\ \text{hours},\ 43\ \text{minutes}
+   = 0.0196\ \text{years}$,
+\item Mean orbital radius of the Satellite: $a_S = 15.3\,R_P$; $R_P$: radius
+  of the Planet.
+\item The period of the Moon:
+  $P_M = 27\ \text{days},\ 7\ \text{hours},\ 43\ \text{minutes}
+   = 0.0749\ \text{years}$,
+\item Mean orbital radius of the Moon: $a_M = 60.3\,R_E$; $R_E$: radius of
+  the Earth.
+\item Mass of the Sun ($M$)
+\item Kepler's Third Law: $G(M + m) = 4\pi^2 \dfrac{a^3}{T^2}$
+  $\rightarrow$
+  \begin{itemize}
+  \item Mass of the Planet: $m_P$
+  \item Radius of the Planet: $R_P$
+  \item Semi major axis of the Planet $=$ Mean orbital radius of the
+    Plant: % sic: "Plant" in source
+    $a_P$
+  \item Semi major axis of the Satellite $=$ Mean orbital radius of the
+    Satellite: $a_S$
+  \item Semi major axis of the Moon $=$ Mean orbital radius of the Moon:
+    $a_M$
+  \item Mass of the Earth: $m_E$
+  \item Radius of the Earth: $R_E$
+  \item Semi major axis of the Earth $=$ Mean orbital radius of the Earth:
+    $a_E$
+  \end{itemize}
+\end{itemize}
+
+\begin{description}
+\item[Planet--Satellite:]
+  $G(m_P + m_S) = 4\pi^2 \dfrac{a_S^3}{P_S^2}$, $m_P \gg m_S$
+  $\rightarrow$ $G(m_P) = 4\pi^2 \dfrac{a_S^3}{P_S^2}$ \hfill(1)\quad(5 points)
+\item[The Earth--the Moon:]
+  $G(m_E + m_M) = 4\pi^2 \dfrac{a_M^3}{P_M^2}$, $m_E \gg m_M$
+  $\rightarrow$ $G(m_E) = 4\pi^2 \dfrac{a_M^3}{P_M^2}$ \hfill(2)\quad(5 points)
+\item[Planet--Sun:]
+  $G(M + m_P) = 4\pi^2 \dfrac{a_P^3}{P_P^2}$, $M \gg m_P$
+  $\rightarrow$ $G(M) = 4\pi^2 \dfrac{a_P^3}{P_P^2}$ \hfill(3)\quad(5 points)
+\item[Earth--Sun:]
+  $G(M + m_E) = 4\pi^2 \dfrac{a_E^3}{P_E^2}$, $M \gg m_E$
+  $\rightarrow$ $G(M) = 4\pi^2 \dfrac{a_E^3}{P_E^2}$ \hfill(4)\quad(5 points)
+\end{description}
+
+From equation (1) and (3):
+\[ \frac{m_P}{M}
+   = \frac{4\pi^2 \frac{a_S^3}{P_S^2}}{4\pi^2 \frac{a_P^3}{P_P^2}}
+   = \frac{(a_S)^3}{(a_P)^3}\,\frac{(P_P)^2}{(P_S)^2}
+   = \frac{(15.3R_P)^3}{(a_P)^3}\,\frac{(P_P)^2}{(P_S)^2}
+   = \frac{(15.3R_P)^3}{(a_P)^3}\,\frac{(P_P)^2}{(0.0196)^2} \]
+\hfill(20 points)
+
+From equation (2) and (4):
+\[ \frac{m_E}{M}
+   = \frac{4\pi^2 \frac{a_M^3}{P_M^2}}{4\pi^2 \frac{a_E^3}{P_E^2}}
+   = \frac{(a_M)^3}{(a_E)^3}\,\frac{(P_E)^2}{(P_M)^2}
+   = \frac{(60.3R_E)^3}{(a_E)^3}\,\frac{(P_E)^2}{(P_E)^2}
+   = \frac{(60.3R_E)^3}{(a_E)^3}\,\frac{(P_E)^2}{(0.0749)^2}
+   = \frac{(60.3R_E)^3}{(1)^3}\,\frac{(1)^2}{(0.0749)^2} \]
+\hfill(20 points)
+
+$\rightarrow$
+\[ \frac{m_E}{m_P}
+   = \frac{\dfrac{(15.3R_P)^3}{(a_P)^3}\,\dfrac{(P_P)^2}{(0.0196)^2}}
+          {\dfrac{(60.3R_E)^3}{(1)^3}\,\dfrac{(1)^2}{(0.0749)^2}}
+   = \frac{(15.3R_P)^3/(0.0196)^2}{(60.3R_E)^3/(0.0749)^2} \]
+% sic: the source writes m_E/m_P for what is actually m_P/m_E
+\hfill(20 points)
+
+$\rightarrow$
+\[ \frac{\rho_P}{\rho_E}
+   = \frac{m_P/\mathrm{Vol}_P}{m_E/\mathrm{Vol}_E}
+   = \frac{m_P/\frac{4}{3}\pi(R_P)^3}{m_E/\frac{4}{3}\pi(R_E)^3}
+   = \frac{(15.3R_P)^3/(0.0196)^2}{(60.3R_E)^3/(0.0749)^2}
+     \cdot \frac{\frac{4}{3}\pi(R_E)^3}{\frac{4}{3}\pi(R_P)^3}
+   = \frac{\dfrac{(15.3)^3}{(0.0196)^2}}{\dfrac{(60.3)^3}{(0.0749)^2}}
+   = 0.24 \]
+\hfill(20 points)

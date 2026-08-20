@@ -1,0 +1,131 @@
+Astronomers discovered an extraordinary binary system in the constellation of
+Auriga during the course of the Apache Point Observatory Galactic Evolution
+Experiment (APOGEE). In these questions, you will try to analyse the data and
+recreate their discovery for yourself.
+
+The research team is aiming to find compact stars in binary systems using the
+radial velocity (RV) technique. They examined archival APOGEE spectra of
+``single'' stars and measured the apparent variation of their RV within this
+data. Among ${\sim}200$ stars with the highest accelerations, researchers
+searched for periodic photometric variations in data from the All-Sky
+Automated Survey for Supernovae (ASAS-SN) that might be indicative of
+transits, ellipsoidal variations or starspots. After this process, they
+spotted a star named 2M05215658+4359220, with a large variation in RV and
+photometric variability.
+
+2.1. The following table presents the radial velocity measurements of
+2M05215658+4359220 during three epochs of APOGEE spectroscopic observation.
+Here we assume the variation of its RV is due to the existence of an unseen
+companion. The proper motion of the stars can be ignored.
+
+\begin{center}
+Table 3. APOGEE Radial Velocity Measurements of 2M05215658+4359220
+
+\medskip
+\begin{tabular}{cccc}
+Observation & MJD & RV (km\,s$^{-1}$) & Uncertainty (km\,s$^{-1}$) \\
+1 & 56204.9537 & $-37.417$ & 0.011 \\
+2 & 56229.9213 & 34.846 & 0.010 \\
+3 & 56233.8732 & 42.567 & 0.010 \\
+\end{tabular}
+\end{center}
+
+\begin{description}
+\item[(D2.1.1)] (6 points) Use the data and a simple linear model to obtain
+  an initial estimate of the apparent \textbf{maximum acceleration} of the
+  star:
+  \[ a_{\max} = \left.\frac{\Delta RV}{\Delta t}\right|_{\max}, \quad
+     \mbox{unit: } \mathrm{km\,s^{-1}\,day^{-1}} \]
+\item[(D2.1.2)] (9 points) Now use the data to obtain an initial estimate of
+  the \textbf{mass} of its unseen companion.
+\end{description}
+
+2.2. After discovering this peculiar star, astronomers conducted follow-up
+observations using the 1.5-m Tillinghast Reflector Echelle Spectrograph
+(TRES) at the Fred Lawrence Whipple Observatory (FLWO) located on Mt.\
+Hopkins in Arizona, USA. The following table presents the RV measurements
+using this instrument:
+
+\begin{center}
+Table 4. TRES Radial Velocity Measurements of 2M05215658+4359220
+
+\medskip
+\begin{tabular}{ccc}
+MJD & RV (km/s) & Uncertainty (km/s) \\
+58006.9760 & 0 & 0.075 \\
+58023.9823 & $-43.313$ & 0.075 \\
+58039.9004 & $-27.963$ & 0.045 \\
+58051.9851 & 10.928 & 0.118 \\
+58070.9964 & 43.782 & 0.075 \\
+58099.8073 & $-30.033$ & 0.054 \\
+58106.9178 & $-42.872$ & 0.135 \\
+58112.8188 & $-44.863$ & 0.088 \\
+58123.7971 & $-25.810$ & 0.115 \\
+58136.6004 & 15.691 & 0.146 \\
+58143.7844 & 34.281 & 0.087 \\
+\end{tabular}
+\end{center}
+
+\begin{description}
+\item[(D2.2.1)] (14 points) \textbf{Plot} the diagram of RV variation
+  (measured with TRES) versus time on your graph paper and label it as
+  Figure 4. Draw a suitable \textbf{sinusoidal function} to fit the given
+  data. \textbf{Estimate} the orbital period ($P_{\mathrm{orb}}$) and radial
+  velocity semi-amplitude ($K$) from your plot.
+\item[(D2.2.2)] (4 points) If the star is moving in a circular orbit,
+  calculate the \textbf{minimum value} of the orbital radius
+  ($r_{\mathrm{orb}}$) of the star in units of both $R_\odot$ and au.
+\item[(D2.2.3)] (7 points) The mass function of a binary system is defined
+  as:
+  \[ f(M_1, M_2) = \frac{(M_2 \sin i_{\mathrm{orb}})^3}{(M_1 + M_2)^2} \]
+  where the subscript ``1'' represents the primary star and ``2'' represents
+  its companion. The parameter $i_{\mathrm{orb}}$ is the orbital inclination
+  of the binary system. This mass function can also be expressed in terms of
+  observable parameters. Calculate the \textbf{mass function of this system}
+  in units of $M_\odot$.
+\end{description}
+
+2.3. Based on a detailed analysis of APOGEE, TRES spectra and GAIA parallax
+measurements, astronomers derived the following stellar parameters:
+
+\begin{center}
+Table 5. Selected Physical Properties of 2M05215658+4359220
+
+\medskip
+\begin{tabular}{ccccc}
+Effective & Surface Gravity & Parallax & Measured Rotation & Bolometric \\
+Temperature & $\log g$ (cm\,s$^{-2}$) & $\pi$ (mas) & Velocity & Flux \\
+$T_{\mathrm{eff}}$ (K) & & &
+  $v_{\mathrm{rot}}\sin i$ (km\,s$^{-1}$) &
+  $F$ (J\,s$^{-1}$\,m$^{-2}$) \\
+$4890 \pm 130$ & $2.2 \pm 0.1$ & $0.272 \pm 0.049$ & $14.1 \pm 0.6$ &
+  $(1.1 \pm 0.1) \times 10^{-12}$ \\
+\end{tabular}
+\end{center}
+
+Photometric observations indicate that the period of its light curve is
+identical to its orbital period, thus we may assume that the rotation period
+satisfies $P_{\mathrm{rot}} = P_{\mathrm{orb}} \equiv P$, and the inclination
+satisfies $i_{\mathrm{orb}} = i_{\mathrm{rot}} \equiv i$.
+
+\begin{description}
+\item[(D2.3.1)] (16 points) \textbf{Calculate} the luminosity ($L_1$, in
+  unit of $L_\odot$), radius ($R_1$, in unit of $R_\odot$), sine of the
+  inclination angle ($\sin i$), as well as mass ($M_1$, in unit of
+  $M_\odot$) of the visible star. Please \textbf{include} the uncertainty in
+  your results.
+\item[(D2.3.2)] (4 points) \textbf{Choose} the correct type of this star
+  from the following options: (1) Blue Giant (2) Yellow main sequence star
+  (3) Red Giant (4) Red main sequence star (5) White Dwarf.
+\item[(D2.3.3)] (10 points) Based on the mass function $f(M_1, M_2)$ of the
+  binary system, \textbf{plot} the rough relationship of $M_2$ (as vertical
+  axis) and $M_1$ (as horizontal axis) on your graph paper and label it as
+  Figure 5. Plot the most probable relation (by using $\sin i$), upper limit
+  (with $\sin i + \Delta\sin i$) and lower limit (with
+  $\sin i - \Delta\sin i$) derived in (D2.3.1).
+\item[(D2.3.4)] (5 points) Draw a vertical \textbf{shadowed region} of
+  $[M_1 - \Delta M_1, M_1 + \Delta M_1]$, as well as two horizontal
+  \textbf{dashed lines} showing the maximum mass of the white dwarf and
+  neutron star, on your Figure 5. What is the possible mass of the invisible
+  companion, and what kind of celestial object could it be?
+\end{description}

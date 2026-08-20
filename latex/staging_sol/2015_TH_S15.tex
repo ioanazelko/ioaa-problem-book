@@ -1,0 +1,156 @@
+\textbf{1st version}
+
+\begin{description}
+\item[1.] \emph{Determine coordinates of Lima and Yogyakarta.}
+  \hfill(15 points)\\
+  Assume that the equator is the $z = 0$ plane and the Earth is a unit
+  sphere. The Cartesian coordinates of Lima are
+  \begin{align*}
+  \boldsymbol{x}_1 &= (x_1, y_1, z_1)\\
+    &= \bigl(\cos(-12^\circ 2')\cos(282^\circ 58'48''),\
+       \cos(-12^\circ 2')\sin(282^\circ 58'48''),\
+       \sin(-12^\circ 2')\bigr)\\
+    &= (0.2197308726,\ -0.9530236794,\ -0.2084807188)
+  \end{align*}
+  The Cartesian coordinates of Yogyakarta are
+  \begin{align*}
+  \boldsymbol{x}_2 = (x_2, y_2, z_2)
+    &= \bigl(\cos(-7^\circ 47')\cos(110^\circ 26'),\
+       \cos(-7^\circ 47')\sin(110^\circ 26'),\
+       \sin(-7^\circ 47')\bigr)\\
+    &= (-0.3459009563,\ 0.9284459898,\ -0.1354273699)
+  \end{align*}
+\item[2.] \emph{Determine the normal of the plane defined by Lima,
+  Yogyakarta, and the center of the Earth.} \hfill(20 points)\\
+  The normal of the plane containing the two places and the center of the
+  Earth is
+  \[ \boldsymbol{x}_1 \times \boldsymbol{x}_2 = (a, b, c)
+     = (0.3226285776,\ 0.1018712545,\ -0.12564355210) \]
+\item[3.] \emph{Find the equation of the (shortest flight) path from Lima to
+  Yogyakarta.} \hfill(25 points)\\
+  Let the equation of the plane be $ax + by + cz = 0$ or equivalently
+  \[ y = -a'x - c'z \]
+  where $a' = -3.16702272082062$ and $c' = 1.23335628599724$. For the sake
+  of simplicity, from now on let us denote $a'$ and $c'$ as $a$ and $c$,
+  respectively. The intersection of the Earth and the plane is the great
+  circle
+  \[ x^2 + (-ax - cz)^2 + z^2 = 1 \quad\text{or equivalently}\quad
+     (1 + a^2)x^2 + 2acxz + (1 + c^2)z^2 - 1 = 0 \]
+  It is also the equation for the shortest flight path from Lima to
+  Yogyakarta.
+  % FIGURE NEEDED: unit sphere with Lima, Yogyakarta, the flight path and
+  % the normal vector x1 x x2 (2015_th_sol.pdf, page 19).
+\item[4.] \emph{Determine the $z$-value of the southernmost point of the
+  path (at that point, the discriminant of the equation
+  $(1 + a^2)x^2 + 2acmx + (1 + c^2)m^2 - 1 = 0$ equals zero).}
+  \hfill(30 points)\\
+  The plane $z = m$ intersects the great circle at either one or two
+  points. The number of intersection points at the highest or at the lowest
+  point is one, i.e.\ when the discriminant is zero.
+  \begin{align*}
+  (1 + a^2)x^2 &+ 2acmx + (1 + c^2)m^2 - 1 = 0\\
+  \intertext{The discriminant is}
+  D &= (2acm)^2 - 4(1 + a^2)[(1 + c^2)m^2 - 1]\\
+    &= 4 + 4a^2 - (4 + 4a^2 + 4c^2)m^2
+  \end{align*}
+  Therefore $D = 0$ if
+  $m = \pm\sqrt{\dfrac{1 + a^2}{1 + a^2 + c^2}} = 0.937444937497383$. Then
+  choose
+  \[ z = -0.937444937497383 \]
+\item[5.] \emph{Determine the latitude of the southernmost point.}
+  \hfill(10 points)\\
+  Thus, the latitude of the point is
+  $\sin^{-1} z = 1.21521692653748 = 69.6268010651290^\circ
+   = 69^\circ 37' 36''\,S$.
+\end{description}
+
+\textbf{2nd version (using the Law of Cosines for sides)}
+
+\begin{description}
+\item[1.] \emph{Determine the lengths of the sides of the triangle}
+  \hfill(20 points)\\
+  \[ s_2 = 90^\circ - 12^\circ 2' = 77^\circ 58' = 1.3608\ \mathrm{rad},\quad
+     s_3 = 90^\circ - 7^\circ 47' = 82^\circ 13' = 1.4350\ \mathrm{rad}; \]
+  \[ A_1 = (180^\circ - 77^\circ 1') + (180^\circ - 110^\circ 26')
+     = 172^\circ 33' = 3.0116\ \mathrm{rad} \]
+  Using the Law of Cosines for sides
+  \[ \cos s_1 = (\cos s_2)(\cos s_3) + (\sin s_2)(\sin s_3)(\cos A_1) \]
+  to obtain $s_1 = 2.7724$\,rad.
+  % FIGURE NEEDED: sphere with Lima, Yogyakarta, flight path and the
+  % spherical triangle with sides s1, s2, s3 and angles A1, A2, A3
+  % (2015_th_sol.pdf, page 20).
+\item[2.] \emph{Determine the angles of the triangle} \hfill(30 points)\\
+  Then use
+  \[ \cos s_2 = (\cos s_1)(\cos s_3) + (\sin s_1)(\sin s_3)(\cos A_2) \]
+  to obtain $A_2 = 0.35921$\,rad. Similarly, use the Law of Cosines
+  \[ \cos s_3 = (\cos s_1)(\cos s_2) + (\sin s_1)(\sin s_2)(\cos A_3) \]
+  to get that $A_3 = 0.3642$\,rad.
+\item[3.] \emph{Use the Law of Cosines for sides to construct an equation in
+  $\cos s_2'$.} \hfill(20 points)\\
+  If P is the southernmost point, then the angle $A_3$ is a right angle,
+  $A_3 = \frac{\pi}{2}$, the Law of
+  \[ \cos s_3 = \cos s_1' \cos s_2' + \sin s_1' \sin s_2' \cos A_3
+     = \cos s_1' \cos s_2' \]
+  Thus,
+  \[ \cos s_1' = \frac{\cos s_3}{\cos s_2'}
+     = \frac{0.13538}{\cos s_2'}. \]
+  Then substitute it to get
+  \begin{align*}
+  \cos s_2' &= \cos s_1' \cos s_3 + \sin s_1' \sin s_3 \cos A_2\\
+    &= \frac{\cos s_3}{\cos s_2'}\cos s_3
+     + \sqrt{1 - \left(\frac{\cos s_3}{\cos s_2'}\right)^{2}}\,
+       \sin s_3 \cos A_2
+  \end{align*}
+\item[4.] \emph{Solve the equation} \hfill(20 points)\\
+  Let $x = \cos s_2'$. Then
+  \[ x = \frac{0.018328}{x}
+     + \sqrt{\frac{x^2 - 0.018328}{x^2}} \times 0.92756 \]
+  Multiply both sides by $x$ to get
+  \begin{align*}
+  x^2 &= 0.018328
+     + x\sqrt{\frac{x^2 - 0.018328}{x^2}} \times 0.92756\\
+  x^2 - 0.018328 &= x\sqrt{\frac{x^2 - 0.018328}{x^2}} \times 0.92756\\
+  (x^2 - 0.018328)^2 &= (x^2 - 0.018328) \times (0.92756)^2\\
+  x^4 - 0.89702x^2 + 0.016105 &= 0
+  \end{align*}
+  which is a quadratic equation of $x^2$. The roots are $\pm 0.13538$ and
+  $\pm 0.93739$.
+\item[5.] \emph{Determine the latitude} \hfill(10 points)\\
+  Thus,
+  \[ s_2' = \cos^{-1} 0.93739 = 0.35574\ \mathrm{rad} = 20^\circ 23' \]
+  or
+  \[ s_2' = \cos^{-1} 0.13538 = 1.4350\ \mathrm{rad} = 82^\circ 13' \]
+  The latitude is $69^\circ 37'\,S$ or $7^\circ 47'$\,S. The second one is
+  impossible because it is higher than the latitude of Lima. Thus the answer
+  is
+  \[ 69^\circ 37'\,S \]
+\end{description}
+
+\textbf{3rd version (using Napier's rule)}
+
+\begin{description}
+\item[1.] \emph{Determine the lengths of the sides of the triangle}
+  \hfill(20 points)\\
+  \[ s_2 = 90^\circ - 12^\circ 2' = 77^\circ 58' = 1.3608\ \mathrm{rad},\quad
+     s_3 = 90^\circ - 7^\circ 47' = 82^\circ 13' = 1.4350\ \mathrm{rad}; \]
+  \[ A_1 = (180^\circ - 77^\circ 1') + (180^\circ - 110^\circ 26')
+     = 172^\circ 33' = 3.0116\ \mathrm{rad} \]
+  Using the Law of Cosines for sides
+  \[ \cos s_1 = (\cos s_2)(\cos s_3) + (\sin s_2)(\sin s_3)(\cos A_1) \]
+  to obtain $s_1 = 2.7724$\,rad.
+\item[2.] \emph{Determine the angles of the triangle} \hfill(30 points)\\
+  Then use
+  \[ \cos s_2 = (\cos s_1)(\cos s_3) + (\sin s_1)(\sin s_3)(\cos A_2) \]
+  to obtain $A_2 = 0.35921$\,rad. Similarly, use the Law of Cosines
+  \[ \cos s_3 = (\cos s_1)(\cos s_2) + (\sin s_1)(\sin s_2)(\cos A_3) \]
+  to get that $A_3 = 0.3642$\,rad.
+\item[3.] \emph{Find the latitude of the point} \hfill(50 points)\\
+  Let $P$ be the southernmost point on the flight path. Since the triangle
+  has a right angle at P, then use one of Napier's rules
+  \[ \sin s_2' = \sin s_3 \sin A_2 \]
+  to get $s_2' = 0.35576\ \mathrm{rad} = 20^\circ 23'$. Therefore, the
+  latitude of $P$ is
+  \[ 90^\circ - 20^\circ 23' = 69^\circ 37'\,S \]
+  % FIGURE NEEDED: sphere with flight path, southernmost point P and the
+  % right spherical triangle at P (2015_th_sol.pdf, page 22).
+\end{description}

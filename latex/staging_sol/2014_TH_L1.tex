@@ -1,0 +1,326 @@
+\begin{description}
+\item[A.1)] The following notations are used: $D_{\mathrm{S}}$ the diameter
+  of the Sun, $d_{E\mathrm{S}}$ Earth--Sun distance, $\theta$ angular
+  diameter of the Sun as seen from the Earth.
+  % FIGURE NEEDED: Fig. 1 -- Earth, Sun of radius R_S at distance d_PS,
+  % half-angle theta/2 marked (2014_th_sol.pdf, page 5).
+  According to fig.~1 the angular diameter of the Sun can be calculated as
+  follows:
+  \begin{align*}
+  \sin\frac{\theta}{2} &= \frac{R_{\mathrm{S}}}{d_{\mathrm{PS}}}
+    \approx \frac{\theta}{2};
+    % sic: the solution switches from d_ES to d_PS for the Earth-Sun distance
+  \\
+  \theta &= \frac{2R_{\mathrm{S}}}{d_{\mathrm{PS}}}
+    = \frac{D_{\mathrm{S}}}{d_{\mathrm{PS}}}
+    = \frac{2\cdot 6{,}96\cdot 10^{5}\ \mathrm{km}}{15\cdot 10^{7}\ \mathrm{km}}
+    = 0{,}00928\ \mathrm{rad}.
+  \end{align*}
+
+  Figure~2 presents the Sun's evolution during sunset as seen by the
+  astronomer. On an equinox day the Sun moves retrograde along the celestial
+  equator. There are marked the following 3 positions of the Sun:
+  \begin{description}
+  \item[$\mathrm{T_{dos}}$] The solar disc is tangent to the equatorial plane
+    above the standard horizon --- the start of the sunset;
+  \item[$\mathrm{S_{dos}}$] The center of the solar disc on the celestial
+    equator in the moment the sunset starts;
+  \item[$\mathrm{T_{sos}}$] The solar disc is tangent to the equatorial plane
+    below the standard horizon --- the end of the sunset;
+  \item[$\mathrm{S_{sos}}$] The center of the solar disc on the celestial
+    equator in the moment the sunset ends.
+  \end{description}
+  % FIGURE NEEDED: Fig. 2 -- celestial sphere with equator and horizon, solar
+  % discs at the start and end of sunset (2014_th_sol.pdf, page 5).
+
+  The duration of the sunset is $\tau$. During this time the center of the
+  Sun moves along the equator from $\mathrm{S_{dos}}$ to $\mathrm{S_{sos}}$.
+  The vector-radius of the Sun rotates in the equatorial plane with angle
+  $\phi$ and in the vertical plane with angle $\theta$, i.e.\ the angular
+  diameter of the Sun as seen from the Earth.
+
+  Considering that the Sun travels the distance $2x$ along the equatorial
+  path with merely constant [speed], i.e.\ during time $\tau$, and that the
+  spherical right triangle $\mathrm{S_{dos}}\mathrm{T_{dos}}\mathrm{V}$ can
+  be considered a plane one, the following relations can be written:
+  \begin{align*}
+  \sin\gamma &= \frac{R_{\mathrm{S}}}{x};\quad
+    x = \frac{R_{\mathrm{S}}}{\sin\gamma};\quad
+    2x = \frac{2R_{\mathrm{S}}}{\sin\gamma}
+       = \frac{D_{\mathrm{S}}}{\sin\gamma};\\
+  \tau &= \frac{2x}{\mathrm{v}}
+    = \frac{2x}{\omega\cdot d_{\mathrm{PS}}}
+    = \frac{\dfrac{D_{\mathrm{S}}}{\sin\gamma}}
+           {\dfrac{2\pi}{T_{\mathrm{P}}}\cdot d_{\mathrm{PS}}}
+    = \frac{\dfrac{D_{\mathrm{S}}}{d_{\mathrm{PS}}}}
+           {\dfrac{2\pi}{T_{\mathrm{P}}}\cdot\sin\gamma}
+    = \frac{\theta\cdot T_{\mathrm{P}}}{2\pi\cdot\sin\gamma};\\
+  \sin\gamma &= \sin(90^\circ - \varphi) = \cos\varphi;\\
+  \tau &= \frac{\theta\cdot T_{\mathrm{P}}}{2\pi\cdot\cos\varphi};\\
+  \tau &= \frac{0{,}00928\ \mathrm{rad}\cdot 24\ \mathrm{h}}
+              {2\cdot 3{,}14\ \mathrm{rad}\cdot\cos(45^\circ 21')}
+    % sic: the problem gives phi = 45 degrees, but the solution evaluates with 45deg21'
+    = \frac{0{,}22272\cdot 60}{2\cdot 3{,}14\cdot 0{,}707}\ \mathrm{min}
+    \approx 3\ \mathrm{min}.
+  \end{align*}
+
+\item[A.2)] If the atmospheric refraction is negligible, the eagle on the
+  top of the cross $\mathrm{V}_1$ (figure~3) is on the same latitude
+  ($\varphi$) as the astronomer, but at the altitude $H$. Thus from the point
+  of view of $\mathrm{V}_1$ the horizon line is below the standard horizon
+  line by an angle $\Delta\alpha_1$:
+  % FIGURE NEEDED: Fig. 3 -- Earth of radius R, observer V_1 at height H,
+  % standard and lowered horizons with the angle Delta alpha_1
+  % (2014_th_sol.pdf, page 6).
+  \begin{align*}
+  \cos\Delta\alpha_1 &= \frac{R}{R+H};\\
+  \sin\Delta\alpha_1 &= \frac{\sqrt{(R+H)^2 - R^2}}{R+H}
+    = \frac{\sqrt{2RH + H^2}}{R+H}
+    \approx \frac{\sqrt{2RH}}{R}
+    = \sqrt{\frac{2H}{R}} \approx \Delta\alpha_1;\\
+  \Delta\alpha_1 &= \sqrt{\frac{2\cdot 2{,}3\ \mathrm{km}}{6380\ \mathrm{km}}}
+    \approx 0{,}02685\ \mathrm{rad} \approx 1{,}54^\circ.
+  \end{align*}
+
+  For the observer $\mathrm{V}_1$ the Sun will go below the lowered horizon
+  after moving down under the standard horizon with angle $\Delta\alpha_1$
+  and moving along the equator with an angle $\Delta\beta_1$, as seen in
+  fig.~4.
+  % FIGURE NEEDED: Fig. 4 -- celestial sphere with poles P, P', zenith Z,
+  % equator QQ', horizon, and the right spherical triangle ABV showing
+  % Delta alpha_1 and Delta beta_1 (2014_th_sol.pdf, page 7).
+  In the right spherical triangle ABV, by using the sinus formula:
+  \begin{align*}
+  \frac{\sin(90^\circ - \varphi)}{\sin\Delta\alpha_1}
+    &= \frac{\sin 90^\circ}{\sin\Delta\beta_1};\\
+  \frac{\cos\varphi}{\Delta\alpha_1} &= \frac{1}{\Delta\beta_1};\quad
+    \Delta\beta_1 = \frac{\Delta\alpha_1}{\cos\varphi};\\
+  \Delta\beta_1 &= \omega\cdot\Delta\tau_1
+    = \frac{2\pi}{T_{\mathrm{P}}}\cdot\Delta\tau_1;\\
+  \Delta\tau_1 &= \frac{\Delta\alpha_1}{\cos\varphi}\cdot
+      \frac{T_{\mathrm{P}}}{2\pi}
+    = \frac{1{,}54^\circ}{\cos(45^\circ 21')}\cdot
+      \frac{24\cdot 60\ \mathrm{min}}{360^\circ}
+    \approx 8{,}71\ \mathrm{minute},
+  \end{align*}
+  which represents the delay of the start of the sunset from the point of
+  view of $\mathrm{V}_1$ with regard to the astronomer, due to the
+  $\mathrm{V}_1$ observer's altitude.
+
+  The altitude effect on the total time of sunset can be calculated by using
+  fig.~5:
+  % FIGURE NEEDED: Fig. 5 -- celestial sphere with equatorial plane and
+  % lowered horizon's plane, solar discs S_dos/T_dos and S_sos/T_sos, angles
+  % gamma and gamma + Delta alpha_1 (2014_th_sol.pdf, page 8).
+  \begin{align*}
+  \sin(\gamma + \Delta\alpha_1) &= \frac{R_{\mathrm{S}}}{y};\quad
+    y = \frac{R_{\mathrm{S}}}{\sin(\gamma + \Delta\alpha_1)};\quad
+    2y = \frac{2R_{\mathrm{S}}}{\sin(\gamma + \Delta\alpha_1)}
+       = \frac{D_{\mathrm{S}}}{\sin(\gamma + \Delta\alpha_1)};\\
+  \tau_1 &= \frac{2y}{\mathrm{v}}
+    = \frac{2y}{\omega\cdot d_{\mathrm{PS}}}
+    = \frac{\dfrac{D_{\mathrm{S}}}{\sin(\gamma + \Delta\alpha_1)}}
+           {\dfrac{2\pi}{T_{\mathrm{P}}}\cdot d_{\mathrm{PS}}}
+    = \frac{\dfrac{D_{\mathrm{S}}}{d_{\mathrm{PS}}}}
+           {\dfrac{2\pi}{T_{\mathrm{P}}}\cdot\sin(\gamma + \Delta\alpha_1)}
+    = \frac{\theta\cdot T_{\mathrm{P}}}
+           {2\pi\cdot\sin(\gamma + \Delta\alpha_1)};\\
+  \gamma &= 90^\circ - \varphi;\\
+  \sin(\gamma + \Delta\alpha_1)
+    &= \sin(90^\circ - \varphi + \Delta\alpha_1)
+     = \sin[90^\circ - (\varphi - \Delta\alpha_1)]
+     = \cos(\varphi - \Delta\alpha_1);\\
+  \tau_1 &= \frac{\theta\cdot T_{\mathrm{P}}}
+                {2\pi\cdot\cos(\varphi - \Delta\alpha_1)};\\
+  \tau_1 &= \frac{0{,}00928\ \mathrm{rad}\cdot 24\ \mathrm{h}}
+               {2\cdot 3{,}14\ \mathrm{rad}\cdot\cos(45^\circ - 1{,}54^\circ)}
+    = \frac{0{,}22272\cdot 60}{2\cdot 3{,}14\cdot 0{,}725}\ \mathrm{min}
+    \approx 2{,}9350\ \mathrm{min},
+  \end{align*}
+  which represents the total duration of sunset for $\mathrm{V}_1$ at
+  altitude $H$.
+
+  Similarly for eagle $\mathrm{V}_2$, at the same latitude ($\varphi$) but
+  altitude $H + h$ (the top of the cross), the lowering effect on the
+  horizon is measured by angle $\Delta\alpha_2$, thus:
+  \begin{align*}
+  \cos\Delta\alpha_2 &= \frac{R}{R+H+h};\\
+  \sin\Delta\alpha_2 &= \frac{\sqrt{(R+H+h)^2 - R^2}}{R+H+h}
+    = \frac{\sqrt{2R(H+h) + (H+h)^2}}{R+H+h}
+    \approx \frac{\sqrt{2R(H+h)}}{R}
+    = \sqrt{\frac{2(H+h)}{R}} \approx \Delta\alpha_2;\\
+  \Delta\alpha_2 &= \sqrt{\frac{2\cdot(2{,}3 + 0{,}0393)\ \mathrm{km}}
+                              {6380\ \mathrm{km}}}
+    \approx 0{,}02707\ \mathrm{rad} \approx 1{,}55^\circ;\\
+  \frac{\sin(90^\circ - \varphi)}{\sin\Delta\alpha_2}
+    &= \frac{\sin 90^\circ}{\sin\Delta\beta_2};\\
+  \frac{\cos\varphi}{\Delta\alpha_2} &= \frac{1}{\Delta\beta_2};\quad
+    \Delta\beta_2 = \frac{\Delta\alpha_2}{\cos\varphi};\\
+  \Delta\beta_2 &= \omega\cdot\Delta\tau_2
+    = \frac{2\pi}{T_{\mathrm{P}}}\cdot\Delta\tau_2;\\
+  \Delta\tau_2 &= \frac{\Delta\alpha_2}{\cos\varphi}\cdot
+      \frac{T_{\mathrm{P}}}{2\pi}
+    = \frac{1{,}55^\circ}{\cos(45^\circ 21')}\cdot
+      \frac{24\cdot 60\ \mathrm{min}}{360^\circ}
+    \approx 8{,}77\ \mathrm{minute},
+  \end{align*}
+  which represents the delay of the start moment of the sunset for
+  $\mathrm{V}_2$ due to the altitude $H + h$.
+
+  Similarly, the total duration of the sunset for the observer
+  $\mathrm{V}_2$:
+  \begin{align*}
+  \tau_2 &= \frac{\theta\cdot T_{\mathrm{P}}}
+                {2\pi\cdot\cos(\varphi - \Delta\alpha_2)};\\
+  \tau_2 &= \frac{0{,}00928\ \mathrm{rad}\cdot 24\ \mathrm{h}}
+               {2\cdot 3{,}14\ \mathrm{rad}\cdot\cos(45^\circ - 1{,}55^\circ)}
+    = \frac{0{,}22272\cdot 60}{2\cdot 3{,}14\cdot 0{,}726}\ \mathrm{min}
+    \approx 2{,}9309\ \mathrm{min}.
+  \end{align*}
+
+  We may note the following:
+  \begin{itemize}
+  \item the horizon lowering $\Delta\alpha$ is increased by the increase of
+    the altitude;
+    \[ (H < H+h \rightarrow \Delta\alpha_1 < \Delta\alpha_2;\
+       H\uparrow\ \rightarrow \Delta\alpha\uparrow) \]
+  \item the delay of the moment of sunset start is increased by the increase
+    of the altitude:
+    \[ (H < H+h \rightarrow \Delta\tau_1 < \Delta\tau_2;\
+       H\uparrow\ \rightarrow \Delta\tau\uparrow) \]
+  \item the total duration of sunset is reduced by the increase of the
+    altitude:
+    \[ (0 < H < H+h \rightarrow \tau > \tau_1 > \tau_2;\
+       H\uparrow\ \rightarrow \tau\downarrow) \]
+  \end{itemize}
+
+  Conclusions: if we consider $t_0$ the moment of sunset start for the
+  astronomer,
+  \begin{itemize}
+  \item for $\mathrm{V}_1$ the sunset starts at $t_0 + 8{,}71$\,min and ends
+    at $t_0 + 8{,}71\ \mathrm{min} + 2{,}9350\ \mathrm{min}
+    = t_0 + 11{,}6450$\,min;
+  \item for $\mathrm{V}_2$ the sunset starts at $t_0 + 8{,}77$\,min and ends
+    at $t_0 + 8{,}77\ \mathrm{min} + 2{,}9309\ \mathrm{min}
+    = t_0 + 11{,}7009$\,min;
+  \item thus the eagle from the plateau leaves the cross first;
+  \item the time between the leaving moments is:
+    \[ \Delta t = t_0 + 11{,}7009\ \mathrm{min}
+       - t_0 - 11{,}6450\ \mathrm{min}
+       = 0{,}0559\ \mathrm{min} = 3{,}354\ \mathrm{s}. \]
+  \end{itemize}
+
+\item[B.1)] As seen in fig.~6 the length of the [shadow of the] cross on the
+  plateau will be minimum when the Sun passes the local meridian, i.e.\ the
+  height of the Sun above the horizon will be maximum
+  ($h_{\mathrm{max}} = \gamma = 90^\circ - \varphi$). Thus the shadow of the
+  horizontal arms of the cross is superposed on the shadow of the vertical
+  pillar.
+  % FIGURE NEEDED: Fig. 6 -- celestial sphere with the Sun's diurnal
+  % parallel, local meridian, the cross and its minimum shadow u_min on the
+  % plateau (2014_th_sol.pdf, page 10).
+  In these conditions:
+  \begin{align*}
+  \sin\phi &= \frac{h}{d};\quad
+    \phi \approx \gamma = 90^\circ - \varphi;\\
+  d &= \frac{h}{\sin\phi} \approx \frac{h}{\sin\gamma}
+    = \frac{h}{\sin(90^\circ - \varphi)}
+    = \frac{h}{\cos\varphi}
+    = \frac{39{,}3\ \mathrm{m}}{\cos 45^\circ}
+    = \frac{39{,}3}{0{,}707}\ \mathrm{m} \approx 55{,}58\ \mathrm{m}.
+  \end{align*}
+  The distance between the two eagles is
+  \[ u_{\mathrm{min}} = h\cdot\cot\phi \approx h\cdot\cot\gamma
+     = h\cdot\cot(90^\circ - \varphi)
+     = h\cdot\tan\varphi = 39{,}3\ \mathrm{m}. \]
+
+\item[B.2)] In the above mentioned conditions the shadow of the arm oriented
+  toward South is on the vertical pillar of the cross, as seen in fig.~7:
+  % FIGURE NEEDED: Fig. 7 -- celestial sphere as in Fig. 6 plus detail of the
+  % cross with arm length l_b, its shadow u_b on the vertical pillar, and the
+  % angle phi ~ gamma = 90 deg - varphi (2014_th_sol.pdf, page 11).
+  \[ \tan\phi = \frac{l_{\mathrm{b}}}{u_{\mathrm{b}}};\quad
+     l_{\mathrm{b}} = u_{\mathrm{b}}\cdot\tan\phi
+     = 7\ \mathrm{m}\cdot\tan 45^\circ = 7\ \mathrm{m}, \]
+  which represents the length of the cross arm.
+
+\item[C.1)] For an observer situated in the center O of the celestial
+  topocentric sphere, at latitude $\varphi$, at sea level, all the stars are
+  circumpolar ones, see fig.~8. Their diurnal parallels, parallel with the
+  equatorial parallel, are above the real local horizon
+  ($\mathrm{N}_0\mathrm{S}_0$). The star $\sigma_0$ is at the circumpolar
+  limit because its parallel touches the real local horizon in point
+  $\mathrm{N}_0$ but still remains above it. Thus $\sigma_0$ is a marginal
+  circumpolar star. Without taking into account the atmospheric refraction,
+  from the isosceles triangle $\mathrm{O}\sigma_0\mathrm{N}_0$ results the
+  $\sigma_0$ declination:
+  % FIGURE NEEDED: Fig. 8 -- topocentric celestial sphere, horizon N0-S0,
+  % marginal circumpolar star sigma_0, angles delta_0,min and varphi
+  % (2014_th_sol.pdf, page 12).
+  \begin{align*}
+  \delta_{0,\mathrm{min}} + 90^\circ
+    + (\varphi - \delta_{\mathrm{min}}) &= 180^\circ;
+    % sic: source writes delta_min (not delta_0,min) in the middle term
+  \\
+  \delta_{0,\mathrm{min}} &= 90^\circ - \varphi.
+  \end{align*}
+
+  By taking into account the atmospheric refraction, the horizon line
+  changes to line $\mathrm{N}'\mathrm{S}'$, with angle
+  $\theta' \approx 34'$, as seen in fig.~9. The star $\sigma_0$ remains a
+  circumpolar one but above the limit. In these conditions the star
+  $\sigma'$ gathers the limit conditions, its declination being
+  $\delta'_{\mathrm{min}} < \delta_{\mathrm{min}}$. In these conditions, for
+  an observer situated in the center of the topocentric celestial sphere, at
+  latitude $\varphi$ and altitude zero, the star $\sigma'$, with declination
+  $\delta'_{\mathrm{min}} < \delta_{0\,\mathrm{min}}$, is on the limit of
+  the circumpolarity. From the isosceles triangle
+  $\mathrm{N}'\mathrm{O}\sigma'$ the declination of $\sigma'$ will be:
+  % FIGURE NEEDED: Fig. 9 -- topocentric celestial sphere with the
+  % refraction-shifted horizon N'S' and the limit star sigma'
+  % (2014_th_sol.pdf, page 13).
+  \begin{align*}
+  2\delta'_{\mathrm{min}} + (\varphi - \delta'_{\mathrm{min}})
+    + (90^\circ + \theta') &= 180^\circ;\\
+  \delta'_{\mathrm{min}} &= 90^\circ - \varphi - \theta'.
+  \end{align*}
+
+  For the observer at latitude $\varphi$, but at height $h$, taking into
+  account the effect of lowering of the horizon, the star $\sigma''$ will
+  meet the problem requirements, see figure~10. The new horizon is
+  $\mathrm{N}''\mathrm{S}''$ and the declination of $\sigma''$ is
+  $\delta''_{\mathrm{min}} < \delta_{0\,\mathrm{min}}$. Star $\sigma_0$
+  remains a circumpolar one but above the limit. From the isosceles triangle
+  $\mathrm{N}''\mathrm{O}\sigma''$ the declination of star $\sigma''$ will
+  be:
+  % FIGURE NEEDED: Fig. 10 -- topocentric celestial sphere with lowered
+  % horizon N''S'', stars sigma_0 and sigma'', angles theta'' and
+  % delta''_min (2014_th_sol.pdf, page 14).
+  \begin{align*}
+  2\delta''_{\mathrm{min}} + (\varphi - \delta''_{\mathrm{min}})
+    + (90^\circ + \theta'') &= 180^\circ;\\
+  \delta''_{\mathrm{min}} &= 90^\circ - \varphi - \theta''.
+  \end{align*}
+
+  By taking into account the refraction effect and the altitude effect, from
+  triangle $\mathrm{N}\mathrm{O}\sigma$ in figure~11, the declination will
+  be
+  % FIGURE NEEDED: Fig. 11 -- topocentric celestial sphere combining the
+  % refraction and altitude effects on the horizon (2014_th_sol.pdf,
+  % page 14).
+  \begin{align*}
+  2\delta_{\mathrm{min}} + (\varphi - \delta_{\mathrm{min}})
+    + (90^\circ + \theta) &= 180^\circ;\\
+  \theta &= \theta' + \theta'';\quad
+    \theta' = \xi = 34';\quad
+    \theta'' = \Delta\alpha_2 = 1{,}55^\circ;\\
+  \delta_{\mathrm{min}} &= 90^\circ - \varphi - \theta' - \theta''
+    = 90^\circ - \varphi - \theta' - \Delta\alpha_2;\\
+  \delta_{\mathrm{min}} &= 90^\circ - 45^\circ - 0{,}56^\circ
+    - 1{,}55^\circ \approx 42{,}9^\circ.
+  \end{align*}
+
+\item[C.2)] The maximum height above the horizon will be
+  \[ h_{\mathrm{max}} = 90^\circ + \delta_{\mathrm{min}} - \varphi
+     = 90^\circ + 42{,}9^\circ - 45^\circ = 87{,}9^\circ. \]
+\end{description}

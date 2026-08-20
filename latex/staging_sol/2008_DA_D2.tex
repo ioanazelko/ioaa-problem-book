@@ -1,0 +1,185 @@
+\begin{description}
+\item[1.] % FIGURE NEEDED: plot of the bolometric correction BC against
+  % colour index B-V for the tabulated main-sequence stars (scatter of
+  % points, BC from ~2.3 at B-V = -0.25 down to ~0 near B-V = 0.3-0.5 and
+  % rising again to ~0.8 at B-V = 1.2); 2008 DA solutions, page 1.
+  \hfill(20\%)
+
+\item[2.] % FIGURE NEEDED: same BC vs B-V data with a smooth curve drawn
+  % through the points ("Main Sequence Stars"), with dashed construction
+  % lines reading off BC at B-V = 0.65 (alpha Cen A) and B-V = 0.85
+  % (alpha Cen B); 2008 DA solutions, page 1.
+
+  \begin{itemize}
+  \item For $\alpha$ Cen.\ A., its colour index is given by $B-V = 0.65$.
+    Then, by taking the line that intersecting the above curve we find
+    $BC = 0.10$. \hfill(10\%)
+  \item For $\alpha$ Cen.\ B., its colour index is given by $B-V = 0.85$.
+    Then, by taking the line that intersecting the above curve we find
+    $BC = 0.25$. \hfill(10\%)
+  \end{itemize}
+  From the relation $m_{\mathrm{v}} - m_{\mathrm{bol}} = BC$ it is then
+  obtained,
+  \begin{itemize}
+  \item For $\alpha$ Cen.\ A, $m_{\mathrm{v}} = -0.01$, we get
+    $m_{\mathrm{bol}} = -0.01 - 0.10 = -0.11$ \hfill(10\%)
+  \item For $\alpha$ Cen.\ B, $m_{\mathrm{v}} = 1.34$, we get
+    $m_{\mathrm{bol}} = 1.34 - 0.25 = 1.09$ \hfill(10\%)
+  \end{itemize}
+
+\item[3.] Periodic orbit of $\alpha$ Centauri star is $P = 79.24$ years and
+  its angle of semi major axis is $\alpha = 17.59''$. From the result 2a we
+  find that the apparent bolometric magnitude of $\alpha$ Centauri A is
+  $m_{\mathrm{bol}A} = -0.11$, while the apparent bolometric magnitude of
+  $\alpha$ Centauri B is $m_{\mathrm{bol}B} = 1.09$ (two decimal places).
+
+  \emph{1st iteration:}
+  \begin{description}
+  \item[Step 1:] Let $\mathcal{M}_A$ and $\mathcal{M}_B$ be the mass of
+    Centauri A and Centauri B stars, respectively. Then, we firstly take
+    $\mathcal{M}_A + \mathcal{M}_B = 2$.
+  \item[Step 2:] Inserting the values of $\mathcal{M}_A + \mathcal{M}_B$,
+    $P$, and $\alpha$ to the third Kepler equation namely,
+    \[ \left( \frac{\alpha}{p} \right)^3
+       = (\mathcal{M}_A + \mathcal{M}_B) P^2 \]
+    One gets $p$, that is
+    \[ p = \left[ \frac{\alpha^3}{(\mathcal{M}_A + \mathcal{M}_B) P^2}
+           \right]^{1/3}
+         = \left[ \frac{(17.59)^3}{2 (79.24)^2} \right]^{1/3}
+         = \left[ 0.4334 \right]^{1/3} = 0.7568'' \]
+  \item[Step 3:] We determine the magnitude of absolute bolometric using
+    Pogson equation,
+    \[ m_{bol} - M_{bol} = -5 - 5\log p
+       \;\Longrightarrow\; M_{bol} = m_{bol} + 5 + 5\log p \]
+    For $\alpha$ Centauri A:
+    \begin{align*}
+      M_{bolA} = m_{bolA} + 5 + 5\log p &= -0.11 + 5 + 5\log(0.7568) \\
+        &= -0.11 + 5 - 0.6051 = 4.2849
+    \end{align*}
+    For $\alpha$ Centauri B:
+    \begin{align*}
+      M_{bolB} = m_{bolB} + 5 + 5\log p &= 1.09 + 5 + 5\log(0.7568) \\
+        &= 1.09 + 5 - 0.6051 = 5.4849
+    \end{align*}
+  \item[Step 4:] We determine the mass of both stars using luminosity mass
+    relation,
+    \[ M_{bol} = -10.2 \log\left( \frac{\mathcal{M}}{\mathcal{M}_\odot}
+       \right) + 4.9
+       \;\Longrightarrow\;
+       \mathcal{M} = 10^{\left( \frac{4.9 - M_{bol}}{10.2} \right)}
+       \mathcal{M}_\odot \]
+    For $\alpha$ Centauri A:
+    \[ \mathcal{M}_A = 10^{\left( \frac{4.9 - M_{bolA}}{10.2} \right)}
+       \mathcal{M}_\odot
+       = 10^{\left( \frac{4.9 - 4.2849}{10.2} \right)} \mathcal{M}_\odot
+       = 1.1490\,\mathcal{M}_\odot \]
+    For $\alpha$ Centauri B:
+    \[ \mathcal{M}_B = 10^{\left( \frac{4.9 - M_{bolB}}{10.2} \right)}
+       \mathcal{M}_\odot
+       = 10^{\left( \frac{4.9 - 5.4949}{10.2} \right)} \mathcal{M}_\odot
+       = 0.8763\,\mathcal{M}_\odot \]
+    % sic — the exponent shows 5.4949 where Step 3 gave M_bolB = 5.4849;
+    % the printed result 0.8763 follows from 5.4849.
+  \end{description}
+  \hfill(30\%)
+
+  \emph{2nd iteration:} Repeating the step 1 until 4 and using the previous
+  resulting mass in the first iteration:
+  \begin{description}
+  \item[Step 1:] $\mathcal{M}_A + \mathcal{M}_B = 1.1490 + 0.8763 = 2.0253$
+  \item[Step 2:]
+    \[ p = \left[ \frac{\alpha^3}{(\mathcal{M}_A + \mathcal{M}_B) P^2}
+           \right]^{1/3}
+         = \left[ \frac{(17.59)^3}{(2.0253)(79.24)^2} \right]^{1/3}
+         = 0.7536 \]
+  \item[Step 3:] For $\alpha$ Centauri A:
+    \[ M_{bolA} = m_{bolA} + 5 + 5\log p
+       = -0.11 + 5 + 5\log(0.7536) = 4.2757 \]
+    For $\alpha$ Centauri B:
+    \[ M_{bolB} = m_{bolB} + 5 + 5\log p
+       = 1.09 + 5 + 5\log(0.7536) = 5.4757 \]
+  \item[Step 4:] For $\alpha$ Centauri A:
+    \[ \mathcal{M}_A
+       = 10^{\left( \frac{4.9 - 4.2757}{10.2} \right)} \mathcal{M}_\odot
+       = 1.1513\,\mathcal{M}_\odot \]
+    For $\alpha$ Centauri B:
+    \[ \mathcal{M}_B
+       = 10^{\left( \frac{4.9 - 5.4757}{10.2} \right)} \mathcal{M}_\odot
+       = 0.8781\,\mathcal{M}_\odot \]
+  \end{description}
+  \hfill(10\%)
+
+  \emph{3rd iteration:} Repeating the step 1 until 4 and using the previous
+  resulting mass in the second iteration:
+  \begin{description}
+  \item[Step 1:] $\mathcal{M}_A + \mathcal{M}_B = 1.1513 + 0.8781 = 2.0294$
+  \item[Step 2:]
+    \[ p = \left[ \frac{(17.59)^3}{(2.0294)(79.24)^2} \right]^{1/3}
+         = 0.75314 \]
+  \item[Step 3:] For $\alpha$ Centauri A:
+    \[ M_{bolA} = -0.11 + 5 + 5\log(0.7531) = 4.2751 \]
+    For $\alpha$ Centauri B:
+    \[ M_{bolB} = 1.09 + 5 + 5\log(0.7531) = 5.4751 \]
+  \item[Step 4:] For $\alpha$ Centauri A:
+    \[ \mathcal{M}_A
+       = 10^{\left( \frac{4.9 - 4.2751}{10.2} \right)} \mathcal{M}_\odot
+       = 1.1515\,\mathcal{M}_\odot \]
+    For $\alpha$ Centauri B:
+    \[ \mathcal{M}_B
+       = 10^{\left( \frac{4.9 - 5.4751}{10.2} \right)} \mathcal{M}_\odot
+       = 0.8782\,\mathcal{M}_\odot \]
+  \end{description}
+
+  \emph{4th iteration:} Repeating the step 1 until 4 and using the previous
+  resulting mass in the third iteration:
+  \begin{description}
+  \item[Step 1:] $\mathcal{M}_A + \mathcal{M}_B = 1.1515 + 0.8782 = 2.0297$
+  \item[Step 2:]
+    \[ p = \left[ \frac{(17.59)^3}{(2.0297)(79.24)^2} \right]^{1/3}
+         = 0.7531 \]
+  \item[Step 3:] For $\alpha$ Centauri A:
+    \[ M_{bolA} = -0.11 + 5 + 5\log(0.7531) = 4.2753 \]
+    For $\alpha$ Centauri B:
+    \[ M_{bolB} = 1.09 + 5 + 5\log(0.7531) = 5.4743 \]
+  \item[Step 4:] For $\alpha$ Centauri A:
+    \[ \mathcal{M}_A
+       = 10^{\left( \frac{4.9 - 4.2753}{10.2} \right)} \mathcal{M}_\odot
+       = 1.1517\,\mathcal{M}_\odot \]
+    For $\alpha$ Centauri B:
+    \[ \mathcal{M}_B
+       = 10^{\left( \frac{4.9 - 5.4743}{10.2} \right)} \mathcal{M}_\odot
+       = 0.8784\,\mathcal{M}_\odot \]
+  \end{description}
+
+  \emph{5th iteration:} Repeating the step 1 until 4 and using the previous
+  resulting mass in the fourth iteration:
+  \begin{description}
+  \item[Step 1:] $\mathcal{M}_A + \mathcal{M}_B = 1.1517 + 0.8784 = 2.0301$
+  \item[Step 2:]
+    \[ p = \left[ \frac{(17.59)^3}{(2.0301)(79.24)^2} \right]^{1/3}
+         = 0.7530'' \]
+  \item[Step 3:] For $\alpha$ Centauri A:
+    \[ M_{bolA} = -0.11 + 5 + 5\log(0.7530) = 4.2740 \]
+    For $\alpha$ Centauri B:
+    \[ M_{bolB} = 1.10 + 5 + 5\log(0.7530) = 5.4740 \]
+    % sic — the source writes 1.10 here where every other iteration uses
+    % m_bolB = 1.09.
+  \item[Step 4:] For $\alpha$ Centauri A:
+    \[ \mathcal{M}_A
+       = 10^{\left( \frac{4.9 - 4.2740}{10.2} \right)} \mathcal{M}_\odot
+       = 1.1518\,\mathcal{M}_\odot \]
+    For $\alpha$ Centauri B:
+    \[ \mathcal{M}_B
+       = 10^{\left( \frac{4.9 - 5.4740}{10.2} \right)} \mathcal{M}_\odot
+       = 0.8785\,\mathcal{M}_\odot \]
+  \end{description}
+
+  The results of the fifth iteration equal the results of the fourth
+  iteration, so
+  \begin{itemize}
+  \item The mass of $\alpha$ Centauri A:
+    $\mathcal{M}_A = 1.1518\,\mathcal{M}_\odot$
+  \item The mass of $\alpha$ Centauri B:
+    $\mathcal{M}_B = 0.8785\,\mathcal{M}_\odot$
+  \end{itemize}
+\end{description}

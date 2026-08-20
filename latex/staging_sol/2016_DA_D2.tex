@@ -1,0 +1,245 @@
+\begin{description}
+\item[(D2.1)]
+From the table we see that the angular size of Moon is smallest close to the New Moon day.
+Thus, the answer is \fbox{New Moon}. \hfill(3.0)
+
+\emph{Justification is NOT necessary for full credit.}
+
+\item[(D2.2)]
+As there is an eclipse happening in this month, the lunar nodes are close to Full Moon day
+and New Moon day. Next we notice that lowest declination of Moon is just $18^\circ$. This
+means that after the New Moon day, the orbit of Moon is above the ecliptic. In other words,
+the ascending node is near the \fbox{New Moon}. \hfill(4.0)
+
+\emph{Justification is NOT necessary for full credit.}
+
+\item[(D2.3)]
+The largest angular size of the Moon in the ephemerides is $2008.3''$ and the smallest
+angular size is $1763.7''$. The distance is inversely proportional to the angular size. Hence
+ratio of distance at perigee to the distance at apogee is:
+\begin{align*}
+\mathrm{Ratio} = \frac{r_{\mathrm{perigee}}}{r_{\mathrm{apogee}}}
+ &= \frac{a_0}{1+e}\times\frac{1-e}{a_0}
+ & &\hspace{-2em}(2.0)\\
+ % the two a_0 factors are struck through (cancelled) in the original
+\therefore \frac{1-e}{1+e} &= \frac{1763.7}{2008.3} = 0.87821\\
+\therefore e &= \frac{1 - 0.87821}{1 + 0.87821} = 0.064846\\
+&\fbox{$e \simeq 0.065$}
+ & &\hspace{-2em}(2.0)
+\end{align*}
+\emph{Rounding off is done to account for the fact that our data are not continuous, hence
+exact angular sizes at perigee and apogee are not known. A non-rounded answer will also
+receive full credit.}
+
+\item[(D2.4)]
+The following construction is shown. \hfill(5.0)
+% FIGURE NEEDED: geometric construction over the eclipse composite image
+% (2016_data_analysis_sol.pdf p.10): two chords AB and DC drawn across the umbra circle,
+% their perpendicular bisectors intersecting at the centre O, with measured values
+% D_moon = 3.3 cm and D_umbra = 9.1 cm.
+
+Only two chords are necessary to determine the centre.
+
+\emph{The credit is divided in two parts for the drawing:}
+\begin{itemize}
+\item \emph{Realisation that centre of umbra circle needs to be determined to find
+$\theta_{\mathrm{umbra}}$: 1.5}
+\item \emph{Accurate determination of centre of umbra circle by geometric construction: 2.5\\
+Determination of centre of hand-drawn circle: maximum 1.5}
+\item \emph{Measuring diameters of umbra and Moon: 0.5 each}
+\end{itemize}
+
+By estimating approximate centre of the shadow in the image, we find out,
+\begin{align*}
+\frac{\theta_{\mathrm{umbra}}}{\theta_{\mathrm{Moon}}}
+ &= \frac{d_{\mathrm{umbra}}}{d_{\mathrm{Moon}}} & &\hspace{-2em}(2.0)\\
+ &= \frac{9.1}{3.3} = 2.76\\
+\therefore \theta_{\mathrm{umbra}} &\simeq 2.76\,\theta_{\mathrm{Moon}}
+ & &\hspace{-2em}(1.0)
+\end{align*}
+\emph{Acceptable range: $\pm0.10$.}
+
+\item[(D2.5)]
+The following diagram needs to be drawn.
+% FIGURE NEEDED: ray diagram (2016_data_analysis_sol.pdf p.11): Sun's rays S1 and S2
+% converging past the Earth (centre O, radius R_earth, terminator points E, P), crossing at
+% J on the axis; the Moon's path through points Q, B, A; angles theta_1, theta_2 and
+% theta_Sun marked.
+
+Angular size of umbra is $\theta_{\mathrm{umbra}} = 2\angle BOQ$\\
+Angular size of penumbra is $\theta_{\mathrm{penumbra}} = 2\angle AOQ$
+
+We have
+\begin{align*}
+QA &= QP + PA\\
+ &= OE + PE\tan\theta_1\\
+ &\approx R_\oplus + d_{\mathrm{Moon}}\theta_1 & &\text{since } PA \ll PE\\
+ &\approx R_\oplus + d_{\mathrm{Moon}}\frac{\theta_{\mathrm{Sun}}}{2}
+   & &\text{since } \theta_1 \approx \theta_2 \approx \theta_{\mathrm{Sun}}/2
+   \quad(2.0)
+\end{align*}
+and
+\begin{align*}
+QB &= QP - PB\\
+ &= OE - PE\tan\theta_2\\
+ &\approx R_\oplus - d_{\mathrm{Moon}}\theta_2\\
+ &\approx R_\oplus - d_{\mathrm{Moon}}\frac{\theta_{\mathrm{Sun}}}{2}
+   & &\hspace{-2em}(2.0)
+\end{align*}
+\begin{align*}
+\therefore \theta_{\mathrm{penumbra}} = 2\angle AOQ
+ = 2\tan^{-1}\left(\frac{QA}{OQ}\right) &\approx 2\frac{QA}{OQ}
+   \qquad\text{since } QA \ll OQ\\
+ = 2\frac{R_\oplus + d_{\mathrm{Moon}}\dfrac{\theta_{\mathrm{Sun}}}{2}}{d_{\mathrm{Moon}}}
+ &= \frac{2R_\oplus}{d_{\mathrm{Moon}}} + \theta_{\mathrm{Sun}}
+   & &\hspace{-2em}(1.0)
+\end{align*}
+and
+\begin{align*}
+\theta_{\mathrm{umbra}} = 2\angle BOQ
+ = 2\tan^{-1}\left(\frac{QB}{OQ}\right) &\approx 2\frac{QB}{OQ}\\
+ = 2\frac{R_\oplus - d_{\mathrm{Moon}}\dfrac{\theta_{\mathrm{Sun}}}{2}}{d_{\mathrm{Moon}}}
+ &= \frac{2R_\oplus}{d_{\mathrm{Moon}}} - \theta_{\mathrm{Sun}}
+   & &\hspace{-2em}(1.0)
+\end{align*}
+Subtracting,
+\[
+\theta_{\mathrm{penumbra}} - \theta_{\mathrm{umbra}} = 2\theta_{\mathrm{Sun}}
+\Rightarrow \theta_{\mathrm{penumbra}} = \theta_{\mathrm{umbra}} + 2\theta_{\mathrm{Sun}}
+\]
+\hfill(1.0)
+
+We have,
+\[
+\theta_{\mathrm{umbra}} = 2.76\,\theta_{\mathrm{Moon}}
+\qquad\text{and } \theta_{\mathrm{Sun}} = 1915.0''
+\]
+From the given data, $\theta_{\mathrm{Moon}} = 2008.3''$. \hfill(1.0)
+
+Therefore,
+\begin{align*}
+\theta_{\mathrm{penumbra}} &= 2.76\,\theta_{\mathrm{Moon}}
+ + 2\frac{1915.0}{2008.3}\theta_{\mathrm{Moon}}\\
+&\fbox{$\theta_{\mathrm{penumbra}} = 4.67\,\theta_{\mathrm{Moon}}$}
+ & &\hspace{-2em}(1.0)
+\end{align*}
+\emph{Acceptable range: $4.57\,\theta_{\mathrm{Moon}}$ to $4.77\,\theta_{\mathrm{Moon}}$.}
+
+\underline{Alternative solution}:
+
+In the figure below, rays $HEA$ and $IFC$ are coming from one edge of solar disk and rays
+$HFD$ and $GEB$ are coming from the opposite edge. The observer ($O$) is assumed to be at
+the centre of the Earth. The Moon travels along the path $ABCD$ during the course of
+eclipse.
+% FIGURE NEEDED: two ray diagrams (2016_data_analysis_sol.pdf p.13): Earth with tangent
+% rays from both solar limbs crossing at J, the Moon's path ABCD, points E, F on the
+% Earth's limb, G, H, I beyond it, and the equal angles theta_Sun marked at several
+% vertices.
+
+From figure,
+\[
+\angle AEB = \angle GEH = \angle HFI = \angle DFC = \angle EJF = \theta_{\mathrm{Sun}}
+\]
+\hfill(3.0)
+\begin{align*}
+\theta_{\mathrm{umbra}} &= \angle BOC = 2.76\,\theta_{\mathrm{Moon}}
+ & &\hspace{-2em}(1.0)\\
+\theta_{\mathrm{penumbra}} &= \angle AOD & &\hspace{-2em}(1.0)\\
+\angle AOD &= \angle AOB + \angle BOC + \angle COD\\
+\angle AOB &= \angle AEB & &\hspace{-2em}(1.0)\\
+\angle COD &= \angle CFD & &\hspace{-2em}(1.0)\\
+\theta_{\mathrm{penumbra}} &\simeq \angle AEB + \theta_{\mathrm{umbra}} + \angle CFD\\
+ &= 2\theta_{\mathrm{Sun}} + 2.76\,\theta_{\mathrm{Moon}}
+ = 2\times1915.0'' + 2.76\times2008.3''\\
+\theta_{\mathrm{penumbra}} &= 9372.9'' = 4.67\,\theta_{\mathrm{Moon}}
+ & &\hspace{-2em}(2.0)
+\end{align*}
+
+\item[(D2.6)]
+From the Moon,
+\[
+\theta_{\mathrm{Earth}} = \frac{2R_\oplus}{d_{\mathrm{Moon}}}
+\]
+\hfill(1.0)
+
+From part (D2.5),
+\[
+\theta_{\mathrm{umbra}} + \theta_{\mathrm{penumbra}} = 2\theta_{\mathrm{Earth}}
+\]
+\hfill(2.0)
+\begin{align*}
+\therefore \theta_{\mathrm{Earth}}
+ &= \frac{\theta_{\mathrm{umbra}} + \theta_{\mathrm{penumbra}}}{2}
+ = \frac{2.76 + 4.67}{2}\theta_{\mathrm{Moon}} = 3.72\,\theta_{\mathrm{Moon}}\\
+&\fbox{$\theta_{\mathrm{Moon}} = {} = 0.269\,\theta_{\mathrm{Earth}}$}
+ & &\hspace{-2em}(2.0)
+\end{align*}
+% sic: the boxed answer prints a doubled equals sign.
+
+\underline{Alternative solution}:
+
+Let us say that the Moon is at position of $B$. Thus, angular size of Earth as seen from
+this position will be, (see figure in the previous part)
+\begin{align*}
+\theta_{\mathrm{Earth}} &= \angle EBF = \angle BFD & &\hspace{-2em}(2.0)\\
+ &= \angle BFC + \angle CFD\\
+ &\simeq \theta_{\mathrm{umbra}} + \theta_{\mathrm{Sun}} & &\hspace{-2em}(1.0)
+\end{align*}
+The angular size of the Full Moon on 28 September as seen in the table is $2008.3''$.
+\begin{align*}
+\theta_{\mathrm{Earth}} &= 2.76\times2008.3'' + 1915.0'' = 7453.0''\\
+&\fbox{$\theta_{\mathrm{Moon}} = 0.269\,\theta_{\mathrm{Earth}}
+ = \dfrac{\theta_{\mathrm{Earth}}}{3.72}$}
+ & &\hspace{-2em}(2.0)
+\end{align*}
+
+\item[(D2.7)]
+Thus, the radius of Moon will be,
+\begin{align*}
+R_{\mathrm{Moon}} &= \frac{R_\oplus}{3.72} & &\hspace{-2em}(1.0)\\
+R_{\mathrm{Moon}} &= \frac{6371}{3.72}\\
+&\fbox{$R_{\mathrm{Moon}} \simeq 1713\,\mathrm{km}$} & &\hspace{-2em}(2.0)
+\end{align*}
+\emph{Acceptable range: $\pm20\,\mathrm{km}$.}
+
+\item[(D2.8)]
+The shortest and longest distances will be,
+\begin{align*}
+r_{\mathrm{perigee}} &= \frac{2\times1713\times206265}{2008.3}\\
+&\fbox{$r_{\mathrm{perigee}} = 3.52\times10^5\,\mathrm{km}$} & &\hspace{-2em}(2.0)\\
+r_{\mathrm{apogee}} &= \frac{2\times1713\times206265}{1763.7}\\
+&\fbox{$r_{\mathrm{apogee}} = 4.01\times10^5\,\mathrm{km}$} & &\hspace{-2em}(2.0)
+\end{align*}
+
+\item[(D2.9)]
+% FIGURE NEEDED: triangle diagram (2016_data_analysis_sol.pdf p.15): Earth (E), Moon (M) on
+% its orbit and Sun (S), with the angles phi_E at Earth, phi_M at Moon and phi_S at Sun.
+On September 10, phase of Moon is 0.097 and elongation of Moon is $36.2^\circ$. Angular
+size of the Moon on this day is $1792.0''$. Therefore, distance to Moon (from Earth) on
+September 10 is
+\begin{align*}
+d_{\mathrm{Moon,10}} &= \frac{2\times1713\times206265}{1792.0}\\
+ &= 3.94\times10^5\,\mathrm{km} & &\hspace{-2em}(2.0)
+\end{align*}
+Let
+\begin{align*}
+\angle EMS &= \varphi_M\\
+\angle ESM &= \varphi_S\\
+\angle SEM &= \varphi_E\\
+\therefore \varphi_E &= 36.2^\circ & &\hspace{-2em}(1.0)\\
+\mathrm{phase} &= \frac{1 + \cos\varphi_M}{2} & &\hspace{-2em}(2.0)\\
+\therefore \varphi_M &= \cos^{-1}\left(2\times\mathrm{phase} - 1\right)\\
+ &= \cos^{-1}\left(2\times0.097 - 1\right) = \cos^{-1}(-0.806)\\
+ &= 143.71^\circ & &\hspace{-2em}(2.0)\\
+\varphi_S &= 180^\circ - \varphi_E - \varphi_M\\
+ &= 180^\circ - 36.2^\circ - 143.71^\circ\\
+ &= 0.09^\circ & &\hspace{-2em}(1.0)
+\end{align*}
+Now using sine rule,
+\begin{align*}
+\frac{d_{\mathrm{Sun}}}{d_{\mathrm{Moon,10}}} &= \frac{\sin\varphi_M}{\sin\varphi_S}
+ & &\hspace{-2em}(2.0)\\
+\therefore d_{\mathrm{Sun}} &= 3.94\times10^8\times\frac{\sin 143.71^\circ}{\sin 0.09^\circ}\\
+&\fbox{$d_{\mathrm{Sun}} = 1.48\times10^{11}\,\mathrm{m}$} & &\hspace{-2em}(1.0)
+\end{align*}
+\end{description}

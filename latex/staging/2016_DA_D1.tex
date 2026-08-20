@@ -1,0 +1,78 @@
+Through systematic searches during the past decades, astronomers have found a
+large number of millisecond pulsars (spin period $< 10$\,ms). The majority of
+these pulsars are found in binaries, with nearly circular orbits.
+
+For a pulsar in a binary orbit, the measured pulsar spin period ($P$) and the
+measured line-of-sight acceleration ($a$) both vary systematically due to
+orbital motion. For circular orbits, this variation can be described
+mathematically in terms of orbital phase $\phi$ ($0 \le \phi \le 2\pi$) as,
+\[ P(\phi) = P_0 + P_{\mathrm{t}}\cos\phi \qquad \mbox{where }
+   P_{\mathrm{t}} = \frac{2\pi P_0 r}{c P_{\mathrm{B}}}, \]
+\[ a(\phi) = -a_{\mathrm{t}}\sin\phi \qquad \mbox{where }
+   a_{\mathrm{t}} = \frac{4\pi^2 r}{P_{\mathrm{B}}^2}, \]
+where $P_{\mathrm{B}}$ is the orbital period of the binary, $P_0$ is the
+intrinsic spin period of the pulsar and $r$ is the radius of the orbit.
+
+The following table gives one such set of measurements of $P$ and $a$ at
+different heliocentric epochs, $T$, expressed in truncated Modified Julian
+Days (tMJD), i.e.\ number of days since $\mathrm{MJD} = 2\,440\,000$.
+
+\begin{center}
+\begin{tabular}{cccc}
+No. & $T$ & $P$ & $a$ \\
+ & (tMJD) & ($\mu$s) & (m\,s$^{-2}$) \\
+1 & 5740.654 & 7587.8889 & $-0.92 \pm 0.08$ \\
+2 & 5740.703 & 7587.8334 & $-0.24 \pm 0.08$ \\
+3 & 5746.100 & 7588.4100 & $-1.68 \pm 0.04$ \\
+4 & 5746.675 & 7588.5810 & $+1.67 \pm 0.06$ \\
+5 & 5981.811 & 7587.8836 & $+0.72 \pm 0.06$ \\
+6 & 5983.932 & 7587.8552 & $-0.44 \pm 0.08$ \\
+7 & 6005.893 & 7589.1029 & $+0.52 \pm 0.08$ \\
+8 & 6040.857 & 7589.1350 & $+0.00 \pm 0.04$ \\
+9 & 6335.904 & 7589.1358 & $+0.00 \pm 0.02$ \\
+\end{tabular}
+\end{center}
+
+By plotting $a(\phi)$ as a function of $P(\phi)$, we can obtain a parametric
+curve. As evident from the relations above, this curve in the
+period-acceleration plane is an ellipse.
+
+In this problem, we estimate the intrinsic spin period, $P_0$, the orbital
+period, $P_{\mathrm{B}}$, and the orbital radius, $r$, by an analysis of this
+data set, assuming a circular orbit.
+
+\begin{description}
+\item[(D1.1)] Plot the data, including error bars, in the
+  period-acceleration plane (mark your graph as ``D1.1'').
+\item[(D1.2)] Draw an ellipse that appears to be a best fit to the data (on
+  the same graph ``D1.1'').
+\item[(D1.3)] From the plot, estimate $P_0$, $P_{\mathrm{t}}$ and
+  $a_{\mathrm{t}}$, including error margins.
+\item[(D1.4)] Write expressions for $P_{\mathrm{B}}$ and $r$ in terms of
+  $P_0$, $P_{\mathrm{t}}$, $a_{\mathrm{t}}$.
+\item[(D1.5)] Calculate approximate value of $P_{\mathrm{B}}$ and $r$ based
+  on your estimations made in (D1.3), including error margins.
+\item[(D1.6)] Calculate orbital phase, $\phi$, corresponding to the epochs
+  of the following five observations in the above table: data rows 1, 4, 6,
+  8, 9.
+\item[(D1.7)] Refine the estimate of the orbital period, $P_{\mathrm{B}}$,
+  using the results in part (D1.6) in the following way:
+  \begin{description}
+  \item[(D1.7a)] First determine the initial epoch, $T_0$, which corresponds
+    to the nearest epoch of zero orbital phase before the first observation.
+  \item[(D1.7b)] The expected time, $T_{\mathrm{calc}}$, of the estimated
+    orbital phase angle of each observation is given by,
+    \[ T_{\mathrm{calc}} = T_0
+       + \left(n + \frac{\phi}{360^\circ}\right) P_{\mathrm{B}}, \]
+    where $n$ is the number of full cycles of orbital phases that may have
+    elapsed between $T_0$ and $T$ (or $T_{\mathrm{calc}}$). Estimate $n$ and
+    $T_{\mathrm{calc}}$ for each of the five observations in part (D1.6).
+    Note down the difference $T_{\mathrm{O-C}}$ between observed $T$ and
+    $T_{\mathrm{calc}}$. Enter these calculations in the table given in the
+    Summary Answersheet.
+  \item[(D1.7c)] Plot $T_{\mathrm{O-C}}$ against $n$ (mark your graph as
+    ``D1.7'').
+  \item[(D1.7d)] Determine the refined values of the initial epoch,
+    $T_{0,\mathrm{r}}$, and the orbital period, $P_{\mathrm{B,r}}$.
+  \end{description}
+\end{description}

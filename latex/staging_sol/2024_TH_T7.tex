@@ -1,0 +1,148 @@
+\begin{description}
+\item[(a)] The first step is to find an expression for the azimuth of an
+  object during sunrise:
+
+  % FIGURE NEEDED: spherical triangle with vertices Zenith, Celestial South
+  % Pole and the Sun, with sides 90-a, 90+phi, 90+delta and angle 180-A at
+  % the zenith; 2024 theory solutions, page 13 (problem T7).
+
+  Using the law of cosines:
+  \begin{align*}
+    \cos(90^\circ + \delta)
+      &= \cos(90^\circ - a)\cos(90^\circ + \phi)
+       + \sin(90^\circ - a)\sin(90^\circ + \phi)\cos(180^\circ - A)\\
+    \therefore -\sin(\delta)
+      &= -\sin(a)\cos(\phi) - \cos(a)\cos(\phi)\cos(A)
+  \end{align*}
+  Since the altitude $a = 0^\circ$ at the sunrise:
+  \[
+    \cos(\phi) = \frac{\sin(\delta)}{\cos(A)}
+  \]
+  \hfill(2.0)
+
+  Note that due to symmetry over the local meridian, the azimuth of sunrise
+  corresponds to $180^\circ$ minus half of the angle given in the question
+  statement (the $180^\circ$ term comes from the fact that the observer is on
+  the southern hemisphere).
+
+  The scenarios that lead to the minimum and maximum values of latitude
+  correspond to the extreme values for the declination of the Sun in the
+  southern hemisphere summer ($-23.5^\circ$ and $0^\circ$).
+
+  If the declination of the Sun is $-23.5^\circ$, the latitude has to be
+  \begin{align*}
+    \cos(\phi) &= \frac{\sin(-23.5^\circ)}
+                       {\cos\left(180^\circ - \frac{120^\circ}{2}\right)}\\
+    \cos(\phi) &= -2\,\sin(-23.5^\circ)\\
+    \phi &= -37.1^\circ
+  \end{align*}
+  \hfill(2.0)
+
+  Only the negative solution of this equation is relevant in this case since
+  the observer is in the southern hemisphere.
+
+  If the declination of the Sun is $0^\circ$, simply plugging in this value to
+  the formula will result in a latitude of $-90^\circ$. Since celestial
+  objects do not rise or set at the poles, this approach would not be
+  conceptually correct. However, at a point infinitesimally close to the pole,
+  the Sun would still mathematically rise and set, and it would be possible to
+  achieve the difference in azimuth from the problem statement with a
+  declination very close to $0^\circ$. Thus, although a latitude of
+  $-90^\circ$ is impossible, any latitude infinitesimally close to it would
+  still mathematically be possible.
+
+  Therefore, the range of possible latitudes for the island is the following:
+  \[
+    -90^\circ < \phi \leq -37.1^\circ
+  \]
+  \hfill(3.0)
+
+\item[(b)] Since the latitude is constant, the following expression must be
+  true:
+  \[
+    \cos(\phi) = \frac{\sin(\delta_0)}{\cos(A_0)}
+               = \frac{\sin(\delta_{40})}{\cos(A_{40})}
+  \]
+  \hfill(2.0)
+
+  It is also possible to apply the law of sines to the following triangle to
+  derive another expression for the declination of the Sun on each day:
+
+  % FIGURE NEEDED: triangle formed by the celestial equator and the ecliptic
+  % meeting at the vernal point with obliquity epsilon, showing theta_0,
+  % theta_40 along the ecliptic and -delta_0, -delta_40 perpendicular to the
+  % equator; 2024 theory solutions, page 14 (problem T7).
+  \hfill(1.0)
+
+  \begin{align*}
+    \frac{\sin(\theta_0)}{\sin(90^\circ)}
+      &= \frac{\sin(-\delta_0)}{\sin(\epsilon)}\\
+    \sin(\delta_0) &= -\sin(\theta_0)\sin(\epsilon)
+  \end{align*}
+  Analogously:
+  \begin{align*}
+    \frac{\sin(\theta_{40})}{\sin(90^\circ)}
+      &= \frac{\sin(-\delta_{40})}{\sin(\epsilon)}\\
+    \sin(\delta_{40}) &= -\sin(\theta_{40})\sin(\epsilon)
+  \end{align*}
+  \hfill(1.0)
+
+  Combining the three previous expressions:
+  \begin{align*}
+    \sin(\delta_0) &= \frac{\sin(\delta_{40})\cos(A_0)}{\cos(A_{40})}\\
+    -\sin(\theta_0)\sin(\epsilon)
+      &= \frac{-\sin(\theta_{40})\sin(\epsilon)\cos(A_0)}{\cos(A_{40})}\\
+    \sin(\theta_0) &= \frac{\sin(\theta_{40})\cos(A_0)}{\cos(A_{40})}\\
+    \sin(\theta_0) &= k\,\sin(\theta_{40})
+  \end{align*}
+  \hfill(2.0)
+
+  Where
+  $k = \dfrac{\cos(A_0)}{\cos(A_{40})}
+     = \dfrac{\cos(120^\circ)}{\cos(98.5^\circ)} = 3.38$.
+
+  In order to replace one variable and solve for $\theta_0$, it is possible to
+  consider that the angular velocity of the Sun on the Ecliptic is
+  approximately constant due to the Earth's very low eccentricity. In that
+  case, the following expression must be true:
+  \begin{align*}
+    \theta_{40} &= \theta_0 - \frac{40}{T_{year}} \times 360^\circ\\
+    \theta_{40} &= \theta_0 - \beta
+  \end{align*}
+  \hfill(2.0)
+
+  Where
+  $\beta = \dfrac{40}{T_{year}} \times 360^\circ = 39.4^\circ$. Combining the
+  expressions and solving for $\theta_0$:
+  \begin{align*}
+    \sin(\theta_0) &= k\,\sin(\theta_0 - \beta)\\
+    \sin(\theta_0) &= k\,\bigl(\sin(\theta_0)\cos(\beta)
+                     - \sin(\beta)\cos(\theta_0)\bigr)\\
+    \sin(\theta_0)\bigl(k\,\cos(\beta) - 1\bigr)
+      &= k\,\sin(\beta)\cos(\theta_0)\\
+    \therefore \tan(\theta_0)
+      &= \frac{k\,\sin(\beta)}{k\,\cos(\beta) - 1}
+       = \frac{3.38\,\sin(39.4^\circ)}{3.38\,\cos(39.4^\circ) - 1}\\
+    \theta_0 &= 53.1^\circ
+  \end{align*}
+  \hfill(3.0)
+
+  Solving for $\delta_0$:
+  \begin{align*}
+    \sin(\delta_0) &= -\sin(\theta_0)\sin(\epsilon)\\
+    \delta_0 &= -18.6^\circ
+  \end{align*}
+  \hfill(1.0)
+
+  Solving for the latitude of the island:
+  \begin{align*}
+    \cos(\phi) &= \frac{\sin(\delta_0)}{\cos(A_0)}
+      = \frac{\sin(-18.6^\circ)}
+             {\cos\left(180^\circ - \frac{120^\circ}{2}\right)}\\
+    \phi &= -50.4^\circ
+  \end{align*}
+  \hfill(1.0)
+
+  Note that only the negative solution to the equation above is relevant since
+  it is known that the island is in the southern hemisphere.
+\end{description}

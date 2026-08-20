@@ -1,0 +1,23 @@
+The pixel scale is
+\begin{equation*}
+\text{Pixel size}\,('') = \frac{206265 \times \text{pixel size}\,(\mu\mathrm{m})}{1000 \times \text{focal length (mm)}}
+= \frac{206265 \times 9}{1000 \times 1000} = 1.86'' \tag*{(30\%)}
+\end{equation*}
+Then
+\[
+\text{Solar diameter} = 32 \times 60''/1.86''\,\text{per pixel} = 1034~\text{pixels} = 9306~\mu\mathrm{m}
+\]
+% sic: 32 x 60"/1.86" = 1032 pixels; the official solution states 1034 pixels
+\begin{equation*}
+\text{Solar radius,}\ R = 4653~\mu\mathrm{m} \tag*{(25\%)}
+\end{equation*}
+If $A_s$ is the measured area, then
+\begin{equation*}
+A_s = 5 \times 4 \times 81~\mu\mathrm{m}^2 = 1620~\mu\mathrm{m}^2 \tag*{(15\%)}
+\end{equation*}
+The corrected area due to the projection effect is
+\begin{align*}
+A_m &= A_s \cdot 10^6/(2\pi R^2 \cos B \cos L)\\
+    &= 1620 \times 10^6/(2 \times 3.14 \times 4653^2 \times \cos 8^\circ \times \cos 40^\circ)\\
+    &= 15.7~\mathrm{msh} \tag*{(30\%)}
+\end{align*}

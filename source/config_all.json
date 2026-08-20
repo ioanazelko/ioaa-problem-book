@@ -1,0 +1,3413 @@
+[
+ {
+  "file": "2007_th.pdf",
+  "problems": [
+   {
+    "id": "2007_TH_1.1",
+    "rx": "^1\\.1\\b"
+   },
+   {
+    "id": "2007_TH_1.2",
+    "rx": "^1\\.2\\b"
+   },
+   {
+    "id": "2007_TH_1.3",
+    "rx": "^1\\.3\\b"
+   },
+   {
+    "id": "2007_TH_1.4",
+    "rx": "^1\\.4\\b"
+   },
+   {
+    "id": "2007_TH_1.5",
+    "rx": "^1\\.5\\b"
+   },
+   {
+    "id": "2007_TH_1.6",
+    "rx": "^1\\.6\\b"
+   },
+   {
+    "id": "2007_TH_1.7",
+    "rx": "^1\\.7\\b"
+   },
+   {
+    "id": "2007_TH_1.8",
+    "rx": "^1\\.8\\b"
+   },
+   {
+    "id": "2007_TH_1.9",
+    "rx": "^1\\.9\\b"
+   },
+   {
+    "id": "2007_TH_1.10",
+    "rx": "^1\\.10\\b"
+   },
+   {
+    "id": "2007_TH_1.11",
+    "rx": "^1\\.11\\b"
+   },
+   {
+    "id": "2007_TH_1.12",
+    "rx": "^1\\.12\\b"
+   },
+   {
+    "id": "2007_TH_1.13",
+    "rx": "^1\\.13\\b"
+   },
+   {
+    "id": "2007_TH_1.14",
+    "rx": "^1\\.14\\b"
+   },
+   {
+    "id": "2007_TH_1.15",
+    "rx": "^1\\.15\\b"
+   },
+   {
+    "id": "2007_TH_Q2",
+    "pages": [
+     2,
+     2
+    ]
+   },
+   {
+    "id": "2007_TH_Q3",
+    "pages": [
+     3,
+     3
+    ]
+   },
+   {
+    "id": "2007_TH_Q4",
+    "pages": [
+     4,
+     6
+    ]
+   }
+  ]
+ },
+ {
+  "file": "2007_da.pdf",
+  "problems": [
+   {
+    "id": "2007_DA_D1",
+    "rx": "^Question 1\\b"
+   },
+   {
+    "id": "2007_DA_D2",
+    "rx": "^Question 2\\b"
+   },
+   {
+    "id": "2007_DA_D3",
+    "rx": "^Question 3\\b"
+   }
+  ]
+ },
+ {
+  "file": "2008_th.pdf",
+  "problems": [
+   {
+    "id": "2008_TH_S1",
+    "rx": "^1\\.\\s*Two\\ persons,\\ on\\ th"
+   },
+   {
+    "id": "2008_TH_S2",
+    "rx": "^2\\.\\s*On\\ April\\ 2,\\ 2008\\ a"
+   },
+   {
+    "id": "2008_TH_S3",
+    "rx": "^3\\.\\s*A\\ full\\ moon\\ occurr"
+   },
+   {
+    "id": "2008_TH_S4",
+    "rx": "^4\\.\\s*Suppose\\ a\\ star\\ has"
+   },
+   {
+    "id": "2008_TH_S5",
+    "rx": "^5\\.\\s*The\\ average\\ temper"
+   },
+   {
+    "id": "2008_TH_S6",
+    "rx": "^6\\.\\s*Radio\\ wavelength\\ o"
+   },
+   {
+    "id": "2008_TH_S7",
+    "rx": "^7\\.\\s*A\\ main\\ sequence\\ st"
+   },
+   {
+    "id": "2008_TH_S8",
+    "rx": "^8\\.\\s*Gravitational\\ forc"
+   },
+   {
+    "id": "2008_TH_S9",
+    "rx": "^9\\.\\s*The\\ radiation\\ inco"
+   },
+   {
+    "id": "2008_TH_S10",
+    "rx": "^10\\.\\s*The\\ coordinates\\ of"
+   },
+   {
+    "id": "2008_TH_S11",
+    "rx": "^11\\.\\s*Below\\ is\\ a\\ picture"
+   },
+   {
+    "id": "2008_TH_S12",
+    "rx": "^12\\.\\s*Consider\\ a\\ type\\ Ia"
+   },
+   {
+    "id": "2008_TH_S13",
+    "rx": "^13\\.\\s*In\\ the\\ journey\\ of\\ "
+   },
+   {
+    "id": "2008_TH_S14",
+    "rx": "^14\\.\\s*Consider\\ a\\ Potenti"
+   },
+   {
+    "id": "2008_TH_S15",
+    "rx": "^15\\.\\s*Galaxy\\ NGC\\ 2639"
+   },
+   {
+    "id": "2008_TH_L1",
+    "rx": "^An eclipsing binary star system"
+   },
+   {
+    "id": "2008_TH_L2",
+    "rx": "^2\\.?\\s*A UBV photometric"
+   },
+   {
+    "id": "2008_TH_L3",
+    "rx": "^3\\.?\\s*Measurement of the cosmic microwave"
+   }
+  ]
+ },
+ {
+  "file": "2008_da.pdf",
+  "problems": [
+   {
+    "id": "2008_DA_D1",
+    "rx": "^I\\.\\s*Virgo Cluster"
+   },
+   {
+    "id": "2008_DA_D2",
+    "rx": "^II\\.\\s*Determination of stellar"
+   },
+   {
+    "id": "2008_DA_D3",
+    "rx": "^III\\.\\s*The Age of Meteorite"
+   }
+  ]
+ },
+ {
+  "file": "2009_th.pdf",
+  "problems": [
+   {
+    "id": "2009_TH_P1",
+    "rx": "^Problem 1\\s*:"
+   },
+   {
+    "id": "2009_TH_P2",
+    "rx": "^Problem 2\\s*:"
+   },
+   {
+    "id": "2009_TH_P3",
+    "rx": "^Problem 3\\s*:"
+   },
+   {
+    "id": "2009_TH_P4",
+    "rx": "^Problem 4\\s*:"
+   },
+   {
+    "id": "2009_TH_P5",
+    "rx": "^Problem 5\\s*:"
+   },
+   {
+    "id": "2009_TH_P6",
+    "rx": "^Problem 6\\s*:"
+   },
+   {
+    "id": "2009_TH_P7",
+    "rx": "^Problem 7\\s*:"
+   },
+   {
+    "id": "2009_TH_P8",
+    "rx": "^Problem 8\\s*:"
+   },
+   {
+    "id": "2009_TH_P9",
+    "rx": "^Problem 9\\s*:"
+   },
+   {
+    "id": "2009_TH_P10",
+    "rx": "^Problem 10\\s*:"
+   },
+   {
+    "id": "2009_TH_P11",
+    "rx": "^Problem 11\\s*:"
+   },
+   {
+    "id": "2009_TH_P12",
+    "rx": "^Problem 12\\s*:"
+   },
+   {
+    "id": "2009_TH_P13",
+    "rx": "^Problem 13\\s*:"
+   },
+   {
+    "id": "2009_TH_P14",
+    "rx": "^Problem 14\\s*:"
+   },
+   {
+    "id": "2009_TH_P15",
+    "rx": "^Problem 15\\s*:"
+   },
+   {
+    "id": "2009_TH_P16",
+    "rx": "^Problem 16\\s*:"
+   },
+   {
+    "id": "2009_TH_P17",
+    "rx": "^Problem 17\\s*:"
+   }
+  ]
+ },
+ {
+  "file": "2009_da.pdf",
+  "problems": [
+   {
+    "id": "2009_DA_D1",
+    "rx": "^Problem\\s+1\\s*:"
+   },
+   {
+    "id": "2009_DA_D2",
+    "rx": "^Problem\\s+2\\s*:"
+   }
+  ]
+ },
+ {
+  "file": "2010_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2010_TH_S1",
+    "rx": "^1\\)\\s*In\\ a\\ binary\\ syst",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S2",
+    "rx": "^2\\)\\s*If\\ the\\ escape\\ ve",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S3",
+    "rx": "^3\\)\\s*The\\ observed\\ red",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S4",
+    "rx": "^4\\)\\s*A\\ binary\\ system\\ ",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S5",
+    "rx": "^5\\)\\s*If\\ 0\\.8%\\ of\\ the\\ i",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S6",
+    "rx": "^6\\)\\s*A\\ spacecraft\\ lan",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S7",
+    "rx": "^7\\)\\s*We\\ are\\ intereste",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S8",
+    "rx": "^8\\)\\s*The\\ Galactic\\ Cen",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S9",
+    "rx": "^9\\)\\s*A\\ star\\ has\\ a\\ mea",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S10",
+    "rx": "^10\\)\\s*Assuming\\ that\\ th",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S11",
+    "rx": "^11\\)\\s*Mars\\ arrived\\ at\\ ",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S12",
+    "rx": "^12\\)\\s*The\\ difference\\ i",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S13",
+    "rx": "^13\\)\\s*Estimate\\ the\\ eff",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S14",
+    "rx": "^14\\)\\s*An\\ observer\\ obse",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_S15",
+    "rx": "^15\\)\\s*On\\ average,\\ the\\ ",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_L16",
+    "rx": "^16\\)\\s*A spacecraft is launched",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2010_TH_L17",
+    "rx": "^17\\)\\s*The planet Taris",
+    "stop_rx": "^Solution"
+   }
+  ]
+ },
+ {
+  "file": "2010_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2010_THSOL_S1",
+    "rx": "^1\\)\\s*In\\ a\\ binary\\ syst"
+   },
+   {
+    "id": "2010_THSOL_S2",
+    "rx": "^2\\)\\s*If\\ the\\ escape\\ ve"
+   },
+   {
+    "id": "2010_THSOL_S3",
+    "rx": "^3\\)\\s*The\\ observed\\ red"
+   },
+   {
+    "id": "2010_THSOL_S4",
+    "rx": "^4\\)\\s*A\\ binary\\ system\\ "
+   },
+   {
+    "id": "2010_THSOL_S5",
+    "rx": "^5\\)\\s*If\\ 0\\.8%\\ of\\ the\\ i"
+   },
+   {
+    "id": "2010_THSOL_S6",
+    "rx": "^6\\)\\s*A\\ spacecraft\\ lan"
+   },
+   {
+    "id": "2010_THSOL_S7",
+    "rx": "^7\\)\\s*We\\ are\\ intereste"
+   },
+   {
+    "id": "2010_THSOL_S8",
+    "rx": "^8\\)\\s*The\\ Galactic\\ Cen"
+   },
+   {
+    "id": "2010_THSOL_S9",
+    "rx": "^9\\)\\s*A\\ star\\ has\\ a\\ mea"
+   },
+   {
+    "id": "2010_THSOL_S10",
+    "rx": "^10\\)\\s*Assuming\\ that\\ th"
+   },
+   {
+    "id": "2010_THSOL_S11",
+    "rx": "^11\\)\\s*Mars\\ arrived\\ at\\ "
+   },
+   {
+    "id": "2010_THSOL_S12",
+    "rx": "^12\\)\\s*The\\ difference\\ i"
+   },
+   {
+    "id": "2010_THSOL_S13",
+    "rx": "^13\\)\\s*Estimate\\ the\\ eff"
+   },
+   {
+    "id": "2010_THSOL_S14",
+    "rx": "^14\\)\\s*An\\ observer\\ obse"
+   },
+   {
+    "id": "2010_THSOL_S15",
+    "rx": "^15\\)\\s*On\\ average,\\ the\\ "
+   },
+   {
+    "id": "2010_THSOL_L16",
+    "rx": "^16\\)\\s*A spacecraft is launched"
+   },
+   {
+    "id": "2010_THSOL_L17",
+    "rx": "^17\\)\\s*The planet Taris"
+   }
+  ]
+ },
+ {
+  "file": "2010_da.pdf",
+  "problems": [
+   {
+    "id": "2010_DA_D1",
+    "rx": "^Problem I\\b.*CCD"
+   },
+   {
+    "id": "2010_DA_D2",
+    "rx": "^Problem II\\s*:"
+   }
+  ]
+ },
+ {
+  "file": "2011_th.pdf",
+  "problems": [
+   {
+    "id": "2011_TH_S1",
+    "rx": "^1\\.\\s*Most\\ single\\-appe"
+   },
+   {
+    "id": "2011_TH_S2",
+    "rx": "^2\\.\\s*Estimate\\ the\\ num"
+   },
+   {
+    "id": "2011_TH_S3",
+    "rx": "^3\\.\\s*On\\ 9\\ March\\ 2011\\ "
+   },
+   {
+    "id": "2011_TH_S4",
+    "rx": "^4\\.\\s*Assuming\\ that\\ Ph"
+   },
+   {
+    "id": "2011_TH_S5",
+    "rx": "^5\\.\\s*What\\ would\\ be\\ th"
+   },
+   {
+    "id": "2011_TH_S6",
+    "rx": "^6\\.\\s*Tidal\\ forces\\ res"
+   },
+   {
+    "id": "2011_TH_S7",
+    "rx": "^7\\.\\s*A\\ satellite\\ orbi"
+   },
+   {
+    "id": "2011_TH_S8",
+    "rx": "^8\\.\\s*Assuming\\ that\\ du"
+   },
+   {
+    "id": "2011_TH_S9",
+    "rx": "^9\\.\\s*Interstellar\\ dis"
+   },
+   {
+    "id": "2011_TH_S10",
+    "rx": "^10\\.\\s*Estimate\\ the\\ min"
+   },
+   {
+    "id": "2011_TH_S11",
+    "rx": "^11\\.\\s*Based\\ on\\ the\\ spe"
+   },
+   {
+    "id": "2011_TH_S12",
+    "rx": "^12\\.\\s*Due\\ to\\ the\\ prece"
+   },
+   {
+    "id": "2011_TH_S13",
+    "rx": "^13\\.\\s*The\\ equation\\ of\\ "
+   },
+   {
+    "id": "2011_TH_S14",
+    "rx": "^14\\.\\s*Estimate\\ the\\ num"
+   },
+   {
+    "id": "2011_TH_S15",
+    "rx": "^15\\.\\s*Given\\ that\\ the\\ c",
+    "stop_rx": "^Astronomical and physical constants"
+   },
+   {
+    "id": "2011_TH_L1",
+    "rx": "^A transit of duration"
+   },
+   {
+    "id": "2011_TH_L2",
+    "rx": "^Within the field of a galaxy cluster"
+   },
+   {
+    "id": "2011_TH_L3",
+    "rx": "^The planetarium program"
+   }
+  ]
+ },
+ {
+  "file": "2011_da.pdf",
+  "problems": [
+   {
+    "id": "2011_DA_D1",
+    "rx": "^Analysis of times of minima$"
+   },
+   {
+    "id": "2011_DA_D2",
+    "rx": "^Weighing a galaxy$"
+   }
+  ]
+ },
+ {
+  "file": "2012_th.pdf",
+  "problems": [
+   {
+    "id": "2012_TH_S1",
+    "rx": "^1\\.\\s*At\\ Brazil"
+   },
+   {
+    "id": "2012_TH_S2",
+    "rx": "^2\\.\\s*Calculate\\ the\\ le"
+   },
+   {
+    "id": "2012_TH_S3",
+    "rx": "^3\\.\\s*What\\ is\\ the\\ time"
+   },
+   {
+    "id": "2012_TH_S4",
+    "rx": "^4\\.\\s*What\\ would\\ be\\ fu"
+   },
+   {
+    "id": "2012_TH_S5",
+    "rx": "^5\\.\\s*Calculate\\ the\\ ra"
+   },
+   {
+    "id": "2012_TH_S6",
+    "rx": "^6\\.\\s*Most\\ of\\ the\\ ener"
+   },
+   {
+    "id": "2012_TH_S7",
+    "rx": "^7\\.\\s*Luminous\\ Blue\\ Va"
+   },
+   {
+    "id": "2012_TH_S8",
+    "rx": "^8\\.\\s*A\\ pulsar\\ located"
+   },
+   {
+    "id": "2012_TH_S9",
+    "rx": "^9\\.\\s*An\\ old\\ planetary"
+   },
+   {
+    "id": "2012_TH_S10",
+    "rx": "^10\\.\\s*Assume\\ that\\ the\\ "
+   },
+   {
+    "id": "2012_TH_S11",
+    "rx": "^11\\.\\s*What\\ is\\ the\\ angu"
+   },
+   {
+    "id": "2012_TH_S12",
+    "rx": "^12\\.\\s*What\\ is\\ the\\ mini"
+   },
+   {
+    "id": "2012_TH_S13",
+    "rx": "^13\\.\\s*An\\ astronomer\\ in"
+   },
+   {
+    "id": "2012_TH_S14",
+    "rx": "^14\\.\\s*An\\ observer\\ in\\ S"
+   },
+   {
+    "id": "2012_TH_S15",
+    "rx": "^15\\.\\s*Christ,\\ the\\ Rede"
+   },
+   {
+    "id": "2012_TH_L1",
+    "rx": "^1\\.\\s*An astronomer on Earth observes a globular"
+   },
+   {
+    "id": "2012_TH_L2",
+    "rx": "^2\\.\\s*Astronomers studied a spiral galaxy"
+   }
+  ]
+ },
+ {
+  "file": "2012_da.pdf",
+  "problems": [
+   {
+    "id": "2012_DA_D1",
+    "rx": "^Question 1\\b"
+   },
+   {
+    "id": "2012_DA_D2",
+    "rx": "^Question 2\\b"
+   }
+  ]
+ },
+ {
+  "file": "2013_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2013_TH_S1",
+    "rx": "^1\\.\\s*What\\ would\\ be\\ th",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S2",
+    "rx": "^2\\.\\s*Let\\ us\\ assume\\ th",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S3",
+    "rx": "^3\\.\\s*It\\ is\\ estimated\\ ",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S4",
+    "rx": "^4\\.\\s*Figure\\ 2\\ shows\\ t",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S5",
+    "rx": "^5\\.\\s*The\\ optical\\ spec",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S6",
+    "rx": "^6\\.\\s*A\\ star\\ has\\ an\\ ef",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S7",
+    "rx": "^7\\.\\s*A\\ star\\ has\\ visua",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S8",
+    "rx": "^8\\.\\s*A\\ binary\\ system\\ ",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S9",
+    "rx": "^9\\.\\s*Find\\ the\\ equator",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S10",
+    "rx": "^10\\.\\s*In\\ the\\ centre\\ of",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S11",
+    "rx": "^11\\.\\s*What\\ is\\ the\\ maxi",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S12",
+    "rx": "^12\\.\\s*Sirius\\ A,\\ with\\ v",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S13",
+    "rx": "^13\\.\\s*Recently\\ in\\ Lond",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S14",
+    "rx": "^14\\.\\s*What\\ is\\ the\\ hour",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_S15",
+    "rx": "^15\\.\\s*The\\ Doppler\\ shif",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_L1",
+    "rx": "^Question 1\\b",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_L2",
+    "rx": "^Question 2\\b",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_TH_L3",
+    "rx": "^Question 3\\b",
+    "stop_rx": "^Answer"
+   }
+  ]
+ },
+ {
+  "file": "2013_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2013_THSOL_S1",
+    "rx": "^1\\.\\s*What\\ would\\ be\\ th"
+   },
+   {
+    "id": "2013_THSOL_S2",
+    "rx": "^2\\.\\s*Let\\ us\\ assume\\ th"
+   },
+   {
+    "id": "2013_THSOL_S3",
+    "rx": "^3\\.\\s*It\\ is\\ estimated\\ "
+   },
+   {
+    "id": "2013_THSOL_S4",
+    "rx": "^4\\.\\s*Figure\\ 2\\ shows\\ t"
+   },
+   {
+    "id": "2013_THSOL_S5",
+    "rx": "^5\\.\\s*The\\ optical\\ spec"
+   },
+   {
+    "id": "2013_THSOL_S6",
+    "rx": "^6\\.\\s*A\\ star\\ has\\ an\\ ef"
+   },
+   {
+    "id": "2013_THSOL_S7",
+    "rx": "^7\\.\\s*A\\ star\\ has\\ visua"
+   },
+   {
+    "id": "2013_THSOL_S8",
+    "rx": "^8\\.\\s*A\\ binary\\ system\\ "
+   },
+   {
+    "id": "2013_THSOL_S9",
+    "rx": "^9\\.\\s*Find\\ the\\ equator"
+   },
+   {
+    "id": "2013_THSOL_S10",
+    "rx": "^10\\.\\s*In\\ the\\ centre\\ of"
+   },
+   {
+    "id": "2013_THSOL_S11",
+    "rx": "^11\\.\\s*What\\ is\\ the\\ maxi"
+   },
+   {
+    "id": "2013_THSOL_S12",
+    "rx": "^12\\.\\s*Sirius\\ A,\\ with\\ v"
+   },
+   {
+    "id": "2013_THSOL_S13",
+    "rx": "^13\\.\\s*Recently\\ in\\ Lond"
+   },
+   {
+    "id": "2013_THSOL_S14",
+    "rx": "^14\\.\\s*What\\ is\\ the\\ hour"
+   },
+   {
+    "id": "2013_THSOL_S15",
+    "rx": "^15\\.\\s*The\\ Doppler\\ shif"
+   },
+   {
+    "id": "2013_THSOL_L1",
+    "rx": "^Question 1\\b"
+   },
+   {
+    "id": "2013_THSOL_L2",
+    "rx": "^Question 2\\b"
+   },
+   {
+    "id": "2013_THSOL_L3",
+    "rx": "^Question 3\\b"
+   }
+  ]
+ },
+ {
+  "file": "2013_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2013_DA_D1",
+    "rx": "^Question 1\\.",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_DA_D2",
+    "rx": "^Question 2\\.",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_DA_D3",
+    "rx": "^Question 3\\.",
+    "stop_rx": "^Answer"
+   },
+   {
+    "id": "2013_DA_D4",
+    "rx": "^Question 4\\.",
+    "stop_rx": "^Answer"
+   }
+  ]
+ },
+ {
+  "file": "2013_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2013_DASOL_D1",
+    "rx": "^Question 1\\."
+   },
+   {
+    "id": "2013_DASOL_D2",
+    "rx": "^Question 2\\."
+   },
+   {
+    "id": "2013_DASOL_D3",
+    "rx": "^Question 3\\."
+   },
+   {
+    "id": "2013_DASOL_D4",
+    "rx": "^Question 4\\."
+   }
+  ]
+ },
+ {
+  "file": "2014_th.pdf",
+  "problems": [
+   {
+    "id": "2014_TH_P1",
+    "rx": "^Problem 1\\."
+   },
+   {
+    "id": "2014_TH_P2",
+    "rx": "^Problem 2\\."
+   },
+   {
+    "id": "2014_TH_P3",
+    "rx": "^Problem 3\\."
+   },
+   {
+    "id": "2014_TH_P4",
+    "rx": "^Problem 4\\."
+   },
+   {
+    "id": "2014_TH_P5",
+    "rx": "^Problem 5\\."
+   },
+   {
+    "id": "2014_TH_P6",
+    "rx": "^Problem 6\\."
+   },
+   {
+    "id": "2014_TH_P7",
+    "rx": "^Problem 7\\."
+   },
+   {
+    "id": "2014_TH_P8",
+    "rx": "^Problem 8\\."
+   },
+   {
+    "id": "2014_TH_P9",
+    "rx": "^Problem 9\\."
+   },
+   {
+    "id": "2014_TH_P10",
+    "rx": "^Problem 10\\."
+   },
+   {
+    "id": "2014_TH_P11",
+    "rx": "^Problem 11\\."
+   },
+   {
+    "id": "2014_TH_P12",
+    "rx": "^Problem 12\\."
+   },
+   {
+    "id": "2014_TH_P13",
+    "rx": "^Problem 13\\."
+   },
+   {
+    "id": "2014_TH_P14",
+    "rx": "^Problem 14\\."
+   },
+   {
+    "id": "2014_TH_P15",
+    "rx": "^Problem 15\\."
+   },
+   {
+    "id": "2014_TH_L1",
+    "rx": "^16\\.\\s*Long problem 1"
+   },
+   {
+    "id": "2014_TH_L2",
+    "rx": "^17\\.\\s*Long problem 2"
+   },
+   {
+    "id": "2014_TH_L3",
+    "rx": "^18\\.\\s*Long problem 3"
+   }
+  ]
+ },
+ {
+  "file": "2014_da.pdf",
+  "problems": [
+   {
+    "id": "2014_DA_D1",
+    "rx": "^Problem 1\\b.*Black Hole|^Problem 1$"
+   },
+   {
+    "id": "2014_DA_D2",
+    "rx": "^Problem 2\\b.*Thermodynamic|^Problem 2$"
+   },
+   {
+    "id": "2014_DA_D3",
+    "rx": "^Problem 3\\b.*(IOAA|Observer)|^Problem 3$"
+   }
+  ]
+ },
+ {
+  "file": "2015_th.pdf",
+  "problems": [
+   {
+    "id": "2015_TH_S1",
+    "rx": "^1\\.$"
+   },
+   {
+    "id": "2015_TH_S2",
+    "rx": "^2\\.$"
+   },
+   {
+    "id": "2015_TH_S3",
+    "rx": "^3\\.$"
+   },
+   {
+    "id": "2015_TH_S4",
+    "rx": "^4\\.$"
+   },
+   {
+    "id": "2015_TH_S5",
+    "rx": "^5\\.$"
+   },
+   {
+    "id": "2015_TH_S6",
+    "rx": "^6\\.$"
+   },
+   {
+    "id": "2015_TH_S7",
+    "rx": "^7\\.$"
+   },
+   {
+    "id": "2015_TH_S8",
+    "rx": "^8\\.$"
+   },
+   {
+    "id": "2015_TH_S9",
+    "rx": "^9\\.$"
+   },
+   {
+    "id": "2015_TH_S10",
+    "rx": "^10\\.$"
+   },
+   {
+    "id": "2015_TH_S11",
+    "rx": "^11\\.$"
+   },
+   {
+    "id": "2015_TH_S12",
+    "rx": "^12\\.$"
+   },
+   {
+    "id": "2015_TH_S13",
+    "rx": "^13\\.$"
+   },
+   {
+    "id": "2015_TH_S14",
+    "rx": "^14\\.$"
+   },
+   {
+    "id": "2015_TH_S15",
+    "rx": "^15\\.$"
+   },
+   {
+    "id": "2015_TH_L1",
+    "rx": "^1\\.$"
+   },
+   {
+    "id": "2015_TH_L2",
+    "rx": "^2\\.$"
+   },
+   {
+    "id": "2015_TH_L3",
+    "rx": "^3\\.$"
+   }
+  ]
+ },
+ {
+  "file": "2015_da.pdf",
+  "problems": [
+   {
+    "id": "2015_DA_D1",
+    "rx": "^Problem 1$|^Problem 1\\b"
+   },
+   {
+    "id": "2015_DA_D2",
+    "rx": "^Problem 2$|^Problem 2\\b"
+   }
+  ]
+ },
+ {
+  "file": "2016_theory.pdf",
+  "problems": [
+   {
+    "id": "2016_TH_T1",
+    "rx": "^\\(T1\\)"
+   },
+   {
+    "id": "2016_TH_T2",
+    "rx": "^\\(T2\\)"
+   },
+   {
+    "id": "2016_TH_T3",
+    "rx": "^\\(T3\\)"
+   },
+   {
+    "id": "2016_TH_T4",
+    "rx": "^\\(T4\\)"
+   },
+   {
+    "id": "2016_TH_T5",
+    "rx": "^\\(T5\\)"
+   },
+   {
+    "id": "2016_TH_T6",
+    "rx": "^\\(T6\\)"
+   },
+   {
+    "id": "2016_TH_T7",
+    "rx": "^\\(T7\\)"
+   },
+   {
+    "id": "2016_TH_T8",
+    "rx": "^\\(T8\\)"
+   },
+   {
+    "id": "2016_TH_T9",
+    "rx": "^\\(T9\\)"
+   },
+   {
+    "id": "2016_TH_T10",
+    "rx": "^\\(T10\\)"
+   },
+   {
+    "id": "2016_TH_T11",
+    "rx": "^\\(T11\\)"
+   },
+   {
+    "id": "2016_TH_T12",
+    "rx": "^\\(T12\\)"
+   }
+  ]
+ },
+ {
+  "file": "2016_data_analysis.pdf",
+  "problems": [
+   {
+    "id": "2016_DA_D1",
+    "rx": "^\\(D1\\)"
+   },
+   {
+    "id": "2016_DA_D2",
+    "rx": "^\\(D2\\)"
+   },
+   {
+    "id": "2016_DA_D3",
+    "rx": "^\\(D3\\)"
+   }
+  ]
+ },
+ {
+  "file": "2017_Theory.pdf",
+  "problems": [
+   {
+    "id": "2017_TH_T1",
+    "rx": "^\\(T1\\)"
+   },
+   {
+    "id": "2017_TH_T2",
+    "rx": "^\\(T2\\)"
+   },
+   {
+    "id": "2017_TH_T3",
+    "rx": "^\\(T3\\)"
+   },
+   {
+    "id": "2017_TH_T4",
+    "rx": "^\\(T4\\)"
+   },
+   {
+    "id": "2017_TH_T5",
+    "rx": "^\\(T5\\)"
+   },
+   {
+    "id": "2017_TH_T6",
+    "rx": "^\\(T6\\)"
+   },
+   {
+    "id": "2017_TH_T7",
+    "rx": "^\\(T7\\)"
+   },
+   {
+    "id": "2017_TH_T8",
+    "rx": "^\\(T8\\)"
+   },
+   {
+    "id": "2017_TH_T9",
+    "rx": "^\\(T9\\)"
+   },
+   {
+    "id": "2017_TH_T10",
+    "rx": "^\\(T10\\)"
+   },
+   {
+    "id": "2017_TH_T11",
+    "rx": "^\\(T11\\)"
+   },
+   {
+    "id": "2017_TH_T12",
+    "rx": "^\\(T12\\)"
+   },
+   {
+    "id": "2017_TH_T13",
+    "rx": "^\\(T13\\)"
+   }
+  ]
+ },
+ {
+  "file": "2017_DataAnalysis.pdf",
+  "problems": [
+   {
+    "id": "2017_DA_D1",
+    "rx": "^\\(D1\\)"
+   },
+   {
+    "id": "2017_DA_D2",
+    "rx": "^\\(D2\\)"
+   }
+  ]
+ },
+ {
+  "file": "2018_18_th.pdf",
+  "problems": [
+   {
+    "id": "2018_TH_T1",
+    "rx": "^\\(T1\\)"
+   },
+   {
+    "id": "2018_TH_T2",
+    "rx": "^\\(T2\\)"
+   },
+   {
+    "id": "2018_TH_T3",
+    "rx": "^\\(T3\\)"
+   },
+   {
+    "id": "2018_TH_T4",
+    "rx": "^\\(T4\\)"
+   },
+   {
+    "id": "2018_TH_T5",
+    "rx": "^\\(T5\\)"
+   },
+   {
+    "id": "2018_TH_T6",
+    "rx": "^\\(T6\\)"
+   },
+   {
+    "id": "2018_TH_T7",
+    "rx": "^\\(T7\\)"
+   },
+   {
+    "id": "2018_TH_T8",
+    "rx": "^\\(T8\\)"
+   },
+   {
+    "id": "2018_TH_T9",
+    "rx": "^\\(T9\\)"
+   },
+   {
+    "id": "2018_TH_T10",
+    "rx": "^\\(T10\\)"
+   },
+   {
+    "id": "2018_TH_T11",
+    "rx": "^\\(T11\\)"
+   }
+  ]
+ },
+ {
+  "file": "2018_18_da.pdf",
+  "problems": [
+   {
+    "id": "2018_DA_D1",
+    "rx": "^\\(D1\\)"
+   },
+   {
+    "id": "2018_DA_D2",
+    "rx": "^\\(D2\\)"
+   }
+  ]
+ },
+ {
+  "file": "2019_th.pdf",
+  "problems": [
+   {
+    "id": "2019_TH_1",
+    "rx": "^1\\.\\s*Famous\\ astronomical\\ "
+   },
+   {
+    "id": "2019_TH_2",
+    "rx": "^2\\.\\s*Deflection\\ of\\ radio\\ "
+   },
+   {
+    "id": "2019_TH_3",
+    "rx": "^3\\.\\s*The\\ supermassive\\ bla"
+   },
+   {
+    "id": "2019_TH_4",
+    "rx": "^4\\.\\s*Improving\\ a\\ common\\ r"
+   },
+   {
+    "id": "2019_TH_5",
+    "rx": "^5\\.\\s*Cosmic\\ Microwave\\ Bac"
+   },
+   {
+    "id": "2019_TH_6",
+    "rx": "^6\\.\\s*The\\ height\\ of\\ the\\ ch"
+   },
+   {
+    "id": "2019_TH_7",
+    "rx": "^7\\.\\s*Effect\\ of\\ sunspots"
+   },
+   {
+    "id": "2019_TH_8",
+    "rx": "^8\\.\\s*Amplitude\\ variation\\ "
+   },
+   {
+    "id": "2019_TH_9",
+    "rx": "^9\\.\\s*Distance\\ of\\ the\\ Lagr"
+   },
+   {
+    "id": "2019_TH_10",
+    "rx": "^10\\.\\s*South"
+   },
+   {
+    "id": "2019_TH_11",
+    "rx": "^11\\.\\s*Identification\\ of\\ li"
+   },
+   {
+    "id": "2019_TH_12",
+    "rx": "^12\\.\\s*Distance\\ to\\ a\\ Near\\-E"
+   },
+   {
+    "id": "2019_TH_13",
+    "rx": "^13\\.\\s*Distance\\ to\\ the\\ Coma"
+   },
+   {
+    "id": "2019_TH_14",
+    "rx": "^14\\.\\s*Photographing\\ a\\ nano"
+   }
+  ]
+ },
+ {
+  "file": "2019_da.pdf",
+  "problems": [
+   {
+    "id": "2019_DA_1",
+    "rx": "^1\\.\\s*Photometry and spectroscopy"
+   },
+   {
+    "id": "2019_DA_2",
+    "rx": "^2\\.\\s*Triply eclipsing"
+   }
+  ]
+ },
+ {
+  "file": "2020_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2020_TH_1",
+    "rx": "^1\\s+Astrophotogr|^Astrophotogr",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2020_TH_2",
+    "rx": "^2\\s+Flat\\ Earth|^Flat\\ Earth",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2020_TH_3",
+    "rx": "^3\\s+Mirror|^Mirror",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2020_TH_4",
+    "rx": "^4\\s+Light\\ Curves|^Light\\ Curves",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2020_TH_5",
+    "rx": "^5\\s+HII\\ region|^HII\\ region",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2020_TH_6",
+    "rx": "^6\\s+Occultation\\ |^Occultation\\ ",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2020_TH_7",
+    "rx": "^7\\s+Radiant\\ of\\ a|^Radiant\\ of\\ a",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2020_TH_8",
+    "rx": "^8\\s+Jupiter|^Jupiter",
+    "stop_rx": "^Solution"
+   }
+  ]
+ },
+ {
+  "file": "2020_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2020_THSOL_1",
+    "rx": "^1\\s+Astrophotogr|^Astrophotogr"
+   },
+   {
+    "id": "2020_THSOL_2",
+    "rx": "^2\\s+Flat\\ Earth|^Flat\\ Earth"
+   },
+   {
+    "id": "2020_THSOL_3",
+    "rx": "^3\\s+Mirror|^Mirror"
+   },
+   {
+    "id": "2020_THSOL_4",
+    "rx": "^4\\s+Light\\ Curves|^Light\\ Curves"
+   },
+   {
+    "id": "2020_THSOL_5",
+    "rx": "^5\\s+HII\\ region|^HII\\ region"
+   },
+   {
+    "id": "2020_THSOL_6",
+    "rx": "^6\\s+Occultation\\ |^Occultation\\ "
+   },
+   {
+    "id": "2020_THSOL_7",
+    "rx": "^7\\s+Radiant\\ of\\ a|^Radiant\\ of\\ a"
+   },
+   {
+    "id": "2020_THSOL_8",
+    "rx": "^8\\s+Jupiter|^Jupiter"
+   }
+  ]
+ },
+ {
+  "file": "2020_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2020_DA_1",
+    "rx": "^1\\s+AGN|^AGN$",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2020_DA_2",
+    "rx": "^2\\s+Minor\\ Planet|^Minor\\ Planet$",
+    "stop_rx": "^Solution"
+   },
+   {
+    "id": "2020_DA_3",
+    "rx": "^3\\s+Hypervelocity\\ stars|^Hypervelocity\\ stars$",
+    "stop_rx": "^Solution"
+   }
+  ]
+ },
+ {
+  "file": "2020_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2020_DASOL_1",
+    "rx": "^1\\s+AGN|^AGN$"
+   },
+   {
+    "id": "2020_DASOL_2",
+    "rx": "^2\\s+Minor\\ Planet|^Minor\\ Planet$"
+   },
+   {
+    "id": "2020_DASOL_3",
+    "rx": "^3\\s+Hypervelocity\\ stars|^Hypervelocity\\ stars$"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q1.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q1",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q2.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q2",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q3.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q3",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q4.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q4",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q5.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q5",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q6.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q6",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q7.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q7",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q8.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q8",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q9.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q9",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q10.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q10",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q11.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q11",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q12.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q12",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q13.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q13",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q14.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q14",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q15.pdf",
+  "problems": [
+   {
+    "id": "2021_TH_Q15",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q1_da.pdf",
+  "problems": [
+   {
+    "id": "2021_DA_DA1",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2021_Q2_da.pdf",
+  "problems": [
+   {
+    "id": "2021_DA_DA2",
+    "rx": "English \\(Official\\)",
+    "stop_rx": "Bulgarian \\(Bulgaria\\)"
+   }
+  ]
+ },
+ {
+  "file": "2022_Problems.pdf",
+  "problems": [
+   {
+    "id": "2022_TH_1",
+    "rx": "^Planck.*\\([0-9]+ [Pp]oints\\)"
+   },
+   {
+    "id": "2022_TH_2",
+    "rx": "^Circumbinary\\ planet.*\\([0-9]+ [Pp]oints\\)"
+   },
+   {
+    "id": "2022_TH_3",
+    "rx": "^Expanding\\ ring\\ nebula.*\\([0-9]+ [Pp]oints\\)"
+   },
+   {
+    "id": "2022_TH_4",
+    "rx": "^Journey\\ Between\\ Galaxies.*\\([0-9]+ [Pp]oints\\)"
+   },
+   {
+    "id": "2022_TH_5",
+    "rx": "^Flaring\\ protoplanetary\\ disk.*\\([0-9]+ [Pp]oints\\)"
+   },
+   {
+    "id": "2022_TH_6",
+    "rx": "^Photometry\\ of\\ Binary\\ stars.*\\([0-9]+ [Pp]oints\\)"
+   },
+   {
+    "id": "2022_TH_7",
+    "rx": "^Georgia\\ to\\ Georgia.*\\([0-9]+ [Pp]oints\\)"
+   },
+   {
+    "id": "2022_TH_8",
+    "rx": "^Ring\\ of\\ a\\ planet.*\\([0-9]+ [Pp]oints\\)"
+   },
+   {
+    "id": "2022_TH_9",
+    "rx": "^Solar\\ Retrograde\\ Motion.*\\([0-9]+ [Pp]oints\\)"
+   },
+   {
+    "id": "2022_TH_10",
+    "rx": "^Accretion.*\\([0-9]+ [Pp]oints\\)"
+   },
+   {
+    "id": "2022_TH_11",
+    "rx": "^Dyson\\ Sphere.*\\([0-9]+ [Pp]oints\\)"
+   },
+   {
+    "id": "2022_TH_12",
+    "rx": "^Co\\-orbital\\ satellites.*\\([0-9]+ [Pp]oints\\)"
+   },
+   {
+    "id": "2022_TH_13",
+    "rx": "^Relativistic\\ Beaming.*\\([0-9]+ [Pp]oints\\)"
+   }
+  ]
+ },
+ {
+  "file": "2022_da.pdf",
+  "problems": [
+   {
+    "id": "2022_DA_1",
+    "rx": "Gravitational wave astronomy.*\\(45 points\\)|^1\\s+Gravitational wave"
+   },
+   {
+    "id": "2022_DA_2",
+    "rx": "Galactic Surveys.*\\(105 points\\)|^2\\s+Galactic Surveys"
+   }
+  ]
+ },
+ {
+  "file": "2023_theory.pdf",
+  "problems": [
+   {
+    "id": "2023_TH_Q1",
+    "rx": "^Neptune\\s*\\([0-9]+ points\\)"
+   },
+   {
+    "id": "2023_TH_Q2",
+    "rx": "^Magnetic\\ Field\\s*\\([0-9]+ points\\)"
+   },
+   {
+    "id": "2023_TH_Q3",
+    "rx": "^Microlensing\\s*\\([0-9]+ points\\)"
+   },
+   {
+    "id": "2023_TH_Q4",
+    "rx": "^Europa\\s*\\([0-9]+ points\\)"
+   },
+   {
+    "id": "2023_TH_Q5",
+    "rx": "^Dark\\ Energy\\s*\\([0-9]+ points\\)"
+   },
+   {
+    "id": "2023_TH_Q6",
+    "rx": "^Bolometer\\s*\\([0-9]+ points\\)"
+   },
+   {
+    "id": "2023_TH_Q7",
+    "rx": "^Libration\\s*\\([0-9]+ points\\)"
+   },
+   {
+    "id": "2023_TH_Q8",
+    "rx": "^Neutrinos\\s*\\([0-9]+ points\\)"
+   },
+   {
+    "id": "2023_TH_Q9",
+    "rx": "^Second\\ eclipse\\s*\\([0-9]+ points\\)"
+   },
+   {
+    "id": "2023_TH_Q10",
+    "rx": "^Aldebaran\\s*\\([0-9]+ points\\)"
+   },
+   {
+    "id": "2023_TH_Q11",
+    "rx": "^X\\-ray\\ emission\\ from\\ galaxy\\ clusters\\s*\\([0-9]+ points\\)"
+   },
+   {
+    "id": "2023_TH_Q12",
+    "rx": "^DART\\s*\\([0-9]+ points\\)"
+   },
+   {
+    "id": "2023_TH_Q13",
+    "rx": "^LISA\\s*\\([0-9]+ points\\)"
+   }
+  ]
+ },
+ {
+  "file": "2023_DA.pdf",
+  "problems": [
+   {
+    "id": "2023_DA_Q1",
+    "rx": "^Distance to the Large Magellanic Cloud\\s*\\(50 points\\)"
+   },
+   {
+    "id": "2023_DA_Q2",
+    "rx": "^Isolated black hole\\s*\\(75 points\\)"
+   }
+  ]
+ },
+ {
+  "file": "2024_th.pdf",
+  "problems": [
+   {
+    "id": "2024_TH_T1",
+    "rx": "^T1\\.\\s*Sundial"
+   },
+   {
+    "id": "2024_TH_T2",
+    "rx": "^T2\\.\\s*Galaxy\\ Cluster"
+   },
+   {
+    "id": "2024_TH_T3",
+    "rx": "^T3\\.\\s*Asteroid"
+   },
+   {
+    "id": "2024_TH_T4",
+    "rx": "^T4\\.\\s*White\\ Dwarf"
+   },
+   {
+    "id": "2024_TH_T5",
+    "rx": "^T5\\.\\s*CMB"
+   },
+   {
+    "id": "2024_TH_T6",
+    "rx": "^T6\\.\\s*Cluster\\ Photography"
+   },
+   {
+    "id": "2024_TH_T7",
+    "rx": "^T7\\.\\s*Castaway"
+   },
+   {
+    "id": "2024_TH_T8",
+    "rx": "^T8\\.\\s*Binary\\ Hardening"
+   },
+   {
+    "id": "2024_TH_T9",
+    "rx": "^T9\\.\\s*Physics\\ of\\ Accretion"
+   },
+   {
+    "id": "2024_TH_T10",
+    "rx": "^T10\\.\\s*Greatest\\ Eclipse"
+   },
+   {
+    "id": "2024_TH_T11",
+    "rx": "^T11\\.\\s*Ground\\ Tracks"
+   }
+  ]
+ },
+ {
+  "file": "2024_da.pdf",
+  "problems": [
+   {
+    "id": "2024_DA_D1",
+    "rx": "^D1\\.\\s*Photometric comparison"
+   },
+   {
+    "id": "2024_DA_D2",
+    "rx": "^D2\\.\\s*Shapley Hypothesis"
+   }
+  ]
+ },
+ {
+  "file": "2025_theory_questions.pdf",
+  "problems": [
+   {
+    "id": "2025_TH_T01",
+    "rx": "^\\(T01\\)"
+   },
+   {
+    "id": "2025_TH_T02",
+    "rx": "^\\(T02\\)"
+   },
+   {
+    "id": "2025_TH_T03",
+    "rx": "^\\(T03\\)"
+   },
+   {
+    "id": "2025_TH_T04",
+    "rx": "^\\(T04\\)"
+   },
+   {
+    "id": "2025_TH_T05",
+    "rx": "^\\(T05\\)"
+   },
+   {
+    "id": "2025_TH_T06",
+    "rx": "^\\(T06\\)"
+   },
+   {
+    "id": "2025_TH_T07",
+    "rx": "^\\(T07\\)"
+   },
+   {
+    "id": "2025_TH_T08",
+    "rx": "^\\(T08\\)"
+   },
+   {
+    "id": "2025_TH_T09",
+    "rx": "^\\(T09\\)"
+   },
+   {
+    "id": "2025_TH_T10",
+    "rx": "^\\(T10\\)"
+   },
+   {
+    "id": "2025_TH_T11",
+    "rx": "^\\(T11\\)"
+   },
+   {
+    "id": "2025_TH_T12",
+    "rx": "^\\(T12\\)"
+   }
+  ]
+ },
+ {
+  "file": "2025_data_analysis_questions.pdf",
+  "problems": [
+   {
+    "id": "2025_DA_D01",
+    "rx": "^\\(D01\\)"
+   },
+   {
+    "id": "2025_DA_D02",
+    "rx": "^\\(D02\\)"
+   }
+  ]
+ },
+ {
+  "file": "2007_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2007_THSOL_1.1",
+    "rx": "^1\\.1\\b"
+   },
+   {
+    "id": "2007_THSOL_1.2",
+    "rx": "^1\\.2\\b"
+   },
+   {
+    "id": "2007_THSOL_1.3",
+    "rx": "^1\\.3\\b"
+   },
+   {
+    "id": "2007_THSOL_1.4",
+    "rx": "^1\\.4\\b"
+   },
+   {
+    "id": "2007_THSOL_1.5",
+    "rx": "^1\\.5\\b"
+   },
+   {
+    "id": "2007_THSOL_1.6",
+    "rx": "^1\\.6\\b"
+   },
+   {
+    "id": "2007_THSOL_1.7",
+    "rx": "^1\\.7\\b"
+   },
+   {
+    "id": "2007_THSOL_1.8",
+    "rx": "^1\\.8\\b"
+   },
+   {
+    "id": "2007_THSOL_1.9",
+    "rx": "^1\\.9\\b"
+   },
+   {
+    "id": "2007_THSOL_1.10",
+    "rx": "^1\\.10\\b"
+   },
+   {
+    "id": "2007_THSOL_1.11",
+    "rx": "^1\\.11\\b"
+   },
+   {
+    "id": "2007_THSOL_1.12",
+    "rx": "^1\\.12\\b"
+   },
+   {
+    "id": "2007_THSOL_1.13",
+    "rx": "^1\\.13\\b"
+   },
+   {
+    "id": "2007_THSOL_1.14",
+    "rx": "^1\\.14\\b"
+   },
+   {
+    "id": "2007_THSOL_1.15",
+    "rx": "^1\\.15\\b"
+   },
+   {
+    "id": "2007_THSOL_Q2",
+    "rx": "^QUESTION 2\\b|A PLANET"
+   },
+   {
+    "id": "2007_THSOL_Q3",
+    "rx": "^QUESTION 3\\b|BINARY SYSTEM"
+   },
+   {
+    "id": "2007_THSOL_Q4",
+    "rx": "^QUESTION 4\\b|GRAVITATIONAL LENSING"
+   }
+  ]
+ },
+ {
+  "file": "2007_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2007_DASOL_D1",
+    "rx": "^Question 1\\b"
+   },
+   {
+    "id": "2007_DASOL_D2",
+    "rx": "^Question 2\\b"
+   },
+   {
+    "id": "2007_DASOL_D3",
+    "rx": "^Question 3\\b"
+   }
+  ]
+ },
+ {
+  "file": "2008_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2008_THSOL_S1",
+    "rx": "^1\\.\\s*Two\\ persons,\\ on\\ th"
+   },
+   {
+    "id": "2008_THSOL_S2",
+    "rx": "^2\\.\\s*On\\ April\\ 2,\\ 2008\\ a"
+   },
+   {
+    "id": "2008_THSOL_S3",
+    "rx": "^3\\.\\s*A\\ full\\ moon\\ occurr"
+   },
+   {
+    "id": "2008_THSOL_S4",
+    "rx": "^4\\.\\s*Suppose\\ a\\ star\\ has"
+   },
+   {
+    "id": "2008_THSOL_S5",
+    "rx": "^5\\.\\s*The\\ average\\ temper"
+   },
+   {
+    "id": "2008_THSOL_S6",
+    "rx": "^6\\.\\s*Radio\\ wavelength\\ o"
+   },
+   {
+    "id": "2008_THSOL_S7",
+    "rx": "^7\\.\\s*A\\ main\\ sequence\\ st"
+   },
+   {
+    "id": "2008_THSOL_S8",
+    "rx": "^8\\.\\s*Gravitational\\ forc"
+   },
+   {
+    "id": "2008_THSOL_S9",
+    "rx": "^9\\.\\s*The\\ radiation\\ inco"
+   },
+   {
+    "id": "2008_THSOL_L1",
+    "rx": "^10\\.\\s*An eclipsing binary"
+   },
+   {
+    "id": "2008_THSOL_S11",
+    "rx": "^11\\.\\s*Below\\ is\\ a\\ picture"
+   },
+   {
+    "id": "2008_THSOL_S12",
+    "rx": "^12\\.\\s*Consider\\ a\\ type\\ Ia"
+   },
+   {
+    "id": "2008_THSOL_S13",
+    "rx": "^13\\.\\s*In\\ the\\ journey\\ of\\ "
+   },
+   {
+    "id": "2008_THSOL_S14",
+    "rx": "^14\\.\\s*Consider\\ a\\ Potenti"
+   },
+   {
+    "id": "2008_THSOL_S15",
+    "rx": "^15\\.\\s*Galaxy\\ NGC\\ 2639"
+   },
+   {
+    "id": "2008_THSOL_S10",
+    "rx": "^1\\.\\s*The coordinates of the components"
+   },
+   {
+    "id": "2008_THSOL_L2",
+    "rx": "^2\\.?\\s*A UBV photometric"
+   },
+   {
+    "id": "2008_THSOL_L3",
+    "rx": "^3\\.?\\s*Measurement of the cosmic microwave"
+   }
+  ]
+ },
+ {
+  "file": "2008_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2008_DASOL_D1",
+    "rx": "^I\\.\\s*Virgo Cluster"
+   },
+   {
+    "id": "2008_DASOL_D2",
+    "rx": "^II\\.\\s*Determination|^II\\."
+   },
+   {
+    "id": "2008_DASOL_D3",
+    "rx": "^III\\.\\s*The Age|^III\\."
+   }
+  ]
+ },
+ {
+  "file": "2009_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2009_THSOL_P1",
+    "pages": [
+     0,
+     0
+    ]
+   },
+   {
+    "id": "2009_THSOL_P2",
+    "pages": [
+     0,
+     1
+    ]
+   },
+   {
+    "id": "2009_THSOL_P3",
+    "pages": [
+     1,
+     2
+    ]
+   },
+   {
+    "id": "2009_THSOL_P4",
+    "pages": [
+     2,
+     3
+    ]
+   },
+   {
+    "id": "2009_THSOL_P5",
+    "pages": [
+     3,
+     4
+    ]
+   },
+   {
+    "id": "2009_THSOL_P6",
+    "pages": [
+     4,
+     6
+    ]
+   },
+   {
+    "id": "2009_THSOL_P7",
+    "pages": [
+     6,
+     6
+    ]
+   },
+   {
+    "id": "2009_THSOL_P8",
+    "pages": [
+     7,
+     7
+    ]
+   },
+   {
+    "id": "2009_THSOL_P9",
+    "pages": [
+     7,
+     8
+    ]
+   },
+   {
+    "id": "2009_THSOL_P10",
+    "pages": [
+     8,
+     9
+    ]
+   },
+   {
+    "id": "2009_THSOL_P11",
+    "pages": [
+     9,
+     9
+    ]
+   },
+   {
+    "id": "2009_THSOL_P12",
+    "pages": [
+     9,
+     10
+    ]
+   },
+   {
+    "id": "2009_THSOL_P13",
+    "pages": [
+     11,
+     11
+    ]
+   },
+   {
+    "id": "2009_THSOL_P14",
+    "pages": [
+     12,
+     12
+    ]
+   },
+   {
+    "id": "2009_THSOL_P15",
+    "pages": [
+     12,
+     14
+    ]
+   },
+   {
+    "id": "2009_THSOL_P16",
+    "pages": [
+     13,
+     17
+    ]
+   },
+   {
+    "id": "2009_THSOL_P17",
+    "pages": [
+     17,
+     21
+    ]
+   }
+  ]
+ },
+ {
+  "file": "2009_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2009_DASOL_D1",
+    "pages": [
+     0,
+     3
+    ]
+   },
+   {
+    "id": "2009_DASOL_D2",
+    "pages": [
+     4,
+     9
+    ]
+   }
+  ]
+ },
+ {
+  "file": "2010_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2010_DASOL_D1",
+    "pages": [
+     0,
+     2
+    ]
+   },
+   {
+    "id": "2010_DASOL_D2",
+    "pages": [
+     3,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "file": "2011_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2011_THSOL_S1",
+    "pages": [
+     0,
+     0
+    ]
+   },
+   {
+    "id": "2011_THSOL_S2",
+    "pages": [
+     0,
+     0
+    ]
+   },
+   {
+    "id": "2011_THSOL_S3",
+    "pages": [
+     0,
+     0
+    ]
+   },
+   {
+    "id": "2011_THSOL_S4",
+    "pages": [
+     1,
+     1
+    ]
+   },
+   {
+    "id": "2011_THSOL_S5",
+    "pages": [
+     2,
+     2
+    ]
+   },
+   {
+    "id": "2011_THSOL_S6",
+    "pages": [
+     2,
+     2
+    ]
+   },
+   {
+    "id": "2011_THSOL_S7",
+    "pages": [
+     2,
+     2
+    ]
+   },
+   {
+    "id": "2011_THSOL_S8",
+    "pages": [
+     3,
+     3
+    ]
+   },
+   {
+    "id": "2011_THSOL_S9",
+    "pages": [
+     3,
+     3
+    ]
+   },
+   {
+    "id": "2011_THSOL_S10",
+    "pages": [
+     4,
+     4
+    ]
+   },
+   {
+    "id": "2011_THSOL_S11",
+    "pages": [
+     4,
+     4
+    ]
+   },
+   {
+    "id": "2011_THSOL_S12",
+    "pages": [
+     4,
+     4
+    ]
+   },
+   {
+    "id": "2011_THSOL_S13",
+    "pages": [
+     4,
+     5
+    ]
+   },
+   {
+    "id": "2011_THSOL_S14",
+    "pages": [
+     5,
+     5
+    ]
+   },
+   {
+    "id": "2011_THSOL_S15",
+    "pages": [
+     5,
+     5
+    ]
+   },
+   {
+    "id": "2011_THSOL_L1",
+    "pages": [
+     6,
+     6
+    ]
+   },
+   {
+    "id": "2011_THSOL_L2",
+    "pages": [
+     7,
+     8
+    ]
+   },
+   {
+    "id": "2011_THSOL_L3",
+    "pages": [
+     9,
+     9
+    ]
+   }
+  ]
+ },
+ {
+  "file": "2011_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2011_DASOL_D1",
+    "pages": [
+     0,
+     2
+    ]
+   },
+   {
+    "id": "2011_DASOL_D2",
+    "pages": [
+     3,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "file": "2012_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2012_THSOL_S1",
+    "pages": [
+     0,
+     0
+    ]
+   },
+   {
+    "id": "2012_THSOL_S2",
+    "pages": [
+     0,
+     0
+    ]
+   },
+   {
+    "id": "2012_THSOL_S3",
+    "pages": [
+     1,
+     1
+    ]
+   },
+   {
+    "id": "2012_THSOL_S4",
+    "pages": [
+     1,
+     1
+    ]
+   },
+   {
+    "id": "2012_THSOL_S5",
+    "pages": [
+     1,
+     1
+    ]
+   },
+   {
+    "id": "2012_THSOL_S6",
+    "pages": [
+     1,
+     1
+    ]
+   },
+   {
+    "id": "2012_THSOL_S7",
+    "pages": [
+     1,
+     2
+    ]
+   },
+   {
+    "id": "2012_THSOL_S8",
+    "pages": [
+     2,
+     2
+    ]
+   },
+   {
+    "id": "2012_THSOL_S9",
+    "pages": [
+     2,
+     3
+    ]
+   },
+   {
+    "id": "2012_THSOL_S10",
+    "pages": [
+     3,
+     4
+    ]
+   },
+   {
+    "id": "2012_THSOL_S11",
+    "pages": [
+     4,
+     4
+    ]
+   },
+   {
+    "id": "2012_THSOL_S12",
+    "pages": [
+     4,
+     5
+    ]
+   },
+   {
+    "id": "2012_THSOL_S13",
+    "pages": [
+     5,
+     5
+    ]
+   },
+   {
+    "id": "2012_THSOL_S14",
+    "pages": [
+     5,
+     6
+    ]
+   },
+   {
+    "id": "2012_THSOL_S15",
+    "pages": [
+     6,
+     7
+    ]
+   },
+   {
+    "id": "2012_THSOL_L1",
+    "pages": [
+     7,
+     8
+    ]
+   },
+   {
+    "id": "2012_THSOL_L2",
+    "pages": [
+     8,
+     10
+    ]
+   }
+  ]
+ },
+ {
+  "file": "2012_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2012_DASOL_D1",
+    "rx": "^Question 1\\b"
+   },
+   {
+    "id": "2012_DASOL_D2",
+    "rx": "^Question 2\\b"
+   }
+  ]
+ },
+ {
+  "file": "2014_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2014_THSOL_P1",
+    "rx": "^Problem 1\\."
+   },
+   {
+    "id": "2014_THSOL_P2",
+    "rx": "^Problem 2\\."
+   },
+   {
+    "id": "2014_THSOL_P3",
+    "rx": "^Problem 3\\."
+   },
+   {
+    "id": "2014_THSOL_P4",
+    "rx": "^Problem 4\\."
+   },
+   {
+    "id": "2014_THSOL_P5",
+    "rx": "^Problem 5\\."
+   },
+   {
+    "id": "2014_THSOL_P6",
+    "rx": "^Problem 6\\."
+   },
+   {
+    "id": "2014_THSOL_P7",
+    "rx": "^Problem 7\\."
+   },
+   {
+    "id": "2014_THSOL_P8",
+    "rx": "^Problem 8\\."
+   },
+   {
+    "id": "2014_THSOL_P9",
+    "rx": "^Problem 9\\."
+   },
+   {
+    "id": "2014_THSOL_P10",
+    "rx": "^Problem 10\\."
+   },
+   {
+    "id": "2014_THSOL_P11",
+    "rx": "^Problem 11\\."
+   },
+   {
+    "id": "2014_THSOL_P12",
+    "rx": "^Problem 12\\."
+   },
+   {
+    "id": "2014_THSOL_P13",
+    "rx": "^Problem 13\\."
+   },
+   {
+    "id": "2014_THSOL_P14",
+    "rx": "^Problem 14\\."
+   },
+   {
+    "id": "2014_THSOL_P15",
+    "rx": "^Problem 15\\."
+   },
+   {
+    "id": "2014_THSOL_L1",
+    "rx": "Long problem 1|LONG PROBLEM 1"
+   },
+   {
+    "id": "2014_THSOL_L2",
+    "rx": "Long problem 2|LONG PROBLEM 2"
+   },
+   {
+    "id": "2014_THSOL_L3",
+    "rx": "Long problem 3|LONG PROBLEM 3"
+   }
+  ],
+  "start_page": 1
+ },
+ {
+  "file": "2014_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2014_DASOL_D1",
+    "rx": "^Problem 2\\b.*Black Hole"
+   },
+   {
+    "id": "2014_DASOL_D2",
+    "rx": "^Problem 3\\b|Extra solar tests"
+   },
+   {
+    "id": "2014_DASOL_D3",
+    "rx": "^B\\.\\s*Observer on an extrasolar"
+   }
+  ],
+  "start_page": 1
+ },
+ {
+  "file": "2015_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2015_THSOL_S1",
+    "rx": "^1\\.$"
+   },
+   {
+    "id": "2015_THSOL_S2",
+    "rx": "^2\\.$"
+   },
+   {
+    "id": "2015_THSOL_S3",
+    "rx": "^3\\.$"
+   },
+   {
+    "id": "2015_THSOL_S4",
+    "rx": "^4\\.$"
+   },
+   {
+    "id": "2015_THSOL_S5",
+    "rx": "^5\\.$"
+   },
+   {
+    "id": "2015_THSOL_S6",
+    "rx": "^6\\.$"
+   },
+   {
+    "id": "2015_THSOL_S7",
+    "rx": "^7\\.$"
+   },
+   {
+    "id": "2015_THSOL_S8",
+    "rx": "^8\\.$"
+   },
+   {
+    "id": "2015_THSOL_S9",
+    "rx": "^9\\.$"
+   },
+   {
+    "id": "2015_THSOL_S10",
+    "rx": "^10\\.$"
+   },
+   {
+    "id": "2015_THSOL_S11",
+    "rx": "^11\\.$"
+   },
+   {
+    "id": "2015_THSOL_S12",
+    "rx": "^12\\.$"
+   },
+   {
+    "id": "2015_THSOL_S13",
+    "rx": "^13\\.$"
+   },
+   {
+    "id": "2015_THSOL_S14",
+    "rx": "^14\\.$"
+   },
+   {
+    "id": "2015_THSOL_S15",
+    "rx": "^15\\.$"
+   },
+   {
+    "id": "2015_THSOL_L1",
+    "rx": "^LONG QUESTIONS"
+   },
+   {
+    "id": "2015_THSOL_L2",
+    "rx": "^2\\.\\s*Two massive stars"
+   },
+   {
+    "id": "2015_THSOL_L3",
+    "rx": "^3\\.\\s*Suppose a static spherical"
+   }
+  ]
+ },
+ {
+  "file": "2015_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2015_DASOL_D1",
+    "rx": "^Solution of Problem 1"
+   },
+   {
+    "id": "2015_DASOL_D2",
+    "rx": "^Solution of Problem 2"
+   }
+  ]
+ },
+ {
+  "file": "2016_theory_sol.pdf",
+  "problems": [
+   {
+    "id": "2016_THSOL_T1",
+    "rx": "^\\(T1\\)"
+   },
+   {
+    "id": "2016_THSOL_T2",
+    "rx": "^\\(T2\\)"
+   },
+   {
+    "id": "2016_THSOL_T3",
+    "rx": "^\\(T3\\)"
+   },
+   {
+    "id": "2016_THSOL_T4",
+    "rx": "^\\(T4\\)"
+   },
+   {
+    "id": "2016_THSOL_T5",
+    "rx": "^\\(T5\\)"
+   },
+   {
+    "id": "2016_THSOL_T6",
+    "rx": "^\\(T6\\)"
+   },
+   {
+    "id": "2016_THSOL_T7",
+    "rx": "^\\(T7\\)"
+   },
+   {
+    "id": "2016_THSOL_T8",
+    "rx": "^\\(T8\\)"
+   },
+   {
+    "id": "2016_THSOL_T9",
+    "rx": "^\\(T9\\)"
+   },
+   {
+    "id": "2016_THSOL_T10",
+    "rx": "^\\(T10\\)"
+   },
+   {
+    "id": "2016_THSOL_T11",
+    "rx": "^\\(T11\\)"
+   },
+   {
+    "id": "2016_THSOL_T12",
+    "rx": "^\\(T12\\)"
+   }
+  ]
+ },
+ {
+  "file": "2016_data_analysis_sol.pdf",
+  "problems": [
+   {
+    "id": "2016_DASOL_D1",
+    "rx": "^\\(D1\\)"
+   },
+   {
+    "id": "2016_DASOL_D2",
+    "rx": "^\\(D2\\)"
+   },
+   {
+    "id": "2016_DASOL_D3",
+    "rx": "^\\(D3\\)"
+   }
+  ]
+ },
+ {
+  "file": "2017_Theory_Solution.pdf",
+  "problems": [
+   {
+    "id": "2017_THSOL_T1",
+    "rx": "^\\(T1\\)"
+   },
+   {
+    "id": "2017_THSOL_T2",
+    "rx": "^\\(T2\\)"
+   },
+   {
+    "id": "2017_THSOL_T3",
+    "rx": "^\\(T3\\)"
+   },
+   {
+    "id": "2017_THSOL_T4",
+    "rx": "^\\(T4\\)"
+   },
+   {
+    "id": "2017_THSOL_T5",
+    "rx": "^\\(T5\\)"
+   },
+   {
+    "id": "2017_THSOL_T6",
+    "rx": "^\\(T6\\)"
+   },
+   {
+    "id": "2017_THSOL_T7",
+    "rx": "^\\(T7\\)"
+   },
+   {
+    "id": "2017_THSOL_T8",
+    "rx": "^\\(T8\\)"
+   },
+   {
+    "id": "2017_THSOL_T9",
+    "rx": "^\\(T9\\)|^Galactic Outflow$"
+   },
+   {
+    "id": "2017_THSOL_T10",
+    "rx": "^\\(T10\\)"
+   },
+   {
+    "id": "2017_THSOL_T11",
+    "rx": "^\\(T11\\)"
+   },
+   {
+    "id": "2017_THSOL_T12",
+    "rx": "^\\(T12\\)"
+   },
+   {
+    "id": "2017_THSOL_T13",
+    "rx": "^\\(T13\\)"
+   }
+  ]
+ },
+ {
+  "file": "2017_DataAnalysis_Solution.pdf",
+  "problems": [
+   {
+    "id": "2017_DASOL_D1",
+    "rx": "^\\(D1\\)"
+   },
+   {
+    "id": "2017_DASOL_D2",
+    "rx": "^\\(D2\\)"
+   }
+  ]
+ },
+ {
+  "file": "2018_18_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2018_THSOL_T1",
+    "rx": "^\\(T1\\)"
+   },
+   {
+    "id": "2018_THSOL_T2",
+    "rx": "^\\(T2\\)"
+   },
+   {
+    "id": "2018_THSOL_T3",
+    "rx": "^\\(T3\\)"
+   },
+   {
+    "id": "2018_THSOL_T4",
+    "rx": "^\\(T4\\)"
+   },
+   {
+    "id": "2018_THSOL_T5",
+    "rx": "^\\(T5\\)"
+   },
+   {
+    "id": "2018_THSOL_T6",
+    "rx": "^\\(T6\\)"
+   },
+   {
+    "id": "2018_THSOL_T7",
+    "rx": "^\\(T7\\)"
+   },
+   {
+    "id": "2018_THSOL_T8",
+    "rx": "^\\(T8\\)"
+   },
+   {
+    "id": "2018_THSOL_T9",
+    "rx": "^\\(T9\\)"
+   },
+   {
+    "id": "2018_THSOL_T10",
+    "rx": "^\\(T10\\)"
+   },
+   {
+    "id": "2018_THSOL_T11",
+    "rx": "^\\(T11\\)"
+   }
+  ]
+ },
+ {
+  "file": "2018_18_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2018_DASOL_D1",
+    "rx": "^\\(D1\\)"
+   },
+   {
+    "id": "2018_DASOL_D2",
+    "rx": "^\\(D2\\)"
+   }
+  ]
+ },
+ {
+  "file": "2019_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2019_THSOL_1",
+    "rx": "^1\\.\\s*Famous\\ astronomical\\ "
+   },
+   {
+    "id": "2019_THSOL_2",
+    "rx": "^2\\.\\s*De"
+   },
+   {
+    "id": "2019_THSOL_3",
+    "rx": "^3\\.\\s*The\\ supermassive\\ bla"
+   },
+   {
+    "id": "2019_THSOL_4",
+    "rx": "^4\\.\\s*Improving\\ a\\ common\\ r"
+   },
+   {
+    "id": "2019_THSOL_5",
+    "rx": "^5\\.\\s*Cosmic\\ Microwave\\ Bac"
+   },
+   {
+    "id": "2019_THSOL_6",
+    "rx": "^6\\.\\s*The\\ height\\ of\\ the\\ ch"
+   },
+   {
+    "id": "2019_THSOL_7",
+    "rx": "^7\\.\\s*E"
+   },
+   {
+    "id": "2019_THSOL_8",
+    "rx": "^8\\.\\s*Amplitude\\ variation\\ "
+   },
+   {
+    "id": "2019_THSOL_9",
+    "rx": "^9\\.\\s*Distance\\ of\\ the\\ Lagr"
+   },
+   {
+    "id": "2019_THSOL_10",
+    "rx": "^10\\.\\s*South"
+   },
+   {
+    "id": "2019_THSOL_11",
+    "rx": "^11\\.\\s*Ident"
+   },
+   {
+    "id": "2019_THSOL_12",
+    "rx": "^12\\.\\s*Distance\\ to\\ a\\ Near\\-E"
+   },
+   {
+    "id": "2019_THSOL_13",
+    "rx": "^13\\.\\s*Distance\\ to\\ the\\ Coma"
+   },
+   {
+    "id": "2019_THSOL_14",
+    "rx": "^14\\.\\s*Photographing\\ a\\ nano"
+   }
+  ]
+ },
+ {
+  "file": "2019_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2019_DASOL_1",
+    "rx": "^1\\.\\s*Photometry and spectroscopy"
+   },
+   {
+    "id": "2019_DASOL_2",
+    "rx": "^2\\.\\s*Triply eclipsing"
+   }
+  ]
+ },
+ {
+  "file": "2021_T1_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q1",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T2_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q2",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T3_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q3",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T4_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q4",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T5_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q5",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T6_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q6",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T7_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q7",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T8_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q8",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T9_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q9",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T10_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q10",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T11_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q11",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T12_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q12",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T13_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q13",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T14_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q14",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_T15_Solution.pdf",
+  "problems": [
+   {
+    "id": "2021_THSOL_Q15",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_DA1_solution.pdf",
+  "problems": [
+   {
+    "id": "2021_DASOL_DA1",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2021_DA2_solution.pdf",
+  "problems": [
+   {
+    "id": "2021_DASOL_DA2",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2022_Solutions.pdf",
+  "problems": [
+   {
+    "id": "2022_THSOL_1",
+    "rx": "^Solution:\\s*Planck"
+   },
+   {
+    "id": "2022_THSOL_2",
+    "rx": "^Solution:\\s*Circumbinary\\ planet"
+   },
+   {
+    "id": "2022_THSOL_3",
+    "rx": "^Solution:\\s*Expanding\\ ring\\ nebula"
+   },
+   {
+    "id": "2022_THSOL_4",
+    "rx": "^Solution:\\s*Journey\\ Between\\ Galaxies"
+   },
+   {
+    "id": "2022_THSOL_5",
+    "rx": "^Solution:\\s*Flaring\\ protoplanetary\\ disk"
+   },
+   {
+    "id": "2022_THSOL_6",
+    "rx": "^Solution:\\s*Photometry\\ of\\ Binary\\ stars"
+   },
+   {
+    "id": "2022_THSOL_7",
+    "rx": "^Solution:\\s*Georgia\\ to\\ Georgia"
+   },
+   {
+    "id": "2022_THSOL_8",
+    "rx": "^Solution:\\s*Saturn"
+   },
+   {
+    "id": "2022_THSOL_9",
+    "rx": "^Solution:\\s*Solar\\ Retrograde\\ Motion"
+   },
+   {
+    "id": "2022_THSOL_10",
+    "rx": "^Solution:\\s*Accretion"
+   },
+   {
+    "id": "2022_THSOL_11",
+    "rx": "^Solution:\\s*Dyson\\ Sphere"
+   },
+   {
+    "id": "2022_THSOL_12",
+    "rx": "^Solution:\\s*Co\\-orbital\\ satellites"
+   },
+   {
+    "id": "2022_THSOL_13",
+    "rx": "^Solution:\\s*Relativistic\\ Beaming"
+   }
+  ]
+ },
+ {
+  "file": "2022_da_1_sol.pdf",
+  "problems": [
+   {
+    "id": "2022_DASOL_1",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2022_da_2_sol.pdf",
+  "problems": [
+   {
+    "id": "2022_DASOL_2",
+    "whole": true
+   }
+  ]
+ },
+ {
+  "file": "2023_th_solutions.pdf",
+  "problems": [
+   {
+    "id": "2023_THSOL_Q1",
+    "rx": "^Theory 1:"
+   },
+   {
+    "id": "2023_THSOL_Q2",
+    "rx": "^Theory 2:"
+   },
+   {
+    "id": "2023_THSOL_Q3",
+    "rx": "^Theory 3:"
+   },
+   {
+    "id": "2023_THSOL_Q4",
+    "rx": "^Theory 4:"
+   },
+   {
+    "id": "2023_THSOL_Q5",
+    "rx": "^Theory 5:"
+   },
+   {
+    "id": "2023_THSOL_Q6",
+    "pages": [
+     10,
+     11
+    ]
+   },
+   {
+    "id": "2023_THSOL_Q7",
+    "pages": [
+     12,
+     13
+    ]
+   },
+   {
+    "id": "2023_THSOL_Q8",
+    "pages": [
+     14,
+     15
+    ]
+   },
+   {
+    "id": "2023_THSOL_Q9",
+    "pages": [
+     16,
+     21
+    ]
+   },
+   {
+    "id": "2023_THSOL_Q10",
+    "pages": [
+     22,
+     25
+    ]
+   },
+   {
+    "id": "2023_THSOL_Q11",
+    "rx": "^Theory 11:"
+   },
+   {
+    "id": "2023_THSOL_Q12",
+    "rx": "^Theory 12:"
+   },
+   {
+    "id": "2023_THSOL_Q13",
+    "rx": "^Theory 13:"
+   }
+  ]
+ },
+ {
+  "file": "2023_DA_sol.pdf",
+  "problems": [
+   {
+    "id": "2023_DASOL_Q1",
+    "rx": "Distance to the Large Magellanic Cloud"
+   },
+   {
+    "id": "2023_DASOL_Q2",
+    "rx": "Isolated black hole"
+   }
+  ]
+ },
+ {
+  "file": "2024_th_sol.pdf",
+  "problems": [
+   {
+    "id": "2024_THSOL_T1",
+    "rx": "^T1\\.\\s*Sundial"
+   },
+   {
+    "id": "2024_THSOL_T2",
+    "rx": "^T2\\.\\s*Galaxy\\ Cluster"
+   },
+   {
+    "id": "2024_THSOL_T3",
+    "rx": "^T3\\.\\s*Asteroid"
+   },
+   {
+    "id": "2024_THSOL_T4",
+    "rx": "^T4\\.\\s*White\\ Dwarf"
+   },
+   {
+    "id": "2024_THSOL_T5",
+    "rx": "^T5\\.\\s*CMB"
+   },
+   {
+    "id": "2024_THSOL_T6",
+    "rx": "^T6\\.\\s*Cluster\\ Photography"
+   },
+   {
+    "id": "2024_THSOL_T7",
+    "rx": "^T7\\.\\s*Castaway"
+   },
+   {
+    "id": "2024_THSOL_T8",
+    "rx": "^T8\\.\\s*Binary\\ Hardening"
+   },
+   {
+    "id": "2024_THSOL_T9",
+    "rx": "^T9\\.\\s*Physics\\ of\\ Accretion"
+   },
+   {
+    "id": "2024_THSOL_T10",
+    "rx": "^T10\\.\\s*Greatest\\ Eclipse"
+   },
+   {
+    "id": "2024_THSOL_T11",
+    "rx": "^T11\\.\\s*Ground\\ Tracks"
+   }
+  ]
+ },
+ {
+  "file": "2024_da_sol.pdf",
+  "problems": [
+   {
+    "id": "2024_DASOL_D1",
+    "rx": "^D1\\.\\s*Photometric comparison"
+   },
+   {
+    "id": "2024_DASOL_D2",
+    "rx": "^D2\\.\\s*Shapley Hypothesis"
+   }
+  ]
+ },
+ {
+  "file": "2025_theory_solution.pdf",
+  "problems": [
+   {
+    "id": "2025_THSOL_T01",
+    "rx": "^\\(T01\\)"
+   },
+   {
+    "id": "2025_THSOL_T02",
+    "rx": "^\\(T02\\)"
+   },
+   {
+    "id": "2025_THSOL_T03",
+    "rx": "^\\(T03\\)"
+   },
+   {
+    "id": "2025_THSOL_T04",
+    "rx": "^\\(T04\\)"
+   },
+   {
+    "id": "2025_THSOL_T05",
+    "rx": "^\\(T05\\)"
+   },
+   {
+    "id": "2025_THSOL_T06",
+    "rx": "^\\(T06\\)"
+   },
+   {
+    "id": "2025_THSOL_T07",
+    "rx": "^\\(T07\\)"
+   },
+   {
+    "id": "2025_THSOL_T08",
+    "rx": "^\\(T08\\)"
+   },
+   {
+    "id": "2025_THSOL_T09",
+    "rx": "^\\(T09\\)"
+   },
+   {
+    "id": "2025_THSOL_T10",
+    "rx": "^\\(T10\\)"
+   },
+   {
+    "id": "2025_THSOL_T11",
+    "rx": "^\\(T11\\)"
+   },
+   {
+    "id": "2025_THSOL_T12",
+    "rx": "^\\(T12\\)"
+   }
+  ]
+ },
+ {
+  "file": "2025_data_analysis_solutions.pdf",
+  "problems": [
+   {
+    "id": "2025_DASOL_D01",
+    "rx": "^\\(D01\\)"
+   },
+   {
+    "id": "2025_DASOL_D02",
+    "rx": "^\\(D02\\)"
+   }
+  ]
+ }
+]

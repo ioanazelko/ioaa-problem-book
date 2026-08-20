@@ -1,0 +1,122 @@
+\begin{description}
+\item[(a)] From the Wien's displacement law the temperature of a black body is
+  related to a peak wavelength of emission by the relation:
+  \[ \lambda_{max} T = b \]
+  \hfill(1.0)
+  \begin{align*}
+    T_A &= 5978\,\mathrm{K} \\
+    T_B &= 4830\,\mathrm{K}
+  \end{align*}
+  \hfill(0.5 + 0.5)
+
+\item[(b)] Due to the diffraction minimal angular separation between two
+  celestial objects to distinguish them:
+  \[ \delta = 1.22\,\frac{\lambda}{D} = 4.44 \times 10^{-8}\,\mathrm{rad}
+     = 9.16\,\mathrm{mas} \]
+  \hfill(1.0)
+
+  Now let us derive the time dependence of the angular separation between two
+  stars as seen from the earth.
+
+  % FIGURE NEEDED: geometry sketch — two concentric circular orbits about the
+  % centre of mass C, stars A and B on a diameter making angle theta with the
+  % perpendicular to the line of sight, projected separation s toward the
+  % Observer (2022 theory solutions, page 4 of 21).
+
+  As it is seen from the figure, distance $s = l\cos\theta$, where $l$ is the
+  distance between stars and $\theta$ is the angle of rotation of the stars
+  about their center of mass after the stars are seen with maximum angular
+  separation. The angular separation seen by an observer on the earth:
+  \[ \gamma = \frac{s}{d} = \frac{l}{d}\cos\theta \]
+  \hfill(1.0)
+
+  The 38 days, during which objects are seen as a one object the system rotates
+  by the angle $\beta = 2\pi\,\frac{38}{100}$. \hfill(1.0)
+
+  Thus, the corresponding starting angle $\theta'$ at which stars are no longer
+  distinguishable:
+  \[ \theta' = \frac{\pi}{2} - \frac{\beta}{4}
+     = \frac{\pi}{2} - \frac{19\pi}{100} = \frac{31\pi}{100} \]
+  \hfill(1.5)
+
+  and this is the moment, when stars stop to be distinguishable. Thus,
+  corresponding angular separation on the sky is $\delta$:
+  \[ \delta = \frac{l}{d}\cos\theta' \]
+  From which one obtains
+  \[ l = \frac{\delta d}{\cos\theta'} = 1.45\,\mathrm{au} \]
+  \hfill(1.5)
+
+\item[(c)] From the Kepler's 3rd law:
+  \begin{align*}
+    T^2 &= \frac{4\pi^2 l^3}{G(M_A + M_B)} \\
+    M_A + M_B &= \frac{4\pi^2 l^3}{G T^2} = 40.7\,M_\odot
+  \end{align*}
+  \hfill(2.0)
+
+\item[(d)] From given data for case 1:
+  \begin{align*}
+    (U - V)_1 &= (U - B)_1 + (B - V)_1 = 0.3 \\
+    U_1 &= U_{0_1} + a_U d = 6.51 \\
+    V_1 &= U_1 - (U - V)_1 = 6.21 \\
+    m_{Bol_1} &= V_1 + BC_1 = 6.31
+  \end{align*}
+  \hfill(1.5)
+
+  Similarly for second configuration:
+  \begin{align*}
+    (U - V)_2 &= (U - B)_2 + (B - V)_2 = 0.37 \\
+    U_2 &= U_{0_2} + a_U d = 6.98 \\
+    V_2 &= U_2 - (U - V)_2 = 6.61 \\
+    m_{Bol_2} &= V_2 + BC_2 = 6.79
+  \end{align*}
+  \hfill(1.0)
+
+  The difference in bolometric magnitudes:
+  \begin{align*}
+    m_{bol_2} - m_{bol_1}
+      &= -2.5\log\left(\frac{L_2}{L_1}\right) \\
+      &= -2.5\log\left(
+         \frac{\pi(R_A^2 - R_B^2)\sigma T_A^4 + \pi R_B^2 \sigma T_B^4}
+              {\pi R_A^2 \sigma T_A^4 + \pi R_B^2 \sigma T_B^4}\right)
+  \end{align*}
+  \hfill(1.5)
+  \begin{align*}
+    \therefore\ 6.79 - 6.31
+      &= -2.5\log\left(
+         \frac{(R_A^2 - R_B^2)T_A^4 + R_B^2 T_B^4}
+              {R_A^2 T_A^4 + R_B^2 T_B^4}\right) \\
+      &= -2.5\log\left(
+         \frac{(R_A^2/R_B^2 - 1)T_A^4 + T_B^4}
+              {T_A^4 R_A^2/R_B^2 + T_B^4}\right) \\
+    \therefore\ 0.48
+      &= -2.5\log\left[
+         \frac{\left(\frac{R_A^2}{R_B^2} - 1\right) + \frac{T_B^4}{T_A^4}}
+              {\frac{T_B^4}{T_A^4} + \frac{R_A^2}{R_B^2}}\right]
+  \end{align*}
+  \hfill(1.0)
+  \[ \therefore\ 10^{\frac{-0.48}{2.5}}
+     = \frac{\frac{R_A^2}{R_B^2} - 1 + \frac{T_B^4}{T_A^4}}
+            {\frac{T_B^4}{T_A^4} + \frac{R_A^2}{R_B^2}}
+     = 10^{-0.19} = 0.65 \]
+  \hfill(1.0)
+  \begin{align*}
+    \frac{R_A^2}{R_B^2} - 1 + \frac{T_B^4}{T_A^4}
+      &= 0.65\,\frac{T_B^4}{T_A^4} + 0.65\,\frac{R_A^2}{R_B^2} \\
+    0.35\,\frac{R_A^2}{R_B^2}
+      &= 1 - 0.35\,\frac{T_B^4}{T_A^4} \\
+      &= 1 - 0.35 \times 0.482 = 0.83 \\
+    \therefore\ \frac{R_A}{R_B}
+      &= \sqrt{\frac{0.83}{0.35}} = 1.54
+  \end{align*}
+  \hfill(1.0)
+  \[ \frac{M_A}{M_B} = \frac{\rho_A R_A^3}{\rho_B R_B^3}
+     = 1.54^3 \cdot 0.7 = 2.56 \]
+  \hfill(1.0)
+  \[ \text{But, } M_A + M_B = 40.7\,M_\odot \]
+  \hfill(1.0)
+  \[ \therefore\ M_B = \frac{40.7\,M_\odot}{3.56} = 11.4\,M_\odot \]
+  \hfill(1.0)
+  \[ M_B = 29.3\,M_\odot \]
+  % sic — the source writes M_B again; this last line is clearly M_A
+  % (= 40.7 - 11.4 = 29.3 solar masses).
+\end{description}

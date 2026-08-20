@@ -1,0 +1,73 @@
+\begin{description}
+\item[(a)] Drawing scaled diagram is impossible. Rough sketch is accepted.
+\item[(b)] There are 10 days and nights per taris year. The obliquity is
+  $3^\circ$, which means that the planet's rotation is in the same direction
+  as its orbit. Thus, total number of rotations per year is $10 + 1 = 11$.
+
+  \textbf{Note:} The obliquity is positive (similar to the Earth / Mars /
+  Jupiter). This means, we have ADD one rotation. Subtracting one rotation by
+  assuming opposite rotation (like the Venus) is incorrect.
+\item[(c)] By Kepler's third law, $\dfrac{T^2}{R^3} = \text{Constant}$
+  \begin{align*}
+  \frac{T_{en}^2}{R_{en}^3} &= \frac{T_{ex}^2}{R_{ex}^3} \tag{1}\\
+  R_{ex}^3 &= \frac{1.6^2 R_{en}^3}{0.2^2} \tag{2}\\
+  R_{ex} &= \sqrt[3]{64}\ \text{endorlengths} \tag{3}\\
+         &= 4\ \text{endorlengths} \tag{4}
+  \end{align*}
+\item[(d)] Using same logic as above
+  \begin{align*}
+  \frac{T_C^2}{R_C^3} &= \frac{T_T^2}{R_T^3} \tag{5}\\
+  T_C^2 &= \frac{9^3 R_T^3 T_T^2}{R_T^3} \tag{6}\\
+  T_C &= \sqrt{729}\ \text{tarisyears} \tag{7}\\
+      &= 27\ \text{tarisyears} \tag{8}
+  \end{align*}
+\item[(e)] As Corulus is in Opposition, Sola - Taris - Corulus form straight
+  line (in that order). Distance $= 9 - 1 = 8$ tarislengths.
+\item[(f)] In the figure, S is Sola, A and B are start of the year positions
+  of Taris and Corulus, T and C are their positions after `$n$' days. Angles
+  are named from $a$ to $f$. The dashed line is parallel to line SB.
+  Triangle(SCT) is used for sine rule as well as answer in the next part.
+  Figure is not to the scale.
+  % FIGURE NEEDED: two concentric circular orbits around S (Sola) with
+  % start-of-year positions A (Taris) and B (Corulus) on a line through S,
+  % later positions T and C after n days, angles a-f marked, dashed line
+  % through T parallel to SB; 2010 proceedings, solution of long problem 17,
+  % p. 50.
+  \begin{align*}
+  a + b + c &= \pi \tag{9}\\
+  b + d + e &= \pi \tag{10}\\
+  d &= f + c \tag{11}\\
+  f + c &= \frac{2\pi n}{10} \tag{12}\\
+  f &= \frac{2\pi n}{270} \tag{13}\\
+  \sin b &= 9\sin a \ \text{(By Sine Rule)} \tag{14}\\[6pt]
+  e &= \pi - b - d \tag{15}\\
+    &= \pi - b - c - f \tag{16}\\
+    &= a - f \tag{17}\\[6pt]
+  b &= \pi - (a + c) \tag{18}\\
+    &= \pi - \left(a + \frac{2\pi n}{10} - \frac{2\pi n}{270}\right) \tag{19}\\
+    &= \pi - \left(a + \frac{52\pi n}{270}\right) \tag{20}\\[6pt]
+  9\sin a &= \sin\left(\pi - \left(a + \frac{52\pi n}{270}\right)\right)
+    \tag{21}\\
+    &= \sin\left(a + \frac{52\pi n}{270}\right) \tag{22}\\
+    &= \left[\sin a\cos\left(\frac{52\pi n}{270}\right)
+       + \cos a\sin\left(\frac{52\pi n}{270}\right)\right] \tag{23}\\
+  9 &= \cos\left(\frac{52\pi n}{270}\right)
+       + \cot a\sin\left(\frac{52\pi n}{270}\right) \tag{24}\\
+  \cot a &= \frac{9 - \cos\left(\frac{52\pi n}{270}\right)}
+                 {\sin\left(\frac{52\pi n}{270}\right)} \tag{25}\\
+  a &= \tan^{-1}\!\left[\frac{\sin\left(\frac{52\pi n}{270}\right)}
+       {9 - \cos\left(\frac{52\pi n}{270}\right)}\right] \tag{26}\\[6pt]
+  \lambda &= \pi - e \tag{27}\\
+          &= \pi + f - a \tag{28}\\
+  \lambda &= \pi + \frac{2\pi n}{270}
+     - \tan^{-1}\!\left[\frac{\sin\left(\frac{52\pi n}{270}\right)}
+       {9 - \cos\left(\frac{52\pi n}{270}\right)}\right] \tag{29}
+  \end{align*}
+\item[(g)]
+  \begin{align*}
+  \text{Area} &= \frac12 \times l(ST) \times l(SC) \times \sin c\\
+              &= \frac12 \times 1 \times 9 \times 0.568\\
+              &= 2.56
+  \end{align*}
+  The area is about 3\,(tarislength)$^2$.
+\end{description}

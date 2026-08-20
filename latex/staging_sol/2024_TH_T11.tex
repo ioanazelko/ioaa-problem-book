@@ -1,0 +1,417 @@
+\subsubsection*{Part I: Sun-Synchronous Orbits}
+
+\begin{description}
+\item[(a)] Since the orbit is Sun-Synchronous, this means that the satellite's
+  line of nodes must drift $360^\circ$ along one sidereal year. This ensures
+  that the satellite will always pass over a given meridian at the same local
+  mean solar time. Hence, \hfill(1.0 points)
+  \[
+    \dot\Omega = \frac{360^\circ}{T_s}
+      = \frac{2\pi}{365.2564\cdot24\cdot60\cdot60}
+      = 1.991\cdot10^{-7}\ \mathrm{rad/s}
+  \]
+  \hfill(2.0 points)
+
+\item[(b)] After one orbit, the difference in longitude perceived by the
+  satellite on the ground track is associated with the combined effects of the
+  rotation of the Earth and nodal precession. This is expressed by
+  \[
+    \lambda_2 = \lambda_1 - \omega_\oplus\cdot T + \dot\Omega\cdot T
+  \]
+  \hfill(2.0 points)
+
+  From the Ground Track, $\lambda_1 = 90^\circ$ and
+  $\lambda_2 \approx -135^\circ$ for five orbits. Therefore, knowing the value
+  of $\omega_\oplus$, the angular velocity of the rotation of our planet,
+  \[
+    T = \frac{1}{5}\cdot\frac{\lambda_1 - \lambda_2}{\omega_\oplus - \dot\Omega}
+      = \frac{1}{5}\cdot
+        \frac{225^\circ\cdot\pi/180^\circ}
+             {7.292\cdot10^{-5} - 1.991\cdot10^{-7}}
+      \approx 10800\ \mathrm{s} = 180\ \mathrm{min}
+  \]
+  \hfill(2.0 points)
+
+  Although $\dot\Omega$ is significantly smaller than $\omega_\oplus$, it is
+  conceptually important to include the nodal precession rate in the formula.
+
+  The inclination of the orbit can be obtained directly from the Ground
+  Track. Taking any of the two points of the orbit with the largest (absolute)
+  value of latitude, one finds
+  \[
+    |\phi_{max}| \approx 55^\circ
+  \]
+  \hfill(2.0 points)
+
+  Since $i > 90^\circ$, $|\phi_{max}|$ is the supplementary angle of the
+  inclination:
+  \[
+    i = 180^\circ - 55^\circ = 125^\circ
+  \]
+  \hfill(2.0 points)
+
+\item[(c)] Having calculated the period associated with the orbit, the
+  semi-major axis is directly obtained from
+  \[
+    \frac{T^2}{a^3} = \frac{4\pi^2}{GM_\oplus}
+    \implies
+    a = \left(\frac{T^2 GM_\oplus}{4\pi^2}\right)^{1/3}
+      = 1.06\cdot10^4\ \mathrm{km}
+  \]
+  \hfill(2.0 points)
+
+\item[(d)] Since the orbit is sun-synchronous, the satellite completes an
+  integer number of orbits during one solar day. Hence,
+  \[
+    N_S = \frac{24\cdot60}{180} = 8\ \text{orbits}
+  \]
+  \hfill(1.0 points)
+
+\item[(e)] The satellite takes more than 2 orbits and less than 3 orbits to go
+  from Poland to Brazil. Using as reference the point $P_o$ ahead of Macei\'o
+  that is exactly 3 orbits after Chorz\'ow,
+  \[
+    \lambda_o = \lambda_C - 3\cdot45^\circ
+  \]
+  \[
+    \phi_0 = \phi_C
+  \]
+  Using sine law in the following spherical triangle,
+
+% FIGURE NEEDED: 3D sphere diagram (2024 theory solutions, page 33 of 40):
+% Earth sphere with equatorial plane, the orbit great circle crossing the
+% equator at the ascending node Omega, inclination marked as 180 deg - i,
+% arcs theta_0 and theta_M along the orbit to points at latitudes phi_0 and
+% phi_M, with x, y, z axes drawn.
+
+  \[
+    \sin\theta = \frac{\sin\phi}{\sin(180^\circ - i)}
+  \]
+  \hfill(2.0 points)
+  \[
+    \theta_0 = \arcsin\left(\frac{\sin\phi_o}{\sin i}\right) = 69.9^\circ
+  \]
+  \[
+    \theta_M = \arcsin\left(\frac{\sin\phi_M}{\sin i}\right) = -12.0^\circ
+  \]
+  The angle the satellite traveled will depend on how many complete orbits it
+  took and the angle from the final whole orbit to Macei\'o:
+  \[
+    \Delta\theta = n\cdot360^\circ - (\theta_0 - \theta_M)
+  \]
+  \hfill(3.0 points)
+
+  by the graph, $n = 3$, which results in $\Delta\theta = 998.1^\circ$.
+  \hfill(1.0 points)
+
+  Knowing its orbit is circular,
+  \[
+    \Delta t = T\cdot\frac{\Delta\theta}{360^\circ} = 8.32\ \mathrm{h}
+  \]
+  \hfill(1.0 points)
+
+  The local time at Chorz\'ow over which the satellite passes by will be,
+  considering $\lambda_M = 35.7^\circ W = -35.7^\circ$,
+  \[
+    T_C = T_M - \Delta t + \omega_\oplus^{-1}(\lambda_C - \lambda_M)
+  \]
+  \hfill(3.0 points)
+  \[
+    \boxed{T_C \approx 7\mathrm{h}20\mathrm{min}}
+  \]
+  \hfill(1.0 points)
+\end{description}
+
+\subsubsection*{Part II: Tundra orbits}
+
+\begin{description}
+\item[(f)] For the inclination, we need to take the maximum latitude reached
+  by the satellite, which gives us $\boxed{i = 63^\circ}$.
+  \hfill(1.0 points)
+
+  For the period, we have to realize that in one orbit, the Earth's rotation
+  does not cause a shift in the orbit, so it must be geosynchronous, that is
+  $T = T_\oplus = \boxed{1436\ \mathrm{min}}$. \hfill(1.0 points)
+
+  For the semi-major axis, we apply Kepler's Third Law:
+  \[
+    \frac{a^3}{T^2} = \frac{GM}{4\pi^2}
+    \rightarrow \boxed{a = 42{,}164\ \mathrm{km}}
+  \]
+  \hfill(2.0 points)
+
+\item[(g)] We will first find the expression for the area divided by the
+  semi-latus rectum as a function of eccentricity so then we can apply the
+  Kepler's Second Law to find the required time. \hfill(2.0 points)
+
+  To do this, we will use the projection of the area of a circle when it is
+  inclined by an angle $\arccos\left(\frac{b}{a}\right)$, as shown in the
+  figure below:
+
+% FIGURE NEEDED: auxiliary-circle diagram (2024 theory solutions, page 35 of
+% 40): circle with centre C, angle theta at the centre, points Q, I, T, P
+% marking the sector cut off beyond the semi-latus rectum, hatched circular
+% segment (light and dark blue) between the chord and the arc near P, angle
+% alpha at Q.
+
+  Thus, we will first calculate the hatched area of the circle figure
+  $A_{circle}$
+  \[
+    A_{circle} = A_{sector} - A_{triangle}
+      = \frac{\theta}{2\pi}\cdot\pi a^2 - \frac{ae\cdot b}{2}
+  \]
+  \hfill(2.0 points)
+
+  We can also use that $\theta = \frac{\pi}{2} - \alpha$ and
+  $\alpha = \sin^{-1}(e)$. Therefore:
+  \[
+    A_{circle} = \left(\frac{\pi\cdot a^2}{4}
+      - \frac{\sin^{-1}(e)\cdot a^2}{2} - \frac{ab\cdot e}{2}\right)
+  \]
+  Now, we project this area,
+  \[
+    A_{ellipse} = A_{circle}\cdot\frac{b}{a}
+  \]
+  \[
+    A_{ellipse} = \left(\frac{\pi ab}{4}
+      - \frac{\sin^{-1}(e)\cdot ab}{2} - \frac{b^2 e}{2}\right)
+  \]
+  \hfill(4.0 points)
+
+  Thus, the area covered by the satellite's position vector from one
+  semi-latus rectum to the other will be given by twice the area found above,
+  as we can see from the image, so that the area on the perigee side is given
+  by
+  \[
+    A_{per} = \frac{\pi ab}{2} - b(a\sin^{-1}(e) + eb)
+  \]
+  For the apogee side, it is enough to know that
+  $A_{ap} = \pi ab - A_{per}$, where $\pi ab$ is the area of the whole
+  ellipse. Therefore, we have:
+  \[
+    A_{ap} = \frac{\pi ab}{2} + b\left(a\sin^{-1}(e) + eb\right)
+  \]
+  \hfill(2.0 points)
+
+  Using Kepler's Second Law, we can write:
+  \[
+    \frac{A_{ap}}{A_{ellipse}} = \frac{T'}{T}
+  \]
+  \hfill(2.0 points)
+
+  Using that $A_{ellipse} = \pi ab$ and $b = a\sqrt{1 - e^2}$, we have:
+  \[
+    \boxed{\frac{T'}{T} = \frac{1}{2} + \frac{\sin^{-1}(e)}{\pi}
+      + \frac{e}{\pi}\cdot\sqrt{1 - e^2}}
+  \]
+
+  \textbf{Alternative Solution}
+
+% FIGURE NEEDED: eccentric-anomaly diagram (2024 theory solutions, page 36 of
+% 40): ellipse (trajectory) with auxiliary circle, centre O, foci F and F',
+% point P on the ellipse below P' on the circle, radius a, focal distance ea,
+% eccentric anomaly E at O and true anomaly theta at F, apex A. Caption cites
+% https://en.wikipedia.org/wiki/Eccentric_anomaly as source.
+
+  The relation between the true anomaly and the mean anomaly is given by
+  \[
+    M = E - e\cdot\sin(E)
+  \]
+  From the figure (improve figure later), we observe that the satellite has % sic: "(improve figure later)" left in the official solutions
+  the following properties:
+  \begin{itemize}
+    \item At perigee:
+      \begin{itemize}
+        \item $E = 0$
+        \item $\theta = 0$
+      \end{itemize}
+    \item At the semi-latus rectum:
+      \begin{itemize}
+        \item $E = \cos^{-1}(e)$
+        \item $\theta = 90^\circ$
+      \end{itemize}
+  \end{itemize}
+  \hfill(2.0 points)
+
+  Therefore, at the moment of passage through the semi-latus rectum, knowing
+  that $\sin(E) = \sqrt{1 - e^2}$, we have
+  \[
+    M = \cos^{-1}(e) - e\cdot\sqrt{1 - e^2}
+  \]
+  \hfill(4.0 points)
+
+  If we also use the perigee as the initial reference for the mean anomaly, we
+  can associate the time of passage from the perigee to a certain point in the
+  orbit by
+  \[
+    t = \frac{M}{\omega}
+  \]
+  where $\omega$ is the mean angular velocity of the orbit, given by
+  $\omega = \frac{2\pi}{T}$, with $T$ being the orbital period. Thus, the time
+  elapsed from the perigee to the semi-latus rectum is given by
+  \[
+    t = T\frac{\cos^{-1}(e) - e\cdot\sqrt{1 - e^2}}{2\pi}
+  \]
+  \hfill(2.0 points)
+
+  Finally, the time $T'$ spent in the northern hemisphere can be found as
+  follows:
+  \[
+    T' + 2t = T \rightarrow T' = T - 2t
+  \]
+  Thus, the desired ratio $T'/T$ will be:
+  \[
+    \frac{T'}{T} = 1 - \frac{2t}{T}
+  \]
+  \hfill(2.0 points)
+
+  Substituting the expression for $t$, we get:
+  \[
+    \frac{T'}{T} = 1 - \frac{\cos^{-1}(e) + e\cdot\sqrt{1 - e^2}}{\pi}
+  \]
+  If we use the relation $\cos^{-1}(e) + \sin^{-1}(e) = \frac{\pi}{2}$, we
+  finally obtain:
+  \[
+    \boxed{\frac{T'}{T} = \frac{1}{2} + \frac{\sin^{-1}(e)}{\pi}
+      + \frac{e}{\pi}\cdot\sqrt{1 - e^2}}
+  \]
+
+\item[(h)] Between the two consecutive passages through the semi-latus rectum,
+  we can use the following equation:
+  \[
+    \Delta\lambda = \pi - \omega_\oplus\cdot T'
+  \]
+  \hfill(2.0 points)
+
+  Where $\Delta\lambda$ is the variation in longitude of the satellite between
+  its passages through the semi-latus rectum, as shown in the image below.
+
+% FIGURE NEEDED: annotated Tundra ground track (2024 theory solutions, page 38
+% of 40): the figure-8 ground track of Figure 3 with the "First passage" and
+% "Second passage" through the semi-latus rectum marked and the longitude
+% difference between them indicated by red dashed lines.
+
+  Therefore, we can write using the expression of the last item
+  \[
+    \Delta\lambda + \omega_\oplus\cdot T\cdot
+      \left(\frac{1}{2} + \frac{\sin^{-1}(e)}{\pi}
+      + \frac{e}{\pi}\cdot\sqrt{1 - e^2}\right) = \pi
+  \]
+  As $\omega_\oplus = \frac{2\pi}{T}$ (the orbit is geosynchronous), we will
+  get:
+  \begin{align*}
+    \Delta\lambda + 2\cdot\sin^{-1}(e) + 2e\cdot\sqrt{1 - e^2} &= 0 \\
+    \sin^{-1}(e) + e\cdot\sqrt{1 - e^2} &= -\frac{\Delta\lambda}{2}
+  \end{align*}
+  \hfill(2.0 points)
+
+  Considering that $\Delta\lambda \approx -67.5^\circ$ from the graph (it is
+  important to note that this value should be negative by the figure), we find
+  from the above formula, by iteration, $\boxed{e \approx 0.3}$.
+  \hfill(2.0 points)
+
+  If we use the approximations $\sin(e) \approx e$ and $e^2 \ll 1$ given in
+  the statement, we find:
+  \[
+    2e = -\frac{\Delta\lambda}{2}
+  \]
+  \hfill(3.0 points)
+
+  which gives us an approximate answer $\boxed{e \approx 0.295 \approx 0.3}$
+  \hfill(1.0 points)
+
+\item[(i)] At the start and end points of retrograde motion, we have
+  $\omega_{RA} = \omega_\oplus$, where $\omega_{RA}$ is the right ascension
+  angular velocity of the satellite. \hfill(2.0 points)
+
+  To find this velocity, we use the following spherical triangle:
+
+% FIGURE NEEDED: sphere diagram (2024 theory solutions, page 39 of 40):
+% spherical triangle formed by the orbit great circle and the equator, with
+% inclination i at the node, arc theta_2 along the orbit, declination delta,
+% and right ascension alpha along the equator.
+
+  where $\theta_2 = \theta - 90^\circ$, and it is known that:
+  \[
+    \cos(\theta_2) = \cos(\delta)\cos(\alpha) \quad\text{(Cosine Law)}
+  \]
+  \hfill(1.0 points)
+  \[
+    \frac{\sin(\theta_2)}{\sin(\alpha)} = \frac{\cos(\delta)}{\cos(i)}
+    \quad\text{(Sine Law)}
+  \]
+  \hfill(1.0 points)
+
+  We substitute $\cos(\delta)$ from the first expression into the second
+  expression, obtaining:
+  \begin{align*}
+    \frac{\sin(\theta_2)}{\sin(\alpha)}
+      &= \frac{\cos(\theta_2)}{\cos(\alpha)\cdot\cos(i)} \\
+    \tan(\theta_2)\cdot\cos(i) &= \tan(\alpha)
+  \end{align*}
+  We then derive the above expression with respect to time --- it is possible
+  to skip the derivative step by just decomposing the satellite's angular
+  velocity vector.
+  \[
+    \frac{\cos(i)}{\cos^2(\theta_2)}\,\dot\theta
+      = \frac{\dot\alpha}{\cos^2(\alpha)}
+  \]
+  \hfill(2.0 points)
+
+  Using the Cosine Law expression to replace $\cos(\alpha)$, we finally have:
+  \[
+    \omega_{RA} = \dot\alpha = \frac{\cos(i)}{\cos^2(\delta)}\,\dot\theta
+  \]
+  \hfill(2.0 points)
+
+  We can then calculate the value of $\dot\theta$ as a function of the
+  distance of the satellite from the center of the Earth, using the
+  conservation of angular momentum:
+  \[
+    \dot\theta = \frac{2\pi}{T}\,\frac{a^2\sqrt{1 - e^2}}{r^2}
+  \]
+  \hfill(2.0 points)
+
+  We still have the polar expression for the distance $r$ as a function of the
+  polar radius, given by: % sic: "as a function of the polar radius"
+  \[
+    r = \frac{a(1 - e^2)}{1 + e\cdot\cos(\theta)}
+  \]
+  \hfill(2.0 points)
+
+  Substituting everything into the expression that gives the condition for the
+  start or end of retrograde motion, we find:
+  \begin{align*}
+    \frac{2\pi}{T}\,
+      \frac{(1 + e\cos\theta)^2}{(1 - e^2)^{\frac{3}{2}}}\,
+      \frac{\cos(i)}{\cos^2(\delta)}
+      &= \omega_{earth} = \frac{2\pi}{T} \\
+    \frac{(1 + e\cos\theta)^2}{(1 - e^2)^{\frac{3}{2}}}\,
+      \frac{\cos(i)}{\cos^2(\delta)} &= 1
+  \end{align*}
+  \hfill(2.0 points)
+
+  From the graph, we find the latitude --- or declination --- of the start or
+  end of retrograde motion, given by $\delta \approx -32^\circ$.
+  \hfill(2.0 points)
+
+  Thus, substituting all the variables into the above equation and solving for
+  $\theta$, we find: $\boxed{\theta = 54^\circ}$ and
+  $\boxed{\theta = 306^\circ}$ as solutions. \hfill(2.0 points)
+
+\item[(j)] For the figure-8 shape not to form, we need the inversion of motion
+  in the northern hemisphere to occur exactly at the apogee position.
+  Therefore, we will use exactly the same expression as the previous item, but
+  with $\theta = 180^\circ$ and eccentricity as the unknown variable.
+  \hfill(2.0 + 1.0 points)
+
+  For the value of $\delta$, as the satellite is at the position of maximum
+  declination, $\delta = i$. We have:
+  \[
+    \frac{(1 - e)^2}{(1 - e^2)^{\frac{3}{2}}}\,\frac{1}{\cos(i)} = 1
+  \]
+  \hfill(2.0 points)
+
+  Solving the above equation, we obtain: $\boxed{e \approx 0.4}$
+  \hfill(1.0 points)
+\end{description}

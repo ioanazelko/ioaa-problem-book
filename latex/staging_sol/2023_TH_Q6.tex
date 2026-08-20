@@ -1,0 +1,49 @@
+From the table of constants, the Solar luminosity
+$L_\odot = 3.826 \times 10^{26}$\,W and
+$1\,\mathrm{au} = 1.496 \times 10^{11}$\,m, therefore the distance to the
+bolometer is:
+\[ r = 2\,\mathrm{au} = 2.992 \times 10^{11}\,\mathrm{m} \]
+and the surface area $A$ of a sphere of that radius is:
+\[ A_{\mathrm{sphere}} = 4\pi r^2 = 1.125 \times 10^{24}\,\mathrm{m}^2 \]
+and the incident flux is:
+\[ F(r) = L_\odot/A_{\mathrm{sphere}} = 340.1\,\mathrm{W\,m^{-2}} \]
+\hfill(3 points)
+
+The incoming radiation can be assumed to be initially parallel to the axis of
+the cone. As the rays hit the surface they are reflected, after the first
+reflection the rays are travelling at $30^\circ$ to their original path
+($2 \times 15^\circ$). They next meet the surface at
+$30^\circ + 15^\circ = 45^\circ$ and are reflected by $90^\circ$, and so on
+with each reflection, such that after $N = 6$ reflections the ray will be
+sent back out of the aperture as shown in the figure below. These exiting
+rays are what we are interested in; all the energy entering the bolometer
+itself is removed by the 100\% efficient cooler.
+
+% FIGURE NEEDED: ray path inside the conical bolometer cavity -- a ray
+% entering parallel to the axis undergoes 6 numbered reflections (angles
+% 150 deg at entry, 90 deg and 15 deg marked near the apex) before exiting;
+% 2023_th_solutions.pdf page 11.
+
+\hfill(\emph{conceptually difficult:} 4 points)
+
+Thus the fraction of energy leaving the bolometer will be given by:
+\[ S = (1-a)^N = 0.01^6 = 10^{-12}. \]
+\hfill(2 points)
+
+Treating the opening as if it were a black body radiator, we can apply the
+Stefan-Boltzmann law:
+\begin{gather*}
+\Phi = \sigma T^4 \\
+\implies T = (\Phi/\sigma)^{0.25},
+\end{gather*}
+\hfill(1 point)\\
+and
+\[ \Phi = F(r) \cdot S = 340.1 \times 10^{-12}\,\mathrm{W\,m^{-2}} \]
+\hfill(2 points)
+
+From the table of constants:
+$\sigma = 5.670 \times 10^{-8}\,\mathrm{W\,m^{-2}\,K^{-4}}$, therefore the
+effective temperature is:
+\[ T = \left(\frac{340.1 \times 10^{-12}}{5.670 \times 10^{-8}}\right)^{0.25}
+     = 0.28\,\mathrm{K} \]
+\hfill(1 point)

@@ -1,0 +1,110 @@
+\begin{description}
+\item[(a)] The Sun's total power can be calculated from the
+  Stefan--Boltzmann law: \hfill(1 p)
+  \begin{equation*}
+  P = A\sigma T^4, \tag{7.1}
+  \end{equation*}
+  where $A$ is the emitting surface, $\sigma$ is the Stefan--Boltzmann
+  constant and $T$ is the (effective) temperature.
+
+  The total power emitted homogeneously and isotropically by the Sun
+  ($P_\odot$) distributes uniformly on the surface area of a sphere with
+  radius $d_\oplus = 1$\,au. Hence: \hfill(2 p)
+  \begin{equation*}
+  I_\odot = \frac{P_\odot}{4\pi d_\oplus^2}
+          = \frac{\sigma 4\pi R_\odot^2 T_\odot^4}{4\pi d_\oplus^2}
+          = \sigma\,\frac{R_\odot^2 T_\odot^4}{d_\oplus^2}, \tag{7.2}
+  \end{equation*}
+  where $R_\odot$ and $T_\odot$ denote the radius and effective temperature of
+  the Sun, respectively.
+
+  With the numerical values taken from the Table of constants:
+  $I_\odot = 1365.9$\,W\,m$^{-2}$. \hfill(1 p)
+\item[(b)] In the first days of January the Earth is in perihelion, while in
+  the beginning of July it is in aphelion. Therefore, instead of the mean
+  Earth--Sun distance (i.e.\ the semi-major axis of the Earth's orbit), now
+  one should substitute the perihelion and aphelion distances, respectively.
+  Therefore, one has to write that: \hfill(1 p)
+  \begin{gather*}
+  I_{\odot,\mathrm{perihelion}} = \frac{P_\odot}{4\pi(d_\oplus(1-e))^2}
+    = \sigma \frac{R_\odot^2 T_\odot^4}{(d_\oplus(1-e))^2}
+    = \frac{I_\odot}{(1-e)^2}, \tag{7.3}\\
+  I_{\odot,\mathrm{aphelion}} = \frac{P_\odot}{4\pi(d_\oplus(1+e))^2}
+    = \sigma \frac{R_\odot^2 T_\odot^4}{(d_\oplus(1+e))^2}
+    = \frac{I_\odot}{(1+e)^2}, \tag{7.4}
+  \end{gather*}
+  where $e = 0.016\,710\,22$ is the eccentricity of the Earth's orbit (see the
+  Table of constants).
+
+  With numerical values:
+
+  in early January: $I_{\odot,\mathrm{perihelion}} = 1412.7$\,W\,m$^{-2}$
+  \hfill(1 p)
+
+  in early July: $I_{\odot,\mathrm{aphelion}} = 1321.4$\,W\,m$^{-2}$
+  \hfill(1 p)
+
+  The ratio of the values:
+  $I_{\odot,\mathrm{perihelion}}/I_{\odot,\mathrm{aphelion}} = 1.0691$. The
+  perihelion irradiation is higher by about 7\%. \hfill(1 p)
+\item[(c)] In this case the total power of the Sun becomes \hfill(2 p)
+  \begin{equation*}
+  P'_\odot = \sigma\left[T_\odot^4(A_\odot - A_{\mathrm{sp}})
+    + T_{\mathrm{sp}}^4 A_{\mathrm{sp}}\right], \tag{7.5}
+  \end{equation*}
+  where $A_\odot$ stands for the solar surface, while $A_{\mathrm{sp}}$ is the
+  area of the spot (as a circle).
+
+  Thus, the solar constant takes the following form: \hfill(2 p)
+  \begin{align*}
+  I'_\odot &= \frac{P'_\odot}{4\pi d_\oplus^2}
+    = \frac{\sigma\pi\left[T_\odot^4(4R_\odot^2 - R_{\mathrm{sp}}^2)
+      + T_{\mathrm{sp}}^4 R_{\mathrm{sp}}^2\right]}{4\pi d_\oplus^2}
+    = \frac{\sigma}{4 d_\oplus^2}\left[T_\odot^4(4R_\odot^2 - R_{\mathrm{sp}}^2)
+      + T_{\mathrm{sp}}^4 R_{\mathrm{sp}}^2\right] = \tag{7.6}\\
+  &= I_\odot\left[1 - \left(\frac{R_{\mathrm{sp}}}{2R_\odot}\right)^2
+    + \left(\frac{R_{\mathrm{sp}}}{2R_\odot}\right)^2
+      \left(\frac{T_{\mathrm{sp}}}{T_\odot}\right)^4\right]
+   = I_\odot\left[1 - \left(\frac{R_{\mathrm{sp}}}{2R_\odot}\right)^2
+      \left(1 - \left(\frac{T_{\mathrm{sp}}}{T_\odot}\right)^4\right)\right] =\\
+  &= 0.9991\,I_\odot \tag*{(2 p)}
+  \end{align*}
+  With numerical value: $I'_\odot = 1364.6$\,W\,m$^{-2}$. \hfill(1 p)
+\item[(d)] As we have seen, the ratio is
+  \[
+  A = \frac{I'_\odot}{I_\odot}
+    = \frac{1364.64~\mathrm{W\,m^{-2}}}{1365.92~\mathrm{W\,m^{-2}}} = 0.9991,
+  \]
+  or, converting it into percentage, the solar constant in the case of the
+  spotted Sun will be lower by 0.09\%.
+
+  When this sunspot emerges in the surface of the Sun, solar emission no
+  longer will be isotropic, i.e.\ uniform in every directions. When the
+  sunspot is fully seen from the Earth, the ratio of the irradiation of the
+  Earth in the spotted and unspotted cases will be equal to the ratio of the
+  solar powers in the two cases, i.e.,
+  \begin{gather*}
+  P_{\odot,\mathrm{disk}} = \sigma T_\odot^4 A_\odot
+    = \sigma\pi T_\odot^4 R_\odot^2 \tag{7.7}\\
+  P'_{\odot,\mathrm{disk}} = \sigma\left[T_\odot^4(A_\odot - A_{\mathrm{sp}})
+    + T_{\mathrm{sp}}^4 A_{\mathrm{sp}}\right]
+    = \sigma\pi\left[T_\odot^4(R_\odot^2 - R_{\mathrm{sp}}^2)
+    + T_{\mathrm{sp}}^4 R_{\mathrm{sp}}^2\right] \tag{7.8}
+  \end{gather*}
+  \hfill(1 p each)
+
+  and therefore, the ratio of the irradiations (or the effective solar
+  constants) can be written as: \hfill(2 p)
+  \begin{equation*}
+  A' = \frac{P'_{\odot,\mathrm{disk}}}{P_{\odot,\mathrm{disk}}}
+     = \frac{T_\odot^4(R_\odot^2 - R_{\mathrm{sp}}^2)
+       + T_{\mathrm{sp}}^4 R_{\mathrm{sp}}^2}{T_\odot^4 R_\odot^2}
+     = 1 - \left(\frac{R_{\mathrm{sp}}}{R_\odot}\right)^2
+       \left[1 - \left(\frac{T_{\mathrm{sp}}}{T_\odot}\right)^4\right] \tag{7.9}
+  \end{equation*}
+  With numerical values: $A' = 0.9963$. \hfill(1 p)
+
+  Thus, when the spot directed towards the Earth the total irradiation of the
+  Earth becomes weaker by 0.37\%.
+  % sic: "when the spot directed towards" as in the original
+\end{description}

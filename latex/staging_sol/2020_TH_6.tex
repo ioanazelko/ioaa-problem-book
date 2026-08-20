@@ -1,0 +1,80 @@
+\begin{description}
+\item[(a)] The solution for first part is obvious from the figure below.
+% FIGURE NEEDED: right triangle with the satellite, the Earth's centre and
+% the grazing line of sight to the source; legs r (satellite--Earth centre)
+% and R+h, angle theta_0 at the satellite. 2020 (GeCAA) theory solutions,
+% page 14.
+\begin{align*}
+\sin\theta_0 &= \left(\frac{R + h}{r}\right) \\
+\therefore \theta_0 &= \sin^{-1}\left(\frac{R + h}{r}\right)
+\end{align*}
+
+\item[(b)] Let us say the satelite % sic
+has to move in the orbit by $\Delta\theta/2$ for $0.5\Delta h/2$ change in
+height.
+\begin{align*}
+\sin\left(\theta_0 \pm \frac{\Delta\theta}{2}\right)
+  &= \left(\frac{R + h \pm 0.5\Delta h}{r}\right) \\
+\sin\left(\theta_0 + \frac{\Delta\theta}{2}\right)
+  - \sin\left(\theta_0 - \frac{\Delta\theta}{2}\right)
+  &= \left(\frac{\Delta h}{r}\right) \\
+\therefore 2\cos\theta_0 \sin\left(\frac{\Delta\theta}{2}\right)
+  &= \left(\frac{\Delta h}{r}\right) \\
+2 \times \frac{\Delta\theta}{2}\cos\theta_0
+  &= \left(\frac{\Delta h}{r}\right) \\
+\Delta\theta &= \left(\frac{\Delta h}{r\cos\theta_0}\right)
+  = \frac{2\pi\Delta t}{P} \\
+\therefore \Delta t &= \left(\frac{P\Delta h}{2\pi r\cos\theta_0}\right)
+\end{align*}
+
+\item[(c)] Let $\theta$ be the new angle for 50\% attenuation. In the diagram
+below, The line of sight from the satelite % sic
+($S$) to the source is at minimum distance from the centre of the earth ($C$)
+at point $A$. The points $S$, $C$ and $B$ are in the equatorial plane with
+line $BA$ normal to the equatorial plane. One also realises that the line
+$BS$ is normal to the plane defined by $A$, $B$ and $C$.
+% FIGURE NEEDED: 3-D construction with satellite S, Earth centre C, foot
+% point B in the equatorial plane, A on the line of sight above B; sides
+% a = SB, b = BA, c = BC, hypotenuses r = SC and R+h = CA, angles theta and
+% beta at S. 2020 (GeCAA) theory solutions, page 15.
+\begin{align*}
+a &= r\cos\theta \\
+c &= r\sin\theta \\
+b &= a\tan\beta \\
+(R + h)^2 &= b^2 + c^2 \\
+  &= (r\cos\theta\tan\beta)^2 + (r\sin\theta)^2 \\
+\therefore \frac{(R + h)^2}{r^2}
+  &= \cos^2\theta\tan^2\beta + \sin^2\theta \\
+  &= (1 - \sin^2\theta)\tan^2\beta + \sin^2\theta \\
+  &= \tan^2\beta + \sin^2\theta(1 - \tan^2\beta) \\
+\therefore \sin^2\theta
+  &= \left(\frac{(R + h)^2}{r^2} - \tan^2\beta\right)
+     \left(\frac{1}{(1 - \tan^2\beta)}\right)
+\end{align*}
+Let us say $\tan^2\beta = k$
+\[
+\therefore \sin\theta
+  = \sqrt{\left(\frac{(R + h)^2}{r^2} - k\right)
+    \left(\frac{1}{(1 - k)}\right)}
+\]
+Using similar analysis as the previous part,
+\begin{align*}
+\Delta\theta\cos\theta
+  &= \sqrt{\frac{1}{(1 - k)}}
+     \left[\sqrt{\left(\frac{(R + h + \frac{\Delta h}{2})^2}{r^2} - k\right)}
+     - \sqrt{\left(\frac{(R + h - \frac{\Delta h}{2})^2}{r^2} - k\right)}
+     \right] \\
+  &= \sqrt{\frac{1}{(1 - k)}}
+     \left(\frac{\Delta h (R + h)}{r^2}\right)
+     \left(\frac{(R + h)^2}{r^2} - k\right)^{-0.5} \\
+  &= \sqrt{\frac{1}{(1 - k)}
+     \left(\frac{(R + h)^2}{r^2} - k\right)}
+     \left(\frac{\Delta h}{r} \times \frac{(R + h)}{r}\right)
+     \left(\left(\frac{(R + h)}{r}\right)^{2} - k\right)^{-1} \\
+  &= \sin\theta\left(\frac{\Delta h\sin\theta_0}{r}\right)
+     \left(\sin^2\theta_0 - \tan^2\beta\right)^{-1} \\
+\therefore \Delta t
+  &= \left(\frac{P\Delta h\tan\theta}{2\pi r}\right)
+     \left(\frac{\sin\theta_0}{\sin^2\theta_0 - \tan^2\beta}\right)
+\end{align*}
+\end{description}

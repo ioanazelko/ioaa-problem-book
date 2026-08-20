@@ -1,0 +1,68 @@
+\begin{description}
+\item[(a)] In this scenario, the asteroid would fall directly towards the
+  star. However, in order to simplify the calculations, it is possible to
+  consider that the asteroid would be in a degenerate elliptical orbit. In
+  that case, the semi-minor axis would be infinitesimally small and the
+  asteroid would still practically be moving on a straight line. It is also
+  important to notice that the focii would virtually be at the periapsis and % sic: "focii", "apapsis"
+  apapsis points. The degenerate elliptical orbit is shown in the following
+  figure: \hfill(2.0 points)
+
+% FIGURE NEEDED: degenerate ellipse diagram (2024 theory solutions, page 5 of
+% 40): flattened ellipse with the Star at the left focus, the Asteroid at the
+% bottom, semi-major axes labelled a, the flattening "b -> 0" marked, and the
+% swept regions coloured Area I (green), Area II (red), Area III (blue).
+
+  The semi-major axis of this elliptical orbit can be obtained through the
+  following expression, where $m$ is the mass of the asteroid:
+  \begin{align*}
+    E = \frac{mv^2}{2} - \frac{GMm}{d} &= -\frac{GMm}{2a} \\
+    \frac{GMm}{2d} - \frac{GMm}{d} &= -\frac{GMm}{2a} \\
+    \frac{1}{2d} &= \frac{1}{2a} \\
+    \therefore\ d &= a
+  \end{align*}
+  \hfill(2.0 points)
+
+  Now, it is possible to use Kepler's third law to find an expression for the
+  period of the orbit:
+  \[
+    \frac{T^2}{d^3} = \frac{4\pi^2}{GM}
+      \longrightarrow T = 2\pi d\sqrt{\frac{d}{GM}}
+  \]
+  \hfill(1.0 points)
+
+  If the asteroid is initially moving towards the star, it sweeps area I to
+  reach the star. Using Kepler's second law, it is possible to calculate how
+  long it takes for that to happen:
+  \[
+    \frac{\Delta t}{T} = \frac{A_I}{A_{Total}}
+      = \frac{\frac{\pi ab}{4} - \frac{ab}{2}}{\pi ab}
+  \]
+  \hfill(2.0 points)
+  \[
+    \Delta t = \left(\frac{1}{4} - \frac{1}{2\pi}\right)T
+  \]
+  \[
+    \boxed{\Delta t = \left(\frac{\pi}{2} - 1\right)d\sqrt{\frac{d}{GM}}}
+  \]
+  \hfill(1.0 points)
+
+  Note that the radius of the star is negligible in these calculations since
+  it is significantly smaller than $d$.
+
+\item[(b)] If the asteroid is initially moving away from the star, it sweeps
+  areas II and III before reaching the star. It is possible to again use
+  Kepler's second law to find the time interval:
+  \[
+    \frac{\Delta t}{T} = \frac{A_{II} + A_{III}}{A_{Total}}
+      = \frac{\frac{ab}{2} + \frac{\pi ab}{4} + \frac{\pi ab}{2}}{\pi ab}
+  \]
+  \hfill(1.5 points)
+  \[
+    \Delta t = \left(\frac{3}{4} + \frac{1}{2\pi}\right)T
+  \]
+  \[
+    \boxed{\Delta t = \left(\frac{3\pi}{2} + 1\right)d\sqrt{\frac{d}{GM}}}
+  \]
+  \hfill(0.5 points)
+\end{description}

@@ -1,0 +1,37 @@
+The molecules rotate with angular velocity $\omega$ and for spherical
+molecules, their moment of inertia is
+\begin{align*}
+  I_H &= I_{cm} + m_H r_H^2\\
+      &= \frac{2}{5}m_H^2 + m_H r_H^2 = \frac{7}{5}m_H r_H^2
+      % sic: the first term is printed as (2/5)m_H^2; it should read
+      % (2/5)m_H r_H^2
+\end{align*}
+\hfill(30 points)
+
+For $H_2$ molecule, yield
+\[
+  I_{H_2} = 2I_H = \frac{14}{5}m_H r_H^2\,,
+\]
+Thus
+\[
+  I = 6.401\times10^{-48}\ \mathrm{Kg\,m^2}
+\]
+
+In thermal equilibrium (only 2 rotational degrees of freedom), we have:
+\[
+  \frac{1}{2}I\omega^2 = kT
+\]
+\hfill(30 points)
+
+So we can estimate:
+\[
+  \omega = \sqrt{2kT/I}
+  = (2 \times 1.38\times10^{-16} \times 115/6{,}40\times10^{-48})^{1/2}
+  = 2.23\times10^{13}\,s^{-1}
+  % sic: the source prints 1.38e-16 (CGS k) although the numerical result
+  % follows from the SI value 1.38e-23; "6,40" (decimal comma) as printed.
+\]
+\[
+  \nu = \frac{\omega}{2\pi} = 3.55\times10^{13}\,\mathrm{Hz}
+\]
+\hfill(40 points)

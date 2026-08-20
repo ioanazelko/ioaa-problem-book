@@ -1,0 +1,76 @@
+2007	OBS-SKY	1	Pointer: equator, equinox, Pegasus, Aries, Aldebaran offset	10	1	celestial-object pointer tasks	-
+2007	OBS-SKY	2	Binoculars: Hyades limiting magnitude, M31 shape	10	5	binocular observation, limiting magnitude	-
+2008	OBS-TEL	1	CCD imaging and identification of a cluster field	-	5	telescope + CCD photography, object ID	-
+2009	OBS-SKY	1	Missing bright stars in Perseus and Andromeda	40	1	naked-eye star identification on chart	-
+2009	OBS-SKY	2	Naked-eye magnitude estimates near Cepheus	40	6	naked-eye magnitude comparison	-
+2009	OBS-TEL	3	Telescope pointing and field identification	40	5	telescope pointing, field ID	-
+2011	OBS-TEL	1	The Little Dolphin	25	1	asterism location from coordinates	-
+2011	OBS-TEL	2	Determining declination	25	1	drift timing gives declination	-
+2011	OBS-PLAN	1	Earth	25	1	nova/Moon/comet marking, horizon check	-
+2011	OBS-PLAN	2	Mars	25	1	areographic latitude, culmination altitudes	-
+2012	OBS-TEL	1	Field of view of the telescope (NGC 6231)	-	5	estimating eyepiece field of view	-
+2012	OBS-TEL	2	Magnitude of a missing star in NGC 6231	-	6	visual magnitude estimation	-
+2012	OBS-TEL	3	Colours of the binary epsilon Trianguli Australis	-	8	visual colour estimation of a binary	-
+2012	OBS-TEL	4	Identify open/globular clusters and nebulae	-	11	visual object classification	-
+2012	OBS-SKY	5	Laser pointing: Antares, Vega, Altair, Peacock	-	1	naked-eye star and constellation pointing	-
+2014	OBS-TEL	1	Night observation round	-	5	telescope observation tasks	-
+2014	OBS-PLAN	1	Planetarium part I	-	1	planetarium sky identification	-
+2014	OBS-SKY	2	Star chart part II	-	1	star chart marking	-
+2015	OBS-PLAN	1	Three missing bright stars in the Magelang sky	60	1	planetarium missing-star identification	-
+2015	OBS-PLAN	2	Position of a bright supernova	50	1	planetarium position marking	-
+2015	OBS-PLAN	3	Rise and set times of a pointed star	40	1	rise/set time estimation	-
+2015	OBS-SKY	1	Nova Sagittarii field sketch	-	1	naked-eye chart drawing	-
+2015	OBS-TEL	1	Main telescope: point to M7 and observe	-	5	telescope pointing and observation	-
+2016	OBS-PLAN	OP1	Eight historical supernovae	-	1	identify supernova positions in projected sky	7
+2016	OBS-PLAN	OP2	Sky of another planet	-	1	non-terrestrial sky, celestial sphere	3
+2016	OBS-SKY	OM1	Mark five stars on the map	-	1	star chart marking	-
+2016	OBS-SKY	OM2	Sky map identification	-	1	star chart identification	-
+2016	OBS-SKY	OM3	Sky map identification	-	1	star chart identification	-
+2016	OBS-SKY	OM4	Sky map identification	-	1	star chart identification	-
+2016	OBS-SKY	OM5	Sky map identification	-	1	star chart identification	-
+2016	OBS-TEL	OT1	Telescope already set: identify the field	-	5	telescope field identification	-
+2016	OBS-TEL	OT2	Telescope observation task	-	5	telescope observation	-
+2016	OBS-TEL	OT3	Telescope observation task	-	5	telescope observation	-
+2017	OBS-SKY	1	Day observation stations (7 problems)	-	1	daytime observation stations	-
+2017	OBS-TEL	1	Night observation with the real sky	-	5	telescope observation tasks	-
+2018	OBS-SKY	O1	Day observation problem 1	40	1	daytime observation	-
+2018	OBS-SKY	O2	Day observation problem 2	20	1	daytime observation	-
+2018	OBS-SKY	O3	Day observation problem 3	20	1	daytime observation	-
+2018	OBS-SKY	O4	Day observation problem 4	20	1	daytime observation	-
+2018	OBS-TEL	O5	Eyepiece field of view	10	5	field of view measurement	-
+2018	OBS-TEL	O6	Text observed through the telescope	40	5	telescope resolution/reading	-
+2019	OBS-PLAN	1	Sky above Keszthely at midnight	-	1	planetarium sky identification	-
+2019	OBS-PLAN	2	Planetarium projected image 2	-	1	planetarium sky identification	-
+2019	OBS-PLAN	3	Planetarium projected image 3	-	1	planetarium sky identification	-
+2019	OBS-TEL	1	Telescope task 1	-	5	telescope observation	-
+2019	OBS-TEL	2	Telescope task 2	-	5	telescope observation	-
+2019	OBS-TEL	3	Telescope task 3	-	5	telescope observation	-
+2019	OBS-TEL	4	Telescope task 4	-	5	telescope observation	-
+2019	OBS-TEL	5	Telescope task 5	-	5	telescope observation	-
+2021	OBS-PLAN	1	Simulated Sky	75	1	simulated sky, 17 questions	-
+2021	OBS-SKY	1	Solar Physics: the solar slap	75	4	CME evolution from solar images	-
+2022	OBS-TEL	O1	Night observation O1	15	5	telescope observation	-
+2022	OBS-TEL	O2	Night observation O2	15	5	telescope observation	-
+2022	OBS-TEL	O3	Night observation O3	6	5	telescope observation	-
+2022	OBS-TEL	O4	Night observation O4	14	5	telescope observation	-
+2022	OBS-SKY	O5	Daytime observation O5	-	1	constellation identification	-
+2022	OBS-SKY	O6	Daytime observation O6	-	1	daytime observation	-
+2022	OBS-SKY	O7	Daytime observation O7	-	1	daytime observation	-
+2022	OBS-SKY	O8	Daytime observation O8	-	1	daytime observation	-
+2022	OBS-SKY	O9	Daytime observation O9	-	1	daytime observation	-
+2023	OBS-PLAN	1	Planetarium round	-	1	planetarium sky identification	-
+2023	OBS-TEL	1	Observation round: the alien saucer screens	-	5	telescope observation tasks	-
+2024	OBS-SKY	1	Circumference around Corvi on the star chart	18	1	star chart angular distances	-
+2024	OBS-SKY	2	Star chart question 2	-	1	star chart work	-
+2024	OBS-SKY	3	Star chart question 3	-	1	star chart work	-
+2024	OBS-PLAN	1	Planetarium problem 1	-	1	planetarium identification	-
+2024	OBS-PLAN	2	Planetarium problem 2	-	1	planetarium identification	-
+2025	OBS-PLAN	OP01	Hypothesized Planet in the Solar System	25	3	orbit inclinations from planetarium traces	1
+2025	OBS-PLAN	OP02	Observer on a Ringed Planet	25	3	sky as seen from a ringed planet	1
+2025	OBS-SKY	OM01	Know your Sky	16	1	sky map object marking	-
+2025	OBS-SKY	OM02	Sky map question 2	-	1	sky map work	-
+2025	OBS-SKY	OM03	Sky map question 3	-	1	sky map work	-
+2025	OBS-TEL	OT01	Discovery of 'Z'	25	5	sky map + telescope object discovery	-
+2025	OBS-TEL	OT02	Telescope observation OT02	-	5	telescope observation	-
+2023	OBS-PLAN	2	Retrograde Mars	20	3	Mars retrograde loop, heliocentric geometry	-
+2023	OBS-PLAN	3	TRAPPIST-1	35	9	planetarium exoplanet transits, resonances	-

@@ -1,0 +1,173 @@
+\noindent\textbf{Part 1.} \hfill(20 points)
+
+\begin{itemize}
+\item With the parallax we get the distance:
+$D = \frac{1}{parallax} = 48.38$~pc, \hfill(1 point)\\
+then we get the absolute magnitude using the distance modulus
+$M_V = m_v - 5\log_{10}(D) + 5 = 4.2067$, \hfill(1 point)\\
+and finally we go for the luminosity as BC is assumed to be the same for all
+F/G stars, $(M_V - M_{V_\odot}) = (M_{bol} - M_{bol_\odot})$ \hfill(2 points)\\
+by comparing with the magnitude of the Sun:
+$\frac{L}{L_\odot} = 10^{-0.4(M_V - M_{V_\odot})} = 1.759$. \hfill(1 point)
+\item We find the stellar radius from the Stephan--Boltzmann
+% sic: source spelling "Stephan-Boltzmann"
+law, which in solar units leads to
+$\frac{T_{eff\,*}^4}{T_{eff\,\odot}^4}
+ = \frac{R_\odot^2}{R_*^2}\frac{L_*}{L_\odot}$ \hfill(2 points)\\
+i.e.,
+$R_*[R_\odot] = \frac{T_{eff\,\odot}^2\sqrt{L_*\,[L_\odot]}}{T_{eff\,*}^2}
+ = 1.238$. \hfill(2 points)
+\item Now to find the stellar mass consider the surface gravitational
+acceleration, which for Gauss' law and spherical symmetry considerations is:
+$g = G\frac{M_*}{R_*^2}$, \hfill(1 point)\\
+then one solves $M_*$ for and puts it in the right units,
+$M_* = 1.944\ [M_\odot]$ \hfill(3 points)
+\item Planet's orbital radius comes from
+$a = \sqrt[3]{\frac{GMT^2}{4\pi^2}} = 0.0565$~A.U. \hfill(3 points)
+\item Finally, checking the dimming due to the transit this is of
+approximately 2.6\%, which is give
+% sic: source wording "which is give by"
+by the ratio between the areas of the planet disk and the stellar disk, i.e.,
+$\left(\frac{R_p}{R_*}\right)^2 = 0.026$, \hfill(2 points)\\
+leading to $R_p = 1.988\ [R_J]$ \hfill(2 points)
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+Luminosity of & Radius of & Mass of & Mean planet's & Radius of the planet\\
+the star & the star & the star & orbital radius & in Jupiter's radius\\
+$L_*[L_\odot]$ & $R_*[R_\odot]$ & $M_*[M_\odot]$ & $a$[au] & $R_p[R_J]$\\
+\midrule
+1.759 & 1.24 & 1.94 & 0.0565 & 1.988\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Tolerance: of 5\% on the final answers is acceptable, numbers approximated to
+the second digit in the partial calculations are OK.
+
+% FIGURE NEEDED: fitted transit lightcurve -- normalized flux vs time with
+% the trapezoidal model curve and red dashed tolerance envelope
+% (2021_DA2_solution.pdf, page 1).
+
+\medskip
+\noindent\textbf{Part 2.} \hfill(25 points)
+
+\noindent\textbf{(2.1)} \hfill(15 points)\\
+One first needs to calibrate the axes. The shown circle representing the Earth
+gives as a vertical mark in 5778~$^\circ$K,
+% sic: source writes "5778 °K"
+and a horizontal one at $S_{eff} = 1$. Then one need to retrieve additional
+data from one or more of the additional observations:
+
+\begin{itemize}
+\item Having the temperature mark for the Sun, one can estimate $S_{min}$,
+adding a second mark on the horizontal axis, so the scale of this one can be
+calibrated. Then one can proceed backwards, starting from a given value of
+$S_{min}$ or $S_{max}$, find the corresponding temperature, so the vertical
+axis can be calibrated as well.
+\item Alternatively, one can notice that the limiting $S_{max}$ curve crosses
+the X axis in $S_{eff} = 1$, and look numerically for the corresponding
+temperature of the bottom line, thus calibrating the vertical axis. Then
+starting from a given temperature, one calibrates de
+% sic: source wording
+horizontal one pivoting on $S_{min}$ / $S_{max}$ calculations as explained
+before.
+
+There are several ways, some more precise than others. The student should be
+as careful as possible (we give small tolerance to the error in the
+calibrations of the axes). A tricky part is that the X-axis increases towards
+the left, but this is something rigorous students will discover, as there is
+no self-consistency otherwise. Intuition may also help if one knows that
+Earth is closer to the high-flux end of the Sun's habitable zone.
+\item The luminosity of Gorgona's host star was found in Part A. After
+finding the luminosity of Amacayacu's one the final plot looks like this:
+\end{itemize}
+
+For placing Gorgona in the right position \hfill(2 pt)
+
+% FIGURE NEEDED: habitable-zone diagram, T_eff (5400-6100 K) vs S_eff
+% (X axis reversed, 2.0 -> 0.0) with the shaded HZ band between the dashed
+% S_min and S_max curves and the calculated positions of Gorgona (square)
+% and Amacayacu (star) marked (2021_DA2_solution.pdf, page 2).
+
+For calculating flux and placing Amacayacu in the right position \hfill(4 pt)
+
+Tolerance for the position of the planets: $\pm0.025$ in $S_{eff}$; $\pm25$
+[K] in $T_{eff}$.
+
+\medskip
+\noindent\textbf{(2.2)} \hfill(10 points)\\
+NONE of the exoplanets lie in habitable zones. They orbit their stars too
+close, so the effective flux is many times larger than $S_{max}$. The
+long-but-straightforward answer is to perform all the calculations. The
+elegant, clever one, is to note that Amacayacu orbits the faintest/coolest
+star, and it is the one farthest away, so its effective flux is the absolute
+minimum of the whole set. This effective flux was calculated as ${\sim}0.3$
+in A), assuming a distance of 1~A.U. With the real distance, 0.08~A.U, it
+grows by a factor $\frac{1}{0.08^2}\sim156$, i.e., it has
+$S_{eff}\sim46$, but the habitable zone for this range of temperatures can
+not exceed $S_{eff}\sim1.1$, which completely closes the case.
+
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Name & $S_{eff}$\\
+\midrule
+Tayrona & 1785.994090\\
+Iguaque & 1499.270574\\
+Gorgona & 1096.175314\\
+Amacayacu & 50.794890\\
+Malpelo & 1374.231792\\
+Pisba & 5568.747040\\
+Tatama & 678.730709\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip
+\noindent\textbf{Part 3.}
+
+\noindent\textbf{(3.1)} (3 points per each row; 1 point extra for the only
+number in the last row)
+
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+Low-mass sample & Sample size & $\mu$ & $\sigma$ & $\mu+\sigma$
+  & No.\ of planets to exclude\\
+\midrule
+Full / Original & 38 & 1.99 & 2.55 & 4.54 & 4\\
+1st subsample & 34 & 1.23 & 1.11 & 2.34 & 5\\
+2nd subsample & 29 & 0.84 & 0.61 & 1.45 & 5\\
+Final subsample & 24 & -- & -- & -- & --\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent\textbf{(3.2)}
+% FIGURE NEEDED: sorted planet masses -- Mass vs no. of planet in the list,
+% blue dots increasing from 0 to ~12, with three horizontal red lines at the
+% successive mu+sigma cuts (2021_DA2_solution.pdf, page 4).
+
+\noindent\textbf{(3.3)} (Tolerance 5\%)
+
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+$T_{eff}$ & Min. & 1st Quartile & Median & 3rd Quartile & Max\\
+\midrule
+LME & 5209 & 5574.5 & 5932.5 & 6181.75 & 6460\\
+HME & 5548 & 5992.5 & 6177.0 & 6255.0 & 6490\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent\textbf{(3.4)}
+% FIGURE NEEDED: horizontal boxplots of T_eff for the HME (pink, with one
+% outlier circle near 5550 K) and LME (green) samples, temperature axis
+% 5200-6400 K (2021_DA2_solution.pdf, page 4).
+
+Yes, the boxplots indicate that HMEs tend to get formed around hotter stars.
+\hfill(1 point)

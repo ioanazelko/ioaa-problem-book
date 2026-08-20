@@ -1,0 +1,36 @@
+The definition of the magnitude is:
+\[
+m_I = -2.5\lg F_I + const
+\]
+where $F_I$ is the flux received from the source. Using the data above, we can
+obtain the constant:
+\begin{align*}
+0.0 &= -2.5\lg(0.83 \times 10^{-11}) + const\\
+const &= -27.7
+\end{align*}
+Thus,
+\begin{align*}
+m_I &= -2.5\lg F_I - 27.7\\
+F_I &= 10^{\frac{m_I + 27.7}{-2.5}}
+  = 1.3 \times 10^{-20}\,\mathrm{W\,m^{-2}\,nm^{-1}}
+\end{align*}
+\hfill(4)
+
+For our star, at an effective wavelength $\lambda_0 = 800$\,nm, using this
+flux, the number of photons detected per unit wavelength per unit area is the
+flux divided by the energy of a photon with the effective wavelength:
+\[
+N_I = \frac{1.3 \times 10^{-20}}{hc/\lambda_0}
+ = 5.3 \times 10^{-2}\ \mathrm{photons\,s^{-1}\,m^{-2}\,nm^{-1}}
+\]
+\hfill(3)
+
+Thus the total number of photons detected from the star per second by the 8\,m
+Gemini telescope over the $I$ band is
+\begin{align*}
+N_I(total) &= (\text{tel.\ collecting area}) \times QE
+  \times Bandwidth \times N_I\\
+&= (\pi \times 4^2) \times 0.4 \times 24 \times N_I\\
+&= 26\ \mathrm{photons/s} \approx 30\ \mathrm{photons/s}
+\end{align*}
+\hfill(3)

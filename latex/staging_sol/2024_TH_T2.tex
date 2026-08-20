@@ -1,0 +1,84 @@
+If $U$ and $K$ are the total gravitational potential energy and the total
+kinetic energy of the cluster, respectively, the virial theorem says that:
+\begin{equation*}
+U + 2K = 0
+\tag*{(2.0)}
+\end{equation*}
+Let's say that there are $N$ galaxies of masses $m_i$, where $i = 1,\dots,N$,
+moving with velocities $\vec{u}_i = \vec{v}_i - \vec{v}_0$ with respect to the
+cluster, where $\vec{v}_0$ is the velocity of the cluster as a whole.
+Therefore, in the cluster frame, $K$ is given by
+\[
+K = \sum_{i=1}^{N} \frac{1}{2} m_i u_i^2
+\]
+As an estimation, consider that all galaxies have mass equal to the average
+mass $\langle m \rangle = M_T/N$:
+\begin{equation*}
+K = \frac{1}{2}\,\frac{M_T}{N} \sum_{i=1}^{N} u_i^2
+= \frac{1}{2} M_T\,\frac{\sum u_i^2}{N}
+= \frac{1}{2} M_T \sigma_v^2
+\tag*{(2.0)}
+\end{equation*}
+where $\sigma_v = \sqrt{\langle u_i^2 \rangle}$ is the root-mean-square galaxy
+speed, also known as velocity dispersion. Notice, however, that only the
+dispersion in redshift is given, which translates into a radial velocity
+dispersion:
+\begin{equation*}
+\sigma_{v_r} = c \cdot \sigma_z
+= 2.998 \times 10^{8}~\mathrm{m/s} \times 0.0005
+= 1.499 \times 10^{5}~\mathrm{m/s}
+\tag*{(1.0)}
+\end{equation*}
+For completeness of the solution, we relate $\sigma_v$ and $\sigma_{v_r}$ by
+assuming three-dimensional isotropy for velocities, which yields
+$\sigma_v^2 = 3\sigma_{v_r}^2$. $K$ is then given by:
+\[
+K = \frac{3}{2} M_T \sigma_{v_r}^2
+\]
+The gravitational potential energy, on the other hand, is given by:
+\[
+U = -\sum_{i \neq j} \frac{G m_i m_j}{r_{ij}}
+\]
+This can be estimated in different ways. Usually, the spatial distribution of
+the large number of galaxies may be approximated as uniform, so that one
+estimates $U$ as the binding energy of a homogeneous spherical mass
+distribution, which is given by:
+\begin{equation*}
+U = -\frac{3}{5}\,\frac{G M_T^2}{R}
+\tag*{(2.0)}
+\end{equation*}
+And, assuming the cluster is spherical, its radius is:
+\begin{equation*}
+R = \frac{D_A \cdot \Delta\theta}{2}
+= \frac{1500 \times 10^{6} \times 206265 \times 1.496 \times 10^{11}
+        \times 10^{-2}}{2}
+= 2.3143 \times 10^{23}~\mathrm{m}
+\tag*{(1.0)}
+\end{equation*}
+Now, using the virial theorem, it is possible to calculate the total mass:
+\begin{align*}
+&\therefore\;
+-\frac{3}{5} G M_T^2\,\frac{1}{R} + 2 \cdot \frac{3}{2} M_T \sigma_{v_r}^2 = 0
+\;\Rightarrow\;
+M_T = \frac{5 R \sigma_{v_r}^2}{G} \\
+&M_T = \frac{5 \times 2.314 \times 10^{23}
+             \times (1.499 \times 10^{5})^2}{6.67 \times 10^{-11}}~\mathrm{kg}
+\\
+&M_T \approx 3.9 \times 10^{44}~\mathrm{kg} = 2.0 \times 10^{14}\,M_\odot
+\tag*{(2.0)}
+\end{align*}
+
+\medskip
+\noindent\emph{Appendix on calculation of $U$:} Other valid methods for
+estimating $U$ include explicitly writing the sum as:
+\begin{align*}
+U &= -\frac{1}{2} G \left(\sum_i m_i\right)^{2}
+     \left\langle \frac{1}{r_{ij}} \right\rangle \\
+U &= -\frac{1}{2}\,\frac{G M_T^2}{R}
+\end{align*}
+where the factor of $1/2$ comes from counting all the unique pairs, and
+$\langle r_{ij}^{-1} \rangle$ was taken (as an approximation) as $R^{-1}$.
+Or, alternatively, using dimensional analysis to argue that:
+\[
+U = -\frac{G M_T^2}{R}.
+\]

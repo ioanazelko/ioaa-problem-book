@@ -1,0 +1,503 @@
+% Official solution, 2019 DA solutions pp. 8-15; the source's equation
+% numbers (2.1)-(2.55) are kept. Photometric phases are written varphi_{1,2}
+% and position angles phi_{1,2}, as in the source.
+
+\begin{description}
+\item[i)] \hfill
+  \begin{description}
+  \item[a)] See the following table. \hfill(10 p)
+
+    \begin{center}
+    \begin{tabular}{cccccc}
+      \hline
+      event no. & contacts & components & BJD & $\varphi_1$ & $\varphi_2$ \\
+      \hline
+      1 & I   & A, B & 2455476.1096 & 0.1226 & 0.9747 \\
+        & II  & A, C & 2455476.4245 & 0.4703 & 0.9816 \\
+        & III & A, B & 2455477.9677 & 0.1743 & 0.0155 \\
+        & IV  & A, B & 2455478.4722 & 0.7313 & 0.0266 \\
+      2 & I   & A, B & 2455521.5217 & 0.2643 & 0.9734 \\
+      3 & III & A, C & 2455568.9434 & 0.6248 & 0.0163 \\
+      4 & I   & A, C & 2455612.4733 & 0.6882 & 0.9736 \\
+        & III & A, C & 2455614.3571 & 0.7682 & 0.0150 \\
+      5 & III & A, B & 2455659.9241 & 0.0808 & 0.0171 \\
+        & IV  & A, C & 2455660.2422 & 0.4320 & 0.0241 \\
+      \hline
+    \end{tabular}
+    \end{center}
+
+  \item[b)] See the following table. \hfill(5 p)
+
+    \begin{center}
+    \begin{tabular}{cc}
+      \hline
+      event no. & closer component \\
+      \hline
+      1 & A \\
+      2 & A \\
+      3 & A \\
+      4 & A \\
+      5 & A \\
+      \hline
+    \end{tabular}
+    \end{center}
+
+    All these events occur close to $\varphi_2 = 0$ (or $\varphi_2 = 1$)
+    which means by definition that star A eclipses stars B and C. Therefore,
+    star A is closer to the observer.
+
+  \item[c)] In the moments of the 1st and last (4th) contacts:
+    \[ R_A + R_{B,C} = d_{\mathrm{A-B,C}},
+       \tag*{(2.1)} \]
+    \hfill(1 p)\\
+    while in the case of the 2nd and 3rd (inner) contacts:
+    \[ R_A - R_{B,C} = d_{\mathrm{A-B,C}},
+       \tag*{(2.2)} \]
+    \hfill(1 p)\\
+    where $d_{\mathrm{A-B,C}}$ stands for the sky-projected distance of the
+    disks of the occulting star A and occulted component B or C.
+
+    Let $\vec{r}_1$ the radius vector directed from star B toward star C,
+    and $\vec{r}_2$ another radius vector directed from the centre of mass
+    of stars B and C toward star A. By the use of these two (Jacobian)
+    vectors, the position vectors connecting stars B and C with star A, can
+    be written as:
+    \[ \vec{r}_{\mathrm{BA}} = \vec{r}_A - \vec{r}_B
+       = \vec{r}_2 + \frac{m_C}{m_{BC}}\,\vec{r}_1,
+       \tag*{(2.3)} \]
+    \hfill(1 p)
+    \[ \vec{r}_{\mathrm{CA}} = \vec{r}_A - \vec{r}_C
+       = \vec{r}_2 - \frac{m_B}{m_{BC}}\,\vec{r}_1.
+       \tag*{(2.4)} \]
+    \hfill(1 p)
+
+    Using the facts that ($i_{\mathrm{rel}} = 0^\circ$) and, furthermore,
+    $i_1 = i_2 = 90^\circ$, it is worthy to introduce the orbital plane as
+    reference frame. Let the origin of our frame of reference be the centre
+    of mass of the close binary (denoted as $O_2$ in figure above).
+    % FIGURE NEEDED: geometry sketch — axes X (toward the observer) and Y in
+    % the orbital plane, origin O_2 at the inner-binary centre of mass, stars
+    % B and C with Jacobian vector r_1 and angle phi_1, outer centre of mass
+    % O_3 with vector r_2 and angle phi_2, vectors r_BA, r_CA to star A;
+    % 2019 DA solutions, page 9.
+    Furthermore, let axis $X$ directed toward the line of sight. Therefore,
+    axis $Y$ is located in the tangential plane of the sky.
+
+    In this frame of reference, the components of vectors $\vec{r}_1$ and
+    $\vec{r}_2$ can simply be written as
+    \[ \vec{r}_1 = a_1 \left[ \cos(\phi_1); \sin(\phi_1) \right],
+       \tag*{(2.5)} \]
+    \hfill(1 p)
+    \[ \vec{r}_2 = a_2 \left[ \cos(\phi_2); \sin(\phi_2) \right],
+       \tag*{(2.6)} \]
+    \hfill(1 p)\\
+    as $\phi_1$ takes the values of $2k\pi$ in the moments, when star C
+    eclipses star B, and similarly, $\phi_2 = 2k\pi$ when star A
+    ``eclipses'' the centre of mass of the inner binary.
+
+    One can also notice that there is a simple relation between these
+    position angles and the photometric phases defined above as
+    \[ \phi_{1,2} = 2\pi\varphi_{1,2}
+       \tag*{(2.7)} \]
+    \hfill(1 p)
+
+    We are interested in the sky-projected distances of the stellar disks,
+    which, in this frame of reference, are equal to the $y$ components of
+    the vector equations (2.3 and 2.4). Accordingly,
+    \[ d_{\mathrm{A-B}} = \left| a_2 \left[ \sin(2\pi\varphi_2)
+       + \frac{m_C}{m_{BC}}\,\frac{a_1}{a_2}\,\sin(2\pi\varphi_1)
+       \right] \right|,
+       \tag*{(2.8)} \]
+    \hfill(1 p)
+    \[ d_{\mathrm{A-C}} = \left| a_2 \left[ \sin(2\pi\varphi_2)
+       - \frac{m_B}{m_{BC}}\,\frac{a_1}{a_2}\,\sin(2\pi\varphi_1)
+       \right] \right|.
+       \tag*{(2.9)} \]
+    \hfill(1 p)
+
+    \emph{From this point we can use different combinations of eclipsing
+    events given in the table. Therefore, here we use one possible order
+    only for illustration.}
+
+    We notice that both outer contacts (i.e.\ contacts I and IV) of the
+    first event stars A and B are involved. Therefore, we can write the same
+    equation for both contacts as follows:
+    \[ \frac{R_A + R_B}{a_2} = \left| \sin(2\pi\varphi_2)
+       + \frac{m_C}{m_{BC}}\,\frac{a_1}{a_2}\,\sin(2\pi\varphi_1) \right|.
+       \tag*{(2.10)} \]
+    \hfill(1 p)\\
+    Therefore, we have two independent equations and two unknown variables,
+    namely
+    \[ \frac{R_A + R_B}{a_2}, \quad\text{and}\quad
+       \frac{m_C}{m_{BC}}\,\frac{a_1}{a_2} = \frac{a_B}{a_2}.
+       \tag*{(2.11)} \]
+    \hfill(2 p)
+
+    The computation is as follows: for the 1st contact
+    $\sin 2\pi\varphi_2 = -0.158\,296$,
+    $\sin 2\pi\varphi_1 = 0.696\,364$, while for the 4th one
+    $\sin 2\pi\varphi_2 = 0.166\,356$,
+    $\sin 2\pi\varphi_1 = -0.993\,105$. Consequently
+    \[ 0.158\,296 - 0.696\,364\,\frac{a_B}{a_2}
+       = 0.166\,356 - 0.993\,105\,\frac{a_B}{a_2},
+       \tag*{(2.12)} \]
+    \hfill(1 p)
+    \[ \frac{a_B}{a_2} = 0.027\,161
+       \tag*{(2.13)} \]
+    \hfill(1 p)\\
+    and, therefore,
+    \[ \frac{R_A + R_B}{a_2} = 0.1394.
+       \tag*{(2.14)} \]
+    \hfill(1 p)
+
+    Now, considering the also available 3rd contact moment of the same event
+    (in which similarly, stars A and B play the roles), one can get
+    \[ \frac{R_A - R_B}{a_2}
+       = \left| \sin(2\pi \times 0.0155)
+       + 0.027\,161 \times \sin(2\pi \times 0.1743) \right|
+       \tag*{(2.15)} \]
+    \hfill(1 p)
+    \[ \frac{R_A - R_B}{a_2} = 0.1214
+       \tag*{(2.16)} \]
+    \hfill(1 p)
+
+    Combining these results, we obtain that
+    \[ \frac{R_A}{a_2} = \frac{1}{2}\left( \frac{R_A + R_B}{a_2}
+       + \frac{R_A - R_B}{a_2} \right) = 0.1304
+       \tag*{(2.17)} \]
+    \hfill(2 p)
+    \[ \frac{R_B}{a_2} = \frac{1}{2}\left( \frac{R_A + R_B}{a_2}
+       - \frac{R_A - R_B}{a_2} \right) = 0.0090
+       \tag*{(2.18)} \]
+    \hfill(2 p)
+
+    We repeat a very similar calculation for the 3rd contacts of events 3
+    and 4, in which cases star B is substituted with star C. For the 3rd
+    contact of the third event $\sin 2\pi\varphi_2 = 0.102\,237$,
+    $\sin 2\pi\varphi_1 = -0.706\,218$, while the 3rd contact of the fourth
+    event $\sin 2\pi\varphi_2 = 0.094\,108$,
+    $\sin 2\pi\varphi_1 = -0.993\,469$. Therefore,
+    \[ 0.102\,237 + 0.706\,218\,\frac{a_C}{a_2}
+       = 0.094\,108 + 0.993\,469\,\frac{a_C}{a_2}
+       \tag*{(2.19)} \]
+    \hfill(1 p)
+    \[ \frac{a_C}{a_2} = 0.028\,298
+       \tag*{(2.20)} \]
+    \hfill(1 p)\\
+    and, accordingly,
+    \[ \frac{R_A - R_C}{a_2} = 0.1222
+       \tag*{(2.21)} \]
+    \hfill(1 p)
+
+    Taking into account that $R_A/a_2$ is already known from the previous
+    stage, the dimensionless relative radius of star C can be obtained
+    simply as
+    \[ \frac{R_C}{a_2} = \frac{R_A}{a_2} - \frac{R_A - R_C}{a_2}
+       = 0.1304 - 0.1222 = 0.0082
+       \tag*{(2.22)} \]
+    \hfill(2 p)
+
+    The other possibility is, however, that e.g.\ from the 1st contact of
+    event 4 we calculate the sum $(R_A + R_C)/a_2$, as
+    \[ \frac{R_A + R_C}{a_2}
+       = \left| \sin(2\pi \times 0.9736)
+       - 0.028\,298 \times \sin(2\pi \times 0.6882) \right|
+       \tag*{(2.23)} \]
+    \[ \frac{R_A + R_C}{a_2} = 0.1389,
+       \tag*{(2.24)} \]
+    and then we obtain that
+    \[ \frac{R_A}{a_2} = \frac{1}{2}\left( \frac{R_A + R_C}{a_2}
+       + \frac{R_A - R_C}{a_2} \right) = 0.1306,
+       \tag*{(2.25)} \]
+    \[ \frac{R_C}{a_2} = \frac{1}{2}\left( \frac{R_A + R_C}{a_2}
+       - \frac{R_A - R_C}{a_2} \right) = 0.0084.
+       \tag*{(2.26)} \]
+
+    \begin{quote}
+    \emph{Several additional, equivalently acceptable scenarios.}
+
+    We can write three equations for $(R_A + R_B)/a_2$:
+    \begin{align*}
+      \frac{R_A + R_B}{a_2}
+        &= 0.158\,296 - 0.696\,364\,\frac{a_B}{a_2}
+        && \text{(1st event Ist contact)} \\
+      \frac{R_A + R_B}{a_2}
+        &= 0.166\,356 - 0.993\,105\,\frac{a_B}{a_2}
+        && \text{(1IV)} \\
+      \frac{R_A + R_B}{a_2}
+        &= 0.166\,433 - 0.995\,966\,\frac{a_B}{a_2}
+        && \text{(2I)}
+    \end{align*}
+    Combining them one can get:
+    \begin{center}
+    \begin{tabular}{ccc}
+      \hline
+      contacts & $a_B/a_2$ & $(R_A + R_B)/a_2$ \\
+      \hline
+      1I--1IV & 0.027\,161 & 0.1394 \\
+      1I--2I  & 0.027\,159 & 0.1394 \\
+      1IV--2I & 0.026\,988 & 0.1396 \\
+      \hline
+    \end{tabular}
+    \end{center}
+    Similarly, for $(R_A - R_B)/a_2$:
+    \begin{align*}
+      \frac{R_A - R_B}{a_2}
+        &= 0.097\,235 + 0.889\,001\,\frac{a_B}{a_2}
+        && \text{(1III)} \\
+      \frac{R_A - R_B}{a_2}
+        &= 0.107\,236 + 0.486\,152\,\frac{a_B}{a_2}
+        && \text{(5III)}
+    \end{align*}
+    Combining them one can get:
+    \begin{center}
+    \begin{tabular}{ccc}
+      \hline
+      contacts & $a_B/a_2$ & $(R_A - R_B)/a_2$ \\
+      \hline
+      1III--5III & 0.024\,826 & 0.1193 \\
+      \hline
+    \end{tabular}
+    \end{center}
+    Now for $(R_A + R_C)/a_2$:
+    \begin{align*}
+      \frac{R_A + R_C}{a_2}
+        &= 0.165\,116 - 0.925\,553\,\frac{a_C}{a_2}
+        && \text{(4I)} \\
+      \frac{R_A + R_C}{a_2}
+        &= 0.150\,847 - 0.414\,376\,\frac{a_C}{a_2}
+        && \text{(5IV)}
+    \end{align*}
+    The only combination gives:
+    \begin{center}
+    \begin{tabular}{ccc}
+      \hline
+      contacts & $a_C/a_2$ & $(R_A + R_C)/a_2$ \\
+      \hline
+      4I--5IV & 0.027\,914 & 0.1393 \\
+      \hline
+    \end{tabular}
+    \end{center}
+    Finally, for $(R_A - R_C)/a_2$:
+    \begin{align*}
+      \frac{R_A - R_C}{a_2}
+        &= 0.115\,353 + 0.185\,529\,\frac{a_C}{a_2}
+        && \text{(1II)} \\
+      \frac{R_A - R_C}{a_2}
+        &= 0.102\,237 + 0.706\,218\,\frac{a_C}{a_2}
+        && \text{(3III)} \\
+      \frac{R_A - R_C}{a_2}
+        &= 0.094\,108 + 0.993\,469\,\frac{a_C}{a_2}
+        && \text{(4III)}
+    \end{align*}
+    The combinations are:
+    \begin{center}
+    \begin{tabular}{ccc}
+      \hline
+      contacts & $a_C/a_2$ & $(R_A - R_C)/a_2$ \\
+      \hline
+      1II--3III  & 0.025\,190 & 0.1200 \\
+      1II--4III  & 0.026\,295 & 0.1202 \\
+      3III--4III & 0.028\,299 & 0.1222 \\
+      \hline
+    \end{tabular}
+    \end{center}
+    \emph{End additional, equivalently acceptable scenarios.}
+    \end{quote}
+
+    Now, we are in the position to calculate the inner mass ratio $q_1$, as
+    follows:
+    \[ q_1 = \frac{a_B/a_2}{a_C/a_2}
+       = \frac{0.027\,161}{0.028\,298} = 0.9598
+       \tag*{(2.27)} \]
+    \hfill(2 p)
+
+    Furthermore, we can also get the ratio of the semi-major axes as
+    \[ \frac{a_1}{a_2} = \frac{a_B}{a_2} + \frac{a_C}{a_2}
+       = 0.027\,161 + 0.028\,298 = 0.055\,459
+       \tag*{(2.28)} \]
+    \hfill(2 p)
+
+    The requested results with the range of the full marks (summary):
+    \begin{align*}
+      0.1150 &\le \frac{R_A}{a_2} \le 0.1450 \\
+      0.0075 &\le \frac{R_B}{a_2} \le 0.0105 \\
+      0.0070 &\le \frac{R_C}{a_2} \le 0.0100 \\
+      0.045 &\le \frac{a_1}{a_2} \le 0.065 \\
+      0.80 &\le q_1 \le 1.25
+    \end{align*}
+
+  \item[d)] The quickest method to obtain $q_2$ comes with the double use of
+    Kepler's third law. Writing this law for both the inner and outer
+    orbits, and dividing them one can get, that
+    \[ \left( \frac{a_1}{a_2} \right)^3 \left( \frac{P_2}{P_1} \right)^2
+       = \frac{m_{BC}}{m_{ABC}} = \frac{q_2}{1 + q_2}.
+       \tag*{(2.29)} \]
+    \hfill(4 p)\\
+    Therefore
+    \[ q_2 = \frac{\left( \frac{a_1}{a_2} \right)^3
+       \left( \frac{P_2}{P_1} \right)^2}
+       {1 - \left( \frac{a_1}{a_2} \right)^3
+       \left( \frac{P_2}{P_1} \right)^2}
+       \tag*{(2.30)} \]
+    \hfill(2 p)
+    \[ q_2 \approx \frac{0.055\,459^3 \times 50.206\,763^2}
+       {1 - 0.055\,459^3 \times 50.206\,763^2} \approx 0.7543
+       \tag*{(2.31)} \]
+    \hfill(2 p)
+  \end{description}
+
+\item[ii)] The circular velocity of star A is
+  \[ v_A = \frac{2\pi}{P_2}\,r_A.
+     \tag*{(2.32)} \]
+  \hfill(1 p)\\
+  The amplitude of the RV curve is equal to maximum value of the
+  line-of-sight component of that velocity, i.e.
+  \[ K_A = v_A \sin i_2.
+     \tag*{(2.33)} \]
+  \hfill(1 p)
+
+  The sinusoidal component in the occurrence of the eclipsing minima times
+  comes from the light-travel time effect caused by the revolution of stars
+  B and C around the centre of mass of the whole triple system. In this
+  regard the motion of components B and C can simply be substituted by the
+  movement of their centre of mass along the outer orbit. Therefore, the
+  total variation of the inner binary's distance to the Earth is the
+  line-of-sight component of the diameter of the orbit of the centre of mass
+  of the inner binary around the centre of mass of the complete triple
+  system, i.e.
+  \[ \Delta z_{BC} = 2 r_{BC} \sin i_2.
+     \tag*{(2.34)} \]
+  \hfill(2 p)\\
+  Therefore, the amplitude of the light-travel time sine wave is
+  \[ A_{\mathrm{ETV}} = \frac{\Delta z}{2c}
+     = \frac{r_{BC} \sin i_2}{c}
+     \;\rightarrow\;
+     r_{BC} = \frac{c A_{\mathrm{ETV}}}{\sin i_2}.
+     \tag*{(2.35)} \]
+  \hfill(2 p)
+
+  Such a way, using that
+  \[ q_2 = \frac{m_{BC}}{m_A} = \frac{r_A}{r_{BC}},
+     \tag*{(2.36)} \]
+  \hfill(1 p)\\
+  one can obtain, that
+  \[ q_2 = \frac{P_2 K_A}{2\pi c A_{\mathrm{ETV}}}.
+     \tag*{(2.37)} \]
+  \hfill(1 p)\\
+  which gives a second, independent determination of the outer mass ratio
+  $q_2$.
+
+  The uncertainty can be estimated either as
+  \[ \Delta q_2 = q_2 \sqrt{
+       \left( \frac{\Delta P_2}{P_2} \right)^2
+       + \left( \frac{\Delta K_A}{K_A} \right)^2
+       + \left( \frac{\Delta A_{\mathrm{ETV}}}{A_{\mathrm{ETV}}} \right)^2 }
+     \tag*{(2.38)} \]
+  or
+  \[ \Delta q_2 = q_2 \left(
+       \left| \frac{\Delta P_2}{P_2} \right|
+       + \left| \frac{\Delta K_A}{K_A} \right|
+       + \left| \frac{\Delta A_{\mathrm{ETV}}}{A_{\mathrm{ETV}}} \right|
+       \right)
+     \tag*{(2.39)} \]
+  \hfill(2 p)
+
+  With numerical values:
+  \[ q_2 = 0.621 \pm 0.047 \quad\text{or}\quad q_2 = 0.621 \pm 0.048 \]
+  \hfill(1 p)
+
+  Then, the semi-major axis of the outer orbit can be calculated in the
+  following alternative ways:
+  \[ a_2 = r_A\,\frac{1 + q_2}{q_2}
+     = \frac{P_2}{2\pi}\,\frac{K_A}{\sin i_2}\,\frac{1 + q_2}{q_2}
+     \tag*{(2.40)} \]
+  \[ a_2 = r_{BC}\,(1 + q_2)
+     = \frac{c A_{\mathrm{ETV}}}{\sin i_2}\,(1 + q_2)
+     \tag*{(2.41)} \]
+  \[ a_2 = r_A + r_{BC}
+     = \frac{P_2}{2\pi}\,\frac{K_A}{\sin i_2}
+     + \frac{c A_{\mathrm{ETV}}}{\sin i_2},
+     \tag*{(2.42)} \]
+  One of the three equations above: \hfill(2 p)
+
+  We assumed that $i_2 = 90^\circ$, therefore $\sin i_2 = 1$. Then
+  \[ a_2 = (60.712 \pm 2.851) \times 10^6\ \mathrm{km}
+     = (87.293 \pm 4.099)\ R_\odot
+     = (0.406 \pm 0.019)\ \mathrm{AU} \]
+  \hfill(2 p)
+
+  The uncertainties from the three different formulae above:
+  \[ \Delta a_2 = a_2 \sqrt{
+       \left( \frac{\Delta P_2}{P_2} \right)^2
+       + \left( \frac{\Delta K_A}{K_A} \right)^2
+       + \left( \frac{\Delta q_2}{q_2 (1 + q_2)} \right)^2 }
+     \tag*{(2.43)} \]
+  \[ \Delta a_2 \approx 2.851 \times 10^6\ \mathrm{km}
+     \approx 4.10\ R_\odot \approx 0.019\ \mathrm{AU} \]
+  \[ \Delta a_2 = a_2 \sqrt{
+       \left( \frac{\Delta A_{\mathrm{ETV}}}{A_{\mathrm{ETV}}} \right)^2
+       + \left( \frac{\Delta q_2}{1 + q_2} \right)^2 }
+     \tag*{(2.44)} \]
+  \[ \Delta a_2 \approx 4.946 \times 10^6\ \mathrm{km}
+     \approx 7.11\ R_\odot \approx 0.033\ \mathrm{AU} \]
+  \[ \Delta a_2 = \sqrt{
+       \left( \frac{\Delta P_2}{2\pi}\,K_A \right)^2
+       + \left( \frac{P_2}{2\pi}\,\Delta K_A \right)^2
+       + \left( c\,\Delta A_{\mathrm{ETV}} \right)^2 }
+     \tag*{(2.45)} \]
+  \[ \Delta a_2 \approx 2.849 \times 10^6\ \mathrm{km}
+     \approx 4.10\ R_\odot \approx 0.019\ \mathrm{AU} \]
+  One of the three formulae above with its uncertainty: \hfill(3 p)
+
+  In what follows, we use the smallest uncertainties (first row above) but
+  the others, and also the nonquadratic ones are acceptable, too.
+
+  The total mass of the triple now can be calculated directly from Kepler's
+  third law or, as an alternative way, one can obtain it from the equations
+  on the centripetal accelerations.
+  \[ r_A\,\frac{4\pi^2}{P_2^2} = \frac{G m_{BC}}{a_2^2}
+     \tag*{(2.46)} \]
+  \[ r_{BC}\,\frac{4\pi^2}{P_2^2} = \frac{G m_A}{a_2^2},
+     \tag*{(2.47)} \]
+  where the only unknown quantities are the masses, so they can be
+  calculated separately from the two equations or, summing the masses we can
+  get back (formally) Kepler's third law:
+  \[ m_{ABC} = \frac{4\pi^2}{G}\,\frac{a_2^3}{P_2^2}
+     = (4.312 \pm 0.607)\ M_\odot,
+     \tag*{(2.48)} \]
+  \hfill(2 p)\\
+  from which
+  \[ m_A = \frac{m_{ABC}}{1 + q_2} = (2.660 \pm 0.383)\ M_\odot
+     \tag*{(2.49)} \]
+  \hfill(1 p)
+  \[ m_{BC} = m_{ABC}\,\frac{q_2}{1 + q_2} = (1.652 \pm 0.245)\ M_\odot
+     \tag*{(2.50)} \]
+  \hfill(1 p)
+
+\item[iii)] We obtained the total mass ($m_{BC}$) of the inner binary in the
+  second part of the problem. Combining this with the inner mass ratio
+  ($q_1$) obtained in the first part, one can get that
+  \[ m_B = \frac{m_{BC}}{1 + q_1}
+     = \frac{1.652\ M_\odot}{1 + 0.960} = 0.843\ M_\odot
+     \tag*{(2.51)} \]
+  \hfill(3 p)\\
+  and
+  \[ m_C = q_1 \times m_B = 0.960 \times 0.843\ M_\odot = 0.809\ M_\odot
+     \tag*{(2.52)} \]
+  \hfill(3 p)
+
+  The dimensionless radius of each star relative to the semi-major axis was
+  calculated in the first part, while the semi-major axis of the outer orbit
+  ($a_2$) was obtained in the second part. Their multiplication gives the
+  physical radii of the stars:
+  \[ R_A = 0.1304 \times 87.29\ R_\odot = 11.381\ R_\odot
+     \tag*{(2.53)} \]
+  \hfill(3 p)
+  \[ R_B = 0.0090 \times 87.29\ R_\odot = 0.786\ R_\odot
+     \tag*{(2.54)} \]
+  \hfill(3 p)
+  \[ R_C = 0.0082 \times 87.29\ R_\odot = 0.712\ R_\odot
+     \tag*{(2.55)} \]
+  \hfill(3 p)
+\end{description}

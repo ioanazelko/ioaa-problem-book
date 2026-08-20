@@ -1,0 +1,74 @@
+\begin{description}
+\item[(T8.1)]
+The $U$-band is defined as $(360 \pm 40)$\,nm. Thus, the maximum, minimum and
+average frequencies of the band will be,
+\begin{align*}
+\nu_{\mathrm{max}} &= \frac{c}{\lambda_{\mathrm{max}}}
+  = 9.369 \times 10^{14}\,\mathrm{Hz} \\
+\nu_{\mathrm{min}} &= 7.495 \times 10^{14}\,\mathrm{Hz} \\
+\nu_{\mathrm{avg}} &= 8.432 \times 10^{14}\,\mathrm{Hz} \\
+\Delta\nu &= \nu_{\mathrm{max}} - \nu_{\mathrm{min}} \\
+  &= 1.874 \times 10^{14}\,\mathrm{Hz}
+\end{align*}
+\hfill(2.0 points)
+\begin{align*}
+f_{\mathrm{st1}} &= 3631 \times 10^{-0.4 \times 15} \\
+  &= 3.631\,\mathrm{mJy}
+   = 3.631 \times 10^{-29}\,\mathrm{W\,Hz^{-1}\,m^{-2}}
+\end{align*}
+\hfill(2.0 points)
+
+Now, $N_0 \times h\nu_{\mathrm{avg}} = \Delta\nu \times f_{\mathrm{st1}}
+\times A \times \Delta t$, \hfill(2.0 points)\\
+where $A = 1\,\mathrm{m}^2$ \& $\Delta t = 1$\,s
+\begin{align*}
+\therefore N_0 &= \frac{1.874 \times 10^{14} \times 3.631 \times 10^{-29}}
+  {6.626 \times 10^{-34} \times 8.432 \times 10^{14}} \\
+  &\simeq 12180
+\end{align*}
+\hfill(2.0 points)
+
+Exact calculation including integration is accepted with full credit (exact
+answer: 12190).
+
+\item[(T8.2)]
+Let us call sky flux per square arcsec as $\Phi$ and total sky flux for the
+given aperture as $\phi_{\mathrm{sky}}$. Let total star flux be
+$\phi_{st}$.
+\[ \phi_{\mathrm{sky}} = A\Phi = \pi \times (1\,\mathrm{arcsec})^2 \times \Phi
+   = \pi\Phi \]
+\hfill(3.0 points)
+\begin{align*}
+\therefore m_{\mathrm{sky}}
+  &= 22.0 + 2.5\log_{10}\left(\frac{\Phi}{\phi_{\mathrm{sky}}}\right)
+  && \text{(1.0 points)} \\
+  &= 22.0 + 2.5\log_{10}\left(\frac{\Phi}{\pi\Phi}\right) \\
+  &= 22.0 - 2.5\log_{10}(\pi) \\
+m_{\mathrm{sky}} &= 20.76~\mathrm{mag}
+  && \text{(1.0 points)}
+\end{align*}
+As extinction is 50\% \hfill(1.0 points)
+\begin{align*}
+R &= \frac{\phi_{\mathrm{st2}}}{\phi_{\mathrm{sky}}}
+   = \frac{0.5\,\phi_{\mathrm{st1}}}{\phi_{\mathrm{sky}}}
+   = 0.5 \times 10^{(20.76 - 15)/2.5} \\
+  &\simeq 100
+\end{align*}
+\hfill(2.0 points)
+
+A student may also calculate number of photons incident per second per metre
+square in this case and then compare it with the answer in the first case to
+get the correct ratio.
+
+\item[(T8.3)]
+\begin{align*}
+N_{\mathrm{t}} \times 1\,\mathrm{m}^2
+  &= N_0 \times 0.5 \times 0.2 \times A_{\mathrm{t}}
+  && \text{(2.0 points)} \\
+N_{\mathrm{t}} &= 12180 \times 0.5 \times 0.2 \times
+  \pi\left(\frac{2.0}{2}\right)^2 = 1233\pi
+  && \text{(1.0 points)} \\
+N_{\mathrm{t}} &\simeq 3813
+  && \text{(1.0 points)}
+\end{align*}
+\end{description}

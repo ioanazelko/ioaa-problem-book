@@ -1,0 +1,228 @@
+\begin{description}
+\item[1.] The trivial solution of the problem is the North Pole ($N$). Starting
+  from here we travel 6378\,km to the South ($\overset{\frown}{NA}$) along a meridian
+  (e.g.\ Greenwich meridian), then 6378\,km to the East along a parallel
+  ($\overset{\frown}{AB}$), and finally 6378\,km to the North ($\overset{\frown}{BN}$) (see
+  figure~(a), where the black dashed lines are the Equator and the Greenwich
+  meridian).
+
+  For the general solution, mark the path to be taken in one direction with $s$
+  and determine what it may be!
+
+  Let us denote the longitude and latitude of the point $A$ by $\lambda_A$ and
+  $\varphi_A$, and the point $B$ by $\lambda_B$ and $\varphi_B$.
+
+  The triangle $ANB$ is a spherical one only if the points $A$ and $B$ are on
+  the Equator (see figure~(b)), i.e.\ $\varphi_A = \varphi_B = 0^\circ$ and
+  $s = R\pi/2$, because the arc $\overset{\frown}{AB}$ is lying along a great circle
+  only in this case, otherwise it is a part of a parallel. The point $A$ and
+  $B$ can be below the Equator as well (figure~(c)).
+
+  % FIGURE NEEDED: three globe diagrams (a),(b),(c) showing the path N->A->B->N
+  % for s = 6378.0 km, 10018.5 km and 10700.0 km; 2019 theory solutions,
+  % pages 14-15 (problem 10).
+
+  Next, we measure the angles in radians.
+
+  The central angle of the arc $\overset{\frown}{NA}$ on the meridian fitting to the
+  point $A$ ($O$ is the centre of the sphere):
+  \[
+    NOA\sphericalangle = \frac{\pi}{2} - \varphi,
+    \quad\text{where } \varphi = \varphi_A = \varphi_B \tag{10.1}
+  \]
+  Thus the length $s$ of the arc $\overset{\frown}{NA}$:
+  \[
+    s = R\left(\frac{\pi}{2} - \varphi\right),
+    \quad\text{where } s < R\pi \tag{10.2}
+  \]
+  The radius of the latitude circle fitting to the points $A$ and $B$:
+  \[
+    r_{AB} = R\sin\left(\frac{\pi}{2} - \varphi\right) = R\cos\varphi
+    \tag{10.3}
+  \]
+  The central angle of the arc $\overset{\frown}{AB}$ is $\lambda_B - \lambda_A$,
+  thus the length of the arc $\overset{\frown}{AB}$:
+  \[
+    s = r_{AB}\,(\lambda_B - \lambda_A) = R\cos\varphi\,(\lambda_B - \lambda_A)
+    \tag{10.4}
+  \]
+  From the Eq.~(10.2) and Eq.~(10.4):
+  \[
+    \varphi = \frac{\pi}{2} - \frac{s}{R}
+    \quad\text{and}\quad
+    \lambda_B - \lambda_A = \frac{s}{R\cos\varphi} \tag{10.5}
+  \]
+  Substitute the expression of $\varphi$ from the first equation into the
+  second equation:
+  \[
+    \lambda_B - \lambda_A = \frac{s}{R\cos\varphi}
+      = \frac{\dfrac{s}{R}}{\cos\left(\dfrac{\pi}{2} - \dfrac{s}{R}\right)}
+      = \frac{\dfrac{s}{R}}{\sin\dfrac{s}{R}} \tag{10.6}
+  \]
+  For a given arc length of $s$ ($s < R\pi$) the latitude $\varphi$ of the
+  points $A$ and $B$, and the difference between their longitudes we can
+  calculate from the following equations:
+  \[
+    \varphi = \frac{\pi}{2} - \frac{s}{R}
+    \quad\text{and}\quad
+    \lambda_B - \lambda_A = \frac{\dfrac{s}{R}}{\sin\dfrac{s}{R}} \tag{10.7}
+  \]
+
+  ***** Supplement. It is just for the sake of completeness, not necessary for
+  the full marks.
+
+  It is well known, that
+  \[
+    \lim_{x\to 0}\frac{\sin x}{x} = \lim_{x\to 0}\frac{x}{\sin x} = 1,
+    \tag{10.8}
+  \]
+  thus $\lambda_B - \lambda_A = 1$ in case of $s \to 0$.
+
+  Therefore the difference in longitude has a lower limit (1), but it has no
+  upper limit. This means, that the distance between the points $A$ and $B$
+  will increase by increasing $s$, the difference between their longitudes will
+  approximate $2\pi$ (see figure~(d)), and in case of
+  $\lambda_B - \lambda_A = 2\pi$ the points $A$ and $B$ will be the same (see
+  figure~(e)). With further increasing of $s$ the difference
+  $\lambda_B - \lambda_A$ will be larger than $2\pi$ (see figure~(f)), thus we
+  have to stop at that point on the circle where the length of the path along
+  it reaches the value of $s$, and then turn to the North.
+
+  % FIGURE NEEDED: three globe diagrams (d),(e),(f) with paths circling the
+  % South Pole for s = 17000.0 km, 17206.566 km and 17600.0 km; 2019 theory
+  % solutions, page 15 (problem 10).
+
+  The arc length $s_{\lim}$ corresponding to the ``limit case'' of
+  $\lambda_B - \lambda_A = 2\pi$ we can derive from the numerical solution of
+  the following transcendent equation:
+  \[
+    \frac{s_{\lim}}{R} - 2\pi\sin\frac{s_{\lim}}{R} = 0
+  \]
+  Thus find the root of the function
+  \[
+    f(s) = \frac{s}{R} - 2\pi\sin\frac{s}{R},
+  \]
+  i.e.\ the value $s_{\lim}$, where $f(s_{\lim}) = 0$. We can solve it by
+  iteration using e.g.\ the Newton--Raphson method:
+  \[
+    s_{k+1} = s_k - \frac{f(s_k)}{f'(s_k)}, \qquad k = 0, 1, 2, \ldots
+  \]
+  The first derivative of the function $f(s)$:
+  \[
+    f'(s) = \frac{1}{R} - \frac{2\pi}{R}\cos\frac{s}{R}
+  \]
+  We know that the parallel in question runs south from the Equator, thus a
+  good initial value for the iteration could be $s_0 = R\pi/2 + \Delta s$,
+  where $\Delta s = 1000$\,km.
+
+  The result of the iteration and the corresponding latitude with three decimal
+  places:
+  \[
+    s_{\lim} = 17\,206.566\ \mathrm{km}, \quad
+    \varphi_{\lim} = -64.573^\circ
+  \]
+  $\lambda_B - \lambda_A$ is strictly increasing function of $s$ and
+  \[
+    \lim_{s/R\to 0} \lambda_B - \lambda_A = 1, \quad
+    \lim_{s/R\to \pi} \lambda_B - \lambda_A = \infty, \tag{10.9}
+  \]
+  thus for any values of $0 < s < R\pi$ can be found an appropriate angle
+  $\lambda_B - \lambda_A$.
+
+  % FIGURE NEEDED: plot of (lambda_B - lambda_A) = (s/R)/sin(s/R) versus s/R
+  % with s_lim/R marked; 2019 theory solutions, page 15 (problem 10).
+
+  ***** End of supplement.
+
+  In conclusion, the solution in this case is the North Pole ($N$).
+  \hfill(2\,p)
+
+  For the value of $s = 6378$\,km the solution is an (a)-type curve. The
+  coordinates of the turning points are:
+  \[
+    \lambda_A = 0^\circ, \quad \lambda_B = 68.09^\circ, \quad
+    \varphi_A = \varphi_B = 32.704^\circ
+  \]
+  \hfill(3\,p)
+
+\item[2.] The non-trivial solutions are similar to the (e)-type (``lasso'')
+  solution of the previous part, only the starting point is not the North Pole,
+  but its location depends on the given value of arc length $s$. The circle of
+  the lasso will run south from the (e)-type ``limit circle'', because the
+  circumference of parallels running north from it are greater than the
+  north--south arc.
+
+  The procedure is the following.
+
+  Knowing $s$, we have to find the parallel around the South Pole ($S$), whose
+  circumference is an integer multiple of $s$. \hfill(2\,p)
+
+  If the corresponding latitude is $\varphi_D$, then:
+  \[
+    2k\pi R\cos\varphi_D = s, \quad k = 1, 2, 3, \ldots \tag{10.10}
+  \]
+  \hfill(5\,p)
+
+  If the latitude of the sought starting point $C$ is $\varphi_C$, then the
+  length $s$ of the arc to be taken along the meridian:
+  \[
+    s = R\,(\varphi_C - \varphi_D) \tag{10.11}
+  \]
+  From the Eqs.~(10.10) and (10.11):
+  \[
+    \varphi_C = \varphi_D + 2k\pi\cos\varphi_D, \quad k = 1, 2, 3, \ldots
+    \tag{10.12}
+  \]
+  Thus:
+  \[
+    \varphi_D = -\arccos\frac{s}{2k\pi R}, \quad k = 1, 2, 3, \ldots
+    \tag{10.13}
+  \]
+  \hfill(2\,p)
+
+  and
+  \[
+    \varphi_C = -\arccos\frac{s}{2k\pi R} + \frac{s}{R},
+    \quad k = 1, 2, 3, \ldots \tag{10.14}
+  \]
+  \hfill(2\,p)
+
+  The negative sign denotes that the parallel is in the southern hemisphere.
+
+  So if the starting point is not the North Pole ($N$), there are infinitely
+  many solutions.
+
+  For the value of $s = 6378$\,km the first 5 ($k = 1, \ldots, 5$) value for
+  $\varphi_D$ in degrees with 3 decimal places:
+  \[
+    \varphi_{D_1} = -80.842^\circ,\ \varphi_{D_2} = -85.436^\circ,\
+    \varphi_{D_3} = -86.959^\circ,\ \varphi_{D_4} = -87.72^\circ,\
+    \varphi_{D_5} = -88.176^\circ
+  \]
+  \hfill(2\,p)
+
+  The first 5 ($k = 1, \ldots, 5$) value for $\varphi_C$ in degrees with 3
+  decimal places:
+  \[
+    \varphi_{C_1} = -23.546^\circ,\ \varphi_{C_2} = -28.14^\circ,\
+    \varphi_{C_3} = -29.663^\circ,\ \varphi_{C_4} = -30.424^\circ,\
+    \varphi_{C_5} = -30.88^\circ
+  \]
+  \hfill(2\,p)
+
+  In conclusion, starting to the South from a point of the parallel marked with
+  a dashed red line ($C$), we get to a point on a parallel marked with a
+  continuous red line ($D$). On this parallel we travel a full circle to the
+  East, then we get back to the point $D$, then turn to North and travel back
+  to starting point $C$.
+
+  For the further values of $k$ the procedure is very similar, but we have to
+  perform two full circles along the continuous green parallel, three along the
+  blue, four along the gold, five along the brown and so on.
+
+  Such kind of solution exists for any values of $0 < s < s_{\lim}$.
+
+  % FIGURE NEEDED: globe diagram (g) showing the "lasso" solutions around the
+  % South Pole for s = 6378.0 km with the parallels C and D_k marked; 2019
+  % theory solutions, page 17 (problem 10).
+\end{description}

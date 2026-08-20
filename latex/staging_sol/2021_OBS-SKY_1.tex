@@ -1,0 +1,135 @@
+\begin{enumerate}
+\item \textbf{Data selection} (selecting appropriate images showing the
+  evolution of the CME) and identification of CME front.
+
+  % FIGURE NEEDED: mosaic of 7 JHelioviewer frames (SDO/AIA + SOHO/LASCO
+  % coronagraph images) numbered 1--7, each with the CME front marked by a
+  % line from the solar limb; 2021_SOLAR.pdf, p.~1.
+
+  A total of 7 time intervals are selected tracing the evolution of the CME:
+  \begin{enumerate}
+  \item 2021/05/28 22:19:00 UT
+  \item 2021/05/28 22:54:11 UT
+  \item 2021/05/28 23:30:08 UT
+  \item 2021/05/29 23:42:08 UT
+  % sic: the official solution lists 2021/05/29 23:42:08 UT here, while its
+  % summary table gives 2021/05/28 23:42:08 UT for interval 4
+  \item 2021/05/29 01:12:16 UT
+  \item 2021/05/29 03:36:08 UT
+  \item 2021/05/29 05:00:08 UT
+  % sic: the summary table gives 2021/05/29 05:36:08 UT for interval 7, but
+  % 05:00:08 UT is consistent with the quoted 401 minutes from onset
+  \end{enumerate}
+
+  Summary of the information extracted from the images for all different
+  selected intervals:
+
+  {\footnotesize\setlength{\tabcolsep}{2.5pt}
+  \begin{center}
+  \begin{tabular}{c l c c c c c c}
+  \toprule
+  Interval & Date and Time & \begin{tabular}{@{}c@{}}Time\\ interval\\ (min)\end{tabular}
+    & \begin{tabular}{@{}c@{}}Time from\\ CME onset\\ (min)\end{tabular}
+    & \multicolumn{2}{c}{\begin{tabular}{@{}c@{}}Coordinates of\\ the CME front\end{tabular}}
+    & \begin{tabular}{@{}c@{}}Distance from\\ disc center\\ (arcsec)\end{tabular}
+    & \begin{tabular}{@{}c@{}}Distance from\\ disc center\\ (km)\end{tabular}\\
+  & & & & $x''$ & $y''$ & &\\
+  \midrule
+  1 & 2021/05/28 22:19:00 UT & 0   & 0   & 950   & 144     & 961   & 696617\\
+  2 & 2021/05/28 22:54:11 UT & 35  & 35  & 2682  & 174     & 2688  & 1948538\\
+  3 & 2021/05/28 23:30:08 UT & 36  & 71  & 4579  & 97      & 4580  & 3320520\\
+  4 & 2021/05/28 23:42:08 UT & 47  & 83  & 7441  & 116     & 7442  & 5395380\\
+  5 & 2021/05/29 01:12:16 UT & 126 & 173 & 14000 & $-891$  & 14028 & 10170535\\
+  6 & 2021/05/29 03:36:08 UT & 191 & 317 & 21048 & $-4570$ & 21538 & 15615349\\
+  7 & 2021/05/29 05:36:08 UT & 210 & 401 & 27922 & $-7126$ & 28817 & 20892306\\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  % sic: the "Time interval" column of the official table is not consistent
+  % with the differences of the successive timestamps (rows 4--7)
+
+  \begin{center}
+  \begin{tabular}{c c c c c c c}
+  \toprule
+  Interval & \begin{tabular}{@{}c@{}}Distance\\ from onset\\ (km)\end{tabular}
+    & \begin{tabular}{@{}c@{}}Cumulative\\ velocity, plane\\ of the sky (km/s)\end{tabular}
+    & \begin{tabular}{@{}c@{}}Deprojection of\\ velocity towards\\ ParkerSP (km/s)\end{tabular}
+    & \begin{tabular}{@{}c@{}}Distance per\\ time interval\\ (km)\end{tabular}
+    & \begin{tabular}{@{}c@{}}Velocity on\\ plane of the\\ sky (km/s)\end{tabular}
+    & \begin{tabular}{@{}c@{}}Deprojection of\\ velocity towards\\ ParkerSP (km/s)\end{tabular}\\
+  \midrule
+  1 & 0        & 0   & 0    & 0       & 0   & 0\\
+  2 & 1252198  & 596 & 728  & 1252198 & 596 & 728\\
+  3 & 2624180  & 616 & 752  & 1371982 & 635 & 775\\
+  4 & 4699040  & 944 & 1152 & 2074861 & 736 & 898\\
+  5 & 9474195  & 913 & 1114 & 4775155 & 632 & 771\\
+  6 & 14919009 & 784 & 958  & 5444814 & 475 & 580\\
+  7 & 20195966 & 839 & 1025 & 5276957 & 419 & 511\\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  }
+\item \textbf{Plotting the kinetic evolution of the CME.}
+
+  Plots: distance vs time and velocity vs time.
+
+  % FIGURE NEEDED: three plots -- Distance vs Time, Cumulative Velocity vs
+  % Time, and Velocity (per interval) vs Time, built from the table above;
+  % 2021_SOLAR.pdf, p.~2.
+\item \textbf{Calculating the velocity of the CME front reaching ParkerSP.}
+
+  The velocity corresponding to the last interval (up to reaching 30 solar
+  radii) is 511\,km/s which, according to the considerations of the problem,
+  would be the same velocity of the CME front once it reaches the ParkerSP.
+
+  \textbf{Calculating the time spent by the CME front to reach the ParkerSP
+  from its onset.}
+
+  The Sun--ParkerSP distance estimated from Figure 1 is approx.\
+  $0.66\,\mathrm{AU} = 9.9\times10^{7}\,\mathrm{km} = 141$ solar radii (given
+  the information that 10 solar radii is approx.\ $7\times10^{6}$\,km).
+
+  From the previous analysis, it is known that the CME front reaches a
+  distance of 30 solar radii after 401 minutes (6.7 hours) from its onset
+  (see Table). The distance that the CME travels at the constant speed of
+  511\,km/s is expressed as $141-30=111$ solar radii
+  $= 7.8\times 10^{7}$\,km, and thus the time spent in that interval is
+  42.4 hours.
+
+  Finally, the total time it takes for the CME front to reach the ParkerSP
+  from its onset is computed as: $6.7 + 42.4 = 49.1$ hours.
+\item \textbf{True and false statements}
+  \begin{description}
+  \item[A.] A larger number of selected images would give more precise
+    information on the evolution of the CME and the calculated physical
+    parameters. TRUE
+  \item[B.] The analysis and measurements of the CME evolution should
+    consider the differential rotation of the Sun, and therefore the
+    calculated velocities will be affected. FALSE
+  \item[C.] Any software (numerical) misalignment among the images when
+    creating the mosaic will have direct effects on the precision of your
+    calculations. TRUE
+  \item[D.] The different assumptions made in order to construct the model
+    displaying in a heliospheric density map in Figure 1, may affect the
+    estimation of the Sun--ParkerSP distance. FALSE
+  \item[E.] The interaction of the CME-front with the remnant dust left by
+    the 2019 Borisov comet broadens and difuminate the images. This
+    intensifies the lack of contrast in the images, increasing the
+    uncertainty in determining the CME-front and its propagation. FALSE
+    % sic: "difuminate" as in the original
+  \end{description}
+\item \textbf{Kinetic energy calculations}
+
+  Proton:
+  \[
+  0.5 \times (1.67262\times10^{-27}~\mathrm{kg}) \times (511~\mathrm{m/s})^2
+  = 1.4\times10^{-3}~\mathrm{eV}
+  \]
+  Alpha particle:
+  \[
+  0.5 \times (6.64\times10^{-27}~\mathrm{kg}) \times (511~\mathrm{m/s})^2
+  = 5.4\times10^{-3}~\mathrm{eV}
+  \]
+  % sic: the official solution uses 511 m/s (instead of the CME speed of
+  % 511 km/s); the quoted eV values follow from the m/s figure.
+\end{enumerate}

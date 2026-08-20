@@ -1,0 +1,56 @@
+As we have a differential equation that should be integrated, we expect that
+the student can solve it in two ways: using an approximation (Way 1) or
+calculus (Way 2). \hfill(2 pt finding final scale factor)
+
+\medskip
+\noindent\textit{Way 1.}
+Using the definition of Hubble constant:
+$\dfrac{da}{dt} = Ha$, where $a$ is the scale factor and using the
+approximation $\dfrac{da}{dt} \approx \dfrac{\Delta a}{\Delta t}$, and
+supposing that the variation of the scale factor and the Hubble constant is
+small compared to their values, and using that $aT = \mathrm{const}$:
+\begin{equation*}
+\frac{\Delta a}{\Delta t} = H_i a_i
+\;\Rightarrow\;
+\frac{\Delta T}{\Delta t} = -H_i T_i
+\;\Rightarrow\;
+\Delta t = -\frac{1}{H_i}\,\frac{\Delta T}{T_i} = 5.0\cdot10^{8}~years
+\tag*{(7 pt + 1 pt)}
+\end{equation*}
+
+\medskip
+\noindent\textit{Way 2.}
+As we have a matter dominated Universe ($\rho \propto a^{-3}$), without dark
+energy, and a density parameter $\Omega_0 = 1$, we have:
+\begin{equation*}
+\Omega_0 = \frac{8\pi G\rho}{3H^2} = \frac{8\pi G}{3H^2}\,\frac{\zeta}{a^3} = 1
+\tag*{(4 pt)}
+\end{equation*}
+From the Hubble law, $\dfrac{da}{dt} = Ha$:
+\[
+\left(\frac{da}{dt}\right)^{2} = \frac{8\pi G}{3}\,\frac{\zeta}{a}
+\;\Rightarrow\;
+\frac{da}{dt} = \sqrt{\frac{8\pi G}{3}\,\frac{\zeta}{a}}
+\]
+Integrating this equation: \hfill(3 pt)
+\[
+\frac{2}{3}\left[a_f^{3/2} - a_i^{3/2}\right]
+= \sqrt{\frac{8\pi G}{3}\,\zeta}\,\Delta t
+\;\Rightarrow\;
+\Delta t
+= \frac{2}{3}\left[\left(\frac{a_f}{a_i}\right)^{3/2} - 1\right]
+  \frac{1}{\sqrt{\dfrac{8\pi G}{3}\,\dfrac{\zeta}{a_i^{3}}}}
+= \frac{2}{3}\,\frac{1}{H_i}
+  \left[\left(\frac{a_f}{a_i}\right)^{3/2} - 1\right]
+\]
+Using the fact that $aT = \mathrm{const}$:
+\[
+a_i T_i = a_f T_f
+\;\Rightarrow\;
+\frac{a_f}{a_i} = \frac{T_i}{T_f} = \frac{2.73}{2.63} = 1.038
+\]
+So the time is:
+\begin{equation*}
+\Delta t = 5.2\cdot10^{8}~years \tag*{(1 pt)}
+\end{equation*}
+Obs: (7 pt for using correctly that $a \propto t^{2/3}$)
