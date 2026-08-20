@@ -7,8 +7,7 @@ statements are transcribed as real LaTeX so they can be searched, restyled, and
 reused in worksheets. Figures are cropped from the publicly available source
 papers rather than redrawn.
 
-This project is not affiliated with or endorsed by the IOAA. The official
-papers remain the authoritative source and are available from the
+The original problems can be found in the
 [IOAA problem archive](https://ioaastrophysics.org/resources/problems-from-past-ioaa).
 
 ## Download PDF
