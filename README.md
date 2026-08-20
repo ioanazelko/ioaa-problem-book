@@ -11,6 +11,12 @@ This project is not affiliated with or endorsed by the IOAA. The official
 papers remain the authoritative source and are available from the
 [IOAA problem archive](https://ioaastrophysics.org/resources/problems-from-past-ioaa).
 
+## Download PDF
+
+[Download the latest release of the book](https://github.com/ioanazelko/ioaa-problem-book/releases/latest/download/ioaa-problem-book-2007-2025.pdf).
+The release PDF uses the `ebook` optimization profile. Lossless and
+print-oriented editions can be produced from the repository sources.
+
 ## Status
 
 - 402 of 402 problem statements transcribed
