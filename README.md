@@ -1,7 +1,6 @@
 # IOAA Problem Book
 
-A LaTeX collection of International Olympiad on Astronomy and
-Astrophysics problems and solutions, organized by topic.
+The LaTeX collection of all IOAA problems and solutions, organized by topic.
 
 The collection covers the 2007--2025 olympiads in 14 subject chapters. Problem
 statements are transcribed as real LaTeX so they can be searched, restyled, and
