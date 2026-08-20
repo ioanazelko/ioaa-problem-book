@@ -1,6 +1,6 @@
 # Copyright and content notice
 
-This is an unofficial educational project. It is not affiliated with or
+This is an educational project. It is not affiliated with or
 endorsed by the International Olympiad on Astronomy and Astrophysics (IOAA).
 
 The IOAA problem statements, official solutions, diagrams, photographs, plots,
