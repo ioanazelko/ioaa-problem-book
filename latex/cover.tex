@@ -1,0 +1,97 @@
+% Vector cover for the IOAA Problem Book (chosen design: "cosmic expansion").
+% The artwork is the expansion history of the universe -- a flaring cone from
+% the Big Bang to today, epochs marked along the boundary of the observable
+% universe. Entirely TikZ, no bitmaps. Keep the edition interval here in sync
+% with the included olympiads.
+\definecolor{coverdusktop}{HTML}{170D2B}
+\definecolor{coverduskbot}{HTML}{51285F}
+\definecolor{coverpink}{HTML}{F48FC0}
+\definecolor{covermagenta}{HTML}{E0559E}
+\definecolor{coverlav}{HTML}{CBB4DD}
+\definecolor{coverivory}{HTML}{F8F3FB}
+
+% Cone half-width: sqrt growth (decelerating) + cubic term (dark energy).
+\newcommand{\coverconew}[1]{(0.5*sqrt(#1)+0.0008*(#1)^3)}
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \begin{tikzpicture}[remember picture,overlay]
+    \shade[top color=coverdusktop,bottom color=coverduskbot]
+      (current page.south west) rectangle (current page.north east);
+
+    \begin{scope}[shift={(current page.south west)}]
+      \begin{scope}[shift={(13.6,3.0)}]
+        % Time axis.
+        \draw[coverlav,opacity=0.35,line width=0.5pt,
+              dash pattern=on 1.6pt off 2.2pt,-stealth] (0,-0.7) -- (0,17.0);
+        \node[coverlav,opacity=0.7,font=\footnotesize\sffamily,anchor=west]
+          at (0.3,16.8) {time};
+        % Boundary of the observable universe.
+        \draw[coverpink,line width=1.3pt,smooth]
+          plot[domain=0.02:15.8,samples=160] ({\coverconew{\x}},\x);
+        \draw[coverpink,line width=1.3pt,smooth]
+          plot[domain=0.02:15.8,samples=160] ({-\coverconew{\x}},\x);
+        % Faint cross-sections, and the rim "today".
+        \foreach \yy in {2.2,5.5,8.5,12.0}
+          \draw[coverlav,opacity=0.30,line width=0.5pt]
+            (0,\yy) ellipse ({\coverconew{\yy}} and {0.14*\coverconew{\yy}});
+        \draw[coverpink,line width=1.0pt,opacity=0.9]
+          (0,15.8) ellipse ({\coverconew{15.8}} and {0.14*\coverconew{15.8}});
+        % Galaxies inside the late universe.
+        \foreach \gx/\gy/\gs/\gc in {
+          -1.2/9.5/1.1/coverivory, 0.8/10.7/0.9/coverlav,
+          1.9/12.4/1.2/coverivory, -2.4/13.1/0.9/coverlav,
+          0.2/14.2/1.1/coverivory, 2.9/14.9/0.9/coverlav,
+          -3.3/15.0/1.2/coverivory, -0.9/12.0/0.9/coverivory,
+          3.4/13.6/0.8/coverlav}
+          \fill[\gc] (\gx,\gy) circle (\gs pt);
+        % The Big Bang, glowing.
+        \fill[covermagenta,opacity=0.22] (0,0) circle (0.62);
+        \fill[covermagenta,opacity=0.4] (0,0) circle (0.4);
+        \fill[coverpink] (0,0) circle (0.22);
+        \node[coverpink,font=\footnotesize\sffamily,anchor=west] at (0.85,-0.4)
+          {Big Bang};
+        % Epochs, dotted along the boundary.
+        \fill[coverivory] ({\coverconew{0.55}},0.55) circle (2.6pt);
+        \node[coverlav,font=\footnotesize\sffamily,anchor=west]
+          at ({\coverconew{0.55}+0.35},0.55) {inflation};
+        \fill[coverivory] ({-\coverconew{2.2}},2.2) circle (2.6pt);
+        \node[coverlav,font=\footnotesize\sffamily,anchor=east]
+          at ({-\coverconew{2.2}-0.35},2.2) {CMB released};
+        \fill[coverivory] ({\coverconew{5.5}},5.5) circle (2.6pt);
+        \node[coverlav,font=\footnotesize\sffamily,anchor=west]
+          at ({\coverconew{5.5}+0.35},5.5) {first stars};
+        \fill[coverivory] ({-\coverconew{8.5}},8.5) circle (2.6pt);
+        \node[coverlav,font=\footnotesize\sffamily,anchor=east]
+          at ({-\coverconew{8.5}-0.35},8.5) {galaxies assemble};
+        \fill[coverivory] ({-\coverconew{12.0}},12.0) circle (2.6pt);
+        \node[coverlav,font=\footnotesize\sffamily,anchor=east]
+          at ({-\coverconew{12.0}-0.35},12.0) {expansion accelerates};
+        \fill[coverivory] ({-\coverconew{15.8}},15.8) circle (2.6pt);
+        \node[coverlav,font=\footnotesize\sffamily,anchor=east]
+          at ({-\coverconew{15.8}-0.35},15.8) {today};
+      \end{scope}
+    \end{scope}
+
+    % ---------------- title block, left ----------------
+    \begin{scope}[shift={(current page.north west)}]
+      \node[anchor=west,coverpink,font=\small\sffamily\scshape] at (2.2,-3.1)
+        {International Olympiad on Astronomy \& Astrophysics};
+      \draw[covermagenta,line width=1.6pt] (2.24,-3.75) -- (7.0,-3.75);
+      \node[anchor=west,coverivory,
+            font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+        at (2.15,-5.4) {IOAA};
+      \node[anchor=west,coverivory,
+            font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+        at (2.15,-7.0) {Problem Book};
+      \node[anchor=west,coverlav,font=\large\sffamily,align=left] at (2.2,-9.4)
+        {Problems and available official solutions\\ organized by topic};
+      \node[anchor=west,coverpink,font=\LARGE\sffamily\bfseries] at (2.2,-11.4)
+        {2007--2025};
+    \end{scope}
+    \node[anchor=west,coverlav,font=\normalsize\sffamily]
+      at ($(current page.south west)+(2.2,2.0)$)
+      {Compiled and edited by Ioana A.~Zelko};
+  \end{tikzpicture}
+  \null%
+\end{titlepage}

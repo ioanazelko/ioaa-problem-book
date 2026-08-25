@@ -30,6 +30,8 @@
 \IfFileExists{enumitem.sty}{\usepackage{enumitem}}{}
 \usepackage{longtable}
 \usepackage{xcolor}
+\usepackage{tikz}          % vector cover artwork (cover.tex)
+\usetikzlibrary{calc}
 \usepackage[hidelinks,bookmarksnumbered]{hyperref}
 
 \graphicspath{{images/}}
@@ -63,6 +65,7 @@
 
 \begin{document}
 \frontmatter
+\input{cover}
 \maketitle
 
 \chapter*{About this edition}
