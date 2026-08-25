@@ -58,15 +58,23 @@
 \newcommand{\ioaafig}[2][0.75]{%
   \begin{center}\includegraphics[width=#1\linewidth]{#2}\end{center}}
 
-\title{\Huge International Olympiad on Astronomy \& Astrophysics\\[0.4em]
-       \Large Problems by Topic, 2007--2025}
-\author{Assembled by I. A. Zelko}
-\date{}
-
 \begin{document}
 \frontmatter
 \input{cover}
-\maketitle
+
+% Inner title page. Hand-rolled rather than \maketitle: the titlepage
+% environment resets the page counter, duplicating the roman folios that
+% the cover already consumed.
+\thispagestyle{empty}
+\null\vskip 8em
+\begin{center}
+  {\Huge International Olympiad on Astronomy \& Astrophysics\par}
+  \vskip 0.4em
+  {\Large Problems by Topic, 2007--2025\par}
+  \vskip 2.5em
+  {\large Assembled by I. A. Zelko\par}
+\end{center}
+\cleardoublepage
 
 \chapter*{About this edition}
 \addcontentsline{toc}{chapter}{About this edition}
