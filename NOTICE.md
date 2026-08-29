@@ -15,6 +15,9 @@ editorial work, and software tooling are copyright 2026 Ioana Zelko. No
 project-wide open-source license has been granted. Unless a file states
 otherwise, all rights are reserved.
 
+Commercial use of the repository content is not permitted. This restriction
+also applies to translations and other adaptations of the material.
+
 Anyone wishing to redistribute or adapt the book should independently confirm
 that they have the permissions required for the third-party material they plan
 to use.

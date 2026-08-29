@@ -79,3 +79,6 @@ No project-wide open-source license is granted. The olympiad problems,
 solutions, and extracted figures are third-party material and remain subject to
 the rights of their respective authors and organizers. See
 [`NOTICE.md`](NOTICE.md) before copying or redistributing repository content.
+
+Commercial use of the repository content is not permitted. This restriction
+also applies to translations and other adaptations of the material.
