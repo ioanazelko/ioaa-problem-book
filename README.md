@@ -2,7 +2,8 @@
 
 The LaTeX collection of all IOAA problems and solutions, organized by topic.
 
-The collection covers the 2007--2025 olympiads in 14 subject chapters. Problem
+The collection covers the 2007--2025 olympiads in 14 subject chapters, plus a
+chapter collecting the problems from the observational rounds. Problem
 statements are transcribed as real LaTeX so they can be searched, restyled, and
 reused in worksheets. Figures are cropped from the publicly available source
 papers rather than redrawn.
@@ -22,7 +23,8 @@ print-oriented editions can be produced from the repository sources.
 - All available official solution material transcribed
 - 385 problems with substantive official solutions
 - 565 figure assets
-- 14 topic-based chapters plus an errata appendix
+- 14 topic-based chapters, an observational-problems chapter, and an errata
+  appendix
 
 The other 17 solution slots contain explanatory notes, not omitted
 transcriptions. For 16 problems, no usable official solution was published or

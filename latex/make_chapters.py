@@ -35,7 +35,12 @@ CHAPTERS = {
     12: "Extragalactic Astrophysics",
     13: "Cosmology",
     14: "Gravitational Waves",
+    15: "Observational Problems",
 }
+
+# Observation rounds are collected in their own chapter rather than filed
+# under the subject chapter the classification TSVs assign them to.
+OBS_CHAPTER = 15
 
 HOSTS = {2007: "Chiang Mai, Thailand", 2008: "Bandung, Indonesia", 2009: "Tehran, Iran",
          2010: "Beijing, China", 2011: "Katowice, Poland", 2012: "Rio de Janeiro, Brazil",
@@ -105,7 +110,8 @@ def main():
     recs = load()
     org = {c: {} for c in CHAPTERS}
     for r in recs:
-        org[r["ch"]].setdefault(r["rnd"], []).append(r)
+        ch = OBS_CHAPTER if r["rnd"].startswith("OBS") else r["ch"]
+        org[ch].setdefault(r["rnd"], []).append(r)
 
     for ch in CHAPTERS:
         # number problems continuously through the chapter, in section order
