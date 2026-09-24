@@ -3396,6 +3396,67 @@ The time of the year that the LMC culminates in Phuket is on 2nd February.
   \hfill[5.0]
 \end{description}
 
+\textbf{Alternative vector solution for parts a) and d) (editorial)}
+
+Both spherical-trigonometry steps of the official solution collapse into
+single dot products if the star is written as a unit vector in the
+observer's horizontal frame. Use the right-handed basis
+$\{\hat{N}, \hat{E}, \hat{Z}\}$ (north, east, zenith). A star at altitude
+$h$ and azimuth $A$ (measured from north through east) is the unit vector
+\[ \hat{n} = (\cos h\cos A,\ \cos h\sin A,\ \sin h)
+   = (-0.1982,\ 0.5756,\ 0.7934). \]
+The celestial pole stands at altitude $\phi$ due north, and the celestial
+equator crosses the meridian due south, so in the same basis
+\[ \hat{P} = (\cos\phi,\ 0,\ \sin\phi), \qquad
+   \hat{Q} = (-\sin\phi,\ 0,\ \cos\phi). \]
+Projecting $\hat{n}$ onto the equatorial triad
+$\{\hat{Q},\, -\hat{E},\, \hat{P}\}$ (hour angle $H$ increasing westward)
+gives the star's equatorial components:
+\[ \hat{n}\cdot\hat{P} = \sin\delta, \qquad
+   \hat{n}\cdot\hat{E} = -\cos\delta\sin H, \qquad
+   \hat{n}\cdot\hat{Q} = \cos\delta\cos H. \]
+The east axis is shared by the two frames, so the middle relation contains
+no $\phi$, while the pole relation contains no $H$: parts a) and d)
+decouple, each into one scalar equation.
+
+\begin{description}
+\item[a)] From the shared east axis,
+  \[ \sin H = -\frac{\cos h\sin A}{\cos\delta}
+     = -\frac{\cos 52.5^\circ\,\sin 109^\circ}{\cos 8.18^\circ}
+     = -0.5815, \]
+  so $H = -35.56^\circ = -2^{\mathrm{h}}\,22^{\mathrm{min}}$, i.e.\
+  $\mathrm{LHA} = 21^{\mathrm{h}}\,38^{\mathrm{min}}$. The sign (star east
+  of the meridian, still rising) emerges automatically. The residual
+  $\sin$ ambiguity ($H$ vs.\ $-180^\circ - H$) is settled by
+  $\hat{n}\cdot\hat{Q} = 0.198\sin\phi + 0.793\cos\phi > 0$ for any
+  latitude $\phi > -76^\circ$, forcing $\cos H > 0$ and hence
+  $|H| < 90^\circ$.
+
+\item[d)] The pole relation is the latitude equation in one line:
+  \[ \sin\delta = \hat{n}\cdot\hat{P}
+     = \underbrace{\cos h\cos A}_{C}\,\cos\phi
+     + \underbrace{\sin h\vphantom{\cos A}}_{S}\,\sin\phi . \]
+  Rather than squaring (which manufactures the spurious root
+  $\phi = -24.05^\circ$ that the official solution must test against the
+  azimuth and reject), read the right-hand side as a dot product in the
+  meridian plane between the unit vector $(\cos\phi, \sin\phi)$ and the
+  fixed vector $\vec{m} = (C, S) = (-0.1982,\ 0.7934)$:
+  \[ |\vec{m}|\cos(\theta_m - \phi) = \sin\delta, \qquad
+     |\vec{m}| = \sqrt{C^2 + S^2} = 0.8177, \]
+  where $\theta_m = 104.03^\circ$ is the polar angle of $\vec{m}$,
+  measured from $\hat{N}$ toward $\hat{Z}$
+  ($\tan\theta_m = S/C$ with the quadrant fixed by the signs of $C$ and
+  $S$). Then
+  \[ \cos(\theta_m - \phi) = \frac{-0.1423}{0.8177} = -0.1741
+     \quad\Rightarrow\quad \theta_m - \phi = \pm 100.02^\circ, \]
+  giving $\phi = 4.00^\circ$ or $\phi = 204.05^\circ$ (no such latitude).
+  The single admissible root is
+  \[ \phi = 4^\circ 00'\ \mathrm{N}, \]
+  in agreement with the official value ($\sin\phi = 0.0698$). No second
+  root needs to be checked: the squaring step that created it never
+  happened.
+\end{description}
+
 \solhead{1.24}{A Synchronous Satellite}
 % source id: 2017_TH_T5
 \ioaafig[1.0]{2017_TH_T5-s1.pdf}
