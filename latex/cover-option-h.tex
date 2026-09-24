@@ -1,0 +1,77 @@
+% Cover option H: "lunation" -- pale lavender paper, deep plum typography,
+% and one full cycle of moon phases drawn as a quiet row across the middle.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+
+\definecolor{hpaper}{HTML}{F4EEF8}
+\definecolor{hplum}{HTML}{3B2353}
+\definecolor{hmagenta}{HTML}{B23A8F}
+\definecolor{hlit}{HTML}{FDFBFE}
+
+% \moonphase{k}{radius} : phase k = 0..7 (0 new, 4 full), lit side per k.
+\newcommand{\moonphase}[2]{%
+  \fill[hplum] (0,0) circle (#2);
+  \ifnum#1>0
+    \ifnum#1<4
+      % Waxing: lit on the right; terminator x-radius -r*cos(45k).
+      \pgfmathsetmacro{\xr}{-#2*cos(#1*45)}%
+      \fill[hlit] (0,-#2) arc (-90:90:#2)
+        arc (90:270:{\xr} and {#2}) -- cycle;
+    \else
+      \ifnum#1=4
+        \fill[hlit] (0,0) circle (#2);
+      \else
+        % Waning: lit on the left.
+        \pgfmathsetmacro{\xr}{#2*cos((#1-4)*45)}%
+        \fill[hlit] (0,#2) arc (90:270:#2)
+          arc (270:450:{\xr} and {#2}) -- cycle;
+      \fi
+    \fi
+  \fi
+  \draw[hplum,line width=0.8pt] (0,0) circle (#2);}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[hpaper] (current page.south west) rectangle (current page.north east);
+
+  \begin{scope}[shift={(current page.south west)}]
+    % One lunation, new moon to waning crescent.
+    \foreach \k in {0,...,7}{
+      \begin{scope}[shift={(2.85+\k*2.19,14.4)}]
+        \moonphase{\k}{0.82}
+      \end{scope}
+    }
+    % Day ticks beneath, like a calendar strip.
+    \foreach \k/\lbl in {0/0,2/7.4,4/14.8,6/22.1}{
+      \draw[hmagenta,line width=0.8pt]
+        (2.85+\k*2.19,13.1) -- (2.85+\k*2.19,12.85);
+      \node[hmagenta,font=\footnotesize\sffamily] at (2.85+\k*2.19,12.5)
+        {\lbl$^{\mathrm{d}}$};
+    }
+    \draw[hplum,opacity=0.35,line width=0.5pt] (2.85,12.975) -- (18.18,12.975);
+  \end{scope}
+
+  % ---------------- title block ----------------
+  \begin{scope}[shift={(current page.north west)}]
+    \node[anchor=west,hmagenta,font=\small\sffamily\scshape] at (2.2,-3.1)
+      {International Olympiad on Astronomy \& Astrophysics};
+    \draw[hmagenta,line width=1.6pt] (2.24,-3.75) -- (7.0,-3.75);
+    \node[anchor=west,hplum,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-5.4) {IOAA};
+    \node[anchor=west,hplum,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-7.0) {Problem Book};
+    \node[anchor=west,hplum,font=\large\sffamily,align=left] at (2.2,-9.4)
+      {Problems and available official solutions\\ organized by topic};
+    \node[anchor=west,hmagenta,font=\LARGE\sffamily\bfseries] at (2.2,-11.4)
+      {2007--2025};
+  \end{scope}
+  \node[anchor=west,hplum,font=\normalsize\sffamily]
+    at ($(current page.south west)+(2.2,2.0)$)
+    {Compiled and edited by Ioana A.~Zelko};
+\end{tikzpicture}
+\end{document}

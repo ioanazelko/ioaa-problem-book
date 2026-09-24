@@ -1,0 +1,82 @@
+% Cover option L: "rotation curve" -- dusk style; a spiral galaxy's flat
+% rotation curve vs. the falling Keplerian prediction, the gap labeled as
+% dark matter.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+
+\definecolor{gtop}{HTML}{170D2B}
+\definecolor{gbottom}{HTML}{51285F}
+\definecolor{gpink}{HTML}{F48FC0}
+\definecolor{gmagenta}{HTML}{E0559E}
+\definecolor{glav}{HTML}{CBB4DD}
+\definecolor{gwhite}{HTML}{F8F3FB}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+  \shade[top color=gtop,bottom color=gbottom]
+    (current page.south west) rectangle (current page.north east);
+
+  \begin{scope}[shift={(current page.south west)}]
+    \begin{scope}[shift={(2.8,5.2)}]
+      % Faint axes.
+      \draw[glav,opacity=0.35,line width=0.5pt,
+            dash pattern=on 1.6pt off 2.2pt,-stealth] (-0.3,0) -- (16.4,0);
+      \draw[glav,opacity=0.35,line width=0.5pt,
+            dash pattern=on 1.6pt off 2.2pt,-stealth] (0,-0.3) -- (0,8.4);
+      \node[glav,opacity=0.7,font=\footnotesize\sffamily]
+        at (14.4,-0.55) {distance from centre};
+      \node[glav,opacity=0.7,font=\footnotesize\sffamily,rotate=90]
+        at (-0.5,6.6) {orbital speed};
+      % A little edge-on galaxy at the origin.
+      \fill[glav,opacity=0.6] (0.45,0.5) ellipse (0.62 and 0.13);
+      \fill[gwhite] (0.45,0.5) circle (0.09);
+      % Keplerian expectation from the visible matter, falling away.
+      \draw[glav,opacity=0.6,line width=0.8pt,smooth,
+            dash pattern=on 2.4pt off 2.6pt]
+        plot[domain=3.0:15.6,samples=90] (\x,{9.35/sqrt(\x)});
+      \node[glav,font=\footnotesize\sffamily,anchor=west] at (11.9,1.95)
+        {visible matter alone};
+      % The observed curve: climbs, then stays flat (with mild wiggles).
+      \draw[gpink,line width=1.3pt,smooth]
+        plot[domain=0.02:15.6,samples=140]
+        (\x,{6.3*\x/sqrt(\x*\x+3.24) + 0.1*sin(\x*80)});
+      % The gap is the point of the plot.
+      \draw[gmagenta,line width=0.8pt,stealth-stealth]
+        (13.6,{9.35/sqrt(13.6)+0.18}) -- (13.6,{6.3*13.6/sqrt(13.6*13.6+3.24)
+          + 0.1*sin(13.6*80) - 0.18});
+      \node[gmagenta,font=\footnotesize\sffamily,anchor=west] at (13.85,4.35)
+        {dark matter};
+      % Observed marker, glowing; a white dot on the Keplerian curve.
+      \pgfmathsetmacro{\vo}{6.3*11.0/sqrt(11.0*11.0+3.24)+0.1*sin(11.0*80)}
+      \fill[gmagenta,opacity=0.22] (11.0,\vo) circle (0.62);
+      \fill[gmagenta,opacity=0.4] (11.0,\vo) circle (0.4);
+      \fill[gpink] (11.0,\vo) circle (0.22);
+      \node[gpink,font=\footnotesize\sffamily] at (11.0,\vo+0.75) {observed};
+      \fill[gwhite] (8.0,{9.35/sqrt(8.0)}) circle (2.6pt);
+    \end{scope}
+  \end{scope}
+
+  % ---------------- title block, left ----------------
+  \begin{scope}[shift={(current page.north west)}]
+    \node[anchor=west,gpink,font=\small\sffamily\scshape] at (2.2,-3.1)
+      {International Olympiad on Astronomy \& Astrophysics};
+    \draw[gmagenta,line width=1.6pt] (2.24,-3.75) -- (7.0,-3.75);
+    \node[anchor=west,gwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-5.4) {IOAA};
+    \node[anchor=west,gwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-7.0) {Problem Book};
+    \node[anchor=west,glav,font=\large\sffamily,align=left] at (2.2,-9.4)
+      {Problems and available official solutions\\ organized by topic};
+    \node[anchor=west,gpink,font=\LARGE\sffamily\bfseries] at (2.2,-11.4)
+      {2007--2025};
+  \end{scope}
+  \node[anchor=west,glav,font=\normalsize\sffamily]
+    at ($(current page.south west)+(2.2,2.0)$)
+    {Compiled and edited by Ioana A.~Zelko};
+\end{tikzpicture}
+\end{document}

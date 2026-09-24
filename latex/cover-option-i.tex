@@ -1,0 +1,66 @@
+% Cover option I: "pulsar" -- stacked pulse profiles in hot pink on deep
+% violet (an homage to the PSR B1919+21 plot), each trace occluding the ones
+% behind it.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+
+\definecolor{ibg}{HTML}{1A0E2B}
+\definecolor{ipink}{HTML}{FF6FAE}
+\definecolor{ilav}{HTML}{CDB8DF}
+\definecolor{iwhite}{HTML}{F6F0FA}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[ibg] (current page.south west) rectangle (current page.north east);
+
+  \begin{scope}[shift={(current page.south west)}]
+    \begin{scope}
+      \clip (4.2,3.9) rectangle (17.4,19.5);
+      \pgfmathsetseed{19191921}
+      \foreach \i in {0,...,37}{
+        \pgfmathsetmacro{\yb}{16.4-\i*0.315}
+        \pgfmathsetmacro{\pa}{0.45+1.95*rnd}
+        \pgfmathsetmacro{\pb}{0.25+0.95*rnd}
+        \pgfmathsetmacro{\ca}{10.3+0.9*rnd}
+        \pgfmathsetmacro{\cb}{9.5+1.7*rnd}
+        % Occlude what lies behind, then stroke the profile.
+        \fill[ibg]
+          plot[domain=4.8:16.8,samples=110,smooth]
+            (\x,{\yb + \pa*exp(-(\x-\ca)^2/0.32) + \pb*exp(-(\x-\cb)^2/1.15)
+                 + 0.055*rnd})
+          -- (16.8,\yb-7) -- (4.8,\yb-7) -- cycle;
+        \draw[ipink,line width=0.85pt]
+          plot[domain=4.8:16.8,samples=110,smooth]
+            (\x,{\yb + \pa*exp(-(\x-\ca)^2/0.32) + \pb*exp(-(\x-\cb)^2/1.15)
+                 + 0.055*rnd});
+      }
+    \end{scope}
+    \node[ipink,opacity=0.75,font=\footnotesize\sffamily,anchor=east]
+      at (17.4,3.35) {PSR B1919+21 $\cdot$ $P=1.337\,\mathrm{s}$};
+  \end{scope}
+
+  % ---------------- title block ----------------
+  \begin{scope}[shift={(current page.north west)}]
+    \node[anchor=west,ipink,font=\small\sffamily\scshape] at (2.2,-3.1)
+      {International Olympiad on Astronomy \& Astrophysics};
+    \draw[ipink,line width=1.6pt] (2.24,-3.75) -- (7.0,-3.75);
+    \node[anchor=west,iwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-5.4) {IOAA};
+    \node[anchor=west,iwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-7.0) {Problem Book};
+  \end{scope}
+  \begin{scope}[shift={(current page.south west)}]
+    \node[anchor=west,ilav,font=\large\sffamily,align=left] at (2.2,3.6)
+      {Problems and available official solutions organized by topic};
+    \node[anchor=west,ipink,font=\LARGE\sffamily\bfseries] at (2.2,2.7)
+      {2007--2025};
+    \node[anchor=west,ilav,font=\normalsize\sffamily] at (2.2,1.7)
+      {Compiled and edited by Ioana A.~Zelko};
+  \end{scope}
+\end{tikzpicture}
+\end{document}

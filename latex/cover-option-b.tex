@@ -1,0 +1,109 @@
+% Cover option B: centered celestial-ring design.
+\definecolor{ringblack}{HTML}{040B13}
+\definecolor{ringnavy}{HTML}{0A1E31}
+\definecolor{ringblue}{HTML}{71CDE3}
+\definecolor{ringgold}{HTML}{E8C873}
+\definecolor{ringwhite}{HTML}{F5F7F7}
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \begin{tikzpicture}[remember picture,overlay]
+    \shade[top color=ringnavy,bottom color=ringblack]
+      (current page.south west) rectangle (current page.north east);
+
+    % A celestial instrument ring frames the title.
+    \coordinate (ringcenter) at ($(current page.north)+(0,-9.2cm)$);
+    \draw[ringgold,opacity=0.70,line width=1.2pt]
+      (ringcenter) circle (4.55cm);
+    \draw[ringblue,opacity=0.22,line width=0.6pt]
+      (ringcenter) circle (3.95cm);
+    \draw[ringblue,opacity=0.12,line width=0.5pt]
+      (ringcenter) circle (5.25cm);
+    \foreach \angle in {0,30,...,330} {
+      \draw[ringgold,opacity=0.38,line width=0.55pt]
+        ($(ringcenter)+(\angle:4.42cm)$) --
+        ($(ringcenter)+(\angle:4.68cm)$);
+    }
+    \draw[ringblue,opacity=0.13,line width=0.55pt]
+      ($(ringcenter)+(-5.9cm,0)$) -- ($(ringcenter)+(5.9cm,0)$);
+    \draw[ringblue,opacity=0.13,line width=0.55pt]
+      ($(ringcenter)+(0,-5.9cm)$) -- ($(ringcenter)+(0,5.9cm)$);
+
+    % Sparse fixed stars.
+    \foreach \x/\y/\size/\tone in {
+      1.1/1.5/0.6/ringwhite, 3.4/2.8/0.5/ringblue,
+      6.0/1.2/0.5/ringgold, 9.2/2.4/0.7/ringwhite,
+      12.7/1.4/0.5/ringblue, 16.3/2.9/0.6/ringwhite,
+      19.3/1.5/0.5/ringgold, 1.8/5.7/0.5/ringblue,
+      5.1/6.5/0.7/ringwhite, 15.7/5.8/0.5/ringgold,
+      18.5/7.0/0.7/ringwhite, 2.2/10.2/0.5/ringwhite,
+      18.9/11.3/0.5/ringblue, 1.0/14.0/0.5/ringgold,
+      19.6/15.3/0.6/ringwhite, 2.9/18.3/0.6/ringblue,
+      17.6/19.0/0.5/ringwhite, 1.4/22.6/0.5/ringwhite,
+      5.0/24.2/0.5/ringgold, 15.9/23.0/0.6/ringblue,
+      19.0/25.5/0.6/ringwhite, 2.0/27.8/0.5/ringblue,
+      8.1/28.9/0.7/ringwhite, 13.3/27.4/0.5/ringgold} {
+      \fill[\tone,opacity=0.82]
+        ($(current page.south west)+(\x cm,\y cm)$)
+        circle (\size pt);
+    }
+
+    \node[
+      anchor=north,
+      text=ringblue,
+      font=\sffamily\small
+    ] at ($(current page.north)+(0,-2.2cm)$) {%
+      \MakeUppercase{International Olympiad on Astronomy \& Astrophysics}%
+    };
+
+    \node[
+      anchor=center,
+      align=center,
+      text=ringgold
+    ] at ($(current page.north)+(0,-7.55cm)$) {%
+      \sffamily\bfseries\fontsize{43}{48}\selectfont IOAA
+    };
+    \node[
+      anchor=center,
+      align=center,
+      text=ringwhite
+    ] at ($(current page.north)+(0,-10.15cm)$) {%
+      \sffamily\bfseries\fontsize{31}{36}\selectfont Problem Book
+    };
+
+    \node[
+      anchor=north,
+      align=center,
+      text=ringwhite,
+      text width=12.5cm
+    ] at ($(current page.north)+(0,-14.20cm)$) {%
+      \sffamily\fontsize{14}{19}\selectfont
+      Problems and available official solutions\\organized by topic
+    };
+
+    \draw[ringgold,opacity=0.85,line width=0.9pt]
+      ($(current page.north)+( -1.7cm,-17.15cm)$) --
+      ($(current page.north)+(  1.7cm,-17.15cm)$);
+    \node[
+      anchor=north,
+      text=ringgold,
+      font=\sffamily\bfseries\fontsize{18}{22}\selectfont
+    ] at ($(current page.north)+(0,-17.55cm)$) {2007--2025};
+
+    % Broad orbital horizon at the foot of the page.
+    \coordinate (horizon) at ($(current page.south)+(0,-5.8cm)$);
+    \foreach \radius in {7.8,9.6,11.5} {
+      \draw[ringblue,opacity=0.13,line width=0.65pt]
+        (horizon) circle (\radius cm);
+    }
+
+    \node[
+      anchor=south,
+      text=ringwhite,
+      font=\sffamily\large
+    ] at ($(current page.south)+(0,2.25cm)$) {%
+      Compiled and edited by Ioana A. Zelko
+    };
+  \end{tikzpicture}
+  \null%
+\end{titlepage}

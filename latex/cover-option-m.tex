@@ -1,0 +1,79 @@
+% Cover option M: "harmony of the worlds" -- dusk style; Kepler's third law
+% as a log-log line with the eight planets strung along it, Earth glowing.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+
+\definecolor{gtop}{HTML}{170D2B}
+\definecolor{gbottom}{HTML}{51285F}
+\definecolor{gpink}{HTML}{F48FC0}
+\definecolor{gmagenta}{HTML}{E0559E}
+\definecolor{glav}{HTML}{CBB4DD}
+\definecolor{gwhite}{HTML}{F8F3FB}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+  \shade[top color=gtop,bottom color=gbottom]
+    (current page.south west) rectangle (current page.north east);
+
+  \begin{scope}[shift={(current page.south west)}]
+    % x = 7.2*(log10 a + 0.5), y = 4.0*(log10 T + 0.7); slope 3/2 in log-log.
+    \begin{scope}[shift={(2.9,4.6)}]
+      % Faint axes.
+      \draw[glav,opacity=0.35,line width=0.5pt,
+            dash pattern=on 1.6pt off 2.2pt,-stealth] (-0.4,0) -- (16.4,0);
+      \draw[glav,opacity=0.35,line width=0.5pt,
+            dash pattern=on 1.6pt off 2.2pt,-stealth] (0,-0.4) -- (0,13.6);
+      \node[glav,opacity=0.7,font=\footnotesize\sffamily]
+        at (13.9,-0.6) {semi-major axis (log)};
+      \node[glav,opacity=0.7,font=\footnotesize\sffamily,rotate=90]
+        at (-0.5,11.3) {orbital period (log)};
+      % The law itself.
+      \draw[gpink,line width=1.3pt] (-0.1,-0.281) -- (15.3,12.556);
+      \node[glav,font=\footnotesize\sffamily,anchor=west] at (10.4,6.6)
+        {$T^{2}\propto a^{3}$};
+      % Planets along the line.
+      \foreach \px/\py/\plbl/\ha/\dx/\dy in {
+        0.631/0.328/Mercury/west/0.3/-0.3,
+        2.585/1.956/Venus/west/0.3/-0.3,
+        4.918/3.898/Mars/west/0.3/-0.3,
+        8.757/7.096/Jupiter/west/0.3/-0.3,
+        10.650/8.677/Saturn/west/0.3/-0.3,
+        12.840/10.500/Uranus/east/-0.3/0.3,
+        14.240/11.670/Neptune/east/-0.3/0.3}{
+        \fill[gwhite] (\px,\py) circle (2.6pt);
+        \node[glav,font=\footnotesize\sffamily,anchor=\ha]
+          at ({\px+\dx},{\py+\dy}) {\plbl};
+      }
+      % Earth, glowing.
+      \fill[gmagenta,opacity=0.22] (3.6,2.8) circle (0.62);
+      \fill[gmagenta,opacity=0.4] (3.6,2.8) circle (0.4);
+      \fill[gpink] (3.6,2.8) circle (0.22);
+      \node[gpink,font=\footnotesize\sffamily,anchor=west] at (4.05,2.45)
+        {Earth};
+    \end{scope}
+  \end{scope}
+
+  % ---------------- title block, left ----------------
+  \begin{scope}[shift={(current page.north west)}]
+    \node[anchor=west,gpink,font=\small\sffamily\scshape] at (2.2,-3.1)
+      {International Olympiad on Astronomy \& Astrophysics};
+    \draw[gmagenta,line width=1.6pt] (2.24,-3.75) -- (7.0,-3.75);
+    \node[anchor=west,gwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-5.4) {IOAA};
+    \node[anchor=west,gwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-7.0) {Problem Book};
+    \node[anchor=west,glav,font=\large\sffamily,align=left] at (2.2,-9.4)
+      {Problems and available official solutions\\ organized by topic};
+    \node[anchor=west,gpink,font=\LARGE\sffamily\bfseries] at (2.2,-11.4)
+      {2007--2025};
+  \end{scope}
+  \node[anchor=west,glav,font=\normalsize\sffamily]
+    at ($(current page.south west)+(2.2,2.0)$)
+    {Compiled and edited by Ioana A.~Zelko};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,105 @@
+% Cover option C: light astronomical-atlas design.
+\definecolor{atlaspaper}{HTML}{F2EFE6}
+\definecolor{atlasnavy}{HTML}{102B40}
+\definecolor{atlasblue}{HTML}{397D98}
+\definecolor{atlasgold}{HTML}{B88932}
+\definecolor{atlasgray}{HTML}{52616A}
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[atlaspaper]
+      (current page.south west) rectangle (current page.north east);
+    \fill[atlasnavy]
+      (current page.south west) rectangle
+      ($(current page.north west)+(1.15cm,0)$);
+
+    % Cropped astronomical chart in the upper-right corner.
+    \coordinate (chartcenter) at
+      ($(current page.north east)+(-0.8cm,-1.0cm)$);
+    \foreach \radius in {2.2,3.8,5.5,7.3,9.2} {
+      \draw[atlasblue,opacity=0.24,line width=0.65pt]
+        (chartcenter) circle (\radius cm);
+    }
+    \foreach \angle in {185,200,215,230,245,260} {
+      \draw[atlasblue,opacity=0.20,line width=0.55pt]
+        (chartcenter) -- ++(\angle:10.5cm);
+    }
+    \fill[atlasgold]
+      ($(chartcenter)+(214:5.5cm)$) circle (2.2pt);
+    \fill[atlasblue]
+      ($(chartcenter)+(236:7.3cm)$) circle (1.8pt);
+
+    % A fine editorial rule organizes the text block.
+    \draw[atlasgold,line width=1.2pt]
+      ($(current page.north west)+(3.05cm,-5.65cm)$) --
+      ($(current page.north west)+(3.05cm,-18.25cm)$);
+
+    \node[
+      anchor=north west,
+      text=atlasblue,
+      font=\sffamily\small,
+      text width=13.8cm
+    ] at ($(current page.north west)+(3.55cm,-3.15cm)$) {%
+      \MakeUppercase{International Olympiad on Astronomy \& Astrophysics}%
+    };
+
+    \node[
+      anchor=north west,
+      align=left,
+      text=atlasnavy,
+      text width=15.0cm
+    ] at ($(current page.north west)+(3.48cm,-6.15cm)$) {%
+      \sffamily\bfseries\fontsize{41}{47}\selectfont
+      IOAA\\[0.19em]Problem Book
+    };
+
+    \node[
+      anchor=north west,
+      align=left,
+      text=atlasgray,
+      text width=13.7cm
+    ] at ($(current page.north west)+(3.55cm,-12.35cm)$) {%
+      \sffamily\fontsize{15}{20}\selectfont
+      Problems and available official solutions\\organized by topic
+    };
+
+    \node[
+      anchor=west,
+      draw=atlasblue,
+      line width=0.8pt,
+      inner xsep=12pt,
+      inner ysep=7pt,
+      text=atlasnavy,
+      font=\sffamily\bfseries\fontsize{17}{21}\selectfont
+    ] at ($(current page.north west)+(3.55cm,-17.25cm)$) {2007--2025};
+
+    % Constellation motif in the lower half.
+    \coordinate (aOne) at ($(current page.south west)+(4.0cm,7.3cm)$);
+    \coordinate (aTwo) at ($(current page.south west)+(7.0cm,8.9cm)$);
+    \coordinate (aThree) at ($(current page.south west)+(10.1cm,7.7cm)$);
+    \coordinate (aFour) at ($(current page.south west)+(13.0cm,9.8cm)$);
+    \coordinate (aFive) at ($(current page.south west)+(16.5cm,8.1cm)$);
+    \draw[atlasblue,opacity=0.48,line width=0.75pt]
+      (aOne) -- (aTwo) -- (aThree) -- (aFour) -- (aFive);
+    \foreach \point/\size in {
+      aOne/1.7,aTwo/2.3,aThree/1.8,aFour/2.1,aFive/1.6} {
+      \fill[atlasgold] (\point) circle (\size pt);
+    }
+    \foreach \x/\y in {
+      3.0/3.0,5.5/5.5,8.6/3.9,11.6/5.7,14.9/4.0,
+      18.3/6.0,3.2/11.4,17.5/12.5,6.2/20.5,15.4/19.0} {
+      \fill[atlasblue,opacity=0.58]
+        ($(current page.south west)+(\x cm,\y cm)$) circle (0.75pt);
+    }
+
+    \node[
+      anchor=south west,
+      text=atlasnavy,
+      font=\sffamily\large
+    ] at ($(current page.south west)+(3.55cm,2.20cm)$) {%
+      Compiled and edited by Ioana A. Zelko
+    };
+  \end{tikzpicture}
+  \null%
+\end{titlepage}

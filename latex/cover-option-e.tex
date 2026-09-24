@@ -1,0 +1,94 @@
+% Cover option E: "HR diagram" -- a data cover. A Hertzsprung-Russell diagram
+% (main sequence, giant branch, white dwarfs) is the artwork; each point is
+% colored by temperature. Charcoal background, no navy, no gold ornament.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+
+\definecolor{echar}{HTML}{111116}
+\definecolor{efog}{HTML}{9BA3AD}
+\definecolor{ewhite}{HTML}{F2F3F5}
+% Temperature bands, hot to cool.
+\definecolor{etempA}{HTML}{9FB8FF}
+\definecolor{etempB}{HTML}{D6E1FF}
+\definecolor{etempC}{HTML}{FFF3E0}
+\definecolor{etempD}{HTML}{FFC98A}
+\definecolor{etempE}{HTML}{FF8E5E}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[echar] (current page.south west) rectangle (current page.north east);
+
+  \begin{scope}[shift={(current page.south west)}]
+    % Plot frame region: x in [2.6,18.6], y in [2.6,17.6].
+    \draw[efog,opacity=0.55,line width=0.6pt] (2.6,2.6) -- (2.6,17.6);
+    \draw[efog,opacity=0.55,line width=0.6pt] (2.6,2.6) -- (18.6,2.6);
+    \foreach \x in {5.8,9.0,12.2,15.4,18.6}
+      \draw[efog,opacity=0.45,line width=0.5pt] (\x,2.6) -- (\x,2.42);
+    \foreach \y in {5.6,8.6,11.6,14.6,17.6}
+      \draw[efog,opacity=0.45,line width=0.5pt] (2.6,\y) -- (2.42,\y);
+    \node[efog,font=\small\sffamily] at (15.6,2.0)
+      {$\longleftarrow$ temperature};
+    \node[efog,font=\small\sffamily,rotate=90] at (2.0,15.2)
+      {luminosity $\longrightarrow$};
+
+    \pgfmathsetseed{20250821}
+    % Main sequence: diagonal from hot-luminous to cool-faint.
+    \foreach \i in {1,...,340}{
+      \pgfmathsetmacro{\s}{rnd}
+      \pgfmathsetmacro{\px}{3.4 + 14.2*\s + 1.5*(rnd-0.5)}
+      \pgfmathsetmacro{\py}{16.6 - 12.6*\s + 1.7*(rnd-0.5)}
+      \pgfmathsetmacro{\pr}{0.028 + 0.05*rnd + 0.05*(1-\s)*rnd}
+      \pgfmathtruncatemacro{\band}{min(4,int((\px-3.4)/14.2*5))}
+      \ifcase\band
+        \fill[etempA,opacity=0.92] (\px,\py) circle (\pr);\or
+        \fill[etempB,opacity=0.92] (\px,\py) circle (\pr);\or
+        \fill[etempC,opacity=0.92] (\px,\py) circle (\pr);\or
+        \fill[etempD,opacity=0.92] (\px,\py) circle (\pr);\else
+        \fill[etempE,opacity=0.92] (\px,\py) circle (\pr);\fi
+    }
+    % Giant branch: cool but luminous, upper right.
+    \foreach \i in {1,...,90}{
+      \pgfmathsetmacro{\px}{12.2 + 5.2*rnd + 0.8*(rnd-0.5)}
+      \pgfmathsetmacro{\py}{13.4 + 3.4*rnd + 0.8*(rnd-0.5)}
+      \pgfmathsetmacro{\pr}{0.06 + 0.075*rnd}
+      \pgfmathtruncatemacro{\band}{min(4,3+int(2*rnd))}
+      \ifcase\band\or\or\or
+        \fill[etempD,opacity=0.9] (\px,\py) circle (\pr);\else
+        \fill[etempE,opacity=0.9] (\px,\py) circle (\pr);\fi
+    }
+    % White dwarfs: hot but faint, lower left.
+    \foreach \i in {1,...,46}{
+      \pgfmathsetmacro{\px}{3.8 + 4.4*rnd}
+      \pgfmathsetmacro{\py}{3.4 + 2.2*rnd}
+      \pgfmathsetmacro{\pr}{0.025 + 0.03*rnd}
+      \fill[etempB,opacity=0.85] (\px,\py) circle (\pr);
+    }
+    % The Sun, singled out on the main sequence.
+    \fill[etempC] (11.05,9.6) circle (3.4pt);
+    \draw[ewhite,line width=0.6pt] (11.05,9.6) circle (6.2pt);
+    \node[ewhite,font=\footnotesize\sffamily,anchor=west] at (11.5,9.95)
+      {Sun};
+  \end{scope}
+
+  % ---------------- title block, top ----------------
+  \begin{scope}[shift={(current page.north west)}]
+    \node[anchor=west,efog,font=\small\sffamily\scshape] at (2.6,-2.6)
+      {International Olympiad on Astronomy \& Astrophysics};
+    \node[anchor=west,ewhite,
+          font=\fontsize{42}{46}\selectfont\sffamily\bfseries]
+      at (2.5,-4.6) {IOAA Problem Book};
+    \node[anchor=west,efog,font=\large\sffamily,align=left] at (2.6,-6.6)
+      {Problems and available official solutions organized by topic};
+    \node[anchor=west,etempD,font=\LARGE\sffamily\bfseries] at (2.6,-8.2)
+      {2007--2025};
+  \end{scope}
+  \node[anchor=west,efog,font=\normalsize\sffamily]
+    at ($(current page.south west)+(2.6,1.4)$)
+    {Compiled and edited by Ioana A.~Zelko};
+\end{tikzpicture}
+\end{document}

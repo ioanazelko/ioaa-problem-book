@@ -1,0 +1,57 @@
+% Cover option F: "eclipse poster" -- flat Swiss-poster minimalism. One big
+% total-eclipse mark (warm disk occulted by a near-black disk, thin corona
+% rings) on warm paper, with oversized typography. No starfield, no gradient.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+
+\definecolor{fpaper}{HTML}{F4EDE0}
+\definecolor{fink}{HTML}{17171D}
+\definecolor{fsun}{HTML}{E8863A}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[fpaper] (current page.south west) rectangle (current page.north east);
+
+  \begin{scope}[shift={(current page.south west)}]
+    % Corona rings.
+    \foreach \r/\o in {6.9/0.5,7.9/0.3,9.1/0.18,10.5/0.1}
+      \draw[fsun,opacity=\o,line width=0.9pt] (11.6,19.4) circle (\r);
+    % Sun disk, then the occulting disk offset to leave a crescent.
+    \fill[fsun] (11.6,19.4) circle (6.0);
+    \fill[fink] (12.35,20.15) circle (5.85);
+    % Short rays off the bright limb.
+    \foreach \a in {195,210,225,240,255}
+      \draw[fsun,line width=0.9pt]
+        (11.6,19.4) ++(\a:6.35) -- ++(\a:0.55);
+  \end{scope}
+
+  % ---------------- typography ----------------
+  \begin{scope}[shift={(current page.south west)}]
+    \node[anchor=west,fink,font=\small\sffamily\scshape] at (2.2,27.9)
+      {International Olympiad on Astronomy \& Astrophysics};
+    \draw[fink,line width=1.4pt] (2.24,27.3) -- (6.4,27.3);
+
+    \node[anchor=south west,fink,
+          font=\fontsize{64}{64}\selectfont\sffamily\bfseries]
+      at (2.05,8.6) {IOAA};
+    \node[anchor=south west,fink,
+          font=\fontsize{44}{46}\selectfont\sffamily\bfseries]
+      at (2.12,6.7) {Problem Book};
+    \node[anchor=west,fink,font=\large\sffamily,align=left] at (2.2,5.3)
+      {Problems and available official solutions organized by topic};
+
+    % Years as a flat chip.
+    \fill[fsun] (2.2,3.4) rectangle (6.15,4.45);
+    \node[fpaper,font=\LARGE\sffamily\bfseries] at (4.175,3.925)
+      {2007--2025};
+
+    \node[anchor=west,fink,font=\normalsize\sffamily] at (2.2,1.9)
+      {Compiled and edited by Ioana A.~Zelko};
+  \end{scope}
+\end{tikzpicture}
+\end{document}

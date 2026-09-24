@@ -1,0 +1,83 @@
+% Cover option K: "blackbody" -- same dusk style as option G; the artwork is
+% a family of Planck spectra at three temperatures with the Wien-displacement
+% locus dashed through their peaks.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+
+\definecolor{gtop}{HTML}{170D2B}
+\definecolor{gbottom}{HTML}{51285F}
+\definecolor{gpink}{HTML}{F48FC0}
+\definecolor{gmagenta}{HTML}{E0559E}
+\definecolor{glav}{HTML}{CBB4DD}
+\definecolor{gwhite}{HTML}{F8F3FB}
+
+% Planck-shaped curve normalized to peak height h at x = xp
+% (Wien-form exponent keeps every intermediate value small for pgf math).
+% \planck{h}{xp}{opacity}{line width}
+\newcommand{\planck}[4]{%
+  \draw[gpink,opacity=#3,line width=#4,smooth]
+    plot[domain=0.85:15.8,samples=170]
+    (\x,{#1*exp(-4.965*#2/\x + 4.965 + 5*ln(#2/\x))});}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+  \shade[top color=gtop,bottom color=gbottom]
+    (current page.south west) rectangle (current page.north east);
+
+  \begin{scope}[shift={(current page.south west)}]
+    \begin{scope}[shift={(2.8,5.0)}]
+      % Faint axes.
+      \draw[glav,opacity=0.35,line width=0.5pt,
+            dash pattern=on 1.6pt off 2.2pt,-stealth] (-0.3,0) -- (16.4,0);
+      \draw[glav,opacity=0.35,line width=0.5pt,
+            dash pattern=on 1.6pt off 2.2pt,-stealth] (0,-0.3) -- (0,8.6);
+      \node[glav,opacity=0.7,font=\footnotesize\sffamily]
+        at (14.9,-0.55) {wavelength};
+      \node[glav,opacity=0.7,font=\footnotesize\sffamily,rotate=90]
+        at (-0.5,7.0) {intensity};
+      % Wien-displacement locus through the peaks.
+      \draw[glav,opacity=0.55,line width=0.7pt,smooth,
+            dash pattern=on 2.4pt off 2.6pt]
+        plot[domain=3.0:12.2,samples=80] (\x,{7.4*(3.6/\x)^1.1});
+      \node[glav,font=\footnotesize\sffamily,anchor=west] at (12.4,1.95)
+        {Wien's law};
+      % The spectra.
+      \planck{7.4}{3.6}{1.0}{1.3pt}
+      \planck{5.0}{5.5}{0.85}{1.1pt}
+      \planck{3.1}{8.2}{0.7}{0.95pt}
+      % Peaks: the hottest glows, the others are dotted white.
+      \fill[gmagenta,opacity=0.22] (3.6,7.4) circle (0.62);
+      \fill[gmagenta,opacity=0.4] (3.6,7.4) circle (0.4);
+      \fill[gpink] (3.6,7.4) circle (0.22);
+      \node[gpink,font=\footnotesize\sffamily] at (4.85,7.75) {8000 K};
+      \fill[gwhite] (5.5,5.0) circle (2.6pt);
+      \node[glav,font=\footnotesize\sffamily] at (6.7,5.35) {6000 K};
+      \fill[gwhite] (8.2,3.1) circle (2.6pt);
+      \node[glav,font=\footnotesize\sffamily] at (9.4,3.45) {4000 K};
+    \end{scope}
+  \end{scope}
+
+  % ---------------- title block, left ----------------
+  \begin{scope}[shift={(current page.north west)}]
+    \node[anchor=west,gpink,font=\small\sffamily\scshape] at (2.2,-3.1)
+      {International Olympiad on Astronomy \& Astrophysics};
+    \draw[gmagenta,line width=1.6pt] (2.24,-3.75) -- (7.0,-3.75);
+    \node[anchor=west,gwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-5.4) {IOAA};
+    \node[anchor=west,gwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-7.0) {Problem Book};
+    \node[anchor=west,glav,font=\large\sffamily,align=left] at (2.2,-9.4)
+      {Problems and available official solutions\\ organized by topic};
+    \node[anchor=west,gpink,font=\LARGE\sffamily\bfseries] at (2.2,-11.4)
+      {2007--2025};
+  \end{scope}
+  \node[anchor=west,glav,font=\normalsize\sffamily]
+    at ($(current page.south west)+(2.2,2.0)$)
+    {Compiled and edited by Ioana A.~Zelko};
+\end{tikzpicture}
+\end{document}

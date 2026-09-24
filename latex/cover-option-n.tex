@@ -1,0 +1,83 @@
+% Cover option N: "gravitational lens" -- dusk style; light from a distant
+% galaxy bends around an unseen dark-matter halo, and the observer sees two
+% apparent images along the incoming directions.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+
+\definecolor{gtop}{HTML}{170D2B}
+\definecolor{gbottom}{HTML}{51285F}
+\definecolor{gpink}{HTML}{F48FC0}
+\definecolor{gmagenta}{HTML}{E0559E}
+\definecolor{glav}{HTML}{CBB4DD}
+\definecolor{gwhite}{HTML}{F8F3FB}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+  \shade[top color=gtop,bottom color=gbottom]
+    (current page.south west) rectangle (current page.north east);
+
+  \begin{scope}[shift={(current page.south west)}]
+    \begin{scope}[shift={(2.8,5.2)}]
+      % Line of sight, blocked view.
+      \draw[glav,opacity=0.35,line width=0.5pt,
+            dash pattern=on 1.6pt off 2.2pt] (0.6,4.2) -- (15.0,4.2);
+      % The unseen halo: dashed, twice.
+      \draw[gmagenta,opacity=0.85,line width=0.8pt,
+            dash pattern=on 2.4pt off 2.6pt] (7.7,4.2) circle (1.7);
+      \draw[gmagenta,opacity=0.35,line width=0.6pt,
+            dash pattern=on 2.4pt off 2.6pt] (7.7,4.2) circle (2.4);
+      \node[gmagenta,font=\footnotesize\sffamily,align=center]
+        at (7.7,3.35) {dark matter\\ halo};
+      % Bent light rays.
+      \draw[gpink,line width=1.3pt,-stealth]
+        (0.6,4.2) .. controls (5.5,6.9) and (10.0,6.9) .. (14.8,4.24);
+      \draw[gpink,line width=1.3pt,-stealth]
+        (0.6,4.2) .. controls (5.5,1.5) and (10.0,1.5) .. (14.8,4.16);
+      % Where the light SEEMS to come from.
+      \draw[glav,opacity=0.55,line width=0.6pt,
+            dash pattern=on 1.6pt off 2.2pt] (15.0,4.2) -- (3.5,10.41);
+      \fill[gwhite] (3.5,10.41) circle (2.6pt);
+      \node[glav,font=\footnotesize\sffamily,anchor=west] at (3.85,10.41)
+        {apparent image};
+      \draw[glav,opacity=0.55,line width=0.6pt,
+            dash pattern=on 1.6pt off 2.2pt] (15.0,4.2) -- (8.0,0.42);
+      \fill[gwhite] (8.0,0.42) circle (2.6pt);
+      \node[glav,font=\footnotesize\sffamily,anchor=west] at (8.35,0.32)
+        {second image};
+      % The source galaxy, glowing.
+      \fill[gmagenta,opacity=0.22] (0.6,4.2) circle (0.62);
+      \fill[gmagenta,opacity=0.4] (0.6,4.2) circle (0.4);
+      \fill[gpink] (0.6,4.2) circle (0.22);
+      \node[gpink,font=\footnotesize\sffamily,anchor=west] at (0.35,5.35)
+        {distant galaxy};
+      % The observer.
+      \fill[gwhite] (15.0,4.2) circle (2.6pt);
+      \node[glav,font=\footnotesize\sffamily,anchor=east] at (14.75,3.6)
+        {observer};
+    \end{scope}
+  \end{scope}
+
+  % ---------------- title block, left ----------------
+  \begin{scope}[shift={(current page.north west)}]
+    \node[anchor=west,gpink,font=\small\sffamily\scshape] at (2.2,-3.1)
+      {International Olympiad on Astronomy \& Astrophysics};
+    \draw[gmagenta,line width=1.6pt] (2.24,-3.75) -- (7.0,-3.75);
+    \node[anchor=west,gwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-5.4) {IOAA};
+    \node[anchor=west,gwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-7.0) {Problem Book};
+    \node[anchor=west,glav,font=\large\sffamily,align=left] at (2.2,-9.4)
+      {Problems and available official solutions\\ organized by topic};
+    \node[anchor=west,gpink,font=\LARGE\sffamily\bfseries] at (2.2,-11.4)
+      {2007--2025};
+  \end{scope}
+  \node[anchor=west,glav,font=\normalsize\sffamily]
+    at ($(current page.south west)+(2.2,2.0)$)
+    {Compiled and edited by Ioana A.~Zelko};
+\end{tikzpicture}
+\end{document}

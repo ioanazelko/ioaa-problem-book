@@ -1,0 +1,80 @@
+% Cover option G: "analemma at dusk" -- violet twilight gradient with the
+% Sun's analemma (equation of time vs. declination) traced in pink, monthly
+% sun positions dotted along the figure-eight.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+
+\definecolor{gtop}{HTML}{170D2B}
+\definecolor{gbottom}{HTML}{51285F}
+\definecolor{gpink}{HTML}{F48FC0}
+\definecolor{gmagenta}{HTML}{E0559E}
+\definecolor{glav}{HTML}{CBB4DD}
+\definecolor{gwhite}{HTML}{F8F3FB}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+  \shade[top color=gtop,bottom color=gbottom]
+    (current page.south west) rectangle (current page.north east);
+
+  \begin{scope}[shift={(current page.south west)}]
+    % Analemma: x = equation of time (min), y = solar declination (deg).
+    \begin{scope}[shift={(14.2,14.6)}]
+      % Faint axes.
+      \draw[glav,opacity=0.35,line width=0.5pt,
+            dash pattern=on 1.6pt off 2.2pt] (0,-9.3) -- (0,9.3);
+      \draw[glav,opacity=0.35,line width=0.5pt,
+            dash pattern=on 1.6pt off 2.2pt] (-5.2,0) -- (5.2,0);
+      \node[glav,opacity=0.7,font=\footnotesize\sffamily,rotate=90]
+        at (-0.45,7.4) {declination};
+      \node[glav,opacity=0.7,font=\footnotesize\sffamily]
+        at (3.8,-0.5) {equation of time};
+      % The curve.
+      \draw[gpink,line width=1.3pt,smooth]
+        plot[domain=0:365,samples=240]
+        ({0.27*(9.87*sin(2*(\x-81)*(360/365)) - 7.53*cos((\x-81)*(360/365))
+           - 1.5*sin((\x-81)*(360/365)))},
+         {0.36*23.44*sin((\x-81)*(360/365))});
+      % Monthly suns.
+      \foreach \d in {15,46,74,105,135,166,196,227,258,288,319,349}{
+        \pgfmathsetmacro{\ax}{0.27*(9.87*sin(2*(\d-81)*(360/365))
+          - 7.53*cos((\d-81)*(360/365)) - 1.5*sin((\d-81)*(360/365)))}
+        \pgfmathsetmacro{\ay}{0.36*23.44*sin((\d-81)*(360/365))}
+        \fill[gwhite] (\ax,\ay) circle (2.6pt);
+      }
+      % The June-solstice sun, glowing.
+      \pgfmathsetmacro{\sx}{0.27*(9.87*sin(2*(172-81)*(360/365))
+        - 7.53*cos((172-81)*(360/365)) - 1.5*sin((172-81)*(360/365)))}
+      \pgfmathsetmacro{\sy}{0.36*23.44*sin((172-81)*(360/365))}
+      \fill[gmagenta,opacity=0.22] (\sx,\sy) circle (0.62);
+      \fill[gmagenta,opacity=0.4] (\sx,\sy) circle (0.4);
+      \fill[gpink] (\sx,\sy) circle (0.22);
+      \node[gpink,font=\footnotesize\sffamily] at ($(\sx,\sy)+(1.15,0.25)$)
+        {June};
+      \node[glav,font=\footnotesize\sffamily] at (1.7,-8.85) {December};
+    \end{scope}
+  \end{scope}
+
+  % ---------------- title block, left ----------------
+  \begin{scope}[shift={(current page.north west)}]
+    \node[anchor=west,gpink,font=\small\sffamily\scshape] at (2.2,-3.1)
+      {International Olympiad on Astronomy \& Astrophysics};
+    \draw[gmagenta,line width=1.6pt] (2.24,-3.75) -- (7.0,-3.75);
+    \node[anchor=west,gwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-5.4) {IOAA};
+    \node[anchor=west,gwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-7.0) {Problem Book};
+    \node[anchor=west,glav,font=\large\sffamily,align=left] at (2.2,-9.4)
+      {Problems and available official solutions\\ organized by topic};
+    \node[anchor=west,gpink,font=\LARGE\sffamily\bfseries] at (2.2,-11.4)
+      {2007--2025};
+  \end{scope}
+  \node[anchor=west,glav,font=\normalsize\sffamily]
+    at ($(current page.south west)+(2.2,2.0)$)
+    {Compiled and edited by Ioana A.~Zelko};
+\end{tikzpicture}
+\end{document}

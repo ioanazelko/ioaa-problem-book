@@ -1,0 +1,130 @@
+% Cover option O: "the evidence for dark matter" -- dusk style; four small
+% panels, one per technique: flat rotation curves, gravitational lensing,
+% colliding clusters (bullet-cluster test), and the cosmic energy budget.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+
+\definecolor{gtop}{HTML}{170D2B}
+\definecolor{gbottom}{HTML}{51285F}
+\definecolor{gpink}{HTML}{F48FC0}
+\definecolor{gmagenta}{HTML}{E0559E}
+\definecolor{glav}{HTML}{CBB4DD}
+\definecolor{gwhite}{HTML}{F8F3FB}
+
+\newcommand{\panelcaption}[1]{%
+  \node[gpink,font=\footnotesize\sffamily\scshape] at (3.25,-0.75) {#1};}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+  \shade[top color=gtop,bottom color=gbottom]
+    (current page.south west) rectangle (current page.north east);
+
+  \begin{scope}[shift={(current page.south west)}]
+    % Board heading.
+    \node[gpink,font=\small\sffamily\scshape] at (10.25,17.7)
+      {the evidence for dark matter};
+
+    % ---------------- P1: flat rotation curves (top left) ----------------
+    \begin{scope}[shift={(2.6,12.6)}]
+      \draw[glav,opacity=0.35,line width=0.5pt,
+            dash pattern=on 1.6pt off 2.2pt,-stealth] (-0.15,0) -- (6.4,0);
+      \draw[glav,opacity=0.35,line width=0.5pt,
+            dash pattern=on 1.6pt off 2.2pt,-stealth] (0,-0.15) -- (0,4.1);
+      \draw[glav,opacity=0.6,line width=0.7pt,smooth,
+            dash pattern=on 2.4pt off 2.6pt]
+        plot[domain=1.5:6.1,samples=60] (\x,{3.135/sqrt(\x)});
+      \draw[gpink,line width=1.2pt,smooth]
+        plot[domain=0.02:6.1,samples=90]
+        (\x,{2.9*\x/sqrt(\x*\x+0.64) + 0.05*sin(\x*150)});
+      \fill[gwhite] (5.0,{2.9*5.0/sqrt(25.0+0.64)+0.05*sin(5.0*150)})
+        circle (2.2pt);
+      \draw[gmagenta,line width=0.7pt,stealth-stealth]
+        (5.6,{3.135/sqrt(5.6)+0.14})
+          -- (5.6,{2.9*5.6/sqrt(5.6*5.6+0.64)+0.05*sin(5.6*150)-0.14});
+      \panelcaption{flat rotation curves}
+    \end{scope}
+
+    % ---------------- P2: gravitational lensing (top right) ----------------
+    \begin{scope}[shift={(11.4,12.6)}]
+      \draw[glav,opacity=0.35,line width=0.5pt,
+            dash pattern=on 1.6pt off 2.2pt] (0.3,2.1) -- (6.2,2.1);
+      \draw[gmagenta,opacity=0.85,line width=0.7pt,
+            dash pattern=on 2.4pt off 2.6pt] (3.25,2.1) circle (0.75);
+      \draw[gpink,line width=1.2pt,-stealth]
+        (0.3,2.1) .. controls (2.2,3.3) and (4.4,3.3) .. (6.1,2.13);
+      \draw[gpink,line width=1.2pt,-stealth]
+        (0.3,2.1) .. controls (2.2,0.9) and (4.4,0.9) .. (6.1,2.07);
+      \fill[gmagenta,opacity=0.22] (0.3,2.1) circle (0.4);
+      \fill[gmagenta,opacity=0.4] (0.3,2.1) circle (0.26);
+      \fill[gpink] (0.3,2.1) circle (0.15);
+      \fill[gwhite] (6.2,2.1) circle (2.2pt);
+      \panelcaption{gravitational lensing}
+    \end{scope}
+
+    % ---------------- P3: colliding clusters (bottom left) ----------------
+    \begin{scope}[shift={(2.6,5.4)}]
+      % Lagging gas, still in the middle.
+      \fill[gpink,opacity=0.28] (2.55,2.1) ellipse (0.62 and 0.5);
+      \fill[gpink,opacity=0.45] (2.55,2.1) ellipse (0.36 and 0.3);
+      \fill[gpink,opacity=0.28] (3.95,2.1) ellipse (0.62 and 0.5);
+      \fill[gpink,opacity=0.45] (3.95,2.1) ellipse (0.36 and 0.3);
+      % Dark matter, passed straight through, leading the gas.
+      \draw[gmagenta,opacity=0.85,line width=0.7pt,
+            dash pattern=on 2.4pt off 2.6pt] (1.4,2.1) ellipse (0.95 and 0.75);
+      \draw[gmagenta,opacity=0.85,line width=0.7pt,
+            dash pattern=on 2.4pt off 2.6pt] (5.1,2.1) ellipse (0.95 and 0.75);
+      \foreach \gx/\gy in {1.1/2.4, 1.6/1.8, 1.3/2.0, 1.75/2.45}
+        \fill[gwhite] (\gx,\gy) circle (1.0pt);
+      \foreach \gx/\gy in {4.8/2.35, 5.3/1.85, 5.0/2.2, 5.45/2.5}
+        \fill[gwhite] (\gx,\gy) circle (1.0pt);
+      \draw[glav,opacity=0.7,line width=0.6pt,-stealth]
+        (1.15,3.15) -- (0.45,3.15);
+      \draw[glav,opacity=0.7,line width=0.6pt,-stealth]
+        (5.35,3.15) -- (6.05,3.15);
+      \panelcaption{colliding clusters}
+    \end{scope}
+
+    % ---------------- P4: the cosmic budget (bottom right) ----------------
+    \begin{scope}[shift={(11.4,5.4)}]
+      % Donut: dark energy 68%, dark matter 27%, ordinary matter 5%.
+      \draw[glav,opacity=0.35,line width=0.4cm]
+        ($(3.25,2.35)+(90:1.3)$) arc (90:-154.8:1.3);
+      \draw[gmagenta,line width=0.4cm]
+        ($(3.25,2.35)+(-154.8:1.3)$) arc (-154.8:-252:1.3);
+      \draw[gpink,line width=0.4cm]
+        ($(3.25,2.35)+(-252:1.3)$) arc (-252:-270:1.3);
+      \node[gmagenta,font=\normalsize\sffamily\bfseries] at (3.25,2.55)
+        {27\,\%};
+      \node[glav,font=\footnotesize\sffamily] at (3.25,1.95) {dark matter};
+      \node[glav,opacity=0.8,font=\footnotesize\sffamily,anchor=west]
+        at (4.95,1.28) {dark energy};
+      \node[glav,opacity=0.8,font=\footnotesize\sffamily] at (2.5,4.15)
+        {ordinary matter};
+      \panelcaption{the cosmic budget}
+    \end{scope}
+  \end{scope}
+
+  % ---------------- title block, left ----------------
+  \begin{scope}[shift={(current page.north west)}]
+    \node[anchor=west,gpink,font=\small\sffamily\scshape] at (2.2,-3.1)
+      {International Olympiad on Astronomy \& Astrophysics};
+    \draw[gmagenta,line width=1.6pt] (2.24,-3.75) -- (7.0,-3.75);
+    \node[anchor=west,gwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-5.4) {IOAA};
+    \node[anchor=west,gwhite,font=\fontsize{40}{44}\selectfont\sffamily\bfseries]
+      at (2.15,-7.0) {Problem Book};
+    \node[anchor=west,glav,font=\large\sffamily,align=left] at (2.2,-9.4)
+      {Problems and available official solutions\\ organized by topic};
+    \node[anchor=west,gpink,font=\LARGE\sffamily\bfseries] at (2.2,-11.4)
+      {2007--2025};
+  \end{scope}
+  \node[anchor=west,glav,font=\normalsize\sffamily]
+    at ($(current page.south west)+(2.2,2.0)$)
+    {Compiled and edited by Ioana A.~Zelko};
+\end{tikzpicture}
+\end{document}
