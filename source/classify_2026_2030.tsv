@@ -1,0 +1,15 @@
+2026	TH	T01	Interstellar Object	10	2	hyperbolic ISO perihelion, equilibrium temperature, light-curve axis ratio	3
+2026	TH	T02	Oscillating Around a Lagrange Point	10	2	L1 position, vertical oscillation period	-
+2026	TH	T03	Stellar Winds Launched Along Magnetic Field Lines	10	7	magnetocentrifugal disk wind, effective potential, launch angle	2
+2026	TH	T04	Great Dimming of Betelgeuse	10	6	dust clump obscuration, optical depth, ejected mass	7
+2026	TH	T05	Primordial Black Holes	10	10	PBH mass at formation time, evaporation	13
+2026	TH	T06	Solar Neutrinos: From Experimental Measurement to Core Temperature Modeling	20	4	Super-Kamiokande event rate, Cherenkov threshold, Gamow sensitivity	7
+2026	TH	T07	Zenith Blind Spot	15	1	altazimuth tracking rate near zenith, blind spot size	5
+2026	TH	T08	Evolved Star Spirals	25	7	AFGL 3068 binary wind spiral, inclination from CO ellipses	8
+2026	TH	T09	Gravitational Lensing and Delay	20	10	Einstein ring NGC 6505, lens mass, Shapiro delay at the Sun	12
+2026	TH	T10	The Chevallier-Polarski-Linder Parametrization for Dynamical Dark Energy	20	13	CPL w(a), dark energy density evolution, E(z)	-
+2026	TH	T11	Physics of Jupiter's Interior	50	3	rock core plus hydrogen polytrope envelope, core erosion mixture	7
+2026	TH	T12	Superluminous Galaxies in the Early Universe	50	12	surface brightness dimming, JWST galaxy, Eddington disk SFR, dynamical mass	13
+2026	DA	D01	Massive Neutron Stars and the Shapiro Time Delay	50	10	Shapiro delay fit, WD and pulsar mass, timing delays	8
+2026	DA	D02	The Nha Trang Expedition	50	1	prism astrolabe timing, refraction, lines of position, latitude	-
+2026	DA	D03	The Mystery of "Little Red Dots"	50	12	SMBH-stellar mass WLS fit, Dehnen profile, TDE Hills mass, survey design	10

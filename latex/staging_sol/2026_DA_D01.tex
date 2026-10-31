@@ -1,0 +1,250 @@
+\medskip\noindent\textbf{Part 1 (26 points): Linear Regression and White Dwarf Mass}
+% sic: the solution file titles Part 1 "Linear Regression and White Dwarf
+% Mass"; the statement calls it "Estimation of White Dwarf Mass"
+
+\begin{description}
+\item[(a)] Define appropriate linearized variables $X$ and $Y$
+  \[
+  X = -\ln(1 - \cos\phi), \qquad Y = \Delta t_{\mathrm{S}}
+  \]
+  \hfill(1 point)
+
+  Table:
+  \begin{center}
+  \begin{tabular}{cccc}
+  \toprule
+  ID & $\phi$ ($^\circ$) & $X$ & $Y$ ($\mu$s) \\
+  \midrule
+  1  & $2.0$   & 7.40 & 18.5 \\
+  2  & $-3.0$  & 6.59 & 17.5 \\
+  3  & $4.0$   & 6.02 & 16.3 \\
+  4  & $-5.0$  & 5.57 & 13.9 \\
+  5  & $6.0$   & 5.21 & 12.8 \\
+  6  & $8.0$   & 4.63 & 12.5 \\
+  7  & $10.0$  & 4.19 & 10.1 \\
+  8  & $-12.0$ & 3.82 & 10.3 \\
+  9  & $15.0$  & 3.38 & 9.3 \\
+  10 & $20.0$  & 2.81 & 6.5 \\
+  11 & $-22.0$ & 2.62 & 5.8 \\
+  12 & $25.0$  & 2.37 & 6.6 \\
+  13 & $30.0$  & 2.01 & 5.0 \\
+  14 & $-35.0$ & 1.71 & 4.7 \\
+  15 & $40.0$  & 1.45 & 3.9 \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  \hfill(3 points)
+
+  \emph{Each correct row is awarded 0.2 points. Slight deviations due to
+  rounding are acceptable.}
+
+\item[(b)]
+% FIGURE NEEDED: 2026_DASOL_D01 crop page 2, Graph D01.1b: hand-drawn scatter
+% plot of Y = Delta t_S (microseconds, 0 to 20) against X = -ln(1 - cos phi)
+% (0 to 8) on graph paper, with error bars and the best-fit straight line
+  Graph D01.1b.
+
+  Graphing:
+  \begin{itemize}
+  \item Clear axis scaling and labels $(X, Y)$. \hfill(1 point)
+  \item Plot correctly the 15 scatter points and their error bars
+    ($\pm 1.5\,\mu\mathrm{s}$) \hfill(6 points)
+  \item Overlaid a reasonable best-fit line on the plot. \hfill(1 point)
+  \end{itemize}
+
+  Summations:
+  \begin{align*}
+  \sum X &= 59.78, & \sum Y &= 153.70\,\mu\mathrm{s} \\
+  \sum X^2 &= 287.05, & \sum XY &= 738.28\,\mu\mathrm{s}
+  \end{align*}
+
+  Coefficients:
+
+  Apply determinant formula:
+  \[
+  \Delta = N\sum X^2 - \left(\sum X\right)^2 = 732.10
+  \]
+  Slope:
+  \[
+  a = \frac{N\sum XY - \sum X \sum Y}{\Delta} \approx 2.58\,\mu\mathrm{s}
+  \]
+  \hfill(2 points)
+
+  Intercept:
+  \[
+  b = \frac{\sum X^2 \sum Y - \sum X \sum XY}{\Delta} \approx -0.02\,\mu\mathrm{s}
+  \]
+  \hfill(2 points)
+
+  Uncertainties:
+
+  Compute:
+  \[
+  \sigma_a = \sigma_t\sqrt{\frac{N}{\Delta}}
+    = 1.5\sqrt{\frac{15}{732.10}} \approx 0.21\,\mu\mathrm{s}
+  \]
+  \hfill(3 points)
+
+  Compute:
+  \[
+  \sigma_b = \sigma_t\sqrt{\frac{\sum X^2}{\Delta}}
+    = 1.5\sqrt{\frac{287.05}{732.10}} \approx 0.94\,\mu\mathrm{s}
+  \]
+  \hfill(3 points)
+
+  Results:
+
+  Using the formulas: $a = 2.58 \pm 0.21\,\mu\mathrm{s}$,
+  $b = 0.0 \pm 0.9\,\mu\mathrm{s}$
+
+  \emph{\underline{Note:} Students can determine $a$, $b$, along with their
+  uncertainties, either by using the formulas for linear regression or from
+  the graph.}
+
+  Using the graph: $a = [2.4, 2.8]$ and $b = [-0.9, 0.9]$
+
+  \hspace*{2em}$\sigma_a = [0.1, 0.3]$ and $\sigma_b = [0.5, 1.5]$
+
+\item[(c)] Mass expression:
+  \[
+  M_{\mathrm{WD}} = \frac{ac^3}{2G}
+  \]
+  \hfill(1 point)
+
+  Substituting the value of $a$ into the equation gives:
+  \[
+  M_{\mathrm{WD}} \approx 5.21 \times 10^{29}\,\mathrm{kg}
+    \approx 0.262\,\mathrm{M}_\odot
+  \]
+  \hfill(1 point)
+
+  Error propagation expression:
+  \[
+  \Delta M_{\mathrm{WD}} = M_{\mathrm{WD}}\frac{\sigma_a}{a}
+  \]
+  \hfill(1 point)
+
+  Final result:
+  \[
+  \Delta M_{\mathrm{WD}} \approx 0.021\,\mathrm{M}_\odot
+  \]
+  \hfill(1 point)
+
+  Conclusion:
+  \[
+  M_{\mathrm{WD}} = 0.262 \pm 0.021\,\mathrm{M}_\odot
+  \]
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (13 points): Binary Dynamics and Error Propagation}
+
+\begin{description}
+\item[(a)] Kepler's 3rd law:
+  \[
+  P_b^2 = \frac{4\pi^2}{G\left(M_{\mathrm{PSR}} + M_{\mathrm{WD}}\right)}
+    \left(a_p + a_{\mathrm{WD}}\right)^3
+  \]
+  \hfill(2 points)
+
+  Center of mass momentum conservation:
+  \[
+  a_{\mathrm{WD}} = a_p\frac{M_{\mathrm{PSR}}}{M_{\mathrm{WD}}}
+  \]
+  \hfill(2 points)
+
+  Substitute $a_{\mathrm{WD}}$ into the above equation and isolate variables
+  to derive the relation:
+  \[
+  f_M = \frac{M_{\mathrm{WD}}^3}{\left(M_{\mathrm{PSR}} + M_{\mathrm{WD}}\right)^2}
+      = \frac{4\pi^2 a_p^3}{G P_b^2} \quad (1)
+  \]
+  \hfill(1 point)
+
+  Computation:
+  \[
+  f_M \approx 5.927 \times 10^{27}\,\mathrm{kg} \approx 0.002975\,\mathrm{M}_\odot
+  \]
+  \hfill(1 point)
+
+\item[(b)] Rearrange (1) to solve for $M_{\mathrm{PSR}}$:
+  \[
+  M_{\mathrm{PSR}} = \sqrt{\frac{M_{\mathrm{WD}}^3}{f_M}} - M_{\mathrm{WD}}
+  \quad (2)
+  \]
+  \hfill(1 point)
+
+  Substitute values to obtain:
+  \[
+  M_{\mathrm{PSR}} \approx 2.20\,\mathrm{M}_\odot
+  \]
+  \hfill(1 point)
+
+  Differentiate both sides of (2) with respect to $M_{\mathrm{WD}}$:
+  \[
+  \frac{\Delta M_{\mathrm{PSR}}}{\Delta M_{\mathrm{WD}}}
+    = \frac{3}{2}\sqrt{\frac{M_{\mathrm{WD}}}{f_M}} - 1 \approx 13.08
+  \]
+  \hfill(2 points)
+
+  Error computation:
+  \[
+  \Delta M_{\mathrm{PSR}} \approx 13.08 \times \Delta M_{\mathrm{WD}}
+    \approx 0.27\,\mathrm{M}_\odot
+  \]
+  \hfill(1 point)
+
+  Conclusion:
+  \[
+  M_{\mathrm{PSR}} = 2.20 \pm 0.27\,\mathrm{M}_\odot
+  \]
+
+\item[(c)] Compute:
+  \[
+  n_\sigma = \frac{M_{\mathrm{PSR}} - M_{\mathrm{limit}}}{\Delta M_{\mathrm{PSR}}}
+    = \frac{2.20 - 2.0}{0.27} = 0.74
+  \]
+  \hfill(1 point)
+
+  Answer: No \hfill(1 point)
+
+  \emph{Since $n_\sigma < 3$, the measurement does not provide sufficient
+  statistical significance to rule out the soft EoS theory.}
+\end{description}
+
+\medskip\noindent\textbf{Part 3 (11 points): Pulse Time of Arrival (TOA): Effect of Multiple Factors}
+
+\begin{description}
+\item[(a)] Classification:
+
+  \emph{Achromatic:} Roemer delay, Shapiro delay
+
+  \emph{Chromatic:} Dispersion measure delay
+
+  \emph{(1 point for each corect answer)} \hfill(3 points)
+  % sic: "corect" as printed
+
+\item[(b.1)] Substitute the values into the given formula:
+  \[
+  \Delta t_{\mathrm{DM}} = K \cdot DM \cdot \frac{1}{f^2}
+  \]
+  \[
+  \Delta t_{\mathrm{DM}} = 4.15 \times 10^3 \times 15 \times \frac{1}{1400^2}
+    \approx 0.032\,\mathrm{s}\ (32\,\mathrm{ms})
+  \]
+  \hfill(1 point)
+
+\item[(b.2)] Based on the problem text and their calculation, the correct
+  order from largest to smallest is: Roemer delay ($\sim 4\,\mathrm{s}$)
+  $>$ Dispersion measure delay ($\sim 32\,\mathrm{ms}$) $>$ Shapiro delay
+  ($\sim 10\,\mu\mathrm{s}$). \hfill(1 point)
+
+\item[(c)] Roemer delay: B \hfill(1 point)
+
+  Dispersion measure delay: E \hfill(1 point)
+
+  Shapiro delay: F \hfill(1 point)
+
+\item[(d.1)] C \hfill(1 point)
+
+\item[(d.2)] B \hfill(2 points)
+\end{description}

@@ -1,0 +1,279 @@
+\noindent\textbf{Part 1 (13 points): Cosmological Surface Brightness Dimming}
+\begin{description}
+\item[(a)] Consider a photon emitted with energy $E_{\mathrm{em}}$. Due to
+  cosmic expansion, the energy received by the observer is redshifted,
+  \[ E_{\mathrm{obs}} = \frac{E_{\mathrm{em}}}{1+z} \]
+  \hfill(2 points)
+
+  Due to cosmological time dilation, an emission time interval
+  $\mathrm{d}t_{\mathrm{em}}$ is observed as $\mathrm{d}t_{\mathrm{obs}}$ at
+  the receiver,
+  \[ \mathrm{d}t_{\mathrm{obs}} = (1+z)\,\mathrm{d}t_{\mathrm{em}} \]
+  \hfill(2 points)
+
+  Combining these two effects, the observed luminosity is attenuated as
+  \[ L_{\mathrm{obs}} = \frac{L}{(1+z)^2} \]
+  By expressing the observed flux $F_{\mathrm{obs}}$ via the comoving distance
+  $D_M$
+  \[ F_{\mathrm{obs}} = \frac{L_{\mathrm{obs}}}{4\pi D_M^2}
+     = \frac{L}{4\pi D_M^2 (1+z)^2} \]
+  \hfill(1 point)
+
+  and then comparing this to the definition
+  \[ F_{\mathrm{obs}} = \frac{L}{4\pi D_L^2} \]
+  we have
+  \[ D_L = D_M (1+z) \]
+  \hfill(1 point)
+
+  The angular size of the object is
+  \[ \theta = \frac{R(1+z)}{D_M} \]
+  \hfill(2 points)
+
+  By definition,
+  \[ \theta = \frac{R}{D_A} \]
+  Therefore,
+  \[ D_A = \frac{D_M}{1+z} \]
+  \hfill(1 point)
+
+  Substituting $D_M = D_A(1+z)$ into the $D_L$ expression yields
+  \[ D_L = D_A (1+z)^2 \]
+  \hfill(1 point)
+
+\item[(b)] To establish the equation for $\Sigma_{\mathrm{obs}}$, we start
+  from the definition
+  \[ \Sigma_{\mathrm{obs}} = \frac{F_{\mathrm{obs}}}{\Omega_{\mathrm{obs}}}
+     = \frac{\dfrac{L}{4\pi D_L^2}}{\dfrac{\pi R^2}{D_A^2}} \]
+  \hfill(1 point)
+
+  By re-arranging the terms, we obtain
+  \[ \Sigma_{\mathrm{obs}} = \frac{L}{\pi R^2} \cdot \frac{D_A^2}{4\pi D_L^2}
+     = \Sigma_{\mathrm{int}} \cdot \frac{D_A^2}{4\pi D_L^2} \]
+  \hfill(1 point)
+
+  Substituting $D_A^2/D_L^2 = 1/(1+z)^4$ into the equation gives us
+  \[ \Sigma_{\mathrm{obs}} = \frac{\Sigma_{\mathrm{int}}}{4\pi(1+z)^4} \]
+  \hfill(1 point)
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (8 points): Dissecting JWST Data}
+
+The intrinsic rest-frame optical flux (dust-corrected) is given by
+\[ F_{\mathrm{opt,int}} = F_{\mathrm{opt,obs}} \cdot 10^{\frac{A_V}{2.5}} \]
+\hfill(1 point)
+
+Substituting $F_{\mathrm{opt,obs}}$ and $A_V$ values into the equation
+provides
+\[ F_{\mathrm{opt,int}} = 5.72 \times 10^{-19} \times 10^{\frac{2.79}{2.5}}
+   = 7.47 \times 10^{-18}\,\mathrm{W\,m^{-2}} \]
+\hfill(1 point)
+
+The intrinsic bolometric flux:
+\[ F_{\mathrm{bol}} = F_{\mathrm{opt,int}} \cdot BC
+   = 7.47 \times 10^{-18} \times 9.26
+   = 6.92 \times 10^{-17}\,\mathrm{W\,m^{-2}} \]
+\hfill(1 point)
+
+In addition, after converting $\theta$ to radians
+\[ \theta_{\mathrm{rad}} = \frac{0.05}{3600} \times \frac{\pi}{180}
+   = 2.424 \times 10^{-7}\,\mathrm{rad} \]
+\hfill(1 point)
+
+we can calculate the observed solid angle by
+\[ \Omega_{\mathrm{obs}} = \pi \theta_{\mathrm{rad}}^2
+   = 1.846 \times 10^{-13}\,\mathrm{sr} \]
+\hfill(1 point)
+
+Therefore,
+\[ \Sigma_{\mathrm{obs\_corr}} = \frac{F_{\mathrm{bol}}}{\Omega_{\mathrm{obs}}}
+   = \frac{6.92 \times 10^{-17}}{1.846 \times 10^{-13}}
+   = 3.75 \times 10^{-4}\,\mathrm{W\,m^{-2}\,sr^{-1}} \]
+\hfill(1 point)
+
+Applying the result from Part 1 gives us $\Sigma_{\mathrm{int}}$ in standard
+SI units as
+\[ \Sigma_{\mathrm{int\_SI}} = 4\pi(1+z)^4 \Sigma_{\mathrm{obs\_corr}} \]
+Since $z = 7.26$, we have $(1+z)^4 \approx 4655.0$. Substituting this value
+into the equation yields
+\[ \Sigma_{\mathrm{int\_SI}} = 4 \times \pi \times 4655.0 \times 3.75 \times 10^{-4}
+   = 21.94\,\mathrm{W\,m^{-2}} \]
+\hfill(1 point)
+
+We use the following conversion factor
+\[ 1\,\mathrm{kpc^2} = (3.086 \times 10^{19}\,\mathrm{m})^2
+   = 9.523 \times 10^{38}\,\mathrm{m^2} \]
+Hence,
+\[ \Sigma_{\mathrm{int}} = \frac{21.94 \times 9.523 \times 10^{38}}{3.828 \times 10^{26}}
+   = 5.46 \times 10^{13}\,\mathrm{L_\odot\,kpc^{-2}} \]
+\hfill(1 point)
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+Half credit lower limit & Full credit range & Half credit upper limit \\
+\midrule
+$5.35 \times 10^{13}\,\mathrm{L_\odot\,kpc^{-2}}$ &
+  \begin{tabular}[t]{@{}c@{}}$5.40 \times 10^{13}$ to\\
+  $5.50 \times 10^{13}\,\mathrm{L_\odot\,kpc^{-2}}$\end{tabular} &
+  $5.55 \times 10^{13}\,\mathrm{L_\odot\,kpc^{-2}}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip\noindent\textbf{Part 3 (18 points): Eddington Dynamical Model for the Star-Forming Disk}
+\begin{description}
+\item[(a)] The Eddington surface luminosity density is
+  \[ \Sigma_{\mathrm{int\_max}} = \frac{L_{\mathrm{Edd}}}{\pi R^2} \]
+  The total radiation force exerted on a dust particle is
+  \[ f = \sigma \frac{\Sigma_{\mathrm{int\_max}}}{c} \]
+  \hfill(2 points)
+
+  where $\sigma$ is the dust cross-section given by
+  \[ \sigma = m_{\mathrm{d}} \kappa_{\mathrm{dust}} \]
+  \hfill(1 point)
+
+  where $m_{\mathrm{d}}$ is the mass of dust particle.
+
+  The acceleration driven by radiation pressure is
+  \[ g_{\mathrm{rad}} = \frac{f}{m_{\mathrm{d}}}
+     = \frac{\kappa_{\mathrm{dust}} \Sigma_{\mathrm{int\_max}}}{c} \]
+  \hfill(1 point)
+
+  Based on the Gauss's gravity theorem, we have
+  \[ 2\pi R^2 g_z = 4\pi G M_{\mathrm{tot}} \]
+  \hfill(1 point)
+
+  where $M_{\mathrm{tot}}$ is the total disk's mass.
+
+  Hence,
+  \[ g_z = 2\pi G \Sigma_{\mathrm{tot}} \]
+  \hfill(1 point)
+
+\item[(b)] Based on the balance between radiation pressure and gravity, we
+  can establish the following critical equilibrium condition
+  \[ g_{\mathrm{rad}} = g_z \]
+  \hfill(1 point)
+  \begin{align*}
+    \Rightarrow \frac{\kappa_{\mathrm{dust}} \Sigma_{\mathrm{int\_max}}}{c}
+      &= 2\pi G \Sigma_{\mathrm{tot}} \\
+    \Rightarrow \Sigma_{\mathrm{int\_max}}
+      &= \frac{2\pi G c \Sigma_{\mathrm{tot}}}{\kappa_{\mathrm{dust}}}
+  \end{align*}
+  \hfill(1 point)
+
+  The Eddington SFR surface density is derived from the Kennicutt scaling
+  law:
+  \[ \Sigma_{\mathrm{Edd}} = \frac{\Sigma_{\mathrm{int\_max}}}{k} \]
+  \hfill(1 point)
+  \[ \Rightarrow \Sigma_{\mathrm{Edd}}
+     = \frac{2\pi G c \Sigma_{\mathrm{tot}}}{k \kappa_{\mathrm{dust}}} \]
+  \hfill(1 point)
+
+  Converting $\Sigma_{\mathrm{tot}}$ to SI units gives us
+  \[ \Sigma_{\mathrm{tot}}
+     = \frac{2.3 \times 10^{10} \times 1.988 \times 10^{30}}{9.523 \times 10^{38}}
+     = 48.01\,\mathrm{kg\,m^{-2}} \]
+  \hfill(0.5 points)
+
+  In SI units, $\Sigma_{\mathrm{int\_max}}$ is calculated by
+  \[ \Sigma_{\mathrm{int\_max}}
+     = \frac{2\pi \times 6.674 \times 10^{-11} \times 2.998 \times 10^{8} \times 48.01}{1.5}
+     = 4.02\,\mathrm{W\,m^{-2}} \]
+  \hfill(1 point)
+
+  Using unit conversion
+  \[ 4.02\,\mathrm{W\,m^{-2}} = 1.00 \times 10^{13}\,\mathrm{L_\odot\,kpc^{-2}} \]
+  \hfill(0.5 points)
+
+  we obtain
+  \[ \Sigma_{\mathrm{Edd}} = \frac{1.00 \times 10^{13}}{10^{10}}
+     = 1000\,\mathrm{M_\odot\,yr^{-1}\,kpc^{-2}} \]
+  \hfill(1 point)
+
+  \begin{center}
+  \begin{tabular}{ccc}
+  \toprule
+  Half credit lower limit & Full credit range & Half credit upper limit \\
+  \midrule
+  980 & 990 to 1010 & 1020 \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+
+\item[(c)] Using $\Sigma_{\mathrm{int}}$ in Part 2 provides
+  \[ \Sigma_{\mathrm{SFR\_actual}} = \frac{\Sigma_{\mathrm{int}}}{k} \]
+  \hfill(1 point)
+  \[ \Sigma_{\mathrm{SFR\_actual}}
+     = \frac{5.46 \times 10^{13}}{1.0 \times 10^{10}}
+     = 5460\,\mathrm{M_\odot\,yr^{-1}\,kpc^{-2}} \]
+  \hfill(1 point)
+
+  We can compare $\Sigma_{\mathrm{SFR\_actual}}$ with $\Sigma_{\mathrm{Edd}}$,
+  \[ \frac{\Sigma_{\mathrm{SFR\_actual}}}{\Sigma_{\mathrm{Edd}}} = 5.46 \]
+  \hfill(1 point)
+
+  \emph{It is clear to see that the actual density vastly exceeds the
+  Eddington limit. The disk is highly super-Eddington.}
+
+  The system is dynamically unstable. \hfill(2 points)
+
+  \emph{If the luminosity were purely stellar in origin, the extreme
+  radiation pressure would immediately unbind the gas and dust, triggering a
+  catastrophic blowout and destroying the disk. Thus, the assumption of a
+  purely starburst-driven luminosity is unphysical/untenable.}
+\end{description}
+
+\medskip\noindent\textbf{Part 4 (11 points): Clues from High-Resolution Spectroscopy}
+\begin{description}
+\item[(a)] Applying the Virial theorem to the broad-line region gives us
+  \[ M = \frac{v^2 R_{\mathrm{em}}}{G} \]
+  \hfill(2 points)
+
+  On that basis, we can convert units and compute
+  \begin{align*}
+    M &= \frac{(3.4 \times 10^6)^2 \times (0.18 \times 3.086 \times 10^{16})}{6.674 \times 10^{-11}}
+       = 9.62 \times 10^{38}\,\mathrm{kg} \\
+    \Rightarrow M &= 4.84 \times 10^{8}\,\mathrm{M}_\odot
+  \end{align*}
+  \hfill(1 point)
+
+  The object is a \textbf{supermassive black hole (C)}. \hfill(1 point)
+
+  \emph{A huge mass of nearly half a billion solar masses confined within a
+  sub-parsec radius ($< 0.2$\,pc) is a definitive signature of a Supermassive
+  Black Hole (SMBH) / Active Galactic Nucleus (AGN).}
+
+\item[(b)] \emph{Spectral analysis reveals a ``highly ionized, intensely
+  hot'' gas phase. Under this extreme thermal and radiation environment, the
+  interstellar dust grains are completely sublimated (destroyed).}
+
+  \emph{Without dust, the radiation pressure now couples solely to free
+  electrons via Thomson scattering. Consequently, the effective opacity
+  $\kappa$ precipitously drops from
+  $\kappa_{dust} = 1.5\,\mathrm{m^2\,kg^{-1}}$ to
+  $\kappa_e = 0.04\,\mathrm{m^2\,kg^{-1}}$.}
+
+  Assume the same optical thick disk model as above
+  \[ L_{\mathrm{Edd}} = \frac{2\pi G M c}{\kappa_{\mathrm{e}}} \]
+  \hfill(2 points)
+  \[ \Sigma_{\mathrm{Edd}} = \frac{2 G M c}{\kappa_{\mathrm{e}} R^2}
+     \approx 37500\,\mathrm{M_\odot\,yr^{-1}\,kpc^{-2}} \]
+  % sic: the printed formula omits the division by k, and 37500 does not
+  % follow from it with R = R_em (that gives about 7.8e9 M_sun/yr/kpc^2);
+  % 37500 is the Part 3b value 1000 scaled by kappa_dust/kappa_e = 37.5,
+  % as the Note below states.
+  \hfill(2 points)
+  \[ \frac{\Sigma_{\mathrm{SFR\_actual}}}{\Sigma_{\mathrm{Edd}}}
+     = \frac{5460}{37500} = 0.15 \]
+  \hfill(1 point)
+
+  \emph{\underline{Note:} The transition to Thomson opacity
+  ($\kappa_{\mathrm{e}}$) increases the medium's threshold for radiation
+  pressure by a factor of $1.5/0.04 = 37.5$. Hence,
+  $\dfrac{\Sigma_{SFR\_actual}}{\Sigma_{Edd}} = \dfrac{5.46}{37.5} = 0.15$.
+  Award full points.}
+
+  Since $\Sigma_{\mathrm{SFR\_actual}} < \Sigma_{\mathrm{Edd}}$, the radiation
+  pressure does not exceed the gravitational pull of the SMBH. The system
+  effectively maintains hydrostatic equilibrium. This system is radiatively
+  stable (YES). \hfill(2 points)
+\end{description}

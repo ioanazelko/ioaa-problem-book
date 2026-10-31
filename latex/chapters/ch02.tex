@@ -919,9 +919,58 @@ and physical or mathematical constants.
   from the star, how long will it now take for it to collide with the star?
 \end{description}
 
+\probhead{2.44}{Interstellar Object}{2026}{Hanoi, Vietnam}{TH T01}{10}
+% source id: 2026_TH_T01   tag: hyperbolic ISO perihelion, equilibrium temperature, light-curve axis ratio
+An interstellar object (ISO) enters the solar system on a hyperbolic orbit.
+The distance from the Sun to the asymptote of the ISO's trajectory (impact
+parameter) is $p = 1.00\,\mathrm{au}$, and the ISO has an asymptotic speed
+$V_\infty = 26\,\mathrm{km\,s^{-1}}$ in the solar reference frame.
+
+\begin{description}
+\item[(a)] (5 points) Determine the perihelion distance $r_p$ of the ISO (in
+  meters).
+\item[(b)] (2 points) Calculate the equilibrium surface temperature $T$ of
+  the object at perihelion, assuming that the ISO is spherical, fast rotating,
+  and has an ideal blackbody surface composed of water ice. In space the water
+  ice sublimates at $120\,\mathrm{K}$. Do we expect the water ice on ISO's
+  surface to sublimate? Write YES / NO as the final answer.
+\item[(c)] (3 points) Observations show that the object's apparent magnitude
+  varies periodically with a light-curve peak-to-peak amplitude of
+  $2.0$\,mag due to its spinning, revealing the non-spherical shape of the
+  ISO. Assume that the object is an ellipsoid and the flux is proportional to
+  the projected area during rotation and the ISO is rotating about its minor
+  axis, which is perpendicular to the line-of-sight. Estimate the ratio of the
+  major axis to minor axis of the object, $a/b$.
+\end{description}
+
+\ioaafig{2026_TH_T01-f1.pdf}
+
+\probhead{2.45}{Oscillating Around a Lagrange Point}{2026}{Hanoi, Vietnam}{TH T02}{10}
+% source id: 2026_TH_T02   tag: L1 position, vertical oscillation period
+A binary system, whose masses $m_1$ and $m_2$ are hierarchical,
+$m_1 \gg m_2$, and separated by a distance $R$, circularly orbits its center
+of mass, $C$. The rotating reference frame $Cxyz$ has the $x$-axis pointing
+from $m_1$ to $m_2$ and the $z$-axis oriented with the angular velocity of
+the system, $\vec{\omega}$. A satellite whose mass $m_3$ is much smaller than
+$m_1$, $m_2$ oscillates in the $z$-direction about the Lagrange point $L_1$
+lying on the line segment that connects $m_1$ and $m_2$. Let $\delta_1$ and
+$\delta_2$ be the distances from $C$ to $m_1$ and $L_1$ to $m_2$,
+respectively.
+
+\ioaafig{2026_TH_T02-f1.pdf}
+
+\begin{description}
+\item[(a)] (5 points) Determine $\delta_1$ and $\delta_2$ as functions of
+  $m_1$, $m_2$, and $R$ at the leading order.
+\item[(b)] (3 points) Find the equation of motion of the satellite along the
+  $z$-axis.
+\item[(c)] (2 points) Estimate the period $T$ of small oscillations of the
+  satellite in the $z$-direction for the Earth-Sun system.
+\end{description}
+
 \section*{Data-analysis problems}
 
-\probhead{2.44}{Minor Planet}{2020}{GeCAA (Estonia, remote)}{DA 2}{50}
+\probhead{2.46}{Minor Planet}{2020}{GeCAA (Estonia, remote)}{DA 2}{50}
 % source id: 2020_DA_2   tag: orbit determination, Kepler elements
 Table 1 gives ecliptic longitude ($\lambda$) and parallax ($p$) at different
 times ($t$), for a certain hypothetical minor planet. The baseline for the
@@ -4741,7 +4790,187 @@ correct), grant HALF of the points.
   \hfill(0.5 points)
 \end{description}
 
-\solhead{2.44}{Minor Planet}
+\solhead{2.44}{Interstellar Object}
+% source id: 2026_TH_T01
+\begin{description}
+\item[(a)] Based on the law of conservation of energy, we have
+  \[ \frac{mV_\infty^2}{2} = \frac{mv_p^2}{2} - \frac{GmM_\odot}{r_p}
+     \quad (1) \]
+  \hfill(1 point)
+
+  where $m$ is the mass of the ISO, $r_p$ is the perihelion distance, and
+  $v_p$ is the perihelion velocity. Besides, using the law of conservation of
+  angular momentum gives us
+  \[ mpV_\infty = mr_p v_p \quad (2) \]
+  \hfill(1 point)
+
+  Combining Eq. (1) and Eq. (2) leads to
+  \[ \frac{p^2 V_\infty^2}{r_p^2} - \frac{2GM_\odot}{r_p} - V_\infty^2 = 0
+     \quad (3) \]
+  \hfill(1 point)
+
+  Solving Eq. (3) with $r_p > 0$ provides
+  \[ r_p = \frac{p^2 V_\infty^2}
+                {GM_\odot + \sqrt{G^2 M_\odot^2 + p^2 V_\infty^4}}
+     \quad (4) \]
+  \hfill(1 point)
+
+  Our numerical result is
+  \[ r_p = 5.05 \times 10^{10}\,\mathrm{m} \quad (5) \]
+  \hfill(1 point)
+
+\item[(b)] Let $R_{\mathrm{ISO}}$ be the radius of the ISO. Assuming an ideal
+  blackbody and fast rotation, we have
+  \[ \left(\frac{L_\odot}{4\pi r_p^2}\right)\pi R_{\mathrm{ISO}}^2
+     = 4\pi R_{\mathrm{ISO}}^2 \sigma T^4 \quad (6) \]
+  \hfill(1 point)
+
+  Thus, the equilibrium surface temperature of the ISO is
+  \[ T = \left(\frac{L_\odot}{16\pi\sigma r_p^2}\right)^{\frac{1}{4}}
+       = 4.8 \times 10^2\,\mathrm{K} \quad (7) \]
+  \hfill(0.5 points)
+
+  This value is well above the sublimation temperature of water ice in
+  vacuum, so sublimation is expected if exposed water ice is present.
+  \hfill(0.5 points)
+
+\item[(c)] The magnitude difference $\Delta m$ is related to the flux ratio
+  $F_{\mathrm{max}}/F_{\mathrm{min}}$ by
+  \[ \Delta m = 2.5\log_{10}\left(\frac{F_{\mathrm{max}}}{F_{\mathrm{min}}}\right)
+     \quad (8) \]
+  \hfill(1 point)
+
+  Since the brightness change is entirely due to projected area, we obtain
+  \[ \frac{F_{\mathrm{max}}}{F_{\mathrm{min}}} = \frac{a}{b} \quad (9) \]
+  \hfill(1 point)
+
+  where $a/b$ is the major-to-minor axis ratio. Combining Eqs. (8) and (9)
+  yields
+  \[ \frac{a}{b} = 10^{\Delta m/2.5} = 6.3 \quad (10) \]
+  \hfill(1 point)
+\end{description}
+
+\solhead{2.45}{Oscillating Around a Lagrange Point}
+% source id: 2026_TH_T02
+\begin{description}
+\item[(a)] The center of mass obeys
+  \[ \delta_1 m_1 = (R - \delta_1)m_2 \]
+  \hfill(1 point)
+
+  We rewrite
+  \[ \delta_1 = \frac{m_2}{m_1}\left(1 + \frac{m_2}{m_1}\right)^{-1} R \]
+
+  Using $(1+x)^\alpha \simeq 1 + \alpha x$ for $x = \frac{m_2}{m_1} \ll 1$,
+  we have
+  $\frac{m_2}{m_1}\left(1 + \frac{m_2}{m_1}\right)^{-1}
+   \simeq \frac{m_2}{m_1}\left(1 - \frac{m_2}{m_1}\right)
+   \simeq \frac{m_2}{m_1}$ at the first order. Hence,
+  \[ \delta_1 \simeq \frac{m_2}{m_1} R \]
+  \hfill(1 point)
+
+  In the rotating frame, the net force at $L_1$ includes the gravitational
+  forces, $-Gm_3m_1/(R - \delta_2)^2$ due to $m_1$ and $Gm_3m_2/\delta_2^2$
+  due to $m_2$, and the centrifugal force
+  $m_3\omega^2(R - \delta_1 - \delta_2)$ with
+  $\omega^2 = G(m_1 + m_2)/R^3$ by the Kepler's law, where
+  $CL_1 = R - \delta_1 - \delta_2$. The force balance implies
+  \[ -\frac{Gm_1}{(R - \delta_2)^2} + \frac{Gm_2}{\delta_2^2}
+     + \omega^2(R - \delta_1 - \delta_2) = 0 \]
+  \hfill(1.5 points)
+
+  With the aid of $(1+x)^\alpha \simeq 1 + \alpha x$ and
+  $(1 + x_1)(1 + x_2) \simeq 1 + x_1 + x_2$ for
+  $|x|, |x_1|, |x_2| \ll 1$, we approximate
+  \[ \frac{1}{(R - \delta_2)^2}
+     = \frac{1}{R^2}\left(1 - \frac{\delta_2}{R}\right)^{-2}
+     \simeq \frac{1}{R^2}\left(1 + \frac{2\delta_2}{R}\right) \]
+  and
+  \[ \omega^2(R - \delta_1 - \delta_2)
+     = \frac{Gm_1}{R^2}\left(1 + \frac{m_2}{m_1}\right)
+       \left(1 - \frac{\delta_1}{R} - \frac{\delta_2}{R}\right)
+     \simeq \frac{Gm_1}{R^2}\left(1 - \frac{\delta_2}{R}\right) \]
+  which uses the previous result
+  $\frac{m_2}{m_1} \simeq \frac{\delta_1}{R}$.
+
+  Substituting these approximations into the force balance equation gives
+  \[ \delta_2 \simeq \left(\frac{m_2}{3m_1}\right)^{\frac{1}{3}} R \]
+  \hfill(1.5 points)
+
+  \emph{Note: $\delta_1$ is very smaller than $\delta_2$ even though both
+  are very smaller than $R$. Hence, $\delta_1$ may be neglected when
+  evaluating $\delta_2$. Additionally, the Lagrange point $L_1$ may exist
+  even if the mass hierarchy is large.}
+
+\item[(b)] The satellite moving in the $z$-direction is not acted by the
+  Coriolis and centrifugal forces, since
+  \[ \vec{F}_{\mathrm{Coriolis}} = -2m_3(\vec{\omega} \times \vec{v}) = 0
+     \quad\text{and}\quad
+     (\vec{F}_{\mathrm{cent}})_z
+     = -m_3[\vec{\omega} \times (\vec{\omega} \times \vec{r})]_z = 0 \]
+  \hfill(1 point)
+
+  Hence, the satellite experiences only the gravitational forces due to
+  $m_1$ and $m_2$, projected on the $z$-axis as
+  \[ -Gm_3m_1\frac{z}{\rho_1^3} \quad\text{and}\quad
+     -Gm_3m_2\frac{z}{\rho_2^3} \]
+  \hfill(1 point)
+
+  where $z$ is the $z$-coordinate of the satellite, and the distances
+  between the satellite to two stars are
+  $\rho_1 = \sqrt{(R - \delta_2)^2 + z^2}$ and
+  $\rho_2 = \sqrt{\delta_2^2 + z^2}$.
+
+  We obtain the equation of motion
+  \[ \frac{\mathrm{d}^2 z}{\mathrm{d}t^2}
+     = -Gm_1\frac{z}{\rho_1^3} - Gm_2\frac{z}{\rho_2^3} \]
+  \hfill(1 point)
+
+  where $t$ is the time. The net force acts as a spring force which always
+  pulls the satellite toward $L_1$, implying that the oscillation is stable.
+
+  \emph{Note: If the student does not discuss the Coriolis and Centrifugal
+  forces but giving the correct net force and/or the correct equation of
+  motion, the marks are accordingly added up.}
+
+\item[(c)] The small oscillations of satellite along $z$-direction imply
+  $\rho_1 \simeq R - \delta_2$ and $\rho_2 \simeq \delta_2$, since
+  $|z| \ll \delta_2$. Hence, the oscillation equation is periodic,
+  \[ \frac{\mathrm{d}^2 z}{\mathrm{d}t^2} + \omega_z^2 z = 0 \]
+  with angular frequency,
+  \[ \omega_z = \sqrt{\frac{Gm_1}{(R - \delta_2)^3} + \frac{Gm_2}{\delta_2^3}}
+     \simeq 2\sqrt{\frac{Gm_1}{R^3}} \simeq 2\omega \]
+  \hfill(1 point)
+
+  where we use the approximation
+  $\delta_2 \simeq \left(\frac{m_2}{3m_1}\right)^{\frac{1}{3}} R \ll R$,
+  as obtained.
+
+  We estimate the period of satellite for the Earth-Sun system,
+  \[ T = \frac{2\pi}{\omega_z} \simeq \frac{1}{2}\frac{2\pi}{\omega}
+       = \frac{1}{2}T_{\mathrm{Earth}} \]
+
+  Since the period of the Earth about the Sun is
+  $T_{\mathrm{Earth}} = 1$\,year, we get
+  \[ T \simeq \frac{1}{2}\,\mathrm{year} = 6\,\mathrm{months} \]
+  \hfill(1 point)
+
+  \emph{Note: Alternatively, the student can directly substitute for the
+  Earth-Sun system, using the values
+  $m_2 = m_{\mathrm{Earth}} = 5.972 \times 10^{24}\,\mathrm{kg}$,
+  $m_1 = m_{\mathrm{Sun}} = 1.988 \times 10^{30}\,\mathrm{kg}$,
+  $R = 1\,\mathrm{au} = 1.496 \times 10^{11}\,\mathrm{m}$,
+  $\delta_2 = 1.496 \times 10^9\,\mathrm{m}$, which is beyond the Earth
+  radius, and
+  $G = 6.674 \times 10^{-11}\,\mathrm{m^3\,kg^3/s^2}$.
+  % sic: unit of G printed as m^3 kg^3/s^2; should be m^3 kg^-1 s^-2
+  The period of satellite is
+  \[ T = \frac{2\pi}{\sqrt{\dfrac{Gm_1}{(R - \delta_2)^3}
+                           + \dfrac{Gm_2}{\delta_2^3}}}
+       \simeq \frac{\pi}{\sqrt{\dfrac{Gm_1}{R^3}}}
+       \simeq 6\,\mathrm{months} \]}
+\end{description}
+
+\solhead{2.46}{Minor Planet}
 % source id: 2020_DA_2
 \begin{description}
 \item[(a)] We consider the $\triangle ESP$, the vertices of which are Earth
@@ -4951,3 +5180,4 @@ correct), grant HALF of the points.
   \end{align*}
   \hfill(2.0 points)
 \end{description}
+

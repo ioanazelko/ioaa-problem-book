@@ -1,0 +1,128 @@
+In 1910, the scientist Alexandre Yersin (discoverer of the bubonic plague
+bacillus) established an astronomical observatory on the roof of his house in
+Nha Trang, Vietnam. There, he used a Claude--Driencourt prism astrolabe,
+designed to record the instant at which a star reaches a fixed zenith distance
+($z = 30.0^\circ$). The following data table is inspired by Yersin's
+observations under atmospheric conditions of $T = 27.0\,^\circ\mathrm{C}$ and
+$P = 1011.0\,\mathrm{hPa}$.
+
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+Star & Right Ascension ($\alpha$) & Hour Angle ($H$) & Recorded Time ($T_R$) & Azimuth ($A$) \\
+\midrule
+A & $17^{\mathrm{h}}35^{\mathrm{m}}35.55^{\mathrm{s}}$ & $+2^{\mathrm{h}}02^{\mathrm{m}}08.95^{\mathrm{s}}$ & $19^{\mathrm{h}}36^{\mathrm{m}}53.69^{\mathrm{s}}$ & $285.0^\circ$ \\
+B & $19^{\mathrm{h}}59^{\mathrm{m}}52.48^{\mathrm{s}}$ & $+1^{\mathrm{h}}47^{\mathrm{m}}50.38^{\mathrm{s}}$ & $21^{\mathrm{h}}46^{\mathrm{m}}52.11^{\mathrm{s}}$ & $245.0^\circ$ \\
+C & $01^{\mathrm{h}}39^{\mathrm{m}}52.31^{\mathrm{s}}$ & $-2^{\mathrm{h}}00^{\mathrm{m}}30.38^{\mathrm{s}}$ & $23^{\mathrm{h}}38^{\mathrm{m}}31.61^{\mathrm{s}}$ & $70.0^\circ$ \\
+D & $01^{\mathrm{h}}41^{\mathrm{m}}38.84^{\mathrm{s}}$ & $-1^{\mathrm{h}}37^{\mathrm{m}}13.18^{\mathrm{s}}$ & $00^{\mathrm{h}}03^{\mathrm{m}}35.22^{\mathrm{s}}$ & $125.0^\circ$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\emph{Note: Note that $A$ is measured Eastward from North and $H$ is measured
+Westward from South. For maintaining consistency across the problem, report
+your answers to two decimal places unless otherwise specified.}
+
+\medskip\noindent\textbf{Part 1 (15 points): The Time Problem}
+
+\begin{description}
+\item[(a)] (6 points) Calculate the difference (error) $\Delta T$ between the
+  local sidereal time and the recorded time (clock time) for each star. Then,
+  determine their mean $(\Delta T_{\mathrm{mean}})$ and standard deviation
+  $(\sigma_T)$.
+\item[(b)] (3 points) Calculate the mean of the time differences separately
+  for the West stars $(\Delta T_{\mathrm{W}})$ and East stars
+  $(\Delta T_{\mathrm{E}})$. Determine the discrepancy
+  $\Delta T_{\mathrm{W}} - \Delta T_{\mathrm{E}}$.
+\item[(c)] (6 points) The astrolabe has a systematic zenith-distance error
+  $(\mathrm{d}z)$. Evaluate the uncertainty on the time difference,
+  $\mathrm{d}(\Delta T)$, caused by the astrolabe. Show that by averaging the
+  time differences of the East and West stars the uncertainty caused by the
+  astrolabe can be reduced.
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (3 points): Atmospheric Refraction}
+
+Atmospheric refraction in radians is approximately given by
+\[
+R = \frac{7.888 \times 10^{-5} P}{(273.0 + T)\tan(h)}
+\]
+where $P$ is measured in $\mathrm{hPa}$, $T$ in $^\circ\mathrm{C}$, and $h$ is
+the apparent altitude. Calculate the atmospheric refraction $(R)$ in
+arcseconds and the true zenith distance $(z_{\mathrm{true}})$.
+
+\medskip\noindent\textbf{Part 3 (15 points): Yersin's Lines of Position}
+
+\begin{description}
+\item[(a)] (5 points) Yersin adopted an assumed latitude of his observatory to
+  be $\phi_0 = 12^\circ 15' 00''\,\mathrm{N}$, and an assumed time error
+  $\Delta T_0 = 50\,\mathrm{s}$. To determine how small errors in latitude
+  $(\mathrm{d}\phi)$ and clock time $(\mathrm{d}T)$ affect the observed zenith
+  distance, we start with the spherical law of cosines for the
+  Pole-Zenith-Star (PZS) triangle:
+  \[
+  \cos z = \sin\phi \sin\delta + \cos\phi \cos\delta \cos H \quad (1)
+  \]
+  Taking the differential of this equation with respect to latitude $\phi$ and
+  hour angle $H$ (recognizing that $\mathrm{d}H = -15\cos\phi\,\mathrm{d}T$
+  due to Earth's rotation), show that a change in latitude and time produces a
+  shift in the calculated zenith distance given by:
+  \[
+  \mathrm{d}z = -\sin A \cos\phi\,\mathrm{d}H - \cos A\,\mathrm{d}\phi
+  \]
+  Using the definition of the intercept
+  $p = z_{\mathrm{calc}} - z_{\mathrm{true}} = -\mathrm{d}z$
+  ($z_{\mathrm{calc}}$ is the calculated and $z_{\mathrm{true}}$ the true
+  zenith distances) and defining spatial corrections
+  $x = \cos\phi\,\mathrm{d}H$ (East-West clock correction in arcseconds) and
+  $y = \mathrm{d}\phi$ (North-South latitude correction in arcseconds), the
+  Line of Position (LOP) equation is defined as:
+  \[
+  p = x\sin(A) + y\cos(A)
+  \]
+  Hints: Taking the derivative of equation $(1)$ gives:
+  \[
+  -\sin z\,\mathrm{d}z
+  = (\cos\phi \sin\delta - \sin\phi \cos\delta \cos H)\,\mathrm{d}\phi
+    - (\cos\phi \cos\delta \sin H)\,\mathrm{d}H
+  \]
+\item[(b)] (10 points) After reducing the raw data, the following table is
+  obtained.
+
+  \begin{center}
+  \begin{tabular}{ccc}
+  \toprule
+  Star & Azimuth ($A$) & Intercept ($p$) \\
+  \midrule
+  A & $285.0^\circ$ & $-0.40''$ \\
+  B & $245.0^\circ$ & $-18.77''$ \\
+  C & $70.0^\circ$ & $+18.08''$ \\
+  D & $125.0^\circ$ & $-8.15''$ \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+
+  Plot the four LOPs on $(x, y)$ plane (mark your graph as ``D02.3b'').
+  Graphically determine the center of the common intersection region
+  $(x_0, y_0)$.
+\end{description}
+
+\medskip\noindent\textbf{Part 4 (17 points): Recovering the Location of Yersin Observatory and Error Analytics}
+
+\begin{description}
+\item[(a)] (4 points) Determine the true latitude of the observatory
+  $(\phi_{\mathrm{true}})$ and the true time error $(\Delta T_{\mathrm{true}})$
+  using the time correction $\mathrm{d}T_{\mathrm{corr}} = x_0/(15\cos\phi_0)$
+  (in seconds). Assumed that $\mathrm{d}\phi = \phi_{\mathrm{true}} - \phi_0$.
+\item[(b)] (8 points) Calculate the systematic error $(\mathrm{d}z)$ of the
+  astrolabe (in arcseconds) using the East-West time difference; assuming that
+  the average azimuth for the East stars is $90^\circ$ and the West stars is
+  $270^\circ$.
+\item[(c)] (2 points) Calculate the observation random error
+  $\varepsilon = |x_0\sin(A) + y_0\cos(A) - p_{\mathrm{obs}}|$ for the four
+  stars.
+\item[(d)] (3 points) Calculate the position error $d$ (in meters) between the
+  observer's assumed coordinates and the calculated true position
+  $(x_0, y_0)$. Assume $1''$ of angular distance corresponds to
+  $31\,\mathrm{m}$ on the Earth's surface.
+\end{description}

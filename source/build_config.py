@@ -120,9 +120,10 @@ t14 = ["Lagrange Points", "Sun gravitational catastrophe", "Cosmic radiation",
        "ship orbiting the Sun", "The Vega star in the mirror", "Stars with Romanian names",
        "Apparent magnitude of the Moon", "Absolute magnitude of a cephe"]
 job("2014_th.pdf",
-    [P(f"2014_TH_P{i+1}", rf"^Problem {i+1}\.") for i in range(15)] +
+    [P(f"2014_TH_P{i+1}", rf"^Problem {i+1}\.", **({"stop_rx": r"^THEORETICAL TEST"} if i == 14 else {})) for i in range(15)] +  # P15 stops before the long-problem contents page
     [P("2014_TH_L1", r"^16\.\s*Long problem 1"), P("2014_TH_L2", r"^17\.\s*Long problem 2"),
-     P("2014_TH_L3", r"^18\.\s*Long problem 3")])
+     P("2014_TH_L3", r"^18\.\s*Long problem 3")],
+    start_page=2)  # pp. 1-2 are a contents page and indications; "Problem N." on p. 1 is a TOC entry
 
 job("2014_da.pdf", [P("2014_DA_D1", r"^Problem 1\b.*Black Hole|^Problem 1$"),
                     P("2014_DA_D2", r"^Problem 2\b.*Thermodynamic|^Problem 2$"),
@@ -197,6 +198,13 @@ job("2024_da.pdf", [P("2024_DA_D1", r"^D1\.\s*Photometric comparison"),
 
 job("2025_theory_questions.pdf", [P(f"2025_TH_T{i:02d}", rf"^\(T{i:02d}\)") for i in range(1, 13)])
 job("2025_data_analysis_questions.pdf", [P(f"2025_DA_D{i:02d}", rf"^\(D{i:02d}\)") for i in (1, 2)])
+
+# 2026 Hanoi: headings "T01. Title (10 points)"; pp. 1-5 are instructions, a
+# contents table ("T01 - T05", no period) and the data sheet, so anchor on the
+# label followed by a period and whitespace. Sub-part labels like "D03.1." come
+# after their heading, so sequential anchoring is safe.
+job("2026_th.pdf", [P(f"2026_TH_T{i:02d}", rf"^T{i:02d}\.\s") for i in range(1, 13)])
+job("2026_da.pdf", [P(f"2026_DA_D{i:02d}", rf"^D{i:02d}\.\s") for i in (1, 2, 3)])
 
 # ---------------- SOLUTION PAPERS ----------------
 
@@ -289,6 +297,8 @@ job("2024_da_sol.pdf", [P("2024_DASOL_D1", r"^D1\.\s*Photometric comparison"),
                         P("2024_DASOL_D2", r"^D2\.\s*Shapley Hypothesis")])
 job("2025_theory_solution.pdf", [P(f"2025_THSOL_T{i:02d}", rf"^\(T{i:02d}\)") for i in range(1, 13)])
 job("2025_data_analysis_solutions.pdf", [P(f"2025_DASOL_D{i:02d}", rf"^\(D{i:02d}\)") for i in (1, 2)])
+job("2026_th_sol.pdf", [P(f"2026_THSOL_T{i:02d}", rf"^T{i:02d}\.\s") for i in range(1, 13)])
+job("2026_da_sol.pdf", [P(f"2026_DASOL_D{i:02d}", rf"^D{i:02d}\.\s") for i in (1, 2, 3)])
 
 json.dump(J, open("config_all.json", "w"), indent=1)
 print(f"{len(J)} jobs, {sum(len(j['problems']) for j in J)} snippets")

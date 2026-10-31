@@ -631,9 +631,90 @@ the greatest eclipse.
   the location with the coordinates found in part (d).
 \end{description}
 
+\probhead{3.29}{Physics of Jupiter's Interior}{2026}{Hanoi, Vietnam}{TH T11}{50}
+% source id: 2026_TH_T11   tag: rock core plus hydrogen polytrope envelope, core erosion mixture
+Jupiter is the biggest planet in our Solar System. Its mass and radius are
+$M_J = 1.90 \times 10^{27}\,\mathrm{kg}$ and $R_J = 6.99 \times 10^{7}\,\mathrm{m}$,
+respectively. Herein, we investigate Jupiter's internal structure using a
+simple model. As shown in Figure T11.1, this gas giant is assumed to contain
+two distinct regions: a dense core and a fluid envelope. While the dense core
+is entirely made of rock, the fluid envelope is wholly composed of hydrogen.
+The mass densities of rock $(\rho_Z)$ and hydrogen $(\rho_H)$ are given by
+\[ \rho_Z = \mathrm{const}, \quad \rho_H = \sqrt{\frac{P}{K}} \]
+where $P$ is the hydrostatic pressure and $K$ is the polytropic coefficient.
+The space outside Jupiter is considered an absolute vacuum. The effects of
+self-rotation are neglected to achieve perfect spherical symmetry. These
+approximations enable us to study Jupiter's structural properties via a single
+spatial variable: the distance $r$ from the center $O$.
+
+\ioaafig{2026_TH_T11-f1.pdf}
+
+\medskip\noindent\textbf{Part 1 (23 points):}
+
+Assume that the dense core is not eroded by the fluid envelope. In this case,
+$P$ decreases from $P_O = 7.13 \times 10^{12}\,\mathrm{Pa}$ at the center
+$(r = 0)$ to $P_C = 3.98 \times 10^{12}\,\mathrm{Pa}$ at the core-envelope
+boundary $(r = R_C = 1.05 \times 10^{7}\,\mathrm{m})$. The polytropic
+coefficient of pure hydrogen is
+$K = 2.12 \times 10^{5}\,\mathrm{m^5\,kg^{-1}\,s^{-2}}$.
+
+\begin{description}
+\item[(a)] (6 points) Find the value of $\rho_Z$.
+\item[(b)] (6 points) Since the fluid envelope is equivalent to a simple
+  polytrope $(P \propto \rho_H^2)$, its density depends on the distance as
+  \[ \rho_H = \frac{A}{r}\cos\left(\frac{r}{R} + \varphi\right) \]
+  where $R$ is the characteristic radius, $A$ is the amplitude factor, and
+  $\varphi$ is the phase constant. Given that
+  \[ R = 2.25 \times 10^{7}\,\mathrm{m}, \quad A > 0, \quad
+     -\pi \le \varphi \le \pi \]
+  Determine $A$ and $\varphi$.
+\item[(c)] (8 points) Plot the density and pressure versus the distance for
+  the whole of Jupiter's interior. Each graph must consist of at least six
+  distinct points.
+\item[(d)] (3 points) Calculate the mass of the dense core $M_Z$ and the mass
+  of the fluid envelope $M_H$.
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (27 points):}
+
+Recent studies show that giant planets may undergo core erosion due to the
+high solubility of rock in hydrogen. For Jupiter, this process helps
+redistribute heavy and light materials throughout its interior. When the dense
+core disappears, Jupiter becomes an ideal mixture of rock and hydrogen at
+equilibrium. Neglect all possible chemical reactions. For a given position
+inside Jupiter, the mass fraction of rock $Z$ is defined by
+\[ Z = \frac{\mathrm{d}m_Z}{\mathrm{d}m_Z + \mathrm{d}m_H} \]
+where $\mathrm{d}m_Z$ and $\mathrm{d}m_H$ are the differential masses of rock
+and hydrogen, respectively.
+
+\begin{description}
+\item[(a)] (6 points) Let $\rho$ be the mass density of the mixture at the
+  distance $r$. Prove that $\rho$ is related to $P$ via
+  \[ \rho = \frac{\rho_Z\sqrt{P}}{Z\sqrt{P} + (1 - Z)\rho_Z\sqrt{K}} \]
+\item[(b)] (7 points) Figure T11.2 shows how $Z$ depends on $r$. Based on the
+  $Z - r$ relation, we can divide Jupiter's interior into three different
+  regions: the dilute core $(Z = Z_1 = 7.28 \times 10^{-2},\ 0 \le r \le R_1)$,
+  the transition layer ($Z$ decreases linearly with increasing $r$,
+  $R_1 \le r \le R_2$), and the hydrogen-dominated envelope
+  $(Z = Z_2 = 1.53 \times 10^{-2},\ R_2 \le r \le R_J)$. In the transition
+  layer, $\rho$ is well approximated as a linear function of $r$, and $P$
+  drops from $P_1 = 2.25 \times 10^{12}\,\mathrm{Pa}$ at
+  $R_1 = 2.87 \times 10^{7}\,\mathrm{m}$ to
+  $P_2 = 8.43 \times 10^{11}\,\mathrm{Pa}$ at
+  $R_2 = 4.40 \times 10^{7}\,\mathrm{m}$. The polytropic coefficient of
+  hydrogen in the mixture is
+  $K = 2.20 \times 10^{5}\,\mathrm{m^5\,kg^{-1}\,s^{-2}}$. Determine the mass
+  of the transition layer $M_{12}$.
+
+  \ioaafig{2026_TH_T11-f2.pdf}
+
+\item[(c)] (14 points) Calculate the mass of the dilute core $M_1$ and the
+  mass of the hydrogen-dominated envelope $M_2$.
+\end{description}
+
 \section*{Data-analysis problems}
 
-\probhead{3.29}{Galilean moons}{2007}{Chiang Mai, Thailand}{DA D1}{4}
+\probhead{3.30}{Galilean moons}{2007}{Chiang Mai, Thailand}{DA D1}{4}
 % source id: 2007_DA_D1   tag: identify Galilean moons from motion
 Computer simulation of the planet Jupiter and its 4 Galilean moons is shown
 on the screen similar to the view you may see through a small telescope.
@@ -644,7 +725,7 @@ exam)
 
 \ioaafig{2007_DA_D1-f1.pdf}
 
-\probhead{3.30}{Solar System objects}{2007}{Chiang Mai, Thailand}{DA D3}{8}
+\probhead{3.31}{Solar System objects}{2007}{Chiang Mai, Thailand}{DA D3}{8}
 % source id: 2007_DA_D3   tag: identify objects from positions, elongations
 A set of data containing the apparent positions of 4 Solar System objects
 over a period of 1 calendar year is given in Table 1. Show your method of
@@ -674,7 +755,7 @@ Location of observer & Latitude: & N $18^\circ 47' 00.0''$ \\
   the correct values of elongation on that date. \textbf{(4 points)}
 \end{description}
 
-\probhead{3.31}{The Age of Meteorite}{2008}{Bandung, Indonesia}{DA D3}{100}
+\probhead{3.32}{The Age of Meteorite}{2008}{Bandung, Indonesia}{DA D3}{100}
 % source id: 2008_DA_D3   tag: Rb-Sr isochron regression
 The basic equation of radioactive decay can be expressed as:
 \[ N(t) = N_0 \exp(-\lambda t) \]
@@ -758,7 +839,7 @@ Standard deviation of each parameter, $a$ and $b$ can be calculated by
 \[ S_b = \sqrt{ \frac{SS_{YY} - \dfrac{(SS_{XY})^2}{SS_{XX}}}
    {(n-2)\,SS_{XX}} } \]
 
-\probhead{3.32}{Venus}{2009}{Tehran, Iran}{DA D2}{60}
+\probhead{3.33}{Venus}{2009}{Tehran, Iran}{DA D2}{60}
 % source id: 2009_DA_D2   tag: Venus orbit elements from phase
 An observer in Deh-Namak (you will be taking the observational part of the
 exam in this region tonight) has observed Venus for seven months, started
@@ -829,7 +910,7 @@ Figure (part a)
 \item[f)] Calculate eccentricity ($e$) of Venus orbit.
 \end{description}
 
-\probhead{3.33}{Asteroid photometry}{2012}{Rio de Janeiro, Brazil}{DA D1}{}
+\probhead{3.34}{Asteroid photometry}{2012}{Rio de Janeiro, Brazil}{DA D1}{}
 % source id: 2012_DA_D1   tag: asteroid light curves, phase curve, regolith
 A few facts about photometry of asteroids:
 \begin{itemize}
@@ -1016,7 +1097,7 @@ the least squares estimator of $\beta$ is given by
      - \frac{1}{n} \sum_i^n x_i \sum_i^n y_i}
    {\sum_i^n x_i^2 - \frac{1}{n} \left( \sum_i^n x_i \right)^2} \]
 
-\probhead{3.34}{Thermodynamic test}{2014}{Suceava, Romania}{DA D2}{}
+\probhead{3.35}{Thermodynamic test}{2014}{Suceava, Romania}{DA D2}{}
 % source id: 2014_DA_D2   tag: CO2 atmosphere profiles from probe
 An hypotetical shuttle is launched to investigate the atmosphere (100\%
 % sic: "An hypotetical" as in the original
@@ -1060,7 +1141,7 @@ during uniform descent of the radio probes.
 Fig.~3.2.
 \end{center}
 
-\probhead{3.35}{Distance to the Moon}{2016}{Bhubaneswar, India}{DA D2}{50}
+\probhead{3.36}{Distance to the Moon}{2016}{Bhubaneswar, India}{DA D2}{50}
 % source id: 2016_DA_D2   tag: lunar ephemerides, eclipse umbra
 Geocentric ephemerides of the Moon for September 2015 are given in the form
 of a table. Each reading was taken at 00:00 UT.
@@ -2631,7 +2712,252 @@ $\cos E = \frac{e + \cos\nu}{1 + e\cos\nu}$.]
   \hfill(1.0)
 \end{description}
 
-\solhead{3.29}{Galilean moons}
+\solhead{3.29}{Physics of Jupiter's Interior}
+% source id: 2026_TH_T11
+\medskip\noindent\textbf{Part 1}
+
+\begin{description}
+\item[(a)] Let us consider a spherical shell of radius $r$ and thickness
+  $\mathrm{d}r$ inside the dense core. Its hydrostatic equilibrium is
+  described by
+  \[ \mathrm{d}P = -\rho_Z g\,\mathrm{d}r \quad (1) \]
+  \hfill(2 points)
+
+  where $\mathrm{d}P$ is the differential of pressure. The gravitational
+  acceleration $g$ is given by
+  \[ g = \frac{4}{3}\pi G \rho_Z r \quad (2) \]
+  \hfill(1 point)
+
+  where $G$ is the gravitational constant. By inserting Eq. (2) into Eq. (1),
+  we have
+  \[ \mathrm{d}P = -\frac{4}{3}\pi G \rho_Z^2 r\,\mathrm{d}r \quad (3) \]
+  \hfill(1 point)
+
+  Integrating both sides of Eq. (3) provides
+  \[ P = -\frac{2}{3}\pi G \rho_Z^2 r^2 + P_O \quad (4) \]
+  \hfill(1 point)
+
+  When $r$ increases from 0 to $R_C$, $P$ decreases from $P_O$ to $P_C$.
+  Therefore,
+  \[ \rho_Z = \frac{1}{R_C}\sqrt{\frac{3(P_O - P_C)}{2\pi G}}
+     = 1.43 \times 10^{4}\,\mathrm{kg\,m^{-3}} \quad (5) \]
+  \hfill(1 point)
+
+\item[(b)] Because Jupiter is surrounded by a perfect vacuum, the hydrostatic
+  pressure must be equal to zero at the planetary surface. That is synonymous
+  with
+  \[ \rho_H(R_J) = \frac{A}{R_J}\cos\left(\frac{R_J}{R} + \varphi\right) = 0
+     \quad (6) \]
+  \hfill(1 point)
+
+  In addition, at the core-envelope boundary, the mass density of the fluid
+  envelope is
+  \[ \rho_H(R_C) = \frac{A}{R_C}\cos\left(\frac{R_C}{R} + \varphi\right)
+     = \sqrt{\frac{P_C}{K}} \quad (7) \]
+  \hfill(1 point)
+
+  Solving Eq. (6) and Eq. (7) with $A > 0$ and $-\pi \le \varphi \le \pi$
+  provides
+  \[ A = \frac{R_C}{\cos\left(\dfrac{R_C - R_J}{R} + \dfrac{\pi}{2}\right)}
+     \sqrt{\frac{P_C}{K}} \quad (8) \]
+  \hfill(1 point)
+  \[ \varphi = \frac{\pi}{2} - \frac{R_J}{R} \quad (9) \]
+  \hfill(1 point)
+
+  Numerically, we have
+  \[ A = 9.46 \times 10^{10}\,\mathrm{kg\,m^{-2}} \quad (10) \]
+  \hfill(1 point)
+  \[ \varphi = -1.54\,\mathrm{rad} \quad (11) \]
+  \hfill(1 point)
+
+  \textit{Note:} If the numerical value of the amplitude factor $A$ is fall in
+  a range of $9.46 \times 10^{10}$ to $9.53 \times 10^{10}\,\mathrm{kg\,m^{-2}}$,
+  the marks remain unchanged.
+
+\item[(c)] \textbf{The density profile}
+
+  For the dense core:
+  \begin{itemize}
+  \item Plot two critical points at $(0, \rho_Z)$ and $(R_C, \rho_Z)$.
+    \hfill(1 point)
+  \item Plot a straight line passing through these points.
+    \hfill(0.5 points)
+  \end{itemize}
+
+  For the fluid envelope:
+  \begin{itemize}
+  \item Plot two critical points at $(R_C, \rho_H(R_C))$ and $(R_J, 0)$.
+    \hfill(1 point)
+  \item Plot at least two additional points between $r = R_C$ and $r = R_J$
+    using $\rho_H = \frac{A}{r}\cos\left(\frac{r}{R} + \varphi\right)$.
+    \hfill(1 point)
+  \item Plot an appropriate smooth curve passing through these points.
+    \hfill(0.5 points)
+  \end{itemize}
+
+  \textit{Note:} It is optional to plot a straight line passing through two
+  critical points $(R_C, \rho_Z)$ and $(R_C, \rho_H(R_C))$.
+
+  \ioaafig{2026_TH_T11-s1.pdf}
+
+  \textbf{The pressure profile}
+
+  For the dense core:
+  \begin{itemize}
+  \item Plot two critical points at $(0, P_O)$ and $(R_C, P_C)$.
+    \hfill(1 point)
+  \end{itemize}
+
+  For the fluid envelope:
+  \begin{itemize}
+  \item Plot one critical point at $(R_J, 0)$.
+    \hfill(0.5 points)
+  \item Plot at least two additional points between $r = R_C$ and $r = R_J$
+    using $P = K\rho_H^2$.
+    \hfill(1 point)
+  \end{itemize}
+
+  Graph finalization:
+  \begin{itemize}
+  \item Plot one more point in a range $0 \le r \le R_C$ [using Eq. (4)] or
+    $R_C \le r \le R_J$ [using $P = K\rho_H^2$]
+    \hfill(0.5 points)
+  \item Plot an appropriate smooth curve passing through all the points
+    representing the dense core (parabola with vertex on $y$-axis).
+    \hfill(0.5 points)
+  \item Plot an appropriate smooth curve passing through all the points
+    representing the fluid envelope.
+    \hfill(0.5 points)
+  \end{itemize}
+
+  \ioaafig{2026_TH_T11-s2.pdf}
+
+  \textit{Note:} Deduct 0.5 points for each graph missing axis units.
+
+\item[(d)] The mass of the dense core is
+  \[ M_Z = \frac{4}{3}\pi R_C^3 \rho_Z = 6.93 \times 10^{25}\,\mathrm{kg}
+     \quad (12) \]
+  \hfill(2 points)
+
+  The mass of the fluid envelope is
+  \[ M_H = M_J - M_Z = 1.83 \times 10^{27}\,\mathrm{kg} \quad (13) \]
+  \hfill(1 point)
+\end{description}
+
+\medskip\noindent\textbf{Part 2}
+
+\begin{description}
+\item[(a)] To formulate the equation of state for the ideal binary mixture, we
+  consider an infinitesimal space of volume $\mathrm{d}V$ and mass
+  $\mathrm{d}M$. If we set $\mathrm{d}M = \mathrm{d}m_Z + \mathrm{d}m_H$,
+  $\mathrm{d}V$ will be decomposed into
+  \[ \mathrm{d}V = \mathrm{d}v_Z + \mathrm{d}v_H \quad (14) \]
+  \hfill(2 points)
+
+  where $\mathrm{d}v_Z$ and $\mathrm{d}v_H$ represent the volumetric
+  contributions of rock and hydrogen, respectively. Based on the physical
+  definition of the mass density, we can write
+  \[ \mathrm{d}V = \frac{\mathrm{d}M}{\rho}, \quad
+     \mathrm{d}v_Z = \frac{\mathrm{d}m_Z}{\rho_Z}, \quad
+     \mathrm{d}v_H = \frac{\mathrm{d}m_H}{\rho_H} \quad (15) \]
+  \hfill(1 point)
+
+  Note that
+  \[ \mathrm{d}m_Z = Z\,\mathrm{d}M, \quad
+     \mathrm{d}m_H = (1 - Z)\,\mathrm{d}M \quad (16) \]
+  \hfill(1 point)
+
+  Thus, we obtain
+  \[ \frac{1}{\rho} = \frac{Z}{\rho_Z} + \frac{1 - Z}{\rho_H} \quad (17) \]
+  \hfill(1 point)
+
+  Since $\rho_H = \sqrt{P/K}$, Eq. (17) is equivalent to
+  \[ \rho = \frac{\rho_Z\sqrt{P}}{Z\sqrt{P} + (1 - Z)\rho_Z\sqrt{K}}
+     \quad (18) \]
+  \hfill(1 point)
+
+\item[(b)] Since $\rho$ is a linear function of $r$ at $R_1 \le r \le R_2$, we
+  can write
+  \[ \rho = \frac{\rho_1 - \rho_2}{R_1 - R_2}\,r
+     + \frac{\rho_2 R_1 - \rho_1 R_2}{R_1 - R_2} \quad (19) \]
+  \hfill(1 point)
+
+  Here, $\rho_1$ and $\rho_2$ are the critical densities at the base and the
+  top of the transition layer. These quantities are deduced from Eq. (18) as
+  \[ \rho_1 = \frac{\rho_Z\sqrt{P_1}}{Z_1\sqrt{P_1} + (1 - Z_1)\rho_Z\sqrt{K}}
+     = 3.39 \times 10^{3}\,\mathrm{kg\,m^{-3}} \]
+  \hfill(1 point)
+  \[ \rho_2 = \frac{\rho_Z\sqrt{P_2}}{Z_2\sqrt{P_2} + (1 - Z_2)\rho_Z\sqrt{K}}
+     = 1.98 \times 10^{3}\,\mathrm{kg\,m^{-3}} \quad (20) \]
+  \hfill(1 point)
+
+  Having established the $\rho - r$ relation, it is feasible to calculate the
+  mass of the transition layer by
+  \[ M_{12} = \int_{R_1}^{R_2} 4\pi r^2 \rho\,dr \quad (21) \]
+  \hfill(1 point)
+
+  Entering Eq. (19) into Eq. (21) yields
+  \[ M_{12} = \frac{\pi}{3}(R_2 - R_1)\left[R_1^2(3\rho_1 + \rho_2)
+     + R_2^2(\rho_1 + 3\rho_2) + 2R_1 R_2(\rho_1 + \rho_2)\right]
+     \quad (22) \]
+  \hfill(2 points)
+
+  Our numerical result based on Eq. (20) and Eq. (22) is
+  \[ M_{12} = 6.67 \times 10^{26}\,\mathrm{kg} \quad (23) \]
+  \hfill(1 point)
+
+\item[(c)] It is clear that Jupiter's mass is a conservation quantity,
+  \[ M_1 + M_{12} + M_2 = M_J \quad (24) \]
+  \hfill(1 point)
+
+  When the dense core is eroded, heavy and light materials are mixed without
+  chemical reactions. Hence, the total mass of rock must also be conserved,
+  \[ Z_1 M_1 + M_{12}^{\mathrm{rock}} + Z_2 M_2 = M_Z \quad (25) \]
+  \hfill(3 points)
+
+  Solving Eq. (24) and Eq. (25) yields
+  \[ M_1 = \frac{M_Z - M_{12}^{\mathrm{rock}} - Z_2(M_J - M_{12})}{Z_1 - Z_2} \]
+  \hfill(1 point)
+  \[ M_2 = \frac{Z_1(M_J - M_{12}) - M_Z + M_{12}^{\mathrm{rock}}}{Z_1 - Z_2}
+     \quad (26) \]
+  \hfill(1 point)
+
+  To determine $M_1$ and $M_2$, we need to find the amount of rock in the
+  transition layer $M_{12}^{\mathrm{rock}}$. This quantity is determined by
+  \[ M_{12}^{\mathrm{rock}} = \int_{R_1}^{R_2} 4\pi Z r^2 \rho\,dr \quad (27) \]
+  \hfill(1 point)
+
+  In the transition layer, we have
+  \[ Z = \frac{Z_1 - Z_2}{R_1 - R_2}\,r + \frac{Z_2 R_1 - Z_1 R_2}{R_1 - R_2},
+     \quad R_1 \le r \le R_2 \quad (28) \]
+  \hfill(1 point)
+
+  Eqs. (19), (27), and (28) enables us to explicitly express
+  $M_{12}^{\mathrm{rock}}$ by
+  \[ M_{12}^{\mathrm{rock}} = \frac{\pi}{15}(R_2 - R_1)
+     \left(\alpha R_1^2 + \beta R_2^2 + 2\gamma R_1 R_2\right) \quad (29) \]
+  \hfill(3 points)
+
+  where
+  \begin{align*}
+    \alpha &= 3Z_1(4\rho_1 + \rho_2) + Z_2(3\rho_1 + 2\rho_2) \\
+    \beta  &= Z_1(2\rho_1 + 3\rho_2) + 3Z_2(\rho_1 + 4\rho_2) \\
+    \gamma &= 3Z_1\rho_1 + 2Z_2\rho_1 + 2Z_1\rho_2 + 3Z_2\rho_2
+    \qquad (30)
+  \end{align*}
+
+  Our numerical result is
+  \[ M_{12}^{\mathrm{rock}} = 2.84 \times 10^{25}\,\mathrm{kg} \quad (31) \]
+  \hfill(1 point)
+
+  Substituting this number into Eq. (26) provides
+  \[ M_1 = 3.83 \times 10^{26}\,\mathrm{kg} \]
+  \hfill(1 point)
+  \[ M_2 = 8.50 \times 10^{26}\,\mathrm{kg} \quad (32) \]
+  \hfill(1 point)
+\end{description}
+
+\solhead{3.30}{Galilean moons}
 % source id: 2007_DA_D1
 \ioaafig{2007_DA_D1-s1.pdf}
 Names of the Galilean Moons
@@ -2644,7 +2970,7 @@ Names of the Galilean Moons
 % sic: the solution key awards 1.5 points each (6 total) although the exam paper titles the question "(4 points)"
 \end{description}
 
-\solhead{3.30}{Solar System objects}
+\solhead{3.31}{Solar System objects}
 % source id: 2007_DA_D3
 \begin{description}
 \item[3.1]
@@ -2683,7 +3009,7 @@ Names of the Galilean Moons
   \end{itemize}
 \end{description}
 
-\solhead{3.31}{The Age of Meteorite}
+\solhead{3.32}{The Age of Meteorite}
 % source id: 2008_DA_D3
 \begin{description}
 \item[1.] From $N(t) = N_0 \exp(-\lambda t)$ and $D(t) = N_0 - N(t)$, then we
@@ -2951,7 +3277,7 @@ Names of the Galilean Moons
   \hfill(5\%)
 \end{description}
 
-\solhead{3.32}{Venus}
+\solhead{3.33}{Venus}
 % source id: 2009_DA_D2
 \begin{description}
 \item[a)]
@@ -3049,7 +3375,7 @@ Date & SVE ($^\circ$) & Sun - Venus Distance (AU)\\
 1.25 times of designer answer.
 % The standalone "Venus Problem Marking Scheme" table (p.77) is omitted.
 
-\solhead{3.33}{Asteroid photometry}
+\solhead{3.34}{Asteroid photometry}
 % source id: 2012_DA_D1
 % Official solution (2012_da_sol.pdf, "Data analysis", August 10, 2012, Question 1).
 % The published solution consists of a point distribution ("Pontuation", omitted here as a
@@ -3073,7 +3399,7 @@ Answers:
 \ioaafig{2012_DA_D1-s6.pdf}
 \ioaafig{2012_DA_D1-s7.pdf}
 
-\solhead{3.34}{Thermodynamic test}
+\solhead{3.35}{Thermodynamic test}
 % source id: 2014_DA_D2
 % Official solution ("Problem 3 A. Marking scheme -- Thermodynamic test, 25 points",
 
@@ -3261,7 +3587,7 @@ $T$ & 148,4 K & 296,8 K & 445,3 K & 593,3 K & 750 K\\
 \ioaafig{2014_DA_D2-s6.pdf}
 \end{description}
 
-\solhead{3.35}{Distance to the Moon}
+\solhead{3.36}{Distance to the Moon}
 % source id: 2016_DA_D2
 \begin{description}
 \item[(D2.1)]
@@ -3498,3 +3824,4 @@ Now using sine rule,
 &\fbox{$d_{\mathrm{Sun}} = 1.48\times10^{11}\,\mathrm{m}$} & &\hspace{-2em}(1.0)
 \end{align*}
 \end{description}
+

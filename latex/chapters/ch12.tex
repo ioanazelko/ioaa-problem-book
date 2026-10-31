@@ -353,9 +353,124 @@ five times the Schwarzschild radius of the core.
   central compact object, in units of solar mass. \hfill[3]
 \end{description}
 
+\probhead{12.11}{Superluminous Galaxies in the Early Universe}{2026}{Hanoi, Vietnam}{TH T12}{50}
+% source id: 2026_TH_T12   tag: surface brightness dimming, JWST galaxy, Eddington disk SFR, dynamical mass
+JWST has identified exceptionally compact, luminous galaxies at redshifts
+$z > 7$. To understand the nature of these sources, we must analyze the
+observational data and test whether they are consistent with basic
+astrophysical constraints. The table below lists the constants and parameters
+used in this problem.
+
+\begin{center}
+\begin{tabular}{p{0.55\linewidth}c}
+\toprule
+Star formation rate (SFR) to Luminosity conversion factor &
+  $k = 1.0 \times 10^{10}\,\mathrm{L_\odot\,M_\odot^{-1}\,yr}$ \\
+Effective opacity of free electrons &
+  $\kappa_{\mathrm{e}} = 0.04\,\mathrm{m^2\,kg^{-1}}$ \\
+Effective opacity of the dusty interstellar medium &
+  $\kappa_{\mathrm{dust}} = 1.5\,\mathrm{m^2\,kg^{-1}}$ \\
+Optical-to-bolometric flux correction factor &
+  $BC = F_{bol}/F_{opt} = 9.26$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip\noindent\textbf{Part 1 (13 points): Cosmological Surface Brightness Dimming}
+
+Let $L$ be the intrinsic bolometric luminosity and $R$ be the intrinsic
+physical radius of a galaxy. The intrinsic surface luminosity density is
+defined as
+\[ \Sigma_{\mathrm{int}} = \frac{L}{\pi R^2} \]
+A telescope observes this galaxy subtending with a solid angle
+$\Omega_{\mathrm{obs}}$ and measures a flux $F_{\mathrm{obs}}$. The observed
+surface brightness is
+\[ \Sigma_{\mathrm{obs}} = \frac{F_{\mathrm{obs}}}{\Omega_{\mathrm{obs}}} \]
+In cosmology, the luminosity distance $(D_L)$ is defined via
+\[ F_{\mathrm{obs}} = \frac{L}{4\pi D_L^2} \]
+The angular diameter distance $(D_A)$ is defined so that the observed angular
+radius is
+\[ \theta = \frac{R}{D_A} \]
+
+\begin{description}
+\item[(a)] (10 points) Derive the relation between $D_L$, $D_A$ and redshift
+  $z$.
+\item[(b)] (3 points) Derive an expression for $\Sigma_{\mathrm{obs}}$ as a
+  function of $\Sigma_{\mathrm{int}}$ and redshift $z$.
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (8 points): Dissecting JWST Data}
+
+JWST observed an ultraluminous galaxy at a redshift of $z = 7.26$.
+\begin{itemize}
+\item The observed rest-frame optical flux at Earth (attenuated by cosmic
+  dust) is $F_{\mathrm{obs,opt}} = 5.72 \times 10^{-19}\,\mathrm{W\,m^{-2}}$.
+\item The dust extinction derived from the spectrum is
+  $A_V = 2.79\,\mathrm{mag}$.
+\item The measured angular radius of the source on the image is
+  $\theta = 0.05\,\mathrm{arcsec}$.
+\end{itemize}
+Calculate the intrinsic bolometric surface luminosity density of this galaxy,
+$\Sigma_{\mathrm{int}}$, in units of $\mathrm{L_\odot\,kpc^{-2}}$.
+
+\medskip\noindent\textbf{Part 3 (18 points): Eddington Dynamical Model for the Star-Forming Disk}
+
+Assume the entire intrinsic radiative energy of this galaxy originates from
+extreme star formation in an optically thick disk of cold gas and dust.
+Radiation from young stars generates tremendous pressure that drives cosmic
+dust particles outward, perpendicular to the disk midplane. Due to the extreme
+density, gas and dust are perfectly dynamically coupled via collisions. The
+radiation pressure acting on the dust effectively drags the entire gas mass
+along as a single unified fluid. Simultaneously, gravity pulls this fluid back
+toward the midplane. Assume the gravitational field of the disk is governed by
+the total dynamical surface mass density, given as
+$\Sigma_{\mathrm{tot}} = 2.3 \times 10^{10}\,\mathrm{M_\odot\,kpc^{-2}}$.
+
+\begin{description}
+\item[(a)] (6 points) $\Sigma_{\mathrm{int\_max}}$ denotes the disk's
+  Eddington surface luminosity density. Prove the acceleration driven by
+  radiation pressure is
+  $g_{\mathrm{rad}} = \dfrac{\kappa_{\mathrm{dust}}\Sigma_{\mathrm{int\_max}}}{c}$
+  and the acceleration governed by the disk's gravity is
+  $g_z = 2\pi G \Sigma_{\mathrm{tot}}$.
+\item[(b)] (7 points) Calculate the SFR surface density at Eddington limit
+  $(\Sigma_{\mathrm{Edd}})$ of this disk (in units of
+  $\mathrm{M_\odot\,yr^{-1}\,kpc^{-2}}$) such that it remains gravitationally
+  bound against a radiation-driven blowout.
+\item[(c)] (5 points) Calculate the ratio
+  $\Sigma_{\mathrm{SFR\_actual}}/\Sigma_{\mathrm{Edd}}$, where
+  $\Sigma_{\mathrm{SFR\_actual}}$ is the actual SFR surface density of this
+  galaxy. If the observed luminosity is purely stellar in origin, is this
+  system dynamically stable?
+\end{description}
+
+\medskip\noindent\textbf{Part 4 (11 points): Clues from High-Resolution Spectroscopy}
+
+Astronomers analyzed the NIRSpec spectrum and discovered that the emission
+predominantly originates from a hot, highly ionized plasma, where continuous
+recombination processes emit Hydrogen lines exhibiting anomalous broadening
+with a velocity dispersion of $v = 3400\,\mathrm{km\,s^{-1}}$. Furthermore,
+the radius of this emission region is indirectly estimated to be merely
+$R_{\mathrm{em}} = 0.18\,\mathrm{pc}$.
+
+\begin{description}
+\item[(a)] (4 points) Calculate the dynamical mass $M$ confined within this
+  region (in $\mathrm{M}_\odot$). Based on your result, choose the specific
+  type of astrophysical object.
+  \begin{description}
+  \item[A.] A dwarf galaxy
+  \item[B.] A massive star
+  \item[C.] A super massive black hole
+  \item[D.] A globular cluster
+  \end{description}
+\item[(b)] (7 points) Quantitatively evaluate the radiative stability of the
+  system with respect to its observed luminosity. Is this system radiatively
+  stable?
+\end{description}
+
 \section*{Data-analysis problems}
 
-\probhead{12.11}{Weighing a galaxy}{2011}{Katowice, Poland}{DA D2}{25}
+\probhead{12.12}{Weighing a galaxy}{2011}{Katowice, Poland}{DA D2}{25}
 % source id: 2011_DA_D2   tag: NGC 7083 rotation curve, bulge mass
 The attached images show a photograph of the spiral galaxy NGC 7083, which
 lies at a distance of 40\,Mpc, and a fragment of its spectrum. The slit of the
@@ -374,7 +489,7 @@ The photograph of the galaxy has the correct proportions.
 \ioaafig{2011_DA_D2-f1.pdf}
 \ioaafig{2011_DA_D2-f2.pdf}
 
-\probhead{12.12}{Type IA Supernovae}{2016}{Bhubaneswar, India}{DA D3}{50}
+\probhead{12.13}{Type IA Supernovae}{2016}{Bhubaneswar, India}{DA D3}{50}
 % source id: 2016_DA_D3   tag: SN Ia standardization, H0, universe age
 Supernovae of type Ia are considered very important for the measurements of
 large extragalactic distances. The brightening and subsequent dimming of these
@@ -459,7 +574,7 @@ $-5.00$  & 16.12 & 16.42 & 17.85 \\
 \end{description}
 \ioaafig{2016_DA_D3-f1.pdf}
 
-\probhead{12.13}{Calibrating the distance ladder to the LMC}{2017}{Phuket, Thailand}{DA D1}{75}
+\probhead{12.14}{Calibrating the distance ladder to the LMC}{2017}{Phuket, Thailand}{DA D1}{75}
 % source id: 2017_DA_D1   tag: Cepheid PL/Wesenheit, LMC distance
 An accurate trigonometric parallax calibration for Galactic Cepheids has long
 been sought, but is very difficult to achieve in practice. All known classical
@@ -575,7 +690,7 @@ HV2257  & 39.36 & 12.86 & 10.54 \\
 \ioaafig{2017_DA_D1-f1.pdf}
 \ioaafig{2017_DA_D1-f2.pdf}
 
-\probhead{12.14}{Dust and Young Stars in Star-forming Galaxies}{2018}{Beijing, China}{DA D1}{75}
+\probhead{12.15}{Dust and Young Stars in Star-forming Galaxies}{2018}{Beijing, China}{DA D1}{75}
 % source id: 2018_DA_D1   tag: UV slope, IRX-beta dust attenuation, CR7
 As a by-product of the star-forming process in a galaxy, interstellar dust can
 significantly absorb stellar light in ultraviolet (UV) and optical bands, and
@@ -721,7 +836,7 @@ upper limit of an FIR flux of $1.5 \times 10^{-19}$\,W\,m$^{-2}$.
 \end{description}
 \ioaafig{2018_DA_D1-f1.pdf}
 
-\probhead{12.15}{AGN}{2020}{GeCAA (Estonia, remote)}{DA 1}{15}
+\probhead{12.16}{AGN}{2020}{GeCAA (Estonia, remote)}{DA 1}{15}
 % source id: 2020_DA_1   tag: reverberation mapping, virial BH mass
 It is believed that the accretion disk around supermassive black holes (BH) at
 galactic centres gives rise to UV thermal emission. This emission is
@@ -768,7 +883,7 @@ $R_{\mathrm{BLR}}$.
   ($M_{\mathrm{vir,BH}}$) in a unit of $M_\odot$.
 \end{description}
 
-\probhead{12.16}{Distance to the Large Magellanic Cloud}{2023}{Katowice, Poland}{DA Q1}{50}
+\probhead{12.17}{Distance to the Large Magellanic Cloud}{2023}{Katowice, Poland}{DA Q1}{50}
 % source id: 2023_DA_Q1   tag: eclipsing-binary distance to LMC
 In 2019 an international collaboration led by Polish astronomers measured,
 with very high precision and accuracy, the distance to the Large Magellanic
@@ -818,6 +933,209 @@ contributes to a bias of up to 0.8\% in all measurements simultaneously.
 Hint: in your calculations keep at least three significant figures and two
 decimal places. Assume that interstellar extinction is negligible and that the
 angular size of the LMC is small.
+
+\probhead{12.18}{The Mystery of ``Little Red Dots''}{2026}{Hanoi, Vietnam}{DA D03}{50}
+% source id: 2026_DA_D03   tag: SMBH-stellar mass WLS fit, Dehnen profile, TDE Hills mass, survey design
+Recent observations from the James Webb Space Telescope (JWST) have uncovered
+a population of compact, red galaxies in the early universe, formally
+designated as ``Little Red Dots'' (LRDs). Their spectra imply the presence of
+Supermassive Black Holes (SMBHs) with masses that appear disproportionately
+large relative to their host galaxies. To independently verify the masses of
+these black holes, Tidal Disruption Events (TDEs) have been proposed as an
+observational tool. A TDE occurs when a star passes sufficiently close to a
+SMBH and is torn apart by tidal forces, producing a luminous flare as the
+debris is accreted. In this problem, you will analyze LRD observational data,
+deduce their scaling relations, evaluate the breakdown of standard dynamical
+models, and calculate parameters for a future cosmic survey mission.
+
+\medskip\noindent\textbf{Part 1 (28 points): Empirical Laws and Physical Significance}
+
+Assume the central SMBH mass $(M_{\mathrm{BH}})$ and the total stellar mass
+$(M_*^{\mathrm{tot}})$ of the host galaxy follow a scaling relation:
+\[
+\log M_{\mathrm{BH}} = \alpha + \beta \log M_*^{\mathrm{tot}}
+\]
+Observational data for 10 representative LRDs (masses expressed in
+$\mathrm{M}_\odot$) are provided in Table D03.1.
+
+\begin{center}
+\textbf{Table D03.1.} \textit{LRD data.}
+
+\medskip
+\begin{tabular}{ccccc}
+\toprule
+LRD ID & $\log M_*^{\mathrm{tot}}$ & $\Delta\log M_*^{\mathrm{tot}}$
+       & $\log M_{\mathrm{BH}}$ & $\Delta\log M_{\mathrm{BH}}$ \\
+\midrule
+1  & 8.33 & 0.24 & 6.93 & 0.14 \\
+2  & 8.30 & 0.30 & 6.40 & 0.30 \\
+3  & 7.99 & 0.37 & 7.19 & 0.12 \\
+4  & 8.96 & 0.46 & 8.47 & 0.02 \\
+5  & 8.70 & 0.36 & 6.74 & 0.17 \\
+6  & 8.16 & 0.43 & 7.26 & 0.11 \\
+7  & 9.01 & 0.43 & 7.37 & 0.03 \\
+8  & 8.65 & 0.39 & 7.56 & 0.08 \\
+9  & 8.29 & 0.35 & 7.52 & 0.08 \\
+10 & 8.65 & 0.41 & 7.86 & 0.06 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{description}
+\item[(a)] (5 points) Defining $x_i = \log M_{*,i}^{\mathrm{tot}}$,
+  $y_i = \log M_{\mathrm{BH},i}$, and the simplified effective uncertainty
+  $(\sigma_{\mathrm{eff},i})$ for each data point as
+  \[
+  \sigma_{\mathrm{eff},i} = \sqrt{(\Delta x_i)^2 + (\Delta y_i)^2}
+  \]
+  Fill the values of the statistical weights
+  $w_i = 1/\sigma_{\mathrm{eff},i}^2$ in your answer sheet.
+\item[(b)] (12 points) Plot 10 data points $(x_i,\ y_i)$ with both horizontal
+  and vertical error bars on graph paper (mark your graph as ``D03.1b'').
+\item[(c)] (7 points) Apply the weighted least-squares (WLS) regression method
+  using your calculated weights $w_i$ to determine the central values and
+  standard errors for the slope $(\beta \pm \Delta\beta)$ and the intercept
+  $(\alpha \pm \Delta\alpha)$. Overlay the resulting best-fit line on your
+  graph. For your calculation, you may rely on the standard WLS formulas
+  provided below:
+  \begin{align*}
+    S_w &= \sum w_i, \quad S_x = \sum w_i x_i, \quad S_y = \sum w_i y_i \\
+    S_{xx} &= \sum w_i x_i^2, \quad S_{xy} = \sum w_i x_i y_i, \quad
+      \Delta = S_w S_{xx} - (S_x)^2 \\
+    \beta &= (S_w S_{xy} - S_x S_y)/\Delta, \quad
+    \alpha = (S_{xx} S_y - S_x S_{xy})/\Delta, \\
+    \Delta\alpha &= \sqrt{S_{xx}/\Delta}, \quad
+    \Delta\beta = \sqrt{S_w/\Delta}
+  \end{align*}
+  % sic: the official paper typesets the radicand of Delta-alpha as "S_x x"
+  % (missing braces); it is S_xx, as the solution confirms
+  (Note: Because this regression incorporates statistical weights $(w_i)$, the
+  resulting best-fit line may visually deviate from what you would expect from
+  a standard, unweighted linear fit.)
+\item[(d)] (4 points) Select the most accurate answer for each question.
+  \begin{description}
+  \item[(d.1)] (2 point) The observed positive slope $(\beta > 0)$ implies a
+    coevolutionary trend, yet LRDs host black holes that are disproportionately
+    massive compared to their host galaxies. What does this combination most
+    likely suggest about the early universe?
+    \begin{description}
+    \item[A.] Black holes outpace their host galaxies (stellar component)
+      initially, either by forming from heavy seeds or undergoing extreme early
+      accretion.
+    \item[B.] Galaxies fully assemble their stellar mass long before the
+      central black hole begins its rapid growth.
+    \item[C.] Star formation and black hole accretion are strictly locked at an
+      identical rate throughout cosmic history.
+    \item[D.] Dark matter halos suppress black hole growth until the host
+      galaxy reaches a critical mass threshold.
+    \end{description}
+  \item[(d.2)] (2 points) The data show a large scatter in stellar mass
+    estimations $(\Delta\log M_*^{\mathrm{tot}})$ for LRDs. What is the primary
+    physical reason for this substantial uncertainty at high redshift
+    $(z \approx 5)$?
+    \begin{description}
+    \item[A.] Interstellar dust significantly absorbs the black hole's X-ray
+      emissions, altering the mass-to-light ratio.
+    \item[B.] Rapid stellar collisions in the dense galactic core create
+      transient luminous events that mimic a heavier stellar mass.
+    \item[C.] The James Webb Space Telescope's UV sensors suffer from extreme
+      thermal noise when observing at $z \approx 5$.
+    \item[D.] The luminous accretion disk outshines the stellar continuum,
+      making it difficult to isolate the host galaxy's light.
+    \end{description}
+  \end{description}
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (6 points): Standard Dynamical Model}
+
+Assume the spatial distribution of the host galaxy's stellar mass follows a
+Dehnen spherical density profile,
+\[
+\rho\,(r) = \frac{(3-\gamma)}{4\pi}\, M_*^{\mathrm{tot}}\,
+  \frac{a}{r^{\gamma}(r+a)^{4-\gamma}}
+\]
+where $a$ is the scale radius (a fundamental parameter marking the transition
+zone where the mass density profile shifts between its inner and outer
+logarithmic slopes) and $\gamma$ defines the inner density slope
+$0 < \gamma < 3$. The black hole's radius of influence $(r_h)$ is defined as
+the radius where the enclosed stellar mass equals the black hole mass:
+$M_*\,(r_h) = M_{\mathrm{BH}}$. The stellar component has an isotropic velocity
+dispersion $\sigma(r)$ and $M(r)$ represents the total enclosed mass within
+radius $r$.
+
+\begin{description}
+\item[(a)] (2 points) Consider a typical galaxy, applying the ``isothermal
+  core'' assumption $(\sigma = \mathrm{const})$ to the region
+  $r_h \le r \ll$ a leads to $\gamma = 2$. Therefore, the enclosed stellar mass
+  is given by
+  \[
+  M_*\,(r) = M_*^{\mathrm{tot}} \left( \frac{r}{r+a} \right)
+  \]
+  Derive the expression for $r_h$ in terms of the scale radius a and the mass
+  ratio $M_{\mathrm{BH}}/M_*^{\mathrm{tot}}$.
+\item[(b)] (4 points) Based on the result from a), calculate the ratio $r_h/a$
+  for LRD ID 4 in Table D03.1. Why does the standard ``isothermal core''
+  assumption collapse for this object? Select the most accurate explanation:
+  \begin{description}
+  \item[A.] The ratio indicates the stellar mass vastly outweighs the black
+    hole, rendering the Jeans equation inapplicable.
+  \item[B.] The ratio is incredibly small, meaning the black hole has no
+    gravitational influence on the core.
+  \item[C.] The black hole's radius of influence extends deeply into the scale
+    radius.
+  \item[D.] The ratio proves that the scale radius a is shrinking over time due
+    to dark matter interactions.
+  \end{description}
+\end{description}
+
+\medskip\noindent\textbf{Part 3 (16 points): Destruction Physics and Data Barriers}
+
+\begin{description}
+\item[(a)] (7 points) Consider a star of mass $m_*$ and radius $R_*$
+  approaching the SMBH at the distance $r \gg R_*$. The tidal force is defined
+  as the difference between gravitational forces exerted by the SMBH at the
+  star's center and at its surface. The tidal radius $r = r_{\mathrm{t}}$ is
+  determined by balancing the tidal force with the star's self-gravitational
+  force at its surface. Derive $r_{\mathrm{t}}$.
+
+  If $r_{\mathrm{t}}$ is smaller than the Schwarzschild radius
+  $(R_{\mathrm{S}} = 2GM_{\mathrm{BH}}/c^2)$, the star is swallowed intact
+  rather than disrupted. The black hole mass at which
+  $r_{\mathrm{t}} = R_{\mathrm{S}}$ is defined as the Hills mass,
+  $M_{\mathrm{H}}$. Formulate $M_{\mathrm{H}}$ in terms of $m_*,\ R_*$ and
+  calculate its numerical value (in $\mathrm{M}_\odot$) for a Sun-like star.
+\item[(b)] (4 points) Using your results
+  $(\alpha \pm \Delta\alpha, \beta \pm \Delta\beta)$ from question c) in
+  Part 1, determine the maximum stellar mass
+  $(\log M_{*,\mathrm{max}}^{\mathrm{tot}})$ a galaxy can have while still
+  potentially hosting an observable TDE of a Sun-like star (requiring
+  $M_{\mathrm{BH}} = M_{\mathrm{H}})$. Then, calculate the range (Min to Max)
+  of $\log M_{*,\mathrm{max}}^{\mathrm{tot}}$. Based on the extreme values,
+  select the most accurate statement about the predictive reliability of this
+  model:
+  \begin{description}
+  \item[A.] The model is highly reliable. The calculated range perfectly
+    brackets the typical masses of observed galaxies hosting supermassive
+    black holes.
+  \item[B.] The model lacks predictive power. The lower bound is about the
+    mass of a small star cluster, and the upper bound exceeds the mass of the
+    observable universe.
+  \item[C.] The model fails entirely because a linear weighted least-squares
+    regression cannot be mathematically applied to logarithmic astronomical
+    data.
+  \item[D.] The model is reliable, but the unphysical lower bound indicates
+    that we must manually adjust the scale radius to correct the data scatter.
+  \end{description}
+\item[(c)] (5 points) Cosmic Mission Design
+
+  Assume an all-sky cosmological population of $N \approx 1.021 \times 10^8$
+  LRDs located around redshift $z = 5$. The intrinsic (rest-frame) TDE rate per
+  galaxy is estimated to be
+  $\langle \dot{N}_{\mathrm{TDE}} \rangle \approx 2.01 \times 10^{-6}\,\mathrm{yr^{-1}}$.
+  Assume the number of detected TDEs from LRDs to be $5$ during $1$ year of
+  continuous observation, what minimum fraction (in percentage) of the
+  celestial sphere must the survey area cover?
+\end{description}
 
 \clearpage
 \section*{Solutions to Chapter 12}
@@ -1792,7 +2110,289 @@ U = -\frac{G M_T^2}{R}.
   \end{align*}
 \end{description}
 
-\solhead{12.11}{Weighing a galaxy}
+\solhead{12.11}{Superluminous Galaxies in the Early Universe}
+% source id: 2026_TH_T12
+\noindent\textbf{Part 1 (13 points): Cosmological Surface Brightness Dimming}
+\begin{description}
+\item[(a)] Consider a photon emitted with energy $E_{\mathrm{em}}$. Due to
+  cosmic expansion, the energy received by the observer is redshifted,
+  \[ E_{\mathrm{obs}} = \frac{E_{\mathrm{em}}}{1+z} \]
+  \hfill(2 points)
+
+  Due to cosmological time dilation, an emission time interval
+  $\mathrm{d}t_{\mathrm{em}}$ is observed as $\mathrm{d}t_{\mathrm{obs}}$ at
+  the receiver,
+  \[ \mathrm{d}t_{\mathrm{obs}} = (1+z)\,\mathrm{d}t_{\mathrm{em}} \]
+  \hfill(2 points)
+
+  Combining these two effects, the observed luminosity is attenuated as
+  \[ L_{\mathrm{obs}} = \frac{L}{(1+z)^2} \]
+  By expressing the observed flux $F_{\mathrm{obs}}$ via the comoving distance
+  $D_M$
+  \[ F_{\mathrm{obs}} = \frac{L_{\mathrm{obs}}}{4\pi D_M^2}
+     = \frac{L}{4\pi D_M^2 (1+z)^2} \]
+  \hfill(1 point)
+
+  and then comparing this to the definition
+  \[ F_{\mathrm{obs}} = \frac{L}{4\pi D_L^2} \]
+  we have
+  \[ D_L = D_M (1+z) \]
+  \hfill(1 point)
+
+  The angular size of the object is
+  \[ \theta = \frac{R(1+z)}{D_M} \]
+  \hfill(2 points)
+
+  By definition,
+  \[ \theta = \frac{R}{D_A} \]
+  Therefore,
+  \[ D_A = \frac{D_M}{1+z} \]
+  \hfill(1 point)
+
+  Substituting $D_M = D_A(1+z)$ into the $D_L$ expression yields
+  \[ D_L = D_A (1+z)^2 \]
+  \hfill(1 point)
+
+\item[(b)] To establish the equation for $\Sigma_{\mathrm{obs}}$, we start
+  from the definition
+  \[ \Sigma_{\mathrm{obs}} = \frac{F_{\mathrm{obs}}}{\Omega_{\mathrm{obs}}}
+     = \frac{\dfrac{L}{4\pi D_L^2}}{\dfrac{\pi R^2}{D_A^2}} \]
+  \hfill(1 point)
+
+  By re-arranging the terms, we obtain
+  \[ \Sigma_{\mathrm{obs}} = \frac{L}{\pi R^2} \cdot \frac{D_A^2}{4\pi D_L^2}
+     = \Sigma_{\mathrm{int}} \cdot \frac{D_A^2}{4\pi D_L^2} \]
+  \hfill(1 point)
+
+  Substituting $D_A^2/D_L^2 = 1/(1+z)^4$ into the equation gives us
+  \[ \Sigma_{\mathrm{obs}} = \frac{\Sigma_{\mathrm{int}}}{4\pi(1+z)^4} \]
+  \hfill(1 point)
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (8 points): Dissecting JWST Data}
+
+The intrinsic rest-frame optical flux (dust-corrected) is given by
+\[ F_{\mathrm{opt,int}} = F_{\mathrm{opt,obs}} \cdot 10^{\frac{A_V}{2.5}} \]
+\hfill(1 point)
+
+Substituting $F_{\mathrm{opt,obs}}$ and $A_V$ values into the equation
+provides
+\[ F_{\mathrm{opt,int}} = 5.72 \times 10^{-19} \times 10^{\frac{2.79}{2.5}}
+   = 7.47 \times 10^{-18}\,\mathrm{W\,m^{-2}} \]
+\hfill(1 point)
+
+The intrinsic bolometric flux:
+\[ F_{\mathrm{bol}} = F_{\mathrm{opt,int}} \cdot BC
+   = 7.47 \times 10^{-18} \times 9.26
+   = 6.92 \times 10^{-17}\,\mathrm{W\,m^{-2}} \]
+\hfill(1 point)
+
+In addition, after converting $\theta$ to radians
+\[ \theta_{\mathrm{rad}} = \frac{0.05}{3600} \times \frac{\pi}{180}
+   = 2.424 \times 10^{-7}\,\mathrm{rad} \]
+\hfill(1 point)
+
+we can calculate the observed solid angle by
+\[ \Omega_{\mathrm{obs}} = \pi \theta_{\mathrm{rad}}^2
+   = 1.846 \times 10^{-13}\,\mathrm{sr} \]
+\hfill(1 point)
+
+Therefore,
+\[ \Sigma_{\mathrm{obs\_corr}} = \frac{F_{\mathrm{bol}}}{\Omega_{\mathrm{obs}}}
+   = \frac{6.92 \times 10^{-17}}{1.846 \times 10^{-13}}
+   = 3.75 \times 10^{-4}\,\mathrm{W\,m^{-2}\,sr^{-1}} \]
+\hfill(1 point)
+
+Applying the result from Part 1 gives us $\Sigma_{\mathrm{int}}$ in standard
+SI units as
+\[ \Sigma_{\mathrm{int\_SI}} = 4\pi(1+z)^4 \Sigma_{\mathrm{obs\_corr}} \]
+Since $z = 7.26$, we have $(1+z)^4 \approx 4655.0$. Substituting this value
+into the equation yields
+\[ \Sigma_{\mathrm{int\_SI}} = 4 \times \pi \times 4655.0 \times 3.75 \times 10^{-4}
+   = 21.94\,\mathrm{W\,m^{-2}} \]
+\hfill(1 point)
+
+We use the following conversion factor
+\[ 1\,\mathrm{kpc^2} = (3.086 \times 10^{19}\,\mathrm{m})^2
+   = 9.523 \times 10^{38}\,\mathrm{m^2} \]
+Hence,
+\[ \Sigma_{\mathrm{int}} = \frac{21.94 \times 9.523 \times 10^{38}}{3.828 \times 10^{26}}
+   = 5.46 \times 10^{13}\,\mathrm{L_\odot\,kpc^{-2}} \]
+\hfill(1 point)
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+Half credit lower limit & Full credit range & Half credit upper limit \\
+\midrule
+$5.35 \times 10^{13}\,\mathrm{L_\odot\,kpc^{-2}}$ &
+  \begin{tabular}[t]{@{}c@{}}$5.40 \times 10^{13}$ to\\
+  $5.50 \times 10^{13}\,\mathrm{L_\odot\,kpc^{-2}}$\end{tabular} &
+  $5.55 \times 10^{13}\,\mathrm{L_\odot\,kpc^{-2}}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip\noindent\textbf{Part 3 (18 points): Eddington Dynamical Model for the Star-Forming Disk}
+\begin{description}
+\item[(a)] The Eddington surface luminosity density is
+  \[ \Sigma_{\mathrm{int\_max}} = \frac{L_{\mathrm{Edd}}}{\pi R^2} \]
+  The total radiation force exerted on a dust particle is
+  \[ f = \sigma \frac{\Sigma_{\mathrm{int\_max}}}{c} \]
+  \hfill(2 points)
+
+  where $\sigma$ is the dust cross-section given by
+  \[ \sigma = m_{\mathrm{d}} \kappa_{\mathrm{dust}} \]
+  \hfill(1 point)
+
+  where $m_{\mathrm{d}}$ is the mass of dust particle.
+
+  The acceleration driven by radiation pressure is
+  \[ g_{\mathrm{rad}} = \frac{f}{m_{\mathrm{d}}}
+     = \frac{\kappa_{\mathrm{dust}} \Sigma_{\mathrm{int\_max}}}{c} \]
+  \hfill(1 point)
+
+  Based on the Gauss's gravity theorem, we have
+  \[ 2\pi R^2 g_z = 4\pi G M_{\mathrm{tot}} \]
+  \hfill(1 point)
+
+  where $M_{\mathrm{tot}}$ is the total disk's mass.
+
+  Hence,
+  \[ g_z = 2\pi G \Sigma_{\mathrm{tot}} \]
+  \hfill(1 point)
+
+\item[(b)] Based on the balance between radiation pressure and gravity, we
+  can establish the following critical equilibrium condition
+  \[ g_{\mathrm{rad}} = g_z \]
+  \hfill(1 point)
+  \begin{align*}
+    \Rightarrow \frac{\kappa_{\mathrm{dust}} \Sigma_{\mathrm{int\_max}}}{c}
+      &= 2\pi G \Sigma_{\mathrm{tot}} \\
+    \Rightarrow \Sigma_{\mathrm{int\_max}}
+      &= \frac{2\pi G c \Sigma_{\mathrm{tot}}}{\kappa_{\mathrm{dust}}}
+  \end{align*}
+  \hfill(1 point)
+
+  The Eddington SFR surface density is derived from the Kennicutt scaling
+  law:
+  \[ \Sigma_{\mathrm{Edd}} = \frac{\Sigma_{\mathrm{int\_max}}}{k} \]
+  \hfill(1 point)
+  \[ \Rightarrow \Sigma_{\mathrm{Edd}}
+     = \frac{2\pi G c \Sigma_{\mathrm{tot}}}{k \kappa_{\mathrm{dust}}} \]
+  \hfill(1 point)
+
+  Converting $\Sigma_{\mathrm{tot}}$ to SI units gives us
+  \[ \Sigma_{\mathrm{tot}}
+     = \frac{2.3 \times 10^{10} \times 1.988 \times 10^{30}}{9.523 \times 10^{38}}
+     = 48.01\,\mathrm{kg\,m^{-2}} \]
+  \hfill(0.5 points)
+
+  In SI units, $\Sigma_{\mathrm{int\_max}}$ is calculated by
+  \[ \Sigma_{\mathrm{int\_max}}
+     = \frac{2\pi \times 6.674 \times 10^{-11} \times 2.998 \times 10^{8} \times 48.01}{1.5}
+     = 4.02\,\mathrm{W\,m^{-2}} \]
+  \hfill(1 point)
+
+  Using unit conversion
+  \[ 4.02\,\mathrm{W\,m^{-2}} = 1.00 \times 10^{13}\,\mathrm{L_\odot\,kpc^{-2}} \]
+  \hfill(0.5 points)
+
+  we obtain
+  \[ \Sigma_{\mathrm{Edd}} = \frac{1.00 \times 10^{13}}{10^{10}}
+     = 1000\,\mathrm{M_\odot\,yr^{-1}\,kpc^{-2}} \]
+  \hfill(1 point)
+
+  \begin{center}
+  \begin{tabular}{ccc}
+  \toprule
+  Half credit lower limit & Full credit range & Half credit upper limit \\
+  \midrule
+  980 & 990 to 1010 & 1020 \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+
+\item[(c)] Using $\Sigma_{\mathrm{int}}$ in Part 2 provides
+  \[ \Sigma_{\mathrm{SFR\_actual}} = \frac{\Sigma_{\mathrm{int}}}{k} \]
+  \hfill(1 point)
+  \[ \Sigma_{\mathrm{SFR\_actual}}
+     = \frac{5.46 \times 10^{13}}{1.0 \times 10^{10}}
+     = 5460\,\mathrm{M_\odot\,yr^{-1}\,kpc^{-2}} \]
+  \hfill(1 point)
+
+  We can compare $\Sigma_{\mathrm{SFR\_actual}}$ with $\Sigma_{\mathrm{Edd}}$,
+  \[ \frac{\Sigma_{\mathrm{SFR\_actual}}}{\Sigma_{\mathrm{Edd}}} = 5.46 \]
+  \hfill(1 point)
+
+  \emph{It is clear to see that the actual density vastly exceeds the
+  Eddington limit. The disk is highly super-Eddington.}
+
+  The system is dynamically unstable. \hfill(2 points)
+
+  \emph{If the luminosity were purely stellar in origin, the extreme
+  radiation pressure would immediately unbind the gas and dust, triggering a
+  catastrophic blowout and destroying the disk. Thus, the assumption of a
+  purely starburst-driven luminosity is unphysical/untenable.}
+\end{description}
+
+\medskip\noindent\textbf{Part 4 (11 points): Clues from High-Resolution Spectroscopy}
+\begin{description}
+\item[(a)] Applying the Virial theorem to the broad-line region gives us
+  \[ M = \frac{v^2 R_{\mathrm{em}}}{G} \]
+  \hfill(2 points)
+
+  On that basis, we can convert units and compute
+  \begin{align*}
+    M &= \frac{(3.4 \times 10^6)^2 \times (0.18 \times 3.086 \times 10^{16})}{6.674 \times 10^{-11}}
+       = 9.62 \times 10^{38}\,\mathrm{kg} \\
+    \Rightarrow M &= 4.84 \times 10^{8}\,\mathrm{M}_\odot
+  \end{align*}
+  \hfill(1 point)
+
+  The object is a \textbf{supermassive black hole (C)}. \hfill(1 point)
+
+  \emph{A huge mass of nearly half a billion solar masses confined within a
+  sub-parsec radius ($< 0.2$\,pc) is a definitive signature of a Supermassive
+  Black Hole (SMBH) / Active Galactic Nucleus (AGN).}
+
+\item[(b)] \emph{Spectral analysis reveals a ``highly ionized, intensely
+  hot'' gas phase. Under this extreme thermal and radiation environment, the
+  interstellar dust grains are completely sublimated (destroyed).}
+
+  \emph{Without dust, the radiation pressure now couples solely to free
+  electrons via Thomson scattering. Consequently, the effective opacity
+  $\kappa$ precipitously drops from
+  $\kappa_{dust} = 1.5\,\mathrm{m^2\,kg^{-1}}$ to
+  $\kappa_e = 0.04\,\mathrm{m^2\,kg^{-1}}$.}
+
+  Assume the same optical thick disk model as above
+  \[ L_{\mathrm{Edd}} = \frac{2\pi G M c}{\kappa_{\mathrm{e}}} \]
+  \hfill(2 points)
+  \[ \Sigma_{\mathrm{Edd}} = \frac{2 G M c}{\kappa_{\mathrm{e}} R^2}
+     \approx 37500\,\mathrm{M_\odot\,yr^{-1}\,kpc^{-2}} \]
+  % sic: the printed formula omits the division by k, and 37500 does not
+  % follow from it with R = R_em (that gives about 7.8e9 M_sun/yr/kpc^2);
+  % 37500 is the Part 3b value 1000 scaled by kappa_dust/kappa_e = 37.5,
+  % as the Note below states.
+  \hfill(2 points)
+  \[ \frac{\Sigma_{\mathrm{SFR\_actual}}}{\Sigma_{\mathrm{Edd}}}
+     = \frac{5460}{37500} = 0.15 \]
+  \hfill(1 point)
+
+  \emph{\underline{Note:} The transition to Thomson opacity
+  ($\kappa_{\mathrm{e}}$) increases the medium's threshold for radiation
+  pressure by a factor of $1.5/0.04 = 37.5$. Hence,
+  $\dfrac{\Sigma_{SFR\_actual}}{\Sigma_{Edd}} = \dfrac{5.46}{37.5} = 0.15$.
+  Award full points.}
+
+  Since $\Sigma_{\mathrm{SFR\_actual}} < \Sigma_{\mathrm{Edd}}$, the radiation
+  pressure does not exceed the gravitational pull of the SMBH. The system
+  effectively maintains hydrostatic equilibrium. This system is radiatively
+  stable (YES). \hfill(2 points)
+\end{description}
+
+\solhead{12.12}{Weighing a galaxy}
 % source id: 2011_DA_D2
 \ioaafig{2011_DA_D2-s1.pdf}
 Solution:
@@ -1831,7 +2431,7 @@ From Kepler's law: $M = V^2\cdot R\,/\,G$
    1.7\cdot 10^{10}\,M_\odot \quad
    (M_\odot \approx 2\cdot 10^{30}\ \mathrm{kg}) \]
 
-\solhead{12.12}{Type IA Supernovae}
+\solhead{12.13}{Type IA Supernovae}
 % source id: 2016_DA_D3
 \begin{description}
 \item[(D3.1)] Redshifts for the three supernovae are $z_1 = 0.0151$,
@@ -1993,7 +2593,7 @@ From Kepler's law: $M = V^2\cdot R\,/\,G$
   Extra factor of $2/3$ allowed in the value of $T_H$.
 \end{description}
 
-\solhead{12.13}{Calibrating the distance ladder to the LMC}
+\solhead{12.14}{Calibrating the distance ladder to the LMC}
 % source id: 2017_DA_D1
 \begin{description}
 \item[(D1.1)] For Cepheid variable the PL relation is
@@ -2116,7 +2716,7 @@ From Kepler's law: $M = V^2\cdot R\,/\,G$
   \end{description}
 \end{description}
 
-\solhead{12.14}{Dust and Young Stars in Star-forming Galaxies}
+\solhead{12.15}{Dust and Young Stars in Star-forming Galaxies}
 % source id: 2018_DA_D1
 1.1. UV continuum slope ($\beta$) \hfill(23 marks)
 
@@ -2318,7 +2918,7 @@ From Kepler's law: $M = V^2\cdot R\,/\,G$
   correct answer should be [NO].
 \end{description}
 
-\solhead{12.15}{AGN}
+\solhead{12.16}{AGN}
 % source id: 2020_DA_1
 \begin{description}
 \item[(a)] Taking multiple reference points, we get that the BLR emission
@@ -2362,7 +2962,7 @@ From Kepler's law: $M = V^2\cdot R\,/\,G$
   \hfill(4.0 points)
 \end{description}
 
-\solhead{12.16}{Distance to the Large Magellanic Cloud}
+\solhead{12.17}{Distance to the Large Magellanic Cloud}
 % source id: 2023_DA_Q1
 \textbf{Distance calculation}
 
@@ -2466,3 +3066,242 @@ $0.008\cdot 49.45 = 0.40$\,kpc.
 Finally: the distance is $49.45 \pm 0.09 \pm 0.40$\,kpc; the uncertainty is
 completely dominated by the precision of the $S_V$\,--\,$(m_V - m_K)$
 relation.
+
+\solhead{12.18}{The Mystery of ``Little Red Dots''}
+% source id: 2026_DA_D03
+\medskip\noindent\textbf{Part 1 (28 points): Empirical Laws and Physical Significance}
+
+\begin{description}
+\item[(a)]
+  \begin{center}
+  \begin{tabular}{cccc}
+  \toprule
+  LRD ID & $\Delta\log M_*^{\mathrm{tot}}$ $(\Delta x_i)$
+         & $\Delta\log M_{\mathrm{BH}}$ $(\Delta y_i)$ & Weight $(w_i)$ \\
+  \midrule
+  1  & 0.24 & 0.14 & 12.95 \\
+  2  & 0.30 & 0.30 & 5.56 \\
+  3  & 0.37 & 0.12 & 6.61 \\
+  4  & 0.46 & 0.02 & 4.72 \\
+  5  & 0.36 & 0.17 & 6.31 \\
+  6  & 0.43 & 0.11 & 5.08 \\
+  7  & 0.43 & 0.03 & 5.38 \\
+  8  & 0.39 & 0.08 & 6.31 \\
+  9  & 0.35 & 0.08 & 7.76 \\
+  10 & 0.41 & 0.06 & 5.82 \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  \hfill(5 points)
+
+  \textit{Note:} 0.5 points for each corrected row.
+
+\item[(b)] Graphing:
+
+  Clear axis scaling and labels $(x, y)$. \hfill(2 points)
+
+  Plotting of the 10 scatter points (0.3 points per each). \hfill(5 points)
+
+  Correct inclusion of error bars (both axes) for all points (0.3 points per
+  each). \hfill(5 points)
+
+  \ioaafig{2026_DA_D03-s1.pdf}
+
+\item[(c)]
+  \[ S_w = \sum w_i \approx 66.49 \]
+  \hfill(0.5 points)
+  \[ S_x = \sum w_i x_i \approx 563.16 \]
+  \hfill(0.5 points)
+  \[ S_y = \sum w_i y_i \approx 483.65 \]
+  \hfill(0.5 points)
+  \[ S_{xx} = \sum w_i x_i^2 \approx 4775.63 \]
+  \hfill(0.5 points)
+  \[ S_{xy} = \sum w_i x_i y_i \approx 4100.80 \]
+  \hfill(0.5 points)
+  \[ \Delta = S_w S_{xx} - (S_x)^2 \approx 405.96 \]
+  \hfill(0.5 points)
+
+  \textit{Note:} Accept deviations in the final sums due to students
+  truncating $w_i$ floating points. Accept deviations up to $\pm 5.0$ for
+  large sums like $S_{xx}$ and $S_{xy}$, and up to $\pm 0.5$ for smaller sums
+  like $S_w$ and $S_x$.
+  \[ \alpha = \frac{S_{xx} S_y - S_x S_{xy}}{\Delta} \approx 0.9 \]
+  \hfill(0.5 points)
+  \[ \beta = \frac{S_w S_{xy} - S_x S_y}{\Delta} \approx 0.75 \]
+  \hfill(0.5 points)
+  \[ \Delta\alpha = \sqrt{\frac{S_{xx}}{\Delta}} \approx 3.4 \]
+  \hfill(0.5 points)
+  \[ \Delta\beta = \sqrt{\frac{S_w}{\Delta}} \approx 0.40 \]
+  \hfill(0.5 points)
+  \[ \alpha = 0.9 \pm 3.4, \qquad \beta = 0.75 \pm 0.40 \]
+
+  \textit{Note:} If students report $\alpha = 1 \pm 3$ and
+  $\beta = 0.8 \pm 0.4$, the marks remain unchanged.
+
+  Best-fit Line Plotting: Draw the line $y = 0.9 + 0.75x$ through the scatter
+  plot. \hfill(2 points)
+
+\item[(d)]
+  \begin{description}
+  \item[(d.1)] A \hfill(2 points)
+  \item[(d.2)] D \hfill(2 points)
+  \end{description}
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (6 points): Standard Dynamical Model}
+
+\begin{description}
+\item[(a)] The black hole's radius of influence $r_h$ is the exact radius
+  where the enclosed stellar mass equals the black hole mass. Set up the
+  equality:
+  \begin{align*}
+    M_*(r_h) &= M_{\mathrm{BH}} \\
+    \Rightarrow M_*^{\mathrm{tot}} \left( \frac{r_h}{r_h + a} \right)
+      &= M_{\mathrm{BH}}
+  \end{align*}
+  \hfill(1 point)
+
+  Divide both sides by $M_*^{\mathrm{tot}}$ and isolate $r_h$:
+  \begin{align*}
+    \frac{r_h}{r_h + a} &= \frac{M_{\mathrm{BH}}}{M_*^{\mathrm{tot}}} \\
+    r_h \left( 1 - \frac{M_{\mathrm{BH}}}{M_*^{\mathrm{tot}}} \right)
+      &= a\,\frac{M_{\mathrm{BH}}}{M_*^{\mathrm{tot}}}
+  \end{align*}
+  Yield the derived expression:
+  \[
+  r_h = a\,\frac{\dfrac{M_{\mathrm{BH}}}{M_*^{\mathrm{tot}}}}
+               {1 - \dfrac{M_{\mathrm{BH}}}{M_*^{\mathrm{tot}}}}
+  \]
+  \hfill(1 point)
+
+\item[(b)] Ratio Calculation:
+
+  For LRD 4 from the data table: $\log M_*^{\mathrm{tot}} = 8.96$ and
+  $\log M_{\mathrm{BH}} = 8.47$.
+  \[
+  \frac{M_{\mathrm{BH}}}{M_*^{\mathrm{tot}}}
+    = \frac{10^{8.47}}{10^{8.96}} = 10^{-0.49} \approx 0.32
+  \]
+  \hfill(1 point)
+
+  Substitute this mass ratio into the relation derived in the previous part:
+  \[ \frac{r_h}{a} \approx 0.48 \]
+  \hfill(1 point)
+
+  Physical Explanation (Multi-Choice Question): C \hfill(2 points)
+
+  Since $r_h \approx 0.48a$, the supermassive black hole's gravitational
+  sphere of influence extends nearly halfway to the galaxy's scale radius.
+  Unlike typical galaxies, LRDs do not exhibit an ``intermediate region''
+  $(r_h \ll r \ll a)$.
+\end{description}
+
+\medskip\noindent\textbf{Part 3 (16 points): Destruction Physics and Data Barriers}
+
+\begin{description}
+\item[(a)] Tidal force $(\Delta F)$: In a reference frame centered on the
+  star, we evaluate the gravitational force at the center of the star:
+  \[ F_{\mathrm{center}} = \frac{G m M_{\mathrm{BH}}}{r^2} \]
+  \hfill(0.5 points)
+
+  where $m$ is a test mass. At the near-side surface of the star (the point
+  closest to the SMBH), located at a distance of $(r - R_*)$:
+  \[ F_{\mathrm{near}} = \frac{G m M_{\mathrm{BH}}}{(r - R_*)^2} \]
+  \hfill(0.5 points)
+
+  The tidal force is:
+  \[
+  \Delta F = F_{\mathrm{near}} - F_{\mathrm{center}}
+    = \frac{G m M_{\mathrm{BH}}}{(r - R_*)^2}
+    - \frac{G m M_{\mathrm{BH}}}{r^2}
+  \]
+  \hfill(1 point)
+  \[
+  \Delta F = \frac{G m M_{\mathrm{BH}}}{r^2}
+    \left[ \frac{1}{\left(1 - \dfrac{R_*}{r}\right)^2} - 1 \right]
+  \]
+  Using the first-order Taylor expansion for $R_*/r \ll 1$:
+  \[
+  \left( 1 - \frac{R_*}{r} \right)^{-2} \approx 1 + 2\left( \frac{R_*}{r} \right)
+  \]
+  The tidal force is approximated by
+  \[ \Delta F \approx \frac{2 G m M_{\mathrm{BH}} R_*}{r^3} \]
+  \hfill(1 point)
+
+  At $r = r_{\mathrm{t}}$, it balances with self-gravity:
+  \[
+  \frac{2 G m M_{\mathrm{BH}} R_*}{r_{\mathrm{t}}^3} = \frac{G m m_*}{R_*^2}
+  \]
+  \hfill(1 point)
+  \[
+  \Longrightarrow r_{\mathrm{t}} = R_* \left( \frac{2 M_{\mathrm{BH}}}{m_*} \right)^{\frac{1}{3}}
+  \]
+  \hfill(1 point)
+
+  When $r_{\mathrm{t}} = R_{\mathrm{S}} = 2GM_{\mathrm{BH}}/c^2$,
+  $M_{\mathrm{BH}} = M_{\mathrm{H}}$, and
+  \[
+  M_{\mathrm{H}} = \frac{1}{2} \left( \frac{c^2 R_*}{G m_*^{1/3}} \right)^{3/2}
+  \]
+  \hfill(1 point)
+
+  For a Sun-like star, $R_* = R_\odot$, $m_* = M_\odot$, and
+  \[ M_{\mathrm{H}} \approx 1.62 \times 10^8\,\mathrm{M}_\odot \]
+  \hfill(1 point)
+
+\item[(b)] The maximum stellar mass:
+  \[
+  \log M_{*,\mathrm{max}}^{\mathrm{tot}}
+    = \frac{\log M_{\mathrm{H}} - \alpha}{\beta}
+  \]
+  \hfill(1 point)
+
+  where $\alpha = 0.9 \pm 3.4$, $\beta = 0.75 \pm 0.40$, and
+  $\log M_{\mathrm{H}} = 8.21$ for a Sun-like star.
+
+  $\log M_{*,\mathrm{max}}^{\mathrm{tot}}$ reaches the maximum when
+  $\beta = \beta_{\mathrm{min}} = 0.75 - 0.40 = 0.35$ and
+  $\alpha = \alpha_{\mathrm{min}} = 0.9 - 3.4 = -2.5$. Result:
+  \[
+  \log M_{*,\mathrm{max}}^{\mathrm{tot}} = \frac{8.21 - (-2.5)}{0.35} \approx 31
+  \]
+  \hfill(1 point)
+
+  $\log M_{*,\mathrm{max}}^{\mathrm{tot}}$ reaches the minimum when
+  $\beta = \beta_{\mathrm{max}} = 0.75 + 0.40 = 1.15$ and
+  $\alpha = \alpha_{\mathrm{max}} = 0.9 + 3.4 = 4.3$. Result:
+  \[
+  \log M_{*,\mathrm{max}}^{\mathrm{tot}} = \frac{8.21 - 4.3}{1.15} \approx 3.4
+  \]
+  \hfill(1 point)
+
+  Multi-Choice Question: B \hfill(1 point)
+
+  Reason: The lower bound is about the mass of a small star cluster, which
+  cannot host a SMBH. The upper bound largely exceeds the total mass of the
+  entire observable universe. These derived boundaries have no physical
+  reality.
+
+\item[(c)] Identify the necessity to divide by $(1+z)$ to convert the
+  intrinsic rate to the observer rate on Earth:
+  \[
+  \mathrm{Rate}_{\mathrm{obs}}
+    = \frac{N \times \langle \dot{N}_{\mathrm{TDE}} \rangle}{1 + z}
+  \]
+  \hfill(2 points)
+
+  Substitute $z = 5$ to calculate the correct all-sky rate:
+  \[
+  \mathrm{Rate}_{\mathrm{obs}}
+    = \frac{1.021 \times 10^8 \times 2.01 \times 10^{-6}}{1 + 5}
+    \approx 34\ \mathrm{events/year}
+  \]
+  \hfill(1.5 points)
+
+  Calculate the final percentage ratio:
+  \[
+  \mathrm{Area} = \frac{5}{34} = 15\% \text{ of the celestial sphere}
+  \]
+  \hfill(1.5 points)
+\end{description}
+

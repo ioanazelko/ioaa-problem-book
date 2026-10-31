@@ -1,0 +1,97 @@
+\begin{description}
+\item[(a)] Using the Spherical Law of Sines for the PZS (Pole-Zenith-Star)
+  triangle:
+  \[ \frac{\sin(90 - \delta)}{\sin A} = -\frac{\sin z}{\sin H}
+     \Longrightarrow \sin A \sin z = -\sin H \cos\delta \]
+  \hfill(1 point)
+
+  (The ``$-$'' sign appears because $H$ is measured Westward while $A$ is
+  measured Eastward)
+
+  Taking the time derivative:
+  \begin{align*}
+    \frac{\mathrm{d}}{\mathrm{d}t}(\sin A \sin z)
+      &= \frac{\mathrm{d}}{\mathrm{d}t}(-\sin H \cos\delta) \\
+    \Longrightarrow \cos A \sin z \frac{\mathrm{d}A}{\mathrm{d}t}
+      + (\sin A \cos z)\frac{\mathrm{d}z}{\mathrm{d}t}
+      &= -(\cos H \cos\delta)\frac{\mathrm{d}H}{\mathrm{d}t}
+  \end{align*}
+  \hfill(1 point)
+
+  At transit:
+  \[ H = 0 \Longrightarrow \cos H = 1;\quad
+     A = 0 \Longrightarrow \cos A = 1 \text{ and } \sin A = 0 \]
+  \hfill(1 point)
+
+  Since:
+  \[ \frac{\mathrm{d}H}{\mathrm{d}t} = \omega_\oplus;\quad
+     \sin z \frac{\mathrm{d}A}{\mathrm{d}t} = -\omega_\oplus \cos\delta
+     \Longrightarrow \omega_A = \frac{\mathrm{d}A}{\mathrm{d}t}
+     = -\omega_\oplus \frac{\cos\delta}{\sin z} \]
+  \hfill(1 point)
+
+\item[(b)] The minimum zenith distance:
+  \[ z_{\mathrm{min}} = |\phi - \delta|
+     = |21.00^\circ - 21^\circ 08' 33''| = 513'' \]
+  \hfill(1 point)
+
+  At the boundary of the blind zone, the azimuthal tracking speed of the
+  telescope reaches its maximum $\omega_A = 1.0^\circ/\mathrm{s}$,
+  $\omega_\oplus = 15^\circ/\mathrm{hr} = 0.00417^\circ/\mathrm{s}$.
+  \hfill(1 point)
+  \begin{align*}
+    \sin z_{\mathrm{limit}}
+      &= \left|\frac{\omega_\oplus \cos\delta}{\omega_A}\right|
+       = \left|\frac{0.00417 \cos(21^\circ 08' 33'')}{1.0}\right|
+       \approx 0.00389 \\
+    \Longrightarrow z_{\mathrm{limit}} &\approx 802''
+  \end{align*}
+  \hfill(1 point)
+
+  Since $z_{\mathrm{min}} < z_{\mathrm{limit}}$, Zeta Tauri will fall into the
+  blind spot, and the telescope mount will fail to track it during transit.
+  \hfill(1 point)
+
+\item[(c)] The blind spot forms a circle of radius $z_{\mathrm{limit}}$
+  centered on the zenith. The star's path is a chord across this circle,
+  passing at a minimum distance of $z_{\mathrm{min}}$ from the center. Using
+  the Pythagorean theorem for small angles:
+
+  Total angular path:
+  \[ L = 2\sqrt{z_{\mathrm{limit}}^2 - z_{\mathrm{min}}^2}
+       = 2\sqrt{802^2 - 513^2} = 1233'' \]
+  \hfill(1 point)
+
+  The star's apparent angular velocity is the Earth's rotation rate scaled by
+  the cosine of the declination:
+  \[ v_{\mathrm{star}} = \omega_\oplus \cos\delta
+     = 15''/\mathrm{s} \times \cos(21^\circ 08' 33'') = 13.99''/\mathrm{s} \]
+  \hfill(1 point)
+
+  The time duration:
+  \[ \Delta t = \frac{L}{v_{\mathrm{star}}}
+     = \frac{1233''}{13.99''/\mathrm{s}} = 88\,\mathrm{s} \]
+  \hfill(1 point)
+
+\item[(d)] From b), for a given maximum motor speed ($\omega_A$):
+  \[ \sin z_{\mathrm{limit}} \propto \cos\delta \]
+  \hfill(1 point)
+
+  For objects passing exactly through the zenith:
+  \[ \delta = \phi \]
+  Thus, the size of the blind spot scales with latitude:
+  \[ \sin z_{\mathrm{limit}} \propto \cos\phi \]
+  \hfill(1 point)
+
+  At the Equator, $\phi_{\mathrm{max}}$ is slightly above $0^\circ$,
+  $\cos\phi_{\mathrm{max}} \sim 1$, the blind spot reaches its maximum size.
+  \hfill(1 point)
+
+  At the Poles, $\phi_{\mathrm{min}} = \pm 90^\circ$,
+  $\cos\phi_{\mathrm{min}} = 0$, the blind spot completely disappears.
+  \hfill(1 point)
+
+  \textit{Physically, an altazimuth mount at the pole functions exactly like
+  an equatorial mount, requiring a constant tracking speed of
+  $15^\circ/\mathrm{hr}$ with no sudden azimuthal acceleration.}
+\end{description}

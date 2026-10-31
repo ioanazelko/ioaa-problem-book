@@ -21,7 +21,8 @@ from paper_paths import PAPER_DIRS  # noqa: E402
 PAPERS = PAPER_DIRS
 
 TSVS = ["classify_2007_2011.tsv", "classify_2012_2016.tsv",
-        "classify_2017_2021.tsv", "classify_2022_2025.tsv"]
+        "classify_2017_2021.tsv", "classify_2022_2025.tsv",
+        "classify_2026_2030.tsv"]
 
 
 def paper_path(fname):

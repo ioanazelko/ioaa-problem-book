@@ -117,9 +117,61 @@ equilibrium:
 
 \ioaafig{2021_TH_Q5-f1.pdf}
 
+\probhead{4.8}{Solar Neutrinos: From Experimental Measurement to Core Temperature Modeling}{2026}{Hanoi, Vietnam}{TH T06}{20}
+% source id: 2026_TH_T06   tag: Super-Kamiokande event rate, Cherenkov threshold, Gamow sensitivity
+High-energy solar neutrinos from the pp-III chain are detected by Earth-based
+experiments like Super-Kamiokande to study the Sun's core properties.
+
+\begin{description}
+\item[(a)] (5 points) The pp-III neutrino flux on Earth is
+  $\Phi = 5.1 \times 10^6\,\mathrm{cm^{-2}\,s^{-1}}$. The Super-Kamiokande
+  detector is a tank containing $5.0 \times 10^7\,\mathrm{kg}$ of pure water
+  $\mathrm{H_2O}$. The molar mass of ($\mathrm{H_2O}$) is 18\,g/mol. Its
+  detection efficiency is $\eta = 44.5\%$. Assume that solar neutrinos only
+  interact with the detector through elastic scattering with electrons. The
+  average neutrino-electron interaction cross-section is
+  $\sigma \approx 1.0 \times 10^{-44}\,\mathrm{cm^2}$ in water. Physically,
+  $\sigma$ can be understood as the effective target area a neutrino sees
+  when approaching an electron; a larger $\sigma$ means a higher probability
+  of collision. Calculate the number of events captured in a single day
+  $N_\nu$ (24 hours).
+\item[(b)] (6 points) Neutrinos ($\nu$) are detected indirectly via Cherenkov
+  radiation emitted by scattered electrons ($\mathrm{e}^-$), i.e., a product
+  of the electron-neutrino scattering $\nu + e^- \to e^- + \nu$ reaction, in
+  water (refractive index $n = 1.33$). This event occurs when the velocity of
+  electron satisfies $v \ge c/n$. Hence, we must use relativistic mechanics.
+  The relativistic kinetic energy of electron is given as
+  $K = (\gamma - 1)m_{\mathrm{e}}c^2$, where the Lorentz factor $\gamma$ is
+  \[ \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} \]
+  The post-scattering energy of the neutrino ($E'_\nu$) is related to its
+  pre-scattering counterpart ($E_\nu$) as
+  \[ E'_\nu = \frac{E_\nu}{1 + \frac{E_\nu}{m_{\mathrm{e}}c^2}(1 - \cos\theta)} \]
+  where $\theta$ is the scattering angle of the neutrino. Assuming the
+  electron's initial kinetic and binding energies are negligible, determine
+  the minimum initial neutrino energy ($E_{\nu,\mathrm{min}}$) in MeV required
+  to generate a Cherenkov radiation event.
+\item[(c)] (9 points) The solar pp-III reaction rate $R(T)$ depends on the
+  core temperature $T$ via the Gamow equation
+  $R(T) = R_0 e^{-BT^{-\frac{1}{3}}}$, where $R_0$ is a constant,
+  $B = 17757\,\mathrm{K}^{1/3}$ is the Gamow factor, and
+  $T = 1.5 \times 10^7\,\mathrm{K}$ is the steady-state core temperature.
+
+  Suppose the temperature fluctuates slightly ($T \to T + \Delta T$), causing
+  a small fractional reaction rate change ($R \to R + \Delta R$). The relation
+  between the fractional change in the reaction rate and temperature is in
+  the form $\frac{\Delta R}{R} = \alpha\frac{\Delta T}{T}$, where $\alpha$ is
+  the thermal sensitivity coefficient. Express $\alpha$ in terms of $B$ and
+  $T$. If the number of events detected by the Super-Kamiokande detector in a
+  single day increases by 2\%, calculate the corresponding percentage change
+  in the Sun's core temperature.
+
+  \textit{Hints:} $(1 + x)^\delta \approx 1 + \delta x$ \textit{and}
+  $\ln(1 + x) \approx x$ \textit{for} $|x| \ll 1$.
+\end{description}
+
 \section*{Data-analysis problems}
 
-\probhead{4.8}{}{2013}{Volos, Greece}{DA D2}{}
+\probhead{4.9}{}{2013}{Volos, Greece}{DA D2}{}
 % source id: 2013_DA_D2   tag: sunspot tracking, solar synodic rotation
 You are given 5 recent photographs of the solar photosphere shot at exactly the
 same time every two days (May 1 -- May 9, 2013) in equatorial coordinates. You
@@ -148,7 +200,7 @@ axes, $P_0$, also varies through the year. The numerical values of these angles
   in days.
 \end{enumerate}
 
-\probhead{4.9}{Predicting arrival times of coronal mass ejections on Earth}{2025}{Mumbai, India}{DA D02}{60}
+\probhead{4.10}{Predicting arrival times of coronal mass ejections on Earth}{2025}{Mumbai, India}{DA D02}{60}
 % source id: 2025_DA_D02   tag: CME drag model arrival prediction
 The Sun occasionally releases magnetized plasma, termed coronal mass
 ejections (CMEs), that originate from the surface of the Sun and propagate
@@ -584,7 +636,155 @@ E = \left(2m_{\mathrm{He}^{3}} - m_{\mathrm{He}^{4}} - 2m_{\mathrm{H}^{1}}\right
   \end{align*}
 \end{description}
 
-\solhead{4.8}{}
+\solhead{4.8}{Solar Neutrinos: From Experimental Measurement to Core Temperature Modeling}
+% source id: 2026_TH_T06
+\begin{description}
+\item[(a)] Number of moles of water:
+  \[ n_{\mathrm{H_2O}} = \frac{m}{M_{\mathrm{H_2O}}}
+     = \frac{5.0 \times 10^7}{18 \times 10^{-3}}
+     \approx 2.8 \times 10^9\,\mathrm{mol} \]
+  \hfill(0.5 points)
+
+  Number of water molecules:
+  \begin{align*}
+    N_{\mathrm{H_2O}} = n_{\mathrm{H_2O}} \times N_{\mathrm{A}}
+      &= (2.8 \times 10^9) \times (6.022 \times 10^{23}) \\
+      &\approx 1.7 \times 10^{33}\ \mathrm{molecules}
+  \end{align*}
+  \hfill(0.5 points)
+
+  Each water molecule contains 10 electrons, so the total number of electrons
+  in the detector is:
+  \[ N_{\mathrm{e}} = N_{\mathrm{H_2O}} \times 10
+     = (1.7 \times 10^{33}) \times 10 = 1.7 \times 10^{34}\ \mathrm{electrons} \]
+  \hfill(1 point)
+
+  Expression to calculate the expected number of registered events in a time
+  interval $t$:
+  \[ N_\nu = \Phi N_{\mathrm{e}} \sigma \eta t \]
+  \hfill(2 points)
+
+  The expected number of events registered per day is:
+  \begin{align*}
+    N_\nu &= (5.1 \times 10^6) \times (1.7 \times 10^{34})
+             \times (1.0 \times 10^{-44}) \times 0.445 \times 86400 \\
+          &\approx 33\ \mathrm{events}
+  \end{align*}
+  \hfill(1 point)
+
+\item[(b)] For the Cherenkov effect to occur, the electron velocity must
+  satisfy the condition:
+  \[ v \ge \frac{c}{n} \Longrightarrow \frac{v}{c} \ge \frac{1}{n} \]
+  At the threshold where radiation begins, we have
+  \[ \gamma_{\mathrm{min}} = \frac{1}{\sqrt{1 - \frac{1}{n^2}}}
+     = \frac{n}{\sqrt{n^2 - 1}} \]
+  \hfill(1 point)
+
+  The minimum kinetic energy that an electron should have for the Cherenkov
+  effect to occur is:
+  \[ K_{\mathrm{Cherenkov}} = \left(\frac{n}{\sqrt{n^2 - 1}} - 1\right)
+     m_{\mathrm{e}}c^2 \]
+  Substituting the numerical values $n = 1.33$ and
+  $m_{\mathrm{e}}c^2 = 0.511\,\mathrm{MeV}$:
+  \[ K_{\mathrm{Cherenkov}} = \left(\frac{1.33}{\sqrt{1.33^2 - 1}} - 1\right)
+     \times 0.511 = 0.264\,\mathrm{MeV} \]
+  \hfill(1 point)
+
+  The kinetic energy received by the electron is:
+  \[ K_{\mathrm{e}} = E_\nu - E'_\nu \]
+  For $K_{\mathrm{e}}$ to reach its maximum, the neutrino energy after
+  scattering $E'_\nu$ must hit its minimum value. $E'_\nu$ is minimized when
+  $(1 - \cos\theta)$ reaches its maximum, meaning $\cos\theta = -1$
+  (backscattering at $180^\circ$). Thus:
+  \[ K_{\mathrm{e,max}} = E_\nu - \frac{E_\nu}{1 + \frac{2E_\nu}{m_{\mathrm{e}}c^2}}
+     = \frac{2E_\nu^2}{m_{\mathrm{e}}c^2 + 2E_\nu} \]
+  \hfill(1 point)
+
+  $E_\nu$ is minimum once
+  \[ K_{\mathrm{e,max}} = K_{\mathrm{Cherenkov}} = 0.264\,\mathrm{MeV} \]
+  \hfill(1 point)
+
+  Solve the equation:
+  \[ \frac{2E_\nu^2}{0.511 + 2E_\nu} = 0.264
+     \Longrightarrow 2E_\nu^2 - 0.528E_\nu - 0.135 = 0 \]
+  \hfill(1 point)
+  \[ \Longrightarrow E_{\nu,\mathrm{min}} \approx 0.423\,\mathrm{MeV}
+     \ \text{or}\ E_{\nu,\mathrm{min}} \approx -0.159\,\mathrm{MeV} \]
+  Get the positive root because energy should be positive:
+  \[ E_{\nu,\mathrm{min}} \approx 0.423\,\mathrm{MeV} \]
+  \hfill(1 point)
+
+\item[(c)] Express:
+  \[ R + \Delta R = R(T + \Delta T) = R_0 e^{-B(T + \Delta T)^{-1/3}} \]
+  \hfill(1 point)
+
+  Express the ratio:
+  \[ 1 + \frac{\Delta R}{R}
+     = e^{-BT^{-1/3}\left[\left(1 + \frac{\Delta T}{T}\right)^{-1/3} - 1\right]} \]
+  \hfill(1 point)
+
+  Take the natural logarithm (ln) of both sides:
+  \[ \ln\left(1 + \frac{\Delta R}{R}\right)
+     = -BT^{-1/3}\left[\left(1 + \frac{\Delta T}{T}\right)^{-1/3} - 1\right] \]
+  \hfill(1 point)
+
+  The left-hand side is:
+  \[ \ln\left(1 + \frac{\Delta R}{R}\right) \approx \frac{\Delta R}{R} \]
+  \hfill(0.5 points)
+
+  The right-hand side is:
+  \[ \left[\left(1 + \frac{\Delta T}{T}\right)^{-1/3} - 1\right]
+     \approx \left(1 - \frac{1}{3}\frac{\Delta T}{T}\right) - 1
+     = -\frac{1}{3}\frac{\Delta T}{T} \]
+  \hfill(0.5 points)
+
+  Combine these two approximations:
+  \begin{align*}
+    \frac{\Delta R}{R} &\approx -BT^{-1/3}\left(-\frac{1}{3}\frac{\Delta T}{T}\right) \\
+    \Longrightarrow \frac{\Delta R}{R}
+      &\approx \left(\frac{1}{3}BT^{-1/3}\right)\frac{\Delta T}{T} \\
+    \Longrightarrow \alpha &= \frac{1}{3}BT^{-1/3}
+  \end{align*}
+  \hfill(1 point)
+
+  \textit{Note: If a student correctly determines $\alpha$ by taking the
+  derivative of $R(T)$, give 5 points.}
+  \begin{align*}
+    \frac{\mathrm{d}R}{\mathrm{d}T}
+      &= R_0 \exp\left(-BT^{-1/3}\right) \cdot (-B) \cdot
+         \left(-\frac{1}{3}\right) T^{-4/3} \\
+      &= R(T) \cdot \frac{B}{3} T^{-4/3} \quad \text{(2 points)} \\
+    \Delta R &\approx \frac{\mathrm{d}R}{\mathrm{d}T}\Delta T
+      = R \cdot \frac{B}{3} T^{-4/3}\Delta T \quad \text{(1 point)} \\
+    \frac{\Delta R}{R} &\approx \frac{B}{3} T^{-4/3}\Delta T
+      = \frac{B}{3T^{1/3}} \cdot \frac{\Delta T}{T} \quad \text{(1 point)} \\
+    \alpha &= \frac{1}{3}BT^{-1/3} \quad \text{(1 point)}
+  \end{align*}
+
+  The fractional change in the reaction rate is:
+  \[ \frac{\Delta R}{R} = \frac{\Delta\Phi}{\Phi} = \frac{\Delta N_\nu}{N_\nu}
+     = 2\% = 0.02 \]
+  \hfill(2 points)
+
+  The thermal sensitivity coefficient is:
+  \[ \alpha = \frac{1}{3}BT^{-\frac{1}{3}}
+     = \frac{17757}{3 \times (1.5 \times 10^7)^{\frac{1}{3}}} \approx 24 \]
+  \hfill(1 point)
+
+  The corresponding percentage change in the Sun's core temperature is:
+  \[ \frac{\Delta T}{T} = \frac{\Delta R}{R}\frac{1}{\alpha}
+     = \frac{0.02}{24} \approx 0.083\% \]
+  \hfill(1 point)
+
+  \textit{Note: If a student bypasses the algebraic linearization proof and
+  directly substitutes the numerical constants and
+  $\frac{\Delta R}{R} = 0.02$ into the original unapproximated exponential
+  ratio equation to solve for $\frac{\Delta T}{T}$ numerically, award 4
+  points provided they correctly calculate
+  $\frac{\Delta T}{T} \approx 0.083\%$.}
+\end{description}
+
+\solhead{4.9}{}
 % source id: 2013_DA_D2
 Five large photographs of the solar photosphere (adapted from
 www.spaceweather.com) and the appropriate (and on-scale) Stonyhurst grids will
@@ -643,7 +843,7 @@ as they follow the rotation of the Sun.
   \end{equation*}
 \end{enumerate}
 
-\solhead{4.9}{Predicting arrival times of coronal mass ejections on Earth}
+\solhead{4.10}{Predicting arrival times of coronal mass ejections on Earth}
 % source id: 2025_DA_D02
 \begin{description}
 \item[(D02.1a)] Average acceleration (in m\,s$^{-2}$) is given by the
@@ -858,3 +1058,4 @@ as they follow the rotation of the Sun.
   Taking the average of the solar wind speed, $V_s$, for each case, we get
   $V_{s,\mathrm{avg}} = 339$\,km\,s$^{-1}$.
 \end{description}
+

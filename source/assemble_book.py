@@ -30,7 +30,7 @@ HOSTS = {2007:"Chiang Mai, Thailand",2008:"Bandung, Indonesia",2009:"Tehran, Ira
          2016:"Bhubaneswar, India",2017:"Phuket, Thailand",2018:"Beijing, China",
          2019:"Keszthely, Hungary",2020:"GeCAA (Estonia, remote)",2021:"Bogotá (remote)",
          2022:"Kutaisi, Georgia",2023:"Katowice, Poland",2024:"Rio de Janeiro, Brazil",
-         2025:"Mumbai, India"}
+         2025:"Mumbai, India",2026:"Hanoi, Vietnam"}
 
 def prob_id(year, rnd, label):
     y = int(year)
@@ -45,7 +45,7 @@ def sol_id(pid):
 
 def load_class():
     recs = []
-    for f in ["classify_2007_2011.tsv","classify_2012_2016.tsv","classify_2017_2021.tsv","classify_2022_2025.tsv"]:
+    for f in ["classify_2007_2011.tsv","classify_2012_2016.tsv","classify_2017_2021.tsv","classify_2022_2025.tsv","classify_2026_2030.tsv"]:
         for line in open(f):
             line = line.rstrip("\n")
             if not line.strip(): continue
@@ -264,7 +264,7 @@ def run(org, sol_pages=None, prob_pages=None):
     p = book.page
     p.insert_text((ML, 200), "International Olympiad on", fontsize=26, fontname="hebo")
     p.insert_text((ML, 234), "Astronomy & Astrophysics", fontsize=26, fontname="hebo")
-    p.insert_text((ML, 274), "Problems by Topic, 2007 - 2025", fontsize=18, fontname="helv")
+    p.insert_text((ML, 274), "Problems by Topic, 2007 - 2026", fontsize=18, fontname="helv")
     p.insert_text((ML, 300), "Theory and Data Analysis rounds, with solutions", fontsize=12, fontname="helv", color=(0.3,0.3,0.3))
     p.insert_text((ML, 330), "Assembled by I. A. Zelko", fontsize=14, fontname="hebo")
     p.draw_line((ML, 348), (PAGE_W-MR, 348), width=1.5)
@@ -383,6 +383,6 @@ if __name__ == "__main__":
     b1 = run(org)                              # pass 1: learn page numbers
     b2 = run(org, sol_pages=b1.pagemarks, prob_pages=b1.pagemarks)  # pass 2
     b2.doc.set_toc([t for t in b2.toc if t[0] <= 2] and b2.toc)
-    out = "IOAA_Problems_by_Topic_2007-2025.pdf"
+    out = "IOAA_Problems_by_Topic_2007-2026.pdf"
     b2.doc.save(out, garbage=3, deflate=True)
     print(out, b2.doc.page_count, "pages")

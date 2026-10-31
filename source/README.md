@@ -20,8 +20,8 @@ page. That is why the layout code only controls what sits *around* each crop.
 ## The source PDFs
 
 The official IOAA problem and solution papers are kept outside this repository
-in the sibling directory `../IOAA Source Papers/`. It holds 103 theory and
-data-analysis PDFs and 70 observation-round PDFs under `observation/`.
+in the sibling directory `../IOAA Source Papers/`. It holds 107 theory and
+data-analysis PDFs and 74 observation-round PDFs under `observation/`.
 
 All source-paper tools resolve that location relative to the repository. Set
 `IOAA_PAPERS_DIR` to an absolute path to use an archive stored elsewhere.
@@ -30,15 +30,15 @@ All source-paper tools resolve that location relative to the repository. Set
 
 | File | Role |
 |---|---|
-| `../IOAA Source Papers/` | External archive containing the 103 official IOAA theory and data-analysis source PDFs. |
-| `../IOAA Source Papers/observation/` | External archive containing 70 observation-round PDFs (planetarium, sky map / naked eye, telescope, night and day), 2007-2025. The crop book does not use them. |
+| `../IOAA Source Papers/` | External archive containing the 107 official IOAA theory and data-analysis source PDFs. |
+| `../IOAA Source Papers/observation/` | External archive containing 74 observation-round PDFs (planetarium, sky map / naked eye, telescope, night and day), 2007-2026. The crop book does not use them. |
 | `paper_paths.py` | Resolves the external archive, with an `IOAA_PAPERS_DIR` override. |
-| `classify_obs.tsv` | 74 observation problems classified into the same 14 chapters, with round codes `OBS-PLAN` / `OBS-SKY` / `OBS-TEL`. Used by the LaTeX edition only. |
-| `classify_*.tsv` | The editorial content. One row per problem: `year, round(TH/DA), label, title, points, chapter(1-14), tag, secondary-chapter`. 326 rows. **Edit these to re-file a problem into a different chapter, retitle it, or change its order.** |
+| `classify_obs.tsv` | 80 observation problems classified into the same 14 chapters, with round codes `OBS-PLAN` / `OBS-SKY` / `OBS-TEL`. Used by the LaTeX edition only. |
+| `classify_*.tsv` | The editorial content. One row per problem: `year, round(TH/DA), label, title, points, chapter(1-14), tag, secondary-chapter`. 341 rows, in five-year blocks. **Edit these to re-file a problem into a different chapter, retitle it, or change its order.** |
 | `build_config.py` | Generates `config_all.json`: the anchor regexes / page ranges that say where each problem starts and ends inside each source paper. |
 | `config_all.json` | Generated output of the above. |
 | `split_pdf.py` | Turns `config_all.json` into `snippets/manifest.json`. |
-| `snippets/manifest.json` | The crop table: `{snippet_id: [[source_pdf, page_0based, y_top, y_bottom], ...]}`. Ids look like `2016_TH_T3` (problem) and `2016_THSOL_T3` (solution). 652 entries. |
+| `snippets/manifest.json` | The crop table: `{snippet_id: [[source_pdf, page_0based, y_top, y_bottom], ...]}`. Ids look like `2016_TH_T3` (problem) and `2016_THSOL_T3` (solution). 682 entries. |
 | `assemble_book.py` | The book assembler — layout, headers, TOC bookmarks, cross-references, front matter, index by year. |
 
 ## Rebuilding
@@ -55,8 +55,8 @@ Assemble the book:
 python assemble_book.py
 ```
 
-This writes `IOAA_Problems_by_Topic_2007-2025.pdf` (~178 MB uncompressed,
-1366 pages). It runs the layout **twice**: pass 1 learns which page every
+This writes `IOAA_Problems_by_Topic_2007-2026.pdf` (~187 MB uncompressed,
+1484 pages). It runs the layout **twice**: pass 1 learns which page every
 problem and solution lands on, pass 2 re-lays it out with the
 `[sol. p. N]` / `[problem p. N]` cross-references filled in.
 
@@ -64,7 +64,7 @@ To get the shipped 116 MB file:
 
 ```python
 import pymupdf
-d = pymupdf.open('IOAA_Problems_by_Topic_2007-2025.pdf')
+d = pymupdf.open('IOAA_Problems_by_Topic_2007-2026.pdf')
 d.save('out.pdf', garbage=4, deflate=True, deflate_images=True,
        deflate_fonts=True, clean=True)
 ```

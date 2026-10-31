@@ -5,34 +5,35 @@ they can be reflowed, restyled and pulled into worksheets. Figures are the
 original vector art from the official papers, not redrawn.
 
 This is a **companion to**, not a replacement for, the crop edition
-(`../IOAA_Problems_by_Topic_2007-2025.pdf`). Where the two disagree, the crop
+(`../IOAA_Problems_by_Topic_2007-2026.pdf`). Where the two disagree, the crop
 edition is authoritative — it is a photograph of the official paper, while a
 transcription can be silently wrong.
 
 ## Status
 
-**COMPLETE: 402/402 statements and all available official solution material
-transcribed.**
+**COMPLETE: 423/423 statements and all available official solution material
+transcribed (2007 to 2026).**
 
 Every problem statement and every published official solution is now typed as
 LaTeX, verified digit-by-digit against rendered images of the official papers.
 Solutions carry the official reasoning with inline point values; standalone
 marking-scheme rubrics are omitted (the crop edition keeps full rubrics).
 
-Of the 402 solution slots, 385 contain substantive official solutions. The
-other 17 carry explanatory notes, not omitted transcriptions: the 2016 and 2017
-observation-round solutions were never published (12); the 2007 pointer-task
+Of the 423 solution slots, 403 contain substantive official solutions. The
+other 20 carry explanatory notes, not omitted transcriptions: the 2016 and 2017
+observation-round solutions were never published (12); the 2026 planetarium
+solutions have not been released (3); the 2007 pointer-task
 and 2014 outdoor-telescope keys don't survive (2); the official 2016 solution
 set replaces the AstroSat problem with a different problem (1); the 2014
 solutions file skips short problem 4 (1); and the official key for one 2012
 timed practical task contains no answer material (1).
 
-All 369 figure references flagged during transcription are now resolved:
-~330 diagrams (solution sketches, fitted plots, marked observation charts,
+All figure references flagged during transcription are resolved:
+~350 diagrams (solution sketches, fitted plots, marked observation charts,
 answer keys) were extracted as vector/scan crops into `images/`, and the
 handful of items whose source material was never digitised (printed-only exam
 charts, plots the organisers never published) carry visible italic notes in
-place. The book also ends with an appendix collecting the ~280 errata found
+place. The book also ends with an appendix collecting the ~320 errata found
 in the official solutions during digit-by-digit verification.
 
 ### Why the solutions are not transcribed
@@ -89,7 +90,7 @@ Ghostscript (`gs`); `lossless` only requires PyMuPDF.
 | `build_book.py` | Runs the normal build and, when requested, an optimization profile. |
 | `../optimize_pdf.py` | PDF optimizer used by the optional LaTeX build step. |
 | `chapters/chNN.tex` | One file per chapter. **This is where transcription happens.** |
-| `images/` | 565 cropped vector PDF assets, plus `index.json` mapping problem ids to their figures. |
+| `images/` | 584 cropped vector PDF assets, plus `index.json` mapping problem ids to their figures. |
 | `extract_images.py` | Regenerates `images/` from the source papers. |
 | `fig_helper.py` | Makes manual figure crops; `python fig_helper.py audit` checks every figure for the delegation watermark. |
 | `make_chapters.py` | Regenerates chapter scaffolding from the classification TSVs. |

@@ -1,0 +1,177 @@
+The equation of state (EoS) of ultra-dense matter in neutron stars remains a
+major unsolved problem in fundamental physics. Theoretical models predicting a
+``soft'' EoS dictate that neutron stars must collapse into black holes before
+reaching a mass of $2.0\,\mathrm{M}_\odot$. Consequently, a robust mass
+measurement of a neutron star exceeding $2.0\,\mathrm{M}_\odot$ would
+definitively rule out soft EoS models.
+
+Radio observations of the millisecond pulsar PSR J0740+6620, located in a
+binary system with a white dwarf companion, offer a unique testbed for this
+prediction. According to General Relativity, as the pulsar passes through
+superior conjunction, when it is directly behind its companion, the
+companion's gravitational field curves spacetime, delaying the propagation of
+radio pulses to Earth. This phenomenon is known as the Shapiro time delay.
+Assuming an edge-on orbital inclination ($i \approx 90^\circ$) and a perfectly
+circular orbit (eccentricity $e = 0$), the Shapiro delay
+$\Delta t_{\mathrm{S}}$ is approximated by
+\[
+\Delta t_{\mathrm{S}} \approx
+  \left(\frac{2GM_{\mathrm{WD}}}{c^3}\right)\left[-\ln\left(1-\cos\phi\right)\right] + b
+\]
+where $M_{\mathrm{WD}}$ is the white dwarf mass, $\phi$ is the orbital phase
+($\phi = 0^\circ$ at superior conjunction), and $b$ is a baseline timing
+offset.
+
+The binary system has an orbital period of $P_b = 4.767$ days. The pulsar has
+a projected semi-major axis of $x = 3.978$ seconds, which corresponds to an
+orbital radius $a_p = cx$. Assume the uncertainties on $P_b$ and $x$ are
+negligible.
+% sic: "seconds" as printed (the solution file says light-seconds)
+
+The following table presents 15 observations of pulsar Shapiro delay at
+various orbital phases ($\phi$) near superior conjunction. A constant
+measurement uncertainty of $\sigma_t = \pm 1.5\,\mu\mathrm{s}$ is assumed for
+all observations.
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+ID & Orbital Phase $\phi$ ($^\circ$) & Shapiro Delay $\Delta t_{\mathrm{S}}$ ($\mu$s) \\
+\midrule
+1  & $2.0$   & 18.5 \\
+2  & $-3.0$  & 17.5 \\
+3  & $4.0$   & 16.3 \\
+4  & $-5.0$  & 13.9 \\
+5  & $6.0$   & 12.8 \\
+6  & $8.0$   & 12.5 \\
+7  & $10.0$  & 10.1 \\
+8  & $-12.0$ & 10.3 \\
+9  & $15.0$  & 9.3 \\
+10 & $20.0$  & 6.5 \\
+11 & $-22.0$ & 5.8 \\
+12 & $25.0$  & 6.6 \\
+13 & $30.0$  & 5.0 \\
+14 & $-35.0$ & 4.7 \\
+15 & $40.0$  & 3.9 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip\noindent\textbf{Part 1 (26 points): Estimation of White Dwarf Mass}
+
+\begin{description}
+\item[(a)] (4 points) Define appropriate linearized variables ($X$ and $Y$),
+  and tabulate their values for 15 data points.
+\item[(b)] (18 points) Plot a scatter diagram of the 15 data points including
+  their available error bars. Overlay the best-fit line on your graph (mark
+  your graph as ``D01.1b''). Determine the slope $a$, the intercept $b$, and
+  their respective uncertainties $(\sigma_a, \sigma_b)$.
+\item[(c)] (4 points) Determine the mass of the white dwarf
+  $(M_{\mathrm{WD}})$ and its absolute uncertainty $(\Delta M_{\mathrm{WD}})$
+  in units of $\mathrm{M}_\odot$.
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (13 points): Binary Dynamics and Error Propagation}
+
+\begin{description}
+\item[(a)] (6 points) The mass function of the binary system is defined as
+  \[
+  f_M = \frac{M_{\mathrm{WD}}^3}{\left(M_{\mathrm{PSR}} + M_{\mathrm{WD}}\right)^2}
+  \]
+  where $M_{\mathrm{PSR}}$ is the mass of the pulsar. Derive the expression of
+  $f_M$ in terms of the observables $a_p$ and $P_b$, and hence compute its
+  value in units of $\mathrm{M}_\odot$.
+\item[(b)] (5 points) Determine the mass of the pulsar $(M_{\mathrm{PSR}})$
+  and derive its uncertainty $(\Delta M_{\mathrm{PSR}})$.
+\item[(c)] (2 points) Determine how many standard deviations $(\sigma)$ the
+  measured pulsar mass lies above the upper mass limit predicted by the
+  ``soft EoS'' model. Hence, state whether the model can be ruled out.
+\end{description}
+
+\medskip\noindent\textbf{Part 3 (11 points): Pulse Time of Arrival (TOA): Effect of Multiple Factors}
+
+In binary pulsar timing, an observed Time of Arrival (TOA) is inherently
+shifted by various physical effects relative to an idealized baseline. To
+accurately determine the companion mass, astrophysicists must account for
+three primary components of the timing delay:
+\begin{itemize}
+\item Shapiro delay $(\Delta t_{\mathrm{S}})$, caused by spacetime curvature
+  around the white dwarf companion, produces a minuscule shift of
+  $\sim 10\,\mu\mathrm{s}$.
+\item Roemer delay $(\Delta t_{\mathrm{R}})$: The variation in pulse arrival
+  time caused by the movement of the pulsar along its orbit around the
+  binary's center of mass.
+\item Dispersion measure delay $(\Delta t_{\mathrm{DM}})$: The propagation
+  delay experienced by a signal traveling through the ionized interstellar
+  medium. This delay is given by
+  \[
+  \Delta t_{\mathrm{DM}} = K \cdot DM \cdot \frac{1}{f^2}
+  \]
+  where $f$ is the frequency of the observed signal, $K$ is the dispersion
+  constant, and $DM$ is the dispersion measure.
+\end{itemize}
+
+\begin{description}
+\item[(a)] (3 points) Physical classification: Classify each of the following
+  signal delay mechanisms as achromatic (frequency-independent) or chromatic
+  (frequency-dependent).
+
+  Roemer delay: [\ ] Achromatic \quad [\ ] Chromatic\\
+  Dispersion measure delay: [\ ] Achromatic \quad [\ ] Chromatic\\
+  Shapiro delay: [\ ] Achromatic \quad [\ ] Chromatic
+\item[(b)] (2 points) To understand the difficulty of isolating the Shapiro
+  delay, we must compare the magnitudes of these effects. Given an observing
+  frequency $f = 1400\,\mathrm{MHz}$ (standard L-band), an average
+  interstellar dispersion measure $DM = 15\,\mathrm{pc\,cm^{-3}}$, and the
+  dispersion constant
+  $K = 4.15 \times 10^3\,\mathrm{s\,MHz^2\,pc^{-1}\,cm^3}$:
+  \begin{description}
+  \item[(b.1)] (1 points) Calculate $\Delta t_{\mathrm{DM}}$.
+  \item[(b.2)] (1 points) Arrange the three delays
+    $(\Delta t_{\mathrm{R}}, \Delta t_{\mathrm{DM}}, \Delta t_{\mathrm{S}})$
+    in order from largest to smallest.
+  \end{description}
+\item[(c)] (3 points) Below are six schematic graphs (A--F) illustrating the
+  time delay as a function of orbital phase over one complete orbit. The
+  vertical axis represents the delay amplitude (numerical values omitted).
+  Match each of the three physical delay mechanisms listed below to the graph
+  that best represents its expected shape.
+
+\ioaafig{2026_DA_D01-f1.pdf}
+% f1 = six schematic graphs A to F of time delay against orbital phase (0 to 1)
+
+  Roemer delay [\ ?\ ]\\
+  Dispersion measure delay [\ ?\ ]\\
+  Shapiro delay [\ ?\ ]
+\item[(d)] (3 points) Observational strategy: Variations in the interstellar
+  medium cause the dispersion measure to fluctuate over time, introducing
+  timing noise. Select one correct answer to each question below.
+  \begin{description}
+  \item[(d.1)] (1 point) Why is a monochromatic observation (observing at a
+    single frequency) insufficient to constrain the extremely small
+    $10\,\mu\mathrm{s}$ Shapiro delay?
+    \begin{description}
+    \item[A.] The telescope's receiver cannot process data faster than
+      $10\,\mu\mathrm{s}$.
+    \item[B.] Single frequencies are completely absorbed by the interstellar
+      plasma.
+    \item[C.] The system contains multiple sources of time delay, so the
+      different physical effects cannot be distinguished from a single
+      observation.
+    \item[D.] Monochromatic signals do not experience gravitational time
+      dilation.
+    \end{description}
+  \item[(d.2)] (2 points) Which observational strategy is used to measure and
+    correct for dispersion measure variations?
+    \begin{description}
+    \item[A.] Integrating the signal over a one-year period to average out
+      the dispersion measure variations.
+    \item[B.] Conducting simultaneous observations at two distinct radio
+      frequencies.
+    \item[C.] Observing strictly at an extremely low frequency where the
+      dispersion measure can be reduced.
+    \item[D.] Only observing the pulsar when it is outside superior
+      conjunction.
+    \end{description}
+  \end{description}
+\end{description}

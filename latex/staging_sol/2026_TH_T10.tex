@@ -1,0 +1,142 @@
+\begin{description}
+\item[(a)] Rewrite the equation of conservation of dark energy as follows
+  \begin{align*}
+    \frac{\mathrm{d}\rho_{\mathrm{DE}}}{\mathrm{d}t}
+      + 3\left(\frac{1}{a}\frac{\mathrm{d}a}{\mathrm{d}t}\right)
+        (1 + w_{\mathrm{DE}})\rho_{\mathrm{DE}} &= 0 \\
+    \Rightarrow \frac{\mathrm{d}\rho_{\mathrm{DE}}}{\rho_{\mathrm{DE}}}
+      &= -3(1 + w_{\mathrm{DE}})\frac{\mathrm{d}a}{a}
+  \end{align*}
+  \hfill(1 point)
+
+  Based on the relation,
+  \[ \frac{1}{a} = 1 + z \Rightarrow \frac{\mathrm{d}a}{a} = -a\,\mathrm{d}z
+     = -\frac{\mathrm{d}z}{z+1} \]
+  we obtain
+  \[ \frac{\mathrm{d}\rho_{\mathrm{DE}}}{\rho_{\mathrm{DE}}}
+     = 3\left[1 + w_{\mathrm{DE}}(z)\right]\frac{1}{1+z}\,\mathrm{d}z \]
+  \hfill(1 point)
+
+  Integrate both sides,
+  \[ \int_{\rho_{\mathrm{DE},0}}^{\rho_{\mathrm{DE}}}
+     \frac{\mathrm{d}\rho'_{\mathrm{DE}}}{\rho'_{\mathrm{DE}}}
+     = \int_0^z \frac{3\left[1 + w_{\mathrm{DE}}(z')\right]}{1+z'}\,\mathrm{d}z' \]
+  \hfill(1 point)
+
+  where the prime indicates the integration variables.
+
+  Compute the left-hand integral,
+  \[ \ln\left(\frac{\rho_{\mathrm{DE}}}{\rho_{\mathrm{DE},0}}\right)
+     = \int_0^z \frac{3\left[1 + w_{\mathrm{DE}}(z')\right]}{1+z'}\,\mathrm{d}z' \]
+  \hfill(1 point)
+
+  Finally, we have
+  \[ \rho_{\mathrm{DE}}(z) = \rho_{\mathrm{DE},0}
+     \exp\left[\int_0^z \frac{3\left[1 + w_{\mathrm{DE}}(z')\right]}{1+z'}
+     \,\mathrm{d}z'\right] \]
+  \hfill(1 point)
+
+\item[(b)] From the equation of conversation of matter, we get
+  % sic: ``conversation'' for ``conservation'' as printed
+  \begin{align*}
+    \dot{\rho}_{\mathrm{m}} + 3H\rho_{\mathrm{m}} &= 0 \\
+    \Rightarrow \frac{\mathrm{d}\rho_{\mathrm{m}}}{\mathrm{d}t}
+      + \frac{3}{a}\frac{\mathrm{d}a}{\mathrm{d}t}\rho_{\mathrm{m}} &= 0 \\
+    \Rightarrow \frac{\mathrm{d}\rho_{\mathrm{m}}}{\rho_{\mathrm{m}}}
+      &= \frac{3}{1+z}\,\mathrm{d}z
+  \end{align*}
+  \hfill(1 point)
+
+  Integrate both sides,
+  \[ \int_{\rho_{\mathrm{m},0}}^{\rho_{\mathrm{m}}}
+     \frac{\mathrm{d}\rho'_{\mathrm{m}}}{\rho'_{\mathrm{m}}}
+     = \int_0^z \frac{3}{1+z'}\,\mathrm{d}z' \]
+  \hfill(1 point)
+
+  We obtain
+  \[ \rho_{\mathrm{m}} = \rho_{\mathrm{m},0}(1+z)^3 \]
+  \hfill(1 point)
+
+  Insert $\rho_{\mathrm{m}}$ and $\rho_{\mathrm{DE}}$ into the Friedmann
+  equation and divide both sides of this equation by $3H_0^2$:
+  \[ \frac{H^2}{H_0^2} = \frac{8\pi G}{3H_0^2}\left\{
+     \rho_{\mathrm{m},0}(1+z)^3 + \rho_{\mathrm{DE},0}
+     \exp\int_0^z \frac{3\left[1 + w_{\mathrm{DE}}(z')\right]}{1+z'}
+     \,\mathrm{d}z'\right\} \]
+  \hfill(1 point)
+
+  Finally, we get
+  \begin{align*}
+    E^2(z) &= \frac{\rho_{\mathrm{m},0}}{\rho_{\mathrm{crit},0}}(1+z)^3
+      + \frac{\rho_{\mathrm{DE},0}}{\rho_{\mathrm{crit},0}}
+        \exp\left\{\int_0^z \frac{3\left[1 + w_{\mathrm{DE}}(z')\right]}{1+z'}
+        \,\mathrm{d}z'\right\} \\
+    \Rightarrow E^2(z) &= \Omega_{\mathrm{m},0}(1+z)^3 + \Omega_{\mathrm{DE},0}
+        \exp\left\{\int_0^z \frac{3\left[1 + w_{\mathrm{DE}}(z')\right]}{1+z'}
+        \,\mathrm{d}z'\right\}
+  \end{align*}
+  \hfill(1 point)
+
+  \textit{Note: Students can directly write down the formula of
+  $\rho_{\mathrm{m}}$ without derivations. The marks remain unchanged.}
+
+\item[(c)] Rewrite $E(z)$ as $E(a)$,
+  \begin{align*}
+    E^2(z) &= \Omega_{\mathrm{m},0}(1+z)^3 + \Omega_{\mathrm{DE},0}
+      \exp\left\{\int_0^z \frac{3\left[1 + w_{\mathrm{DE}}(z')\right]}{1+z'}
+      \,\mathrm{d}z'\right\} \\
+    \Rightarrow E^2(a) &= \Omega_{\mathrm{m},0}a^{-3} + \Omega_{\mathrm{DE},0}
+      \exp\left\{-\int_1^a \frac{3\left[1 + w_{\mathrm{DE}}(a')\right]}{a'}
+      \,\mathrm{d}a'\right\}
+  \end{align*}
+  \hfill(1 point)
+
+  Insert $w_{\mathrm{DE}}(a) = w_0 + w_a(1-a)$ into the above equation,
+  \begin{align*}
+    E^2(a) &= \Omega_{\mathrm{m},0}a^{-3} + \Omega_{\mathrm{DE},0}
+      \exp\left\{-\int_1^a \frac{3\left[1 + w_0 + w_a(1-a')\right]}{a'}
+      \,\mathrm{d}a'\right\} \\
+    &= \Omega_{\mathrm{m},0}a^{-3} + \Omega_{\mathrm{DE},0}
+      \exp\left\{\int_1^a 3w_a\,\mathrm{d}a'
+      - \int_1^a \frac{3\left[1 + (w_0 + w_a)\right]}{a'}\,\mathrm{d}a'\right\} \\
+    &= \Omega_{\mathrm{m},0}a^{-3} + \Omega_{\mathrm{DE},0}\,
+      e^{3w_a(a-1)}\,a^{-3[1+(w_0+w_a)]}
+  \end{align*}
+  \hfill(3 points)
+
+  Rewrite $E(a)$ as $E(z)$
+  \[ E^2(z) = \Omega_{\mathrm{m},0}(1+z)^3 + \Omega_{\mathrm{DE},0}\,
+     e^{-\frac{3w_a z}{1+z}}(1+z)^{3[1+(w_0+w_a)]} \]
+  \hfill(1 point)
+
+  \textit{Note: Students can directly compute $E(z)$ by substituting
+  $a = 1/(1+z)$ into $w_{\mathrm{DE}}$. The marks remain unchanged.}
+
+\item[(d)] Matter clumps in early times at high redshifts $z \gg 1$ if it
+  dominates over the dynamical dark energy. Mathematically, this condition
+  can be stated that the first term on the right-hand side of the expression
+  of $E^2(z)$ must be much larger than the second one, i.e.,
+  \[ \Omega_{\mathrm{m},0}(1+z)^3 \gg \Omega_{\mathrm{DE},0}\,
+     e^{-\frac{3w_a z}{1+z}}(1+z)^{3[1+(w_0+w_a)]} \]
+  \hfill(2 points)
+
+  Point out, when $z \gg 1$,
+  \[ -\frac{3w_a z}{1+z} \approx -3w_a \]
+  The condition becomes
+  \[ \frac{\Omega_{\mathrm{m},0}(1+z)^3}
+     {\Omega_{\mathrm{DE},0}\,e^{-3w_a}(1+z)^{3[1+(w_0+w_a)]}} \gg 1 \]
+  \hfill(1 point)
+  \[ \Rightarrow \frac{(1+z)^3}{(1+z)^{3[1+(w_0+w_a)]}} \gg 1 \]
+  \hfill(1 point)
+  \begin{align*}
+    &\Rightarrow (1+z)^{3(w_0+w_a)} \ll 1 \\
+    &\Rightarrow w_0 + w_a < 0
+  \end{align*}
+  \hfill(1 point)
+
+  \textit{Note: DESI and CMB show that $w_0 = -0.45$ and $w_a = -1.79$, which
+  derivate $2.2\sigma$ from the standard $\Lambda$CDM model predictions.
+  Statistical significance increases to $3.9\sigma$ when combined with other
+  measurements (BAO and SN Ia) [JCAP 02 (2025) 021].}
+  % sic: ``derivate'' for ``deviate'' as printed
+\end{description}

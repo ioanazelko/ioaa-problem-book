@@ -1,0 +1,200 @@
+Recent observations from the James Webb Space Telescope (JWST) have uncovered
+a population of compact, red galaxies in the early universe, formally
+designated as ``Little Red Dots'' (LRDs). Their spectra imply the presence of
+Supermassive Black Holes (SMBHs) with masses that appear disproportionately
+large relative to their host galaxies. To independently verify the masses of
+these black holes, Tidal Disruption Events (TDEs) have been proposed as an
+observational tool. A TDE occurs when a star passes sufficiently close to a
+SMBH and is torn apart by tidal forces, producing a luminous flare as the
+debris is accreted. In this problem, you will analyze LRD observational data,
+deduce their scaling relations, evaluate the breakdown of standard dynamical
+models, and calculate parameters for a future cosmic survey mission.
+
+\medskip\noindent\textbf{Part 1 (28 points): Empirical Laws and Physical Significance}
+
+Assume the central SMBH mass $(M_{\mathrm{BH}})$ and the total stellar mass
+$(M_*^{\mathrm{tot}})$ of the host galaxy follow a scaling relation:
+\[
+\log M_{\mathrm{BH}} = \alpha + \beta \log M_*^{\mathrm{tot}}
+\]
+Observational data for 10 representative LRDs (masses expressed in
+$\mathrm{M}_\odot$) are provided in Table D03.1.
+
+\begin{center}
+\textbf{Table D03.1.} \textit{LRD data.}
+
+\medskip
+\begin{tabular}{ccccc}
+\toprule
+LRD ID & $\log M_*^{\mathrm{tot}}$ & $\Delta\log M_*^{\mathrm{tot}}$
+       & $\log M_{\mathrm{BH}}$ & $\Delta\log M_{\mathrm{BH}}$ \\
+\midrule
+1  & 8.33 & 0.24 & 6.93 & 0.14 \\
+2  & 8.30 & 0.30 & 6.40 & 0.30 \\
+3  & 7.99 & 0.37 & 7.19 & 0.12 \\
+4  & 8.96 & 0.46 & 8.47 & 0.02 \\
+5  & 8.70 & 0.36 & 6.74 & 0.17 \\
+6  & 8.16 & 0.43 & 7.26 & 0.11 \\
+7  & 9.01 & 0.43 & 7.37 & 0.03 \\
+8  & 8.65 & 0.39 & 7.56 & 0.08 \\
+9  & 8.29 & 0.35 & 7.52 & 0.08 \\
+10 & 8.65 & 0.41 & 7.86 & 0.06 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{description}
+\item[(a)] (5 points) Defining $x_i = \log M_{*,i}^{\mathrm{tot}}$,
+  $y_i = \log M_{\mathrm{BH},i}$, and the simplified effective uncertainty
+  $(\sigma_{\mathrm{eff},i})$ for each data point as
+  \[
+  \sigma_{\mathrm{eff},i} = \sqrt{(\Delta x_i)^2 + (\Delta y_i)^2}
+  \]
+  Fill the values of the statistical weights
+  $w_i = 1/\sigma_{\mathrm{eff},i}^2$ in your answer sheet.
+\item[(b)] (12 points) Plot 10 data points $(x_i,\ y_i)$ with both horizontal
+  and vertical error bars on graph paper (mark your graph as ``D03.1b'').
+\item[(c)] (7 points) Apply the weighted least-squares (WLS) regression method
+  using your calculated weights $w_i$ to determine the central values and
+  standard errors for the slope $(\beta \pm \Delta\beta)$ and the intercept
+  $(\alpha \pm \Delta\alpha)$. Overlay the resulting best-fit line on your
+  graph. For your calculation, you may rely on the standard WLS formulas
+  provided below:
+  \begin{align*}
+    S_w &= \sum w_i, \quad S_x = \sum w_i x_i, \quad S_y = \sum w_i y_i \\
+    S_{xx} &= \sum w_i x_i^2, \quad S_{xy} = \sum w_i x_i y_i, \quad
+      \Delta = S_w S_{xx} - (S_x)^2 \\
+    \beta &= (S_w S_{xy} - S_x S_y)/\Delta, \quad
+    \alpha = (S_{xx} S_y - S_x S_{xy})/\Delta, \\
+    \Delta\alpha &= \sqrt{S_{xx}/\Delta}, \quad
+    \Delta\beta = \sqrt{S_w/\Delta}
+  \end{align*}
+  % sic: the official paper typesets the radicand of Delta-alpha as "S_x x"
+  % (missing braces); it is S_xx, as the solution confirms
+  (Note: Because this regression incorporates statistical weights $(w_i)$, the
+  resulting best-fit line may visually deviate from what you would expect from
+  a standard, unweighted linear fit.)
+\item[(d)] (4 points) Select the most accurate answer for each question.
+  \begin{description}
+  \item[(d.1)] (2 point) The observed positive slope $(\beta > 0)$ implies a
+    coevolutionary trend, yet LRDs host black holes that are disproportionately
+    massive compared to their host galaxies. What does this combination most
+    likely suggest about the early universe?
+    \begin{description}
+    \item[A.] Black holes outpace their host galaxies (stellar component)
+      initially, either by forming from heavy seeds or undergoing extreme early
+      accretion.
+    \item[B.] Galaxies fully assemble their stellar mass long before the
+      central black hole begins its rapid growth.
+    \item[C.] Star formation and black hole accretion are strictly locked at an
+      identical rate throughout cosmic history.
+    \item[D.] Dark matter halos suppress black hole growth until the host
+      galaxy reaches a critical mass threshold.
+    \end{description}
+  \item[(d.2)] (2 points) The data show a large scatter in stellar mass
+    estimations $(\Delta\log M_*^{\mathrm{tot}})$ for LRDs. What is the primary
+    physical reason for this substantial uncertainty at high redshift
+    $(z \approx 5)$?
+    \begin{description}
+    \item[A.] Interstellar dust significantly absorbs the black hole's X-ray
+      emissions, altering the mass-to-light ratio.
+    \item[B.] Rapid stellar collisions in the dense galactic core create
+      transient luminous events that mimic a heavier stellar mass.
+    \item[C.] The James Webb Space Telescope's UV sensors suffer from extreme
+      thermal noise when observing at $z \approx 5$.
+    \item[D.] The luminous accretion disk outshines the stellar continuum,
+      making it difficult to isolate the host galaxy's light.
+    \end{description}
+  \end{description}
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (6 points): Standard Dynamical Model}
+
+Assume the spatial distribution of the host galaxy's stellar mass follows a
+Dehnen spherical density profile,
+\[
+\rho\,(r) = \frac{(3-\gamma)}{4\pi}\, M_*^{\mathrm{tot}}\,
+  \frac{a}{r^{\gamma}(r+a)^{4-\gamma}}
+\]
+where $a$ is the scale radius (a fundamental parameter marking the transition
+zone where the mass density profile shifts between its inner and outer
+logarithmic slopes) and $\gamma$ defines the inner density slope
+$0 < \gamma < 3$. The black hole's radius of influence $(r_h)$ is defined as
+the radius where the enclosed stellar mass equals the black hole mass:
+$M_*\,(r_h) = M_{\mathrm{BH}}$. The stellar component has an isotropic velocity
+dispersion $\sigma(r)$ and $M(r)$ represents the total enclosed mass within
+radius $r$.
+
+\begin{description}
+\item[(a)] (2 points) Consider a typical galaxy, applying the ``isothermal
+  core'' assumption $(\sigma = \mathrm{const})$ to the region
+  $r_h \le r \ll$ a leads to $\gamma = 2$. Therefore, the enclosed stellar mass
+  is given by
+  \[
+  M_*\,(r) = M_*^{\mathrm{tot}} \left( \frac{r}{r+a} \right)
+  \]
+  Derive the expression for $r_h$ in terms of the scale radius a and the mass
+  ratio $M_{\mathrm{BH}}/M_*^{\mathrm{tot}}$.
+\item[(b)] (4 points) Based on the result from a), calculate the ratio $r_h/a$
+  for LRD ID 4 in Table D03.1. Why does the standard ``isothermal core''
+  assumption collapse for this object? Select the most accurate explanation:
+  \begin{description}
+  \item[A.] The ratio indicates the stellar mass vastly outweighs the black
+    hole, rendering the Jeans equation inapplicable.
+  \item[B.] The ratio is incredibly small, meaning the black hole has no
+    gravitational influence on the core.
+  \item[C.] The black hole's radius of influence extends deeply into the scale
+    radius.
+  \item[D.] The ratio proves that the scale radius a is shrinking over time due
+    to dark matter interactions.
+  \end{description}
+\end{description}
+
+\medskip\noindent\textbf{Part 3 (16 points): Destruction Physics and Data Barriers}
+
+\begin{description}
+\item[(a)] (7 points) Consider a star of mass $m_*$ and radius $R_*$
+  approaching the SMBH at the distance $r \gg R_*$. The tidal force is defined
+  as the difference between gravitational forces exerted by the SMBH at the
+  star's center and at its surface. The tidal radius $r = r_{\mathrm{t}}$ is
+  determined by balancing the tidal force with the star's self-gravitational
+  force at its surface. Derive $r_{\mathrm{t}}$.
+
+  If $r_{\mathrm{t}}$ is smaller than the Schwarzschild radius
+  $(R_{\mathrm{S}} = 2GM_{\mathrm{BH}}/c^2)$, the star is swallowed intact
+  rather than disrupted. The black hole mass at which
+  $r_{\mathrm{t}} = R_{\mathrm{S}}$ is defined as the Hills mass,
+  $M_{\mathrm{H}}$. Formulate $M_{\mathrm{H}}$ in terms of $m_*,\ R_*$ and
+  calculate its numerical value (in $\mathrm{M}_\odot$) for a Sun-like star.
+\item[(b)] (4 points) Using your results
+  $(\alpha \pm \Delta\alpha, \beta \pm \Delta\beta)$ from question c) in
+  Part 1, determine the maximum stellar mass
+  $(\log M_{*,\mathrm{max}}^{\mathrm{tot}})$ a galaxy can have while still
+  potentially hosting an observable TDE of a Sun-like star (requiring
+  $M_{\mathrm{BH}} = M_{\mathrm{H}})$. Then, calculate the range (Min to Max)
+  of $\log M_{*,\mathrm{max}}^{\mathrm{tot}}$. Based on the extreme values,
+  select the most accurate statement about the predictive reliability of this
+  model:
+  \begin{description}
+  \item[A.] The model is highly reliable. The calculated range perfectly
+    brackets the typical masses of observed galaxies hosting supermassive
+    black holes.
+  \item[B.] The model lacks predictive power. The lower bound is about the
+    mass of a small star cluster, and the upper bound exceeds the mass of the
+    observable universe.
+  \item[C.] The model fails entirely because a linear weighted least-squares
+    regression cannot be mathematically applied to logarithmic astronomical
+    data.
+  \item[D.] The model is reliable, but the unphysical lower bound indicates
+    that we must manually adjust the scale radius to correct the data scatter.
+  \end{description}
+\item[(c)] (5 points) Cosmic Mission Design
+
+  Assume an all-sky cosmological population of $N \approx 1.021 \times 10^8$
+  LRDs located around redshift $z = 5$. The intrinsic (rest-frame) TDE rate per
+  galaxy is estimated to be
+  $\langle \dot{N}_{\mathrm{TDE}} \rangle \approx 2.01 \times 10^{-6}\,\mathrm{yr^{-1}}$.
+  Assume the number of detected TDEs from LRDs to be $5$ during $1$ year of
+  continuous observation, what minimum fraction (in percentage) of the
+  celestial sphere must the survey area cover?
+\end{description}

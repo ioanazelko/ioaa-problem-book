@@ -8,3 +8,5 @@ __pycache__/
 book.pdf
 # Obsolete manually copied build; book.pdf is the sole LaTeX output.
 book_c.pdf
+# Temporary files written by optimize_pdf.py during --optimize runs.
+.book.*.tmp.pdf

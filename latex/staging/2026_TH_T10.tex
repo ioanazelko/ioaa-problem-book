@@ -1,0 +1,43 @@
+Consider dynamical dark energy, which is parameterized by an equation of
+state,
+\[ w_{\mathrm{DE}}(z) = \frac{P_{\mathrm{DE}}}{c^2 \rho_{\mathrm{DE}}} \]
+where $w_{\mathrm{DE}}(z)$ is a function of redshift $z$, while
+$P_{\mathrm{DE}}$ and $\rho_{\mathrm{DE}}$ are the pressure and density of
+dark energy, respectively.
+
+\begin{description}
+\item[(a)] (5 points) In the spatially flat Friedmann-Lemaitre-Robertson-Walker
+  spacetime, the equation of conservation of dark energy is
+  \[ \dot{\rho}_{\mathrm{DE}} + 3H\left(\rho_{\mathrm{DE}}
+     + \frac{P_{\mathrm{DE}}}{c^2}\right) = 0 \]
+  where $H(t) = \frac{\dot{a}(t)}{a(t)}$ is the Hubble parameter, $a(t)$ is
+  the scale factor, and $t$ is the cosmic time. Hereafter, an overdot denotes
+  the time derivative of a quantity. Show that
+  \[ \rho_{\mathrm{DE}}(z) = \rho_{\mathrm{DE},0}
+     \exp\left[\int_0^z \frac{3\left[1 + w_{\mathrm{DE}}(z')\right]}{1+z'}
+     \,\mathrm{d}z'\right] \]
+  where $\rho_{\mathrm{DE},0} = \rho_{\mathrm{DE}}(t_0)$, provided that
+  $\frac{a(t_0)}{a(t)} = 1 + z$, with $t_0$ being the present cosmic time. And
+  $a(t_0) = 1$ will be chosen for convenience.
+\item[(b)] (5 points) Consider the Friedmann equation,
+  \[ 3H^2 = 8\pi G\left(\rho_{\mathrm{m}} + \rho_{\mathrm{DE}}\right) \]
+  where $\rho_{\mathrm{m}}$ is the density of matter (ordinary and dark
+  matter). When the pressure of matter is negligible, the equation of
+  conservation of matter is
+  \[ \dot{\rho}_{\mathrm{m}} + 3H\rho_{\mathrm{m}} = 0 \]
+  Show that the evolution parameter $E(z) = \frac{H(z)}{H_0}$ obeys
+  \[ E^2(z) = \Omega_{\mathrm{m},0}(1+z)^3 + \Omega_{\mathrm{DE},0}
+     \exp\left\{\int_0^z \frac{3\left[1 + w_{\mathrm{DE}}(z')\right]}{1+z'}
+     \,\mathrm{d}z'\right\} \]
+  where $\Omega_{\mathrm{m},0} = \frac{\rho_{\mathrm{m},0}}{\rho_{\mathrm{crit},0}}$,
+  $\Omega_{\mathrm{DE},0} = \frac{\rho_{\mathrm{DE},0}}{\rho_{\mathrm{crit},0}}$,
+  $\rho_{\mathrm{crit},0} = \frac{3H_0^2}{(8\pi G)}$, $H_0 = H(t_0)$, and
+  $\rho_{\mathrm{m},0} = \rho_{\mathrm{m}}(t_0)$.
+\item[(c)] (5 points) Consider the Chevallier-Polarski-Linder parametrization,
+  \[ w_{\mathrm{DE}}(a) = w_0 + w_a(1 - a) \]
+  where $w_0$ and $w_a$ are coefficients. Notice that $a(t_0) = 1$. Find the
+  corresponding $E^2(z)$.
+\item[(d)] (5 points) Matter clumps when it dominates over dark energy.
+  Determine the necessary condition on $w_0 + w_a$ such that matter can clump
+  in early times at high redshifts $z \gg 1$.
+\end{description}

@@ -1,0 +1,78 @@
+Jupiter is the biggest planet in our Solar System. Its mass and radius are
+$M_J = 1.90 \times 10^{27}\,\mathrm{kg}$ and $R_J = 6.99 \times 10^{7}\,\mathrm{m}$,
+respectively. Herein, we investigate Jupiter's internal structure using a
+simple model. As shown in Figure T11.1, this gas giant is assumed to contain
+two distinct regions: a dense core and a fluid envelope. While the dense core
+is entirely made of rock, the fluid envelope is wholly composed of hydrogen.
+The mass densities of rock $(\rho_Z)$ and hydrogen $(\rho_H)$ are given by
+\[ \rho_Z = \mathrm{const}, \quad \rho_H = \sqrt{\frac{P}{K}} \]
+where $P$ is the hydrostatic pressure and $K$ is the polytropic coefficient.
+The space outside Jupiter is considered an absolute vacuum. The effects of
+self-rotation are neglected to achieve perfect spherical symmetry. These
+approximations enable us to study Jupiter's structural properties via a single
+spatial variable: the distance $r$ from the center $O$.
+
+\ioaafig{2026_TH_T11-f1.pdf}
+
+\medskip\noindent\textbf{Part 1 (23 points):}
+
+Assume that the dense core is not eroded by the fluid envelope. In this case,
+$P$ decreases from $P_O = 7.13 \times 10^{12}\,\mathrm{Pa}$ at the center
+$(r = 0)$ to $P_C = 3.98 \times 10^{12}\,\mathrm{Pa}$ at the core-envelope
+boundary $(r = R_C = 1.05 \times 10^{7}\,\mathrm{m})$. The polytropic
+coefficient of pure hydrogen is
+$K = 2.12 \times 10^{5}\,\mathrm{m^5\,kg^{-1}\,s^{-2}}$.
+
+\begin{description}
+\item[(a)] (6 points) Find the value of $\rho_Z$.
+\item[(b)] (6 points) Since the fluid envelope is equivalent to a simple
+  polytrope $(P \propto \rho_H^2)$, its density depends on the distance as
+  \[ \rho_H = \frac{A}{r}\cos\left(\frac{r}{R} + \varphi\right) \]
+  where $R$ is the characteristic radius, $A$ is the amplitude factor, and
+  $\varphi$ is the phase constant. Given that
+  \[ R = 2.25 \times 10^{7}\,\mathrm{m}, \quad A > 0, \quad
+     -\pi \le \varphi \le \pi \]
+  Determine $A$ and $\varphi$.
+\item[(c)] (8 points) Plot the density and pressure versus the distance for
+  the whole of Jupiter's interior. Each graph must consist of at least six
+  distinct points.
+\item[(d)] (3 points) Calculate the mass of the dense core $M_Z$ and the mass
+  of the fluid envelope $M_H$.
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (27 points):}
+
+Recent studies show that giant planets may undergo core erosion due to the
+high solubility of rock in hydrogen. For Jupiter, this process helps
+redistribute heavy and light materials throughout its interior. When the dense
+core disappears, Jupiter becomes an ideal mixture of rock and hydrogen at
+equilibrium. Neglect all possible chemical reactions. For a given position
+inside Jupiter, the mass fraction of rock $Z$ is defined by
+\[ Z = \frac{\mathrm{d}m_Z}{\mathrm{d}m_Z + \mathrm{d}m_H} \]
+where $\mathrm{d}m_Z$ and $\mathrm{d}m_H$ are the differential masses of rock
+and hydrogen, respectively.
+
+\begin{description}
+\item[(a)] (6 points) Let $\rho$ be the mass density of the mixture at the
+  distance $r$. Prove that $\rho$ is related to $P$ via
+  \[ \rho = \frac{\rho_Z\sqrt{P}}{Z\sqrt{P} + (1 - Z)\rho_Z\sqrt{K}} \]
+\item[(b)] (7 points) Figure T11.2 shows how $Z$ depends on $r$. Based on the
+  $Z - r$ relation, we can divide Jupiter's interior into three different
+  regions: the dilute core $(Z = Z_1 = 7.28 \times 10^{-2},\ 0 \le r \le R_1)$,
+  the transition layer ($Z$ decreases linearly with increasing $r$,
+  $R_1 \le r \le R_2$), and the hydrogen-dominated envelope
+  $(Z = Z_2 = 1.53 \times 10^{-2},\ R_2 \le r \le R_J)$. In the transition
+  layer, $\rho$ is well approximated as a linear function of $r$, and $P$
+  drops from $P_1 = 2.25 \times 10^{12}\,\mathrm{Pa}$ at
+  $R_1 = 2.87 \times 10^{7}\,\mathrm{m}$ to
+  $P_2 = 8.43 \times 10^{11}\,\mathrm{Pa}$ at
+  $R_2 = 4.40 \times 10^{7}\,\mathrm{m}$. The polytropic coefficient of
+  hydrogen in the mixture is
+  $K = 2.20 \times 10^{5}\,\mathrm{m^5\,kg^{-1}\,s^{-2}}$. Determine the mass
+  of the transition layer $M_{12}$.
+
+  \ioaafig{2026_TH_T11-f2.pdf}
+
+\item[(c)] (14 points) Calculate the mass of the dilute core $M_1$ and the
+  mass of the hydrogen-dominated envelope $M_2$.
+\end{description}

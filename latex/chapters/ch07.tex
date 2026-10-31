@@ -379,6 +379,92 @@ $0.80 \le x \le 1.00$.
   mass with radius. \hfill[4\,pt]
 \end{description}
 
+\probhead{7.18}{Stellar Winds Launched Along Magnetic Field Lines}{2026}{Hanoi, Vietnam}{TH T03}{10}
+% source id: 2026_TH_T03   tag: magnetocentrifugal disk wind, effective potential, launch angle
+Angular momentum from a circular Keplerian accretion disk around a young star
+of mass $M$ is removed by stellar winds. Wind particles slide frictionlessly
+along magnetic field lines corotating with the disk. Consider a wind particle
+of mass $m$ at radius $r$ and height $z$ moving along a magnetic field line
+that corotates with the disk at radius $r_0$ and is inclined at an angle
+$\theta_0$.
+
+\ioaafig{2026_TH_T03-f1.pdf}
+
+\begin{description}
+\item[(a)] (2 points) In the frame corotating with the particle, derive
+  $\Phi_{\mathrm{eff}}(r, z)$, defined as the potential energy from the
+  star's gravity and centrifugal force.
+\item[(b)] (5 points) Introducing the variable $x = \frac{r - r_0}{r_0}$,
+  write $\Phi_{\mathrm{eff}}$ in the vicinity of $r_0$ to second-order
+  approximation in $x$. Find the inclination angle $\theta_0$ so that the
+  particle can be pulled away from the disk. Hint:
+  $(1 + u)^{-1/2} \approx 1 - \frac{u}{2} + \frac{3}{8}u^2$ with
+  $|u| \ll 1$.
+\item[(c)] (3 points) At radius $r = r_{\mathrm{A}}$, particles begin to
+  decouple from magnetic field. The wind launched from $r_0$ carries
+  mass-loss rate $\Delta M_{\mathrm{w}}$ while the accretion rate is
+  $\Delta M_{\mathrm{acc}}$. If all accretion angular momentum is removed by
+  the wind, show that
+  $\frac{\Delta M_{\mathrm{acc}}}{\Delta M_{\mathrm{w}}}
+   = \left(\frac{r_{\mathrm{A}}}{r_0}\right)^2$.
+\end{description}
+
+\probhead{7.19}{Evolved Star Spirals}{2026}{Hanoi, Vietnam}{TH T08}{25}
+% source id: 2026_TH_T08   tag: AFGL 3068 binary wind spiral, inclination from CO ellipses
+The red giant AFGL 3068 is located about $1.0\,\mathrm{kpc}$ from Earth. Its
+images reveal a nearly Archimedean spiral with a constant arm spacing,
+described by $r = a + b\phi$ where $a$ and $b$ are constants, and $\phi$ is
+azimuthal angle in radian.
+
+\ioaafig{2026_TH_T08-f1.pdf}
+
+Such a spiral structure can be formed around a binary system. A red giant with
+a fast stellar wind orbiting the binary center of mass produces a thin,
+enhanced-density shell that expands radially at the wind velocity of $V_w$ in
+the center of mass coordinate system. Its shapes on both the orbital plane
+($Oxy$) and a perpendicular plane ($Oxz$) are shown below, where $\phi$ and
+$\theta$ denote the azimuthal and polar angles, respectively. Let $r_p$ and
+$V_p$ be the orbital radius and velocity of the red giant, respectively.
+
+\ioaafig{2026_TH_T08-f2.pdf}
+
+\medskip\noindent\textbf{Part 1 (10 points):}
+
+\begin{description}
+\item[(a)] (2 points) The on-sky arm spacing of AFGL 3068 is
+  $2.29\,\mathrm{arcsec}$. Determine the constant $b$ in
+  $\mathrm{au\,rad^{-1}}$.
+\item[(b)] (4 points) At every point on the red giant trajectory, we consider
+  only the wind moving radially outward with respect to the center of the
+  binary system. Show that, on the orbital plane, the shell forms an
+  Archimedean spiral structure with $a = r_p$ and $b = \dfrac{r_p V_w}{V_p}$.
+\item[(c)] (2 points) The wind velocity of AFGL 3068 is
+  $V_w = 14.0\,\mathrm{km\,s^{-1}}$. Calculate its orbital period $T$ in
+  years.
+\item[(d)] (2 points) The total mass of the binary system is
+  $6.6\,\mathrm{M}_\odot$. Calculate the separation $d$ between the two stars
+  in $\mathrm{au}$.
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (15 points)}: Assume that the orbital plane is
+inclined by an angle $i$ with respect to the sky plane. The $x$-axis is along
+the intersection of the orbital and sky planes. $r_p$ is negligible compared
+with the spiral size.
+
+\begin{description}
+\item[(a)] (6 points) Express the coordinates $x, y, z$ and velocities
+  $(V_x, V_y, V_z)$ of a shell element in terms of the parameters
+  $(\phi, \theta)$.
+\item[(b)] (7 points) Show that all shell elements with line-of-sight velocity
+  $V_{\mathrm{los}} = 0$ satisfy the equation of an ellipse on the sky plane
+  with two semi-axes of $r\sin\theta$ and $r\sin\theta/\cos i$.
+\item[(c)] (2 points) Recent CO line images at $V_{\mathrm{los}} = 0$ channel
+  show that the spiral pattern of AFGL 3068 is slightly elongated relative to
+  an Archimedean spiral. The elongated pattern is well described by ellipses
+  with a ratio of $1.1$ between the two semi-axes. Determine the inclination
+  angle $i$.
+\end{description}
+
 \clearpage
 \section*{Solutions to Chapter 7}
 
@@ -1327,5 +1413,209 @@ or two orders of magnitude. \hfill(2 points)
   cubic--quartic, and the latter part looks like a negative inverse-square
   with a dc shift.
   \ioaafig{2025_TH_T11-s2.pdf}
+\end{description}
+
+\solhead{7.18}{Stellar Winds Launched Along Magnetic Field Lines}
+% source id: 2026_TH_T03
+\begin{description}
+\item[(a)] At radius $r_0$, the angular velocity is
+  \[ \Omega_0 = \sqrt{\frac{GM}{r_0^3}} \]
+  \hfill(0.5 points)
+
+  The gravitational potential energy of the particle is
+  \[ \Phi_{\mathrm{grav}}(r, z) = -\frac{GMm}{\sqrt{r^2 + z^2}} \]
+  \hfill(0.5 points)
+
+  The centrifugal potential energy of the particle is
+  \[ \Phi_{\mathrm{cent}}(r) = -\frac{1}{2}m\Omega_0^2 r^2 \]
+  \hfill(0.5 points)
+
+  The effective potential energy of the particle is
+  \[ \Phi_{\mathrm{eff}}(r, z)
+     = \Phi_{\mathrm{grav}}(r, z) + \Phi_{\mathrm{cent}}(r)
+     = -\frac{GMm}{\sqrt{r^2 + z^2}} - \frac{1}{2}m\Omega_0^2 r^2 \]
+  \hfill(0.5 points)
+
+\item[(b)] Using the variable $x$, the coordinates of the particle in the
+  vicinity of $r_0$ can be written as
+  \[ r = r_0(1 + x), \qquad z \approx r_0 x\tan\theta_0 \]
+  \hfill(0.5 points)
+
+  The gravitational potential energy expressed in terms of the variable $x$
+  is
+  \[ \Phi_{\mathrm{grav}}(x)
+     = -\frac{GMm}{r_0}\left[1 + 2x + x^2(1 + \tan^2\theta_0)\right]^{-\frac{1}{2}} \]
+  \hfill(0.5 points)
+
+  Defining $u = 2x + x^2(1 + \tan^2\theta_0)$ and using the Taylor expansion
+  $(1 + u)^{-1/2} \approx 1 - \frac{u}{2} + \frac{3}{8}u^2$ while retaining
+  only terms up to second order in $x$, yields
+  \begin{align*}
+    \Phi_{\mathrm{grav}}(x)
+      &\approx -m\Omega_0^2 r_0^2\left[1 - \frac{1}{2}
+         \left(2x + x^2 + x^2\tan^2\theta_0\right)
+         + \frac{3}{8}\left(4x^2\right)\right] \\
+      &\approx -m\Omega_0^2 r_0^2\left[1 - x
+         + x^2\left(1 - \frac{\tan^2\theta_0}{2}\right)\right]
+  \end{align*}
+  \hfill(1.5 points)
+
+  The centrifugal potential energy expressed in terms of the variable $x$ is
+  \[ \Phi_{\mathrm{cent}}(x) = -\frac{1}{2}m\Omega_0^2 r_0^2(1 + x)^2
+     = -m\Omega_0^2 r_0^2\left(\frac{1}{2} + x + \frac{1}{2}x^2\right) \]
+  \hfill(0.5 points)
+
+  The effective potential energy expressed in terms of the variable $x$ is
+  \[ \Phi_{\mathrm{eff}}(x) = -m\Omega_0^2 r_0^2\left[\frac{3}{2}
+     + x^2\left(\frac{3}{2} - \frac{\tan^2\theta_0}{2}\right)\right] \]
+  \hfill(1 point)
+
+  The effective potential energy has a parabolic form and reaches an
+  extremum at $x = 0$. For the particle to move away from the disk along the
+  magnetic field line, this extremum must be a maximum of effective
+  potential energy. This condition leads to
+  \[ 3 - \tan^2\theta_0 > 0 \Rightarrow \theta_0 < 60^\circ \]
+  % sic: the degree sign is printed as a superscript zero (60^0), here and in the note below
+  \hfill(1 point)
+
+  \emph{Note: Students can find $\theta_0 < 60^\circ$ from
+  $F_{\mathrm{cent}} > F_{\mathrm{grav}}$, where $F_{\mathrm{cent}}$ and
+  $F_{\mathrm{grav}}$ are centrifugal and gravitational forces,
+  respectively.}
+
+\item[(c)] At radius $r = r_{\mathrm{A}}$, the particles still rotate at
+  angular velocity $\Omega_0$.
+
+  The rate of angular momentum removal by the stellar wind is
+  \[ \Delta L_{\mathrm{w}} = \Delta M_{\mathrm{w}}\Omega_0 r_{\mathrm{A}}^2 \]
+  \hfill(1 point)
+
+  The angular momentum releasing rate by accretion is
+  \[ \Delta L_{\mathrm{acc}} = \Delta M_{\mathrm{acc}}\Omega_0 r_0^2 \]
+  \hfill(1 point)
+
+  Consider all the angular momentum released by accretion is removed through
+  the stellar wind, we have
+  \[ \Delta L_{\mathrm{w}} = \Delta L_{\mathrm{acc}}
+     \Rightarrow \Delta M_{\mathrm{w}}\Omega_0 r_{\mathrm{A}}^2
+       = \Delta M_{\mathrm{acc}}\Omega_0 r_0^2
+     \Rightarrow \frac{\Delta M_{\mathrm{acc}}}{\Delta M_{\mathrm{w}}}
+       = \frac{r_{\mathrm{A}}^2}{r_0^2} \]
+  \hfill(1 point)
+\end{description}
+
+\solhead{7.19}{Evolved Star Spirals}
+% source id: 2026_TH_T08
+\noindent\textbf{Part 1}
+\begin{description}
+\item[(a)] The spiral arm spacing of AFGL 3068 is
+  \[ \Delta r_{\mathrm{arm}}[\mathrm{au}]
+     = \Delta\theta[\mathrm{arcsec}] \times d[\mathrm{pc}]
+     = 2.29 \times 1000 = 2290 \]
+  \hfill(1 point)
+
+  When the angle $\phi$ increases by $2\pi$, the radius $r$ increases by an
+  amount equal to the arm spacing. Therefore, we have
+  \[ b = \frac{\Delta r_{\mathrm{arm}}}{2\pi} = \frac{2290}{2\pi}
+     \approx 364\,\mathrm{au\,rad^{-1}} \]
+  \hfill(1 point)
+
+\item[(b)] Consider a shell element located on the orbital plane. Because it
+  moves radially outward with velocity $V_w$, its radial distance at a time
+  $t$ is
+  \[ r(t) = r_p + V_w t \]
+  \hfill(1 point)
+
+  At the same time, the red giant rotates an angle
+  \[ \phi(t) = \frac{V_p}{r_p}\,t \]
+  \hfill(1 point)
+
+  Extracting $t$ from this equation and substituting it into the previous
+  equation yields
+  \[ r(t) = r_p + \frac{r_p V_w}{V_p}\,\phi(t) \]
+  \hfill(1 point)
+
+  On the orbital plane, shell elements all obey an equation of the form given
+  above, but with different values of $\phi$, as they are ejected at different
+  times. At the observation time, these elements trace an Archimedean spiral
+  described by
+  \[ r = r_p + \frac{r_p V_w}{V_p}\,\phi \]
+  \hfill(1 point)
+  \[ \Longrightarrow a = r_p, \qquad b = \frac{r_p V_w}{V_p} \]
+
+\item[(c)] From b), the constant $b$ is
+  \[ b = \frac{r_p V_w}{V_p} \]
+  The orbital period of the red giant is given by
+  \[ T = \frac{2\pi r_p}{V_p} = \frac{2\pi b}{V_w} \]
+  \hfill(1 point)
+
+  Substituting $V_w = 14.0\,\mathrm{km\,s^{-1}} \approx
+  2.95\,\mathrm{au\,yr^{-1}}$ and $b = 364\,\mathrm{au\,rad^{-1}}$ into the
+  above formula yields
+  \[ T = \frac{2\pi \times 364}{2.95} \approx 775\,\mathrm{yr} \]
+  \hfill(1 point)
+
+\item[(d)] Applying Kepler's third law to the binary system, the separation
+  between the two stars is given by
+  \[ d^3 = M_{\mathrm{tot}} T^2 \]
+  \hfill(1 point)
+  \[ \Rightarrow d = \sqrt[3]{M_{\mathrm{tot}} T^2}
+     = \sqrt[3]{6.6 \times 775^2} \approx 158\,\mathrm{au} \]
+  \hfill(1 point)
+\end{description}
+
+\noindent\textbf{Part 2}
+\begin{description}
+\item[(a)] The coordinates of a point on the shell can be written as
+  \[ x = r\sin\theta\cos\phi = \frac{r_p V_w}{V_p}\,\phi\sin\theta\cos\phi \]
+  \hfill(1.5 points)
+  \[ y = r\sin\theta\sin\phi = \frac{r_p V_w}{V_p}\,\phi\sin\theta\sin\phi \]
+  \hfill(1.5 points)
+  \[ z = r\cos\theta = \frac{r_p V_w}{V_p}\,\phi\cos\theta \]
+  \hfill(1.5 points)
+
+  Because all shell elements move radially outward with velocity $V_w$, the
+  components of the velocity in the Cartesian coordinates are given by
+  \[ V_x = V_w \sin\theta\cos\phi \]
+  \hfill(0.5 points)
+  \[ V_y = V_w \sin\theta\sin\phi \]
+  \hfill(0.5 points)
+  \[ V_z = V_w \cos\theta \]
+  \hfill(0.5 points)
+
+\item[(b)] Choose the sky plane coordinates $(X, Y)$ with the $X$-axis
+  identical to the $x$-axis. The line-of-sight velocity is
+  \[ V_{\mathrm{los}} = V_y \sin i - V_z \cos i
+     = V_w(\sin\theta\sin\phi\sin i - \cos\theta\cos i) \]
+  \hfill(2 points)
+
+  From $V_{\mathrm{los}} = 0$, we have
+  \[ \sin\theta\sin\phi\sin i = \cos\theta\cos i \]
+  \hfill(1 point)
+
+  The sky plane coordinates $(X, Y)$ of a shell element are given by
+  \[ X = x = r\sin\theta\cos\phi \]
+  \hfill(1 point)
+  \[ Y = y\cos i + z\sin i = r(\sin\theta\sin\phi\cos i + \cos\theta\sin i) \]
+  \hfill(1 point)
+
+  Substituting $\cos\theta = \sin\theta\sin\phi\tan i$ into $Y$ coordinate,
+  \[ Y = r\sin\theta\sin\phi\,(\cos i + \tan i \sin i)
+     = \frac{r\sin\theta\sin\phi}{\cos i} \]
+  \hfill(1 point)
+
+  The sky plane coordinates $(X, Y)$ satisfy
+  \[ \frac{X^2}{(r\sin\theta)^2}
+     + \frac{Y^2}{\left(\dfrac{r\sin\theta}{\cos i}\right)^2} = 1 \]
+  \hfill(1 point)
+
+\item[(c)] From b), the ratio of the semi-major axis and the semi-minor axis
+  is given by
+  \[ \frac{1}{\cos i} \]
+  \hfill(1 point)
+
+  For the spiral pattern of AFGL 3068, we have
+  \[ \frac{1}{\cos i} = 1.1 \Rightarrow i \approx 24.6^\circ \]
+  \hfill(1 point)
 \end{description}
 

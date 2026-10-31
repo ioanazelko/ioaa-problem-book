@@ -1,0 +1,112 @@
+JWST has identified exceptionally compact, luminous galaxies at redshifts
+$z > 7$. To understand the nature of these sources, we must analyze the
+observational data and test whether they are consistent with basic
+astrophysical constraints. The table below lists the constants and parameters
+used in this problem.
+
+\begin{center}
+\begin{tabular}{p{0.55\linewidth}c}
+\toprule
+Star formation rate (SFR) to Luminosity conversion factor &
+  $k = 1.0 \times 10^{10}\,\mathrm{L_\odot\,M_\odot^{-1}\,yr}$ \\
+Effective opacity of free electrons &
+  $\kappa_{\mathrm{e}} = 0.04\,\mathrm{m^2\,kg^{-1}}$ \\
+Effective opacity of the dusty interstellar medium &
+  $\kappa_{\mathrm{dust}} = 1.5\,\mathrm{m^2\,kg^{-1}}$ \\
+Optical-to-bolometric flux correction factor &
+  $BC = F_{bol}/F_{opt} = 9.26$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip\noindent\textbf{Part 1 (13 points): Cosmological Surface Brightness Dimming}
+
+Let $L$ be the intrinsic bolometric luminosity and $R$ be the intrinsic
+physical radius of a galaxy. The intrinsic surface luminosity density is
+defined as
+\[ \Sigma_{\mathrm{int}} = \frac{L}{\pi R^2} \]
+A telescope observes this galaxy subtending with a solid angle
+$\Omega_{\mathrm{obs}}$ and measures a flux $F_{\mathrm{obs}}$. The observed
+surface brightness is
+\[ \Sigma_{\mathrm{obs}} = \frac{F_{\mathrm{obs}}}{\Omega_{\mathrm{obs}}} \]
+In cosmology, the luminosity distance $(D_L)$ is defined via
+\[ F_{\mathrm{obs}} = \frac{L}{4\pi D_L^2} \]
+The angular diameter distance $(D_A)$ is defined so that the observed angular
+radius is
+\[ \theta = \frac{R}{D_A} \]
+
+\begin{description}
+\item[(a)] (10 points) Derive the relation between $D_L$, $D_A$ and redshift
+  $z$.
+\item[(b)] (3 points) Derive an expression for $\Sigma_{\mathrm{obs}}$ as a
+  function of $\Sigma_{\mathrm{int}}$ and redshift $z$.
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (8 points): Dissecting JWST Data}
+
+JWST observed an ultraluminous galaxy at a redshift of $z = 7.26$.
+\begin{itemize}
+\item The observed rest-frame optical flux at Earth (attenuated by cosmic
+  dust) is $F_{\mathrm{obs,opt}} = 5.72 \times 10^{-19}\,\mathrm{W\,m^{-2}}$.
+\item The dust extinction derived from the spectrum is
+  $A_V = 2.79\,\mathrm{mag}$.
+\item The measured angular radius of the source on the image is
+  $\theta = 0.05\,\mathrm{arcsec}$.
+\end{itemize}
+Calculate the intrinsic bolometric surface luminosity density of this galaxy,
+$\Sigma_{\mathrm{int}}$, in units of $\mathrm{L_\odot\,kpc^{-2}}$.
+
+\medskip\noindent\textbf{Part 3 (18 points): Eddington Dynamical Model for the Star-Forming Disk}
+
+Assume the entire intrinsic radiative energy of this galaxy originates from
+extreme star formation in an optically thick disk of cold gas and dust.
+Radiation from young stars generates tremendous pressure that drives cosmic
+dust particles outward, perpendicular to the disk midplane. Due to the extreme
+density, gas and dust are perfectly dynamically coupled via collisions. The
+radiation pressure acting on the dust effectively drags the entire gas mass
+along as a single unified fluid. Simultaneously, gravity pulls this fluid back
+toward the midplane. Assume the gravitational field of the disk is governed by
+the total dynamical surface mass density, given as
+$\Sigma_{\mathrm{tot}} = 2.3 \times 10^{10}\,\mathrm{M_\odot\,kpc^{-2}}$.
+
+\begin{description}
+\item[(a)] (6 points) $\Sigma_{\mathrm{int\_max}}$ denotes the disk's
+  Eddington surface luminosity density. Prove the acceleration driven by
+  radiation pressure is
+  $g_{\mathrm{rad}} = \dfrac{\kappa_{\mathrm{dust}}\Sigma_{\mathrm{int\_max}}}{c}$
+  and the acceleration governed by the disk's gravity is
+  $g_z = 2\pi G \Sigma_{\mathrm{tot}}$.
+\item[(b)] (7 points) Calculate the SFR surface density at Eddington limit
+  $(\Sigma_{\mathrm{Edd}})$ of this disk (in units of
+  $\mathrm{M_\odot\,yr^{-1}\,kpc^{-2}}$) such that it remains gravitationally
+  bound against a radiation-driven blowout.
+\item[(c)] (5 points) Calculate the ratio
+  $\Sigma_{\mathrm{SFR\_actual}}/\Sigma_{\mathrm{Edd}}$, where
+  $\Sigma_{\mathrm{SFR\_actual}}$ is the actual SFR surface density of this
+  galaxy. If the observed luminosity is purely stellar in origin, is this
+  system dynamically stable?
+\end{description}
+
+\medskip\noindent\textbf{Part 4 (11 points): Clues from High-Resolution Spectroscopy}
+
+Astronomers analyzed the NIRSpec spectrum and discovered that the emission
+predominantly originates from a hot, highly ionized plasma, where continuous
+recombination processes emit Hydrogen lines exhibiting anomalous broadening
+with a velocity dispersion of $v = 3400\,\mathrm{km\,s^{-1}}$. Furthermore,
+the radius of this emission region is indirectly estimated to be merely
+$R_{\mathrm{em}} = 0.18\,\mathrm{pc}$.
+
+\begin{description}
+\item[(a)] (4 points) Calculate the dynamical mass $M$ confined within this
+  region (in $\mathrm{M}_\odot$). Based on your result, choose the specific
+  type of astrophysical object.
+  \begin{description}
+  \item[A.] A dwarf galaxy
+  \item[B.] A massive star
+  \item[C.] A super massive black hole
+  \item[D.] A globular cluster
+  \end{description}
+\item[(b)] (7 points) Quantitatively evaluate the radiative stability of the
+  system with respect to its observed luminosity. Is this system radiatively
+  stable?
+\end{description}

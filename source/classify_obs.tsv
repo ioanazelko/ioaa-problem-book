@@ -74,3 +74,9 @@
 2025	OBS-TEL	OT02	Telescope observation OT02	-	5	telescope observation	-
 2023	OBS-PLAN	2	Retrograde Mars	20	3	Mars retrograde loop, heliocentric geometry	-
 2023	OBS-PLAN	3	TRAPPIST-1	35	9	planetarium exoplanet transits, resonances	-
+2026	OBS-PLAN	OP01	The Sky over Hue	45	1	constellations, planets, missing stars, apparent solar time	-
+2026	OBS-PLAN	OP02	Comet Hale-Bopp	15	1	comet path dates, ecliptic crossing, elongation	3
+2026	OBS-PLAN	OP03	The Sky from the Far Side of the Moon	15	1	Sun and Earth constellations, Earth altitude from a lunar site	3
+2026	OBS-TEL	OT01	Saturn	40	5	telescope pointing, zenith distance, ring axis angle, hour angle	1
+2026	OBS-TEL	OT02	Messier 29	15	5	star-hopping with the atlas to M29	-
+2026	OBS-TEL	OT03	Reverberation Mapping	20	10	echo-mapping flash timing, black hole mass	5

@@ -741,9 +741,87 @@ Another useful equation is obtained by differentiating the first equation:
   \end{description}
 \end{description}
 
+\probhead{10.20}{Primordial Black Holes}{2026}{Hanoi, Vietnam}{TH T05}{10}
+% source id: 2026_TH_T05   tag: PBH mass at formation time, evaporation
+A primordial black hole (PBH) is a hypothetical black hole, which is expected
+to be formed very soon after the Big Bang.
+
+\begin{description}
+\item[(a)] (5 points) Find the expression of the initial mass $M$ of a PBH,
+  provided that the cosmological density at a time $t$ after the Big Bang is
+  $\rho_c \sim 1/(Gt^2)$ and the PBH is assumed to be a homogeneous sphere
+  having a radius identical to the Schwarzschild radius.
+\item[(b)] (5 points) Estimate the initial mass and formation time of PBHs
+  after the Big Bang such that they are still evaporating, provided that the
+  black hole evaporation time is
+  $\tau(M) = 10^{67}\left(M/M_\odot\right)^3$ (yr).
+\end{description}
+
+\probhead{10.21}{Gravitational Lensing and Delay}{2026}{Hanoi, Vietnam}{TH T09}{20}
+% source id: 2026_TH_T09   tag: Einstein ring NGC 6505, lens mass, Shapiro delay at the Sun
+\medskip\noindent\textbf{Part 1 (15 points): Einstein Ring}
+
+In February 2025, the Euclid mission reported an Einstein ring around the
+nearby elliptical galaxy NGC 6505, located at a distance $d_L$ from Earth
+(Figure T09.1). The ring is formed when light from a source galaxy at a
+distance $d_S \gg d_L$ passes near NGC 6505 and is bent by its gravitational
+field.
+
+\ioaafig{2026_TH_T09-f1.pdf}
+
+\begin{description}
+\item[(a)] (2 points) The measured redshifts of the source and lens galaxies
+  are $0.406$ and $0.042$, respectively. Calculate $d_S$ and $d_L$ (in
+  $\mathrm{Mpc}$) assuming that the Newtonian approximation is valid and
+  distance is proportional to redshift.
+\item[(b)] (3 points) In the linear approximation, as shown in Figure T09.2,
+  the total deflection angle of a light ray emitted by the source and reaching
+  the observer is given by $2\alpha = 2R^*/b$, where $R^*$ is the
+  Schwarzschild radius of the lens and $b$ is the distance of closest approach
+  of the light ray to the center of the lens. Express the angular radius
+  $\theta$ of the Einstein ring as a function of $R^*$, $d_S$ and $d_L$.
+
+  \ioaafig{2026_TH_T09-f2.pdf}
+  \ioaafig{2026_TH_T09-f3.pdf}
+
+\item[(c)] (3 points) Euclid measures the angular radius of the ring around
+  NGC 6505 to be $2.5\,\mathrm{arcsec}$. Determine the distance of closest
+  approach $b$ (in $\mathrm{parsecs}$) and the mass of the lens galaxy $M$ (in
+  units of $\mathrm{M}_\odot$).
+\item[(d)] (7 points) Suppose that the lens is displaced by a small distance
+  $\varepsilon$ from the line joining the source and the observer
+  ($\varepsilon \ll b$) as illustrated in Figure T09.3. Determine the
+  quantities $x$ and $x'$ (indicated in the figure), as well as the angular
+  displacement $\Delta\theta$ of the Einstein ring image.
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (5 points): Gravitational Delay}
+
+Let's now consider light being lensed by the Sun.
+
+\begin{description}
+\item[(a)] (2 points) Calculate the total deflection angle $2\alpha$ (in
+  $\mathrm{arcsec}$) of a light ray grazing the Sun's surface.
+\item[(b)] (3 points) A light ray propagating in the gravitational field of a
+  massive object experiences an additional travel time, known as the
+  gravitational delay ($\delta$).
+
+  \ioaafig{2026_TH_T09-f4.pdf}
+
+  Consider two light rays passing near the Sun with distances of closest
+  approach ($R$) differing by a small amount $\Delta R$ (Figure T09.4). The ray
+  with the larger distance of closest approach travels an additional path
+  length of approximately $2\alpha\Delta R$, resulting in a difference in
+  gravitational delay $\Delta\delta \sim 2\alpha\Delta R/c$. Therefore, the
+  absolute value of the derivative of the gravitational delay is
+  \[ \frac{d\delta}{dR} = \frac{2\alpha}{c} \]
+  Determine the gravitational delay for a light signal from a distant source
+  passing near the Sun's surface and reaching the Earth.
+\end{description}
+
 \section*{Data-analysis problems}
 
-\probhead{10.20}{Isolated black hole}{2023}{Katowice, Poland}{DA Q2}{75}
+\probhead{10.22}{Isolated black hole}{2023}{Katowice, Poland}{DA Q2}{75}
 % source id: 2023_DA_Q2   tag: astrometric microlensing BH mass
 In 2022, two independent groups reported the discovery of an isolated black
 hole based on observations of the gravitational microlensing event
@@ -863,6 +941,186 @@ HJD & E position (mas) & N position (mas) \\
 
 \ioaafig{2023_DA_Q2-f3.pdf}
 \ioaafig{2023_DA_Q2-f4.pdf}
+
+\probhead{10.23}{Massive Neutron Stars and the Shapiro Time Delay}{2026}{Hanoi, Vietnam}{DA D01}{50}
+% source id: 2026_DA_D01   tag: Shapiro delay fit, WD and pulsar mass, timing delays
+The equation of state (EoS) of ultra-dense matter in neutron stars remains a
+major unsolved problem in fundamental physics. Theoretical models predicting a
+``soft'' EoS dictate that neutron stars must collapse into black holes before
+reaching a mass of $2.0\,\mathrm{M}_\odot$. Consequently, a robust mass
+measurement of a neutron star exceeding $2.0\,\mathrm{M}_\odot$ would
+definitively rule out soft EoS models.
+
+Radio observations of the millisecond pulsar PSR J0740+6620, located in a
+binary system with a white dwarf companion, offer a unique testbed for this
+prediction. According to General Relativity, as the pulsar passes through
+superior conjunction, when it is directly behind its companion, the
+companion's gravitational field curves spacetime, delaying the propagation of
+radio pulses to Earth. This phenomenon is known as the Shapiro time delay.
+Assuming an edge-on orbital inclination ($i \approx 90^\circ$) and a perfectly
+circular orbit (eccentricity $e = 0$), the Shapiro delay
+$\Delta t_{\mathrm{S}}$ is approximated by
+\[
+\Delta t_{\mathrm{S}} \approx
+  \left(\frac{2GM_{\mathrm{WD}}}{c^3}\right)\left[-\ln\left(1-\cos\phi\right)\right] + b
+\]
+where $M_{\mathrm{WD}}$ is the white dwarf mass, $\phi$ is the orbital phase
+($\phi = 0^\circ$ at superior conjunction), and $b$ is a baseline timing
+offset.
+
+The binary system has an orbital period of $P_b = 4.767$ days. The pulsar has
+a projected semi-major axis of $x = 3.978$ seconds, which corresponds to an
+orbital radius $a_p = cx$. Assume the uncertainties on $P_b$ and $x$ are
+negligible.
+% sic: "seconds" as printed (the solution file says light-seconds)
+
+The following table presents 15 observations of pulsar Shapiro delay at
+various orbital phases ($\phi$) near superior conjunction. A constant
+measurement uncertainty of $\sigma_t = \pm 1.5\,\mu\mathrm{s}$ is assumed for
+all observations.
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+ID & Orbital Phase $\phi$ ($^\circ$) & Shapiro Delay $\Delta t_{\mathrm{S}}$ ($\mu$s) \\
+\midrule
+1  & $2.0$   & 18.5 \\
+2  & $-3.0$  & 17.5 \\
+3  & $4.0$   & 16.3 \\
+4  & $-5.0$  & 13.9 \\
+5  & $6.0$   & 12.8 \\
+6  & $8.0$   & 12.5 \\
+7  & $10.0$  & 10.1 \\
+8  & $-12.0$ & 10.3 \\
+9  & $15.0$  & 9.3 \\
+10 & $20.0$  & 6.5 \\
+11 & $-22.0$ & 5.8 \\
+12 & $25.0$  & 6.6 \\
+13 & $30.0$  & 5.0 \\
+14 & $-35.0$ & 4.7 \\
+15 & $40.0$  & 3.9 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip\noindent\textbf{Part 1 (26 points): Estimation of White Dwarf Mass}
+
+\begin{description}
+\item[(a)] (4 points) Define appropriate linearized variables ($X$ and $Y$),
+  and tabulate their values for 15 data points.
+\item[(b)] (18 points) Plot a scatter diagram of the 15 data points including
+  their available error bars. Overlay the best-fit line on your graph (mark
+  your graph as ``D01.1b''). Determine the slope $a$, the intercept $b$, and
+  their respective uncertainties $(\sigma_a, \sigma_b)$.
+\item[(c)] (4 points) Determine the mass of the white dwarf
+  $(M_{\mathrm{WD}})$ and its absolute uncertainty $(\Delta M_{\mathrm{WD}})$
+  in units of $\mathrm{M}_\odot$.
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (13 points): Binary Dynamics and Error Propagation}
+
+\begin{description}
+\item[(a)] (6 points) The mass function of the binary system is defined as
+  \[
+  f_M = \frac{M_{\mathrm{WD}}^3}{\left(M_{\mathrm{PSR}} + M_{\mathrm{WD}}\right)^2}
+  \]
+  where $M_{\mathrm{PSR}}$ is the mass of the pulsar. Derive the expression of
+  $f_M$ in terms of the observables $a_p$ and $P_b$, and hence compute its
+  value in units of $\mathrm{M}_\odot$.
+\item[(b)] (5 points) Determine the mass of the pulsar $(M_{\mathrm{PSR}})$
+  and derive its uncertainty $(\Delta M_{\mathrm{PSR}})$.
+\item[(c)] (2 points) Determine how many standard deviations $(\sigma)$ the
+  measured pulsar mass lies above the upper mass limit predicted by the
+  ``soft EoS'' model. Hence, state whether the model can be ruled out.
+\end{description}
+
+\medskip\noindent\textbf{Part 3 (11 points): Pulse Time of Arrival (TOA): Effect of Multiple Factors}
+
+In binary pulsar timing, an observed Time of Arrival (TOA) is inherently
+shifted by various physical effects relative to an idealized baseline. To
+accurately determine the companion mass, astrophysicists must account for
+three primary components of the timing delay:
+\begin{itemize}
+\item Shapiro delay $(\Delta t_{\mathrm{S}})$, caused by spacetime curvature
+  around the white dwarf companion, produces a minuscule shift of
+  $\sim 10\,\mu\mathrm{s}$.
+\item Roemer delay $(\Delta t_{\mathrm{R}})$: The variation in pulse arrival
+  time caused by the movement of the pulsar along its orbit around the
+  binary's center of mass.
+\item Dispersion measure delay $(\Delta t_{\mathrm{DM}})$: The propagation
+  delay experienced by a signal traveling through the ionized interstellar
+  medium. This delay is given by
+  \[
+  \Delta t_{\mathrm{DM}} = K \cdot DM \cdot \frac{1}{f^2}
+  \]
+  where $f$ is the frequency of the observed signal, $K$ is the dispersion
+  constant, and $DM$ is the dispersion measure.
+\end{itemize}
+
+\begin{description}
+\item[(a)] (3 points) Physical classification: Classify each of the following
+  signal delay mechanisms as achromatic (frequency-independent) or chromatic
+  (frequency-dependent).
+
+  Roemer delay: [\ ] Achromatic \quad [\ ] Chromatic\\
+  Dispersion measure delay: [\ ] Achromatic \quad [\ ] Chromatic\\
+  Shapiro delay: [\ ] Achromatic \quad [\ ] Chromatic
+\item[(b)] (2 points) To understand the difficulty of isolating the Shapiro
+  delay, we must compare the magnitudes of these effects. Given an observing
+  frequency $f = 1400\,\mathrm{MHz}$ (standard L-band), an average
+  interstellar dispersion measure $DM = 15\,\mathrm{pc\,cm^{-3}}$, and the
+  dispersion constant
+  $K = 4.15 \times 10^3\,\mathrm{s\,MHz^2\,pc^{-1}\,cm^3}$:
+  \begin{description}
+  \item[(b.1)] (1 points) Calculate $\Delta t_{\mathrm{DM}}$.
+  \item[(b.2)] (1 points) Arrange the three delays
+    $(\Delta t_{\mathrm{R}}, \Delta t_{\mathrm{DM}}, \Delta t_{\mathrm{S}})$
+    in order from largest to smallest.
+  \end{description}
+\item[(c)] (3 points) Below are six schematic graphs (A--F) illustrating the
+  time delay as a function of orbital phase over one complete orbit. The
+  vertical axis represents the delay amplitude (numerical values omitted).
+  Match each of the three physical delay mechanisms listed below to the graph
+  that best represents its expected shape.
+
+\ioaafig{2026_DA_D01-f1.pdf}
+% f1 = six schematic graphs A to F of time delay against orbital phase (0 to 1)
+
+  Roemer delay [\ ?\ ]\\
+  Dispersion measure delay [\ ?\ ]\\
+  Shapiro delay [\ ?\ ]
+\item[(d)] (3 points) Observational strategy: Variations in the interstellar
+  medium cause the dispersion measure to fluctuate over time, introducing
+  timing noise. Select one correct answer to each question below.
+  \begin{description}
+  \item[(d.1)] (1 point) Why is a monochromatic observation (observing at a
+    single frequency) insufficient to constrain the extremely small
+    $10\,\mu\mathrm{s}$ Shapiro delay?
+    \begin{description}
+    \item[A.] The telescope's receiver cannot process data faster than
+      $10\,\mu\mathrm{s}$.
+    \item[B.] Single frequencies are completely absorbed by the interstellar
+      plasma.
+    \item[C.] The system contains multiple sources of time delay, so the
+      different physical effects cannot be distinguished from a single
+      observation.
+    \item[D.] Monochromatic signals do not experience gravitational time
+      dilation.
+    \end{description}
+  \item[(d.2)] (2 points) Which observational strategy is used to measure and
+    correct for dispersion measure variations?
+    \begin{description}
+    \item[A.] Integrating the signal over a one-year period to average out
+      the dispersion measure variations.
+    \item[B.] Conducting simultaneous observations at two distinct radio
+      frequencies.
+    \item[C.] Observing strictly at an extremely low frequency where the
+      dispersion measure can be reduced.
+    \item[D.] Only observing the pulsar when it is outside superior
+      conjunction.
+    \end{description}
+  \end{description}
+\end{description}
 
 \clearpage
 \section*{Solutions to Chapter 10}
@@ -2421,7 +2679,287 @@ answer is: NO \hfill(1 p)
   \hfill(1.0)
 \end{description}
 
-\solhead{10.20}{Isolated black hole}
+\solhead{10.20}{Primordial Black Holes}
+% source id: 2026_TH_T05
+\begin{description}
+\item[(a)] Work out the mass density of the PBH,
+  \[ \rho_{\mathrm{PBH}} = \frac{M}{V_{\mathrm{S}}}
+     = \frac{M}{\frac{4}{3}\pi r_{\mathrm{S}}^3} \]
+  \hfill(1 point)
+
+  where the Schwarzschild radius is
+  \[ r_{\mathrm{S}} = \frac{2GM}{c^2} \]
+  \hfill(0.5 points)
+
+  The above equation becomes
+  \[ \rho_{\mathrm{PBH}}
+     = \frac{M}{\frac{4}{3}\pi\left(\frac{2GM}{c^2}\right)^3}
+     = \frac{3c^6}{32\pi G^3 M^2} \]
+  \hfill(0.5 points)
+
+  The PBHs can be formed if the cosmological density of the universe is of
+  the same order as the density of the PBH,
+  \[ \rho_{\mathrm{c}} \sim \rho_{\mathrm{PBH}} \]
+  \hfill(2 points)
+
+  Then, we can figure out the desired relation,
+  \[ \frac{1}{Gt^2} \sim \frac{3c^6}{32\pi G^3 M^2}
+     \Rightarrow M \sim \frac{c^3 t}{6G} \]
+  \hfill(1 point)
+
+  \textit{Note:}
+  \begin{itemize}
+  \item \textit{If students use ``$=$'', ``$\approx$'', or ``$\le$'' for the
+    density relation above, the marks remain unchanged.}
+  \item \textit{Students can write the coefficient as $\sqrt{3/32\pi}$ or 1
+    instead of 1/6.}
+  \end{itemize}
+
+\item[(b)] The PBHs still evaporating implies that the evaporation time must
+  be greater than or equal to the Universe age,
+  \[ \tau(M) \ge 13.8\ \mathrm{(Gyr)} \]
+  \hfill(1.5 points)
+  \begin{align*}
+    &\Rightarrow 10^{67}\left(\frac{M}{M_\odot}\right)^3 \ge 13.8 \times 10^9 \\
+    &\Rightarrow \left(\frac{M}{M_\odot}\right)^3 \ge 13.8 \times 10^{-58} \\
+    &\Rightarrow M \ge 1.1 \times 10^{-19} \times M_\odot
+  \end{align*}
+  \hfill(1 point)
+
+  Then, using the result derived in part a), we can work out the formation
+  time after the Big Bang of PBHs as follows
+  \[ \frac{c^3 t}{6G} \gtrsim 1.1 \times 10^{-19} \times M_\odot \]
+  \hfill(1.5 points)
+  \begin{align*}
+    &\Rightarrow t \gtrsim 6.6 \times 10^{-19} \times M_\odot \times \frac{G}{c^3} \\
+    &\Rightarrow t \gtrsim 3.3 \times 10^{-24}\ \mathrm{(s)}
+  \end{align*}
+  \hfill(1 point)
+
+  \textit{Note:}
+  \begin{itemize}
+  \item \textit{Deduct 0.5 points if students use either
+    ``$\tau(M) = 13.8\,\mathrm{Gyr}$'' or ``$\tau(M) > 13.8\,\mathrm{Gyr}$''.}
+  \item \textit{The above comparisons are in the same order of magnitude.
+    Therefore, coefficients are not important or can be flexibly varied.}
+  \end{itemize}
+\end{description}
+
+\solhead{10.21}{Gravitational Lensing and Delay}
+% source id: 2026_TH_T09
+\noindent\textbf{Part 1 (15 points): Einstein Ring}
+
+\begin{description}
+\item[(a)] The redshift $z$ measures the shift in the wavelength of radiation
+  emitted by a source ($\lambda$) and observed at a longer wavelength by the
+  observer ($\lambda + \Delta\lambda$); it is caused by the expansion of the
+  Universe between the source and the observer. For nearby objects, we have
+  \[ z = \frac{\Delta\lambda}{\lambda} \simeq \frac{\Delta V}{c} \]
+  \hfill(0.5 points)
+
+  Using Hubble's law gives
+  \[ \Delta V = H_0 d \]
+  \hfill(0.5 points)
+
+  where $d$ is the distance between the observer and the source. Hence,
+  $d = zc/H_0$. This result leads to
+  \[ d_S = \frac{0.406c}{H_0} = 1800\,\mathrm{Mpc} \]
+  \hfill(0.5 points)
+  \[ d_L = \frac{0.042c}{H_0} = 190\,\mathrm{Mpc} \]
+  \hfill(0.5 points)
+
+  \textit{Note: If students then calculate the angular diameter distance as
+  $d/(1+z)$ they should also receive full points.}
+
+\item[(b)] From Figure T09.2, and using the small angle approximation, we
+  obtain
+  \[ d_{LS} = d_S - d_L \]
+  \[ \theta d_S = 2\alpha d_{LS} \]
+  \hfill(1 point)
+  \[ \theta d_L = b \]
+  \hfill(1 point)
+
+  Based on the relation $2\alpha = 2R^*/b$, we find
+  \begin{align*}
+    2\alpha &= \frac{2R^*}{\theta d_L} \\
+    \theta d_S &= \frac{2R^* d_{LS}}{\theta d_L} \\
+    \theta^2 &= \frac{2R^* d_{LS}}{d_L d_S} \\
+    \theta &= \sqrt{\frac{2R^* d_{LS}}{d_L d_S}}
+            = \sqrt{\frac{2R^*(d_S - d_L)}{d_L d_S}}
+  \end{align*}
+  \hfill(1 point)
+
+  \textit{Note: If students include the minus sign in their answer, deduct
+  0.5 points.}
+
+\item[(c)] \textbf{Determine the distance of closest approach}
+
+  The distance of closest approach is given by
+  \[ b = \theta d_L \]
+  Substituting $\theta = 2.5$ [arcsec] and $d_L = 190$ [Mpc], we get
+  \[ b = 2.3\,\mathrm{kpc} \]
+  \hfill(1 point)
+
+  \textbf{Determine the mass of the lens galaxy}
+
+  The Schwarzschild radius of an object of mass $M$ is
+  \[ R^* = \frac{2GM}{c^2} \]
+  \hfill(0.5 points)
+
+  Using the expression derived in the previous part,
+  \[ \theta^2 = \frac{2R^* d_{LS}}{d_L d_S} \]
+  we obtain
+  \[ R^* = \frac{\theta^2 d_L d_S}{2 d_{LS}} \]
+  Hence, the mass of the lens galaxy is
+  \[ M = \frac{R^* c^2}{2G} = \frac{\theta^2 d_L d_S}{2 d_{LS}}\,\frac{c^2}{2G} \]
+  \hfill(0.5 points)
+
+  Substituting $\theta = 2.5$ [arcsec] $= 12.1 \times 10^{-6}$ [rad],
+  $d_L = 190$ [Mpc], and $d_S = 1800$ [Mpc], we get
+  \[ M = 1.6 \times 10^{11}\,\mathrm{M}_\odot \]
+  \hfill(1 point)
+
+  \textit{Note that this is only the mass enclosed within the Einstein ring
+  and is therefore smaller than the total mass of the lens galaxy.}
+
+\item[(d)] When the lens is displaced by a small distance $\varepsilon$
+  (Figure T09.3), the distance of closest approach decreases for the upper
+  ray, increasing its deflection. The ray that reaches the observer must
+  therefore be emitted at a larger angle. Conversely, for the lower ray, the
+  distance of closest approach increases, reducing the deflection, so the
+  observed ray must be emitted at a smaller angle.
+
+  Let $\theta'$ be the new angular radius of the ring, namely the angle
+  between the detected light ray and the line joining the observer and the
+  lens, $2\alpha'$ be the new deflection angle, and $b'$ be the new distance
+  to the closest approach.
+
+  First, considering the upper part of the figure, we have
+  \[ \theta + \frac{x}{d_L} = \theta' + \frac{\varepsilon}{d_L} \]
+  \[ \Rightarrow x = \theta' d_L - \theta d_L + \varepsilon \qquad (1) \]
+  Since $b = \theta d_L$ and $b' = \theta' d_L$, we obtain
+  \[ x = b' - b + \varepsilon \qquad (2) \]
+  \hfill(1 point)
+
+  Repeating the calculation described in b), we find
+  \[ 2\alpha' d_{LS} = \left(\theta' + \frac{\varepsilon}{d_L}\right) d_S
+     \qquad (3) \]
+  \hfill(0.5 points)
+
+  Moreover,
+  \[ 2\alpha' = \frac{2R^*}{\theta' d_L} \qquad (4) \]
+  \hfill(0.5 points)
+
+  Hence,
+  \[ \left(\theta' + \frac{\varepsilon}{d_L}\right) d_S
+     = \frac{2R^*}{\theta' d_L}\, d_{LS} \qquad (5) \]
+  For the perfectly aligned configuration, we have
+  \[ \theta d_S = \frac{2R^*}{\theta d_L}\, d_{LS} \qquad (6) \]
+  Dividing (5) by (6) gives
+  \[ \frac{\theta'}{\theta} + \frac{\varepsilon}{\theta d_L}
+     = \frac{\theta}{\theta'} \]
+  \[ \Rightarrow \frac{\theta'}{\theta} + \frac{\varepsilon}{b}
+     = \frac{\theta}{\theta'}
+     \ \text{ or }\
+     \frac{b'}{b} + \frac{\varepsilon}{b} = \frac{b}{b'} \qquad (7) \]
+  \hfill(1 point)
+
+  To simplify the calculation, we define
+  \[ \frac{\theta'}{\theta} = 1 + k\frac{\varepsilon}{b} \qquad (8) \]
+  Since $\varepsilon/b \ll 1$, Eq.\ (7) reduces to
+  \[ 1 + k\frac{\varepsilon}{b} + \frac{\varepsilon}{b}
+     = 1 - k\frac{\varepsilon}{b}
+     \Rightarrow k = -\frac{1}{2} \qquad (9) \]
+  Substituting $k$ into Eq.\ (8), we obtain
+  \[ \frac{\theta'}{\theta} = 1 - \frac{\varepsilon}{2b} \qquad (10) \]
+  Hence,
+  \[ \frac{b'}{b} = 1 - \frac{\varepsilon}{2b}
+     \Rightarrow b' - b = -\frac{\varepsilon}{2} \qquad (11) \]
+
+  \textit{Note: Alternatively, Eq.\ (7) can be solved as follows:}
+
+  \textit{Let $t = \theta'/\theta = b'/b$, we have}
+  \[ t^2 + \frac{\varepsilon}{b}\,t - 1 = 0 \]
+  \textit{This equation has two solutions, but we retain only the positive
+  one, which is physically meaningful. The positive solution is}
+  \[ t = \frac{-\varepsilon/b + \sqrt{(\varepsilon/b)^2 + 4}}{2} \]
+  \textit{Since $\varepsilon/b \ll 1$, we can keep only the first-order term
+  in $\varepsilon/b$,}
+  \[ t = 1 - \frac{\varepsilon}{2b}
+     \Rightarrow b' - b = -\frac{\varepsilon}{2} \]
+
+  Substituting this result into Eq.\ (2), we finally get
+  \[ x = \frac{\varepsilon}{2} \qquad (12) \]
+  \hfill(2 points)
+
+  For the lower part of the figure, we obtain a similar result by changing
+  $\varepsilon$ to $-\varepsilon$ in corresponding equations:
+  \[ x' = \frac{\varepsilon}{2} \qquad (13) \]
+  \hfill(1 point)
+
+  The angular displacement of the ring image is
+  \[ \Delta\theta = \frac{\varepsilon}{2 d_L} \qquad (14) \]
+  \hfill(1 point)
+
+  To first order, the light rays in the plane perpendicular to the plane of
+  Figure T09.3 are unaffected. Hence, the observer sees the Einstein ring
+  displaced in the same direction as the lens, but by only \textit{half the
+  lens displacement}.
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (5 points): Gravitational Delay}
+
+\begin{description}
+\item[(a)] Since the light ray approaching the Sun tangentially, the distance
+  of closest approach is
+  \[ b = R_\odot \]
+  \hfill(0.5 points)
+
+  Hence, the total deflection angle is
+  \[ 2\alpha = \frac{2R^*}{b} = \frac{2R^*}{R_\odot} \]
+  \hfill(0.5 points)
+
+  The Schwarzschild radius of the Sun is given by
+  \[ R^* = \frac{2G\mathrm{M}_\odot}{c^2} = 2.95\,\mathrm{km}\ (\sim 3\,\mathrm{km}) \]
+  \hfill(0.5 points)
+
+  Substituting the values of $R^*$ and $R_\odot$, we obtain
+  \[ 2\alpha = \frac{2 \times 2.95}{6.96 \times 10^5}
+     = 0.85 \times 10^{-5}\,[\mathrm{rad}] = 1.75\,[\mathrm{arcsec}] \]
+  \hfill(0.5 points)
+
+  \textit{(1.75--1.78 arcsec for full mark)}
+
+\item[(b)] The relation $\mathrm{d}\delta/\mathrm{d}R = 2\alpha/c$ was
+  derived using the small-angle geometry for light rays passing close to the
+  Sun. This approximation becomes less accurate as the distance from the Sun
+  increases. Nevertheless, for this simplified exercise, we use it to estimate
+  the total gravitational delay.
+
+  The gravitational delay experienced by a light ray between the Sun surface
+  ($R = R_\odot$) and the Earth ($R = d_\odot = 1\,\mathrm{au}$) is the
+  integral of the derivative between these limits, namely
+  \[ \delta = \int_{R_\odot}^{d_\odot} \frac{2\alpha}{c}\,\mathrm{d}R \]
+  \hfill(1 point)
+
+  The total bending angle of a light ray grazing the Sun is
+  \[ 2\alpha = \frac{2R^*}{R} \]
+  Hence, the gravitational delay is
+  \[ \delta = \int_{R_\odot}^{d_\odot} \frac{2R^*}{cR}\,\mathrm{d}R
+     = \frac{2R^*}{c}\int_{R_\odot}^{d_\odot} \frac{1}{R}\,\mathrm{d}R \]
+  \hfill(0.5 points)
+  \[ \Rightarrow \delta = \frac{2R^*}{c}\ln\left(\frac{d_\odot}{R_\odot}\right) \]
+  \hfill(1 point)
+  \[ \Rightarrow \delta = \frac{2 \times 2.95}{3 \times 10^5}
+     \ln\left(\frac{1.496 \times 10^8}{6.96 \times 10^5}\right)
+     = 106\,\mu\mathrm{s} \]
+  \hfill(0.5 points)
+
+  \textit{Note: If students integrate from the solar radius $R_\odot$ to any
+  $R' < 1\,\mathrm{au}$, they will also receive full credit.}
+\end{description}
+
+\solhead{10.22}{Isolated black hole}
 % source id: 2023_DA_Q2
 \begin{description}
 \item[(a)]
@@ -2594,5 +3132,256 @@ answer is: NO \hfill(1 p)
       + \left(\frac{\Delta\pi_{\mathrm{E}}}{\pi_{\mathrm{E}}}\right)^2}
   \]
   \hfill(7 points)
+\end{description}
+
+\solhead{10.23}{Massive Neutron Stars and the Shapiro Time Delay}
+% source id: 2026_DA_D01
+\medskip\noindent\textbf{Part 1 (26 points): Linear Regression and White Dwarf Mass}
+% sic: the solution file titles Part 1 "Linear Regression and White Dwarf
+% Mass"; the statement calls it "Estimation of White Dwarf Mass"
+
+\begin{description}
+\item[(a)] Define appropriate linearized variables $X$ and $Y$
+  \[
+  X = -\ln(1 - \cos\phi), \qquad Y = \Delta t_{\mathrm{S}}
+  \]
+  \hfill(1 point)
+
+  Table:
+  \begin{center}
+  \begin{tabular}{cccc}
+  \toprule
+  ID & $\phi$ ($^\circ$) & $X$ & $Y$ ($\mu$s) \\
+  \midrule
+  1  & $2.0$   & 7.40 & 18.5 \\
+  2  & $-3.0$  & 6.59 & 17.5 \\
+  3  & $4.0$   & 6.02 & 16.3 \\
+  4  & $-5.0$  & 5.57 & 13.9 \\
+  5  & $6.0$   & 5.21 & 12.8 \\
+  6  & $8.0$   & 4.63 & 12.5 \\
+  7  & $10.0$  & 4.19 & 10.1 \\
+  8  & $-12.0$ & 3.82 & 10.3 \\
+  9  & $15.0$  & 3.38 & 9.3 \\
+  10 & $20.0$  & 2.81 & 6.5 \\
+  11 & $-22.0$ & 2.62 & 5.8 \\
+  12 & $25.0$  & 2.37 & 6.6 \\
+  13 & $30.0$  & 2.01 & 5.0 \\
+  14 & $-35.0$ & 1.71 & 4.7 \\
+  15 & $40.0$  & 1.45 & 3.9 \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  \hfill(3 points)
+
+  \emph{Each correct row is awarded 0.2 points. Slight deviations due to
+  rounding are acceptable.}
+
+\item[(b)]
+\ioaafig{2026_DA_D01-s1.pdf}
+  Graph D01.1b.
+
+  Graphing:
+  \begin{itemize}
+  \item Clear axis scaling and labels $(X, Y)$. \hfill(1 point)
+  \item Plot correctly the 15 scatter points and their error bars
+    ($\pm 1.5\,\mu\mathrm{s}$) \hfill(6 points)
+  \item Overlaid a reasonable best-fit line on the plot. \hfill(1 point)
+  \end{itemize}
+
+  Summations:
+  \begin{align*}
+  \sum X &= 59.78, & \sum Y &= 153.70\,\mu\mathrm{s} \\
+  \sum X^2 &= 287.05, & \sum XY &= 738.28\,\mu\mathrm{s}
+  \end{align*}
+
+  Coefficients:
+
+  Apply determinant formula:
+  \[
+  \Delta = N\sum X^2 - \left(\sum X\right)^2 = 732.10
+  \]
+  Slope:
+  \[
+  a = \frac{N\sum XY - \sum X \sum Y}{\Delta} \approx 2.58\,\mu\mathrm{s}
+  \]
+  \hfill(2 points)
+
+  Intercept:
+  \[
+  b = \frac{\sum X^2 \sum Y - \sum X \sum XY}{\Delta} \approx -0.02\,\mu\mathrm{s}
+  \]
+  \hfill(2 points)
+
+  Uncertainties:
+
+  Compute:
+  \[
+  \sigma_a = \sigma_t\sqrt{\frac{N}{\Delta}}
+    = 1.5\sqrt{\frac{15}{732.10}} \approx 0.21\,\mu\mathrm{s}
+  \]
+  \hfill(3 points)
+
+  Compute:
+  \[
+  \sigma_b = \sigma_t\sqrt{\frac{\sum X^2}{\Delta}}
+    = 1.5\sqrt{\frac{287.05}{732.10}} \approx 0.94\,\mu\mathrm{s}
+  \]
+  \hfill(3 points)
+
+  Results:
+
+  Using the formulas: $a = 2.58 \pm 0.21\,\mu\mathrm{s}$,
+  $b = 0.0 \pm 0.9\,\mu\mathrm{s}$
+
+  \emph{\underline{Note:} Students can determine $a$, $b$, along with their
+  uncertainties, either by using the formulas for linear regression or from
+  the graph.}
+
+  Using the graph: $a = [2.4, 2.8]$ and $b = [-0.9, 0.9]$
+
+  \hspace*{2em}$\sigma_a = [0.1, 0.3]$ and $\sigma_b = [0.5, 1.5]$
+
+\item[(c)] Mass expression:
+  \[
+  M_{\mathrm{WD}} = \frac{ac^3}{2G}
+  \]
+  \hfill(1 point)
+
+  Substituting the value of $a$ into the equation gives:
+  \[
+  M_{\mathrm{WD}} \approx 5.21 \times 10^{29}\,\mathrm{kg}
+    \approx 0.262\,\mathrm{M}_\odot
+  \]
+  \hfill(1 point)
+
+  Error propagation expression:
+  \[
+  \Delta M_{\mathrm{WD}} = M_{\mathrm{WD}}\frac{\sigma_a}{a}
+  \]
+  \hfill(1 point)
+
+  Final result:
+  \[
+  \Delta M_{\mathrm{WD}} \approx 0.021\,\mathrm{M}_\odot
+  \]
+  \hfill(1 point)
+
+  Conclusion:
+  \[
+  M_{\mathrm{WD}} = 0.262 \pm 0.021\,\mathrm{M}_\odot
+  \]
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (13 points): Binary Dynamics and Error Propagation}
+
+\begin{description}
+\item[(a)] Kepler's 3rd law:
+  \[
+  P_b^2 = \frac{4\pi^2}{G\left(M_{\mathrm{PSR}} + M_{\mathrm{WD}}\right)}
+    \left(a_p + a_{\mathrm{WD}}\right)^3
+  \]
+  \hfill(2 points)
+
+  Center of mass momentum conservation:
+  \[
+  a_{\mathrm{WD}} = a_p\frac{M_{\mathrm{PSR}}}{M_{\mathrm{WD}}}
+  \]
+  \hfill(2 points)
+
+  Substitute $a_{\mathrm{WD}}$ into the above equation and isolate variables
+  to derive the relation:
+  \[
+  f_M = \frac{M_{\mathrm{WD}}^3}{\left(M_{\mathrm{PSR}} + M_{\mathrm{WD}}\right)^2}
+      = \frac{4\pi^2 a_p^3}{G P_b^2} \quad (1)
+  \]
+  \hfill(1 point)
+
+  Computation:
+  \[
+  f_M \approx 5.927 \times 10^{27}\,\mathrm{kg} \approx 0.002975\,\mathrm{M}_\odot
+  \]
+  \hfill(1 point)
+
+\item[(b)] Rearrange (1) to solve for $M_{\mathrm{PSR}}$:
+  \[
+  M_{\mathrm{PSR}} = \sqrt{\frac{M_{\mathrm{WD}}^3}{f_M}} - M_{\mathrm{WD}}
+  \quad (2)
+  \]
+  \hfill(1 point)
+
+  Substitute values to obtain:
+  \[
+  M_{\mathrm{PSR}} \approx 2.20\,\mathrm{M}_\odot
+  \]
+  \hfill(1 point)
+
+  Differentiate both sides of (2) with respect to $M_{\mathrm{WD}}$:
+  \[
+  \frac{\Delta M_{\mathrm{PSR}}}{\Delta M_{\mathrm{WD}}}
+    = \frac{3}{2}\sqrt{\frac{M_{\mathrm{WD}}}{f_M}} - 1 \approx 13.08
+  \]
+  \hfill(2 points)
+
+  Error computation:
+  \[
+  \Delta M_{\mathrm{PSR}} \approx 13.08 \times \Delta M_{\mathrm{WD}}
+    \approx 0.27\,\mathrm{M}_\odot
+  \]
+  \hfill(1 point)
+
+  Conclusion:
+  \[
+  M_{\mathrm{PSR}} = 2.20 \pm 0.27\,\mathrm{M}_\odot
+  \]
+
+\item[(c)] Compute:
+  \[
+  n_\sigma = \frac{M_{\mathrm{PSR}} - M_{\mathrm{limit}}}{\Delta M_{\mathrm{PSR}}}
+    = \frac{2.20 - 2.0}{0.27} = 0.74
+  \]
+  \hfill(1 point)
+
+  Answer: No \hfill(1 point)
+
+  \emph{Since $n_\sigma < 3$, the measurement does not provide sufficient
+  statistical significance to rule out the soft EoS theory.}
+\end{description}
+
+\medskip\noindent\textbf{Part 3 (11 points): Pulse Time of Arrival (TOA): Effect of Multiple Factors}
+
+\begin{description}
+\item[(a)] Classification:
+
+  \emph{Achromatic:} Roemer delay, Shapiro delay
+
+  \emph{Chromatic:} Dispersion measure delay
+
+  \emph{(1 point for each corect answer)} \hfill(3 points)
+  % sic: "corect" as printed
+
+\item[(b.1)] Substitute the values into the given formula:
+  \[
+  \Delta t_{\mathrm{DM}} = K \cdot DM \cdot \frac{1}{f^2}
+  \]
+  \[
+  \Delta t_{\mathrm{DM}} = 4.15 \times 10^3 \times 15 \times \frac{1}{1400^2}
+    \approx 0.032\,\mathrm{s}\ (32\,\mathrm{ms})
+  \]
+  \hfill(1 point)
+
+\item[(b.2)] Based on the problem text and their calculation, the correct
+  order from largest to smallest is: Roemer delay ($\sim 4\,\mathrm{s}$)
+  $>$ Dispersion measure delay ($\sim 32\,\mathrm{ms}$) $>$ Shapiro delay
+  ($\sim 10\,\mu\mathrm{s}$). \hfill(1 point)
+
+\item[(c)] Roemer delay: B \hfill(1 point)
+
+  Dispersion measure delay: E \hfill(1 point)
+
+  Shapiro delay: F \hfill(1 point)
+
+\item[(d.1)] C \hfill(1 point)
+
+\item[(d.2)] B \hfill(2 points)
 \end{description}
 

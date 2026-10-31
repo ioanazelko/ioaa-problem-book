@@ -48,7 +48,7 @@ HOSTS = {2007: "Chiang Mai, Thailand", 2008: "Bandung, Indonesia", 2009: "Tehran
          2016: "Bhubaneswar, India", 2017: "Phuket, Thailand", 2018: "Beijing, China",
          2019: "Keszthely, Hungary", 2020: "GeCAA (Estonia, remote)", 2021: "Bogot\\'a (remote)",
          2022: "Kutaisi, Georgia", 2023: "Katowice, Poland", 2024: "Rio de Janeiro, Brazil",
-         2025: "Mumbai, India"}
+         2025: "Mumbai, India", 2026: "Hanoi, Vietnam"}
 
 # round code -> (section title, sort rank)
 SECTIONS = {
@@ -60,7 +60,7 @@ SECTIONS = {
 }
 
 TSVS = ["classify_2007_2011.tsv", "classify_2012_2016.tsv",
-        "classify_2017_2021.tsv", "classify_2022_2025.tsv", "classify_obs.tsv"]
+        "classify_2017_2021.tsv", "classify_2022_2025.tsv", "classify_2026_2030.tsv", "classify_obs.tsv"]
 
 
 def tex_escape(s):

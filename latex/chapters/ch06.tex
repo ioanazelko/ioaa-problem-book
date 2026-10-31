@@ -444,9 +444,33 @@ where, $R_V = A_V/E(B-V) = 3.1$ is the ratio of total-to-selective extinction.
   \hfill[2]
 \end{description}
 
+\probhead{6.28}{Great Dimming of Betelgeuse}{2026}{Hanoi, Vietnam}{TH T04}{10}
+% source id: 2026_TH_T04   tag: dust clump obscuration, optical depth, ejected mass
+Between late 2019 and early 2020, the red supergiant Betelgeuse experienced an
+unusual visual fading event known as the ``Great Dimming'' (Figure T04.1). One
+explanation is that the star ejected material that formed a dust clump,
+obscuring the stellar disk. Assume the dimming occurred at a normal pulsation
+minimum and was caused entirely by the cylindrical dust clump covering 80\% of
+the stellar disk.
+
+\ioaafig{2026_TH_T04-f1.pdf}
+
+\begin{description}
+\item[(a)] (2.5 points) Estimate the ratio ($k_1$) of the observed brightness
+  at the minimum light to that at the normal pulsation minimum.
+\item[(b)] (2.5 points) Estimate the fraction ($k_2$) of light transmitted
+  through the obscured region.
+\item[(c)] (1.5 points) Calculate the optical depth $\tau$ of the dust clump.
+\item[(d)] (3.5 points) Assuming a mass absorption coefficient of the dust
+  $\kappa = 1000.\,\mathrm{m^2\,kg^{-1}}$, a gas-to-dust mass ratio of 200.,
+  and a radius of Betelgeuse of $1000\,\mathrm{R}_\odot$, estimate the total
+  mass ($M_{\mathrm{eject}}$) of the ejected material in units of
+  $\mathrm{M}_\odot$.
+\end{description}
+
 \section*{Data-analysis problems}
 
-\probhead{6.28}{}{2013}{Volos, Greece}{DA D3}{}
+\probhead{6.29}{}{2013}{Volos, Greece}{DA D3}{}
 % source id: 2013_DA_D3   tag: visual magnitude estimation, Hyades chart
 Figure 2 shows a photograph of the sky in the vicinity of the Hyades open
 cluster. The V-filter in the Johnson's photometric system was used. Figure 3
@@ -469,7 +493,7 @@ stars may not be in the chart.
 
 \ioaafig{2013_DA_D3-f2.pdf}
 
-\probhead{6.29}{Observer on an extrasolar planet}{2014}{Suceava, Romania}{DA D3}{}
+\probhead{6.30}{Observer on an extrasolar planet}{2014}{Suceava, Romania}{DA D3}{}
 % source id: 2014_DA_D3   tag: magnitudes/distances recomputed elsewhere
 The Sirius star, located in the constellation of Canis Major, is the brightest
 star in the night sky of the Earth. What the observer's eye sees as a single
@@ -548,7 +572,7 @@ Note
 \[ e^x \approx 1 + x \text{ for } x \ll 1 \]
 \ioaafig{2014_DA_D3-f1.pdf}
 
-\probhead{6.30}{Interstellar extinction / IC 342}{2015}{Magelang, Indonesia}{DA D2}{}
+\probhead{6.31}{Interstellar extinction / IC 342}{2015}{Magelang, Indonesia}{DA D2}{}
 % source id: 2015_DA_D2   tag: extinction curve, Cepheid distance IC 342
 BVRIJHKLMN photometry of 2 stars from the constellation Cassiopeia is given in
 Table 5. For both stars it is believed that their light is affected by
@@ -1817,7 +1841,81 @@ As a consequence, $E' > E_\odot$. \hfill(1 point)
   \hfill 1.0
 \end{description}
 
-\solhead{6.28}{}
+\solhead{6.28}{Great Dimming of Betelgeuse}
+% source id: 2026_TH_T04
+\begin{description}
+\item[(a)] From the graph, the magnitudes at minimum light of the pulsation
+  cycle before and during Great Dimming are
+  \[ m_1 = 0.9, \qquad m_2 = 1.65 \]
+  The difference in magnitude between the two minimum light phases is
+  \[ \Delta m = 0.75 \]
+  \hfill(1 point)
+
+  \begin{center}
+  \begin{tabular}{ccc}
+  \toprule
+  Half mark & Full mark & Half mark \\
+  \midrule
+  $0.65 \le \Delta m < 0.70$ & $0.70 \le \Delta m \le 0.80$ &
+  $0.80 < \Delta m \le 0.85$ \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+
+  Call $F_0$ the initial brightness of the star. The fractional decrease in
+  the observed brightness caused by the dust clump is
+  \[ k_1 = \frac{F}{F_0} = 10^{-\frac{\Delta m}{2.5}} \]
+  \hfill(1 point)
+
+  Therefore,
+  \[ k_1 = 0.50 \]
+  \hfill(0.5 points)
+
+\item[(b)] Call $F_{\mathrm{clump}}$ the brightness transmitted through the
+  dust clump. The observed brightness of the star during the dimming is
+  \[ F = 0.20F_0 + 0.80F_{\mathrm{clump}} \]
+  \hfill(1.5 points)
+
+  Hence,
+  \[ k_2 = \frac{F_{\mathrm{clump}}}{F_0}
+         = \frac{\dfrac{F}{F_0} - 0.20}{0.80} = 0.38 \]
+  \hfill(1 point)
+
+\item[(c)] The brightness transmitted through the dust clump is
+  \[ F_{\mathrm{clump}} = F_0 e^{-\tau} \]
+  \hfill(1 point)
+
+  Hence, the optical depth is
+  \[ \tau = -\ln\left(\frac{F_{\mathrm{clump}}}{F_0}\right) = 0.97 \]
+  \hfill(0.5 points)
+
+\item[(d)] Call $\rho$ the density of the dust clump, $\Delta z$ the average
+  extent of the clump along the line of sight.
+
+  The optical depth is
+  \[ \tau = \rho\kappa\Delta z \]
+  \hfill(1 point)
+
+  The dust clump has a volume
+  \[ V = 0.80\pi R^2 \Delta z \]
+  \hfill(0.5 points)
+
+  and a mass
+  \[ M_{\mathrm{dust}} = \rho V \]
+
+  Therefore,
+  \[ M_{\mathrm{dust}} = 0.80\pi R^2 \frac{\tau}{\kappa} \]
+  \hfill(1 point)
+  \[ M_{\mathrm{dust}} = 5.9 \times 10^{-10}\,\mathrm{M}_\odot \]
+  \hfill(0.5 points)
+
+  The total mass of the ejected material is
+  \[ M_{\mathrm{eject}} = 201 M_{\mathrm{dust}}
+     = 1.2 \times 10^{-7}\,\mathrm{M}_\odot \]
+  \hfill(0.5 points)
+\end{description}
+
+\solhead{6.29}{}
 % source id: 2013_DA_D3
 \textbf{Answer:} The human eye can easily recognize differences of the order
 of $\Delta m_V = 0.1$ -- $0.2$\,mag. The student should first align the
@@ -1842,7 +1940,7 @@ $\pm0.3$ magnitude \hfill(18 Points)
 Stars 1, 2 and 12 are outside the boundaries of the photograph
 \ioaafig{2013_DA_D3-s1.pdf}
 
-\solhead{6.29}{Observer on an extrasolar planet}
+\solhead{6.30}{Observer on an extrasolar planet}
 % source id: 2014_DA_D3
 % Official solution ("Problem 3 B. Marking scheme -- Observer on an extrasolar
 % Note: the official solution names the asterism "Big Dipper" (and keeps some
@@ -2031,7 +2129,7 @@ Stars 1, 2 and 12 are outside the boundaries of the photograph
   \end{align*}
 \end{description}
 
-\solhead{6.30}{Interstellar extinction / IC 342}
+\solhead{6.31}{Interstellar extinction / IC 342}
 % source id: 2015_DA_D2
 \begin{description}
 \item[a)] Using the data from tables 5 to 9 and recalling that MK class II
@@ -2176,3 +2274,4 @@ Stars 1, 2 and 12 are outside the boundaries of the photograph
   $\mu_0 = \mu_{\mathrm{r}} - A_{\mathrm{r}} = 27.5$\,mag and so we estimate
   the distance to IC 342 to be 3.2\,Mpc. \hfill(20 points)
 \end{description}
+

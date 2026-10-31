@@ -798,9 +798,40 @@ December.
   Summary Answersheet). \hfill[4]
 \end{description}
 
+\probhead{1.41}{Zenith Blind Spot}{2026}{Hanoi, Vietnam}{TH T07}{15}
+% source id: 2026_TH_T07   tag: altazimuth tracking rate near zenith, blind spot size
+An observer in Hanoi (latitude of exactly $\phi = 21^\circ\,\mathrm{N}$) uses
+an altazimuth telescope to observe Zeta Tauri (declination
+$\delta = +21^\circ 08' 33''$) with a maximum azimuthal tracking speed of
+$1.0^\circ/\mathrm{s}$. As an object transits close to the zenith, the
+required tracking angular velocity increases sharply. If the required angular
+velocity exceeds the motor's maximum speed, the telescope loses its target.
+This problem is known as the ``Zenith blind spot'' or the ``Gimbal lock''. The
+position of the star is defined by its azimuth ($A$), zenith distance ($z$),
+and hour angle ($H$). Note that $A$ is measured Eastward from North and $H$ is
+measured Westward from South.
+
+\begin{description}
+\item[(a)] (4 points) Show that for the telescope to be able to track the
+  star, the required azimuthal angular velocity at meridian transit is given
+  by $\omega_A = -\omega_\oplus \dfrac{\cos\delta}{\sin z}$ where
+  $\omega_\oplus = 15^\circ/\mathrm{hr}$ is the Earth's sidereal rotation
+  rate.
+\item[(b)] (4 points) Calculate the minimum zenith distance
+  ($z_{\mathrm{min}}$) reached by Zeta Tauri during its transit and the radius
+  of the blind spot ($z_{\mathrm{limit}}$) in arcseconds. Show that Zeta Tauri
+  falls into the blind spot of the telescope during its transit over Hanoi.
+\item[(c)] (3 points) Assuming the star's path across the sky near the zenith
+  can be approximated as a straight line, calculate the total time $\Delta t$
+  (in seconds) that Zeta Tauri spends inside the telescope's blind spot.
+\item[(d)] (4 points) Suppose a star passes exactly through the zenith; find
+  the observer's latitudes $\phi_{\mathrm{max}}$ and $\phi_{\mathrm{min}}$ so
+  that the sizes of the blind spots are maximal and minimal, respectively.
+\end{description}
+
 \section*{Data-analysis problems}
 
-\probhead{1.41}{The Moon's age}{2007}{Chiang Mai, Thailand}{DA D2}{8}
+\probhead{1.42}{The Moon's age}{2007}{Chiang Mai, Thailand}{DA D2}{8}
 % source id: 2007_DA_D2   tag: lunar age via synodic month
 The 60\textsuperscript{th} anniversary celebrations of King Bhumibol
 Adulyadej's accession to the throne of Thailand (GMT +07) were held on the
@@ -842,6 +873,137 @@ March, 1879, use the data provided above to find the Moon's age (number of days
 after the new moon) on his birth date in Germany (GMT +01). Please show the
 method used for the calculation in detail. Estimate the errors in your
 calculation.
+
+\probhead{1.43}{The Nha Trang Expedition}{2026}{Hanoi, Vietnam}{DA D02}{50}
+% source id: 2026_DA_D02   tag: prism astrolabe timing, refraction, lines of position, latitude
+In 1910, the scientist Alexandre Yersin (discoverer of the bubonic plague
+bacillus) established an astronomical observatory on the roof of his house in
+Nha Trang, Vietnam. There, he used a Claude--Driencourt prism astrolabe,
+designed to record the instant at which a star reaches a fixed zenith distance
+($z = 30.0^\circ$). The following data table is inspired by Yersin's
+observations under atmospheric conditions of $T = 27.0\,^\circ\mathrm{C}$ and
+$P = 1011.0\,\mathrm{hPa}$.
+
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+Star & Right Ascension ($\alpha$) & Hour Angle ($H$) & Recorded Time ($T_R$) & Azimuth ($A$) \\
+\midrule
+A & $17^{\mathrm{h}}35^{\mathrm{m}}35.55^{\mathrm{s}}$ & $+2^{\mathrm{h}}02^{\mathrm{m}}08.95^{\mathrm{s}}$ & $19^{\mathrm{h}}36^{\mathrm{m}}53.69^{\mathrm{s}}$ & $285.0^\circ$ \\
+B & $19^{\mathrm{h}}59^{\mathrm{m}}52.48^{\mathrm{s}}$ & $+1^{\mathrm{h}}47^{\mathrm{m}}50.38^{\mathrm{s}}$ & $21^{\mathrm{h}}46^{\mathrm{m}}52.11^{\mathrm{s}}$ & $245.0^\circ$ \\
+C & $01^{\mathrm{h}}39^{\mathrm{m}}52.31^{\mathrm{s}}$ & $-2^{\mathrm{h}}00^{\mathrm{m}}30.38^{\mathrm{s}}$ & $23^{\mathrm{h}}38^{\mathrm{m}}31.61^{\mathrm{s}}$ & $70.0^\circ$ \\
+D & $01^{\mathrm{h}}41^{\mathrm{m}}38.84^{\mathrm{s}}$ & $-1^{\mathrm{h}}37^{\mathrm{m}}13.18^{\mathrm{s}}$ & $00^{\mathrm{h}}03^{\mathrm{m}}35.22^{\mathrm{s}}$ & $125.0^\circ$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\emph{Note: Note that $A$ is measured Eastward from North and $H$ is measured
+Westward from South. For maintaining consistency across the problem, report
+your answers to two decimal places unless otherwise specified.}
+
+\medskip\noindent\textbf{Part 1 (15 points): The Time Problem}
+
+\begin{description}
+\item[(a)] (6 points) Calculate the difference (error) $\Delta T$ between the
+  local sidereal time and the recorded time (clock time) for each star. Then,
+  determine their mean $(\Delta T_{\mathrm{mean}})$ and standard deviation
+  $(\sigma_T)$.
+\item[(b)] (3 points) Calculate the mean of the time differences separately
+  for the West stars $(\Delta T_{\mathrm{W}})$ and East stars
+  $(\Delta T_{\mathrm{E}})$. Determine the discrepancy
+  $\Delta T_{\mathrm{W}} - \Delta T_{\mathrm{E}}$.
+\item[(c)] (6 points) The astrolabe has a systematic zenith-distance error
+  $(\mathrm{d}z)$. Evaluate the uncertainty on the time difference,
+  $\mathrm{d}(\Delta T)$, caused by the astrolabe. Show that by averaging the
+  time differences of the East and West stars the uncertainty caused by the
+  astrolabe can be reduced.
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (3 points): Atmospheric Refraction}
+
+Atmospheric refraction in radians is approximately given by
+\[
+R = \frac{7.888 \times 10^{-5} P}{(273.0 + T)\tan(h)}
+\]
+where $P$ is measured in $\mathrm{hPa}$, $T$ in $^\circ\mathrm{C}$, and $h$ is
+the apparent altitude. Calculate the atmospheric refraction $(R)$ in
+arcseconds and the true zenith distance $(z_{\mathrm{true}})$.
+
+\medskip\noindent\textbf{Part 3 (15 points): Yersin's Lines of Position}
+
+\begin{description}
+\item[(a)] (5 points) Yersin adopted an assumed latitude of his observatory to
+  be $\phi_0 = 12^\circ 15' 00''\,\mathrm{N}$, and an assumed time error
+  $\Delta T_0 = 50\,\mathrm{s}$. To determine how small errors in latitude
+  $(\mathrm{d}\phi)$ and clock time $(\mathrm{d}T)$ affect the observed zenith
+  distance, we start with the spherical law of cosines for the
+  Pole-Zenith-Star (PZS) triangle:
+  \[
+  \cos z = \sin\phi \sin\delta + \cos\phi \cos\delta \cos H \quad (1)
+  \]
+  Taking the differential of this equation with respect to latitude $\phi$ and
+  hour angle $H$ (recognizing that $\mathrm{d}H = -15\cos\phi\,\mathrm{d}T$
+  due to Earth's rotation), show that a change in latitude and time produces a
+  shift in the calculated zenith distance given by:
+  \[
+  \mathrm{d}z = -\sin A \cos\phi\,\mathrm{d}H - \cos A\,\mathrm{d}\phi
+  \]
+  Using the definition of the intercept
+  $p = z_{\mathrm{calc}} - z_{\mathrm{true}} = -\mathrm{d}z$
+  ($z_{\mathrm{calc}}$ is the calculated and $z_{\mathrm{true}}$ the true
+  zenith distances) and defining spatial corrections
+  $x = \cos\phi\,\mathrm{d}H$ (East-West clock correction in arcseconds) and
+  $y = \mathrm{d}\phi$ (North-South latitude correction in arcseconds), the
+  Line of Position (LOP) equation is defined as:
+  \[
+  p = x\sin(A) + y\cos(A)
+  \]
+  Hints: Taking the derivative of equation $(1)$ gives:
+  \[
+  -\sin z\,\mathrm{d}z
+  = (\cos\phi \sin\delta - \sin\phi \cos\delta \cos H)\,\mathrm{d}\phi
+    - (\cos\phi \cos\delta \sin H)\,\mathrm{d}H
+  \]
+\item[(b)] (10 points) After reducing the raw data, the following table is
+  obtained.
+
+  \begin{center}
+  \begin{tabular}{ccc}
+  \toprule
+  Star & Azimuth ($A$) & Intercept ($p$) \\
+  \midrule
+  A & $285.0^\circ$ & $-0.40''$ \\
+  B & $245.0^\circ$ & $-18.77''$ \\
+  C & $70.0^\circ$ & $+18.08''$ \\
+  D & $125.0^\circ$ & $-8.15''$ \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+
+  Plot the four LOPs on $(x, y)$ plane (mark your graph as ``D02.3b'').
+  Graphically determine the center of the common intersection region
+  $(x_0, y_0)$.
+\end{description}
+
+\medskip\noindent\textbf{Part 4 (17 points): Recovering the Location of Yersin Observatory and Error Analytics}
+
+\begin{description}
+\item[(a)] (4 points) Determine the true latitude of the observatory
+  $(\phi_{\mathrm{true}})$ and the true time error $(\Delta T_{\mathrm{true}})$
+  using the time correction $\mathrm{d}T_{\mathrm{corr}} = x_0/(15\cos\phi_0)$
+  (in seconds). Assumed that $\mathrm{d}\phi = \phi_{\mathrm{true}} - \phi_0$.
+\item[(b)] (8 points) Calculate the systematic error $(\mathrm{d}z)$ of the
+  astrolabe (in arcseconds) using the East-West time difference; assuming that
+  the average azimuth for the East stars is $90^\circ$ and the West stars is
+  $270^\circ$.
+\item[(c)] (2 points) Calculate the observation random error
+  $\varepsilon = |x_0\sin(A) + y_0\cos(A) - p_{\mathrm{obs}}|$ for the four
+  stars.
+\item[(d)] (3 points) Calculate the position error $d$ (in meters) between the
+  observer's assumed coordinates and the calculated true position
+  $(x_0, y_0)$. Assume $1''$ of angular distance corresponds to
+  $31\,\mathrm{m}$ on the Earth's surface.
+\end{description}
 
 \clearpage
 \section*{Solutions to Chapter 1}
@@ -3950,7 +4112,107 @@ question.
   \hfill(4.0)
 \end{description}
 
-\solhead{1.41}{The Moon's age}
+\solhead{1.41}{Zenith Blind Spot}
+% source id: 2026_TH_T07
+\begin{description}
+\item[(a)] Using the Spherical Law of Sines for the PZS (Pole-Zenith-Star)
+  triangle:
+  \[ \frac{\sin(90 - \delta)}{\sin A} = -\frac{\sin z}{\sin H}
+     \Longrightarrow \sin A \sin z = -\sin H \cos\delta \]
+  \hfill(1 point)
+
+  (The ``$-$'' sign appears because $H$ is measured Westward while $A$ is
+  measured Eastward)
+
+  Taking the time derivative:
+  \begin{align*}
+    \frac{\mathrm{d}}{\mathrm{d}t}(\sin A \sin z)
+      &= \frac{\mathrm{d}}{\mathrm{d}t}(-\sin H \cos\delta) \\
+    \Longrightarrow \cos A \sin z \frac{\mathrm{d}A}{\mathrm{d}t}
+      + (\sin A \cos z)\frac{\mathrm{d}z}{\mathrm{d}t}
+      &= -(\cos H \cos\delta)\frac{\mathrm{d}H}{\mathrm{d}t}
+  \end{align*}
+  \hfill(1 point)
+
+  At transit:
+  \[ H = 0 \Longrightarrow \cos H = 1;\quad
+     A = 0 \Longrightarrow \cos A = 1 \text{ and } \sin A = 0 \]
+  \hfill(1 point)
+
+  Since:
+  \[ \frac{\mathrm{d}H}{\mathrm{d}t} = \omega_\oplus;\quad
+     \sin z \frac{\mathrm{d}A}{\mathrm{d}t} = -\omega_\oplus \cos\delta
+     \Longrightarrow \omega_A = \frac{\mathrm{d}A}{\mathrm{d}t}
+     = -\omega_\oplus \frac{\cos\delta}{\sin z} \]
+  \hfill(1 point)
+
+\item[(b)] The minimum zenith distance:
+  \[ z_{\mathrm{min}} = |\phi - \delta|
+     = |21.00^\circ - 21^\circ 08' 33''| = 513'' \]
+  \hfill(1 point)
+
+  At the boundary of the blind zone, the azimuthal tracking speed of the
+  telescope reaches its maximum $\omega_A = 1.0^\circ/\mathrm{s}$,
+  $\omega_\oplus = 15^\circ/\mathrm{hr} = 0.00417^\circ/\mathrm{s}$.
+  \hfill(1 point)
+  \begin{align*}
+    \sin z_{\mathrm{limit}}
+      &= \left|\frac{\omega_\oplus \cos\delta}{\omega_A}\right|
+       = \left|\frac{0.00417 \cos(21^\circ 08' 33'')}{1.0}\right|
+       \approx 0.00389 \\
+    \Longrightarrow z_{\mathrm{limit}} &\approx 802''
+  \end{align*}
+  \hfill(1 point)
+
+  Since $z_{\mathrm{min}} < z_{\mathrm{limit}}$, Zeta Tauri will fall into the
+  blind spot, and the telescope mount will fail to track it during transit.
+  \hfill(1 point)
+
+\item[(c)] The blind spot forms a circle of radius $z_{\mathrm{limit}}$
+  centered on the zenith. The star's path is a chord across this circle,
+  passing at a minimum distance of $z_{\mathrm{min}}$ from the center. Using
+  the Pythagorean theorem for small angles:
+
+  Total angular path:
+  \[ L = 2\sqrt{z_{\mathrm{limit}}^2 - z_{\mathrm{min}}^2}
+       = 2\sqrt{802^2 - 513^2} = 1233'' \]
+  \hfill(1 point)
+
+  The star's apparent angular velocity is the Earth's rotation rate scaled by
+  the cosine of the declination:
+  \[ v_{\mathrm{star}} = \omega_\oplus \cos\delta
+     = 15''/\mathrm{s} \times \cos(21^\circ 08' 33'') = 13.99''/\mathrm{s} \]
+  \hfill(1 point)
+
+  The time duration:
+  \[ \Delta t = \frac{L}{v_{\mathrm{star}}}
+     = \frac{1233''}{13.99''/\mathrm{s}} = 88\,\mathrm{s} \]
+  \hfill(1 point)
+
+\item[(d)] From b), for a given maximum motor speed ($\omega_A$):
+  \[ \sin z_{\mathrm{limit}} \propto \cos\delta \]
+  \hfill(1 point)
+
+  For objects passing exactly through the zenith:
+  \[ \delta = \phi \]
+  Thus, the size of the blind spot scales with latitude:
+  \[ \sin z_{\mathrm{limit}} \propto \cos\phi \]
+  \hfill(1 point)
+
+  At the Equator, $\phi_{\mathrm{max}}$ is slightly above $0^\circ$,
+  $\cos\phi_{\mathrm{max}} \sim 1$, the blind spot reaches its maximum size.
+  \hfill(1 point)
+
+  At the Poles, $\phi_{\mathrm{min}} = \pm 90^\circ$,
+  $\cos\phi_{\mathrm{min}} = 0$, the blind spot completely disappears.
+  \hfill(1 point)
+
+  \textit{Physically, an altazimuth mount at the pole functions exactly like
+  an equatorial mount, requiring a constant tracking speed of
+  $15^\circ/\mathrm{hr}$ with no sudden azimuthal acceleration.}
+\end{description}
+
+\solhead{1.42}{The Moon's age}
 % source id: 2007_DA_D2
 From the figures of the Moon's phase depicted above, we can conclude that the
 full moon occurs on June 11th ($\pm 0.5$ day), 2006. We are going to use this
@@ -3989,3 +4251,354 @@ Finally, the Moon's age on Albert Einstein's birthday (March 14, 1879) is
 $\mathbf{20.9 \pm 0.5}$ \textbf{days}.
 
 \ioaafig{2007_DA_D2-s1.pdf}
+
+\solhead{1.43}{The Nha Trang Expedition}
+% source id: 2026_DA_D02
+\medskip\noindent\textbf{Part 1 (15 points): The Time Problem}
+
+\begin{description}
+\item[(a)] Local sidereal time:
+  \[ \mathrm{LST} = \alpha + H \]
+  \hfill(1 point)
+
+  where $\alpha$ is the star's Right Ascension.
+
+  The time difference:
+  \[ \Delta T = \mathrm{LST} - T_R \]
+  \hfill(1 point)
+
+  Star A:
+  \begin{align*}
+    \mathrm{LST} &= 17^{\mathrm{h}}35^{\mathrm{m}}35.55^{\mathrm{s}}
+      + 2^{\mathrm{h}}02^{\mathrm{m}}08.95^{\mathrm{s}}
+      = 19^{\mathrm{h}}37^{\mathrm{m}}44.50^{\mathrm{s}} \\
+    \Delta T_{\mathrm{A}} &= 19^{\mathrm{h}}37^{\mathrm{m}}44.50^{\mathrm{s}}
+      - 19^{\mathrm{h}}36^{\mathrm{m}}53.69^{\mathrm{s}}
+      = \mathbf{50.81\,s}
+  \end{align*}
+  \hfill(0.5 points)
+
+  Star B:
+  \begin{align*}
+    \mathrm{LST} &= 19^{\mathrm{h}}59^{\mathrm{m}}52.48^{\mathrm{s}}
+      + 1^{\mathrm{h}}47^{\mathrm{m}}50.38^{\mathrm{s}}
+      = 21^{\mathrm{h}}47^{\mathrm{m}}42.86^{\mathrm{s}} \\
+    \Delta T_{\mathrm{B}} &= 21^{\mathrm{h}}47^{\mathrm{m}}42.86^{\mathrm{s}}
+      - 21^{\mathrm{h}}46^{\mathrm{m}}52.11^{\mathrm{s}}
+      = \mathbf{50.75\,s}
+  \end{align*}
+  \hfill(0.5 points)
+
+  Star C:
+  \begin{align*}
+    \mathrm{LST} &= 01^{\mathrm{h}}39^{\mathrm{m}}52.31^{\mathrm{s}}
+      - 02^{\mathrm{h}}00^{\mathrm{m}}30.38^{\mathrm{s}} + 24^{\mathrm{h}}
+      = 23^{\mathrm{h}}39^{\mathrm{m}}21.93^{\mathrm{s}} \\
+    \Delta T_{\mathrm{C}} &= 23^{\mathrm{h}}39^{\mathrm{m}}21.93^{\mathrm{s}}
+      - 23^{\mathrm{h}}38^{\mathrm{m}}31.61^{\mathrm{s}}
+      = \mathbf{50.32\,s}
+  \end{align*}
+  \hfill(0.5 points)
+
+  Star D:
+  \begin{align*}
+    \mathrm{LST} &= 01^{\mathrm{h}}41^{\mathrm{m}}38.84^{\mathrm{s}}
+      - 01^{\mathrm{h}}37^{\mathrm{m}}13.18^{\mathrm{s}}
+      = 00^{\mathrm{h}}04^{\mathrm{m}}25.66^{\mathrm{s}} \\
+    \Delta T_{\mathrm{D}} &= 00^{\mathrm{h}}04^{\mathrm{m}}25.66^{\mathrm{s}}
+      - 00^{\mathrm{h}}03^{\mathrm{m}}35.22^{\mathrm{s}}
+      = \mathbf{50.44\,s}
+  \end{align*}
+  \hfill(0.5 points)
+
+  \[
+  \rightarrow \Delta T_{\mathrm{mean}}
+  = \frac{50.81 + 50.75 + 50.32 + 50.44}{4} = \mathbf{50.58\,s}
+  \]
+  \hfill(1 point)
+  \[
+  \rightarrow \sigma_T
+  = \left(\frac{0.23^2 + 0.17^2 + 0.26^2 + 0.14^2}{4}\right)^{0.5}
+  = \mathbf{0.21\,s}
+  \]
+  \hfill(1 point)
+
+\item[(b)] Stars A and B were observed in the West (setting).
+  \[
+  \Delta T_{\mathrm{W}}
+  = \frac{\Delta T_{\mathrm{A}} + \Delta T_{\mathrm{B}}}{2}
+  = \frac{50.81 + 50.75}{2} = \mathbf{50.78\,s}
+  \]
+  \hfill(1 point)
+
+  Stars C and D were observed in the East (rising).
+  \[
+  \Delta T_{\mathrm{E}}
+  = \frac{\Delta T_{\mathrm{C}} + \Delta T_{\mathrm{D}}}{2}
+  = \frac{50.32 + 50.44}{2} = \mathbf{50.38\,s}
+  \]
+  \hfill(1 point)
+
+  The discrepancy is:
+  \[
+  \Delta T_{\mathrm{W}} - \Delta T_{\mathrm{E}} = 50.78 - 50.38
+  = \mathbf{0.40\,s}
+  \]
+  \hfill(1 point)
+
+\item[(c)] The time difference:
+  \[ \Delta T = \mathrm{LST} - T_R \]
+  The error on time measurement:
+  \[
+  \mathrm{d}(\Delta T) = \mathrm{d}(\mathrm{LST}) = \mathrm{d}(\alpha + H)
+  = \mathrm{d}H
+  \]
+  \hfill(1.5 points)
+
+  Use the Sine-Cosine Rule for the triangle Pole-Zenith-Star (PZS), we have:
+  \[
+  \cos z = \sin\phi \sin\delta + \cos\phi \cos\delta \cos H \quad (1)
+  \]
+  \hfill(1.5 points)
+
+  where $\phi$ is the latitude of the observatory and $\delta$ is the
+  declination of the considered star.
+
+  Differentiate equation (1):
+  \[
+  -\sin z\,\mathrm{d}z = -\cos\phi \cos\delta \sin H\,\mathrm{d}H
+  \]
+  Hence:
+  \[
+  \mathrm{d}(\Delta T) = \mathrm{d}H
+  = \frac{\sin z\,\mathrm{d}z}{\cos\phi \cos\delta \sin H}
+  \]
+  \hfill(1 point)
+
+  For East stars:
+  \[ H < 0 \rightarrow \sin H < 0 \]
+  \hfill(0.5 points)
+
+  For West stars:
+  \[ H > 0 \rightarrow \sin H > 0 \]
+  \hfill(0.5 points)
+
+  Thus, the same zenith-distance error $(\mathrm{d}z)$ produces hour-angle
+  corrections $(\mathrm{d}H)$ of the same magnitude but opposite sign.
+  Averaging East and West observations cancels much of the systematic error
+  caused by the astrolable:
+  \[
+  \frac{1}{2}\left[\mathrm{d}(\Delta T_{\mathrm{W}})
+    + \mathrm{d}(\Delta T_{\mathrm{E}})\right]
+  < \left|\mathrm{d}(\Delta T_{\mathrm{W,E}})\right|
+  \]
+  \hfill(1 point)
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (3 points): Atmospheric Refraction}
+
+Atmospheric refraction in radians:
+\[
+R = \frac{7.888 \times 10^{-5} \times 1011.0}
+         {[(273.0 + 27.0) \times \tan 60^\circ]}
+  = 1.5347 \times 10^{-4}\,\mathrm{rad}
+\]
+\hfill(1 point)
+
+Convert to arcseconds:
+\[
+R = 1.5347 \times 10^{-4} \times 206264.8 = \mathbf{31.66''}
+\]
+\hfill(1 point)
+
+The true zenith distance:
+\[
+z_{\mathrm{true}} = 30^\circ 00' 00'' + 31.66'' = \mathbf{30^\circ 00' 31.66''}
+\]
+\hfill(1 point)
+
+\emph{(The `+' sign because the atmospheric refraction acts like a lens,
+apparent altitude: $h_{\mathrm{app}} = h_{\mathrm{true}} + R \rightarrow
+(90 - z_{\mathrm{app}}) = (90 - z_{\mathrm{true}}) + R \rightarrow
+z_{\mathrm{true}} = z_{\mathrm{app}} + R$)}
+
+\medskip\noindent\textbf{Part 3 (15 points): Yersin's Lines of Position}
+
+\begin{description}
+\item[(a)] Use the Law of Cosine for the triangle PZS:
+  \[
+  \sin\delta = \sin\phi \cos z + \cos\phi \sin z \cos A
+  \]
+  \hfill(1.5 points)
+  \[
+  \rightarrow \cos\phi \sin z \cos A = \sin\delta - \sin\phi \cos z
+  \]
+  Substitute $\cos z$ into the right side of the above equation:
+  \begin{align*}
+    \cos\phi \sin z \cos A
+      &= \sin\delta - \sin\phi\,(\sin\phi \sin\delta
+         + \cos\phi \cos\delta \cos H) \\
+    \rightarrow \cos\phi \sin z \cos A
+      &= \sin\delta \cos^2\phi - \sin\phi \cos\phi \cos\delta \cos H \\
+    \rightarrow \sin z \cos A
+      &= \cos\phi \sin\delta - \sin\phi \cos\delta \cos H \quad (2)
+  \end{align*}
+  \hfill(1 point)
+
+  From the Spherical Law of Sines:
+  \[
+  \frac{\sin H}{\sin z} = -\frac{\sin A}{\cos\delta}
+  \]
+  \hfill(1.5 points)
+
+  Rearranging:
+  \[
+  \sin z \sin A = -\cos\delta \sin H \quad (3)
+  \]
+  \emph{(the minus sign because $H$ is Westward and $A$ is Eastward)}
+
+  Substitute the identities (2) and (3) into the derivative of the zenith
+  distance equation (in Hints):
+  \begin{align*}
+    -\sin z\,\mathrm{d}z
+      &= (\sin z \cos A)\,\mathrm{d}\phi
+         + (\sin z \sin A)\cos\phi\,\mathrm{d}H \\
+    \mathrm{d}z &= -\sin A\,(\cos\phi\,\mathrm{d}H) - \cos A\,\mathrm{d}\phi
+      \quad \textbf{(Q.E.D)}
+  \end{align*}
+  \hfill(1 point)
+
+\item[(b)]
+  \ioaafig{2026_DA_D02-s1.pdf}
+
+  \textbf{Plotting}: Draw the four LOPs $x\sin(A) + y\cos(A) = p$ using the
+  supplied azimuths and intercepts which forms an intersection region around
+  the center $(8.5'', 27'')$.
+
+  Line A: $(0, -2)$ $(10, 36)$ \hfill(1.5 points)
+
+  Line B: $(0, 44)$ $(21, 0)$ \hfill(1.5 points)
+
+  Line C: $(0, 53)$ $(19, 0)$ \hfill(1.5 points)
+
+  Line D: $(0, 14)$ $(-10, 0)$ \hfill(1.5 points)
+
+  $x_0$ and $y_0$ values are within the acceptable ranges:
+  \[
+  7'' \le x_0 \le 10'', \qquad 26'' \le y_0 \le 30''
+  \]
+  \hfill(4 points)
+\end{description}
+
+\medskip\noindent\textbf{Part 4 (17 points): Recovering the Location of Yersin Observatory and Error Analytics}
+
+\begin{description}
+\item[(a)] Latitude correction:
+  \begin{align*}
+    y_0 &= \mathrm{d}\phi = \phi_{\mathrm{true}} - \phi_0 \\
+    \rightarrow \phi_{\mathrm{true}} &= \phi_0 + y_0
+  \end{align*}
+  Therefore:
+  \[
+  \phi_{\mathrm{true}} = 12^\circ 15' 00'' + 27.20''
+  = \mathbf{12^\circ 15' 27.20''}
+  \]
+  \hfill(1 point)
+
+  Using $x_0 = 8.50''$ and $\phi_0 = 12^\circ 15'$ ($\cos\phi_0 \approx 0.977$)
+  gives:
+  \[
+  \mathrm{d}T_{\mathrm{corr}} = \frac{x_0}{15\cos\phi_0}
+  = \frac{8.50}{15 \times 0.977} = \mathbf{0.58\,s}
+  \]
+  \hfill(2 points)
+
+  Hence:
+  \[
+  \Delta T_{\mathrm{true}} = \Delta T_0 + \mathrm{d}T_{\mathrm{corr}}
+  = 50.00 + 0.58 = \mathbf{50.58\,s}
+  \]
+  \hfill(1 point)
+
+\item[(b)] From the result of question c) in Part 1, we have:
+  \[
+  \mathrm{d}(\Delta T) = \frac{\sin z\,\mathrm{d}z}{\cos\phi \cos\delta \sin H}
+  \]
+  \hfill(1 point)
+
+  Using the Spherical Law of Sines:
+  \[
+  \frac{\sin H}{\sin z} = -\frac{\sin A}{\cos\delta}
+  \]
+  \hfill(1 point)
+  \[
+  \rightarrow \mathrm{d}(\Delta T) = -\frac{\mathrm{d}z}{\cos\phi \sin A}
+  \]
+  \hfill(1 point)
+
+  For the Eastern star (the average azimuth $\sim 90^\circ$):
+  \[
+  \mathrm{d}(\Delta T_{\mathrm{E}}) = -\frac{\mathrm{d}z}{\cos\phi}
+  \]
+  \hfill(1 point)
+
+  For the Western stars (the average azimuth $\sim 270^\circ$):
+  \[
+  \mathrm{d}(\Delta T_{\mathrm{W}}) = \frac{\mathrm{d}z}{\cos\phi}
+  \]
+  \hfill(1 point)
+
+  Combining these results yields:
+  \[
+  \left|\mathrm{d}(\Delta T_{\mathrm{W}}) - \mathrm{d}(\Delta T_{\mathrm{E}})\right|
+  = \frac{2\,\mathrm{d}z}{\cos\phi}
+  \]
+  \hfill(1 point)
+
+  Convert into seconds:
+  \[
+  \Delta T_{\mathrm{W}} - \Delta T_{\mathrm{E}}
+  = \frac{2\,\mathrm{d}z}{15\cos\phi}
+  \]
+  \hfill(1 point)
+
+  Therefore:
+  \[
+  \mathrm{d}z = \frac{15}{2}\,(\Delta T_{\mathrm{W}} - \Delta T_{\mathrm{E}})
+  \cos\phi_0 = \mathbf{2.93''}
+  \]
+  \hfill(1 point)
+
+\item[(c)]
+  \[
+  \varepsilon_{\mathrm{A}} = \left|8.50''\sin(285.0^\circ)
+    + 27.20''\cos(285.0^\circ) + 0.40''\right| = \mathbf{0.77''}
+  \]
+  \hfill(0.5 points)
+  \[
+  \varepsilon_{\mathrm{B}} = \left|8.50''\sin(245.0^\circ)
+    + 27.20''\cos(245.0^\circ) + 18.77''\right| = \mathbf{0.43''}
+  \]
+  \hfill(0.5 points)
+  \[
+  \varepsilon_{\mathrm{C}} = \left|8.50''\sin(70.0^\circ)
+    + 27.20''\cos(70.0^\circ) - 18.08''\right| = \mathbf{0.79''}
+  \]
+  \hfill(0.5 points)
+  \[
+  \varepsilon_{\mathrm{D}} = \left|8.50''\sin(125.0^\circ)
+    + 27.20''\cos(125.0^\circ) + 8.15''\right| = \mathbf{0.49''}
+  \]
+  \hfill(0.5 points)
+
+\item[(d)]
+  \[
+  d = \sqrt{x_0^2 + y_0^2} = \sqrt{8.50''^2 + 27.20''^2} = \mathbf{28.50''}
+  \]
+  \hfill(2 points)
+
+  $1''$ is roughly $31\,\mathrm{m}$, therefore,
+  $d = 28.50'' \times 31\,\mathrm{m}/1'' \approx \mathbf{883\,m}$.
+  \hfill(1 point)
+\end{description}
+

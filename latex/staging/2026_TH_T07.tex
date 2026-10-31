@@ -1,0 +1,28 @@
+An observer in Hanoi (latitude of exactly $\phi = 21^\circ\,\mathrm{N}$) uses
+an altazimuth telescope to observe Zeta Tauri (declination
+$\delta = +21^\circ 08' 33''$) with a maximum azimuthal tracking speed of
+$1.0^\circ/\mathrm{s}$. As an object transits close to the zenith, the
+required tracking angular velocity increases sharply. If the required angular
+velocity exceeds the motor's maximum speed, the telescope loses its target.
+This problem is known as the ``Zenith blind spot'' or the ``Gimbal lock''. The
+position of the star is defined by its azimuth ($A$), zenith distance ($z$),
+and hour angle ($H$). Note that $A$ is measured Eastward from North and $H$ is
+measured Westward from South.
+
+\begin{description}
+\item[(a)] (4 points) Show that for the telescope to be able to track the
+  star, the required azimuthal angular velocity at meridian transit is given
+  by $\omega_A = -\omega_\oplus \dfrac{\cos\delta}{\sin z}$ where
+  $\omega_\oplus = 15^\circ/\mathrm{hr}$ is the Earth's sidereal rotation
+  rate.
+\item[(b)] (4 points) Calculate the minimum zenith distance
+  ($z_{\mathrm{min}}$) reached by Zeta Tauri during its transit and the radius
+  of the blind spot ($z_{\mathrm{limit}}$) in arcseconds. Show that Zeta Tauri
+  falls into the blind spot of the telescope during its transit over Hanoi.
+\item[(c)] (3 points) Assuming the star's path across the sky near the zenith
+  can be approximated as a straight line, calculate the total time $\Delta t$
+  (in seconds) that Zeta Tauri spends inside the telescope's blind spot.
+\item[(d)] (4 points) Suppose a star passes exactly through the zenith; find
+  the observer's latitudes $\phi_{\mathrm{max}}$ and $\phi_{\mathrm{min}}$ so
+  that the sizes of the blind spots are maximal and minimal, respectively.
+\end{description}

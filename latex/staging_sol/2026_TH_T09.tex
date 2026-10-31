@@ -1,0 +1,211 @@
+\noindent\textbf{Part 1 (15 points): Einstein Ring}
+
+\begin{description}
+\item[(a)] The redshift $z$ measures the shift in the wavelength of radiation
+  emitted by a source ($\lambda$) and observed at a longer wavelength by the
+  observer ($\lambda + \Delta\lambda$); it is caused by the expansion of the
+  Universe between the source and the observer. For nearby objects, we have
+  \[ z = \frac{\Delta\lambda}{\lambda} \simeq \frac{\Delta V}{c} \]
+  \hfill(0.5 points)
+
+  Using Hubble's law gives
+  \[ \Delta V = H_0 d \]
+  \hfill(0.5 points)
+
+  where $d$ is the distance between the observer and the source. Hence,
+  $d = zc/H_0$. This result leads to
+  \[ d_S = \frac{0.406c}{H_0} = 1800\,\mathrm{Mpc} \]
+  \hfill(0.5 points)
+  \[ d_L = \frac{0.042c}{H_0} = 190\,\mathrm{Mpc} \]
+  \hfill(0.5 points)
+
+  \textit{Note: If students then calculate the angular diameter distance as
+  $d/(1+z)$ they should also receive full points.}
+
+\item[(b)] From Figure T09.2, and using the small angle approximation, we
+  obtain
+  \[ d_{LS} = d_S - d_L \]
+  \[ \theta d_S = 2\alpha d_{LS} \]
+  \hfill(1 point)
+  \[ \theta d_L = b \]
+  \hfill(1 point)
+
+  Based on the relation $2\alpha = 2R^*/b$, we find
+  \begin{align*}
+    2\alpha &= \frac{2R^*}{\theta d_L} \\
+    \theta d_S &= \frac{2R^* d_{LS}}{\theta d_L} \\
+    \theta^2 &= \frac{2R^* d_{LS}}{d_L d_S} \\
+    \theta &= \sqrt{\frac{2R^* d_{LS}}{d_L d_S}}
+            = \sqrt{\frac{2R^*(d_S - d_L)}{d_L d_S}}
+  \end{align*}
+  \hfill(1 point)
+
+  \textit{Note: If students include the minus sign in their answer, deduct
+  0.5 points.}
+
+\item[(c)] \textbf{Determine the distance of closest approach}
+
+  The distance of closest approach is given by
+  \[ b = \theta d_L \]
+  Substituting $\theta = 2.5$ [arcsec] and $d_L = 190$ [Mpc], we get
+  \[ b = 2.3\,\mathrm{kpc} \]
+  \hfill(1 point)
+
+  \textbf{Determine the mass of the lens galaxy}
+
+  The Schwarzschild radius of an object of mass $M$ is
+  \[ R^* = \frac{2GM}{c^2} \]
+  \hfill(0.5 points)
+
+  Using the expression derived in the previous part,
+  \[ \theta^2 = \frac{2R^* d_{LS}}{d_L d_S} \]
+  we obtain
+  \[ R^* = \frac{\theta^2 d_L d_S}{2 d_{LS}} \]
+  Hence, the mass of the lens galaxy is
+  \[ M = \frac{R^* c^2}{2G} = \frac{\theta^2 d_L d_S}{2 d_{LS}}\,\frac{c^2}{2G} \]
+  \hfill(0.5 points)
+
+  Substituting $\theta = 2.5$ [arcsec] $= 12.1 \times 10^{-6}$ [rad],
+  $d_L = 190$ [Mpc], and $d_S = 1800$ [Mpc], we get
+  \[ M = 1.6 \times 10^{11}\,\mathrm{M}_\odot \]
+  \hfill(1 point)
+
+  \textit{Note that this is only the mass enclosed within the Einstein ring
+  and is therefore smaller than the total mass of the lens galaxy.}
+
+\item[(d)] When the lens is displaced by a small distance $\varepsilon$
+  (Figure T09.3), the distance of closest approach decreases for the upper
+  ray, increasing its deflection. The ray that reaches the observer must
+  therefore be emitted at a larger angle. Conversely, for the lower ray, the
+  distance of closest approach increases, reducing the deflection, so the
+  observed ray must be emitted at a smaller angle.
+
+  Let $\theta'$ be the new angular radius of the ring, namely the angle
+  between the detected light ray and the line joining the observer and the
+  lens, $2\alpha'$ be the new deflection angle, and $b'$ be the new distance
+  to the closest approach.
+
+  First, considering the upper part of the figure, we have
+  \[ \theta + \frac{x}{d_L} = \theta' + \frac{\varepsilon}{d_L} \]
+  \[ \Rightarrow x = \theta' d_L - \theta d_L + \varepsilon \qquad (1) \]
+  Since $b = \theta d_L$ and $b' = \theta' d_L$, we obtain
+  \[ x = b' - b + \varepsilon \qquad (2) \]
+  \hfill(1 point)
+
+  Repeating the calculation described in b), we find
+  \[ 2\alpha' d_{LS} = \left(\theta' + \frac{\varepsilon}{d_L}\right) d_S
+     \qquad (3) \]
+  \hfill(0.5 points)
+
+  Moreover,
+  \[ 2\alpha' = \frac{2R^*}{\theta' d_L} \qquad (4) \]
+  \hfill(0.5 points)
+
+  Hence,
+  \[ \left(\theta' + \frac{\varepsilon}{d_L}\right) d_S
+     = \frac{2R^*}{\theta' d_L}\, d_{LS} \qquad (5) \]
+  For the perfectly aligned configuration, we have
+  \[ \theta d_S = \frac{2R^*}{\theta d_L}\, d_{LS} \qquad (6) \]
+  Dividing (5) by (6) gives
+  \[ \frac{\theta'}{\theta} + \frac{\varepsilon}{\theta d_L}
+     = \frac{\theta}{\theta'} \]
+  \[ \Rightarrow \frac{\theta'}{\theta} + \frac{\varepsilon}{b}
+     = \frac{\theta}{\theta'}
+     \ \text{ or }\
+     \frac{b'}{b} + \frac{\varepsilon}{b} = \frac{b}{b'} \qquad (7) \]
+  \hfill(1 point)
+
+  To simplify the calculation, we define
+  \[ \frac{\theta'}{\theta} = 1 + k\frac{\varepsilon}{b} \qquad (8) \]
+  Since $\varepsilon/b \ll 1$, Eq.\ (7) reduces to
+  \[ 1 + k\frac{\varepsilon}{b} + \frac{\varepsilon}{b}
+     = 1 - k\frac{\varepsilon}{b}
+     \Rightarrow k = -\frac{1}{2} \qquad (9) \]
+  Substituting $k$ into Eq.\ (8), we obtain
+  \[ \frac{\theta'}{\theta} = 1 - \frac{\varepsilon}{2b} \qquad (10) \]
+  Hence,
+  \[ \frac{b'}{b} = 1 - \frac{\varepsilon}{2b}
+     \Rightarrow b' - b = -\frac{\varepsilon}{2} \qquad (11) \]
+
+  \textit{Note: Alternatively, Eq.\ (7) can be solved as follows:}
+
+  \textit{Let $t = \theta'/\theta = b'/b$, we have}
+  \[ t^2 + \frac{\varepsilon}{b}\,t - 1 = 0 \]
+  \textit{This equation has two solutions, but we retain only the positive
+  one, which is physically meaningful. The positive solution is}
+  \[ t = \frac{-\varepsilon/b + \sqrt{(\varepsilon/b)^2 + 4}}{2} \]
+  \textit{Since $\varepsilon/b \ll 1$, we can keep only the first-order term
+  in $\varepsilon/b$,}
+  \[ t = 1 - \frac{\varepsilon}{2b}
+     \Rightarrow b' - b = -\frac{\varepsilon}{2} \]
+
+  Substituting this result into Eq.\ (2), we finally get
+  \[ x = \frac{\varepsilon}{2} \qquad (12) \]
+  \hfill(2 points)
+
+  For the lower part of the figure, we obtain a similar result by changing
+  $\varepsilon$ to $-\varepsilon$ in corresponding equations:
+  \[ x' = \frac{\varepsilon}{2} \qquad (13) \]
+  \hfill(1 point)
+
+  The angular displacement of the ring image is
+  \[ \Delta\theta = \frac{\varepsilon}{2 d_L} \qquad (14) \]
+  \hfill(1 point)
+
+  To first order, the light rays in the plane perpendicular to the plane of
+  Figure T09.3 are unaffected. Hence, the observer sees the Einstein ring
+  displaced in the same direction as the lens, but by only \textit{half the
+  lens displacement}.
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (5 points): Gravitational Delay}
+
+\begin{description}
+\item[(a)] Since the light ray approaching the Sun tangentially, the distance
+  of closest approach is
+  \[ b = R_\odot \]
+  \hfill(0.5 points)
+
+  Hence, the total deflection angle is
+  \[ 2\alpha = \frac{2R^*}{b} = \frac{2R^*}{R_\odot} \]
+  \hfill(0.5 points)
+
+  The Schwarzschild radius of the Sun is given by
+  \[ R^* = \frac{2G\mathrm{M}_\odot}{c^2} = 2.95\,\mathrm{km}\ (\sim 3\,\mathrm{km}) \]
+  \hfill(0.5 points)
+
+  Substituting the values of $R^*$ and $R_\odot$, we obtain
+  \[ 2\alpha = \frac{2 \times 2.95}{6.96 \times 10^5}
+     = 0.85 \times 10^{-5}\,[\mathrm{rad}] = 1.75\,[\mathrm{arcsec}] \]
+  \hfill(0.5 points)
+
+  \textit{(1.75--1.78 arcsec for full mark)}
+
+\item[(b)] The relation $\mathrm{d}\delta/\mathrm{d}R = 2\alpha/c$ was
+  derived using the small-angle geometry for light rays passing close to the
+  Sun. This approximation becomes less accurate as the distance from the Sun
+  increases. Nevertheless, for this simplified exercise, we use it to estimate
+  the total gravitational delay.
+
+  The gravitational delay experienced by a light ray between the Sun surface
+  ($R = R_\odot$) and the Earth ($R = d_\odot = 1\,\mathrm{au}$) is the
+  integral of the derivative between these limits, namely
+  \[ \delta = \int_{R_\odot}^{d_\odot} \frac{2\alpha}{c}\,\mathrm{d}R \]
+  \hfill(1 point)
+
+  The total bending angle of a light ray grazing the Sun is
+  \[ 2\alpha = \frac{2R^*}{R} \]
+  Hence, the gravitational delay is
+  \[ \delta = \int_{R_\odot}^{d_\odot} \frac{2R^*}{cR}\,\mathrm{d}R
+     = \frac{2R^*}{c}\int_{R_\odot}^{d_\odot} \frac{1}{R}\,\mathrm{d}R \]
+  \hfill(0.5 points)
+  \[ \Rightarrow \delta = \frac{2R^*}{c}\ln\left(\frac{d_\odot}{R_\odot}\right) \]
+  \hfill(1 point)
+  \[ \Rightarrow \delta = \frac{2 \times 2.95}{3 \times 10^5}
+     \ln\left(\frac{1.496 \times 10^8}{6.96 \times 10^5}\right)
+     = 106\,\mu\mathrm{s} \]
+  \hfill(0.5 points)
+
+  \textit{Note: If students integrate from the solar radius $R_\odot$ to any
+  $R' < 1\,\mathrm{au}$, they will also receive full credit.}
+\end{description}

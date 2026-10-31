@@ -1,0 +1,117 @@
+\begin{description}
+\item[(a)] The center of mass obeys
+  \[ \delta_1 m_1 = (R - \delta_1)m_2 \]
+  \hfill(1 point)
+
+  We rewrite
+  \[ \delta_1 = \frac{m_2}{m_1}\left(1 + \frac{m_2}{m_1}\right)^{-1} R \]
+
+  Using $(1+x)^\alpha \simeq 1 + \alpha x$ for $x = \frac{m_2}{m_1} \ll 1$,
+  we have
+  $\frac{m_2}{m_1}\left(1 + \frac{m_2}{m_1}\right)^{-1}
+   \simeq \frac{m_2}{m_1}\left(1 - \frac{m_2}{m_1}\right)
+   \simeq \frac{m_2}{m_1}$ at the first order. Hence,
+  \[ \delta_1 \simeq \frac{m_2}{m_1} R \]
+  \hfill(1 point)
+
+  In the rotating frame, the net force at $L_1$ includes the gravitational
+  forces, $-Gm_3m_1/(R - \delta_2)^2$ due to $m_1$ and $Gm_3m_2/\delta_2^2$
+  due to $m_2$, and the centrifugal force
+  $m_3\omega^2(R - \delta_1 - \delta_2)$ with
+  $\omega^2 = G(m_1 + m_2)/R^3$ by the Kepler's law, where
+  $CL_1 = R - \delta_1 - \delta_2$. The force balance implies
+  \[ -\frac{Gm_1}{(R - \delta_2)^2} + \frac{Gm_2}{\delta_2^2}
+     + \omega^2(R - \delta_1 - \delta_2) = 0 \]
+  \hfill(1.5 points)
+
+  With the aid of $(1+x)^\alpha \simeq 1 + \alpha x$ and
+  $(1 + x_1)(1 + x_2) \simeq 1 + x_1 + x_2$ for
+  $|x|, |x_1|, |x_2| \ll 1$, we approximate
+  \[ \frac{1}{(R - \delta_2)^2}
+     = \frac{1}{R^2}\left(1 - \frac{\delta_2}{R}\right)^{-2}
+     \simeq \frac{1}{R^2}\left(1 + \frac{2\delta_2}{R}\right) \]
+  and
+  \[ \omega^2(R - \delta_1 - \delta_2)
+     = \frac{Gm_1}{R^2}\left(1 + \frac{m_2}{m_1}\right)
+       \left(1 - \frac{\delta_1}{R} - \frac{\delta_2}{R}\right)
+     \simeq \frac{Gm_1}{R^2}\left(1 - \frac{\delta_2}{R}\right) \]
+  which uses the previous result
+  $\frac{m_2}{m_1} \simeq \frac{\delta_1}{R}$.
+
+  Substituting these approximations into the force balance equation gives
+  \[ \delta_2 \simeq \left(\frac{m_2}{3m_1}\right)^{\frac{1}{3}} R \]
+  \hfill(1.5 points)
+
+  \emph{Note: $\delta_1$ is very smaller than $\delta_2$ even though both
+  are very smaller than $R$. Hence, $\delta_1$ may be neglected when
+  evaluating $\delta_2$. Additionally, the Lagrange point $L_1$ may exist
+  even if the mass hierarchy is large.}
+
+\item[(b)] The satellite moving in the $z$-direction is not acted by the
+  Coriolis and centrifugal forces, since
+  \[ \vec{F}_{\mathrm{Coriolis}} = -2m_3(\vec{\omega} \times \vec{v}) = 0
+     \quad\text{and}\quad
+     (\vec{F}_{\mathrm{cent}})_z
+     = -m_3[\vec{\omega} \times (\vec{\omega} \times \vec{r})]_z = 0 \]
+  \hfill(1 point)
+
+  Hence, the satellite experiences only the gravitational forces due to
+  $m_1$ and $m_2$, projected on the $z$-axis as
+  \[ -Gm_3m_1\frac{z}{\rho_1^3} \quad\text{and}\quad
+     -Gm_3m_2\frac{z}{\rho_2^3} \]
+  \hfill(1 point)
+
+  where $z$ is the $z$-coordinate of the satellite, and the distances
+  between the satellite to two stars are
+  $\rho_1 = \sqrt{(R - \delta_2)^2 + z^2}$ and
+  $\rho_2 = \sqrt{\delta_2^2 + z^2}$.
+
+  We obtain the equation of motion
+  \[ \frac{\mathrm{d}^2 z}{\mathrm{d}t^2}
+     = -Gm_1\frac{z}{\rho_1^3} - Gm_2\frac{z}{\rho_2^3} \]
+  \hfill(1 point)
+
+  where $t$ is the time. The net force acts as a spring force which always
+  pulls the satellite toward $L_1$, implying that the oscillation is stable.
+
+  \emph{Note: If the student does not discuss the Coriolis and Centrifugal
+  forces but giving the correct net force and/or the correct equation of
+  motion, the marks are accordingly added up.}
+
+\item[(c)] The small oscillations of satellite along $z$-direction imply
+  $\rho_1 \simeq R - \delta_2$ and $\rho_2 \simeq \delta_2$, since
+  $|z| \ll \delta_2$. Hence, the oscillation equation is periodic,
+  \[ \frac{\mathrm{d}^2 z}{\mathrm{d}t^2} + \omega_z^2 z = 0 \]
+  with angular frequency,
+  \[ \omega_z = \sqrt{\frac{Gm_1}{(R - \delta_2)^3} + \frac{Gm_2}{\delta_2^3}}
+     \simeq 2\sqrt{\frac{Gm_1}{R^3}} \simeq 2\omega \]
+  \hfill(1 point)
+
+  where we use the approximation
+  $\delta_2 \simeq \left(\frac{m_2}{3m_1}\right)^{\frac{1}{3}} R \ll R$,
+  as obtained.
+
+  We estimate the period of satellite for the Earth-Sun system,
+  \[ T = \frac{2\pi}{\omega_z} \simeq \frac{1}{2}\frac{2\pi}{\omega}
+       = \frac{1}{2}T_{\mathrm{Earth}} \]
+
+  Since the period of the Earth about the Sun is
+  $T_{\mathrm{Earth}} = 1$\,year, we get
+  \[ T \simeq \frac{1}{2}\,\mathrm{year} = 6\,\mathrm{months} \]
+  \hfill(1 point)
+
+  \emph{Note: Alternatively, the student can directly substitute for the
+  Earth-Sun system, using the values
+  $m_2 = m_{\mathrm{Earth}} = 5.972 \times 10^{24}\,\mathrm{kg}$,
+  $m_1 = m_{\mathrm{Sun}} = 1.988 \times 10^{30}\,\mathrm{kg}$,
+  $R = 1\,\mathrm{au} = 1.496 \times 10^{11}\,\mathrm{m}$,
+  $\delta_2 = 1.496 \times 10^9\,\mathrm{m}$, which is beyond the Earth
+  radius, and
+  $G = 6.674 \times 10^{-11}\,\mathrm{m^3\,kg^3/s^2}$.
+  % sic: unit of G printed as m^3 kg^3/s^2; should be m^3 kg^-1 s^-2
+  The period of satellite is
+  \[ T = \frac{2\pi}{\sqrt{\dfrac{Gm_1}{(R - \delta_2)^3}
+                           + \dfrac{Gm_2}{\delta_2^3}}}
+       \simeq \frac{\pi}{\sqrt{\dfrac{Gm_1}{R^3}}}
+       \simeq 6\,\mathrm{months} \]}
+\end{description}

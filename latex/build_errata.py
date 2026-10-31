@@ -47,7 +47,7 @@ def esc(s):
     parts = s.split("$")
     if len(parts) % 2 == 0:      # unbalanced $ -> escape everything
         return esc_textpart(s.replace("$", ""))
-    return "".join(p if i % 2 else esc_textpart(p) for i, p in enumerate(parts))
+    return "$".join(p if i % 2 else esc_textpart(p) for i, p in enumerate(parts))  # re-insert the $ delimiters
 
 def harvest():
     entries = []  # (chapnum, kind, num, year, label, text)

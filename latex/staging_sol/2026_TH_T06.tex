@@ -1,0 +1,145 @@
+\begin{description}
+\item[(a)] Number of moles of water:
+  \[ n_{\mathrm{H_2O}} = \frac{m}{M_{\mathrm{H_2O}}}
+     = \frac{5.0 \times 10^7}{18 \times 10^{-3}}
+     \approx 2.8 \times 10^9\,\mathrm{mol} \]
+  \hfill(0.5 points)
+
+  Number of water molecules:
+  \begin{align*}
+    N_{\mathrm{H_2O}} = n_{\mathrm{H_2O}} \times N_{\mathrm{A}}
+      &= (2.8 \times 10^9) \times (6.022 \times 10^{23}) \\
+      &\approx 1.7 \times 10^{33}\ \mathrm{molecules}
+  \end{align*}
+  \hfill(0.5 points)
+
+  Each water molecule contains 10 electrons, so the total number of electrons
+  in the detector is:
+  \[ N_{\mathrm{e}} = N_{\mathrm{H_2O}} \times 10
+     = (1.7 \times 10^{33}) \times 10 = 1.7 \times 10^{34}\ \mathrm{electrons} \]
+  \hfill(1 point)
+
+  Expression to calculate the expected number of registered events in a time
+  interval $t$:
+  \[ N_\nu = \Phi N_{\mathrm{e}} \sigma \eta t \]
+  \hfill(2 points)
+
+  The expected number of events registered per day is:
+  \begin{align*}
+    N_\nu &= (5.1 \times 10^6) \times (1.7 \times 10^{34})
+             \times (1.0 \times 10^{-44}) \times 0.445 \times 86400 \\
+          &\approx 33\ \mathrm{events}
+  \end{align*}
+  \hfill(1 point)
+
+\item[(b)] For the Cherenkov effect to occur, the electron velocity must
+  satisfy the condition:
+  \[ v \ge \frac{c}{n} \Longrightarrow \frac{v}{c} \ge \frac{1}{n} \]
+  At the threshold where radiation begins, we have
+  \[ \gamma_{\mathrm{min}} = \frac{1}{\sqrt{1 - \frac{1}{n^2}}}
+     = \frac{n}{\sqrt{n^2 - 1}} \]
+  \hfill(1 point)
+
+  The minimum kinetic energy that an electron should have for the Cherenkov
+  effect to occur is:
+  \[ K_{\mathrm{Cherenkov}} = \left(\frac{n}{\sqrt{n^2 - 1}} - 1\right)
+     m_{\mathrm{e}}c^2 \]
+  Substituting the numerical values $n = 1.33$ and
+  $m_{\mathrm{e}}c^2 = 0.511\,\mathrm{MeV}$:
+  \[ K_{\mathrm{Cherenkov}} = \left(\frac{1.33}{\sqrt{1.33^2 - 1}} - 1\right)
+     \times 0.511 = 0.264\,\mathrm{MeV} \]
+  \hfill(1 point)
+
+  The kinetic energy received by the electron is:
+  \[ K_{\mathrm{e}} = E_\nu - E'_\nu \]
+  For $K_{\mathrm{e}}$ to reach its maximum, the neutrino energy after
+  scattering $E'_\nu$ must hit its minimum value. $E'_\nu$ is minimized when
+  $(1 - \cos\theta)$ reaches its maximum, meaning $\cos\theta = -1$
+  (backscattering at $180^\circ$). Thus:
+  \[ K_{\mathrm{e,max}} = E_\nu - \frac{E_\nu}{1 + \frac{2E_\nu}{m_{\mathrm{e}}c^2}}
+     = \frac{2E_\nu^2}{m_{\mathrm{e}}c^2 + 2E_\nu} \]
+  \hfill(1 point)
+
+  $E_\nu$ is minimum once
+  \[ K_{\mathrm{e,max}} = K_{\mathrm{Cherenkov}} = 0.264\,\mathrm{MeV} \]
+  \hfill(1 point)
+
+  Solve the equation:
+  \[ \frac{2E_\nu^2}{0.511 + 2E_\nu} = 0.264
+     \Longrightarrow 2E_\nu^2 - 0.528E_\nu - 0.135 = 0 \]
+  \hfill(1 point)
+  \[ \Longrightarrow E_{\nu,\mathrm{min}} \approx 0.423\,\mathrm{MeV}
+     \ \text{or}\ E_{\nu,\mathrm{min}} \approx -0.159\,\mathrm{MeV} \]
+  Get the positive root because energy should be positive:
+  \[ E_{\nu,\mathrm{min}} \approx 0.423\,\mathrm{MeV} \]
+  \hfill(1 point)
+
+\item[(c)] Express:
+  \[ R + \Delta R = R(T + \Delta T) = R_0 e^{-B(T + \Delta T)^{-1/3}} \]
+  \hfill(1 point)
+
+  Express the ratio:
+  \[ 1 + \frac{\Delta R}{R}
+     = e^{-BT^{-1/3}\left[\left(1 + \frac{\Delta T}{T}\right)^{-1/3} - 1\right]} \]
+  \hfill(1 point)
+
+  Take the natural logarithm (ln) of both sides:
+  \[ \ln\left(1 + \frac{\Delta R}{R}\right)
+     = -BT^{-1/3}\left[\left(1 + \frac{\Delta T}{T}\right)^{-1/3} - 1\right] \]
+  \hfill(1 point)
+
+  The left-hand side is:
+  \[ \ln\left(1 + \frac{\Delta R}{R}\right) \approx \frac{\Delta R}{R} \]
+  \hfill(0.5 points)
+
+  The right-hand side is:
+  \[ \left[\left(1 + \frac{\Delta T}{T}\right)^{-1/3} - 1\right]
+     \approx \left(1 - \frac{1}{3}\frac{\Delta T}{T}\right) - 1
+     = -\frac{1}{3}\frac{\Delta T}{T} \]
+  \hfill(0.5 points)
+
+  Combine these two approximations:
+  \begin{align*}
+    \frac{\Delta R}{R} &\approx -BT^{-1/3}\left(-\frac{1}{3}\frac{\Delta T}{T}\right) \\
+    \Longrightarrow \frac{\Delta R}{R}
+      &\approx \left(\frac{1}{3}BT^{-1/3}\right)\frac{\Delta T}{T} \\
+    \Longrightarrow \alpha &= \frac{1}{3}BT^{-1/3}
+  \end{align*}
+  \hfill(1 point)
+
+  \textit{Note: If a student correctly determines $\alpha$ by taking the
+  derivative of $R(T)$, give 5 points.}
+  \begin{align*}
+    \frac{\mathrm{d}R}{\mathrm{d}T}
+      &= R_0 \exp\left(-BT^{-1/3}\right) \cdot (-B) \cdot
+         \left(-\frac{1}{3}\right) T^{-4/3} \\
+      &= R(T) \cdot \frac{B}{3} T^{-4/3} \quad \text{(2 points)} \\
+    \Delta R &\approx \frac{\mathrm{d}R}{\mathrm{d}T}\Delta T
+      = R \cdot \frac{B}{3} T^{-4/3}\Delta T \quad \text{(1 point)} \\
+    \frac{\Delta R}{R} &\approx \frac{B}{3} T^{-4/3}\Delta T
+      = \frac{B}{3T^{1/3}} \cdot \frac{\Delta T}{T} \quad \text{(1 point)} \\
+    \alpha &= \frac{1}{3}BT^{-1/3} \quad \text{(1 point)}
+  \end{align*}
+
+  The fractional change in the reaction rate is:
+  \[ \frac{\Delta R}{R} = \frac{\Delta\Phi}{\Phi} = \frac{\Delta N_\nu}{N_\nu}
+     = 2\% = 0.02 \]
+  \hfill(2 points)
+
+  The thermal sensitivity coefficient is:
+  \[ \alpha = \frac{1}{3}BT^{-\frac{1}{3}}
+     = \frac{17757}{3 \times (1.5 \times 10^7)^{\frac{1}{3}}} \approx 24 \]
+  \hfill(1 point)
+
+  The corresponding percentage change in the Sun's core temperature is:
+  \[ \frac{\Delta T}{T} = \frac{\Delta R}{R}\frac{1}{\alpha}
+     = \frac{0.02}{24} \approx 0.083\% \]
+  \hfill(1 point)
+
+  \textit{Note: If a student bypasses the algebraic linearization proof and
+  directly substitutes the numerical constants and
+  $\frac{\Delta R}{R} = 0.02$ into the original unapproximated exponential
+  ratio equation to solve for $\frac{\Delta T}{T}$ numerically, award 4
+  points provided they correctly calculate
+  $\frac{\Delta T}{T} \approx 0.083\%$.}
+\end{description}

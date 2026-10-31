@@ -1,0 +1,242 @@
+\medskip\noindent\textbf{Part 1}
+
+\begin{description}
+\item[(a)] Let us consider a spherical shell of radius $r$ and thickness
+  $\mathrm{d}r$ inside the dense core. Its hydrostatic equilibrium is
+  described by
+  \[ \mathrm{d}P = -\rho_Z g\,\mathrm{d}r \quad (1) \]
+  \hfill(2 points)
+
+  where $\mathrm{d}P$ is the differential of pressure. The gravitational
+  acceleration $g$ is given by
+  \[ g = \frac{4}{3}\pi G \rho_Z r \quad (2) \]
+  \hfill(1 point)
+
+  where $G$ is the gravitational constant. By inserting Eq. (2) into Eq. (1),
+  we have
+  \[ \mathrm{d}P = -\frac{4}{3}\pi G \rho_Z^2 r\,\mathrm{d}r \quad (3) \]
+  \hfill(1 point)
+
+  Integrating both sides of Eq. (3) provides
+  \[ P = -\frac{2}{3}\pi G \rho_Z^2 r^2 + P_O \quad (4) \]
+  \hfill(1 point)
+
+  When $r$ increases from 0 to $R_C$, $P$ decreases from $P_O$ to $P_C$.
+  Therefore,
+  \[ \rho_Z = \frac{1}{R_C}\sqrt{\frac{3(P_O - P_C)}{2\pi G}}
+     = 1.43 \times 10^{4}\,\mathrm{kg\,m^{-3}} \quad (5) \]
+  \hfill(1 point)
+
+\item[(b)] Because Jupiter is surrounded by a perfect vacuum, the hydrostatic
+  pressure must be equal to zero at the planetary surface. That is synonymous
+  with
+  \[ \rho_H(R_J) = \frac{A}{R_J}\cos\left(\frac{R_J}{R} + \varphi\right) = 0
+     \quad (6) \]
+  \hfill(1 point)
+
+  In addition, at the core-envelope boundary, the mass density of the fluid
+  envelope is
+  \[ \rho_H(R_C) = \frac{A}{R_C}\cos\left(\frac{R_C}{R} + \varphi\right)
+     = \sqrt{\frac{P_C}{K}} \quad (7) \]
+  \hfill(1 point)
+
+  Solving Eq. (6) and Eq. (7) with $A > 0$ and $-\pi \le \varphi \le \pi$
+  provides
+  \[ A = \frac{R_C}{\cos\left(\dfrac{R_C - R_J}{R} + \dfrac{\pi}{2}\right)}
+     \sqrt{\frac{P_C}{K}} \quad (8) \]
+  \hfill(1 point)
+  \[ \varphi = \frac{\pi}{2} - \frac{R_J}{R} \quad (9) \]
+  \hfill(1 point)
+
+  Numerically, we have
+  \[ A = 9.46 \times 10^{10}\,\mathrm{kg\,m^{-2}} \quad (10) \]
+  \hfill(1 point)
+  \[ \varphi = -1.54\,\mathrm{rad} \quad (11) \]
+  \hfill(1 point)
+
+  \textit{Note:} If the numerical value of the amplitude factor $A$ is fall in
+  a range of $9.46 \times 10^{10}$ to $9.53 \times 10^{10}\,\mathrm{kg\,m^{-2}}$,
+  the marks remain unchanged.
+
+\item[(c)] \textbf{The density profile}
+
+  For the dense core:
+  \begin{itemize}
+  \item Plot two critical points at $(0, \rho_Z)$ and $(R_C, \rho_Z)$.
+    \hfill(1 point)
+  \item Plot a straight line passing through these points.
+    \hfill(0.5 points)
+  \end{itemize}
+
+  For the fluid envelope:
+  \begin{itemize}
+  \item Plot two critical points at $(R_C, \rho_H(R_C))$ and $(R_J, 0)$.
+    \hfill(1 point)
+  \item Plot at least two additional points between $r = R_C$ and $r = R_J$
+    using $\rho_H = \frac{A}{r}\cos\left(\frac{r}{R} + \varphi\right)$.
+    \hfill(1 point)
+  \item Plot an appropriate smooth curve passing through these points.
+    \hfill(0.5 points)
+  \end{itemize}
+
+  \textit{Note:} It is optional to plot a straight line passing through two
+  critical points $(R_C, \rho_Z)$ and $(R_C, \rho_H(R_C))$.
+
+  % FIGURE NEEDED: 2026_THSOL_T11 crop page 3, hand-drawn graph of density (10^4 kg m^-3, 0 to 1.6) versus distance (10^7 m, 0 to 7): flat at 1.43 from r=0 to R_C, vertical drop to about 0.43 at R_C, then a smooth curve through about (3, 0.31), (5, 0.16) down to (7, 0)
+
+  \textbf{The pressure profile}
+
+  For the dense core:
+  \begin{itemize}
+  \item Plot two critical points at $(0, P_O)$ and $(R_C, P_C)$.
+    \hfill(1 point)
+  \end{itemize}
+
+  For the fluid envelope:
+  \begin{itemize}
+  \item Plot one critical point at $(R_J, 0)$.
+    \hfill(0.5 points)
+  \item Plot at least two additional points between $r = R_C$ and $r = R_J$
+    using $P = K\rho_H^2$.
+    \hfill(1 point)
+  \end{itemize}
+
+  Graph finalization:
+  \begin{itemize}
+  \item Plot one more point in a range $0 \le r \le R_C$ [using Eq. (4)] or
+    $R_C \le r \le R_J$ [using $P = K\rho_H^2$]
+    \hfill(0.5 points)
+  \item Plot an appropriate smooth curve passing through all the points
+    representing the dense core (parabola with vertex on $y$-axis).
+    \hfill(0.5 points)
+  \item Plot an appropriate smooth curve passing through all the points
+    representing the fluid envelope.
+    \hfill(0.5 points)
+  \end{itemize}
+
+  % FIGURE NEEDED: 2026_THSOL_T11 crop page 4, hand-drawn graph of pressure (10^12 Pa, 0 to 8) versus distance (10^7 m, 0 to 7): parabola from (0, 7.13) through about (0.5, 6.4) to (R_C, 3.98), then a smooth curve through about (3, 2.1), (5, 0.5) down to (7, 0)
+
+  \textit{Note:} Deduct 0.5 points for each graph missing axis units.
+
+\item[(d)] The mass of the dense core is
+  \[ M_Z = \frac{4}{3}\pi R_C^3 \rho_Z = 6.93 \times 10^{25}\,\mathrm{kg}
+     \quad (12) \]
+  \hfill(2 points)
+
+  The mass of the fluid envelope is
+  \[ M_H = M_J - M_Z = 1.83 \times 10^{27}\,\mathrm{kg} \quad (13) \]
+  \hfill(1 point)
+\end{description}
+
+\medskip\noindent\textbf{Part 2}
+
+\begin{description}
+\item[(a)] To formulate the equation of state for the ideal binary mixture, we
+  consider an infinitesimal space of volume $\mathrm{d}V$ and mass
+  $\mathrm{d}M$. If we set $\mathrm{d}M = \mathrm{d}m_Z + \mathrm{d}m_H$,
+  $\mathrm{d}V$ will be decomposed into
+  \[ \mathrm{d}V = \mathrm{d}v_Z + \mathrm{d}v_H \quad (14) \]
+  \hfill(2 points)
+
+  where $\mathrm{d}v_Z$ and $\mathrm{d}v_H$ represent the volumetric
+  contributions of rock and hydrogen, respectively. Based on the physical
+  definition of the mass density, we can write
+  \[ \mathrm{d}V = \frac{\mathrm{d}M}{\rho}, \quad
+     \mathrm{d}v_Z = \frac{\mathrm{d}m_Z}{\rho_Z}, \quad
+     \mathrm{d}v_H = \frac{\mathrm{d}m_H}{\rho_H} \quad (15) \]
+  \hfill(1 point)
+
+  Note that
+  \[ \mathrm{d}m_Z = Z\,\mathrm{d}M, \quad
+     \mathrm{d}m_H = (1 - Z)\,\mathrm{d}M \quad (16) \]
+  \hfill(1 point)
+
+  Thus, we obtain
+  \[ \frac{1}{\rho} = \frac{Z}{\rho_Z} + \frac{1 - Z}{\rho_H} \quad (17) \]
+  \hfill(1 point)
+
+  Since $\rho_H = \sqrt{P/K}$, Eq. (17) is equivalent to
+  \[ \rho = \frac{\rho_Z\sqrt{P}}{Z\sqrt{P} + (1 - Z)\rho_Z\sqrt{K}}
+     \quad (18) \]
+  \hfill(1 point)
+
+\item[(b)] Since $\rho$ is a linear function of $r$ at $R_1 \le r \le R_2$, we
+  can write
+  \[ \rho = \frac{\rho_1 - \rho_2}{R_1 - R_2}\,r
+     + \frac{\rho_2 R_1 - \rho_1 R_2}{R_1 - R_2} \quad (19) \]
+  \hfill(1 point)
+
+  Here, $\rho_1$ and $\rho_2$ are the critical densities at the base and the
+  top of the transition layer. These quantities are deduced from Eq. (18) as
+  \[ \rho_1 = \frac{\rho_Z\sqrt{P_1}}{Z_1\sqrt{P_1} + (1 - Z_1)\rho_Z\sqrt{K}}
+     = 3.39 \times 10^{3}\,\mathrm{kg\,m^{-3}} \]
+  \hfill(1 point)
+  \[ \rho_2 = \frac{\rho_Z\sqrt{P_2}}{Z_2\sqrt{P_2} + (1 - Z_2)\rho_Z\sqrt{K}}
+     = 1.98 \times 10^{3}\,\mathrm{kg\,m^{-3}} \quad (20) \]
+  \hfill(1 point)
+
+  Having established the $\rho - r$ relation, it is feasible to calculate the
+  mass of the transition layer by
+  \[ M_{12} = \int_{R_1}^{R_2} 4\pi r^2 \rho\,dr \quad (21) \]
+  \hfill(1 point)
+
+  Entering Eq. (19) into Eq. (21) yields
+  \[ M_{12} = \frac{\pi}{3}(R_2 - R_1)\left[R_1^2(3\rho_1 + \rho_2)
+     + R_2^2(\rho_1 + 3\rho_2) + 2R_1 R_2(\rho_1 + \rho_2)\right]
+     \quad (22) \]
+  \hfill(2 points)
+
+  Our numerical result based on Eq. (20) and Eq. (22) is
+  \[ M_{12} = 6.67 \times 10^{26}\,\mathrm{kg} \quad (23) \]
+  \hfill(1 point)
+
+\item[(c)] It is clear that Jupiter's mass is a conservation quantity,
+  \[ M_1 + M_{12} + M_2 = M_J \quad (24) \]
+  \hfill(1 point)
+
+  When the dense core is eroded, heavy and light materials are mixed without
+  chemical reactions. Hence, the total mass of rock must also be conserved,
+  \[ Z_1 M_1 + M_{12}^{\mathrm{rock}} + Z_2 M_2 = M_Z \quad (25) \]
+  \hfill(3 points)
+
+  Solving Eq. (24) and Eq. (25) yields
+  \[ M_1 = \frac{M_Z - M_{12}^{\mathrm{rock}} - Z_2(M_J - M_{12})}{Z_1 - Z_2} \]
+  \hfill(1 point)
+  \[ M_2 = \frac{Z_1(M_J - M_{12}) - M_Z + M_{12}^{\mathrm{rock}}}{Z_1 - Z_2}
+     \quad (26) \]
+  \hfill(1 point)
+
+  To determine $M_1$ and $M_2$, we need to find the amount of rock in the
+  transition layer $M_{12}^{\mathrm{rock}}$. This quantity is determined by
+  \[ M_{12}^{\mathrm{rock}} = \int_{R_1}^{R_2} 4\pi Z r^2 \rho\,dr \quad (27) \]
+  \hfill(1 point)
+
+  In the transition layer, we have
+  \[ Z = \frac{Z_1 - Z_2}{R_1 - R_2}\,r + \frac{Z_2 R_1 - Z_1 R_2}{R_1 - R_2},
+     \quad R_1 \le r \le R_2 \quad (28) \]
+  \hfill(1 point)
+
+  Eqs. (19), (27), and (28) enables us to explicitly express
+  $M_{12}^{\mathrm{rock}}$ by
+  \[ M_{12}^{\mathrm{rock}} = \frac{\pi}{15}(R_2 - R_1)
+     \left(\alpha R_1^2 + \beta R_2^2 + 2\gamma R_1 R_2\right) \quad (29) \]
+  \hfill(3 points)
+
+  where
+  \begin{align*}
+    \alpha &= 3Z_1(4\rho_1 + \rho_2) + Z_2(3\rho_1 + 2\rho_2) \\
+    \beta  &= Z_1(2\rho_1 + 3\rho_2) + 3Z_2(\rho_1 + 4\rho_2) \\
+    \gamma &= 3Z_1\rho_1 + 2Z_2\rho_1 + 2Z_1\rho_2 + 3Z_2\rho_2
+    \qquad (30)
+  \end{align*}
+
+  Our numerical result is
+  \[ M_{12}^{\mathrm{rock}} = 2.84 \times 10^{25}\,\mathrm{kg} \quad (31) \]
+  \hfill(1 point)
+
+  Substituting this number into Eq. (26) provides
+  \[ M_1 = 3.83 \times 10^{26}\,\mathrm{kg} \]
+  \hfill(1 point)
+  \[ M_2 = 8.50 \times 10^{26}\,\mathrm{kg} \quad (32) \]
+  \hfill(1 point)
+\end{description}

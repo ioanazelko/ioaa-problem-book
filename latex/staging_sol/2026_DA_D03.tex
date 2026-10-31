@@ -1,0 +1,238 @@
+\medskip\noindent\textbf{Part 1 (28 points): Empirical Laws and Physical Significance}
+
+\begin{description}
+\item[(a)]
+  \begin{center}
+  \begin{tabular}{cccc}
+  \toprule
+  LRD ID & $\Delta\log M_*^{\mathrm{tot}}$ $(\Delta x_i)$
+         & $\Delta\log M_{\mathrm{BH}}$ $(\Delta y_i)$ & Weight $(w_i)$ \\
+  \midrule
+  1  & 0.24 & 0.14 & 12.95 \\
+  2  & 0.30 & 0.30 & 5.56 \\
+  3  & 0.37 & 0.12 & 6.61 \\
+  4  & 0.46 & 0.02 & 4.72 \\
+  5  & 0.36 & 0.17 & 6.31 \\
+  6  & 0.43 & 0.11 & 5.08 \\
+  7  & 0.43 & 0.03 & 5.38 \\
+  8  & 0.39 & 0.08 & 6.31 \\
+  9  & 0.35 & 0.08 & 7.76 \\
+  10 & 0.41 & 0.06 & 5.82 \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  \hfill(5 points)
+
+  \textit{Note:} 0.5 points for each corrected row.
+
+\item[(b)] Graphing:
+
+  Clear axis scaling and labels $(x, y)$. \hfill(2 points)
+
+  Plotting of the 10 scatter points (0.3 points per each). \hfill(5 points)
+
+  Correct inclusion of error bars (both axes) for all points (0.3 points per
+  each). \hfill(5 points)
+
+  % FIGURE NEEDED: 2026_DASOL_D03 crop page 2, Graph D03.1b: hand-drawn plot
+  % of y = log M_BH (6.0 to 9.0) against x = log M_*^tot (7.5 to 9.5) on graph
+  % paper with the 10 points, horizontal and vertical error bars, and the
+  % best-fit line y = 0.9 + 0.75x drawn through them
+
+\item[(c)]
+  \[ S_w = \sum w_i \approx 66.49 \]
+  \hfill(0.5 points)
+  \[ S_x = \sum w_i x_i \approx 563.16 \]
+  \hfill(0.5 points)
+  \[ S_y = \sum w_i y_i \approx 483.65 \]
+  \hfill(0.5 points)
+  \[ S_{xx} = \sum w_i x_i^2 \approx 4775.63 \]
+  \hfill(0.5 points)
+  \[ S_{xy} = \sum w_i x_i y_i \approx 4100.80 \]
+  \hfill(0.5 points)
+  \[ \Delta = S_w S_{xx} - (S_x)^2 \approx 405.96 \]
+  \hfill(0.5 points)
+
+  \textit{Note:} Accept deviations in the final sums due to students
+  truncating $w_i$ floating points. Accept deviations up to $\pm 5.0$ for
+  large sums like $S_{xx}$ and $S_{xy}$, and up to $\pm 0.5$ for smaller sums
+  like $S_w$ and $S_x$.
+  \[ \alpha = \frac{S_{xx} S_y - S_x S_{xy}}{\Delta} \approx 0.9 \]
+  \hfill(0.5 points)
+  \[ \beta = \frac{S_w S_{xy} - S_x S_y}{\Delta} \approx 0.75 \]
+  \hfill(0.5 points)
+  \[ \Delta\alpha = \sqrt{\frac{S_{xx}}{\Delta}} \approx 3.4 \]
+  \hfill(0.5 points)
+  \[ \Delta\beta = \sqrt{\frac{S_w}{\Delta}} \approx 0.40 \]
+  \hfill(0.5 points)
+  \[ \alpha = 0.9 \pm 3.4, \qquad \beta = 0.75 \pm 0.40 \]
+
+  \textit{Note:} If students report $\alpha = 1 \pm 3$ and
+  $\beta = 0.8 \pm 0.4$, the marks remain unchanged.
+
+  Best-fit Line Plotting: Draw the line $y = 0.9 + 0.75x$ through the scatter
+  plot. \hfill(2 points)
+
+\item[(d)]
+  \begin{description}
+  \item[(d.1)] A \hfill(2 points)
+  \item[(d.2)] D \hfill(2 points)
+  \end{description}
+\end{description}
+
+\medskip\noindent\textbf{Part 2 (6 points): Standard Dynamical Model}
+
+\begin{description}
+\item[(a)] The black hole's radius of influence $r_h$ is the exact radius
+  where the enclosed stellar mass equals the black hole mass. Set up the
+  equality:
+  \begin{align*}
+    M_*(r_h) &= M_{\mathrm{BH}} \\
+    \Rightarrow M_*^{\mathrm{tot}} \left( \frac{r_h}{r_h + a} \right)
+      &= M_{\mathrm{BH}}
+  \end{align*}
+  \hfill(1 point)
+
+  Divide both sides by $M_*^{\mathrm{tot}}$ and isolate $r_h$:
+  \begin{align*}
+    \frac{r_h}{r_h + a} &= \frac{M_{\mathrm{BH}}}{M_*^{\mathrm{tot}}} \\
+    r_h \left( 1 - \frac{M_{\mathrm{BH}}}{M_*^{\mathrm{tot}}} \right)
+      &= a\,\frac{M_{\mathrm{BH}}}{M_*^{\mathrm{tot}}}
+  \end{align*}
+  Yield the derived expression:
+  \[
+  r_h = a\,\frac{\dfrac{M_{\mathrm{BH}}}{M_*^{\mathrm{tot}}}}
+               {1 - \dfrac{M_{\mathrm{BH}}}{M_*^{\mathrm{tot}}}}
+  \]
+  \hfill(1 point)
+
+\item[(b)] Ratio Calculation:
+
+  For LRD 4 from the data table: $\log M_*^{\mathrm{tot}} = 8.96$ and
+  $\log M_{\mathrm{BH}} = 8.47$.
+  \[
+  \frac{M_{\mathrm{BH}}}{M_*^{\mathrm{tot}}}
+    = \frac{10^{8.47}}{10^{8.96}} = 10^{-0.49} \approx 0.32
+  \]
+  \hfill(1 point)
+
+  Substitute this mass ratio into the relation derived in the previous part:
+  \[ \frac{r_h}{a} \approx 0.48 \]
+  \hfill(1 point)
+
+  Physical Explanation (Multi-Choice Question): C \hfill(2 points)
+
+  Since $r_h \approx 0.48a$, the supermassive black hole's gravitational
+  sphere of influence extends nearly halfway to the galaxy's scale radius.
+  Unlike typical galaxies, LRDs do not exhibit an ``intermediate region''
+  $(r_h \ll r \ll a)$.
+\end{description}
+
+\medskip\noindent\textbf{Part 3 (16 points): Destruction Physics and Data Barriers}
+
+\begin{description}
+\item[(a)] Tidal force $(\Delta F)$: In a reference frame centered on the
+  star, we evaluate the gravitational force at the center of the star:
+  \[ F_{\mathrm{center}} = \frac{G m M_{\mathrm{BH}}}{r^2} \]
+  \hfill(0.5 points)
+
+  where $m$ is a test mass. At the near-side surface of the star (the point
+  closest to the SMBH), located at a distance of $(r - R_*)$:
+  \[ F_{\mathrm{near}} = \frac{G m M_{\mathrm{BH}}}{(r - R_*)^2} \]
+  \hfill(0.5 points)
+
+  The tidal force is:
+  \[
+  \Delta F = F_{\mathrm{near}} - F_{\mathrm{center}}
+    = \frac{G m M_{\mathrm{BH}}}{(r - R_*)^2}
+    - \frac{G m M_{\mathrm{BH}}}{r^2}
+  \]
+  \hfill(1 point)
+  \[
+  \Delta F = \frac{G m M_{\mathrm{BH}}}{r^2}
+    \left[ \frac{1}{\left(1 - \dfrac{R_*}{r}\right)^2} - 1 \right]
+  \]
+  Using the first-order Taylor expansion for $R_*/r \ll 1$:
+  \[
+  \left( 1 - \frac{R_*}{r} \right)^{-2} \approx 1 + 2\left( \frac{R_*}{r} \right)
+  \]
+  The tidal force is approximated by
+  \[ \Delta F \approx \frac{2 G m M_{\mathrm{BH}} R_*}{r^3} \]
+  \hfill(1 point)
+
+  At $r = r_{\mathrm{t}}$, it balances with self-gravity:
+  \[
+  \frac{2 G m M_{\mathrm{BH}} R_*}{r_{\mathrm{t}}^3} = \frac{G m m_*}{R_*^2}
+  \]
+  \hfill(1 point)
+  \[
+  \Longrightarrow r_{\mathrm{t}} = R_* \left( \frac{2 M_{\mathrm{BH}}}{m_*} \right)^{\frac{1}{3}}
+  \]
+  \hfill(1 point)
+
+  When $r_{\mathrm{t}} = R_{\mathrm{S}} = 2GM_{\mathrm{BH}}/c^2$,
+  $M_{\mathrm{BH}} = M_{\mathrm{H}}$, and
+  \[
+  M_{\mathrm{H}} = \frac{1}{2} \left( \frac{c^2 R_*}{G m_*^{1/3}} \right)^{3/2}
+  \]
+  \hfill(1 point)
+
+  For a Sun-like star, $R_* = R_\odot$, $m_* = M_\odot$, and
+  \[ M_{\mathrm{H}} \approx 1.62 \times 10^8\,\mathrm{M}_\odot \]
+  \hfill(1 point)
+
+\item[(b)] The maximum stellar mass:
+  \[
+  \log M_{*,\mathrm{max}}^{\mathrm{tot}}
+    = \frac{\log M_{\mathrm{H}} - \alpha}{\beta}
+  \]
+  \hfill(1 point)
+
+  where $\alpha = 0.9 \pm 3.4$, $\beta = 0.75 \pm 0.40$, and
+  $\log M_{\mathrm{H}} = 8.21$ for a Sun-like star.
+
+  $\log M_{*,\mathrm{max}}^{\mathrm{tot}}$ reaches the maximum when
+  $\beta = \beta_{\mathrm{min}} = 0.75 - 0.40 = 0.35$ and
+  $\alpha = \alpha_{\mathrm{min}} = 0.9 - 3.4 = -2.5$. Result:
+  \[
+  \log M_{*,\mathrm{max}}^{\mathrm{tot}} = \frac{8.21 - (-2.5)}{0.35} \approx 31
+  \]
+  \hfill(1 point)
+
+  $\log M_{*,\mathrm{max}}^{\mathrm{tot}}$ reaches the minimum when
+  $\beta = \beta_{\mathrm{max}} = 0.75 + 0.40 = 1.15$ and
+  $\alpha = \alpha_{\mathrm{max}} = 0.9 + 3.4 = 4.3$. Result:
+  \[
+  \log M_{*,\mathrm{max}}^{\mathrm{tot}} = \frac{8.21 - 4.3}{1.15} \approx 3.4
+  \]
+  \hfill(1 point)
+
+  Multi-Choice Question: B \hfill(1 point)
+
+  Reason: The lower bound is about the mass of a small star cluster, which
+  cannot host a SMBH. The upper bound largely exceeds the total mass of the
+  entire observable universe. These derived boundaries have no physical
+  reality.
+
+\item[(c)] Identify the necessity to divide by $(1+z)$ to convert the
+  intrinsic rate to the observer rate on Earth:
+  \[
+  \mathrm{Rate}_{\mathrm{obs}}
+    = \frac{N \times \langle \dot{N}_{\mathrm{TDE}} \rangle}{1 + z}
+  \]
+  \hfill(2 points)
+
+  Substitute $z = 5$ to calculate the correct all-sky rate:
+  \[
+  \mathrm{Rate}_{\mathrm{obs}}
+    = \frac{1.021 \times 10^8 \times 2.01 \times 10^{-6}}{1 + 5}
+    \approx 34\ \mathrm{events/year}
+  \]
+  \hfill(1.5 points)
+
+  Calculate the final percentage ratio:
+  \[
+  \mathrm{Area} = \frac{5}{34} = 15\% \text{ of the celestial sphere}
+  \]
+  \hfill(1.5 points)
+\end{description}
