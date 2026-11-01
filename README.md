@@ -13,7 +13,7 @@ The original problems can be found in the
 
 ## Download PDF
 
-[Download the latest release of the book](https://github.com/ioanazelko/ioaa-problem-book/releases/latest/download/ioaa-problem-book-2007-2026.pdf).
+[Download the latest release of the book](https://github.com/ioanazelko/ioaa-problem-book/releases/latest/download/ioaa-problem-book.pdf).
 The release PDF uses the `ebook` optimization profile. Lossless and
 print-oriented editions can be produced from the repository sources.
 

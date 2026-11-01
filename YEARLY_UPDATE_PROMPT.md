@@ -220,8 +220,8 @@ transcribed official text stays verbatim, em-dashes included.
 
 - Year strings: `latex/book.tex` (the header comment, the crop-edition
   comment, and the inner title `2007--<YEAR>`), `latex/cover.tex` (the
-  `2007--<YEAR>` label), `README.md` (the coverage sentence, the release link,
-  and the Status counts), and the counts in `latex/README.md` and
+  `2007--<YEAR>` label), `README.md` (the coverage sentence and the Status
+  counts; the release download link is year-free and stays as it is), and the counts in `latex/README.md` and
   `source/README.md`. If the year needs a caveat (unpublished solutions, a
   scanned paper), add it to the "About this edition" page in `book.tex` in
   the existing tone.
@@ -243,10 +243,9 @@ transcribed official text stays verbatim, em-dashes included.
   solutions`, ending with the attribution line the session requires. Do not
   push yet.
 - Build the release copy with `python build_book.py --optimize ebook`, copy
-  `latex/book.pdf` to the scratchpad as `ioaa-problem-book-2007-<YEAR>.pdf`,
-  and compute its SHA-256. The asset name carries the year range, so the
-  README release link must already name the new file; commit that before
-  tagging.
+  `latex/book.pdf` to the scratchpad as `ioaa-problem-book.pdf` (the asset
+  name is deliberately year-free so the README's latest-release link never
+  changes), and compute its SHA-256.
 - Show the user a summary and ask for a go-ahead: the table of new problems
   with their chapter assignments (flag any you are unsure of), the counts
   before and after, the page count, and anything unresolved. Only after a yes:
