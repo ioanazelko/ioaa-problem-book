@@ -19,13 +19,12 @@ LaTeX, verified digit-by-digit against rendered images of the official papers.
 Solutions carry the official reasoning with inline point values; standalone
 marking-scheme rubrics are omitted (the crop edition keeps full rubrics).
 
-Of the 423 solution slots, 403 contain substantive official solutions. The
-other 20 carry explanatory notes, not omitted transcriptions: the 2016 and 2017
-observation-round solutions were never published (12); the 2026 planetarium
-solutions have not been released (3); the 2007 pointer-task
-and 2014 outdoor-telescope keys don't survive (2); the official 2016 solution
-set replaces the AstroSat problem with a different problem (1); the 2014
-solutions file skips short problem 4 (1); and the official key for one 2012
+Of the 423 solution slots, 406 contain substantive official solutions. The
+other 17 carry explanatory notes. The 2016 and 2017 observation-round
+solutions were never published (12). The 2007 pointer-task and 2014
+outdoor-telescope keys don't survive (2). The official 2016 solution set
+replaces the AstroSat problem with a different problem (1). The 2014
+solutions file skips short problem 4 (1). The official key for one 2012
 timed practical task contains no answer material (1).
 
 All figure references flagged during transcription are resolved:
