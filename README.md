@@ -21,17 +21,15 @@ print-oriented editions can be produced from the repository sources.
 
 - 423 of 423 problem statements transcribed
 - All available official solution material transcribed
-- 403 problems with substantive official solutions
+- 406 problems with substantive official solutions
 - 584 figure assets
 - 14 topic-based chapters, an observational-problems chapter, and an errata
   appendix
 
-The other 20 solution slots contain explanatory notes, not omitted
-transcriptions. For 19 problems, no usable official solution was published or
-survives in the available archives; this includes the three tasks of the 2026
-planetarium round, whose solutions have not been released. The official key
-for one further problem, a 2012 timed laser-pointing task, exists but contains
-no answer material.
+The other 17 solution slots contain explanatory notes. For 16 problems, no
+usable official solution was published or survives in the available archives.
+The official key for one further problem, a 2012 timed laser-pointing task,
+contains no answer material.
 
 ## Building the book
 
